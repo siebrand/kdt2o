@@ -12,6 +12,7 @@ All user-visible text, errors, labels, PDF output, and UI content must be Dutch.
 
 - `recipes/` contains source PDF and text recipes.
 - `scripts/extract_recipes.py` converts recipe sources into static `public/recipes.json` during the container build.
+- `requirements.txt` is the single source for Python build dependencies and is managed by Dependabot.
 - Each source file is hashed with SHA-256. Cached records with the same source hash and harmonizer version are reused.
 - Optional LLM harmonization is enabled only when `RECIPE_LLM_COMMAND` is set; the command receives one recipe JSON object on stdin and must return a JSON object with the same `id`.
 - `public/index.html`, `public/app.js`, and `public/styles.css` are the browser application.
