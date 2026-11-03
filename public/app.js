@@ -318,10 +318,15 @@ function sortedShoppingItems() {
   });
 }
 
-function ingredientLabel(item) {
+function formatIngredientLabel(item) {
   const normalized = normalizeShoppingIngredient(item);
   const amount = normalized.amount == null ? "" : normalized.amount + (normalized.unit ? " " + normalized.unit : "");
   return amount + (amount ? " " : "") + normalized.name;
+}
+
+function ingredientLabel(item) {
+  const labels = [item, ...(item.alternatives || [])].map(formatIngredientLabel);
+  return labels.join(" of ");
 }
 
 function renderShoppingList() {
