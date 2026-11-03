@@ -1871,11 +1871,11 @@
         "optional": false
       },
       {
-        "raw": "1 el citoensap",
+        "raw": "1 el citroensap",
         "amount": 1,
         "unit": "el",
-        "name": "citoensap",
-        "key": "citoensap",
+        "name": "citroensap",
+        "key": "citroensap",
         "optional": false
       },
       {
@@ -2107,9 +2107,9 @@
         "optional": false
       },
       {
-        "raw": "citroen",
-        "amount": null,
-        "unit": "",
+        "raw": "1 citroen",
+        "amount": 1,
+        "unit": "stuk",
         "name": "citroen",
         "key": "citroen",
         "optional": false
@@ -2241,11 +2241,11 @@
         "optional": false
       },
       {
-        "raw": "‘4 citroen",
-        "amount": null,
-        "unit": "",
-        "name": "‘4 citroen",
-        "key": "‘4 citroen",
+        "raw": "1/4 citroen",
+        "amount": 0.25,
+        "unit": "stuk",
+        "name": "citroen",
+        "key": "citroen",
         "optional": false
       },
       {
@@ -2367,11 +2367,11 @@
         "optional": false
       },
       {
-        "raw": "Va citroen",
-        "amount": null,
-        "unit": "",
-        "name": "Va citroen",
-        "key": "va citroen",
+        "raw": "1/4 citroen",
+        "amount": 0.25,
+        "unit": "stuk",
+        "name": "citroen",
+        "key": "citroen",
         "optional": false
       },
       {
@@ -3445,11 +3445,11 @@
         "optional": false
       },
       {
-        "raw": "4 el verse citroensap",
+        "raw": "4 el citroensap",
         "amount": 4,
         "unit": "el",
-        "name": "verse citroensap",
-        "key": "verse citroensap",
+        "name": "citroensap",
+        "key": "citroensap",
         "optional": false
       },
       {
@@ -3846,10 +3846,10 @@
       },
       {
         "raw": "sap van 1/2 citroen",
-        "amount": null,
-        "unit": "",
-        "name": "sap van 1/2 citroen",
-        "key": "sap van 1/2 citroen",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "citroen",
+        "key": "citroen",
         "optional": true
       }
     ],
@@ -5266,11 +5266,11 @@
         "optional": false
       },
       {
-        "raw": "sap van een citroen",
-        "amount": null,
-        "unit": "",
-        "name": "sap van een citroen",
-        "key": "sap van een citroen",
+        "raw": "sap van 1 citroen",
+        "amount": 1,
+        "unit": "stuk",
+        "name": "citroen",
+        "key": "citroen",
         "optional": false
       },
       {
@@ -7042,11 +7042,11 @@
         "optional": false
       },
       {
-        "raw": "sap van een % citroen",
-        "amount": null,
-        "unit": "",
-        "name": "sap van een % citroen",
-        "key": "sap van een % citroen",
+        "raw": "sap van 1/2 citroen",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "citroen",
+        "key": "citroen",
         "optional": false
       },
       {
