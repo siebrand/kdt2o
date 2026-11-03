@@ -300,13 +300,15 @@ const SHOPPING_CATEGORIES = [
 function shoppingCategory(item) {
   const name = String(item.name || "").toLocaleLowerCase("nl");
   const has = (...terms) => terms.some((term) => name.includes(term));
+  const hasWord = (...terms) => terms.some((term) => new RegExp(`(^|[^a-z])${term}($|[^a-z])`).test(name));
 
   if (has("diepvries", "bevroren")) return "Diepvries";
-  if (has("wortel", "ui", "courgette", "paprika", "tomaat", "komkommer", "biet", "avocado", "broccoli", "bloemkool", "spinazie", "sla", "champignon", "knoflook", "gember", "citroen", "limoen", "appel", "banaan", "aardbei", "framboos", "bosbes", "mango", "peer", "druif", "fruit", "kikkererwt", "erwt", "snijboon", "witlof", "lenteui")) return "Groente en fruit";
-  if (has("yoghurt", "kwark", "melk", "kaas", "feta", "hüttenkäse", "huttenkase", "boter", "room", "ei", "eieren")) return "Zuivel en eieren";
+  if (has("kokosmelk", "bouillon", "zongedroogde", "olijf", "kelp")) return "Houdbare producten";
+  if (has("wortel", "courgette", "paprika", "tomaat", "komkommer", "biet", "avocado", "broccoli", "bloemkool", "spinazie", "sla", "champignon", "knoflook", "gember", "citroen", "limoen", "appel", "banaan", "aardbei", "framboos", "bosbes", "mango", "peer", "druif", "fruit", "kikkererwt", "erwt", "snijboon", "witlof", "lenteui", "prei", "preien", "spruit", "taugé", "knolselderij") || hasWord("ui", "uien")) return "Groente en fruit";
+  if (has("yoghurt", "kwark", "melk", "kaas", "feta", "hüttenkäse", "huttenkase", "boter", "room") || hasWord("ei", "eieren")) return "Zuivel en eieren";
   if (has("kip", "rund", "gehakt", "spek", "ham", "zalm", "tonijn", "vis", "pangasius", "haring", "biefstuk", "tofu", "tempeh")) return "Vlees, vis en vleesvervangers";
   if (has("brood", "cracker", "havermout", "muesli", "granola")) return "Brood en ontbijt";
-  if (has("zout", "peper", "kaneel", "kruiden", "oregano", "basilicum", "komijn", "kerrie", "paprikapoeder")) return "Kruiden en smaakmakers";
+  if (has("zout", "peper", "kaneel", "kruiden", "oregano", "basilicum", "komijn", "kerrie", "paprikapoeder", "salie", "peterselie")) return "Kruiden en smaakmakers";
   if (has("pasta", "rijst", "quinoa", "couscous", "linzen", "bonen", "noten", "zaad", "olie", "azijn", "meel", "bloem", "cacao", "chocolade", "pindakaas", "honing", "bouillon", "mayonaise", "sojasaus", "mosterd", "pesto", "kokosmelk")) return "Houdbare producten";
   return "Overig";
 }
