@@ -216,6 +216,14 @@ function normalizeShoppingName(name) {
     .replace(/\\bpaprika's\\b/g, "paprika");
 }
 
+function normalizeShoppingIngredient(ingredient) {
+  const name = String(ingredient.name || "").toLocaleLowerCase("nl");
+  if (name.includes("roomboter")) {
+    return { ...ingredient, amount: ingredient.amount ?? 1, unit: "el", name: "roomboter" };
+  }
+  return ingredient;
+}
+
 function aggregateIngredients() {
   const totals = new Map();
   const includedRecipeIds = new Set();
@@ -225,8 +233,9 @@ function aggregateIngredients() {
     includedRecipeIds.add(item.recipeId);
     const recipe = recipeById(item.recipeId);
     (recipe?.ingredients || []).forEach((ingredient) => {
-      const key = normalizeShoppingName(ingredient.name);
-      const unit = normalizeShoppingUnit(ingredient.unit);
+      const shoppingIngredient = normalizeShoppingIngredient(ingredient);
+      const key = normalizeShoppingName(shoppingIngredient.name);
+      const unit = normalizeShoppingUnit(shoppingIngredient.unit);
       const mapKey = key + "::" + unit;
       const otherUnitKey = [...totals.keys()].find((existingKey) => existingKey.startsWith(key + "::") && existingKey !== mapKey);
       if (otherUnitKey) {
@@ -234,12 +243,12 @@ function aggregateIngredients() {
         if (!state.shoppingWarnings.includes(warning)) state.shoppingWarnings.push(warning);
       }
       const existing = totals.get(mapKey);
-      if (!existing || ingredient.amount == null || existing.amount == null) {
-        if (existing && ingredient.amount == null) state.shoppingWarnings.push("Controleer de hoeveelheid van " + ingredient.name + ".");
-        totals.set(mapKey + (existing ? "::" + totals.size : ""), { ...ingredient, normalizedUnit: unit });
+      if (!existing || shoppingIngredient.amount == null || existing.amount == null) {
+        if (existing && shoppingIngredient.amount == null) state.shoppingWarnings.push("Controleer de hoeveelheid van " + shoppingIngredient.name + ".");
+        totals.set(mapKey + (existing ? "::" + totals.size : ""), { ...shoppingIngredient, normalizedUnit: unit });
         return;
       }
-      if (typeof ingredient.amount === "number" && typeof existing.amount === "number") existing.amount += ingredient.amount;
+      if (typeof shoppingIngredient.amount === "number" && typeof existing.amount === "number") existing.amount += shoppingIngredient.amount;
     });
   });
   return [...totals.values()];
