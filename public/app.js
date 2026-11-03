@@ -2,7 +2,7 @@ const DAYS = ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterda
 const MEALS = ["ontbijt", "lunch", "diner"];
 const PLAN_STORAGE_KEY = "kitano-weekplan";
 const PLAN_STORAGE_VERSION = 2;
-const state = { recipes: [], plan: loadPlan(), activeSlot: null, pendingRecipe: null };
+const state = { recipes: [], plan: loadPlan(), activeSlot: null, pendingRecipe: null, shoppingWarnings: [] };
 
 const planner = document.querySelector("#planner");
 const options = document.querySelector("#recipe-options");
@@ -181,15 +181,40 @@ function render() {
   downloadButton.disabled = !count;
 }
 
+function normalizeShoppingUnit(unit) {
+  const value = String(unit || "").toLocaleLowerCase("nl");
+  const aliases = { g: "gram", gr: "gram", gram: "gram", ml: "ml", milliliter: "ml", stuks: "stuk", stuk: "stuk", eetlepel: "el", eetlepels: "el", theelepel: "tl", theelepels: "tl" };
+  return aliases[value] || value;
+}
+
+function normalizeShoppingName(name) {
+  return String(name || "").toLocaleLowerCase("nl").trim()
+    .replace(/\\bcitroenen\\b/g, "citroen")
+    .replace(/\\bcourgettes\\b/g, "courgette")
+    .replace(/\\buien\\b/g, "ui")
+    .replace(/\\bbouillonblokjes\\b/g, "bouillonblokje")
+    .replace(/\\bwortelen\\b/g, "wortel")
+    .replace(/\\bpaprika's\\b/g, "paprika");
+}
+
 function aggregateIngredients() {
   const totals = new Map();
+  state.shoppingWarnings = [];
   Object.values(state.plan).forEach((item) => {
     const recipe = recipeById(item.recipeId);
     (recipe?.ingredients || []).forEach((ingredient) => {
-      const key = ingredient.key || ingredient.name.toLowerCase();
-      const existing = totals.get(key);
-      if (!existing || !ingredient.amount || existing.unit !== ingredient.unit) {
-        totals.set(key + "-" + Math.random(), { ...ingredient });
+      const key = normalizeShoppingName(ingredient.name);
+      const unit = normalizeShoppingUnit(ingredient.unit);
+      const mapKey = key + "::" + unit;
+      const otherUnitKey = [...totals.keys()].find((existingKey) => existingKey.startsWith(key + "::") && existingKey !== mapKey);
+      if (otherUnitKey) {
+        const warning = "Controleer de eenheid van " + ingredient.name + ".";
+        if (!state.shoppingWarnings.includes(warning)) state.shoppingWarnings.push(warning);
+      }
+      const existing = totals.get(mapKey);
+      if (!existing || ingredient.amount == null || existing.amount == null) {
+        if (existing && ingredient.amount == null) state.shoppingWarnings.push("Controleer de hoeveelheid van " + ingredient.name + ".");
+        totals.set(mapKey + (existing ? "::" + totals.size : ""), { ...ingredient, normalizedUnit: unit });
         return;
       }
       if (typeof ingredient.amount === "number" && typeof existing.amount === "number") existing.amount += ingredient.amount;
@@ -214,12 +239,12 @@ function shoppingCategory(item) {
   const has = (...terms) => terms.some((term) => name.includes(term));
 
   if (has("diepvries", "bevroren")) return "Diepvries";
-  if (has("wortel", "ui", "courgette", "paprika", "tomaat", "komkommer", "biet", "avocado", "broccoli", "bloemkool", "spinazie", "sla", "champignon", "knoflook", "gember", "citroen", "limoen", "appel", "banaan", "aardbei", "framboos", "bosbes", "mango", "peer", "druif", "fruit")) return "Groente en fruit";
+  if (has("wortel", "ui", "courgette", "paprika", "tomaat", "komkommer", "biet", "avocado", "broccoli", "bloemkool", "spinazie", "sla", "champignon", "knoflook", "gember", "citroen", "limoen", "appel", "banaan", "aardbei", "framboos", "bosbes", "mango", "peer", "druif", "fruit", "kikkererwt", "erwt", "snijboon", "witlof", "lenteui")) return "Groente en fruit";
   if (has("yoghurt", "kwark", "melk", "kaas", "feta", "hüttenkäse", "huttenkase", "boter", "room", "ei", "eieren")) return "Zuivel en eieren";
-  if (has("kip", "rund", "gehakt", "spek", "ham", "zalm", "tonijn", "vis", "tofu", "tempeh")) return "Vlees, vis en vleesvervangers";
+  if (has("kip", "rund", "gehakt", "spek", "ham", "zalm", "tonijn", "vis", "pangasius", "haring", "biefstuk", "tofu", "tempeh")) return "Vlees, vis en vleesvervangers";
   if (has("brood", "cracker", "havermout", "muesli", "granola")) return "Brood en ontbijt";
   if (has("zout", "peper", "kaneel", "kruiden", "oregano", "basilicum", "komijn", "kerrie", "paprikapoeder")) return "Kruiden en smaakmakers";
-  if (has("pasta", "rijst", "quinoa", "couscous", "linzen", "bonen", "noten", "zaad", "olie", "azijn", "meel", "bloem", "cacao", "chocolade", "pindakaas", "honing", "bouillon")) return "Houdbare producten";
+  if (has("pasta", "rijst", "quinoa", "couscous", "linzen", "bonen", "noten", "zaad", "olie", "azijn", "meel", "bloem", "cacao", "chocolade", "pindakaas", "honing", "bouillon", "mayonaise", "sojasaus", "mosterd", "pesto", "kokosmelk")) return "Houdbare producten";
   return "Overig";
 }
 
@@ -239,8 +264,11 @@ function renderShoppingList() {
   shoppingListItems.replaceChildren();
   let currentCategory = "";
   let list;
-  sortedShoppingItems().forEach((item) => {
+  const items = sortedShoppingItems();
+  const uncategorized = [];
+  items.forEach((item) => {
     const category = shoppingCategory(item);
+    if (category === "Overig") uncategorized.push(item.name);
     if (category !== currentCategory) {
       const heading = document.createElement("h3");
       heading.textContent = category;
@@ -258,6 +286,19 @@ function renderShoppingList() {
     row.append(label);
     list.append(row);
   });
+  if (state.shoppingWarnings.length || uncategorized.length) {
+    const heading = document.createElement("h3");
+    heading.textContent = "Controleer deze boodschappen";
+    shoppingListItems.append(heading);
+    const warnings = document.createElement("ul");
+    warnings.className = "shopping-list shopping-warnings";
+    [...state.shoppingWarnings, ...uncategorized.map((name) => "Controleer de categorie van " + name + ".")].forEach((warning) => {
+      const row = document.createElement("li");
+      row.textContent = warning;
+      warnings.append(row);
+    });
+    shoppingListItems.append(warnings);
+  }
 }
 
 function addWrapped(doc, text, x, y, maxWidth, lineHeight = 6) {
