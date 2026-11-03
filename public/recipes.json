@@ -2765,12 +2765,22 @@
         "optional": false
       },
       {
-        "raw": "50 ml volle melk of kwark",
+        "raw": "50 ml volle melk",
         "amount": 50,
         "unit": "ml",
-        "name": "volle melk of kwark",
-        "key": "volle melk of kwark",
-        "optional": false
+        "name": "volle melk",
+        "key": "volle melk",
+        "optional": false,
+        "alternatives": [
+          {
+            "raw": "50 ml kwark",
+            "amount": 50,
+            "unit": "ml",
+            "name": "kwark",
+            "key": "kwark",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "75 gram geitenkaas of witte kaas",
@@ -4053,12 +4063,22 @@
         "optional": false
       },
       {
-        "raw": "300 gram runderreepjes OF voor vegetarische variant 200 gram tofu",
+        "raw": "300 gram runderreepjes",
         "amount": 300,
         "unit": "gram",
-        "name": "runderreepjes OF voor vegetarische variant 200 gram tofu",
-        "key": "runderreepjes of voor vegetarische variant 200 gram tofu",
-        "optional": false
+        "name": "runderreepjes",
+        "key": "runderreepjes",
+        "optional": false,
+        "alternatives": [
+          {
+            "raw": "200 gram tofu",
+            "amount": 200,
+            "unit": "gram",
+            "name": "tofu",
+            "key": "tofu",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "300 gram spruitjes",
@@ -6110,12 +6130,22 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "2 kipfilets OF voor vegetarische variant 200 gram witte bonen (uit blik)",
+        "raw": "2 kipfilets",
         "amount": 2,
-        "unit": "",
-        "name": "kipfilets OF voor vegetarische variant 200 gram witte bonen (uit blik)",
-        "key": "kipfilets of voor vegetarische variant 200 gram witte bonen (uit blik)",
-        "optional": false
+        "unit": "stuk",
+        "name": "kipfilet",
+        "key": "kipfilet",
+        "optional": false,
+        "alternatives": [
+          {
+            "raw": "200 gram witte bonen (uit blik)",
+            "amount": 200,
+            "unit": "gram",
+            "name": "witte bonen (uit blik)",
+            "key": "witte bonen (uit blik)",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "2 el shoarmakruiden (zonder toegevoegde suiker)",
