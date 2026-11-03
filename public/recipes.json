@@ -7222,8 +7222,8 @@
         "raw": "30 gram gepelde walnoten",
         "amount": 30,
         "unit": "gram",
-        "name": "gepelde walnoten",
-        "key": "gepelde walnoten",
+        "name": "walnoten",
+        "key": "walnoten",
         "optional": false
       },
       {
