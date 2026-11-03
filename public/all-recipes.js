@@ -1,6 +1,16 @@
 const status = document.querySelector("#status");
 const download = document.querySelector("#download");
 
+function attachSharedRecipeComponents(recipes) {
+  const template = recipes.find((recipe) => recipe.components?.some((component) => component.id === "lijnzaadcrackers"));
+  if (!template) return recipes;
+  const component = template.components.find((item) => item.id === "lijnzaadcrackers");
+  return recipes.map((recipe) => {
+    if (!/lijnzaad\s*cracker(?:s|\(s\))?/i.test(JSON.stringify(recipe)) || recipe.components?.some((item) => item.id === "lijnzaadcrackers")) return recipe;
+    return { ...recipe, components: [{ ...component, ingredients: component.ingredients.map((ingredient) => ({ ...ingredient })), equipment: [...(component.equipment || [])] }] };
+  });
+}
+
 function textLines(doc, value, x, y, width, lineHeight) {
   const lines = doc.splitTextToSize(String(value || ""), width);
   doc.text(lines, x, y);
@@ -136,7 +146,7 @@ async function prepare() {
     return;
   }
   const response = await fetch("/recipes.json");
-  const recipes = await response.json();
+  const recipes = attachSharedRecipeComponents(await response.json());
   const doc = await buildPdf(recipes);
   status.textContent = recipes.length + " recepten zijn verwerkt. Eén recept per pagina.";
   download.hidden = false;

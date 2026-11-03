@@ -54,6 +54,16 @@ function recipeById(id) {
   return state.recipes.find((recipe) => recipe.id === id);
 }
 
+function attachSharedRecipeComponents(recipes) {
+  const template = recipes.find((recipe) => recipe.components?.some((component) => component.id === "lijnzaadcrackers"));
+  if (!template) return recipes;
+  const component = template.components.find((item) => item.id === "lijnzaadcrackers");
+  return recipes.map((recipe) => {
+    if (!/lijnzaad\s*cracker(?:s|\(s\))?/i.test(JSON.stringify(recipe)) || recipe.components?.some((item) => item.id === "lijnzaadcrackers")) return recipe;
+    return { ...recipe, components: [{ ...component, ingredients: component.ingredients.map((ingredient) => ({ ...ingredient })), equipment: [...(component.equipment || [])] }] };
+  });
+}
+
 function selectedIds() {
   return new Set(Object.values(state.plan).filter(Boolean).map((item) => item.recipeId));
 }
@@ -320,19 +330,27 @@ function aggregateIngredientAlternatives(existing, incoming) {
 function aggregateIngredients() {
   const totals = new Map();
   const includedRecipeIds = new Set();
+  let flaxCrackerCount = 0;
+  let flaxCrackerCountUnknown = false;
+  let flaxCrackerComponent = null;
   state.shoppingWarnings = [];
   Object.values(state.plan).forEach((item) => {
     if (includedRecipeIds.has(item.recipeId)) return;
     includedRecipeIds.add(item.recipeId);
     const recipe = recipeById(item.recipeId);
-    const ingredients = [
-      ...(recipe?.ingredients || []),
-      ...(recipe?.components || []).flatMap((component) => [
-        ...(component.ingredients || []),
-        ...(component.equipment || []).map((name) => ({ raw: name, amount: null, unit: "", name, key: name, optional: false }))
-      ])
-    ];
+    const ingredients = recipe?.ingredients || [];
+    const component = recipe?.components?.find((item) => item.id === "lijnzaadcrackers");
+    if (component) flaxCrackerComponent ||= component;
     ingredients.forEach((ingredient) => {
+      const isFlaxCracker = /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(ingredient.raw || "")) ||
+        /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(ingredient.name || "")) ||
+        (ingredient.alternatives || []).some((alternative) => /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(alternative.raw || alternative.name || "")));
+      if (isFlaxCracker) {
+        const amount = ingredient.amount ?? ingredient.alternatives?.find((alternative) => /lijnzaad\s*cracker/i.test(String(alternative.name || "")))?.amount;
+        const parsed = parseAmountRange(amount);
+        if (parsed) flaxCrackerCount += parsed.max;
+        else flaxCrackerCountUnknown = true;
+      }
       const shoppingIngredient = normalizeShoppingIngredient(ingredient);
       if (shoppingIngredient.name === "water" || SHOPPING_LIST_EXCLUDED_NAMES.has(shoppingIngredient.name)) return;
       const key = normalizeShoppingName(shoppingIngredient.name);
@@ -363,6 +381,23 @@ function aggregateIngredients() {
       aggregateIngredientAlternatives(existing, shoppingIngredient);
     });
   });
+  if (flaxCrackerComponent && (flaxCrackerCount || flaxCrackerCountUnknown)) {
+    const batches = Math.max(1, Math.ceil((flaxCrackerCount || flaxCrackerComponent.yield) / flaxCrackerComponent.yield));
+    flaxCrackerComponent.ingredients.forEach((ingredient) => {
+      const scaled = { ...ingredient, amount: typeof ingredient.amount === "number" ? ingredient.amount * batches : ingredient.amount };
+      const shoppingIngredient = normalizeShoppingIngredient(scaled);
+      if (shoppingIngredient.name === "water" || SHOPPING_LIST_EXCLUDED_NAMES.has(shoppingIngredient.name)) return;
+      const key = normalizeShoppingName(shoppingIngredient.name);
+      const unit = normalizeShoppingUnit(shoppingIngredient.unit);
+      const mapKey = key + "::" + unit;
+      const existing = totals.get(mapKey);
+      if (!existing) totals.set(mapKey, copyShoppingIngredient(shoppingIngredient, unit));
+      else if (shoppingIngredient.amount != null && existing.amount != null) {
+        const combinedAmount = addIngredientAmounts(existing.amount, shoppingIngredient.amount);
+        if (combinedAmount !== null) existing.amount = combinedAmount;
+      }
+    });
+  }
   return [...totals.values()];
 }
 
@@ -760,7 +795,7 @@ downloadButton.addEventListener("click", createPdf);
 fetch("/recipes.json")
   .then((response) => response.ok ? response.json() : Promise.reject(new Error("recipes")))
   .then((recipes) => {
-    state.recipes = shuffleRecipes(recipes);
+    state.recipes = shuffleRecipes(attachSharedRecipeComponents(recipes));
     render();
   })
   .catch(() => {
