@@ -4256,12 +4256,22 @@
         "optional": false
       },
       {
-        "raw": "1 tl chilivlokken en/of rode peper",
+        "raw": "1 tl chilivlokken",
         "amount": 1,
         "unit": "tl",
-        "name": "chilivlokken en/of rode peper",
-        "key": "chilivlokken en/of rode peper",
-        "optional": true
+        "name": "chilivlokken",
+        "key": "chilivlokken",
+        "optional": true,
+        "alternatives": [
+          {
+            "raw": "1 tl rode peper",
+            "amount": 1,
+            "unit": "tl",
+            "name": "rode peper",
+            "key": "rode peper",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "150 gram zilvervliesrijst (niet voor deelnemers Keer Diabetes2 Om)",
@@ -4372,12 +4382,22 @@
         "optional": false
       },
       {
-        "raw": "1 tl chilivlokken en/of rode peper",
+        "raw": "1 tl chilivlokken",
         "amount": 1,
         "unit": "tl",
-        "name": "chilivlokken en/of rode peper",
-        "key": "chilivlokken en/of rode peper",
-        "optional": true
+        "name": "chilivlokken",
+        "key": "chilivlokken",
+        "optional": true,
+        "alternatives": [
+          {
+            "raw": "1 tl rode peper",
+            "amount": 1,
+            "unit": "tl",
+            "name": "rode peper",
+            "key": "rode peper",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "150 gram zilvervliesrijst (niet voor deelnemers Keer Diabetes2 Om)",
