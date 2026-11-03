@@ -541,6 +541,7 @@
     "title": "Groentemuffins",
     "category": "ontbijt",
     "portions": 4,
+    "days": 2,
     "multiDay": true,
     "ingredients": [
       {
@@ -606,16 +607,9 @@
         "name": "amandelschaafsel",
         "key": "amandelschaafsel",
         "optional": true
-      },
-      {
-        "raw": "muffinbakplaat voor 12 muffins",
-        "amount": null,
-        "unit": "",
-        "name": "muffinbakplaat voor 12 muffins",
-        "key": "muffinbakplaat voor 12 muffins",
-        "optional": false
       }
     ],
+    "equipment": ["muffinbakplaat voor 12 muffins"],
     "method": "Verwarm de oven op 180 graden. Vet de muffinbakplaat in met roomboter. Snijd de ui heel fijn en fruit deze zachtjes aan in een pan. Haal van het vuur en doe de ui in een kom. Was de broccoli en breek deze in heel kleine roosjes en voeg die bij de ui. Snijd de zongedroogde tomaatjes heel fijn en voeg dit ook toe aan de broccoli en ul. Voeg vervolgens de eieren, geraspte kaas, peper, (jozo)zout en Italiaanse kruiden toe. Optioneel kun je ook amandelschaafsel toevoegen. Schep het geheel door zodat alle ingredienten goed gemixt zijn. Verdeel het mengsel over de muffinbakplaat of de vormpjes. Bak de muffins gaar in 25-55 minuten. Prik met een houten satéstokje of vork in het midden van de muffin om te kijken of ze gaar zijn. Er mag geen nat mengsel aan het stokje blijven hangen. Serveer direct warm of laat ze afkoelen. Bewaar de muffins in een afgesloten bak in de koelkost. Tip: Maak eventueel een dubbele portie om te bewaren.",
     "harmonizerVersion": "1",
     "harmonized": false

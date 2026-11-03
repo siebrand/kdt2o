@@ -87,8 +87,8 @@ function isMultiDay(recipe) {
   return Boolean(recipe.multiDay);
 }
 
-function plannedDays(startDay) {
-  return [startDay, startDay + 2, startDay + 4].filter((day) => day < DAYS.length);
+function plannedDays(startDay, dayCount = 3) {
+  return Array.from({ length: dayCount }, (_, index) => startDay + index * 2).filter((day) => day < DAYS.length);
 }
 
 function renderPlanner() {
@@ -114,7 +114,7 @@ function renderPlanner() {
         slot.append(title, detail);
         if (recipe?.multiDay) {
           const schedule = document.createElement("small");
-          schedule.textContent = plannedDays(item.sourceDay).map((day) => shortDayName(day)).join(", ");
+          schedule.textContent = plannedDays(item.sourceDay, recipe.days).map((day) => shortDayName(day)).join(", ");
           slot.append(schedule);
         }
         if (recipe?.advanceNotice) {
@@ -204,9 +204,9 @@ function chooseRecipe(recipe) {
     return;
   }
   const startDay = state.activeSlot.day;
-  const days = plannedDays(startDay);
-  if (days.length !== 3) {
-    const validStartDays = DAYS.slice(0, DAYS.length - 4).map((_, index) => dayName(index)).join(", ");
+  const days = plannedDays(startDay, recipe.days);
+  if (days.length !== (recipe.days || 3)) {
+    const validStartDays = DAYS.slice(0, DAYS.length - ((recipe.days || 3) - 1) * 2).map((_, index) => dayName(index)).join(", ");
     showSelectionMessage(recipe.title + " kan alleen worden gestart op: " + validStartDays + ".");
     return;
   }
@@ -677,7 +677,7 @@ function drawWeeklyOverview(doc, margin, width) {
       if (recipe?.multiDay) {
         doc.setFontSize(7);
         doc.setTextColor(70, 80, 70);
-        const scheduledDays = Number.isInteger(item.sourceDay) ? plannedDays(item.sourceDay).map((day) => shortDayName(day)).join(", ") : "meerdere dagen";
+        const scheduledDays = Number.isInteger(item.sourceDay) ? plannedDays(item.sourceDay, recipe.days).map((day) => shortDayName(day)).join(", ") : "meerdere dagen";
         doc.text(scheduledDays, x + 2, y + rowHeight - 4);
         doc.setFontSize(9);
       }
