@@ -1,5 +1,7 @@
 const DAYS = ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag", "Zondag"];
 const MEALS = ["ontbijt", "lunch", "diner"];
+const PLAN_STORAGE_KEY = "kitano-weekplan";
+const PLAN_STORAGE_VERSION = 2;
 const state = { recipes: [], plan: loadPlan(), activeSlot: null, pendingRecipe: null };
 
 const planner = document.querySelector("#planner");
@@ -10,15 +12,16 @@ const downloadButton = document.querySelector("#download-pdf");
 
 function loadPlan() {
   try {
-    const saved = JSON.parse(localStorage.getItem("kitano-weekplan") || "{}");
-    return saved && typeof saved === "object" ? saved : {};
+    const saved = JSON.parse(localStorage.getItem(PLAN_STORAGE_KEY) || "null");
+    if (saved?.version !== PLAN_STORAGE_VERSION || !saved.plan || typeof saved.plan !== "object") return {};
+    return saved.plan;
   } catch {
     return {};
   }
 }
 
 function savePlan() {
-  localStorage.setItem("kitano-weekplan", JSON.stringify(state.plan));
+  localStorage.setItem(PLAN_STORAGE_KEY, JSON.stringify({ version: PLAN_STORAGE_VERSION, plan: state.plan }));
 }
 
 function planKey(day, meal) {
@@ -106,7 +109,9 @@ function renderOptions() {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "button";
-    button.textContent = "Toevoegen";
+    button.textContent = "+";
+    button.setAttribute("aria-label", "Toevoegen");
+    button.title = "Toevoegen";
     button.addEventListener("click", () => chooseRecipe(recipe));
     card.append(title, button);
     options.append(card);
