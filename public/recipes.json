@@ -183,11 +183,11 @@
         "optional": false
       },
       {
-        "raw": "100 g wortel ( 1 middelgrote wortel)",
+        "raw": "100 gram wortel",
         "amount": 100,
         "unit": "gram",
-        "name": "wortel ( 1 middelgrote wortel)",
-        "key": "wortel ( 1 middelgrote wortel)",
+        "name": "wortel",
+        "key": "wortel",
         "optional": false
       },
       {
@@ -1606,9 +1606,9 @@
         "optional": false
       },
       {
-        "raw": "1 wortel",
-        "amount": 1,
-        "unit": "",
+        "raw": "100 gram wortel",
+        "amount": 100,
+        "unit": "gram",
         "name": "wortel",
         "key": "wortel",
         "optional": false
@@ -3692,11 +3692,11 @@
         ]
       },
       {
-        "raw": "2 winterwortels",
+        "raw": "2 stuk winterwortel",
         "amount": 2,
-        "unit": "",
-        "name": "winterwortels",
-        "key": "winterwortels",
+        "unit": "stuk",
+        "name": "winterwortel",
+        "key": "winterwortel",
         "optional": false
       },
       {
@@ -4416,11 +4416,11 @@
         "optional": false
       },
       {
-        "raw": "3 wortelen",
-        "amount": 3,
-        "unit": "",
-        "name": "wortelen",
-        "key": "wortelen",
+        "raw": "300 gram wortel",
+        "amount": 300,
+        "unit": "gram",
+        "name": "wortel",
+        "key": "wortel",
         "optional": false
       },
       {
@@ -6535,11 +6535,11 @@
         "optional": false
       },
       {
-        "raw": "150 gram wortels",
+        "raw": "150 gram wortel",
         "amount": 150,
         "unit": "gram",
-        "name": "wortels",
-        "key": "wortels",
+        "name": "wortel",
+        "key": "wortel",
         "optional": false
       },
       {
