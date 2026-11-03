@@ -1860,10 +1860,10 @@
       },
       {
         "raw": "mespunt mosterd",
-        "amount": null,
-        "unit": "",
-        "name": "mespunt mosterd",
-        "key": "mespunt mosterd",
+        "amount": 0.25,
+        "unit": "tl",
+        "name": "mosterd",
+        "key": "mosterd",
         "optional": false
       },
       {
