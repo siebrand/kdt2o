@@ -46,7 +46,7 @@
     <text x="795" y="754" fill="#365f57" font-size="21">Beleg met avocado, hüttenkäse, komkommer en tomaat.</text>
   </g>
 
-  <g transform="translate(1170 490)">
+  <g transform="translate(1240 180) scale(.65)">
     <ellipse cx="100" cy="190" rx="250" ry="55" fill="#d6e3d4"/>
     <path d="M-70 112c45-102 185-125 282-55 46 33 64 76 49 113-35 83-244 78-331 18-22-15-17-45 0-76z" fill="#d8a261" stroke="#174c45" stroke-width="7"/>
     <path d="M-10 90c25-47 62-70 107-71 35 0 69 15 87 43-44 7-90 32-116 72-31-10-57-24-78-44z" fill="#83aa65" stroke="#174c45" stroke-width="7"/>
@@ -55,5 +55,5 @@
     <circle cx="165" cy="137" r="18" fill="#d9584d" stroke="#174c45" stroke-width="6"/>
     <g fill="#f7d59a"><ellipse cx="-25" cy="160" rx="6" ry="12"/><ellipse cx="48" cy="184" rx="6" ry="12"/><ellipse cx="118" cy="173" rx="6" ry="12"/><ellipse cx="202" cy="170" rx="6" ry="12"/></g>
   </g>
-  <text x="1180" y="790" fill="#174c45" font-family="Arial, sans-serif" font-size="22" font-weight="700">Knapperig · fris · vezelrijk</text>
+  <text x="1180" y="390" fill="#174c45" font-family="Arial, sans-serif" font-size="22" font-weight="700">Knapperig · fris · vezelrijk</text>
 </svg>
