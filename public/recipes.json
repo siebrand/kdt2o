@@ -1279,12 +1279,13 @@
         "optional": false
       },
       {
-        "raw": "1 a 2 vezelrijke of lijnzaad crackers.",
-        "amount": 1,
-        "unit": "",
-        "name": "a 2 vezelrijke of lijnzaad crackers",
-        "key": "a 2 vezelrijke of lijnzaad crackers",
-        "optional": false
+        "raw": "1-2 vezelrijke crackers",
+        "amount": "1-2",
+        "unit": "stuk",
+        "name": "vezelrijke cracker",
+        "key": "vezelrijke cracker",
+        "optional": false,
+        "alternatives": [{"raw": "1-2 lijnzaadcrackers", "amount": "1-2", "unit": "stuk", "name": "lijnzaadcracker", "key": "lijnzaadcracker", "optional": false}]
       },
       {
         "raw": "4 plakken (boeren) kaas",
@@ -2050,12 +2051,13 @@
         "optional": false
       },
       {
-        "raw": "200 ml slagroom of 100 gram crême fraiche",
+        "raw": "200 ml slagroom",
         "amount": 200,
         "unit": "ml",
-        "name": "slagroom of 100 gram crême fraiche",
-        "key": "slagroom of 100 gram crême fraiche",
-        "optional": false
+        "name": "slagroom",
+        "key": "slagroom",
+        "optional": false,
+        "alternatives": [{"raw": "100 gram crème fraîche", "amount": 100, "unit": "gram", "name": "crème fraîche", "key": "crème fraîche", "optional": false}]
       },
       {
         "raw": "zout en peper",
@@ -2182,12 +2184,13 @@
         "optional": false
       },
       {
-        "raw": "200 ml slagroom of 100 gram crême fraiche",
+        "raw": "200 ml slagroom",
         "amount": 200,
         "unit": "ml",
-        "name": "slagroom of 100 gram crême fraiche",
-        "key": "slagroom of 100 gram crême fraiche",
-        "optional": false
+        "name": "slagroom",
+        "key": "slagroom",
+        "optional": false,
+        "alternatives": [{"raw": "100 gram crème fraîche", "amount": 100, "unit": "gram", "name": "crème fraîche", "key": "crème fraîche", "optional": false}]
       },
       {
         "raw": "zout en peper",
@@ -2306,12 +2309,13 @@
         "optional": false
       },
       {
-        "raw": "200 ml slagroom of 100 gram creme fraiche",
+        "raw": "200 ml slagroom",
         "amount": 200,
         "unit": "ml",
-        "name": "slagroom of 100 gram creme fraiche",
-        "key": "slagroom of 100 gram creme fraiche",
-        "optional": false
+        "name": "slagroom",
+        "key": "slagroom",
+        "optional": false,
+        "alternatives": [{"raw": "100 gram crème fraîche", "amount": 100, "unit": "gram", "name": "crème fraîche", "key": "crème fraîche", "optional": false}]
       },
       {
         "raw": "zout en peper",
@@ -3408,12 +3412,13 @@
         "optional": false
       },
       {
-        "raw": "kerrie of garam masala kruiden naar keuze",
+        "raw": "kerrie",
         "amount": null,
         "unit": "",
-        "name": "kerrie of garam masala kruiden naar keuze",
-        "key": "kerrie of garam masala kruiden naar keuze",
-        "optional": true
+        "name": "kerrie",
+        "key": "kerrie",
+        "optional": true,
+        "alternatives": [{"raw": "garam masala kruiden", "amount": null, "unit": "", "name": "garam masala kruiden", "key": "garam masala kruiden", "optional": true}]
       }
     ],
     "method": "Snijd de kipfilet in stukjes en bestrooi met (jozo) zout. Braad deze aan in een koekenpan met wat olijfolie. Kook de quinoa gaar zoals aangegeven op de verpakking. Meng de kipfilet door de quinoa. Lepel een avocado uit en meng deze ook door het kip-quinoa mengsel. Maak vervolgens de dressing door de mayonaise, yoghurt en peper en het citroensap en (jozo)zout door elkaar te roeren. Voeg de dressing toe aan het mengsel. Leg een hand bladsla op een bord of in een meeneembakje en leg het kip-quinoa mengsel erop. TIP - kruid de kip met kerrie of garam masala kruiden voor extra smaak!",
@@ -3588,12 +3593,13 @@
         "optional": false
       },
       {
-        "raw": "1800 gram tomaten of 4 blikken gepelde tomaten",
+        "raw": "1800 gram tomaten",
         "amount": 1800,
         "unit": "gram",
-        "name": "tomaten of 4 blikken gepelde tomaten",
-        "key": "tomaten of 4 blikken gepelde tomaten",
-        "optional": false
+        "name": "tomaten",
+        "key": "tomaten",
+        "optional": false,
+        "alternatives": [{"raw": "4 blikken gepelde tomaten", "amount": 4, "unit": "blik", "name": "gepelde tomaten", "key": "gepelde tomaten", "optional": false}]
       },
       {
         "raw": "2 winterwortels",
@@ -3704,12 +3710,13 @@
         "optional": false
       },
       {
-        "raw": "1 blikje tonijn in olijfolie of water (150 gram)",
+        "raw": "1 blikje tonijn in olijfolie (150 gram)",
         "amount": 1,
         "unit": "blik",
-        "name": "tonijn in olijfolie of water (150 gram)",
-        "key": "tonijn in olijfolie of water (150 gram)",
-        "optional": false
+        "name": "tonijn in olijfolie (150 gram)",
+        "key": "tonijn in olijfolie (150 gram)",
+        "optional": false,
+        "alternatives": [{"raw": "1 blikje tonijn in water (150 gram)", "amount": 1, "unit": "blik", "name": "tonijn in water (150 gram)", "key": "tonijn in water (150 gram)", "optional": false}]
       },
       {
         "raw": "175 gram kikkererwten",
@@ -3736,12 +3743,13 @@
         "optional": false
       },
       {
-        "raw": "1 el mayonaise of yoghurt",
+        "raw": "1 el mayonaise",
         "amount": 1,
         "unit": "el",
-        "name": "mayonaise of yoghurt",
-        "key": "mayonaise of yoghurt",
-        "optional": true
+        "name": "mayonaise",
+        "key": "mayonaise",
+        "optional": true,
+        "alternatives": [{"raw": "1 el yoghurt", "amount": 1, "unit": "el", "name": "yoghurt", "key": "yoghurt", "optional": true}]
       },
       {
         "raw": "20 gram groene (gemengde) bladsla",
@@ -3768,12 +3776,13 @@
         "optional": true
       },
       {
-        "raw": "1 el mayonaise of yoghurt",
+        "raw": "1 el mayonaise",
         "amount": 1,
         "unit": "el",
-        "name": "mayonaise of yoghurt",
-        "key": "mayonaise of yoghurt",
-        "optional": true
+        "name": "mayonaise",
+        "key": "mayonaise",
+        "optional": true,
+        "alternatives": [{"raw": "1 el yoghurt", "amount": 1, "unit": "el", "name": "yoghurt", "key": "yoghurt", "optional": true}]
       },
       {
         "raw": "1 el dille",
@@ -4688,12 +4697,13 @@
         "optional": false
       },
       {
-        "raw": "roomboter of extra vierge olijfolie",
+        "raw": "roomboter",
         "amount": null,
         "unit": "",
-        "name": "roomboter of extra vierge olijfolie",
-        "key": "roomboter of extra vierge olijfolie",
-        "optional": false
+        "name": "roomboter",
+        "key": "roomboter",
+        "optional": false,
+        "alternatives": [{"raw": "extra vierge olijfolie", "amount": null, "unit": "", "name": "extra vierge olijfolie", "key": "extra vierge olijfolie", "optional": false}]
       },
       {
         "raw": "200 gram spinazie",
@@ -4973,12 +4983,13 @@
         "optional": false
       },
       {
-        "raw": "50 gram verse andijvie (of spinazie of boerenkool)",
+        "raw": "50 gram andijvie",
         "amount": 50,
         "unit": "gram",
-        "name": "verse andijvie (of spinazie of boerenkool)",
-        "key": "verse andijvie (of spinazie of boerenkool)",
-        "optional": false
+        "name": "andijvie",
+        "key": "andijvie",
+        "optional": false,
+        "alternatives": [{"raw": "50 gram spinazie", "amount": 50, "unit": "gram", "name": "spinazie", "key": "spinazie", "optional": false}, {"raw": "50 gram boerenkool", "amount": 50, "unit": "gram", "name": "boerenkool", "key": "boerenkool", "optional": false}]
       },
       {
         "raw": "100 gram erwten",
@@ -5489,12 +5500,13 @@
         "optional": false
       },
       {
-        "raw": "1 tl gember of stukje verse gember",
+        "raw": "1 tl gember",
         "amount": 1,
         "unit": "tl",
-        "name": "gember of stukje verse gember",
-        "key": "gember of stukje verse gember",
-        "optional": false
+        "name": "gember",
+        "key": "gember",
+        "optional": false,
+        "alternatives": [{"raw": "1 stukje verse gember", "amount": 1, "unit": "stuk", "name": "verse gember", "key": "verse gember", "optional": false}]
       },
       {
         "raw": "zout en peper",
@@ -6059,12 +6071,13 @@
         "optional": false
       },
       {
-        "raw": "50 gram kaas (boeren/ blauw of geiten)",
+        "raw": "50 gram boerenkaas",
         "amount": 50,
         "unit": "gram",
-        "name": "kaas (boeren/ blauw of geiten)",
-        "key": "kaas (boeren/ blauw of geiten)",
-        "optional": false
+        "name": "boerenkaas",
+        "key": "boerenkaas",
+        "optional": false,
+        "alternatives": [{"raw": "50 gram blauwe kaas", "amount": 50, "unit": "gram", "name": "blauwe kaas", "key": "blauwe kaas", "optional": false}, {"raw": "50 gram geitenkaas", "amount": 50, "unit": "gram", "name": "geitenkaas", "key": "geitenkaas", "optional": false}]
       },
       {
         "raw": "250 gram half om half gehakt",
@@ -6099,12 +6112,13 @@
         "optional": false
       },
       {
-        "raw": "75 gram kaas (boeren/ blauw of geiten)",
+        "raw": "75 gram boerenkaas",
         "amount": 75,
         "unit": "gram",
-        "name": "kaas (boeren/ blauw of geiten)",
-        "key": "kaas (boeren/ blauw of geiten)",
-        "optional": false
+        "name": "boerenkaas",
+        "key": "boerenkaas",
+        "optional": false,
+        "alternatives": [{"raw": "75 gram blauwe kaas", "amount": 75, "unit": "gram", "name": "blauwe kaas", "key": "blauwe kaas", "optional": false}, {"raw": "75 gram geitenkaas", "amount": 75, "unit": "gram", "name": "geitenkaas", "key": "geitenkaas", "optional": false}]
       },
       {
         "raw": "1 tl nootmuskaat",
@@ -6753,12 +6767,13 @@
         "optional": false
       },
       {
-        "raw": "2 kleine paksoi of 200 gram Chinese kool",
+        "raw": "2 kleine paksoi",
         "amount": 2,
-        "unit": "",
-        "name": "kleine paksoi of 200 gram Chinese kool",
-        "key": "kleine paksoi of 200 gram chinese kool",
-        "optional": false
+        "unit": "stuk",
+        "name": "kleine paksoi",
+        "key": "kleine paksoi",
+        "optional": false,
+        "alternatives": [{"raw": "200 gram Chinese kool", "amount": 200, "unit": "gram", "name": "Chinese kool", "key": "Chinese kool", "optional": false}]
       },
       {
         "raw": "100g taugé",
@@ -6853,12 +6868,13 @@
         "optional": false
       },
       {
-        "raw": "1/2 blokje groente- of visbouillon met 100-150 ml water",
+        "raw": "1/2 groentebouillonblokje",
         "amount": 0.5,
         "unit": "stuk",
-        "name": "groente- of visbouillonblokje",
-        "key": "groente- of visbouillonblokje",
-        "optional": false
+        "name": "groentebouillonblokje",
+        "key": "groentebouillonblokje",
+        "optional": false,
+        "alternatives": [{"raw": "1/2 visbouillonblokje", "amount": 0.5, "unit": "stuk", "name": "visbouillonblokje", "key": "visbouillonblokje", "optional": false}]
       },
       {
         "raw": "400 gram zalmmoot",
