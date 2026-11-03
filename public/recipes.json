@@ -764,15 +764,17 @@
         "unit": "gram",
         "name": "havermout",
         "key": "havermout",
-        "optional": false
-      },
-      {
-        "raw": "200 gram amandelmeel (alternatief)",
-        "amount": 200,
-        "unit": "gram",
-        "name": "amandelmeel",
-        "key": "amandelmeel",
-        "optional": true
+        "optional": false,
+        "alternatives": [
+          {
+            "raw": "200 gram amandelmeel",
+            "amount": 200,
+            "unit": "gram",
+            "name": "amandelmeel",
+            "key": "amandelmeel",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "250 ml volle kwark",
