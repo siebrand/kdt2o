@@ -13,6 +13,7 @@ const shoppingListButton = document.querySelector("#show-shopping-list");
 const shoppingListView = document.querySelector("#shopping-list-view");
 const shoppingListItems = document.querySelector("#shopping-list-items");
 const notifications = document.querySelector("#notifications");
+const recipePanel = document.querySelector("#recipe-panel");
 
 function loadPlan() {
   try {
@@ -118,6 +119,12 @@ function renderPlanner() {
 }
 
 function renderOptions() {
+  if (!state.activeSlot) {
+    recipePanel.hidden = true;
+    options.replaceChildren();
+    return;
+  }
+  recipePanel.hidden = false;
   const query = search.value.trim().toLocaleLowerCase("nl");
   const selected = selectedIds();
   options.replaceChildren();
@@ -126,10 +133,6 @@ function renderOptions() {
     const matchesSearch = !query || recipe.title.toLocaleLowerCase("nl").includes(query);
     return matchesMeal && !selected.has(recipe.id) && matchesSearch;
   });
-  if (!state.activeSlot) {
-    options.append(Object.assign(document.createElement("p"), { className: "muted", textContent: "Klik eerst op een leeg moment in de planning." }));
-    return;
-  }
   if (!visible.length) {
     options.append(Object.assign(document.createElement("p"), { className: "muted", textContent: "Geen recepten gevonden." }));
     return;
