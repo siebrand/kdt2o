@@ -652,9 +652,9 @@
         "optional": false
       },
       {
-        "raw": "400 ml hüttenkäse",
+        "raw": "400 gram hüttenkäse",
         "amount": 400,
-        "unit": "ml",
+        "unit": "gram",
         "name": "hüttenkäse",
         "key": "hüttenkäse",
         "optional": false
@@ -986,11 +986,11 @@
         "optional": false
       },
       {
-        "raw": "2 mandarijnen",
+        "raw": "2 stuks mandarijn",
         "amount": 2,
-        "unit": "",
-        "name": "mandarijnen",
-        "key": "mandarijnen",
+        "unit": "stuk",
+        "name": "mandarijn",
+        "key": "mandarijn",
         "optional": false
       },
       {
@@ -1874,11 +1874,11 @@
         "optional": false
       },
       {
-        "raw": "2 augurken",
+        "raw": "2 stuks augurk",
         "amount": 2,
-        "unit": "",
-        "name": "augurken",
-        "key": "augurken",
+        "unit": "stuk",
+        "name": "augurk",
+        "key": "augurk",
         "optional": false
       },
       {
@@ -3460,9 +3460,9 @@
         "optional": false
       },
       {
-        "raw": "2 el mayonaise",
-        "amount": 2,
-        "unit": "el",
+        "raw": "30 ml mayonaise",
+        "amount": 30,
+        "unit": "ml",
         "name": "mayonaise",
         "key": "mayonaise",
         "optional": false
@@ -3546,9 +3546,9 @@
         "optional": false
       },
       {
-        "raw": "2 el mayonaise",
-        "amount": 2,
-        "unit": "el",
+        "raw": "30 ml mayonaise",
+        "amount": 30,
+        "unit": "ml",
         "name": "mayonaise",
         "key": "mayonaise",
         "optional": false
@@ -3858,9 +3858,9 @@
         "optional": false
       },
       {
-        "raw": "1 el mayonaise",
-        "amount": 1,
-        "unit": "el",
+        "raw": "15 ml mayonaise",
+        "amount": 15,
+        "unit": "ml",
         "name": "mayonaise",
         "key": "mayonaise",
         "optional": true,
@@ -3891,9 +3891,9 @@
         "optional": true
       },
       {
-        "raw": "1 el mayonaise",
-        "amount": 1,
-        "unit": "el",
+        "raw": "15 ml mayonaise",
+        "amount": 15,
+        "unit": "ml",
         "name": "mayonaise",
         "key": "mayonaise",
         "optional": true,
@@ -3944,9 +3944,9 @@
         "optional": false
       },
       {
-        "raw": "2 el mayonaise",
-        "amount": 2,
-        "unit": "el",
+        "raw": "30 ml mayonaise",
+        "amount": 30,
+        "unit": "ml",
         "name": "mayonaise",
         "key": "mayonaise",
         "optional": false
@@ -4064,11 +4064,11 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "2 aubergines",
+        "raw": "2 stuks aubergine",
         "amount": 2,
-        "unit": "",
-        "name": "aubergines",
-        "key": "aubergines",
+        "unit": "stuk",
+        "name": "aubergine",
+        "key": "aubergine",
         "optional": false
       },
       {
@@ -4080,10 +4080,10 @@
         "optional": false
       },
       {
-        "raw": "gedroogde italiaanse kruiden",
-        "amount": null,
-        "unit": "",
-        "name": "gedroogde italiaanse kruiden",
+        "raw": "1 el gedroogde Italiaanse kruiden",
+        "amount": 1,
+        "unit": "el",
+        "name": "gedroogde Italiaanse kruiden",
         "key": "gedroogde italiaanse kruiden",
         "optional": false
       },
@@ -4096,11 +4096,11 @@
         "optional": false
       },
       {
-        "raw": "2 bollen mozarella",
+        "raw": "2 bollen mozzarella",
         "amount": 2,
         "unit": "bol",
-        "name": "mozarella",
-        "key": "mozarella",
+        "name": "mozzarella",
+        "key": "mozzarella",
         "optional": false
       },
       {
@@ -4991,11 +4991,11 @@
         "optional": false
       },
       {
-        "raw": "1 blikje mais ( 150 gram)",
+        "raw": "1 blikje mais (150 gram)",
         "amount": 1,
         "unit": "blik",
-        "name": "mais ( 150 gram)",
-        "key": "mais ( 150 gram)",
+        "name": "mais (150 gram)",
+        "key": "mais (150 gram)",
         "optional": false
       },
       {
@@ -5093,9 +5093,9 @@
         ]
       },
       {
-        "raw": "2 el mayonaise",
-        "amount": 2,
-        "unit": "el",
+        "raw": "30 ml mayonaise",
+        "amount": 30,
+        "unit": "ml",
         "name": "mayonaise",
         "key": "mayonaise",
         "optional": false
@@ -5917,11 +5917,11 @@
         "optional": false
       },
       {
-        "raw": "% bos verse koriander",
-        "amount": null,
-        "unit": "",
-        "name": "% bos verse koriander",
-        "key": "% bos verse koriander",
+        "raw": "1/2 bosje verse koriander",
+        "amount": 0.5,
+        "unit": "bosje",
+        "name": "verse koriander",
+        "key": "verse koriander",
         "optional": false
       }
     ],
@@ -5945,9 +5945,9 @@
         "optional": false
       },
       {
-        "raw": "2 el mayonaise",
-        "amount": 2,
-        "unit": "el",
+        "raw": "30 ml mayonaise",
+        "amount": 30,
+        "unit": "ml",
         "name": "mayonaise",
         "key": "mayonaise",
         "optional": false
@@ -6471,11 +6471,11 @@
         "optional": false
       },
       {
-        "raw": "1 el volle mayonaise",
-        "amount": 1,
-        "unit": "el",
-        "name": "volle mayonaise",
-        "key": "volle mayonaise",
+        "raw": "15 ml mayonaise",
+        "amount": 15,
+        "unit": "ml",
+        "name": "mayonaise",
+        "key": "mayonaise",
         "optional": false
       },
       {
@@ -7077,11 +7077,11 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "2 venkels",
+        "raw": "2 stuks venkel",
         "amount": 2,
-        "unit": "",
-        "name": "venkels",
-        "key": "venkels",
+        "unit": "stuk",
+        "name": "venkel",
+        "key": "venkel",
         "optional": false
       },
       {
