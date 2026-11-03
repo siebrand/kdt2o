@@ -199,12 +199,13 @@
         "optional": false
       },
       {
-        "raw": "1 el roomboter of olijfolie",
+        "raw": "1 el roomboter",
         "amount": 1,
         "unit": "el",
-        "name": "roomboter of olijfolie",
-        "key": "roomboter of olijfolie",
-        "optional": false
+        "name": "roomboter",
+        "key": "roomboter",
+        "optional": false,
+        "alternatives": [{"raw": "1 el olijfolie", "amount": 1, "unit": "el", "name": "olijfolie", "key": "olijfolie", "optional": false}]
       },
       {
         "raw": "2 el noten naar keuze",
@@ -215,12 +216,13 @@
         "optional": false
       },
       {
-        "raw": "200 gram frambozen of aardbeien (diepvries)",
+        "raw": "200 gram frambozen (diepvries)",
         "amount": 200,
         "unit": "gram",
-        "name": "frambozen of aardbeien (diepvries)",
-        "key": "frambozen of aardbeien (diepvries)",
-        "optional": false
+        "name": "frambozen (diepvries)",
+        "key": "frambozen (diepvries)",
+        "optional": false,
+        "alternatives": [{"raw": "200 gram aardbeien (diepvries)", "amount": 200, "unit": "gram", "name": "aardbeien (diepvries)", "key": "aardbeien (diepvries)", "optional": false}]
       },
       {
         "raw": "kaneel",
@@ -243,12 +245,13 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "200 gram blauw- of rood fruit (diepvries)",
+        "raw": "200 gram blauw fruit (diepvries)",
         "amount": 200,
         "unit": "gram",
-        "name": "blauw- of rood fruit (diepvries)",
-        "key": "blauw- of rood fruit (diepvries)",
-        "optional": false
+        "name": "blauw fruit (diepvries)",
+        "key": "blauw fruit (diepvries)",
+        "optional": false,
+        "alternatives": [{"raw": "200 gram rood fruit (diepvries)", "amount": 200, "unit": "gram", "name": "rood fruit (diepvries)", "key": "rood fruit (diepvries)", "optional": false}]
       },
       {
         "raw": "50 gram chiazaad",
@@ -267,12 +270,13 @@
         "optional": false
       },
       {
-        "raw": "60 gram walnoten of geroosterd amandelschaafsel",
+        "raw": "60 gram walnoten",
         "amount": 60,
         "unit": "gram",
-        "name": "walnoten of geroosterd amandelschaafsel",
-        "key": "walnoten of geroosterd amandelschaafsel",
-        "optional": false
+        "name": "walnoten",
+        "key": "walnoten",
+        "optional": false,
+        "alternatives": [{"raw": "60 gram geroosterd amandelschaafsel", "amount": 60, "unit": "gram", "name": "geroosterd amandelschaafsel", "key": "geroosterd amandelschaafsel", "optional": false}]
       }
     ],
     "method": "Indien nodig snijd het fruit in kleine stukjes en meng dit met de chiazaad en griekse yoghurt. Zet dit afgedekt een nacht in de koelkast. Strooi de volgende ochtend een handje walnoten of geroosterd amandelschaafsel over de pudding heen.",
@@ -451,12 +455,13 @@
         "optional": false
       },
       {
-        "raw": "2 vezelrijke crackers of lijnzaadcrackers",
+        "raw": "2 vezelrijke crackers",
         "amount": 2,
-        "unit": "",
-        "name": "vezelrijke crackers of lijnzaadcrackers",
-        "key": "vezelrijke crackers of lijnzaadcrackers",
-        "optional": false
+        "unit": "stuk",
+        "name": "vezelrijke cracker",
+        "key": "vezelrijke cracker",
+        "optional": false,
+        "alternatives": [{"raw": "2 lijnzaadcrackers", "amount": 2, "unit": "stuk", "name": "lijnzaadcracker", "key": "lijnzaadcracker", "optional": false}]
       },
       {
         "raw": "1 paprika of andere groenten die je nog in huis hebt.",
@@ -973,12 +978,13 @@
         "optional": false
       },
       {
-        "raw": "1 kleine rode of groene paprika",
+        "raw": "1 kleine rode paprika",
         "amount": 1,
-        "unit": "",
-        "name": "kleine rode of groene paprika",
-        "key": "kleine rode of groene paprika",
-        "optional": false
+        "unit": "stuk",
+        "name": "kleine rode paprika",
+        "key": "kleine rode paprika",
+        "optional": false,
+        "alternatives": [{"raw": "1 kleine groene paprika", "amount": 1, "unit": "stuk", "name": "kleine groene paprika", "key": "kleine groene paprika", "optional": false}]
       },
       {
         "raw": "2 tomaten",
@@ -1661,12 +1667,13 @@
         "optional": false
       },
       {
-        "raw": "10 zwarte of groene olijven",
+        "raw": "10 zwarte olijven",
         "amount": 10,
-        "unit": "",
-        "name": "zwarte of groene olijven",
-        "key": "zwarte of groene olijven",
-        "optional": false
+        "unit": "stuk",
+        "name": "zwarte olijf",
+        "key": "zwarte olijf",
+        "optional": false,
+        "alternatives": [{"raw": "10 groene olijven", "amount": 10, "unit": "stuk", "name": "groene olijf", "key": "groene olijf", "optional": false}]
       },
       {
         "raw": "4 el pitten en zaden (pompoen-/ zonnebloem-/ pijnboompitten/ etc.)",
@@ -2581,12 +2588,13 @@
         "optional": false
       },
       {
-        "raw": "2 vezelrijke crackers of lijnzaadcrackers",
+        "raw": "2 vezelrijke crackers",
         "amount": 2,
-        "unit": "",
-        "name": "vezelrijke crackers of lijnzaadcrackers",
-        "key": "vezelrijke crackers of lijnzaadcrackers",
-        "optional": false
+        "unit": "stuk",
+        "name": "vezelrijke cracker",
+        "key": "vezelrijke cracker",
+        "optional": false,
+        "alternatives": [{"raw": "2 lijnzaadcrackers", "amount": 2, "unit": "stuk", "name": "lijnzaadcracker", "key": "lijnzaadcracker", "optional": false}]
       },
       {
         "raw": "zout en peper",
@@ -2783,12 +2791,13 @@
         ]
       },
       {
-        "raw": "75 gram geitenkaas of witte kaas",
+        "raw": "75 gram geitenkaas",
         "amount": 75,
         "unit": "gram",
-        "name": "geitenkaas of witte kaas",
-        "key": "geitenkaas of witte kaas",
-        "optional": false
+        "name": "geitenkaas",
+        "key": "geitenkaas",
+        "optional": false,
+        "alternatives": [{"raw": "75 gram witte kaas", "amount": 75, "unit": "gram", "name": "witte kaas", "key": "witte kaas", "optional": false}]
       },
       {
         "raw": "peper en zout",
@@ -3979,12 +3988,13 @@
         "optional": false
       },
       {
-        "raw": "1 rode of witte ui",
+        "raw": "1 rode ui",
         "amount": 1,
-        "unit": "",
-        "name": "rode of witte ui",
-        "key": "rode of witte ui",
-        "optional": false
+        "unit": "stuk",
+        "name": "rode ui",
+        "key": "rode ui",
+        "optional": false,
+        "alternatives": [{"raw": "1 witte ui", "amount": 1, "unit": "stuk", "name": "witte ui", "key": "witte ui", "optional": false}]
       },
       {
         "raw": "1 teentje knoflook",
@@ -4544,12 +4554,13 @@
         "optional": false
       },
       {
-        "raw": "300 gram grote garnalen (diepvries of vers)",
+        "raw": "300 gram grote garnalen (diepvries)",
         "amount": 300,
         "unit": "gram",
-        "name": "grote garnalen (diepvries of vers)",
-        "key": "grote garnalen (diepvries of vers)",
-        "optional": false
+        "name": "grote garnalen (diepvries)",
+        "key": "grote garnalen (diepvries)",
+        "optional": false,
+        "alternatives": [{"raw": "300 gram grote garnalen (vers)", "amount": 300, "unit": "gram", "name": "grote garnalen (vers)", "key": "grote garnalen (vers)", "optional": false}]
       },
       {
         "raw": "1 teentje knoflook",
@@ -4660,12 +4671,13 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "200 gram snijbonen (vers of diepvries)",
+        "raw": "200 gram snijbonen",
         "amount": 200,
         "unit": "gram",
-        "name": "snijbonen (vers of diepvries)",
-        "key": "snijbonen (vers of diepvries)",
-        "optional": false
+        "name": "snijbonen",
+        "key": "snijbonen",
+        "optional": false,
+        "alternatives": [{"raw": "200 gram snijbonen (diepvries)", "amount": 200, "unit": "gram", "name": "snijbonen (diepvries)", "key": "snijbonen (diepvries)", "optional": false}]
       },
       {
         "raw": "200 gram kip(dij)filet",
@@ -4724,12 +4736,13 @@
         "optional": false
       },
       {
-        "raw": "4 el Parmezaanse of boerenkaas",
+        "raw": "4 el Parmezaanse kaas",
         "amount": 4,
         "unit": "el",
-        "name": "Parmezaanse of boerenkaas",
-        "key": "parmezaanse of boerenkaas",
-        "optional": false
+        "name": "Parmezaanse kaas",
+        "key": "Parmezaanse kaas",
+        "optional": false,
+        "alternatives": [{"raw": "4 el boerenkaas", "amount": 4, "unit": "el", "name": "boerenkaas", "key": "boerenkaas", "optional": false}]
       }
     ],
     "method": "Snijd de snijbonen in stukjes en kook of stoom deze bijna gaar. Snijd de kipfilet in stukjes en bak deze in ongezouten roomboter of olijfolie. Voeg vervolgens de spinazie en courgette sliertjes toe aan de kipfilet. Snijd ongeveer de helft van de cherrytomaatjes doormidden en bak deze nog kort mee. Voeg tot slot de gekookte snijbonen en de pesto toe aan de pan en eventueel wat zout en peper, meng alles goed. Voeg op het einde de overige tomaatjes en wat geraspte kaas toe. TIP - Je kunt de snijbonen ook in kleine sliertjes (net als de courgette) snijden! TIP - In plaats van kipfilet ook lekker met speklapjes",
