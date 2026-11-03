@@ -25,12 +25,13 @@
       <div class="actions">
         <button id="clear-plan" class="button button-secondary" type="button">Planning wissen</button>
         <button id="show-shopping-list" class="button" type="button" disabled>Afronden en boodschappenlijst bekijken</button>
-        <button id="download-pdf" class="button button-secondary" type="button" disabled>PDF downloaden</button>
       </div>
     </section>
     <section id="planner" class="planner" aria-label="Weekplanning"></section>
     <section id="shopping-list-view" class="shopping-list-view" aria-labelledby="shopping-list-title" hidden>
       <h2 id="shopping-list-title">Boodschappenlijst</h2>
+      <p>Controleer de lijst en download daarna de PDF voor je volledige weekplanning.</p>
+      <button id="download-pdf" class="button" type="button" disabled>PDF downloaden</button>
       <div id="shopping-list-items"></div>
     </section>
     <section class="recipe-panel" aria-labelledby="recipe-title">
@@ -41,5 +42,6 @@
       <div id="recipe-options" class="recipe-options"></div>
     </section>
   </main>
+  <div id="notifications" class="notifications" aria-live="assertive" aria-atomic="true"></div>
 </body>
 </html>

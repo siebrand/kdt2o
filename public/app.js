@@ -12,6 +12,7 @@ const downloadButton = document.querySelector("#download-pdf");
 const shoppingListButton = document.querySelector("#show-shopping-list");
 const shoppingListView = document.querySelector("#shopping-list-view");
 const shoppingListItems = document.querySelector("#shopping-list-items");
+const notifications = document.querySelector("#notifications");
 
 function loadPlan() {
   try {
@@ -25,6 +26,10 @@ function loadPlan() {
 
 function savePlan() {
   localStorage.setItem(PLAN_STORAGE_KEY, JSON.stringify({ version: PLAN_STORAGE_VERSION, plan: state.plan }));
+}
+
+function dayName(dayIndex) {
+  return DAYS[dayIndex].toLocaleLowerCase("nl");
 }
 
 function planKey(day, meal) {
@@ -79,7 +84,7 @@ function renderPlanner() {
         slot.append(title, detail);
         if (recipe?.multiDay) {
           const schedule = document.createElement("small");
-          schedule.textContent = "Meerdaags: " + plannedDays(item.sourceDay).map((day) => DAYS[day]).join(", ");
+          schedule.textContent = "Meerdaags: " + plannedDays(item.sourceDay).map((day) => dayName(day)).join(", ");
           slot.append(schedule);
         }
         if (recipe?.advanceNotice) {
@@ -144,11 +149,12 @@ function renderOptions() {
 
 function showSelectionMessage(message) {
   status.textContent = message;
-  const notice = document.createElement("p");
-  notice.className = "muted";
+  const notice = document.createElement("div");
+  notice.className = "notification notification-warning";
   notice.setAttribute("role", "alert");
   notice.textContent = message;
-  options.replaceChildren(notice);
+  notifications.replaceChildren(notice);
+  window.setTimeout(() => notice.remove(), 7000);
 }
 
 function chooseRecipe(recipe) {
@@ -161,7 +167,7 @@ function chooseRecipe(recipe) {
   const startDay = state.activeSlot.day;
   const days = plannedDays(startDay);
   if (days.length !== 3) {
-    const validStartDays = DAYS.slice(0, DAYS.length - 4).join(", ");
+    const validStartDays = DAYS.slice(0, DAYS.length - 4).map((_, index) => dayName(index)).join(", ");
     showSelectionMessage(recipe.title + " kan alleen worden gestart op: " + validStartDays + ".");
     return;
   }
@@ -371,7 +377,7 @@ function drawWeeklyOverview(doc, margin, width) {
       if (recipe?.multiDay) {
         doc.setFontSize(7);
         doc.setTextColor(70, 80, 70);
-        const scheduledDays = Number.isInteger(item.sourceDay) ? plannedDays(item.sourceDay).map((day) => DAYS[day]).join(", ") : "meerdere dagen";
+        const scheduledDays = Number.isInteger(item.sourceDay) ? plannedDays(item.sourceDay).map((day) => dayName(day)).join(", ") : "meerdere dagen";
         doc.text("Meerdaags: " + scheduledDays, x + 2, y + rowHeight - 4);
         doc.setFontSize(9);
       }
@@ -426,9 +432,9 @@ function createPdf() {
       doc.text(recipe.title, margin, 24);
       doc.setFontSize(10);
       doc.setTextColor(70, 80, 70);
-      doc.text(day + " · " + meal + " · " + recipe.portions + " personen", margin, 33);
+      doc.text(dayName(dayIndex) + " · " + meal + " · " + recipe.portions + " personen", margin, 33);
       y = 46;
-      y = addWrapped(doc, "Gepland voor: " + day, margin, y, width - margin * 2);
+      y = addWrapped(doc, "Gepland voor: " + dayName(dayIndex), margin, y, width - margin * 2);
       y += 5;
       doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Ingrediënten", margin, y); y += 7;
       doc.setFontSize(10); doc.setTextColor(40, 45, 40);
