@@ -26,12 +26,19 @@ function textLines(doc, value, x, y, width, lineHeight) {
   return y + lines.length * lineHeight;
 }
 
+function isSingularMeasure(value) {
+  const fraction = String(value).replace(",", ".").match(/^(\d+)\/(\d+)$/);
+  if (fraction) return Number(fraction[1]) <= Number(fraction[2]);
+  const number = Number(String(value).replace(",", "."));
+  return Number.isFinite(number) && number <= 1;
+}
+
 function ingredientText(ingredient) {
   const formatTablespoons = (value) => String(value || "")
     .replace(/(\d+(?:[.,]\d+)?)\s+of\s+meer\s+(?:el|eetlepel|eetlepels)\b/gi, "$1 of meer eetlepels")
     .replace(/(\d+(?:[.,]\d+)?)\s+of\s+meer\s+(?:tl|theelepel|theelepels)\b/gi, "$1 of meer theelepels")
-    .replace(/(\d+(?:[.,]\d+)?)\s+(?:el|eetlepel|eetlepels)\b/gi, (_, amount) => `${amount} ${amount === "1" ? "eetlepel" : "eetlepels"}`)
-    .replace(/(\d+(?:[.,]\d+)?)\s+(?:tl|theelepel|theelepels)\b/gi, (_, amount) => `${amount} ${amount === "1" ? "theelepel" : "theelepels"}`);
+    .replace(/(\d+(?:[.,]\d+)?|\d+\/\d+)\s+(?:el|eetlepel|eetlepels)\b/gi, (_, amount) => `${amount} ${isSingularMeasure(amount) ? "eetlepel" : "eetlepels"}`)
+    .replace(/(\d+(?:[.,]\d+)?|\d+\/\d+)\s+(?:tl|theelepel|theelepels)\b/gi, (_, amount) => `${amount} ${isSingularMeasure(amount) ? "theelepel" : "theelepels"}`);
   const main = formatTablespoons(ingredient.raw || ingredient.name || "");
   const alternatives = (ingredient.alternatives || []).map((item) => formatTablespoons(item.raw || item.name || ""));
   return alternatives.length ? main + " of " + alternatives.join(" of ") : main;
