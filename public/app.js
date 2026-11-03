@@ -125,40 +125,21 @@ function chooseRecipe(recipe) {
     finishSelection();
     return;
   }
-  if (state.activeSlot.day > 2) {
-    status.textContent = "Dit recept past niet meer drie keer in de week vanaf deze dag.";
-    return;
-  }
-  state.pendingRecipe = recipe;
-  const select = document.querySelector("#start-day");
-  select.replaceChildren(...DAYS.slice(0, 3).map((day, index) => new Option(day, index)));
-  select.value = String(state.activeSlot.day);
-  document.querySelector("#day-help").textContent = recipe.title + " wordt gepland op drie dagen met steeds een dag ertussen.";
-  document.querySelector("#day-dialog").showModal();
-}
-
-document.querySelector("#day-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  if (event.submitter?.value !== "confirm") {
-    document.querySelector("#day-dialog").close();
-    return;
-  }
-  const startDay = Number(document.querySelector("#start-day").value);
+  const startDay = state.activeSlot.day;
   const days = plannedDays(startDay);
   if (days.length !== 3) {
-    status.textContent = "Kies een startdag waarmee drie momenten binnen de week vallen.";
+    const validStartDays = DAYS.slice(0, DAYS.length - 4).join(", ");
+    status.textContent = recipe.title + " kan alleen worden gestart op: " + validStartDays + ".";
     return;
   }
   const meal = state.activeSlot.meal;
   if (days.some((day) => state.plan[planKey(day, meal)])) {
-    status.textContent = "Een van de dagen is al gevuld. Kies eerst een andere plek.";
-    document.querySelector("#day-dialog").close();
+    status.textContent = "Een van de geplande dagen is al gevuld. Kies een andere startdag.";
     return;
   }
-  days.forEach((day) => { state.plan[planKey(day, meal)] = { recipeId: state.pendingRecipe.id, sourceDay: startDay }; });
-  document.querySelector("#day-dialog").close();
+  days.forEach((day) => { state.plan[planKey(day, meal)] = { recipeId: recipe.id, sourceDay: startDay }; });
   finishSelection();
-});
+}
 
 function finishSelection() {
   savePlan();
