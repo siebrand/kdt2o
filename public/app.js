@@ -302,9 +302,18 @@ function aggregateIngredients() {
         if (!state.shoppingWarnings.includes(warning)) state.shoppingWarnings.push(warning);
       }
       const existing = totals.get(mapKey);
-      if (!existing || shoppingIngredient.amount == null || existing.amount == null) {
-        if (existing && shoppingIngredient.amount == null) state.shoppingWarnings.push("Controleer de hoeveelheid van " + shoppingIngredient.name + ".");
-        totals.set(mapKey + (existing ? "::" + totals.size : ""), { ...shoppingIngredient, normalizedUnit: unit });
+      if (!existing) {
+        totals.set(mapKey, { ...shoppingIngredient, normalizedUnit: unit });
+        return;
+      }
+      if (shoppingIngredient.amount == null) {
+        if (existing.amount == null) return;
+        state.shoppingWarnings.push("Controleer de hoeveelheid van " + shoppingIngredient.name + ".");
+        totals.set(mapKey + "::" + totals.size, { ...shoppingIngredient, normalizedUnit: unit });
+        return;
+      }
+      if (existing.amount == null) {
+        totals.set(mapKey + "::" + totals.size, { ...shoppingIngredient, normalizedUnit: unit });
         return;
       }
       const combinedAmount = addIngredientAmounts(existing.amount, shoppingIngredient.amount);
