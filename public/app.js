@@ -260,6 +260,29 @@ function normalizeShoppingIngredient(ingredient) {
   return ingredient;
 }
 
+function parseAmountRange(amount) {
+  if (typeof amount === "number" && Number.isFinite(amount)) return { min: amount, max: amount };
+  const match = String(amount ?? "").trim().match(/^(\d+(?:[.,]\d+)?)\s*-\s*(\d+(?:[.,]\d+)?)$/);
+  if (!match) return null;
+  return { min: Number(match[1].replace(",", ".")), max: Number(match[2].replace(",", ".")) };
+}
+
+function addIngredientAmounts(first, second) {
+  const firstRange = parseAmountRange(first);
+  const secondRange = parseAmountRange(second);
+  if (!firstRange || !secondRange) return null;
+  const min = firstRange.min + secondRange.min;
+  const max = firstRange.max + secondRange.max;
+  return min === max ? min : `${min}-${max}`;
+}
+
+function formatIngredientAmount(amount) {
+  const range = parseAmountRange(amount);
+  if (!range) return String(amount);
+  if (range.min === range.max) return String(range.min);
+  return `${range.min}-${range.max}`;
+}
+
 function aggregateIngredients() {
   const totals = new Map();
   const includedRecipeIds = new Set();
@@ -284,7 +307,8 @@ function aggregateIngredients() {
         totals.set(mapKey + (existing ? "::" + totals.size : ""), { ...shoppingIngredient, normalizedUnit: unit });
         return;
       }
-      if (typeof shoppingIngredient.amount === "number" && typeof existing.amount === "number") existing.amount += shoppingIngredient.amount;
+      const combinedAmount = addIngredientAmounts(existing.amount, shoppingIngredient.amount);
+      if (combinedAmount !== null) existing.amount = combinedAmount;
     });
   });
   return [...totals.values()];
@@ -326,7 +350,7 @@ function sortedShoppingItems() {
 
 function formatIngredientLabel(item) {
   const normalized = normalizeShoppingIngredient(item);
-  const amount = normalized.amount == null ? "" : normalized.amount + (normalized.unit ? " " + normalized.unit : "");
+  const amount = normalized.amount == null ? "" : formatIngredientAmount(normalized.amount) + (normalized.unit ? " " + normalized.unit : "");
   return amount + (amount ? " " : "") + normalized.name;
 }
 
@@ -533,7 +557,7 @@ async function createPdf() {
       doc.setTextColor(40, 45, 40);
       currentCategory = category;
     }
-    const amount = item.amount == null ? "" : item.amount + (item.unit ? " " + item.unit : "");
+    const amount = item.amount == null ? "" : formatIngredientAmount(item.amount) + (item.unit ? " " + item.unit : "");
     y = addChecklistItem(doc, amount + (amount ? " " : "") + item.name, margin, y, width - margin * 2);
   });
   for (const dayIndex of DAYS.keys()) {
