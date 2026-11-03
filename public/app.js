@@ -86,7 +86,9 @@ function renderOptions() {
   const selected = selectedIds();
   options.replaceChildren();
   const visible = state.recipes.filter((recipe) => {
-    return !selected.has(recipe.id) && (!query || recipe.title.toLocaleLowerCase("nl").includes(query) || recipe.category.includes(query));
+    const matchesMeal = state.activeSlot && recipe.category === state.activeSlot.meal;
+    const matchesSearch = !query || recipe.title.toLocaleLowerCase("nl").includes(query);
+    return matchesMeal && !selected.has(recipe.id) && matchesSearch;
   });
   if (!state.activeSlot) {
     options.append(Object.assign(document.createElement("p"), { className: "muted", textContent: "Klik eerst op een leeg moment in de planning." }));
@@ -101,14 +103,12 @@ function renderOptions() {
     card.className = "recipe-card";
     const title = document.createElement("h3");
     title.textContent = recipe.title;
-    const meta = document.createElement("p");
-    meta.textContent = recipe.category + " · " + recipe.portions + " personen" + (isMultiDay(recipe) ? " · 3 dagen" : "");
     const button = document.createElement("button");
     button.type = "button";
     button.className = "button";
     button.textContent = "Toevoegen";
     button.addEventListener("click", () => chooseRecipe(recipe));
-    card.append(title, meta, button);
+    card.append(title, button);
     options.append(card);
   });
 }
