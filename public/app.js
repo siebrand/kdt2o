@@ -32,6 +32,10 @@ function dayName(dayIndex) {
   return DAYS[dayIndex].toLocaleLowerCase("nl");
 }
 
+function shortDayName(dayIndex) {
+  return DAYS[dayIndex].slice(0, 3).toLocaleLowerCase("nl");
+}
+
 function planKey(day, meal) {
   return day + "-" + meal;
 }
@@ -84,7 +88,7 @@ function renderPlanner() {
         slot.append(title, detail);
         if (recipe?.multiDay) {
           const schedule = document.createElement("small");
-          schedule.textContent = "Meerdaags: " + plannedDays(item.sourceDay).map((day) => dayName(day)).join(", ");
+          schedule.textContent = plannedDays(item.sourceDay).map((day) => shortDayName(day)).join(", ");
           slot.append(schedule);
         }
         if (recipe?.advanceNotice) {
@@ -377,8 +381,8 @@ function drawWeeklyOverview(doc, margin, width) {
       if (recipe?.multiDay) {
         doc.setFontSize(7);
         doc.setTextColor(70, 80, 70);
-        const scheduledDays = Number.isInteger(item.sourceDay) ? plannedDays(item.sourceDay).map((day) => dayName(day)).join(", ") : "meerdere dagen";
-        doc.text("Meerdaags: " + scheduledDays, x + 2, y + rowHeight - 4);
+        const scheduledDays = Number.isInteger(item.sourceDay) ? plannedDays(item.sourceDay).map((day) => shortDayName(day)).join(", ") : "meerdere dagen";
+        doc.text(scheduledDays, x + 2, y + rowHeight - 4);
         doc.setFontSize(9);
       }
     });
