@@ -1585,7 +1585,7 @@
       {
         "raw": "1 teentje knoflook",
         "amount": 1,
-        "unit": "teent",
+        "unit": "teentje",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -2285,9 +2285,9 @@
       {
         "raw": "3 tenen knoflook",
         "amount": 3,
-        "unit": "",
-        "name": "tenen knoflook",
-        "key": "tenen knoflook",
+        "unit": "teentje",
+        "name": "knoflook",
+        "key": "knoflook",
         "optional": false
       },
       {
@@ -4035,7 +4035,7 @@
       {
         "raw": "1 teentje knoflook",
         "amount": 1,
-        "unit": "teent",
+        "unit": "teentje",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -4239,9 +4239,9 @@
       {
         "raw": "3 knoflooktenen",
         "amount": 3,
-        "unit": "",
-        "name": "knoflooktenen",
-        "key": "knoflooktenen",
+        "unit": "teentje",
+        "name": "knoflook",
+        "key": "knoflook",
         "optional": false
       },
       {
@@ -4384,7 +4384,7 @@
       {
         "raw": "1 teentje knoflook",
         "amount": 1,
-        "unit": "teent",
+        "unit": "teentje",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -4470,7 +4470,7 @@
       {
         "raw": "1 teentje knoflook",
         "amount": 1,
-        "unit": "teent",
+        "unit": "teentje",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -5793,7 +5793,7 @@
       {
         "raw": "1 teentje knoflook",
         "amount": 1,
-        "unit": "teent",
+        "unit": "teentje",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -5874,9 +5874,9 @@
       {
         "raw": "2 tenen knoflook",
         "amount": 2,
-        "unit": "",
-        "name": "tenen knoflook",
-        "key": "tenen knoflook",
+        "unit": "teentje",
+        "name": "knoflook",
+        "key": "knoflook",
         "optional": false
       },
       {
@@ -6204,9 +6204,9 @@
       {
         "raw": "4 tenen knoflook",
         "amount": 4,
-        "unit": "",
-        "name": "tenen knoflook",
-        "key": "tenen knoflook",
+        "unit": "teentje",
+        "name": "knoflook",
+        "key": "knoflook",
         "optional": false
       },
       {
@@ -6434,9 +6434,9 @@
       {
         "raw": "2 tenen knoflook",
         "amount": 2,
-        "unit": "",
-        "name": "tenen knoflook",
-        "key": "tenen knoflook",
+        "unit": "teentje",
+        "name": "knoflook",
+        "key": "knoflook",
         "optional": false
       },
       {
@@ -6944,7 +6944,7 @@
       {
         "raw": "1 teentje knoflook",
         "amount": 1,
-        "unit": "teent",
+        "unit": "teentje",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
