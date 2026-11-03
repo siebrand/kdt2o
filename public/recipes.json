@@ -498,7 +498,7 @@
     "title": "Groentemuffins",
     "category": "ontbijt",
     "portions": 4,
-    "multiDay": false,
+    "multiDay": true,
     "ingredients": [
       {
         "raw": "klontje roomboter",
