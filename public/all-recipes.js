@@ -170,7 +170,7 @@ async function prepare() {
     return;
   }
   const response = await fetch("/recipes.json");
-  const recipes = attachSharedRecipeComponents(await response.json()).map((recipe) => ({
+  const recipes = attachSharedRecipeComponents(await response.json()).filter((recipe) => !recipe.approved).map((recipe) => ({
     ...recipe,
     preparationTime: Number.isFinite(recipe.preparationTime) ? recipe.preparationTime : estimatePreparationTime(recipe),
     preparationTimeEstimated: true

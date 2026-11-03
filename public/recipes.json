@@ -2,6 +2,7 @@
   {
     "id": "Lijnzaadcrackers en hüttenkase en avocado",
     "title": "Lijnzaadcrackers en hüttenkäse en avocado",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -84,6 +85,7 @@
   {
     "id": "aardbeienkwark",
     "title": "Aardbeienkwark",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -144,6 +146,7 @@
   {
     "id": "amandel-pannenkoeken",
     "title": "Amandelpannenkoeken",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -264,6 +267,7 @@
   {
     "id": "chiapudding",
     "title": "Chiapudding",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -332,6 +336,7 @@
   {
     "id": "chocolademousse-met-frambozen",
     "title": "Chocolademousse met frambozen",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -408,6 +413,7 @@
   {
     "id": "frisse-ontbijtsalade",
     "title": "Frisse ontbijtsalade",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -476,6 +482,7 @@
   {
     "id": "gebakken-eieren-met-paprika-en-een-krokant-speklapje",
     "title": "Gebakken eieren met paprika en een krokant speklapje",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -539,6 +546,7 @@
   {
     "id": "groentemuffins",
     "title": "Groentemuffins",
+    "approved": true,
     "category": "ontbijt",
     "portions": 4,
     "days": 2,
