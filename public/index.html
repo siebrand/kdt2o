@@ -24,10 +24,15 @@
       </div>
       <div class="actions">
         <button id="clear-plan" class="button button-secondary" type="button">Planning wissen</button>
-        <button id="download-pdf" class="button" type="button" disabled>Download PDF</button>
+        <button id="show-shopping-list" class="button" type="button" disabled>Afronden en boodschappenlijst bekijken</button>
+        <button id="download-pdf" class="button button-secondary" type="button" disabled>PDF downloaden</button>
       </div>
     </section>
     <section id="planner" class="planner" aria-label="Weekplanning"></section>
+    <section id="shopping-list-view" class="shopping-list-view" aria-labelledby="shopping-list-title" hidden>
+      <h2 id="shopping-list-title">Boodschappenlijst</h2>
+      <div id="shopping-list-items"></div>
+    </section>
     <section class="recipe-panel" aria-labelledby="recipe-title">
       <div class="panel-heading">
         <h2 id="recipe-title">Recept kiezen</h2>
