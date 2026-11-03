@@ -272,6 +272,7 @@ function methodSteps(method) {
 }
 
 function drawWeeklyOverview(doc, margin, width) {
+  const links = [];
   const gridTop = 52;
   const labelWidth = 28;
   const dayWidth = (width - margin * 2 - labelWidth) / DAYS.length;
@@ -308,6 +309,7 @@ function drawWeeklyOverview(doc, margin, width) {
       const lines = doc.splitTextToSize(recipe?.title || "Onbekend recept", dayWidth - 4);
       doc.setTextColor(24, 63, 50);
       doc.text(lines.slice(0, 3), x + 2, y + 7);
+      links.push({ recipeId: item.recipeId, x, y, width: dayWidth, height: rowHeight });
       if (recipe?.multiDay) {
         doc.setFontSize(7);
         doc.setTextColor(70, 80, 70);
@@ -316,6 +318,7 @@ function drawWeeklyOverview(doc, margin, width) {
       }
     });
   });
+  return links;
 }
 
 function createPdf() {
@@ -327,7 +330,8 @@ function createPdf() {
   const margin = 16;
   const width = doc.internal.pageSize.getWidth();
   const height = doc.internal.pageSize.getHeight();
-  drawWeeklyOverview(doc, margin, width);
+  const overviewLinks = drawWeeklyOverview(doc, margin, width);
+  const recipePages = new Map();
   doc.addPage();
   doc.setTextColor(24, 63, 50);
   doc.setFontSize(20);
@@ -357,6 +361,7 @@ function createPdf() {
       if (!item) return;
       const recipe = recipeById(item.recipeId);
       doc.addPage();
+      if (!recipePages.has(recipe.id)) recipePages.set(recipe.id, doc.getNumberOfPages());
       doc.setTextColor(24, 63, 50);
       doc.setFontSize(18);
       doc.text(recipe.title, margin, 24);
@@ -389,6 +394,12 @@ function createPdf() {
         recipe.notes.forEach((note) => { y = addWrapped(doc, "• " + note, margin, y, width - margin * 2, 5); });
       }
     });
+  });
+  overviewLinks.forEach((link) => {
+    const pageNumber = recipePages.get(link.recipeId);
+    if (!pageNumber) return;
+    doc.setPage(1);
+    doc.link(link.x, link.y, link.width, link.height, { pageNumber });
   });
   doc.save("weekplanning.pdf");
 }
