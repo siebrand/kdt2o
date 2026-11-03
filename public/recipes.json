@@ -782,11 +782,11 @@
         "optional": true
       },
       {
-        "raw": "bosbessen (vers/diepvries) voor eroverheen",
-        "amount": null,
-        "unit": "",
-        "name": "bosbessen (vers/diepvries) voor eroverheen",
-        "key": "bosbessen (vers/diepvries) voor eroverheen",
+        "raw": "150 gram bosbessen (vers/diepvries)",
+        "amount": 150,
+        "unit": "gram",
+        "name": "bosbessen (vers/diepvries)",
+        "key": "bosbessen (vers/diepvries)",
         "optional": false
       },
       {
