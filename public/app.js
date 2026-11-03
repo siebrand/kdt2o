@@ -198,6 +198,11 @@ function addWrapped(doc, text, x, y, maxWidth, lineHeight = 6) {
   return y + lines.length * lineHeight;
 }
 
+function methodSteps(method) {
+  const text = String(method || "").replace(/\s+/g, " ").trim();
+  return text.match(/[^.!?]+[.!?]+|[^.!?]+$/g)?.map((step) => step.trim()).filter(Boolean) || [];
+}
+
 function createPdf() {
   if (!window.jspdf?.jsPDF) {
     status.textContent = "De PDF-module kon niet worden geladen. Controleer je internetverbinding.";
@@ -252,7 +257,11 @@ function createPdf() {
     });
     y += 6; doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Bereidingswijze", margin, y); y += 7;
     doc.setFontSize(10); doc.setTextColor(40, 45, 40);
-    addWrapped(doc, recipe.method || "Zie het oorspronkelijke receptbestand.", margin, y, width - margin * 2, 5);
+    const steps = methodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
+    steps.forEach((step, index) => {
+      y = addWrapped(doc, `${index + 1}. ${step}`, margin, y, width - margin * 2, 5);
+      if (y > 275 && index < steps.length - 1) { doc.addPage(); y = 20; }
+    });
   });
   doc.save("weekplanning.pdf");
 }
