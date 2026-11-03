@@ -429,16 +429,16 @@
         "optional": false
       },
       {
-        "raw": "2 stuks paprika",
-        "amount": 2,
+        "raw": "1 paprika",
+        "amount": 1,
         "unit": "stuk",
         "name": "paprika",
         "key": "paprika",
         "optional": false
       },
       {
-        "raw": "2 stuks komkommer",
-        "amount": 2,
+        "raw": "halve komkommer",
+        "amount": 0.5,
         "unit": "stuk",
         "name": "komkommer",
         "key": "komkommer",

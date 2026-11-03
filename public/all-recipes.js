@@ -27,8 +27,11 @@ function textLines(doc, value, x, y, width, lineHeight) {
 }
 
 function ingredientText(ingredient) {
-  const main = ingredient.raw || ingredient.name || "";
-  const alternatives = (ingredient.alternatives || []).map((item) => item.raw || item.name || "");
+  const formatTablespoons = (value) => String(value || "")
+    .replace(/(\d+(?:[.,]\d+)?)\s+of\s+meer\s+(?:el|eetlepel|eetlepels)\b/gi, "$1 of meer eetlepels")
+    .replace(/(\d+(?:[.,]\d+)?)\s+(?:el|eetlepel|eetlepels)\b/gi, (_, amount) => `${amount} ${amount === "1" ? "eetlepel" : "eetlepels"}`);
+  const main = formatTablespoons(ingredient.raw || ingredient.name || "");
+  const alternatives = (ingredient.alternatives || []).map((item) => formatTablespoons(item.raw || item.name || ""));
   return alternatives.length ? main + " of " + alternatives.join(" of ") : main;
 }
 

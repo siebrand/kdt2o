@@ -315,6 +315,13 @@ function formatIngredientAmount(amount) {
   return `${range.min}-${range.max}`;
 }
 
+function formatIngredientUnit(unit, amount) {
+  const normalized = normalizeShoppingUnit(unit);
+  if (normalized !== "el") return unit;
+  const range = parseAmountRange(amount);
+  return range && range.min === 1 && range.max === 1 ? "eetlepel" : "eetlepels";
+}
+
 function copyShoppingIngredient(ingredient, normalizedUnit) {
   return {
     ...ingredient,
@@ -457,7 +464,8 @@ function sortedShoppingItems() {
 
 function formatIngredientLabel(item) {
   const normalized = normalizeShoppingIngredient(item);
-  const amount = normalized.amount == null ? "" : formatIngredientAmount(normalized.amount) + (normalized.unit ? " " + normalized.unit : "");
+  const displayUnit = formatIngredientUnit(normalized.unit, normalized.amount);
+  const amount = normalized.amount == null ? "" : formatIngredientAmount(normalized.amount) + (displayUnit ? " " + displayUnit : "");
   return amount + (amount ? " " : "") + normalized.name;
 }
 
@@ -707,7 +715,8 @@ async function createPdf() {
       doc.setTextColor(40, 45, 40);
       currentCategory = category;
     }
-    const amount = item.amount == null ? "" : formatIngredientAmount(item.amount) + (item.unit ? " " + item.unit : "");
+    const displayUnit = formatIngredientUnit(item.unit, item.amount);
+    const amount = item.amount == null ? "" : formatIngredientAmount(item.amount) + (displayUnit ? " " + displayUnit : "");
     y = addChecklistItem(doc, amount + (amount ? " " : "") + item.name, margin, y, width - margin * 2);
   });
   for (const dayIndex of DAYS.keys()) {
