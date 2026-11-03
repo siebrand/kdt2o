@@ -271,38 +271,69 @@ function methodSteps(method) {
   return text.match(/[^.!?]+[.!?]+|[^.!?]+$/g)?.map((step) => step.trim()).filter(Boolean) || [];
 }
 
+function drawWeeklyOverview(doc, margin, width) {
+  const gridTop = 52;
+  const labelWidth = 28;
+  const dayWidth = (width - margin * 2 - labelWidth) / DAYS.length;
+  const headerHeight = 10;
+  const rowHeight = 34;
+  doc.setTextColor(24, 63, 50);
+  doc.setFontSize(24);
+  doc.text("Voeding Leeft", margin, 24);
+  doc.setFontSize(18);
+  doc.text("Mijn weekplanning", margin, 40);
+  doc.setFontSize(9);
+  doc.setDrawColor(190, 202, 188);
+  doc.setFillColor(239, 243, 232);
+  doc.rect(margin, gridTop, labelWidth, headerHeight, "FD");
+  doc.text("Maaltijd", margin + 2, gridTop + 6);
+  DAYS.forEach((day, dayIndex) => {
+    const x = margin + labelWidth + dayIndex * dayWidth;
+    doc.rect(x, gridTop, dayWidth, headerHeight, "FD");
+    doc.text(day, x + dayWidth / 2, gridTop + 6, { align: "center" });
+  });
+  MEALS.forEach((meal, mealIndex) => {
+    const y = gridTop + headerHeight + mealIndex * rowHeight;
+    doc.setFillColor(250, 250, 247);
+    doc.rect(margin, y, labelWidth, rowHeight, "FD");
+    doc.setTextColor(24, 63, 50);
+    doc.text(meal[0].toUpperCase() + meal.slice(1), margin + 2, y + 7);
+    DAYS.forEach((_, dayIndex) => {
+      const x = margin + labelWidth + dayIndex * dayWidth;
+      doc.setFillColor(255, 255, 255);
+      doc.rect(x, y, dayWidth, rowHeight, "FD");
+      const item = state.plan[planKey(dayIndex, meal)];
+      if (!item) return;
+      const recipe = recipeById(item.recipeId);
+      const lines = doc.splitTextToSize(recipe?.title || "Onbekend recept", dayWidth - 4);
+      doc.setTextColor(24, 63, 50);
+      doc.text(lines.slice(0, 3), x + 2, y + 7);
+      if (recipe?.multiDay) {
+        doc.setFontSize(7);
+        doc.setTextColor(70, 80, 70);
+        doc.text("Meerdaags", x + 2, y + rowHeight - 4);
+        doc.setFontSize(9);
+      }
+    });
+  });
+}
+
 function createPdf() {
   if (!window.jspdf?.jsPDF) {
     status.textContent = "De PDF-module kon niet worden geladen. Controleer je internetverbinding.";
     return;
   }
-  const doc = new window.jspdf.jsPDF();
+  const doc = new window.jspdf.jsPDF({ orientation: "landscape", unit: "mm", format: "a4" });
   const margin = 16;
   const width = doc.internal.pageSize.getWidth();
-  doc.setTextColor(24, 63, 50);
-  doc.setFontSize(24);
-  doc.text("Voeding Leeft", margin, 24);
-  doc.setFontSize(18);
-  doc.text("Mijn weekplanning", margin, 42);
-  doc.setFontSize(10);
-  doc.setTextColor(70, 80, 70);
-  let y = 56;
-  DAYS.forEach((day, index) => {
-    const meals = MEALS.map((meal) => state.plan[planKey(index, meal)]).filter(Boolean);
-    if (meals.length) {
-      y = addWrapped(doc, day + ": " + meals.map((item) => recipeById(item.recipeId)?.title).join(", "), margin, y, width - margin * 2);
-    }
-  });
+  drawWeeklyOverview(doc, margin, width);
   doc.addPage();
   doc.setTextColor(24, 63, 50);
   doc.setFontSize(20);
   doc.text("Boodschappenlijst", margin, 24);
   doc.setFontSize(10);
   y = 36;
-  const shoppingItems = aggregateIngredients().sort((a, b) => {
-    const categoryDifference = SHOPPING_CATEGORIES.indexOf(shoppingCategory(a)) - SHOPPING_CATEGORIES.indexOf(shoppingCategory(b));
-    return categoryDifference || a.name.localeCompare(b.name, "nl");
-  });
+  const shoppingItems = sortedShoppingItems();
   let currentCategory = "";
   shoppingItems.forEach((item) => {
     if (y > 265) { doc.addPage(); y = 20; currentCategory = ""; }
