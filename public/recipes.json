@@ -1804,9 +1804,9 @@
         "optional": false
       },
       {
-        "raw": "1 el mosterd",
-        "amount": 1,
-        "unit": "el",
+        "raw": "3 tl mosterd",
+        "amount": 3,
+        "unit": "tl",
         "name": "mosterd",
         "key": "mosterd",
         "optional": false
@@ -7109,9 +7109,9 @@
         "optional": false
       },
       {
-        "raw": "4 el mosterd",
-        "amount": 4,
-        "unit": "el",
+        "raw": "12 tl mosterd",
+        "amount": 12,
+        "unit": "tl",
         "name": "mosterd",
         "key": "mosterd",
         "optional": false
@@ -7311,9 +7311,9 @@
         "optional": false
       },
       {
-        "raw": "2 el mosterd",
-        "amount": 2,
-        "unit": "el",
+        "raw": "6 tl mosterd",
+        "amount": 6,
+        "unit": "tl",
         "name": "mosterd",
         "key": "mosterd",
         "optional": false
