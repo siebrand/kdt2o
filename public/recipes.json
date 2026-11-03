@@ -4190,6 +4190,124 @@
     "harmonized": false
   },
   {
+    "id": "aziatische-tofu",
+    "title": "Aziatische tofu",
+    "category": "diner",
+    "portions": 2,
+    "multiDay": false,
+    "ingredients": [
+      {
+        "raw": "4 el Japanse sojasaus (geen ketjap)",
+        "amount": 4,
+        "unit": "el",
+        "name": "Japanse sojasaus (geen ketjap)",
+        "key": "japanse sojasaus (geen ketjap)",
+        "optional": false
+      },
+      {
+        "raw": "2 teentjes knoflook",
+        "amount": 2,
+        "unit": "teentje",
+        "name": "knoflook",
+        "key": "knoflook",
+        "optional": false
+      },
+      {
+        "raw": "2 el azijn",
+        "amount": 2,
+        "unit": "el",
+        "name": "azijn",
+        "key": "azijn",
+        "optional": false
+      },
+      {
+        "raw": "2 el geraspte gember",
+        "amount": 2,
+        "unit": "el",
+        "name": "geraspte gember",
+        "key": "geraspte gember",
+        "optional": false
+      },
+      {
+        "raw": "200 gram tofu",
+        "amount": 200,
+        "unit": "gram",
+        "name": "tofu",
+        "key": "tofu",
+        "optional": false
+      },
+      {
+        "raw": "300 gram spruitjes",
+        "amount": 300,
+        "unit": "gram",
+        "name": "spruitjes",
+        "key": "spruitjes",
+        "optional": false
+      },
+      {
+        "raw": "1 rode ui",
+        "amount": 1,
+        "unit": "",
+        "name": "rode ui",
+        "key": "rode ui",
+        "optional": false
+      },
+      {
+        "raw": "1 (rode) paprika",
+        "amount": 1,
+        "unit": "",
+        "name": "(rode) paprika",
+        "key": "(rode) paprika",
+        "optional": false
+      },
+      {
+        "raw": "2 el roomboter",
+        "amount": 2,
+        "unit": "el",
+        "name": "roomboter",
+        "key": "roomboter",
+        "optional": false
+      },
+      {
+        "raw": "4 el sesamzaad",
+        "amount": 4,
+        "unit": "el",
+        "name": "sesamzaad",
+        "key": "sesamzaad",
+        "optional": false
+      },
+      {
+        "raw": "2 handjes taugé",
+        "amount": 2,
+        "unit": "handjes",
+        "name": "taugé",
+        "key": "taugé",
+        "optional": false
+      },
+      {
+        "raw": "1 tl chilivlokken en/of rode peper",
+        "amount": 1,
+        "unit": "tl",
+        "name": "chilivlokken en/of rode peper",
+        "key": "chilivlokken en/of rode peper",
+        "optional": true
+      },
+      {
+        "raw": "150 gram zilvervliesrijst (niet voor deelnemers Keer Diabetes2 Om)",
+        "amount": 150,
+        "unit": "gram",
+        "name": "zilvervliesrijst",
+        "key": "zilvervliesrijst",
+        "optional": true
+      }
+    ],
+    "method": "Meng de sojasaus, uitgeperste knoflook, azijn, gember en chilivlokken en roer dit door de tofu. Laat even intrekken (hoe langer hoe lekkerder). Was de spruitjes en snijd het stronkje eraf. Kook of stoom de spruitjes in ongeveer 7 minuten gaar. Snijd de ui in dunne ringen en was en snijd de paprika in dunne reepjes. Smoor de ui en paprika zachtjes gaar in een pan met wat boter. Roerbak vervolgens op middelhoog vuur de tofu bij de ui en paprika. Voeg het teveel aan marinade toe. Voeg de spruitjes, taugé en sesamzaadjes toe. Roerbak alles een paar minuten totdat de taugé gaar, maar nog wel knapperig is.",
+    "source": "recipes/03-diner/aziatische-runderreepjes.pdf",
+    "sourceHash": "2ba116aaf6192c586ccc0073e468eb6cdd8ecdf087070d348658303c474e4160",
+    "harmonizerVersion": "1",
+    "harmonized": false
+  },
+  {
     "id": "biefstuk-met-champignons-en-geroosterde-groenten",
     "title": "Biefstuk met champignons en geroosterde groenten",
     "category": "diner",
