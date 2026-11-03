@@ -87,19 +87,11 @@
         "optional": false
       },
       {
-        "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaans / Provençaalse",
+        "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaanse / Provençaalse kruiden",
         "amount": 3,
         "unit": "el",
-        "name": "gedroogde kruiden naar keuze, zoals Italiaans / Provençaalse",
-        "key": "gedroogde kruiden naar keuze, zoals italiaans / provençaalse",
-        "optional": false
-      },
-      {
-        "raw": "Benodigdheden: bakpapier, deegroller of fles",
-        "amount": null,
-        "unit": "",
-        "name": "Benodigdheden: bakpapier, deegroller of fles",
-        "key": "benodigdheden: bakpapier, deegroller of fles",
+        "name": "gedroogde kruiden naar keuze, zoals Italiaanse / Provençaalse kruiden",
+        "key": "gedroogde kruiden naar keuze, zoals italiaanse / provençaalse kruiden",
         "optional": false
       }
     ],
@@ -287,21 +279,17 @@
         "name": "walnoten of geroosterd amandelschaafsel",
         "key": "walnoten of geroosterd amandelschaafsel",
         "optional": false
-      },
-      {
-        "raw": "Let op! Maak dit gerecht de avond van te voren.",
-        "amount": null,
-        "unit": "",
-        "name": "Let op! Maak dit gerecht de avond van te voren",
-        "key": "let op! maak dit gerecht de avond van te voren",
-        "optional": false
       }
     ],
     "method": "Indien nodig snijd het fruit in kleine stukjes en meng dit met de chiazaad en griekse yoghurt. Zet dit afgedekt een nacht in de koelkast. Strooi de volgende ochtend een handje walnoten of geroosterd amandelschaafsel over de pudding heen.",
     "source": "recipes/01-ontbijt/chiapudding.pdf",
     "sourceHash": "9e52faad24638f4f339266d941d55009a0237fd04b8bf7ab790e3ea1fdbd4bd4",
     "harmonizerVersion": "1",
-    "harmonized": false
+    "harmonized": false,
+    "notes": [
+      "Let op: maak dit gerecht de avond ervoor."
+    ],
+    "advanceNotice": "Bereid dit recept de avond ervoor."
   },
   {
     "id": "chocolademousse-met-frambozen",
@@ -405,19 +393,19 @@
         "optional": false
       },
       {
-        "raw": "2 stukken paprika",
+        "raw": "2 stuks paprika",
         "amount": 2,
         "unit": "stuk",
-        "name": "ken paprika",
-        "key": "ken paprika",
+        "name": "paprika",
+        "key": "paprika",
         "optional": false
       },
       {
-        "raw": "2 stukken komkommer",
+        "raw": "2 stuks komkommer",
         "amount": 2,
         "unit": "stuk",
-        "name": "ken komkommer",
-        "key": "ken komkommer",
+        "name": "komkommer",
+        "key": "komkommer",
         "optional": false
       },
       {
@@ -709,8 +697,8 @@
         "optional": false
       },
       {
-        "raw": "25 ml water",
-        "amount": 25,
+        "raw": "250 ml water",
+        "amount": 250,
         "unit": "ml",
         "name": "water",
         "key": "water",
@@ -819,14 +807,6 @@
         "optional": false
       },
       {
-        "raw": "Let op: ben je deelnemer van Keer Diabetes? Om? Maak dan gebruik van de",
-        "amount": null,
-        "unit": "",
-        "name": "Let op: ben je deelnemer van Keer Diabetes? Om? Maak dan gebruik van de",
-        "key": "let op: ben je deelnemer van keer diabetes? om? maak dan gebruik van de",
-        "optional": false
-      },
-      {
         "raw": "amandelmeel.",
         "amount": null,
         "unit": "",
@@ -839,7 +819,10 @@
     "source": "recipes/01-ontbijt/kwark-muffins.pdf",
     "sourceHash": "4120219f6e3d1c8a7d129c0f3e3b97746032c6e0f891d9dcc689a5ea56a778d8",
     "harmonizerVersion": "1",
-    "harmonized": false
+    "harmonized": false,
+    "notes": [
+      "Opmerking: ben je deelnemer van Keer Diabetes? Gebruik dan amandelmeel."
+    ]
   },
   {
     "id": "lijnzaadcrackers-met-boerenkaas",
@@ -1005,11 +988,11 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "1 lente ui",
+        "raw": "1 lenteui",
         "amount": 1,
-        "unit": "liter",
-        "name": "ente ui",
-        "key": "ente ui",
+        "unit": "stuk",
+        "name": "lenteui",
+        "key": "lenteui",
         "optional": false
       },
       {
@@ -1381,11 +1364,11 @@
         "optional": false
       },
       {
-        "raw": "1 lente ui",
+        "raw": "1 lenteui",
         "amount": 1,
-        "unit": "liter",
-        "name": "ente ui",
-        "key": "ente ui",
+        "unit": "stuk",
+        "name": "lenteui",
+        "key": "lenteui",
         "optional": false
       },
       {
@@ -4347,21 +4330,16 @@
         "name": "snufje (jozo) zout",
         "key": "snufje (jozo) zout",
         "optional": false
-      },
-      {
-        "raw": "Let op! we grillen extra groente voor de lunch morgen",
-        "amount": null,
-        "unit": "",
-        "name": "Let op! we grillen extra groente voor de lunch morgen",
-        "key": "let op! we grillen extra groente voor de lunch morgen",
-        "optional": false
       }
     ],
     "method": "Verwarm de oven voor op 180 graden. Was de courgettes, paprika's en wortelen en snijd in lange repen van ongeveer 2 cm breed. Pel de uien en snijd in grove parten. Bekleed een bakplat met bakpapier. Leg hierop de groenten en de uien. Giet er flink olijfolie overheen en strooi er wat zout en peper over. Voeg ook de knoflooktenen toe. Hussel de groenten en zet circa 30 minuten in de oven. Snij de champignons. Verwarm de boter en een klein scheutje olijfolie op een laag vuurtje in de pan tot lichtbruin. Zet het vuur middelhoog. Als de boter bruin wordt, leg de biefstuk en de champignons in de pan. Laat aan beide kanten lichtbruin worden en draai het vuur dan middelhoog. Bak voor medium rose de biefstuk dan nog 5 minuten. Keer regelmatig en bestrooi met peper en zout. Haal de biefstuk uit de pan en dek deze een paar minuten af in een kom met een bord bovenop. Voeg de slagroom toe aan de champignons en laat een paar minuten inkoken. Serveer over de biefstuk en leg de gegrilde groenten ernaast. Let op! Bewaar de helft van de groenten voor de lunch van morgen. Je kunt deze als ze afgekoeld zijn in een goed afsluitbaar bakje doen en in de koelkast bewaren. TIP € - Vervang de biefstuk voor tartaar. Vegetarische optie: Laat bij de vegetarische optie de champignons, biefstuk en slagroom weg en vervang voor: € 2 portobello's 2 tl Italiaanse kruiden 200 gram boterbonen of witte bonen 2 tenen knoflook 2 el pijnboompitten Nadat je de groente in de over hebt gezet: Verwijder het steeltje van de portobello's. Vet een ovenschaal in met wat olijfolie en leg de portobello’s met de bolle kant naar beneden in een ovenschaal. Giet een scheut olijfolie in een bakje, pers daarin ook de knoflook uit en strooi de Italiaanse kruiden en de boterbonen erin. Prak met een vork totdat je een papje hebt. Breng op smaak met wat (jozo)zout en peper. Doe het mengsel dan in de portobello’s, strooi de pijnboompitten erover en zet voor circa 20-25 minuten in de oven bij de groenten.",
     "source": "recipes/03-diner/biefstuk-met-champignons-en-geroosterde-groenten.pdf",
     "sourceHash": "1cae7fcc89f18ac307760fd573707a99dbca5358ad1926b110d236a019fb4dff",
     "harmonizerVersion": "1",
-    "harmonized": false
+    "harmonized": false,
+    "notes": [
+      "Opmerking: bewaar de helft van de geroosterde groenten voor de lunch van morgen."
+    ]
   },
   {
     "id": "bloemkoolpizza",
@@ -4969,11 +4947,11 @@
         "optional": false
       },
       {
-        "raw": "2 el Provengaalse kruiden",
+        "raw": "2 el Provençaalse kruiden",
         "amount": 2,
         "unit": "el",
-        "name": "Provengaalse kruiden",
-        "key": "provengaalse kruiden",
+        "name": "Provençaalse kruiden",
+        "key": "provençaalse kruiden",
         "optional": false
       },
       {
@@ -5801,21 +5779,16 @@
         "name": "sesamzaadjes",
         "key": "sesamzaadjes",
         "optional": false
-      },
-      {
-        "raw": "Let op! Ingrediënten zijn voor 1 persoon",
-        "amount": null,
-        "unit": "",
-        "name": "Let op! Ingrediënten zijn voor 1 persoon",
-        "key": "let op! ingrediënten zijn voor 1 persoon",
-        "optional": false
       }
     ],
     "method": "Neem een slakom, doe hierin de yoghurt, mayonaise en azijn en roer goed door. Voeg zoveel olijfolie toe tot je een goede dressing hebt. Snijd de witlof doormidden, verwijder de harde kern. Snijd de witlof in dunne reepjes en doe deze in de slakom en roer de saus er goed doorheen. Snijd de kipfilet in reepjes van ongeveer 1,5 cm. Snijd de ui fijn. Verhit 1 el olie zachtjes in een pan en fruit het uitje hierin zachtjes aan. Voeg na 4 minuten de sojasaus, gember en uitgeperste knoflook in de pan en bak de kipfiletreepjes hierin. Blijf roeren en bak in circa 6 minuten gaar. Zet kokend water op in een pannetje, kook de erwtjes in 3 minuten gaar en giet af. Haal de kipfilet van het vuur en besprenkel de helft van de kip met sesamzaadjes. Serveer met de erwtjes en de witlofsalade.",
     "source": "recipes/03-diner/oosterse-kipfilet-met-witlofsalade.pdf",
     "sourceHash": "42faa1e0aa693fa032b917e0f1e5b7b86c208c1f4cda2acde600ba5b2067aa4a",
     "harmonizerVersion": "1",
-    "harmonized": false
+    "harmonized": false,
+    "notes": [
+      "Opmerking: de ingrediënten zijn voor 1 persoon."
+    ]
   },
   {
     "id": "pesto-kip-met-snijbonen-en-tuinerwtjes",
@@ -5862,14 +5835,6 @@
         "unit": "gram",
         "name": "tuinerwtjes",
         "key": "tuinerwtjes",
-        "optional": false
-      },
-      {
-        "raw": "Pesto ingrediënten eventueel ook voor lunch morgen maken:",
-        "amount": null,
-        "unit": "",
-        "name": "Pesto ingrediënten eventueel ook voor lunch morgen maken",
-        "key": "pesto ingrediënten eventueel ook voor lunch morgen maken",
         "optional": false
       },
       {
@@ -5925,7 +5890,10 @@
     "source": "recipes/03-diner/pesto-kip-met-snijbonen-en-tuinerwtjes.pdf",
     "sourceHash": "93b43347d2ea4ee2e874aaf68e9f0f74126fb1e2b07e4f3a8f4e96509b3a960f",
     "harmonizerVersion": "1",
-    "harmonized": false
+    "harmonized": false,
+    "notes": [
+      "Opmerking: maak eventueel ook pesto voor de lunch van morgen."
+    ]
   },
   {
     "id": "plaat-courgette",
@@ -7029,11 +6997,11 @@
         "optional": false
       },
       {
-        "raw": "2 el Provengaalse kruiden",
+        "raw": "2 el Provençaalse kruiden",
         "amount": 2,
         "unit": "el",
-        "name": "Provengaalse kruiden",
-        "key": "provengaalse kruiden",
+        "name": "Provençaalse kruiden",
+        "key": "provençaalse kruiden",
         "optional": false
       },
       {

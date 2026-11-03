@@ -65,6 +65,11 @@ function renderPlanner() {
         const detail = document.createElement("small");
         detail.textContent = "Klik om te verwijderen";
         slot.append(title, detail);
+        if (recipe?.advanceNotice) {
+          const notice = document.createElement("small");
+          notice.textContent = "Let op: " + recipe.advanceNotice;
+          slot.append(notice);
+        }
         slot.addEventListener("click", () => {
           Object.entries(state.plan).forEach(([key, plannedItem]) => {
             if (plannedItem.recipeId === item.recipeId) delete state.plan[key];
@@ -299,6 +304,16 @@ function createPdf() {
       y = addWrapped(doc, `${index + 1}. ${step}`, margin, y, width - margin * 2, 5);
       if (y > 275 && index < steps.length - 1) { doc.addPage(); y = 20; }
     });
+    if (recipe.notes?.length) {
+      y += 5;
+      doc.setFontSize(12);
+      doc.setTextColor(24, 63, 50);
+      doc.text("Opmerking", margin, y);
+      y += 7;
+      doc.setFontSize(10);
+      doc.setTextColor(40, 45, 40);
+      recipe.notes.forEach((note) => { y = addWrapped(doc, "• " + note, margin, y, width - margin * 2, 5); });
+    }
   });
   doc.save("weekplanning.pdf");
 }
