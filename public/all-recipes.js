@@ -41,7 +41,7 @@ async function buildPdf(recipes) {
     doc.setFont("times", "bold");
     doc.setCharSpace(0);
     doc.setFontSize(17);
-    const title = String(recipe.title || "Recept").replace(/\s+/g, " ").trim();
+    const title = String(recipe.title || "Recept").normalize("NFC").replace(/\s+/g, " ").trim();
     doc.text(title, margin, 18, { charSpace: 0 });
     doc.setFontSize(9);
     doc.setTextColor(70, 80, 70);

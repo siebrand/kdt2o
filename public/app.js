@@ -707,7 +707,7 @@ async function createPdf() {
       doc.setFont("times", "bold");
       doc.setCharSpace(0);
       doc.setFontSize(18);
-      const title = String(recipe.title || "Recept").replace(/\s+/g, " ").trim();
+      const title = String(recipe.title || "Recept").normalize("NFC").replace(/\s+/g, " ").trim();
       doc.text(title, margin, 24, { charSpace: 0 });
       doc.setFontSize(10);
       doc.setTextColor(70, 80, 70);
