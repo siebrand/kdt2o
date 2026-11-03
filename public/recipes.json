@@ -1990,7 +1990,7 @@
         "optional": false
       },
       {
-        "raw": "2 groentebouillonblokjes",
+        "raw": "2 stuks groentebouillonblokje",
         "amount": 2,
         "unit": "stuk",
         "name": "groentebouillonblokje",
@@ -2098,11 +2098,11 @@
         "optional": false
       },
       {
-        "raw": "2 bouillonblokjes",
+        "raw": "2 stuks groentebouillonblokje",
         "amount": 2,
         "unit": "stuk",
-        "name": "bouillonblokje",
-        "key": "bouillonblokje",
+        "name": "groentebouillonblokje",
+        "key": "groentebouillonblokje",
         "optional": false
       },
       {
@@ -2231,11 +2231,11 @@
         "optional": false
       },
       {
-        "raw": "2 bouillonblokjes",
+        "raw": "2 stuks groentebouillonblokje",
         "amount": 2,
         "unit": "stuk",
-        "name": "bouillonblokje",
-        "key": "bouillonblokje",
+        "name": "groentebouillonblokje",
+        "key": "groentebouillonblokje",
         "optional": false
       },
       {
@@ -2356,11 +2356,11 @@
         "optional": false
       },
       {
-        "raw": "2 bouillonblokjes",
+        "raw": "2 stuks groentebouillonblokje",
         "amount": 2,
         "unit": "stuk",
-        "name": "bouillonblokje",
-        "key": "bouillonblokje",
+        "name": "groentebouillonblokje",
+        "key": "groentebouillonblokje",
         "optional": false
       },
       {
@@ -3036,11 +3036,11 @@
         "optional": false
       },
       {
-        "raw": "1 (groente)bouillonblokje",
+        "raw": "1 stuk groentebouillonblokje",
         "amount": 1,
-        "unit": "",
-        "name": "(groente)bouillonblokje",
-        "key": "(groente)bouillonblokje",
+        "unit": "stuk",
+        "name": "groentebouillonblokje",
+        "key": "groentebouillonblokje",
         "optional": false
       },
       {
@@ -3732,11 +3732,19 @@
         "optional": false
       },
       {
-        "raw": "2 blokjes groentebouillon met 900 ml water",
+        "raw": "2 stuks groentebouillonblokje",
         "amount": 2,
-        "unit": "",
-        "name": "blokjes groentebouillon met 900 ml water",
-        "key": "blokjes groentebouillon met 900 ml water",
+        "unit": "stuk",
+        "name": "groentebouillonblokje",
+        "key": "groentebouillonblokje",
+        "optional": false
+      },
+      {
+        "raw": "900 ml water",
+        "amount": 900,
+        "unit": "ml",
+        "name": "water",
+        "key": "water",
         "optional": false
       },
       {
@@ -6571,11 +6579,11 @@
         "optional": false
       },
       {
-        "raw": "1 bouillonblokje",
+        "raw": "1 stuk groentebouillonblokje",
         "amount": 1,
-        "unit": "",
-        "name": "bouillonblokje",
-        "key": "bouillonblokje",
+        "unit": "stuk",
+        "name": "groentebouillonblokje",
+        "key": "groentebouillonblokje",
         "optional": false
       },
       {
