@@ -283,6 +283,36 @@ function formatIngredientAmount(amount) {
   return `${range.min}-${range.max}`;
 }
 
+function copyShoppingIngredient(ingredient, normalizedUnit) {
+  return {
+    ...ingredient,
+    alternatives: ingredient.alternatives?.map((alternative) => ({ ...alternative })),
+    normalizedUnit
+  };
+}
+
+function aggregateIngredientAlternatives(existing, incoming) {
+  if (!incoming.alternatives?.length) return;
+  if (!existing.alternatives) {
+    existing.alternatives = incoming.alternatives.map((alternative) => ({ ...alternative }));
+    return;
+  }
+  incoming.alternatives.forEach((incomingAlternative) => {
+    const incomingUnit = normalizeShoppingUnit(incomingAlternative.unit);
+    const incomingKey = normalizeShoppingName(incomingAlternative.name);
+    const existingAlternative = existing.alternatives.find((alternative) =>
+      normalizeShoppingUnit(alternative.unit) === incomingUnit &&
+      normalizeShoppingName(alternative.name) === incomingKey
+    );
+    if (!existingAlternative) {
+      existing.alternatives.push({ ...incomingAlternative });
+      return;
+    }
+    const combinedAmount = addIngredientAmounts(existingAlternative.amount, incomingAlternative.amount);
+    if (combinedAmount !== null) existingAlternative.amount = combinedAmount;
+  });
+}
+
 function aggregateIngredients() {
   const totals = new Map();
   const includedRecipeIds = new Set();
@@ -303,21 +333,22 @@ function aggregateIngredients() {
       }
       const existing = totals.get(mapKey);
       if (!existing) {
-        totals.set(mapKey, { ...shoppingIngredient, normalizedUnit: unit });
+        totals.set(mapKey, copyShoppingIngredient(shoppingIngredient, unit));
         return;
       }
       if (shoppingIngredient.amount == null) {
         if (existing.amount == null) return;
         state.shoppingWarnings.push("Controleer de hoeveelheid van " + shoppingIngredient.name + ".");
-        totals.set(mapKey + "::" + totals.size, { ...shoppingIngredient, normalizedUnit: unit });
+        totals.set(mapKey + "::" + totals.size, copyShoppingIngredient(shoppingIngredient, unit));
         return;
       }
       if (existing.amount == null) {
-        totals.set(mapKey + "::" + totals.size, { ...shoppingIngredient, normalizedUnit: unit });
+        totals.set(mapKey + "::" + totals.size, copyShoppingIngredient(shoppingIngredient, unit));
         return;
       }
       const combinedAmount = addIngredientAmounts(existing.amount, shoppingIngredient.amount);
       if (combinedAmount !== null) existing.amount = combinedAmount;
+      aggregateIngredientAlternatives(existing, shoppingIngredient);
     });
   });
   return [...totals.values()];
