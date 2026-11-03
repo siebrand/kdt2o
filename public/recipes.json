@@ -804,10 +804,12 @@
   },
   {
     "id": "kwark-muffins",
-    "title": "Kwark muffins",
+    "title": "Kwarkmuffins",
     "category": "ontbijt",
     "portions": 2,
-    "multiDay": false,
+    "days": 2,
+    "multiDay": true,
+    "preparationTime": 35,
     "ingredients": [
       {
         "raw": "50 gram ongebrande en ongezouten noten",
@@ -852,11 +854,19 @@
         "optional": false
       },
       {
-        "raw": "1 tl bakpoeder",
-        "amount": 1,
+        "raw": "3 tl bakpoeder",
+        "amount": 3,
         "unit": "tl",
         "name": "bakpoeder",
         "key": "bakpoeder",
+        "optional": false
+      },
+      {
+        "raw": "2 eieren",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "eieren",
+        "key": "eieren",
         "optional": false
       },
       {
@@ -873,14 +883,6 @@
         "unit": "",
         "name": "beetje roomboter",
         "key": "beetje roomboter",
-        "optional": false
-      },
-      {
-        "raw": "200 gram amandelmeel",
-        "amount": 200,
-        "unit": "gram",
-        "name": "amandelmeel",
-        "key": "amandelmeel",
         "optional": false
       }
     ],
