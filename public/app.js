@@ -324,6 +324,7 @@ function aggregateIngredients() {
     const recipe = recipeById(item.recipeId);
     (recipe?.ingredients || []).forEach((ingredient) => {
       const shoppingIngredient = normalizeShoppingIngredient(ingredient);
+      if (shoppingIngredient.name === "water") return;
       const key = normalizeShoppingName(shoppingIngredient.name);
       const unit = normalizeShoppingUnit(shoppingIngredient.unit);
       const mapKey = key + "::" + unit;
