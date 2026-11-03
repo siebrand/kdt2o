@@ -11,6 +11,15 @@ function attachSharedRecipeComponents(recipes) {
   });
 }
 
+function estimatePreparationTime(recipe) {
+  const method = [recipe.method || "", ...(recipe.components || []).map((component) => component.method || "")].join(" ");
+  const durations = [...method.matchAll(/(\d+)(?:\s*-\s*(\d+))?\s*(?:minuten|min\.?)/gi)]
+    .map((match) => Number(match[2] || match[1]))
+    .filter((value) => Number.isFinite(value));
+  if (durations.length) return Math.max(10, Math.min(180, Math.ceil(durations.reduce((total, value) => total + value, 0) / 5) * 5));
+  return method.length > 900 ? 45 : method.length > 450 ? 30 : method.length > 180 ? 20 : 15;
+}
+
 function textLines(doc, value, x, y, width, lineHeight) {
   const lines = doc.splitTextToSize(String(value || ""), width);
   doc.text(lines, x, y);
@@ -146,7 +155,11 @@ async function prepare() {
     return;
   }
   const response = await fetch("/recipes.json");
-  const recipes = attachSharedRecipeComponents(await response.json());
+  const recipes = attachSharedRecipeComponents(await response.json()).map((recipe) => ({
+    ...recipe,
+    preparationTime: Number.isFinite(recipe.preparationTime) ? recipe.preparationTime : estimatePreparationTime(recipe),
+    preparationTimeEstimated: true
+  }));
   const doc = await buildPdf(recipes);
   status.textContent = recipes.length + " recepten zijn verwerkt. Eén recept per pagina.";
   download.hidden = false;

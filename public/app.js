@@ -54,6 +54,21 @@ function recipeById(id) {
   return state.recipes.find((recipe) => recipe.id === id);
 }
 
+function estimatePreparationTime(recipe) {
+  const method = [recipe.method || "", ...(recipe.components || []).map((component) => component.method || "")].join(" ");
+  const durations = [...method.matchAll(/(\d+)(?:\s*-\s*(\d+))?\s*(?:minuten|min\.?)/gi)]
+    .map((match) => Number(match[2] || match[1]))
+    .filter((value) => Number.isFinite(value));
+  if (durations.length) return Math.max(10, Math.min(180, Math.ceil(durations.reduce((total, value) => total + value, 0) / 5) * 5));
+  const complexity = method.length > 900 ? 45 : method.length > 450 ? 30 : method.length > 180 ? 20 : 15;
+  return complexity;
+}
+
+function addPreparationTime(recipe) {
+  if (Number.isFinite(recipe.preparationTime)) return recipe;
+  return { ...recipe, preparationTime: estimatePreparationTime(recipe), preparationTimeEstimated: true };
+}
+
 function attachSharedRecipeComponents(recipes) {
   const template = recipes.find((recipe) => recipe.components?.some((component) => component.id === "lijnzaadcrackers"));
   if (!template) return recipes;
@@ -156,6 +171,9 @@ function renderOptions() {
     preview.alt = "Infographic van " + recipe.title;
     const title = document.createElement("h3");
     title.textContent = recipe.title;
+    const preparationTime = document.createElement("p");
+    preparationTime.className = "recipe-card-meta";
+    preparationTime.textContent = "Bereiding: circa " + recipe.preparationTime + " minuten";
     const button = document.createElement("button");
     button.type = "button";
     button.className = "button";
@@ -163,7 +181,7 @@ function renderOptions() {
     button.setAttribute("aria-label", "Toevoegen");
     button.title = "Toevoegen";
     button.addEventListener("click", () => chooseRecipe(recipe));
-    card.append(preview, title, button);
+    card.append(preview, title, preparationTime, button);
     options.append(card);
   });
 }
@@ -795,7 +813,7 @@ downloadButton.addEventListener("click", createPdf);
 fetch("/recipes.json")
   .then((response) => response.ok ? response.json() : Promise.reject(new Error("recipes")))
   .then((recipes) => {
-    state.recipes = shuffleRecipes(attachSharedRecipeComponents(recipes));
+    state.recipes = shuffleRecipes(attachSharedRecipeComponents(recipes).map(addPreparationTime));
     render();
   })
   .catch(() => {
