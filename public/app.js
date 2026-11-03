@@ -31,6 +31,15 @@ function planKey(day, meal) {
   return day + "-" + meal;
 }
 
+function shuffleRecipes(recipes) {
+  const shuffled = [...recipes];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+  return shuffled;
+}
+
 function recipeById(id) {
   return state.recipes.find((recipe) => recipe.id === id);
 }
@@ -467,7 +476,7 @@ downloadButton.addEventListener("click", createPdf);
 fetch("/recipes.json")
   .then((response) => response.ok ? response.json() : Promise.reject(new Error("recipes")))
   .then((recipes) => {
-    state.recipes = recipes;
+    state.recipes = shuffleRecipes(recipes);
     render();
   })
   .catch(() => {
