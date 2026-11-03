@@ -2043,8 +2043,8 @@
         "optional": false
       },
       {
-        "raw": "teentjes knoflook",
-        "amount": null,
+        "raw": "3 teentjes knoflook",
+        "amount": 3,
         "unit": "teentje",
         "name": "knoflook",
         "key": "knoflook",
