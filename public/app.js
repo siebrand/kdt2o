@@ -380,6 +380,7 @@ function aggregateIngredients() {
     const recipeGranolaComponent = recipe?.components?.find((item) => item.id === "granola");
     if (recipeGranolaComponent) granolaComponent ||= recipeGranolaComponent;
     ingredients.forEach((ingredient) => {
+      if (ingredient.componentId) return;
       const isFlaxCracker = /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(ingredient.raw || "")) ||
         /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(ingredient.name || "")) ||
         (ingredient.alternatives || []).some((alternative) => /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(alternative.raw || alternative.name || "")));

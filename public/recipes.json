@@ -646,6 +646,15 @@
         "optional": false
       },
       {
+        "raw": "50 gram granola (ongeveer 2 handjes)",
+        "amount": 50,
+        "unit": "gram",
+        "name": "granola (ongeveer 2 handjes)",
+        "key": "granola (ongeveer 2 handjes)",
+        "componentId": "granola",
+        "optional": false
+      },
+      {
         "raw": "2 schaaltjes (200 gram) rood/blauw fruit",
         "amount": 2,
         "unit": "schaaltjes",
@@ -1548,6 +1557,15 @@
         "unit": "ml",
         "name": "volle kwark",
         "key": "volle kwark",
+        "optional": false
+      },
+      {
+        "raw": "100 gram granola (ongeveer 4 handjes)",
+        "amount": 100,
+        "unit": "gram",
+        "name": "granola (ongeveer 4 handjes)",
+        "key": "granola (ongeveer 4 handjes)",
+        "componentId": "granola",
         "optional": false
       },
       {
