@@ -5937,22 +5937,20 @@
     "multiDay": false,
     "ingredients": [
       {
+        "raw": "2 el yoghurt",
+        "amount": 2,
+        "unit": "el",
+        "name": "yoghurt",
+        "key": "yoghurt",
+        "optional": false
+      },
+      {
         "raw": "30 ml mayonaise",
         "amount": 30,
         "unit": "ml",
         "name": "mayonaise",
         "key": "mayonaise",
-        "optional": false,
-        "alternatives": [
-          {
-            "raw": "2 el yoghurt",
-            "amount": 2,
-            "unit": "el",
-            "name": "yoghurt",
-            "key": "yoghurt",
-            "optional": false
-          }
-        ]
+        "optional": false
       },
       {
         "raw": "2 el azijn",
