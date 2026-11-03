@@ -223,6 +223,7 @@ function normalizeShoppingName(name) {
 function normalizeShoppingIngredient(ingredient) {
   const name = String(ingredient.name || "").toLocaleLowerCase("nl").trim();
   let raw = String(ingredient.raw || "").toLocaleLowerCase("nl").trim();
+  if (name === "water") return { ...ingredient, amount: null, unit: "", name: "water", key: "water" };
   if (raw.startsWith("1/, ")) raw = "1/2 " + raw.slice(4);
   if (name.includes("roomboter")) {
     return { ...ingredient, amount: ingredient.amount ?? 1, unit: "el", name: "roomboter" };
