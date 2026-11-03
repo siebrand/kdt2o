@@ -2872,11 +2872,11 @@
         "optional": false
       },
       {
-        "raw": "4 flinke el pesto (zelf gemaakt of uit een potje)",
+        "raw": "4 el pesto",
         "amount": 4,
-        "unit": "",
-        "name": "flinke el pesto (zelf gemaakt of uit een potje)",
-        "key": "flinke el pesto (zelf gemaakt of uit een potje)",
+        "unit": "el",
+        "name": "pesto",
+        "key": "pesto",
         "optional": false
       },
       {
@@ -4730,11 +4730,11 @@
         "optional": false
       },
       {
-        "raw": "% potje pesto (zelfgemaakt of uit een potje)",
-        "amount": null,
-        "unit": "",
-        "name": "% potje pesto (zelfgemaakt of uit een potje)",
-        "key": "% potje pesto (zelfgemaakt of uit een potje)",
+        "raw": "1 potje pesto",
+        "amount": 1,
+        "unit": "potje",
+        "name": "pesto",
+        "key": "pesto",
         "optional": false
       },
       {
@@ -4899,12 +4899,13 @@
         "optional": false
       },
       {
-        "raw": "2 stukjes zalmfilet of moot (a 200 gram per stuk)",
-        "amount": 2,
-        "unit": "stuk",
-        "name": "jes zalmfilet of moot (a 200 gram per stuk)",
-        "key": "jes zalmfilet of moot (a 200 gram per stuk)",
-        "optional": false
+        "raw": "400 gram zalmfilet",
+        "amount": 400,
+        "unit": "gram",
+        "name": "zalmfilet",
+        "key": "zalmfilet",
+        "optional": false,
+        "alternatives": [{"raw": "400 gram zalmmoot", "amount": 400, "unit": "gram", "name": "zalmmoot", "key": "zalmmoot", "optional": false}]
       },
       {
         "raw": "2 el mayonaise",
@@ -5541,11 +5542,11 @@
         "optional": false
       },
       {
-        "raw": "200 gram bloemkoolrijst (kant en klaar of zelf snijden)",
+        "raw": "200 gram bloemkoolrijst",
         "amount": 200,
         "unit": "gram",
-        "name": "bloemkoolrijst (kant en klaar of zelf snijden)",
-        "key": "bloemkoolrijst (kant en klaar of zelf snijden)",
+        "name": "bloemkoolrijst",
+        "key": "bloemkoolrijst",
         "optional": false
       },
       {
@@ -5844,11 +5845,11 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "4el pesto ( zelfgemaakt of uit een potje)",
+        "raw": "4 el pesto",
         "amount": 4,
         "unit": "el",
-        "name": "pesto ( zelfgemaakt of uit een potje)",
-        "key": "pesto ( zelfgemaakt of uit een potje)",
+        "name": "pesto",
+        "key": "pesto",
         "optional": false
       },
       {
@@ -6104,12 +6105,13 @@
         "optional": false
       },
       {
-        "raw": "250 ml slagroom (ongeklopt) of melk (liefst: 125 ml slagroom/ 125 ml melk)",
+        "raw": "250 ml slagroom (ongeklopt)",
         "amount": 250,
         "unit": "ml",
-        "name": "slagroom (ongeklopt) of melk (liefst: 125 ml slagroom/ 125 ml melk)",
-        "key": "slagroom (ongeklopt) of melk (liefst: 125 ml slagroom/ 125 ml melk)",
-        "optional": false
+        "name": "slagroom (ongeklopt)",
+        "key": "slagroom (ongeklopt)",
+        "optional": false,
+        "alternatives": [{"raw": "250 ml melk", "amount": 250, "unit": "ml", "name": "melk", "key": "melk", "optional": false}]
       },
       {
         "raw": "75 gram boerenkaas",
