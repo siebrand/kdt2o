@@ -196,10 +196,10 @@
       },
       {
         "raw": "1/2 tl bakpoeder",
-        "amount": 1,
-        "unit": "",
-        "name": "/2 tl bakpoeder",
-        "key": "/2 tl bakpoeder",
+        "amount": 0.5,
+        "unit": "tl",
+        "name": "bakpoeder",
+        "key": "bakpoeder",
         "optional": false
       },
       {
@@ -1640,10 +1640,10 @@
       },
       {
         "raw": "1/2 avocado",
-        "amount": 1,
-        "unit": "",
-        "name": "/2 avocado",
-        "key": "/2 avocado",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "avocado",
+        "key": "avocado",
         "optional": false
       },
       {
@@ -1868,10 +1868,10 @@
       },
       {
         "raw": "1/2 bosje verse bieslook",
-        "amount": 1,
-        "unit": "",
-        "name": "/2 bosje verse bieslook",
-        "key": "/2 bosje verse bieslook",
+        "amount": 0.5,
+        "unit": "bosje",
+        "name": "verse bieslook",
+        "key": "verse bieslook",
         "optional": false
       },
       {
@@ -2834,10 +2834,10 @@
     "ingredients": [
       {
         "raw": "2/3 komkommer",
-        "amount": 2,
-        "unit": "",
-        "name": "/3 komkommer",
-        "key": "/3 komkommer",
+        "amount": 0.6666666667,
+        "unit": "stuk",
+        "name": "komkommer",
+        "key": "komkommer",
         "optional": false
       },
       {
@@ -4665,10 +4665,10 @@
     "ingredients": [
       {
         "raw": "1/2 sinaasappel (sap en rasp)",
-        "amount": 1,
-        "unit": "",
-        "name": "/2 sinaasappel (sap en rasp)",
-        "key": "/2 sinaasappel (sap en rasp)",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "sinaasappel (sap en rasp)",
+        "key": "sinaasappel (sap en rasp)",
         "optional": false
       },
       {
@@ -4689,10 +4689,10 @@
       },
       {
         "raw": "1/2 tl cayennepeper",
-        "amount": 1,
-        "unit": "",
-        "name": "/2 tl cayennepeper",
-        "key": "/2 tl cayennepeper",
+        "amount": 0.5,
+        "unit": "tl",
+        "name": "cayennepeper",
+        "key": "cayennepeper",
         "optional": false
       },
       {
@@ -4900,11 +4900,11 @@
         "optional": false
       },
       {
-        "raw": "1 blikje / 2el tomatenpuree",
+        "raw": "1 blikje of 2 el tomatenpuree",
         "amount": 1,
         "unit": "blik",
-        "name": "/ 2el tomatenpuree",
-        "key": "/ 2el tomatenpuree",
+        "name": "tomatenpuree",
+        "key": "tomatenpuree",
         "optional": false
       },
       {
@@ -5175,10 +5175,10 @@
       },
       {
         "raw": "1/2 bos verse peterselie",
-        "amount": 1,
-        "unit": "",
-        "name": "/2 bos verse peterselie",
-        "key": "/2 bos verse peterselie",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "bos verse peterselie",
+        "key": "bos verse peterselie",
         "optional": false
       },
       {
@@ -5231,10 +5231,10 @@
       },
       {
         "raw": "1/2 rode peper",
-        "amount": 1,
-        "unit": "",
-        "name": "/2 rode peper",
-        "key": "/2 rode peper",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "rode peper",
+        "key": "rode peper",
         "optional": false
       },
       {
@@ -5593,10 +5593,10 @@
       },
       {
         "raw": "1/2 rode peper",
-        "amount": 1,
-        "unit": "",
-        "name": "/2 rode peper",
-        "key": "/2 rode peper",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "rode peper",
+        "key": "rode peper",
         "optional": false
       },
       {
@@ -5913,10 +5913,10 @@
       },
       {
         "raw": "1/2 bosje verse basilicum",
-        "amount": 1,
-        "unit": "",
-        "name": "/2 bosje verse basilicum",
-        "key": "/2 bosje verse basilicum",
+        "amount": 0.5,
+        "unit": "bosje",
+        "name": "verse basilicum",
+        "key": "verse basilicum",
         "optional": false
       },
       {
@@ -5943,18 +5943,18 @@
     "ingredients": [
       {
         "raw": "1/2 flespompoen (zijn makkelijker te snijden)",
-        "amount": 1,
-        "unit": "",
-        "name": "/2 flespompoen (zijn makkelijker te snijden)",
-        "key": "/2 flespompoen (zijn makkelijker te snijden)",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "flespompoen (zijn makkelijker te snijden)",
+        "key": "flespompoen (zijn makkelijker te snijden)",
         "optional": false
       },
       {
         "raw": "1/2 el paprikapoeder",
-        "amount": 1,
-        "unit": "",
-        "name": "/2 el paprikapoeder",
-        "key": "/2 el paprikapoeder",
+        "amount": 0.5,
+        "unit": "el",
+        "name": "paprikapoeder",
+        "key": "paprikapoeder",
         "optional": false
       },
       {
@@ -6778,11 +6778,11 @@
         "optional": false
       },
       {
-        "raw": "1/, blokje groente- of visbouillon met 100-150 ml water",
-        "amount": 1,
-        "unit": "",
-        "name": "/, blokje groente- of visbouillon met 100-150 ml water",
-        "key": "/, blokje groente- of visbouillon met 100-150 ml water",
+        "raw": "1/2 blokje groente- of visbouillon met 100-150 ml water",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "groente- of visbouillonblokje",
+        "key": "groente- of visbouillonblokje",
         "optional": false
       },
       {
