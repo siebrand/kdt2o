@@ -36,7 +36,7 @@ text, letters, numbers, logo, watermark, packaging, hands, people, duplicated in
 unrelated food, medical or nutrition claims
 ```
 
-The generated artwork is placed behind a deterministic SVG/HTML template. Text is never delegated to the image model. Future assets must record the style version, prompt version, source recipe id, and generation date in the asset manifest.
+The generated artwork is placed behind a deterministic SVG/HTML template. Text is never delegated to the image model. The application currently renders this template dynamically from `recipes.json`, so all current and future recipes receive the same infographic without a stale generated asset set. Future static exports must record the style version, prompt version, source recipe id, and generation date in the asset manifest.
 
 ## Quality checklist
 
