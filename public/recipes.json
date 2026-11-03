@@ -563,8 +563,8 @@
         "raw": "150 gram geraspte (boeren)kaas",
         "amount": 150,
         "unit": "gram",
-        "name": "geraspte (boeren)kaas",
-        "key": "geraspte (boeren)kaas",
+        "name": "boerenkaas",
+        "key": "boerenkaas",
         "optional": false
       },
       {
@@ -937,8 +937,8 @@
         "raw": "plakjes boerenkaas",
         "amount": null,
         "unit": "",
-        "name": "plakjes boerenkaas",
-        "key": "plakjes boerenkaas",
+        "name": "boerenkaas",
+        "key": "boerenkaas",
         "optional": false
       },
       {
