@@ -133,9 +133,9 @@
         "optional": false
       },
       {
-        "raw": "2 handjes kokosrasp/kokosflakes",
-        "amount": 2,
-        "unit": "handjes",
+        "raw": "30 gram kokosrasp/kokosflakes",
+        "amount": 30,
+        "unit": "gram",
         "name": "kokosrasp/kokosflakes",
         "key": "kokosrasp/kokosflakes",
         "optional": false
@@ -339,9 +339,9 @@
         "optional": false
       },
       {
-        "raw": "2 handjes kokosrasp",
-        "amount": 2,
-        "unit": "handjes",
+        "raw": "50 gram kokosrasp",
+        "amount": 50,
+        "unit": "gram",
         "name": "kokosrasp",
         "key": "kokosrasp",
         "optional": false
@@ -635,9 +635,9 @@
         "optional": false
       },
       {
-        "raw": "2 handjes granola",
-        "amount": 2,
-        "unit": "handjes",
+        "raw": "50 gram granola",
+        "amount": 50,
+        "unit": "gram",
         "name": "granola",
         "key": "granola",
         "optional": false
@@ -1422,10 +1422,10 @@
       },
       {
         "raw": "handje Parmezaanse kaas",
-        "amount": null,
-        "unit": "",
-        "name": "handje Parmezaanse kaas",
-        "key": "handje parmezaanse kaas",
+        "amount": 25,
+        "unit": "gram",
+        "name": "Parmezaanse kaas",
+        "key": "parmezaanse kaas",
         "optional": false
       },
       {
@@ -1523,9 +1523,9 @@
         "optional": false
       },
       {
-        "raw": "2 handjes granola per bakje",
-        "amount": 2,
-        "unit": "handjes",
+        "raw": "50 gram granola per bakje",
+        "amount": 50,
+        "unit": "gram",
         "name": "granola per bakje",
         "key": "granola per bakje",
         "optional": false
@@ -1687,17 +1687,17 @@
         "optional": false
       },
       {
-        "raw": "2 handen rucola",
-        "amount": 2,
-        "unit": "handen",
+        "raw": "50 gram rucola",
+        "amount": 50,
+        "unit": "gram",
         "name": "rucola",
         "key": "rucola",
         "optional": false
       },
       {
-        "raw": "2 handen gemengde bladsalade",
-        "amount": 2,
-        "unit": "handen",
+        "raw": "50 gram gemengde bladsalade",
+        "amount": 50,
+        "unit": "gram",
         "name": "gemengde bladsalade",
         "key": "gemengde bladsalade",
         "optional": false
@@ -2083,9 +2083,9 @@
         "optional": false
       },
       {
-        "raw": "handje kelp",
-        "amount": 1,
-        "unit": "hand",
+        "raw": "25 gram kelp",
+        "amount": 25,
+        "unit": "gram",
         "name": "kelp",
         "key": "kelp",
         "optional": false
@@ -2217,9 +2217,9 @@
         "optional": false
       },
       {
-        "raw": "handje kelp",
-        "amount": 1,
-        "unit": "hand",
+        "raw": "25 gram kelp",
+        "amount": 25,
+        "unit": "gram",
         "name": "kelp",
         "key": "kelp",
         "optional": false
@@ -2343,9 +2343,9 @@
         "optional": false
       },
       {
-        "raw": "handje kelp",
-        "amount": 1,
-        "unit": "hand",
+        "raw": "25 gram kelp",
+        "amount": 25,
+        "unit": "gram",
         "name": "kelp",
         "key": "kelp",
         "optional": false
@@ -2919,9 +2919,9 @@
         "optional": false
       },
       {
-        "raw": "2 handjes pijnboompitten",
-        "amount": 2,
-        "unit": "handjes",
+        "raw": "50 gram pijnboompitten",
+        "amount": 50,
+        "unit": "gram",
         "name": "pijnboompitten",
         "key": "pijnboompitten",
         "optional": false
@@ -3531,9 +3531,9 @@
         "optional": false
       },
       {
-        "raw": "2 handjes (zwarte) olijven",
-        "amount": 2,
-        "unit": "handjes",
+        "raw": "50 gram (zwarte) olijven",
+        "amount": 50,
+        "unit": "gram",
         "name": "(zwarte) olijven",
         "key": "(zwarte) olijven",
         "optional": false
@@ -3711,9 +3711,9 @@
         "optional": false
       },
       {
-        "raw": "2 handjes verse basilicum",
-        "amount": 2,
-        "unit": "handjes",
+        "raw": "50 gram verse basilicum",
+        "amount": 50,
+        "unit": "gram",
         "name": "verse basilicum",
         "key": "verse basilicum",
         "optional": false
@@ -3805,9 +3805,9 @@
         "optional": true
       },
       {
-        "raw": "1 grote hand groene (gemengde) bladsla",
-        "amount": 1,
-        "unit": "hand",
+        "raw": "25 gram groene (gemengde) bladsla",
+        "amount": 25,
+        "unit": "gram",
         "name": "groene (gemengde) bladsla",
         "key": "groene (gemengde) bladsla",
         "optional": true
@@ -4047,9 +4047,9 @@
         "optional": false
       },
       {
-        "raw": "1 handje basilicum blaadjes",
-        "amount": 1,
-        "unit": "hand",
+        "raw": "25 gram basilicum blaadjes",
+        "amount": 25,
+        "unit": "gram",
         "name": "basilicum blaadjes",
         "key": "basilicum blaadjes",
         "optional": false
@@ -4189,9 +4189,9 @@
         "optional": false
       },
       {
-        "raw": "2 handjes taugé",
-        "amount": 2,
-        "unit": "handjes",
+        "raw": "50 gram taugé",
+        "amount": 50,
+        "unit": "gram",
         "name": "taugé",
         "key": "taugé",
         "optional": false
@@ -4307,9 +4307,9 @@
         "optional": false
       },
       {
-        "raw": "2 handjes taugé",
-        "amount": 2,
-        "unit": "handjes",
+        "raw": "50 gram taugé",
+        "amount": 50,
+        "unit": "gram",
         "name": "taugé",
         "key": "taugé",
         "optional": false
@@ -4656,9 +4656,9 @@
         "optional": false
       },
       {
-        "raw": "1 handje zonnebloempitten (eventueel geroosterd)",
-        "amount": 1,
-        "unit": "hand",
+        "raw": "25 gram zonnebloempitten (eventueel geroosterd)",
+        "amount": 25,
+        "unit": "gram",
         "name": "zonnebloempitten (eventueel geroosterd)",
         "key": "zonnebloempitten (eventueel geroosterd)",
         "optional": false
@@ -5032,9 +5032,9 @@
         "optional": false
       },
       {
-        "raw": "2 handen verse andijvie (of spinazie of boerenkool)",
-        "amount": 2,
-        "unit": "handen",
+        "raw": "50 gram verse andijvie (of spinazie of boerenkool)",
+        "amount": 50,
+        "unit": "gram",
         "name": "verse andijvie (of spinazie of boerenkool)",
         "key": "verse andijvie (of spinazie of boerenkool)",
         "optional": false
@@ -5150,9 +5150,9 @@
         "optional": false
       },
       {
-        "raw": "2 handjes pijnboompitten (geroosterd)",
-        "amount": 2,
-        "unit": "handjes",
+        "raw": "50 gram pijnboompitten (geroosterd)",
+        "amount": 50,
+        "unit": "gram",
         "name": "pijnboompitten (geroosterd)",
         "key": "pijnboompitten (geroosterd)",
         "optional": false
@@ -5292,9 +5292,9 @@
         "optional": false
       },
       {
-        "raw": "2 grote handen groene bladsalade",
-        "amount": 2,
-        "unit": "hand",
+        "raw": "50 gram groene bladsalade",
+        "amount": 50,
+        "unit": "gram",
         "name": "groene bladsalade",
         "key": "groene bladsalade",
         "optional": false
@@ -5963,9 +5963,9 @@
         "optional": false
       },
       {
-        "raw": "2 handen verse basilicum",
-        "amount": 2,
-        "unit": "handen",
+        "raw": "50 gram verse basilicum",
+        "amount": 50,
+        "unit": "gram",
         "name": "verse basilicum",
         "key": "verse basilicum",
         "optional": false
