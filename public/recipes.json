@@ -3816,7 +3816,7 @@
         "optional": false
       },
       {
-        "raw": "1 blikje tonijn in olijfolie (150 gram)",
+        "raw": "1 blik tonijn in olijfolie (150 gram)",
         "amount": 1,
         "unit": "blik",
         "name": "tonijn in olijfolie (150 gram)",
@@ -3824,7 +3824,7 @@
         "optional": false,
         "alternatives": [
           {
-            "raw": "1 blikje tonijn in water (150 gram)",
+            "raw": "1 blik tonijn in water (150 gram)",
             "amount": 1,
             "unit": "blik",
             "name": "tonijn in water (150 gram)",
