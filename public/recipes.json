@@ -1543,46 +1543,6 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "200 gram gemengde en ongebrande noten (je kunt ook meer gebruiken",
-        "amount": 200,
-        "unit": "gram",
-        "name": "gemengde en ongebrande noten (je kunt ook meer gebruiken",
-        "key": "gemengde en ongebrande noten (je kunt ook meer gebruiken",
-        "optional": false
-      },
-      {
-        "raw": "100 gram zonnebloempitten",
-        "amount": 100,
-        "unit": "gram",
-        "name": "zonnebloempitten",
-        "key": "zonnebloempitten",
-        "optional": false
-      },
-      {
-        "raw": "100 gram pompoenpitten",
-        "amount": 100,
-        "unit": "gram",
-        "name": "pompoenpitten",
-        "key": "pompoenpitten",
-        "optional": false
-      },
-      {
-        "raw": "100 gram heel lijnzaad",
-        "amount": 100,
-        "unit": "gram",
-        "name": "heel lijnzaad",
-        "key": "heel lijnzaad",
-        "optional": false
-      },
-      {
-        "raw": "kaneel",
-        "amount": null,
-        "unit": "",
-        "name": "kaneel",
-        "key": "kaneel",
-        "optional": false
-      },
-      {
         "raw": "300 ml volle kwark",
         "amount": 300,
         "unit": "ml",
@@ -1599,7 +1559,7 @@
         "optional": false
       }
     ],
-    "method": "Granola - Verwarm de oven op 170 graden. Doe alle noten en zaden in een kom, bestrooi met kaneel en meng alles goed door elkaar. Pak een bakplaat en leg hierop een vel bakpapier. Spreid het mengsel over de bakplaat en schuif in de oven. Bak dit 20 tot 50 minuten. Schep het mengsel na 10 minuten even om, om aanbranden te voorkomen. Bak alles tot het alles lichtbruin gekleurd is en laat afkoelen. Bewaar de granola in een afsluitbare pot. Kwark - Verdeel de kwark over 2 schaaltjes. Voeg per schaaltje twee handjes granola en 100g fruit toe. Tip: Maak de granola zoals in week 1, met alleen lijnzaad en zonnebloempitten.",
+    "method": "Verdeel de kwark over 2 schaaltjes. Voeg per schaaltje twee handjes granola en 100 gram fruit toe. Tip: Maak de granola zoals in week 1, met alleen lijnzaad en zonnebloempitten.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
