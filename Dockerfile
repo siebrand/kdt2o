@@ -1,5 +1,6 @@
 FROM python:3.12-alpine AS data
-RUN pip install --no-cache-dir pypdf==5.4.0
+COPY requirements.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 WORKDIR /build
 COPY recipes ./recipes
 COPY scripts ./scripts
