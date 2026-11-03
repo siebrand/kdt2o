@@ -838,9 +838,9 @@
         "optional": false
       },
       {
-        "raw": "amandelmeel.",
-        "amount": null,
-        "unit": "",
+        "raw": "200 gram amandelmeel",
+        "amount": 200,
+        "unit": "gram",
         "name": "amandelmeel",
         "key": "amandelmeel",
         "optional": false
