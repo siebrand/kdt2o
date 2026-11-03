@@ -317,9 +317,10 @@ function formatIngredientAmount(amount) {
 
 function formatIngredientUnit(unit, amount) {
   const normalized = normalizeShoppingUnit(unit);
-  if (normalized !== "el") return unit;
+  if (normalized !== "el" && normalized !== "tl") return unit;
   const range = parseAmountRange(amount);
-  return range && range.min === 1 && range.max === 1 ? "eetlepel" : "eetlepels";
+  if (normalized === "el") return range && range.min === 1 && range.max === 1 ? "eetlepel" : "eetlepels";
+  return range && range.min === 1 && range.max === 1 ? "theelepel" : "theelepels";
 }
 
 function copyShoppingIngredient(ingredient, normalizedUnit) {

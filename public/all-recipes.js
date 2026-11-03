@@ -29,7 +29,9 @@ function textLines(doc, value, x, y, width, lineHeight) {
 function ingredientText(ingredient) {
   const formatTablespoons = (value) => String(value || "")
     .replace(/(\d+(?:[.,]\d+)?)\s+of\s+meer\s+(?:el|eetlepel|eetlepels)\b/gi, "$1 of meer eetlepels")
-    .replace(/(\d+(?:[.,]\d+)?)\s+(?:el|eetlepel|eetlepels)\b/gi, (_, amount) => `${amount} ${amount === "1" ? "eetlepel" : "eetlepels"}`);
+    .replace(/(\d+(?:[.,]\d+)?)\s+of\s+meer\s+(?:tl|theelepel|theelepels)\b/gi, "$1 of meer theelepels")
+    .replace(/(\d+(?:[.,]\d+)?)\s+(?:el|eetlepel|eetlepels)\b/gi, (_, amount) => `${amount} ${amount === "1" ? "eetlepel" : "eetlepels"}`)
+    .replace(/(\d+(?:[.,]\d+)?)\s+(?:tl|theelepel|theelepels)\b/gi, (_, amount) => `${amount} ${amount === "1" ? "theelepel" : "theelepels"}`);
   const main = formatTablespoons(ingredient.raw || ingredient.name || "");
   const alternatives = (ingredient.alternatives || []).map((item) => formatTablespoons(item.raw || item.name || ""));
   return alternatives.length ? main + " of " + alternatives.join(" of ") : main;
