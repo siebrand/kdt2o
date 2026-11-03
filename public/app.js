@@ -324,7 +324,7 @@ function aggregateIngredients() {
     const recipe = recipeById(item.recipeId);
     (recipe?.ingredients || []).forEach((ingredient) => {
       const shoppingIngredient = normalizeShoppingIngredient(ingredient);
-      if (shoppingIngredient.name === "water") return;
+      if (shoppingIngredient.name === "water" || SHOPPING_LIST_EXCLUDED_NAMES.has(shoppingIngredient.name)) return;
       const key = normalizeShoppingName(shoppingIngredient.name);
       const unit = normalizeShoppingUnit(shoppingIngredient.unit);
       const mapKey = key + "::" + unit;
@@ -366,6 +366,8 @@ const SHOPPING_CATEGORIES = [
   "Houdbare producten",
   "Overig"
 ];
+const SHOPPING_LIST_EXCLUDED_NAMES = new Set(["deegroller of fles", "muffinbakplaat voor 12 muffins"]);
+const APPROVED_OTHER_NAMES = new Set(["bakpapier"]);
 
 function shoppingCategory(item) {
   const name = String(item.name || "").toLocaleLowerCase("nl");
@@ -409,7 +411,7 @@ function renderShoppingList() {
   const uncategorized = [];
   items.forEach((item) => {
     const category = shoppingCategory(item);
-    if (category === "Overig") uncategorized.push(item.name);
+    if (category === "Overig" && !APPROVED_OTHER_NAMES.has(item.name)) uncategorized.push(item.name);
     if (category !== currentCategory) {
       const heading = document.createElement("h3");
       heading.textContent = category;
