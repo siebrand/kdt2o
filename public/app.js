@@ -68,6 +68,11 @@ function renderPlanner() {
         const detail = document.createElement("small");
         detail.textContent = "Klik om te verwijderen";
         slot.append(title, detail);
+        if (recipe?.multiDay) {
+          const schedule = document.createElement("small");
+          schedule.textContent = "Meerdaags: " + plannedDays(item.sourceDay).map((day) => DAYS[day]).join(", ");
+          slot.append(schedule);
+        }
         if (recipe?.advanceNotice) {
           const notice = document.createElement("small");
           notice.textContent = "Let op: " + recipe.advanceNotice;
@@ -313,7 +318,8 @@ function drawWeeklyOverview(doc, margin, width) {
       if (recipe?.multiDay) {
         doc.setFontSize(7);
         doc.setTextColor(70, 80, 70);
-        doc.text("Meerdaags", x + 2, y + rowHeight - 4);
+        const scheduledDays = Number.isInteger(item.sourceDay) ? plannedDays(item.sourceDay).map((day) => DAYS[day]).join(", ") : "meerdere dagen";
+        doc.text("Meerdaags: " + scheduledDays, x + 2, y + rowHeight - 4);
         doc.setFontSize(9);
       }
     });
