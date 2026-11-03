@@ -2265,11 +2265,11 @@
         "optional": false
       },
       {
-        "raw": "100% pindakaas (circa 30 gram per persoon)",
-        "amount": 100,
-        "unit": "",
-        "name": "% pindakaas (circa 30 gram per persoon)",
-        "key": "% pindakaas (circa 30 gram per persoon)",
+        "raw": "pindakaas (circa 30 gram per persoon)",
+        "amount": 30,
+        "unit": "gram",
+        "name": "pindakaas (per persoon)",
+        "key": "pindakaas (per persoon)",
         "optional": false
       }
     ],
@@ -4417,11 +4417,11 @@
         "optional": false
       },
       {
-        "raw": "2 biefstukken (100 gram per stuk)",
-        "amount": 2,
-        "unit": "",
-        "name": "biefstukken (100 gram per stuk)",
-        "key": "biefstukken (100 gram per stuk)",
+        "raw": "200 gram biefstuk",
+        "amount": 200,
+        "unit": "gram",
+        "name": "biefstuk",
+        "key": "biefstuk",
         "optional": false
       },
       {
@@ -5352,11 +5352,11 @@
         "optional": false
       },
       {
-        "raw": "200 gram kippendijen (in blokjes)",
+        "raw": "200 gram kippendijen",
         "amount": 200,
         "unit": "gram",
-        "name": "kippendijen (in blokjes)",
-        "key": "kippendijen (in blokjes)",
+        "name": "kippendijen",
+        "key": "kippendijen",
         "optional": false
       },
       {
@@ -5636,11 +5636,11 @@
         "optional": false
       },
       {
-        "raw": "2el 100% pindakaas",
+        "raw": "2 el pindakaas",
         "amount": 2,
         "unit": "el",
-        "name": "100% pindakaas",
-        "key": "100% pindakaas",
+        "name": "pindakaas",
+        "key": "pindakaas",
         "optional": false
       },
       {
@@ -7136,11 +7136,11 @@
         "optional": false
       },
       {
-        "raw": "50 gram (belegen) boerenkaas",
+        "raw": "50 gram boerenkaas",
         "amount": 50,
         "unit": "gram",
-        "name": "(belegen) boerenkaas",
-        "key": "(belegen) boerenkaas",
+        "name": "boerenkaas",
+        "key": "boerenkaas",
         "optional": false
       },
       {
