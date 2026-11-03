@@ -339,9 +339,9 @@
         "optional": false
       },
       {
-        "raw": "4 el slagroom",
-        "amount": 4,
-        "unit": "el",
+        "raw": "60 ml slagroom",
+        "amount": 60,
+        "unit": "ml",
         "name": "slagroom",
         "key": "slagroom",
         "optional": false
@@ -4492,9 +4492,9 @@
         "optional": false
       },
       {
-        "raw": "2 el slagroom",
-        "amount": 2,
-        "unit": "el",
+        "raw": "30 ml slagroom",
+        "amount": 30,
+        "unit": "ml",
         "name": "slagroom",
         "key": "slagroom",
         "optional": false
