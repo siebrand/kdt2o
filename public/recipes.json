@@ -5937,8 +5937,8 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "80 ml mayonaise",
-        "amount": 80,
+        "raw": "30 ml mayonaise",
+        "amount": 30,
         "unit": "ml",
         "name": "mayonaise",
         "key": "mayonaise",
