@@ -1,5 +1,30 @@
 # Plan: wekelijkse maaltijdplanner
 
+## Current status (2026-11-03)
+
+- The repository is on `main` and is up to date with `origin/main`.
+- The initial extraction completed with 70 recipe records, but it is not content-complete: 69 records have no structured ingredients and 68 have no preparation method. The cause is that most source PDFs are image-only PDFs and the current `pypdf` extraction does not perform OCR.
+- The five existing unit tests pass (`python3 -m unittest discover -s tests`). These tests cover application behavior, not recipe-content completeness.
+- OCR tooling is available locally: Tesseract 5.5.4 with Dutch language data, OCRmyPDF 17.13.0, and Poppler 26.10.0.
+- One OCR sample (`aardbeienkwark`) produced usable Dutch text, with minor OCR noise such as a stray character and branding text.
+- A complete OCR staging tree has not yet been completed. `recipes-ocr/` contains a single test output; `recipes-ocr-full/` is expected to be created as a temporary working tree.
+- The working tree contains uncommitted extraction, migration, schema, audit, generated JSON, and OCR-related files. No source recipes have been deleted.
+
+## Revised recipe-data plan
+
+The recipe sources will be processed in this order:
+
+1. Create OCR text from every PDF into a temporary staging tree, while leaving the original `recipes/` sources untouched. Copy the existing text recipe files into the same staging tree.
+2. Read the OCR text and text sources as the authoritative content input for the migration. Use model-assisted harmonization to populate every canonical recipe record, including title, category, servings, multi-day behavior, ingredients, quantities, units, optional alternatives, and preparation steps.
+3. Preserve provenance in every record: the original source path, original source format, and SHA-256 hash of the original source file. OCR derivatives are working artifacts, not replacement provenance.
+4. Review every record for OCR noise, missing fields, implausible servings, duplicate IDs, ingredient parsing errors, and unsafe assumptions. Keep qualitative quantities and alternatives visible when they cannot be safely normalized.
+5. Generate a machine-readable audit report listing every recipe, its source, validation result, and any unresolved ambiguity. No recipe is considered complete merely because the JSON is syntactically valid.
+6. Resolve all ambiguities against the OCR text and original source. If a source remains genuinely unclear, stop and ask for a decision rather than inventing content.
+7. Run the unit tests, canonical-schema validation, source-hash checks, recipe-count checks, and a final source-versus-JSON review. Confirm that the application consumes the canonical schema and that no recipe has empty ingredients or steps without an explicit source-based reason.
+8. Only after the complete audit passes, present the final deletion scope. Delete the original recipe sources and temporary OCR derivatives as a separate, reviewable operation; retain the source hashes and audit report in the generated data/documentation.
+
+The parser remains a fallback and structural validation tool. It is not the authority for recipe wording or ingredient interpretation. The model-assisted migration is the authority, constrained by the OCR/text source and the audit checks above.
+
 ## Doel
 
 Een Nederlandstalige webapplicatie waarin een gebruiker van maandag tot en met zondag recepten kan kiezen voor ontbijt, lunch en diner. Niet iedere maaltijd hoeft ingevuld te worden. De gekozen planning wordt in de browser bewaard en kan als PDF worden gedownload met een gecombineerde boodschappenlijst en daarna één recept per pagina.
