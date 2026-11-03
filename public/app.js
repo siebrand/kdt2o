@@ -540,7 +540,10 @@ function recipeIngredients(recipe) {
 }
 
 function recipeEquipment(recipe) {
-  return (recipe?.components || []).flatMap((component) => component.equipment || []);
+  return [
+    ...(recipe?.equipment || []),
+    ...(recipe?.components || []).flatMap((component) => component.equipment || [])
+  ];
 }
 
 function recipeMethod(recipe) {

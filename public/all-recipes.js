@@ -45,7 +45,10 @@ function ingredientText(ingredient) {
 }
 
 function recipeEquipment(recipe) {
-  return (recipe.components || []).flatMap((component) => component.equipment || []);
+  return [
+    ...(recipe.equipment || []),
+    ...(recipe.components || []).flatMap((component) => component.equipment || [])
+  ];
 }
 
 async function buildPdf(recipes) {
