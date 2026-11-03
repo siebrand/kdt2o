@@ -13,25 +13,8 @@ function ingredientText(ingredient) {
   return alternatives.length ? main + " of " + alternatives.join(" of ") : main;
 }
 
-function recipeIngredients(recipe) {
-  return [
-    ...(recipe.ingredients || []),
-    ...(recipe.components || []).flatMap((component) => component.ingredients || [])
-  ];
-}
-
 function recipeEquipment(recipe) {
   return (recipe.components || []).flatMap((component) => component.equipment || []);
-}
-
-function recipeMethod(recipe) {
-  const sections = [];
-  (recipe.components || []).forEach((component) => {
-    sections.push(component.title + ":");
-    sections.push(component.method || "");
-  });
-  if (recipe.method) sections.push(recipe.method);
-  return sections.join(" ").trim();
 }
 
 async function buildPdf(recipes) {
@@ -58,14 +41,29 @@ async function buildPdf(recipes) {
     const rightX = margin + columnWidth + columnGap;
     doc.setFontSize(12);
     doc.setTextColor(24, 63, 50);
-    doc.text("Ingrediënten", margin, 36);
-    doc.text("Bereidingswijze", rightX, 36);
+    doc.text("Hoofdrecept · Ingrediënten", margin, 36);
+    doc.text("Hoofdrecept · Bereidingswijze", rightX, 36);
 
     doc.setFontSize(8.5);
     doc.setTextColor(40, 45, 40);
     let leftY = 43;
-    recipeIngredients(recipe).forEach((ingredient) => {
+    (recipe.ingredients || []).forEach((ingredient) => {
       leftY = textLines(doc, "• " + ingredientText(ingredient), margin, leftY, columnWidth, 4.2);
+    });
+    (recipe.components || []).forEach((component) => {
+      leftY += 2;
+      doc.setFontSize(10);
+      doc.setTextColor(24, 63, 50);
+      doc.text("Subrecept: " + component.title, margin, leftY);
+      leftY += 5;
+      doc.setFontSize(8.5);
+      doc.setTextColor(40, 45, 40);
+      if (component.availabilityNote) {
+        leftY = textLines(doc, component.availabilityNote, margin, leftY, columnWidth, 4.2);
+      }
+      (component.ingredients || []).forEach((ingredient) => {
+        leftY = textLines(doc, "• " + ingredientText(ingredient), margin, leftY, columnWidth, 4.2);
+      });
     });
     const equipment = recipeEquipment(recipe);
     if (equipment.length) {
@@ -82,8 +80,29 @@ async function buildPdf(recipes) {
     }
 
     let rightY = 43;
-    const steps = window.recipeMethodSteps(recipeMethod(recipe) || "Zie het oorspronkelijke receptbestand.");
-    steps.forEach((step, index) => {
+    (recipe.components || []).forEach((component) => {
+      doc.setFontSize(10);
+      doc.setTextColor(24, 63, 50);
+      rightY = textLines(doc, "Subrecept: " + component.title, rightX, rightY, columnWidth, 4.2);
+      doc.setFontSize(8.5);
+      doc.setTextColor(40, 45, 40);
+      if (component.availabilityNote) {
+        rightY = textLines(doc, component.availabilityNote, rightX, rightY, columnWidth, 4.2);
+      }
+      const componentSteps = window.recipeMethodSteps(component.method || "");
+      componentSteps.forEach((step, index) => {
+        rightY = textLines(doc, (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
+        rightY += 1.2;
+      });
+      rightY += 1.5;
+      doc.setFontSize(10);
+      doc.setTextColor(24, 63, 50);
+      rightY = textLines(doc, "Hoofdrecept", rightX, rightY, columnWidth, 4.2);
+      doc.setFontSize(8.5);
+      doc.setTextColor(40, 45, 40);
+    });
+    const mainSteps = window.recipeMethodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
+    mainSteps.forEach((step, index) => {
       rightY = textLines(doc, (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
       rightY += 1.2;
     });

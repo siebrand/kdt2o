@@ -677,10 +677,19 @@ async function createPdf() {
       y = 46;
       y = addWrapped(doc, "Gepland voor: " + dayName(dayIndex), margin, y, width - margin * 2);
       y += 5;
-      doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Ingrediënten", margin, y); y += 7;
+      doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Hoofdrecept · Ingrediënten", margin, y); y += 7;
       doc.setFontSize(10); doc.setTextColor(40, 45, 40);
-      recipeIngredients(recipe).forEach((ingredient) => {
+      (recipe.ingredients || []).forEach((ingredient) => {
         y = addWrapped(doc, "• " + ingredientLabel(ingredient), margin, y, width - margin * 2);
+      });
+      (recipe.components || []).forEach((component) => {
+        y += 4;
+        doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Subrecept · " + component.title, margin, y); y += 7;
+        doc.setFontSize(10); doc.setTextColor(40, 45, 40);
+        if (component.availabilityNote) y = addWrapped(doc, component.availabilityNote, margin, y, width - margin * 2);
+        (component.ingredients || []).forEach((ingredient) => {
+          y = addWrapped(doc, "• " + ingredientLabel(ingredient), margin, y, width - margin * 2);
+        });
       });
       const equipment = recipeEquipment(recipe);
       if (equipment.length) {
@@ -691,10 +700,25 @@ async function createPdf() {
       }
       y += 6; doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Bereidingswijze", margin, y); y += 7;
       doc.setFontSize(10); doc.setTextColor(40, 45, 40);
-      const steps = methodSteps(recipeMethod(recipe) || "Zie het oorspronkelijke receptbestand.");
-      steps.forEach((step, index) => {
-        y = addWrapped(doc, `${index + 1}. ${step}`, margin, y, width - margin * 2, 5);
-        if (y > height - margin && index < steps.length - 1) { doc.addPage(); y = 20; }
+      let stepNumber = 1;
+      (recipe.components || []).forEach((component) => {
+        doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Subrecept · " + component.title, margin, y); y += 7;
+        doc.setFontSize(10); doc.setTextColor(40, 45, 40);
+        const componentSteps = methodSteps(component.method || "");
+        componentSteps.forEach((step) => {
+          y = addWrapped(doc, `${stepNumber}. ${step}`, margin, y, width - margin * 2, 5);
+          stepNumber += 1;
+          if (y > height - margin) { doc.addPage(); y = 20; }
+        });
+        y += 4;
+      });
+      doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Hoofdrecept", margin, y); y += 7;
+      doc.setFontSize(10); doc.setTextColor(40, 45, 40);
+      const mainSteps = methodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
+      mainSteps.forEach((step) => {
+        y = addWrapped(doc, `${stepNumber}. ${step}`, margin, y, width - margin * 2, 5);
+        stepNumber += 1;
+        if (y > height - margin) { doc.addPage(); y = 20; }
       });
       if (recipe.notes?.length) {
         y += 5;

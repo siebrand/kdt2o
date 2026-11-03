@@ -12,7 +12,10 @@
         "unit": "stuk",
         "name": "lijnzaadcracker",
         "key": "lijnzaadcracker",
-        "optional": false
+        "optional": false,
+        "alternatives": [
+          { "raw": "4 kant-en-klare lijnzaadcrackers", "amount": 4, "unit": "stuk", "name": "kant-en-klare lijnzaadcracker", "key": "kant-en-klare lijnzaadcracker", "optional": false }
+        ]
       },
       {
         "raw": "1 avocado",
@@ -61,6 +64,8 @@
         "title": "Lijnzaadcrackers",
         "yield": 10,
         "yieldUnit": "stuk",
+        "optional": true,
+        "availabilityNote": "Heb je al lijnzaadcrackers? Sla dit subrecept dan over.",
         "ingredients": [
           { "raw": "150 gram gebroken lijnzaad", "amount": 150, "unit": "gram", "name": "gebroken lijnzaad", "key": "gebroken lijnzaad", "optional": false },
           { "raw": "100 gram zonnebloempitten", "amount": 100, "unit": "gram", "name": "zonnebloempitten", "key": "zonnebloempitten", "optional": false },
