@@ -66,7 +66,9 @@ function renderPlanner() {
         detail.textContent = "Klik om te verwijderen";
         slot.append(title, detail);
         slot.addEventListener("click", () => {
-          delete state.plan[planKey(dayIndex, meal)];
+          Object.entries(state.plan).forEach(([key, plannedItem]) => {
+            if (plannedItem.recipeId === item.recipeId) delete state.plan[key];
+          });
           savePlan();
           render();
         });
@@ -118,6 +120,15 @@ function renderOptions() {
   });
 }
 
+function showSelectionMessage(message) {
+  status.textContent = message;
+  const notice = document.createElement("p");
+  notice.className = "muted";
+  notice.setAttribute("role", "alert");
+  notice.textContent = message;
+  options.replaceChildren(notice);
+}
+
 function chooseRecipe(recipe) {
   if (!state.activeSlot || selectedIds().has(recipe.id)) return;
   if (!isMultiDay(recipe)) {
@@ -129,12 +140,12 @@ function chooseRecipe(recipe) {
   const days = plannedDays(startDay);
   if (days.length !== 3) {
     const validStartDays = DAYS.slice(0, DAYS.length - 4).join(", ");
-    status.textContent = recipe.title + " kan alleen worden gestart op: " + validStartDays + ".";
+    showSelectionMessage(recipe.title + " kan alleen worden gestart op: " + validStartDays + ".");
     return;
   }
   const meal = state.activeSlot.meal;
   if (days.some((day) => state.plan[planKey(day, meal)])) {
-    status.textContent = "Een van de geplande dagen is al gevuld. Kies een andere startdag.";
+    showSelectionMessage("Een van de geplande dagen is al gevuld. Kies een andere startdag.");
     return;
   }
   days.forEach((day) => { state.plan[planKey(day, meal)] = { recipeId: recipe.id, sourceDay: startDay }; });
