@@ -4546,27 +4546,35 @@
         "optional": false
       },
       {
-        "raw": "verse basilicum en alles wat",
+        "raw": "verse basilicum",
         "amount": null,
         "unit": "",
-        "name": "verse basilicum en alles wat",
-        "key": "verse basilicum en alles wat",
+        "name": "verse basilicum",
+        "key": "verse basilicum",
         "optional": true
       },
       {
-        "raw": "je lekker vindt op een pizza: ansjovis/",
+        "raw": "ansjovis",
         "amount": null,
         "unit": "",
-        "name": "je lekker vindt op een pizza: ansjovis/",
-        "key": "je lekker vindt op een pizza: ansjovis/",
+        "name": "ansjovis/",
+        "key": "ansjovis",
         "optional": true
       },
       {
-        "raw": "tonijn/ champignons etc.)",
+        "raw": "champignons",
         "amount": null,
         "unit": "",
-        "name": "tonijn/ champignons etc.)",
-        "key": "tonijn/ champignons etc.)",
+        "name": "champignons",
+        "key": "champignons",
+        "optional": true
+      },
+      {
+        "raw": "tonijn",
+        "amount": null,
+        "unit": "",
+        "name": "tonijn",
+        "key": "tonijn",
         "optional": true
       },
       {
