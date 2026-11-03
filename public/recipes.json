@@ -149,6 +149,22 @@
     "multiDay": false,
     "ingredients": [
       {
+        "raw": "2 eieren",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "ei",
+        "key": "ei",
+        "optional": false
+      },
+      {
+        "raw": "2 eieren",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "ei",
+        "key": "ei",
+        "optional": false
+      },
+      {
         "raw": "75 gram amandelmeel",
         "amount": 75,
         "unit": "gram",
