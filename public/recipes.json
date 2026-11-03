@@ -934,9 +934,9 @@
         "optional": false
       },
       {
-        "raw": "plakjes boerenkaas",
-        "amount": null,
-        "unit": "",
+        "raw": "50 gram boerenkaas",
+        "amount": 50,
+        "unit": "gram",
         "name": "boerenkaas",
         "key": "boerenkaas",
         "optional": false
