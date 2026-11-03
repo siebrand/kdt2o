@@ -325,7 +325,14 @@ function aggregateIngredients() {
     if (includedRecipeIds.has(item.recipeId)) return;
     includedRecipeIds.add(item.recipeId);
     const recipe = recipeById(item.recipeId);
-    (recipe?.ingredients || []).forEach((ingredient) => {
+    const ingredients = [
+      ...(recipe?.ingredients || []),
+      ...(recipe?.components || []).flatMap((component) => [
+        ...(component.ingredients || []),
+        ...(component.equipment || []).map((name) => ({ raw: name, amount: null, unit: "", name, key: name, optional: false }))
+      ])
+    ];
+    ingredients.forEach((ingredient) => {
       const shoppingIngredient = normalizeShoppingIngredient(ingredient);
       if (shoppingIngredient.name === "water" || SHOPPING_LIST_EXCLUDED_NAMES.has(shoppingIngredient.name)) return;
       const key = normalizeShoppingName(shoppingIngredient.name);
@@ -462,6 +469,27 @@ function methodSteps(method) {
   return window.recipeMethodSteps(method);
 }
 
+function recipeIngredients(recipe) {
+  return [
+    ...(recipe?.ingredients || []),
+    ...(recipe?.components || []).flatMap((component) => component.ingredients || [])
+  ];
+}
+
+function recipeEquipment(recipe) {
+  return (recipe?.components || []).flatMap((component) => component.equipment || []);
+}
+
+function recipeMethod(recipe) {
+  const sections = [];
+  (recipe?.components || []).forEach((component) => {
+    sections.push(component.title + ":");
+    sections.push(component.method || "");
+  });
+  if (recipe?.method) sections.push(recipe.method);
+  return sections.join(" ").trim();
+}
+
 function wrapSvgText(value, maxLength, maxLines) {
   const words = String(value || "").split(/\s+/).filter(Boolean);
   const lines = [];
@@ -496,8 +524,8 @@ function escapeXml(value) {
 function infographicSvg(recipe) {
   const title = escapeXml(recipe.title || "Recept");
   const category = escapeXml(String(recipe.category || "recept").toUpperCase());
-  const ingredients = (recipe.ingredients || []).slice(0, 8).map(formatIngredientLabel);
-  const steps = methodSteps(recipe.method || "Volg de bereidingswijze uit het recept.").slice(0, 5);
+  const ingredients = recipeIngredients(recipe).slice(0, 8).map(formatIngredientLabel);
+  const steps = methodSteps(recipeMethod(recipe) || "Volg de bereidingswijze uit het recept.").slice(0, 5);
   const ingredientMarkup = ingredients.map((ingredient, index) => {
     const lines = wrapSvgText(ingredient, 38, 2);
     const y = 480 + index * 38;
@@ -651,12 +679,19 @@ async function createPdf() {
       y += 5;
       doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Ingrediënten", margin, y); y += 7;
       doc.setFontSize(10); doc.setTextColor(40, 45, 40);
-      (recipe.ingredients || []).forEach((ingredient) => {
+      recipeIngredients(recipe).forEach((ingredient) => {
         y = addWrapped(doc, "• " + ingredientLabel(ingredient), margin, y, width - margin * 2);
       });
+      const equipment = recipeEquipment(recipe);
+      if (equipment.length) {
+        y += 4;
+        doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Benodigdheden", margin, y); y += 7;
+        doc.setFontSize(10); doc.setTextColor(40, 45, 40);
+        equipment.forEach((item) => { y = addWrapped(doc, "• " + item, margin, y, width - margin * 2); });
+      }
       y += 6; doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Bereidingswijze", margin, y); y += 7;
       doc.setFontSize(10); doc.setTextColor(40, 45, 40);
-      const steps = methodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
+      const steps = methodSteps(recipeMethod(recipe) || "Zie het oorspronkelijke receptbestand.");
       steps.forEach((step, index) => {
         y = addWrapped(doc, `${index + 1}. ${step}`, margin, y, width - margin * 2, 5);
         if (y > height - margin && index < steps.length - 1) { doc.addPage(); y = 20; }

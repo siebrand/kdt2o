@@ -53,49 +53,26 @@
         "name": "peper en zout",
         "key": "peper en zout",
         "optional": false
-      },
-      {
-        "raw": "150 gram gebroken lijnzaad",
-        "amount": 150,
-        "unit": "gram",
-        "name": "gebroken lijnzaad",
-        "key": "gebroken lijnzaad",
-        "optional": false
-      },
-      {
-        "raw": "100 gram zonnebloempitten",
-        "amount": 100,
-        "unit": "gram",
-        "name": "zonnebloempitten",
-        "key": "zonnebloempitten",
-        "optional": false
-      },
-      {
-        "raw": "180 ml water",
-        "amount": 180,
-        "unit": "ml",
-        "name": "water",
-        "key": "water",
-        "optional": false
-      },
-      {
-        "raw": "1 tl zout",
-        "amount": 1,
-        "unit": "tl",
-        "name": "zout",
-        "key": "zout",
-        "optional": false
-      },
-      {
-        "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaanse of Provençaalse kruiden",
-        "amount": 3,
-        "unit": "el",
-        "name": "gedroogde kruiden naar keuze (Italiaanse of Provençaalse kruiden)",
-        "key": "gedroogde kruiden naar keuze (italiaanse of provençaalse kruiden)",
-        "optional": false
       }
     ],
-    "method": "Voor 2 personen Bereidingswijze lijnzaadcrackers: Meng de zaden en pitten met het (jozo)zout in een kom en voeg het water en de gedroogde kruiden toe. Laat dit 30 minuten staan. Verwarm de oven voor op 180 °C. Bekleed een bakplaat met bakpapier. Na 30 minuten hebben de zaden en pitten het vocht opgenomen en is het mengsel een beslag geworden. Verdeel het beslag over de bakplaat. Leg daarna nog een vel bakpapier er overheen en rol uit met een deegroller (of gebruik een lege fles) tot een dikte van ongeveer 2-3 mm. Verwijder het bovenste vel bakpapier en bak de crackerplak circa 25 minuten in de oven tot knapperig. Snijd de crackerplak na het bakken in gelijke stukken cracker en laat ze afkoelen. Als de crackers niet droog genoeg zijn, kun je ze na het snijden omkeren en nog even in de oven verwarmen. Hierdoor wordt de onderkant van de zadencrackers mooi droog en knapperig. Bereidingswijze lijnzaadcrackers met hüttenkäse en avocado: Beleg de lijnzaadcrackers met geprakte avocado, hüttenkäse, komkommer en tomaat. Strooi hier wat peper en (jozo)zout overheen. Tip: Maak de crackers de avond van tevoren al klaar. In een afgesloten bak kunnen de crackers dagenlang goed blijven!",
+    "components": [
+      {
+        "id": "lijnzaadcrackers",
+        "title": "Lijnzaadcrackers",
+        "yield": 10,
+        "yieldUnit": "stuk",
+        "ingredients": [
+          { "raw": "150 gram gebroken lijnzaad", "amount": 150, "unit": "gram", "name": "gebroken lijnzaad", "key": "gebroken lijnzaad", "optional": false },
+          { "raw": "100 gram zonnebloempitten", "amount": 100, "unit": "gram", "name": "zonnebloempitten", "key": "zonnebloempitten", "optional": false },
+          { "raw": "180 ml water", "amount": 180, "unit": "ml", "name": "water", "key": "water", "optional": false },
+          { "raw": "1 tl zout", "amount": 1, "unit": "tl", "name": "zout", "key": "zout", "optional": false },
+          { "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaanse of Provençaalse kruiden", "amount": 3, "unit": "el", "name": "gedroogde kruiden naar keuze (Italiaanse of Provençaalse kruiden)", "key": "gedroogde kruiden naar keuze (italiaanse of provençaalse kruiden)", "optional": false }
+        ],
+        "equipment": ["bakpapier", "deegroller of fles"],
+        "method": "Meng de zaden en pitten met het zout in een kom en voeg het water en de gedroogde kruiden toe. Laat dit 30 minuten staan. Verwarm de oven voor op 180 °C. Bekleed een bakplaat met bakpapier. Verdeel het beslag over de bakplaat, leg er bakpapier overheen en rol uit tot 2-3 mm dikte. Verwijder het bovenste vel bakpapier en bak circa 25 minuten tot knapperig. Snijd de crackerplak na het bakken in circa 10 gelijke crackers en laat ze afkoelen. Keer ze eventueel om en verwarm ze nog even als ze niet droog genoeg zijn."
+      }
+    ],
+    "method": "Beleg de lijnzaadcrackers met geprakte avocado, hüttenkäse, komkommer en tomaat. Strooi hier wat peper en zout overheen. Maak de crackers eventueel de avond van tevoren al klaar; in een afgesloten bak blijven ze dagenlang goed.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
