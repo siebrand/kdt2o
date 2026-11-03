@@ -5034,11 +5034,19 @@
         "optional": false
       },
       {
-        "raw": "teentje knoflook en 2 el citroensap",
-        "amount": null,
-        "unit": "",
-        "name": "teentje knoflook en 2 el citroensap",
-        "key": "teentje knoflook en 2 el citroensap",
+        "raw": "teentje knoflook",
+        "amount": 1,
+        "unit": "teentje",
+        "name": "knoflook",
+        "key": "knoflook",
+        "optional": true
+      },
+      {
+        "raw": "2 el citroensap",
+        "amount": 2,
+        "unit": "el",
+        "name": "citroensap",
+        "key": "citroensap",
         "optional": true
       }
     ],
