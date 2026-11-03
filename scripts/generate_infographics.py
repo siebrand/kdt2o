@@ -39,6 +39,34 @@ def method_steps(method: str) -> list[str]:
     return steps[:5] or ["Volg de bereidingswijze uit het recept."]
 
 
+def wrap_svg_text(value: str, max_length: int = 38, max_lines: int = 2) -> list[str]:
+    words = str(value or "").split()
+    lines: list[str] = []
+    current = ""
+    for word in words:
+        candidate = f"{current} {word}".strip()
+        if current and len(candidate) > max_length:
+            lines.append(current)
+            current = word
+        else:
+            current = candidate
+    if current:
+        lines.append(current)
+    if len(lines) > max_lines:
+        lines = lines[:max_lines]
+        lines[-1] = lines[-1][: max_length - 1].rstrip() + "…"
+    return lines
+
+
+def ingredient_markup(value: str, index: int) -> str:
+    y = 488 + index * 38
+    tspans = "".join(
+        f'<tspan x="128" dy="{0 if line_index == 0 else 21}">{escape(line)}</tspan>'
+        for line_index, line in enumerate(wrap_svg_text(value))
+    )
+    return f'    <text x="128" y="{y}">{tspans}</text>'
+
+
 def svg_for(recipe: dict) -> str:
     title = recipe.get("title", "Recept")
     category = str(recipe.get("category", "recept")).upper()
@@ -48,11 +76,10 @@ def svg_for(recipe: dict) -> str:
     safe_title = escape(title)
     safe_category = escape(category)
     ingredient_lines = "\n".join(
-        f'    <text x="128" y="{488 + index * 40}">{escape(value[:58])}</text>'
-        for index, value in enumerate(ingredients)
+        ingredient_markup(value, index) for index, value in enumerate(ingredients)
     )
     ingredient_dots = "".join(
-        f'<circle cx="118" cy="{480 + index * 40}" r="5"/>' for index in range(len(ingredients))
+        f'<circle cx="118" cy="{480 + index * 38}" r="5"/>' for index in range(len(ingredients))
     )
     step_markup = []
     for index, step in enumerate(steps):

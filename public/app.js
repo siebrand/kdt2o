@@ -468,6 +468,27 @@ function methodSteps(method) {
     .filter(Boolean) || [];
 }
 
+function wrapSvgText(value, maxLength, maxLines) {
+  const words = String(value || "").split(/\s+/).filter(Boolean);
+  const lines = [];
+  let current = "";
+  words.forEach((word) => {
+    const candidate = current ? current + " " + word : word;
+    if (current && candidate.length > maxLength) {
+      lines.push(current);
+      current = word;
+    } else {
+      current = candidate;
+    }
+  });
+  if (current) lines.push(current);
+  if (lines.length > maxLines) {
+    lines.length = maxLines;
+    lines[maxLines - 1] = lines[maxLines - 1].slice(0, maxLength - 1).trimEnd() + "…";
+  }
+  return lines;
+}
+
 function escapeXml(value) {
   return String(value || "").replace(/[&<>"']/g, (character) => ({
     "&": "&amp;",
@@ -483,9 +504,11 @@ function infographicSvg(recipe) {
   const category = escapeXml(String(recipe.category || "recept").toUpperCase());
   const ingredients = (recipe.ingredients || []).slice(0, 8).map(formatIngredientLabel);
   const steps = methodSteps(recipe.method || "Volg de bereidingswijze uit het recept.").slice(0, 5);
-  const ingredientMarkup = ingredients.map((ingredient, index) =>
-    `<circle cx="118" cy="${480 + index * 40}" r="5"/><text x="128" y="${488 + index * 40}">${escapeXml(ingredient.slice(0, 58))}</text>`
-  ).join("");
+  const ingredientMarkup = ingredients.map((ingredient, index) => {
+    const lines = wrapSvgText(ingredient, 38, 2);
+    const y = 480 + index * 38;
+    return `<circle cx="118" cy="${y}" r="5"/><text x="128" y="${y + 8}">${lines.map((line, lineIndex) => `<tspan x="128" dy="${lineIndex ? 21 : 0}">${escapeXml(line)}</tspan>`).join("")}</text>`;
+  }).join("");
   const stepMarkup = steps.map((step, index) => {
     const y = 493 + index * 92;
     return `<circle cx="735" cy="${y}" r="34" fill="#e9795d"/><text x="735" y="${y + 12}" text-anchor="middle" fill="#fff" font-size="28" font-weight="800">${index + 1}</text><text x="795" y="${y - 7}" fill="#174c45" font-size="23" font-weight="700">Stap ${index + 1}</text><text x="795" y="${y + 27}" fill="#365f57" font-size="19">${escapeXml(step.slice(0, 92))}</text>`;
