@@ -339,8 +339,8 @@
         "optional": false
       },
       {
-        "raw": "50 gram kokosrasp",
-        "amount": 50,
+        "raw": "30 gram kokosrasp",
+        "amount": 30,
         "unit": "gram",
         "name": "kokosrasp",
         "key": "kokosrasp",
@@ -1695,8 +1695,8 @@
         "optional": false
       },
       {
-        "raw": "50 gram gemengde bladsalade",
-        "amount": 50,
+        "raw": "40 gram gemengde bladsalade",
+        "amount": 40,
         "unit": "gram",
         "name": "gemengde bladsalade",
         "key": "gemengde bladsalade",
@@ -3711,9 +3711,9 @@
         "optional": false
       },
       {
-        "raw": "50 gram verse basilicum",
-        "amount": 50,
-        "unit": "gram",
+        "raw": "2 handjes verse basilicum",
+        "amount": 2,
+        "unit": "handjes",
         "name": "verse basilicum",
         "key": "verse basilicum",
         "optional": false
@@ -3805,8 +3805,8 @@
         "optional": true
       },
       {
-        "raw": "25 gram groene (gemengde) bladsla",
-        "amount": 25,
+        "raw": "20 gram groene (gemengde) bladsla",
+        "amount": 20,
         "unit": "gram",
         "name": "groene (gemengde) bladsla",
         "key": "groene (gemengde) bladsla",
@@ -4047,9 +4047,9 @@
         "optional": false
       },
       {
-        "raw": "25 gram basilicum blaadjes",
-        "amount": 25,
-        "unit": "gram",
+        "raw": "1 handje basilicum blaadjes",
+        "amount": 1,
+        "unit": "hand",
         "name": "basilicum blaadjes",
         "key": "basilicum blaadjes",
         "optional": false
@@ -4559,7 +4559,7 @@
         "unit": "",
         "name": "je lekker vindt op een pizza: ansjovis/",
         "key": "je lekker vindt op een pizza: ansjovis/",
-        "optional": false
+        "optional": true
       },
       {
         "raw": "tonijn/ champignons etc.)",
@@ -4567,7 +4567,7 @@
         "unit": "",
         "name": "tonijn/ champignons etc.)",
         "key": "tonijn/ champignons etc.)",
-        "optional": false
+        "optional": true
       },
       {
         "raw": "Extra nodig: bakpapier en keukenmachine/ staafmixer met hakbakje",
@@ -4575,7 +4575,7 @@
         "unit": "",
         "name": "Extra nodig: bakpapier en keukenmachine/ staafmixer met hakbakje",
         "key": "extra nodig: bakpapier en keukenmachine/ staafmixer met hakbakje",
-        "optional": false
+        "optional": true
       }
     ],
     "method": "Verwarm de oven voor op 180 graden. Breek de bloemkool in kleine roosjes en gebruik ook de steel. Hak de bloemkool met een keukenmachine tot fijne korrels. Bak de bloemkool even kort in een pan en schep gedurende een paar minuten om. Leg de bloemkool in een schone theedoek en knijp het vocht uit de bloemkool door een bol te vormen van de bloemkool in de theedoek. Ga door totdat er geen vocht meer uit de bloemkool komt. Hak de cashewnoten fijn met een keukenmachine (of stamp deze met een vijzel). Voeg de bloemkool samen met het ei, cashewnoten, geraspte Parmezaanse kaas, oregano, peper en zout en meng alles goed. Leg het bakpapier op een bakplaat en maak 1 grote plaatpizza of twee kleinere ronde pizzabodems van % cm dikte. Bak de bodems in 25 minuten lichtbruin. Meng de tomatenblokjes met de tomatenpuree, de Italiaanse kruiden en een teentje uitgeperste knoflook. Voeg eventueel wat peper en zout toe. Smeer dit uit over de pizza als de bodem gaar is. Was en snijd de paprika in ringen en leg dit op de pizza. Leg eventueel eigen gekozen beleg op de pizza. Bak de pizza nog 10 minuten. Serveer eventueel met wat verse basilicumblaadjes. Let op! -MAAK DUBBEL VOOR MORGEN BIJ DE LUNCH BEHALVE ALS JE ANDERE RESTJES HEBT DIE JE MORGEN WILT OPETEN. TIP € - Parmezaanse kaas vervangen voor pecorino of grana pardano",
