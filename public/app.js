@@ -218,7 +218,8 @@ function normalizeShoppingName(name) {
 
 function normalizeShoppingIngredient(ingredient) {
   const name = String(ingredient.name || "").toLocaleLowerCase("nl").trim();
-  const raw = String(ingredient.raw || "").toLocaleLowerCase("nl").trim();
+  let raw = String(ingredient.raw || "").toLocaleLowerCase("nl").trim();
+  if (raw.startsWith("1/, ")) raw = "1/2 " + raw.slice(4);
   if (name.includes("roomboter")) {
     return { ...ingredient, amount: ingredient.amount ?? 1, unit: "el", name: "roomboter" };
   }
@@ -236,7 +237,20 @@ function normalizeShoppingIngredient(ingredient) {
   if (descriptive) {
     return { ...ingredient, amount: descriptive.amount, unit: descriptive.unit, name: name.replace(descriptive.pattern, "$1") };
   }
-  if (ingredient.amount != null && !ingredient.unit && /^\\s*(?:\\d+(?:[.,]\\d+)?|1\\/2|1-2)\\b/.test(raw)) {
+  if (raw.startsWith("1/2 ")) {
+    let rest = raw.slice(4);
+    let unit = "stuk";
+    for (const candidate of ["tl", "el", "bosje"]) {
+      if (rest.startsWith(candidate + " ")) {
+        unit = candidate;
+        rest = rest.slice(candidate.length + 1);
+        break;
+      }
+    }
+    return { ...ingredient, amount: 0.5, unit, name: rest };
+  }
+  const startsWithNumber = raw.length > 0 && raw[0] >= "0" && raw[0] <= "9";
+  if (ingredient.amount != null && !ingredient.unit && startsWithNumber) {
     return { ...ingredient, unit: "stuk" };
   }
   return ingredient;
@@ -305,8 +319,9 @@ function sortedShoppingItems() {
 }
 
 function ingredientLabel(item) {
-  const amount = item.amount == null ? "" : item.amount + (item.unit ? " " + item.unit : "");
-  return amount + (amount ? " " : "") + item.name;
+  const normalized = normalizeShoppingIngredient(item);
+  const amount = normalized.amount == null ? "" : normalized.amount + (normalized.unit ? " " + normalized.unit : "");
+  return amount + (amount ? " " : "") + normalized.name;
 }
 
 function renderShoppingList() {
