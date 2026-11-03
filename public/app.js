@@ -460,7 +460,12 @@ function addChecklistItem(doc, text, x, y, maxWidth) {
 
 function methodSteps(method) {
   const text = String(method || "").replace(/\s+/g, " ").trim();
-  return text.match(/[^.!?]+[.!?]+|[^.!?]+$/g)?.map((step) => step.trim()).filter(Boolean) || [];
+  const protectedText = text.replace(/\b(?:[a-z]\.){2,}|(?:bijv|etc|ca)\./gi, (abbreviation) =>
+    abbreviation.replace(/\./g, "\uE000")
+  );
+  return protectedText.match(/[^.!?]+[.!?]+|[^.!?]+$/g)
+    ?.map((step) => step.replace(/\uE000/g, ".").trim())
+    .filter(Boolean) || [];
 }
 
 function escapeXml(value) {
