@@ -347,7 +347,7 @@
         "optional": false
       },
       {
-        "raw": "50 gram pure chocolade (min. 70% cacao)",
+        "raw": "50 gram pure chocolade (minimaal 70% cacao)",
         "amount": 50,
         "unit": "gram",
         "name": "pure chocolade",
@@ -780,7 +780,7 @@
         "optional": false
       },
       {
-        "raw": "50 gram pure chocolade (>70% cacao)",
+        "raw": "50 gram pure chocolade (minimaal 70% cacao)",
         "amount": 50,
         "unit": "gram",
         "name": "pure chocolade",
