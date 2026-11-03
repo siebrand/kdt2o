@@ -215,13 +215,29 @@
         "optional": false
       },
       {
-        "raw": "200 gram frambozen (diepvries)",
+        "raw": "200 gram frambozen",
         "amount": 200,
         "unit": "gram",
-        "name": "frambozen (diepvries)",
-        "key": "frambozen (diepvries)",
+        "name": "frambozen",
+        "key": "frambozen",
         "optional": false,
         "alternatives": [
+          {
+            "raw": "200 gram aardbeien",
+            "amount": 200,
+            "unit": "gram",
+            "name": "aardbeien",
+            "key": "aardbeien",
+            "optional": false
+          },
+          {
+            "raw": "200 gram frambozen (diepvries)",
+            "amount": 200,
+            "unit": "gram",
+            "name": "frambozen (diepvries)",
+            "key": "frambozen (diepvries)",
+            "optional": false
+          },
           {
             "raw": "200 gram aardbeien (diepvries)",
             "amount": 200,
