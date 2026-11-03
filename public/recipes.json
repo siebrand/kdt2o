@@ -3708,11 +3708,11 @@
         "optional": false
       },
       {
-        "raw": "2 rode paprika’s",
+        "raw": "2 stuks rode paprika",
         "amount": 2,
-        "unit": "",
-        "name": "rode paprika’s",
-        "key": "rode paprika’s",
+        "unit": "stuk",
+        "name": "rode paprika",
+        "key": "rode paprika",
         "optional": false
       },
       {
@@ -5635,11 +5635,11 @@
         "optional": false
       },
       {
-        "raw": "2 paprikas",
+        "raw": "2 stuks paprika",
         "amount": 2,
-        "unit": "",
-        "name": "paprikas",
-        "key": "paprikas",
+        "unit": "stuk",
+        "name": "paprika",
+        "key": "paprika",
         "optional": false
       },
       {
