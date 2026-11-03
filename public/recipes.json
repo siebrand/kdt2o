@@ -4248,9 +4248,9 @@
         "optional": false
       },
       {
-        "raw": "4 el sesamzaad",
-        "amount": 4,
-        "unit": "el",
+        "raw": "32 gram sesamzaad",
+        "amount": 32,
+        "unit": "gram",
         "name": "sesamzaad",
         "key": "sesamzaad",
         "optional": false
@@ -4374,9 +4374,9 @@
         "optional": false
       },
       {
-        "raw": "4 el sesamzaad",
-        "amount": 4,
-        "unit": "el",
+        "raw": "32 gram sesamzaad",
+        "amount": 32,
+        "unit": "gram",
         "name": "sesamzaad",
         "key": "sesamzaad",
         "optional": false
