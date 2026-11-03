@@ -686,14 +686,6 @@
         "optional": false
       },
       {
-        "raw": "50 gram granola",
-        "amount": 50,
-        "unit": "gram",
-        "name": "granola",
-        "key": "granola",
-        "optional": false
-      },
-      {
         "raw": "2 schaaltjes (200 gram) rood/blauw fruit",
         "amount": 2,
         "unit": "schaaltjes",
@@ -702,7 +694,58 @@
         "optional": false
       }
     ],
-    "method": "Granola recept: Verwarm de oven voor op 170 graden. Doe alle ingrediënten in een kom en meng alles goed door elkaar. Pak een bakplaat en leg hierop een vel bakpapier. Spreid het mengsel over de bakplaat en schuif in de oven. Bak dit 20 tot 30 minuten. Schep het mengsel na 10 minuten even om, om aanbranden te voorkomen. Bak alles tot het alles lichtbruin gekleurd is en laat afkoelen. Bewaar de granola in een afsluitbare pot Hüttenkäse met rood/blauw fruit en zelfgemaakte granola: Verdeel de Hüttenkäse over 2 schaaltjes. Voeg hier een handje granola en het (rood/blauw) fruit aan toe. Alternatief voor granola is een handje gemengde noten. Tip: Maak de granola al de avond van tevoren klaar. Tip: Mocht je de structuur van de hüttenkäse niet lekker vinden, kun je de hüttenkäse ook pureren.",
+    "components": [
+      {
+        "id": "granola",
+        "title": "Granola",
+        "yield": 1,
+        "ingredients": [
+          {
+            "raw": "1 zak van 200 gram gemengde en ongebrande noten",
+            "amount": 1,
+            "unit": "",
+            "name": "zak van 200 gram gemengde en ongebrande noten",
+            "key": "zak van 200 gram gemengde en ongebrande noten",
+            "optional": false
+          },
+          {
+            "raw": "100 gram zonnebloempitten",
+            "amount": 100,
+            "unit": "gram",
+            "name": "zonnebloempitten",
+            "key": "zonnebloempitten",
+            "optional": false
+          },
+          {
+            "raw": "100 gram pompoenpitten",
+            "amount": 100,
+            "unit": "gram",
+            "name": "pompoenpitten",
+            "key": "pompoenpitten",
+            "optional": false
+          },
+          {
+            "raw": "100 gram gebroken lijnzaad",
+            "amount": 100,
+            "unit": "gram",
+            "name": "gebroken lijnzaad",
+            "key": "gebroken lijnzaad",
+            "optional": false
+          },
+          {
+            "raw": "kaneel",
+            "amount": null,
+            "unit": "",
+            "name": "kaneel",
+            "key": "kaneel",
+            "optional": false
+          }
+        ],
+        "equipment": ["bakplaat", "bakpapier"],
+        "method": "Verwarm de oven voor op 170 graden. Doe alle ingrediënten in een kom en meng alles goed door elkaar. Spreid het mengsel uit over een met bakpapier beklede bakplaat. Bak de granola 20 tot 30 minuten. Schep het mengsel na 10 minuten om om aanbranden te voorkomen. Laat de granola afkoelen en bewaar deze in een afsluitbare pot."
+      }
+    ],
+    "method": "Verdeel de hüttenkäse over 2 schaaltjes. Voeg hier een handje granola en het (rood/blauw) fruit aan toe. Alternatief voor granola is een handje gemengde noten. Tip: Maak de granola al de avond van tevoren klaar. Tip: Mocht je de structuur van de hüttenkäse niet lekker vinden, kun je de hüttenkäse ook pureren.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -1577,14 +1620,6 @@
         "unit": "",
         "name": "kaneel",
         "key": "kaneel",
-        "optional": false
-      },
-      {
-        "raw": "50 gram granola per bakje",
-        "amount": 50,
-        "unit": "gram",
-        "name": "granola per bakje",
-        "key": "granola per bakje",
         "optional": false
       },
       {

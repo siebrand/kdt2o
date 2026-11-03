@@ -2,12 +2,20 @@ const status = document.querySelector("#status");
 const download = document.querySelector("#download");
 
 function attachSharedRecipeComponents(recipes) {
-  const template = recipes.find((recipe) => recipe.components?.some((component) => component.id === "lijnzaadcrackers"));
-  if (!template) return recipes;
-  const component = template.components.find((item) => item.id === "lijnzaadcrackers");
+  const flaxTemplate = recipes.find((recipe) => recipe.components?.some((component) => component.id === "lijnzaadcrackers"));
+  const granolaTemplate = recipes.find((recipe) => recipe.components?.some((component) => component.id === "granola"));
+  if (!flaxTemplate && !granolaTemplate) return recipes;
+  const flaxComponent = flaxTemplate?.components.find((item) => item.id === "lijnzaadcrackers");
+  const granolaComponent = granolaTemplate?.components.find((item) => item.id === "granola");
   return recipes.map((recipe) => {
-    if (!/lijnzaad\s*cracker(?:s|\(s\))?/i.test(JSON.stringify(recipe)) || recipe.components?.some((item) => item.id === "lijnzaadcrackers")) return recipe;
-    return { ...recipe, components: [{ ...component, ingredients: component.ingredients.map((ingredient) => ({ ...ingredient })), equipment: [...(component.equipment || [])] }] };
+    const components = [...(recipe.components || [])];
+    if (flaxComponent && /lijnzaad\s*cracker(?:s|\(s\))?/i.test(JSON.stringify(recipe)) && !components.some((item) => item.id === "lijnzaadcrackers")) {
+      components.push({ ...flaxComponent, ingredients: flaxComponent.ingredients.map((ingredient) => ({ ...ingredient })), equipment: [...(flaxComponent.equipment || [])] });
+    }
+    if (granolaComponent && /granola/i.test(JSON.stringify(recipe)) && !components.some((item) => item.id === "granola")) {
+      components.push({ ...granolaComponent, ingredients: granolaComponent.ingredients.map((ingredient) => ({ ...ingredient })), equipment: [...(granolaComponent.equipment || [])] });
+    }
+    return components.length === (recipe.components || []).length ? recipe : { ...recipe, components };
   });
 }
 
