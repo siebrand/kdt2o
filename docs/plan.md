@@ -25,6 +25,10 @@ The recipe sources will be processed in this order:
 
 The parser remains a fallback and structural validation tool. It is not the authority for recipe wording or ingredient interpretation. The model-assisted migration is the authority, constrained by the OCR/text source and the audit checks above.
 
+## Data standard decision
+
+The working and browser-consumed standard is `public/recipes.json`, because the static application already loads that file directly. Its existing public field names (`id`, `title`, `category`, `portions`, `multiDay`, `ingredients`, `method`, and provenance fields) remain stable to avoid a partial schema migration. The canonical schema and audit files are validation artifacts until the application has an explicit adapter or migration for them.
+
 ## Doel
 
 Een Nederlandstalige webapplicatie waarin een gebruiker van maandag tot en met zondag recepten kan kiezen voor ontbijt, lunch en diner. Niet iedere maaltijd hoeft ingevuld te worden. De gekozen planning wordt in de browser bewaard en kan als PDF worden gedownload met een gecombineerde boodschappenlijst en daarna één recept per pagina.
@@ -45,9 +49,9 @@ Een Nederlandstalige webapplicatie waarin een gebruiker van maandag tot en met z
 - **Frontend:** React + TypeScript + Vite.
 - **Styling:** gewone CSS met CSS-variabelen, responsive grid voor de weekplanning en een rustige, toegankelijke visuele stijl.
 - **PDF in de browser:** `pdf-lib`, zodat de gebruiker direct vanuit de browser een PDF kan downloaden zonder server-side sessie of database.
-- **Receptdata:** statische, tijdens de image-build gegenereerde JSON. De bronbestanden in `recipes/` blijven leidend.
+- **Receptdata:** gecontroleerde, versieerde statische JSON in `public/recipes.json`. De OCR- en tekstbronnen zijn gebruikt tijdens de migratie en worden pas na de eindcontrole verwijderd.
 - **Extractie:** een klein Python-buildscript met `pypdf` voor PDF-recepten en UTF-8-inlezing voor `.txt`-recepten. Het script normaliseert titels, categorieën, porties, ingrediënten en bereidingsstappen.
-- **Container:** multi-stage Docker-build: Node bouwt de frontend; een kleine Nginx-image serveert de statische bestanden.
+- **Container:** een kleine Nginx-image serveert de gecontroleerde statische bestanden rechtstreeks; de containerbuild parseert of herschrijft receptdata niet.
 - **Deployment:** iedere host die een Docker-container of OCI-image kan draaien is geschikt; er is geen server-side applicatietoestand nodig.
 
 ## Receptverwerking

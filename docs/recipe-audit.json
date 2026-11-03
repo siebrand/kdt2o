@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "sourceCount": 70,
+  "recipeCount": 70,
+  "issueCount": 0,
+  "issues": [],
+  "categoryCounts": {
+    "ontbijt": 20,
+    "lunch": 22,
+    "diner": 28
+  },
+  "ingredientCount": 763
+}
