@@ -775,11 +775,11 @@
         "optional": false
       },
       {
-        "raw": "Stl bakpoeder",
-        "amount": null,
-        "unit": "",
-        "name": "Stl bakpoeder",
-        "key": "stl bakpoeder",
+        "raw": "1 tl bakpoeder",
+        "amount": 1,
+        "unit": "tl",
+        "name": "bakpoeder",
+        "key": "bakpoeder",
         "optional": false
       },
       {
@@ -799,14 +799,6 @@
         "optional": false
       },
       {
-        "raw": "_muffinvormpjes",
-        "amount": null,
-        "unit": "",
-        "name": "_muffinvormpjes",
-        "key": "_muffinvormpjes",
-        "optional": false
-      },
-      {
         "raw": "amandelmeel.",
         "amount": null,
         "unit": "",
@@ -821,7 +813,8 @@
     "harmonizerVersion": "1",
     "harmonized": false,
     "notes": [
-      "Opmerking: ben je deelnemer van Keer Diabetes? Gebruik dan amandelmeel."
+      "Opmerking: ben je deelnemer van Keer Diabetes? Gebruik dan amandelmeel.",
+      "Benodigdheden: muffinvormpjes."
     ]
   },
   {
@@ -1896,14 +1889,6 @@
         "name": "takje verse dille",
         "key": "takje verse dille",
         "optional": false
-      },
-      {
-        "raw": "serveer met: zie overzicht weekmenu",
-        "amount": null,
-        "unit": "",
-        "name": "serveer met: zie overzicht weekmenu",
-        "key": "serveer met: zie overzicht weekmenu",
-        "optional": false
       }
     ],
     "method": "Schil de bietjes en snijd deze in stukjes. Sla deze stap over als je voorgesneden bietjes koopt. Snipper het rode uitje en de augurk. Snijd de appel in blokjes en de haring in stukjes. Meng deze ingrediënten door elkaar. Roer een dressing van 1 el olijfolie, 1 el citroensap, mosterd en bieslook. Voeg peper en (jozo)zout naar smaak toe. Roer de dressing door de salade en garneer de salade met verse dille.",
@@ -1938,9 +1923,9 @@
       {
         "raw": "2 grote stronken broccoli",
         "amount": 2,
-        "unit": "gram",
-        "name": "rote stronken broccoli",
-        "key": "rote stronken broccoli",
+        "unit": "stuk",
+        "name": "broccoli (grote stronk)",
+        "key": "broccoli (grote stronk)",
         "optional": false
       },
       {
@@ -1954,9 +1939,9 @@
       {
         "raw": "2 groentebouillonblokjes",
         "amount": 2,
-        "unit": "gram",
-        "name": "roentebouillonblokjes",
-        "key": "roentebouillonblokjes",
+        "unit": "stuk",
+        "name": "groentebouillonblokje",
+        "key": "groentebouillonblokje",
         "optional": false
       },
       {
@@ -2038,11 +2023,11 @@
         "optional": false
       },
       {
-        "raw": "Steentjes knoflook",
+        "raw": "teentjes knoflook",
         "amount": null,
-        "unit": "",
-        "name": "Steentjes knoflook",
-        "key": "steentjes knoflook",
+        "unit": "teentje",
+        "name": "knoflook",
+        "key": "knoflook",
         "optional": false
       },
       {
@@ -2070,11 +2055,11 @@
         "optional": false
       },
       {
-        "raw": "ongeveer 1 liter water (naar wens voor dikte)",
-        "amount": null,
-        "unit": "",
-        "name": "ongeveer 1 liter water (naar wens voor dikte)",
-        "key": "ongeveer 1 liter water (naar wens voor dikte)",
+        "raw": "1 liter water (naar wens voor dikte)",
+        "amount": 1,
+        "unit": "liter",
+        "name": "water (naar wens voor dikte)",
+        "key": "water (naar wens voor dikte)",
         "optional": false
       },
       {
@@ -2102,11 +2087,11 @@
         "optional": false
       },
       {
-        "raw": "Ye citroen",
+        "raw": "citroen",
         "amount": null,
         "unit": "",
-        "name": "Ye citroen",
-        "key": "ye citroen",
+        "name": "citroen",
+        "key": "citroen",
         "optional": false
       },
       {
@@ -2448,11 +2433,11 @@
         "optional": false
       },
       {
-        "raw": "3 lente-uien",
+        "raw": "3 lenteui",
         "amount": 3,
-        "unit": "liter",
-        "name": "ente-uien",
-        "key": "ente-uien",
+        "unit": "stuk",
+        "name": "lenteui",
+        "key": "lenteui",
         "optional": false
       },
       {
@@ -2832,14 +2817,6 @@
         "name": "Snufje peper en (jozo)zout",
         "key": "snufje peper en (jozo)zout",
         "optional": false
-      },
-      {
-        "raw": "serveer met: zie overzicht weekmenu.",
-        "amount": null,
-        "unit": "",
-        "name": "serveer met: zie overzicht weekmenu",
-        "key": "serveer met: zie overzicht weekmenu",
-        "optional": false
       }
     ],
     "method": "Maak de pompoen schoon en snijd in blokjes. Kook de pompoenblokjes ongeveer 5 minuten in een pan zodat ze een beetje zacht worden. Snijd ondertussen de rode ui, de bosui en rode paprika in kleine stukjes. Giet na 5 minuten de pompoenblokjes af en prak ze fijn. Verwarm een pan met een scheutje olijfolie en bak de rode ui. Voeg na een minuut de paprika, pompoen en driekwart van de bosui toe. Bewaar een kwart bosui om te garneren. Klop ondertussen de eieren los in een aparte kom en voeg de chilipoeder en melk/kwark toe. Roer het mengsel door elkaar. Voeg peper en (jozo)zout toe naar smaak. Schenk het mengsel over de groenten. Bak het ei (eventueel met deksel op de pan) op middelhoog vuur totdat het ei begint te stollen. Verkruimel de kaas en strooi over het ei. Wanneer de frittata goed gestold is, draai je de frittata om en bak je de andere kant nog ongeveer 2 minuten mee. . TIP - leg de frittata 5 minuutjes onder de gril voor een mooi goudbruin laagje. TIP - zowel warm als koud lekker en dus heel makkelijk mee te nemen als lunch. TIP - duurt het te lang totdat de frittata goed gaar is? Maak er scrambled eggs van.",
@@ -3027,14 +3004,6 @@
         "unit": "",
         "name": "beetje kelp/zeewier mix/nori vellen*",
         "key": "beetje kelp/zeewier mix/nori vellen*",
-        "optional": false
-      },
-      {
-        "raw": "serveer met: zie overzicht weekmenu",
-        "amount": null,
-        "unit": "",
-        "name": "serveer met: zie overzicht weekmenu",
-        "key": "serveer met: zie overzicht weekmenu",
         "optional": false
       }
     ],
@@ -3808,9 +3777,9 @@
       {
         "raw": "1 grote hand groene (gemengde) bladsla",
         "amount": 1,
-        "unit": "gram",
-        "name": "rote hand groene (gemengde) bladsla",
-        "key": "rote hand groene (gemengde) bladsla",
+        "unit": "hand",
+        "name": "groene (gemengde) bladsla",
+        "key": "groene (gemengde) bladsla",
         "optional": true
       },
       {
@@ -3852,14 +3821,6 @@
         "name": "sap van 1/2 citroen",
         "key": "sap van 1/2 citroen",
         "optional": true
-      },
-      {
-        "raw": "serveer met: zie overzicht weekmenu",
-        "amount": null,
-        "unit": "",
-        "name": "serveer met: zie overzicht weekmenu",
-        "key": "serveer met: zie overzicht weekmenu",
-        "optional": false
       }
     ],
     "method": "Kook de erwtjes 3 minuut in kokend water. Snipper het rode uitje heel fijn. Meng de tonijn met de erwtjes, ui en kikkererwten. Voeg de extra vierge olijfolie en azijn toe. Om het wat smeuiger te maken kun je een beetje yoghurt en/of mayonaise erdoor roeren. Leg de salade op een bord en leg hier het tonijnmengsel op. . TIP - je kunt eventueel ook een appel fijnsnijden en verwerken in de salade.",
@@ -4431,9 +4392,9 @@
       {
         "raw": "1 gele paprika",
         "amount": 1,
-        "unit": "gram",
-        "name": "ele paprika",
-        "key": "ele paprika",
+        "unit": "stuk",
+        "name": "gele paprika",
+        "key": "gele paprika",
         "optional": false
       },
       {
@@ -5177,9 +5138,9 @@
       {
         "raw": "2 grote handen groene bladsalade",
         "amount": 2,
-        "unit": "gram",
-        "name": "rote handen groene bladsalade",
-        "key": "rote handen groene bladsalade",
+        "unit": "hand",
+        "name": "groene bladsalade",
+        "key": "groene bladsalade",
         "optional": false
       }
     ],
@@ -5263,9 +5224,9 @@
       {
         "raw": "1 grote bloemkool geraspt (of 400 gram kant en klaar)",
         "amount": 1,
-        "unit": "gram",
-        "name": "rote bloemkool geraspt (of 400 gram kant en klaar)",
-        "key": "rote bloemkool geraspt (of 400 gram kant en klaar)",
+        "unit": "stuk",
+        "name": "bloemkool, geraspt (of 400 gram kant en klaar)",
+        "key": "bloemkool, geraspt (of 400 gram kant en klaar)",
         "optional": false
       },
       {
@@ -5307,19 +5268,11 @@
         "optional": false
       },
       {
-        "raw": "500 gram champignons (250 gram voor quiche, 250 gram voor",
+        "raw": "500 gram champignons",
         "amount": 500,
         "unit": "gram",
-        "name": "champignons (250 gram voor quiche, 250 gram voor",
-        "key": "champignons (250 gram voor quiche, 250 gram voor",
-        "optional": false
-      },
-      {
-        "raw": "wokgroenten)",
-        "amount": null,
-        "unit": "",
-        "name": "wokgroenten)",
-        "key": "wokgroenten)",
+        "name": "champignons",
+        "key": "champignons",
         "optional": false
       },
       {
@@ -5341,9 +5294,9 @@
       {
         "raw": "4 grote eieren",
         "amount": 4,
-        "unit": "gram",
-        "name": "rote eieren",
-        "key": "rote eieren",
+        "unit": "stuk",
+        "name": "eieren",
+        "key": "eieren",
         "optional": false
       },
       {
@@ -6503,11 +6456,11 @@
         "optional": false
       },
       {
-        "raw": "Y2 broccoli",
-        "amount": null,
-        "unit": "",
-        "name": "Y2 broccoli",
-        "key": "y2 broccoli",
+        "raw": "1/2 broccoli",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "broccoli",
+        "key": "broccoli",
         "optional": false
       },
       {
@@ -6905,9 +6858,9 @@
       {
         "raw": "1 grote wortel of 2 kleine",
         "amount": 1,
-        "unit": "gram",
-        "name": "rote wortel of 2 kleine",
-        "key": "rote wortel of 2 kleine",
+        "unit": "stuk",
+        "name": "wortel (1 grote of 2 kleine)",
+        "key": "wortel (1 grote of 2 kleine)",
         "optional": false
       },
       {

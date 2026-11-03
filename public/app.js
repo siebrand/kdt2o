@@ -208,8 +208,11 @@ function normalizeShoppingName(name) {
 
 function aggregateIngredients() {
   const totals = new Map();
+  const includedRecipeIds = new Set();
   state.shoppingWarnings = [];
   Object.values(state.plan).forEach((item) => {
+    if (includedRecipeIds.has(item.recipeId)) return;
+    includedRecipeIds.add(item.recipeId);
     const recipe = recipeById(item.recipeId);
     (recipe?.ingredients || []).forEach((ingredient) => {
       const key = normalizeShoppingName(ingredient.name);
