@@ -728,12 +728,20 @@
         "optional": false
       },
       {
-        "raw": "kaneelpoeder en/of cacaopoeder naar smaak",
+        "raw": "kaneelpoeder naar smaak",
         "amount": null,
         "unit": "",
-        "name": "kaneelpoeder en/of cacaopoeder naar smaak",
-        "key": "kaneelpoeder en/of cacaopoeder naar smaak",
-        "optional": false
+        "name": "kaneelpoeder",
+        "key": "kaneelpoeder",
+        "optional": true
+      },
+      {
+        "raw": "cacaopoeder naar smaak",
+        "amount": null,
+        "unit": "",
+        "name": "cacaopoeder",
+        "key": "cacaopoeder",
+        "optional": true
       },
       {
         "raw": "bosbessen (vers/diepvries) voor eroverheen",
