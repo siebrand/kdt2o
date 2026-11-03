@@ -331,13 +331,13 @@ function shoppingCategory(item) {
   const hasWord = (...terms) => terms.some((term) => new RegExp(`(^|[^a-z])${term}($|[^a-z])`).test(name));
 
   if (has("diepvries", "bevroren")) return "Diepvries";
-  if (has("kokosmelk", "bouillon", "zongedroogde", "olijf", "kelp")) return "Houdbare producten";
-  if (has("wortel", "courgette", "paprika", "tomaat", "komkommer", "biet", "avocado", "broccoli", "bloemkool", "spinazie", "sla", "champignon", "knoflook", "gember", "citroen", "limoen", "appel", "banaan", "aardbei", "framboos", "bosbes", "mango", "peer", "druif", "fruit", "kikkererwt", "erwt", "snijboon", "witlof", "lenteui", "prei", "preien", "spruit", "taugé", "knolselderij") || hasWord("ui", "uien")) return "Groente en fruit";
-  if (has("yoghurt", "kwark", "melk", "kaas", "feta", "hüttenkäse", "huttenkase", "boter", "room") || hasWord("ei", "eieren")) return "Zuivel en eieren";
-  if (has("kip", "rund", "gehakt", "spek", "ham", "zalm", "tonijn", "vis", "pangasius", "haring", "biefstuk", "tofu", "tempeh")) return "Vlees, vis en vleesvervangers";
+  if (has("kokosmelk", "bouillon", "zongedroogde", "olijf", "olijven", "kelp")) return "Houdbare producten";
+  if (has("wortel", "courgette", "paprika", "tomaat", "tomaten", "cherry tom", "komkommer", "biet", "avocado", "broccoli", "bloemkool", "spinazie", "sla", "champignon", "knoflook", "gember", "citroen", "limoen", "appel", "banaan", "aardbei", "framboos", "bosbes", "blauwe bes", "mango", "peer", "druif", "fruit", "kikkererwt", "erwt", "snijboon", "witlof", "lenteui", "bosui", "prei", "preien", "spruit", "taugé", "knolselderij", "pastinaak", "zuurkool") || hasWord("ui", "uien")) return "Groente en fruit";
+  if (has("yoghurt", "kwark", "melk", "kaas", "feta", "ricotta", "hüttenkäse", "huttenkase", "boter", "room", "crême", "crème", "creme", "fraiche", "fraîche") || hasWord("ei", "eieren")) return "Zuivel en eieren";
+  if (has("kip", "rund", "gehakt", "spek", "ham", "zalm", "tonijn", "vis", "pangasius", "haring", "biefstuk", "tartaar", "tofu", "tempeh")) return "Vlees, vis en vleesvervangers";
   if (has("brood", "cracker", "havermout", "muesli", "granola")) return "Brood en ontbijt";
-  if (has("zout", "peper", "kaneel", "kruiden", "oregano", "basilicum", "komijn", "kerrie", "paprikapoeder", "salie", "peterselie")) return "Kruiden en smaakmakers";
-  if (has("pasta", "rijst", "quinoa", "couscous", "linzen", "bonen", "noten", "zaad", "olie", "azijn", "meel", "bloem", "cacao", "chocolade", "pindakaas", "honing", "bouillon", "mayonaise", "sojasaus", "mosterd", "pesto", "kokosmelk")) return "Houdbare producten";
+  if (has("zout", "peper", "kaneel", "kruiden", "oregano", "basilicum", "komijn", "kerrie", "paprikapoeder", "salie", "peterselie", "chilipoeder", "chilivlokken", "kurkuma", "spices")) return "Kruiden en smaakmakers";
+  if (has("pasta", "rijst", "quinoa", "couscous", "linzen", "bonen", "noten", "amandel", "zaad", "pitten", "olie", "azijn", "meel", "bloem", "bakpoeder", "cacao", "chocolade", "pindakaas", "honing", "kokos", "mayonaise", "sojasaus", "mosterd", "pesto", "kokosmelk")) return "Houdbare producten";
   return "Overig";
 }
 
