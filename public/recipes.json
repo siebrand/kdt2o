@@ -2241,8 +2241,8 @@
         "optional": false
       },
       {
-        "raw": "1/4 citroen",
-        "amount": 0.25,
+        "raw": "sap van 1/2 citroen",
+        "amount": 0.5,
         "unit": "stuk",
         "name": "citroen",
         "key": "citroen",
@@ -2367,8 +2367,8 @@
         "optional": false
       },
       {
-        "raw": "1/4 citroen",
-        "amount": 0.25,
+        "raw": "sap van 1/2 citroen",
+        "amount": 0.5,
         "unit": "stuk",
         "name": "citroen",
         "key": "citroen",
