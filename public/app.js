@@ -190,6 +190,11 @@ function addWrapped(doc, text, x, y, maxWidth, lineHeight = 6) {
   return y + lines.length * lineHeight;
 }
 
+function addChecklistItem(doc, text, x, y, maxWidth) {
+  doc.rect(x, y - 4, 3, 3);
+  return addWrapped(doc, text, x + 6, y, maxWidth - 6);
+}
+
 function methodSteps(method) {
   const text = String(method || "").replace(/\s+/g, " ").trim();
   return text.match(/[^.!?]+[.!?]+|[^.!?]+$/g)?.map((step) => step.trim()).filter(Boolean) || [];
@@ -225,7 +230,7 @@ function createPdf() {
   y = 36;
   aggregateIngredients().forEach((item) => {
     const amount = item.amount == null ? "" : item.amount + (item.unit ? " " + item.unit : "");
-    y = addWrapped(doc, "☐ " + amount + (amount ? " " : "") + item.name, margin, y, width - margin * 2);
+    y = addChecklistItem(doc, amount + (amount ? " " : "") + item.name, margin, y, width - margin * 2);
     if (y > 275) { doc.addPage(); y = 20; }
   });
   const ordered = Object.entries(state.plan).sort(([a], [b]) => a.localeCompare(b));
