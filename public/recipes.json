@@ -585,6 +585,14 @@
         "optional": false
       },
       {
+        "raw": "8 eieren",
+        "amount": 8,
+        "unit": "stuk",
+        "name": "eieren",
+        "key": "eieren",
+        "optional": false
+      },
+      {
         "raw": "peper en zout",
         "amount": null,
         "unit": "",
