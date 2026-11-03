@@ -504,7 +504,7 @@ function infographicSvg(recipe) {
   <g fill="#365f57" font-family="Arial,sans-serif" font-size="22">${ingredientMarkup}</g>
   <text x="700" y="405" fill="#174c45" font-family="Arial,sans-serif" font-size="30" font-weight="800">ZO MAAK JE HET</text>
   <g font-family="Arial,sans-serif">${stepMarkup}</g>
-  <g transform="translate(1240 650)"><ellipse cx="100" cy="120" rx="250" ry="55" fill="#d6e3d4"/><path d="M-70 42c45-102 185-125 282-55 46 33 64 76 49 113-35 83-244 78-331 18-22-15-17-45 0-76z" fill="#d8a261" stroke="#174c45" stroke-width="7"/><circle cx="22" cy="62" r="20" fill="#d9584d" stroke="#174c45" stroke-width="6"/><circle cx="165" cy="67" r="18" fill="#83aa65" stroke="#174c45" stroke-width="6"/></g>
+  <g transform="translate(1280 210) scale(.65)"><ellipse cx="100" cy="120" rx="250" ry="55" fill="#d6e3d4"/><path d="M-70 42c45-102 185-125 282-55 46 33 64 76 49 113-35 83-244 78-331 18-22-15-17-45 0-76z" fill="#d8a261" stroke="#174c45" stroke-width="7"/><circle cx="22" cy="62" r="20" fill="#d9584d" stroke="#174c45" stroke-width="6"/><circle cx="165" cy="67" r="18" fill="#83aa65" stroke="#174c45" stroke-width="6"/></g>
   </svg>`;
 }
 

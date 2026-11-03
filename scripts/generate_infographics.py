@@ -89,7 +89,7 @@ def svg_for(recipe: dict) -> str:
   <g font-family="Arial, sans-serif">
 {steps_markup}
   </g>
-  <g transform="translate(1240 650)">
+  <g transform="translate(1280 210) scale(.65)">
     <ellipse cx="100" cy="120" rx="250" ry="55" fill="#d6e3d4"/>
     <path d="M-70 42c45-102 185-125 282-55 46 33 64 76 49 113-35 83-244 78-331 18-22-15-17-45 0-76z" fill="#d8a261" stroke="#174c45" stroke-width="7"/>
     <circle cx="22" cy="62" r="20" fill="#d9584d" stroke="#174c45" stroke-width="6"/>
