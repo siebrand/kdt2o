@@ -12,6 +12,8 @@ Generate recipe data:
 python3 scripts/extract_recipes.py recipes public/recipes.json
 ```
 
+The extractor stores a SHA-256 source hash and reuses unchanged recipe records. Optional harmonization is enabled only with `RECIPE_LLM_COMMAND`; the command reads one recipe JSON object from stdin and returns the harmonized object as JSON. Without that environment variable, no LLM improvement is attempted.
+
 Run parser tests:
 
 ```bash

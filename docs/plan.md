@@ -120,6 +120,16 @@ Na ontvangst worden de logo’s tijdens de build naar geschikte PNG/SVG-assets g
 - Eenheden zonder numerieke hoeveelheid, zoals “ruim belegd” of “scheut”, kunnen niet wiskundig worden opgeteld. Deze blijven als afzonderlijke kwalitatieve regels in de boodschappenlijst staan.
 - De voorgestelde regel voor drie dagen is gebaseerd op porties voor twee personen. Als de bronrecepten een andere semantiek gebruiken voor porties, moet die regel in de parserconfiguratie aanpasbaar zijn.
 
+## Receptextractie, harmonisatie en caching
+
+Tijdens iedere build worden PDF- en tekstbronnen uit `recipes/` geëxtraheerd naar `public/recipes.json`. Iedere bron krijgt een SHA-256-hash. Als de hash en de harmonizer-versie gelijk zijn aan de vorige gegenereerde output, wordt het bestaande geharmoniseerde record hergebruikt.
+
+Harmonisatie is optioneel en mag alleen worden uitgevoerd wanneer een LLM-adapter beschikbaar is. De build ondersteunt daarom `RECIPE_LLM_COMMAND`: het commando ontvangt één recept als JSON op stdin en retourneert een gevalideerd JSON-object met dezelfde `id`. Zonder deze variabele blijft de parseroutput onveranderd, afgezien van structurele normalisatie. Fouten of ongeldige LLM-uitvoer blokkeren de build niet en vallen terug op de geëxtraheerde brondata; dit wordt naar stderr gemeld.
+
+De Docker-build kopieert bestaande gegenereerde data naar de buildstage voordat de extractor draait. Daardoor blijft de hash-cache beschikbaar bij lokale incrementele builds. CI- en productie-builds moeten de gegenereerde output als cache kunnen doorgeven als hergebruik van harmonisatie gewenst is.
+
+De receptkiezer toont uitsluitend de receptnaam en de actie om die naam toe te voegen. Porties, categorieën, ingrediënten en bereidingswijze zijn niet zichtbaar in de keuzelijst; deze informatie blijft beschikbaar voor planning en PDF-generatie.
+
 ## FLOSS-documentatie en projectgovernance
 
 De ontwikkelaarsdocumentatie wordt in het Engels geschreven; alleen de gebruikersinterface, foutmeldingen, gegenereerde PDF en andere eindgebruikersuitvoer zijn Nederlands. Voeg naast `docs/plan.md` de volgende bestanden toe:
