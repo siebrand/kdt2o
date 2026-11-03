@@ -326,17 +326,18 @@ function createPdf() {
   const doc = new window.jspdf.jsPDF({ orientation: "landscape", unit: "mm", format: "a4" });
   const margin = 16;
   const width = doc.internal.pageSize.getWidth();
+  const height = doc.internal.pageSize.getHeight();
   drawWeeklyOverview(doc, margin, width);
   doc.addPage();
   doc.setTextColor(24, 63, 50);
   doc.setFontSize(20);
   doc.text("Boodschappenlijst", margin, 24);
   doc.setFontSize(10);
-  y = 36;
+  let y = 36;
   const shoppingItems = sortedShoppingItems();
   let currentCategory = "";
   shoppingItems.forEach((item) => {
-    if (y > 265) { doc.addPage(); y = 20; currentCategory = ""; }
+    if (y > height - 25) { doc.addPage(); y = 20; currentCategory = ""; }
     const category = shoppingCategory(item);
     if (category !== currentCategory) {
       doc.setFontSize(12);
@@ -350,42 +351,44 @@ function createPdf() {
     const amount = item.amount == null ? "" : item.amount + (item.unit ? " " + item.unit : "");
     y = addChecklistItem(doc, amount + (amount ? " " : "") + item.name, margin, y, width - margin * 2);
   });
-  const ordered = Object.entries(state.plan).sort(([a], [b]) => a.localeCompare(b));
-  ordered.forEach(([key, item]) => {
-    const recipe = recipeById(item.recipeId);
-    doc.addPage();
-    doc.setTextColor(24, 63, 50);
-    doc.setFontSize(18);
-    doc.text(recipe.title, margin, 24);
-    doc.setFontSize(10);
-    doc.setTextColor(70, 80, 70);
-    doc.text(recipe.category + " · " + recipe.portions + " personen", margin, 33);
-    y = 46;
-    y = addWrapped(doc, "Gepland voor: " + DAYS[Number(key.split("-")[0])] + " " + key.split("-")[1], margin, y, width - margin * 2);
-    y += 5;
-    doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Ingrediënten", margin, y); y += 7;
-    doc.setFontSize(10); doc.setTextColor(40, 45, 40);
-    (recipe.ingredients || []).forEach((ingredient) => {
-      const amount = ingredient.amount == null ? "" : ingredient.amount + (ingredient.unit ? " " + ingredient.unit : "");
-      y = addWrapped(doc, "• " + amount + (amount ? " " : "") + ingredient.name, margin, y, width - margin * 2);
-    });
-    y += 6; doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Bereidingswijze", margin, y); y += 7;
-    doc.setFontSize(10); doc.setTextColor(40, 45, 40);
-    const steps = methodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
-    steps.forEach((step, index) => {
-      y = addWrapped(doc, `${index + 1}. ${step}`, margin, y, width - margin * 2, 5);
-      if (y > 275 && index < steps.length - 1) { doc.addPage(); y = 20; }
-    });
-    if (recipe.notes?.length) {
-      y += 5;
-      doc.setFontSize(12);
+  DAYS.forEach((day, dayIndex) => {
+    MEALS.forEach((meal) => {
+      const item = state.plan[planKey(dayIndex, meal)];
+      if (!item) return;
+      const recipe = recipeById(item.recipeId);
+      doc.addPage();
       doc.setTextColor(24, 63, 50);
-      doc.text("Opmerking", margin, y);
-      y += 7;
+      doc.setFontSize(18);
+      doc.text(recipe.title, margin, 24);
       doc.setFontSize(10);
-      doc.setTextColor(40, 45, 40);
-      recipe.notes.forEach((note) => { y = addWrapped(doc, "• " + note, margin, y, width - margin * 2, 5); });
-    }
+      doc.setTextColor(70, 80, 70);
+      doc.text(day + " · " + meal + " · " + recipe.portions + " personen", margin, 33);
+      y = 46;
+      y = addWrapped(doc, "Gepland voor: " + day, margin, y, width - margin * 2);
+      y += 5;
+      doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Ingrediënten", margin, y); y += 7;
+      doc.setFontSize(10); doc.setTextColor(40, 45, 40);
+      (recipe.ingredients || []).forEach((ingredient) => {
+        y = addWrapped(doc, "• " + ingredientLabel(ingredient), margin, y, width - margin * 2);
+      });
+      y += 6; doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Bereidingswijze", margin, y); y += 7;
+      doc.setFontSize(10); doc.setTextColor(40, 45, 40);
+      const steps = methodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
+      steps.forEach((step, index) => {
+        y = addWrapped(doc, `${index + 1}. ${step}`, margin, y, width - margin * 2, 5);
+        if (y > height - margin && index < steps.length - 1) { doc.addPage(); y = 20; }
+      });
+      if (recipe.notes?.length) {
+        y += 5;
+        doc.setFontSize(12);
+        doc.setTextColor(24, 63, 50);
+        doc.text("Opmerking", margin, y);
+        y += 7;
+        doc.setFontSize(10);
+        doc.setTextColor(40, 45, 40);
+        recipe.notes.forEach((note) => { y = addWrapped(doc, "• " + note, margin, y, width - margin * 2, 5); });
+      }
+    });
   });
   doc.save("weekplanning.pdf");
 }
