@@ -669,8 +669,11 @@ async function createPdf() {
       doc.addPage();
       if (!recipePages.has(recipe.id)) recipePages.set(recipe.id, doc.getNumberOfPages());
       doc.setTextColor(24, 63, 50);
+      doc.setFont("helvetica", "bold");
+      doc.setCharSpace(0);
       doc.setFontSize(18);
       doc.text(recipe.title, margin, 24);
+      doc.setFont("helvetica", "normal");
       doc.setFontSize(10);
       doc.setTextColor(70, 80, 70);
       doc.text(dayName(dayIndex) + " · " + meal + " · " + recipe.portions + " personen", margin, 33);
