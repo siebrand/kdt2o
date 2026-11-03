@@ -2098,11 +2098,11 @@
         "optional": false
       },
       {
-        "raw": "1 liter water (naar wens voor dikte)",
+        "raw": "1 liter water",
         "amount": 1,
         "unit": "liter",
-        "name": "water (naar wens voor dikte)",
-        "key": "water (naar wens voor dikte)",
+        "name": "water",
+        "key": "water",
         "optional": false
       },
       {
