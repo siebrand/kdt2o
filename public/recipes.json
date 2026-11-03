@@ -5824,8 +5824,8 @@
         "raw": "70 gram kikkererwten (uit blik)",
         "amount": 70,
         "unit": "gram",
-        "name": "kikkererwten (uit blik)",
-        "key": "kikkererwten (uit blik)",
+        "name": "kikkererwten",
+        "key": "kikkererwten",
         "optional": false
       },
       {
