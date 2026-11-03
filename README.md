@@ -35,4 +35,10 @@ User-facing content is Dutch. Developer documentation and Git history are Englis
 
 ## License and attribution
 
-Licensing, recipe provenance, branding permissions, acknowledgements, and security reporting must be completed before public deployment. See `docs/plan.md`.
+Source code is licensed under the MIT License. Recipe data and project documentation are dedicated to the public domain under CC0 1.0 where the applicable rights allow it. See [LICENSE](LICENSE), [LICENSE-CC0](LICENSE-CC0), and [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md).
+
+The application is published by Kitano ICT. See the [privacy policy](public/privacy.html) and [SECURITY.md](SECURITY.md).
+
+## Contributing
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Community participation follows the [Code of Conduct](CODE_OF_CONDUCT.md).
