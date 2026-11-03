@@ -377,11 +377,11 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "400 gram Huttenkase",
+        "raw": "400 gram hüttenkäse",
         "amount": 400,
         "unit": "gram",
-        "name": "Huttenkase",
-        "key": "huttenkase",
+        "name": "hüttenkäse",
+        "key": "hüttenkäse",
         "optional": false
       },
       {
@@ -4355,9 +4355,9 @@
       {
         "raw": "3 rode paprika's",
         "amount": 3,
-        "unit": "",
-        "name": "rode paprika's",
-        "key": "rode paprika's",
+        "unit": "stuk",
+        "name": "rode paprika",
+        "key": "rode paprika",
         "optional": false
       },
       {
@@ -4371,9 +4371,9 @@
       {
         "raw": "3 (rode) uien",
         "amount": 3,
-        "unit": "",
-        "name": "(rode) uien",
-        "key": "(rode) uien",
+        "unit": "stuk",
+        "name": "(rode) ui",
+        "key": "(rode) ui",
         "optional": false
       },
       {
@@ -5000,9 +5000,9 @@
       {
         "raw": "2 rode paprika's",
         "amount": 2,
-        "unit": "",
-        "name": "rode paprika's",
-        "key": "rode paprika's",
+        "unit": "stuk",
+        "name": "rode paprika",
+        "key": "rode paprika",
         "optional": false
       },
       {
@@ -6248,17 +6248,17 @@
       {
         "raw": "2 preien",
         "amount": 2,
-        "unit": "",
-        "name": "preien",
-        "key": "preien",
+        "unit": "stuk",
+        "name": "prei",
+        "key": "prei",
         "optional": false
       },
       {
         "raw": "2 rode paprika's",
         "amount": 2,
-        "unit": "",
-        "name": "rode paprika's",
-        "key": "rode paprika's",
+        "unit": "stuk",
+        "name": "rode paprika",
+        "key": "rode paprika",
         "optional": false
       },
       {
@@ -6564,9 +6564,9 @@
       {
         "raw": "2 rode uien",
         "amount": 2,
-        "unit": "",
-        "name": "rode uien",
-        "key": "rode uien",
+        "unit": "stuk",
+        "name": "rode ui",
+        "key": "rode ui",
         "optional": false
       },
       {
@@ -6988,9 +6988,9 @@
       {
         "raw": "1-2 preien",
         "amount": "1-2",
-        "unit": "",
-        "name": "preien",
-        "key": "preien",
+        "unit": "stuk",
+        "name": "prei",
+        "key": "prei",
         "optional": false
       },
       {
