@@ -759,12 +759,20 @@
         "optional": false
       },
       {
-        "raw": "200 gram havermout of amandelmeel",
+        "raw": "200 gram havermout",
         "amount": 200,
         "unit": "gram",
-        "name": "havermout of amandelmeel",
-        "key": "havermout of amandelmeel",
+        "name": "havermout",
+        "key": "havermout",
         "optional": false
+      },
+      {
+        "raw": "200 gram amandelmeel (alternatief)",
+        "amount": 200,
+        "unit": "gram",
+        "name": "amandelmeel",
+        "key": "amandelmeel",
+        "optional": true
       },
       {
         "raw": "250 ml volle kwark",
@@ -1773,12 +1781,20 @@
         "optional": false
       },
       {
-        "raw": "1 vezelrijke cracker of lijnzaad cracker per persoon",
-        "amount": 1,
-        "unit": "",
-        "name": "vezelrijke cracker of lijnzaad cracker per persoon",
-        "key": "vezelrijke cracker of lijnzaad cracker per persoon",
+        "raw": "2 lijnzaad crackers",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "lijnzaadcracker",
+        "key": "lijnzaadcracker",
         "optional": false
+      },
+      {
+        "raw": "2 vezelrijke crackers (alternatief)",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "vezelrijke cracker",
+        "key": "vezelrijke cracker",
+        "optional": true
       },
       {
         "raw": "(jozo)zout en peper",
@@ -2387,12 +2403,20 @@
         "optional": false
       },
       {
-        "raw": "1 vezelrijke cracker of lijnzaad cracker per persoon",
-        "amount": 1,
-        "unit": "",
-        "name": "vezelrijke cracker of lijnzaad cracker per persoon",
-        "key": "vezelrijke cracker of lijnzaad cracker per persoon",
+        "raw": "2 lijnzaad crackers",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "lijnzaadcracker",
+        "key": "lijnzaadcracker",
         "optional": false
+      },
+      {
+        "raw": "2 vezelrijke crackers (alternatief)",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "vezelrijke cracker",
+        "key": "vezelrijke cracker",
+        "optional": true
       },
       {
         "raw": "boerenkaas",
