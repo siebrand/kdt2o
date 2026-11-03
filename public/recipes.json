@@ -506,12 +506,22 @@
         "alternatives": [{"raw": "2 lijnzaadcrackers", "amount": 2, "unit": "stuk", "name": "lijnzaadcracker", "key": "lijnzaadcracker", "optional": false}]
       },
       {
-        "raw": "1 paprika of andere groenten die je nog in huis hebt.",
+        "raw": "1 paprika",
         "amount": 1,
-        "unit": "",
-        "name": "paprika of andere groenten die je nog in huis hebt",
-        "key": "paprika of andere groenten die je nog in huis hebt",
-        "optional": false
+        "unit": "stuk",
+        "name": "paprika",
+        "key": "paprika",
+        "optional": false,
+        "alternatives": [
+          {
+            "raw": "1 stuk andere groenten die je nog in huis hebt",
+            "amount": 1,
+            "unit": "stuk",
+            "name": "andere groenten die je nog in huis hebt",
+            "key": "andere groenten die je nog in huis hebt",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "peper en zout",
