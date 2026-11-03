@@ -87,11 +87,11 @@
         "optional": false
       },
       {
-        "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaanse / Provençaalse kruiden",
+        "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaanse of Provençaalse kruiden",
         "amount": 3,
         "unit": "el",
-        "name": "gedroogde kruiden naar keuze, zoals Italiaanse / Provençaalse kruiden",
-        "key": "gedroogde kruiden naar keuze, zoals italiaanse / provençaalse kruiden",
+        "name": "gedroogde kruiden naar keuze (Italiaanse of Provençaalse kruiden)",
+        "key": "gedroogde kruiden naar keuze (italiaanse of provençaalse kruiden)",
         "optional": false
       }
     ],
@@ -549,11 +549,11 @@
         "optional": false
       },
       {
-        "raw": "2el (gedroogde) Italiaanse kruiden",
+        "raw": "2 el gedroogde Italiaanse kruiden",
         "amount": 2,
         "unit": "el",
-        "name": "(gedroogde) Italiaanse kruiden",
-        "key": "(gedroogde) italiaanse kruiden",
+        "name": "gedroogde Italiaanse kruiden",
+        "key": "gedroogde italiaanse kruiden",
         "optional": false
       },
       {
@@ -883,11 +883,11 @@
         "optional": false
       },
       {
-        "raw": "3 el gedroogde kruiden naar keuze zoals Italiaanse/Provengaalse",
+        "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaanse of Provençaalse kruiden",
         "amount": 3,
         "unit": "el",
-        "name": "gedroogde kruiden naar keuze zoals Italiaanse/Provengaalse",
-        "key": "gedroogde kruiden naar keuze zoals italiaanse/provengaalse",
+        "name": "gedroogde kruiden naar keuze (Italiaanse of Provençaalse kruiden)",
+        "key": "gedroogde kruiden naar keuze (italiaanse of provençaalse kruiden)",
         "optional": false
       },
       {
