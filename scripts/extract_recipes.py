@@ -47,10 +47,22 @@ def parse_ingredient(line: str) -> dict:
     }
 
 
+def title_from_filename(path: Path) -> str:
+    title = re.sub(r"[-_]+", " ", path.stem).strip()
+    return title[:1].upper() + title[1:]
+
+
 def parse_text_recipe(path: Path, text: str, category: str) -> dict:
     lines = [line.strip() for line in text.replace("\r", "").splitlines()]
     nonempty = [line for line in lines if line]
-    title = nonempty[0] if nonempty else path.stem.replace("-", " ").title()
+    title = nonempty[0] if nonempty else title_from_filename(path)
+    if (
+        len(title) > 100
+        or "ingrediënten" in title.lower()
+        or "bereidingswijze" in title.lower()
+        or re.search(r"voor\s+\d+\s+personen", title, re.IGNORECASE)
+    ):
+        title = title_from_filename(path)
     portions = infer_portions(text)
     start = next((i for i, line in enumerate(lines) if line.lower() == "ingrediënten"), None)
     ingredients = []

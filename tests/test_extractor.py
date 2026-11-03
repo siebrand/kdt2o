@@ -32,6 +32,11 @@ Snijd alles."""
         self.assertEqual(recipe["portions"], 2)
         self.assertEqual(len(recipe["ingredients"]), 2)
 
+    def test_long_extracted_title_uses_filename(self):
+        text = "Amandel pannenkoeken Voor 2 personen Bereidingstijd: 15 minuten Ingrediënten: 75 gram amandelmeel"
+        recipe = parse_text_recipe(Path("amandel-pannenkoeken.pdf"), text, "ontbijt")
+        self.assertEqual(recipe["title"], "Amandel pannenkoeken")
+
     def test_normalize_ingredient(self):
         self.assertEqual(normalize_ingredient("  2  appels "), "appels")
 
