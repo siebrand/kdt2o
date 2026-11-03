@@ -8,7 +8,8 @@
 - OCR tooling is available locally: Tesseract 5.5.4 with Dutch language data, OCRmyPDF 17.13.0, and Poppler 26.10.0.
 - One OCR sample (`aardbeienkwark`) produced usable Dutch text, with minor OCR noise such as a stray character and branding text.
 - A complete OCR staging tree has not yet been completed. `recipes-ocr/` contains a single test output; `recipes-ocr-full/` is expected to be created as a temporary working tree.
-- The working tree contains uncommitted extraction, migration, schema, audit, generated JSON, and OCR-related files. No source recipes have been deleted.
+- The working tree contains uncommitted extraction, migration, schema, and OCR-related working files.
+- The reviewed public recipe data and Docker build were committed in `e84110d` (`feat: migrate recipes from OCR into public data`). The original PDF/TXT source files under `recipes/01-ontbijt`, `recipes/02-lunch`, and `recipes/03-diner` have now been removed after the audit passed. Temporary OCR staging remains untracked until it is explicitly cleaned up.
 
 ## Revised recipe-data plan
 
