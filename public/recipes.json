@@ -5793,9 +5793,9 @@
         "optional": false
       },
       {
-        "raw": "chilivlokken",
-        "amount": null,
-        "unit": "",
+        "raw": "0.5 tl chilivlokken",
+        "amount": 0.5,
+        "unit": "tl",
         "name": "chilivlokken",
         "key": "chilivlokken",
         "optional": true
@@ -6611,9 +6611,9 @@
         "optional": false
       },
       {
-        "raw": "chilivlokken",
-        "amount": null,
-        "unit": "",
+        "raw": "0.5 tl chilivlokken",
+        "amount": 0.5,
+        "unit": "tl",
         "name": "chilivlokken",
         "key": "chilivlokken",
         "optional": false
