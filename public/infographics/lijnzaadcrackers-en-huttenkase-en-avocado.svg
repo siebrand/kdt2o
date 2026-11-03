@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Lijnzaadcrackers met hüttenkäse en avocado</title>
+  <desc id="desc">Infographic met ingrediënten en drie bereidingsstappen voor lijnzaadcrackers met hüttenkäse en avocado.</desc>
+  <rect width="1600" height="900" rx="36" fill="#fff9f0"/>
+  <circle cx="1470" cy="90" r="180" fill="#e9f0dc"/>
+  <circle cx="80" cy="830" r="210" fill="#f7ded4"/>
+  <g fill="none" stroke="#174c45" stroke-width="7" stroke-linecap="round" opacity=".8">
+    <path d="M1390 170c55-42 111-43 148-14-36 3-72 23-98 55"/>
+    <path d="M1420 208c-4-38 9-70 37-91"/>
+    <path d="M145 747c48 20 78 58 78 105-24-22-57-37-95-39"/>
+  </g>
+
+  <text x="92" y="105" fill="#e9795d" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="3">ONTBIJT · 2 PERSONEN</text>
+  <text x="88" y="182" fill="#174c45" font-family="Arial, sans-serif" font-size="58" font-weight="800">Lijnzaadcrackers</text>
+  <text x="88" y="245" fill="#174c45" font-family="Arial, sans-serif" font-size="42" font-weight="700">met hüttenkäse en avocado</text>
+  <rect x="90" y="280" width="185" height="52" rx="26" fill="#174c45"/>
+  <text x="182" y="315" text-anchor="middle" fill="#fff9f0" font-family="Arial, sans-serif" font-size="23" font-weight="700">± 60 MINUTEN</text>
+
+  <rect x="88" y="382" width="535" height="410" rx="28" fill="#ffffff" stroke="#d6e3d4" stroke-width="3"/>
+  <text x="125" y="437" fill="#174c45" font-family="Arial, sans-serif" font-size="30" font-weight="800">INGREDIËNTEN</text>
+  <g fill="#365f57" font-family="Arial, sans-serif" font-size="24">
+    <text x="128" y="488">4 lijnzaadcrackers</text>
+    <text x="128" y="528">1 avocado</text>
+    <text x="128" y="568">200 g hüttenkäse</text>
+    <text x="128" y="608">1 komkommer</text>
+    <text x="128" y="648">1 tomaat</text>
+    <text x="128" y="688">150 g gebroken lijnzaad</text>
+    <text x="128" y="728">100 g zonnebloempitten</text>
+    <text x="128" y="768">180 ml water · zout · kruiden</text>
+  </g>
+  <g fill="#e9795d">
+    <circle cx="118" cy="480" r="5"/><circle cx="118" cy="520" r="5"/><circle cx="118" cy="560" r="5"/><circle cx="118" cy="600" r="5"/>
+    <circle cx="118" cy="640" r="5"/><circle cx="118" cy="680" r="5"/><circle cx="118" cy="720" r="5"/><circle cx="118" cy="760" r="5"/>
+  </g>
+
+  <text x="700" y="405" fill="#174c45" font-family="Arial, sans-serif" font-size="30" font-weight="800">ZO MAAK JE HET</text>
+  <g font-family="Arial, sans-serif">
+    <circle cx="735" cy="493" r="34" fill="#e9795d"/><text x="735" y="505" text-anchor="middle" fill="#fff" font-size="28" font-weight="800">1</text>
+    <text x="795" y="486" fill="#174c45" font-size="27" font-weight="700">Mengen</text>
+    <text x="795" y="520" fill="#365f57" font-size="21">Meng de zaden, pitten, kruiden en water.</text>
+    <circle cx="735" cy="610" r="34" fill="#e9795d"/><text x="735" y="622" text-anchor="middle" fill="#fff" font-size="28" font-weight="800">2</text>
+    <text x="795" y="603" fill="#174c45" font-size="27" font-weight="700">Uitrollen en bakken</text>
+    <text x="795" y="637" fill="#365f57" font-size="21">Laat 30 minuten staan, rol dun uit en bak knapperig.</text>
+    <circle cx="735" cy="727" r="34" fill="#e9795d"/><text x="735" y="739" text-anchor="middle" fill="#fff" font-size="28" font-weight="800">3</text>
+    <text x="795" y="720" fill="#174c45" font-size="27" font-weight="700">Beleggen</text>
+    <text x="795" y="754" fill="#365f57" font-size="21">Beleg met avocado, hüttenkäse, komkommer en tomaat.</text>
+  </g>
+
+  <g transform="translate(1170 490)">
+    <ellipse cx="100" cy="190" rx="250" ry="55" fill="#d6e3d4"/>
+    <path d="M-70 112c45-102 185-125 282-55 46 33 64 76 49 113-35 83-244 78-331 18-22-15-17-45 0-76z" fill="#d8a261" stroke="#174c45" stroke-width="7"/>
+    <path d="M-10 90c25-47 62-70 107-71 35 0 69 15 87 43-44 7-90 32-116 72-31-10-57-24-78-44z" fill="#83aa65" stroke="#174c45" stroke-width="7"/>
+    <path d="M93 45c45-29 90-16 109 18-42 5-76 27-101 58-12-22-14-50-8-76z" fill="#a8c77a" stroke="#174c45" stroke-width="6"/>
+    <circle cx="22" cy="132" r="20" fill="#d9584d" stroke="#174c45" stroke-width="6"/>
+    <circle cx="165" cy="137" r="18" fill="#d9584d" stroke="#174c45" stroke-width="6"/>
+    <g fill="#f7d59a"><ellipse cx="-25" cy="160" rx="6" ry="12"/><ellipse cx="48" cy="184" rx="6" ry="12"/><ellipse cx="118" cy="173" rx="6" ry="12"/><ellipse cx="202" cy="170" rx="6" ry="12"/></g>
+  </g>
+  <text x="1180" y="790" fill="#174c45" font-family="Arial, sans-serif" font-size="22" font-weight="700">Knapperig · fris · vezelrijk</text>
+</svg>
