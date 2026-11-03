@@ -1788,15 +1788,17 @@
         "unit": "stuk",
         "name": "lijnzaadcracker",
         "key": "lijnzaadcracker",
-        "optional": false
-      },
-      {
-        "raw": "2 vezelrijke crackers (alternatief)",
-        "amount": 2,
-        "unit": "stuk",
-        "name": "vezelrijke cracker",
-        "key": "vezelrijke cracker",
-        "optional": true
+        "optional": false,
+        "alternatives": [
+          {
+            "raw": "2 vezelrijke crackers",
+            "amount": 2,
+            "unit": "stuk",
+            "name": "vezelrijke cracker",
+            "key": "vezelrijke cracker",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "(jozo)zout en peper",
@@ -2410,15 +2412,17 @@
         "unit": "stuk",
         "name": "lijnzaadcracker",
         "key": "lijnzaadcracker",
-        "optional": false
-      },
-      {
-        "raw": "2 vezelrijke crackers (alternatief)",
-        "amount": 2,
-        "unit": "stuk",
-        "name": "vezelrijke cracker",
-        "key": "vezelrijke cracker",
-        "optional": true
+        "optional": false,
+        "alternatives": [
+          {
+            "raw": "2 vezelrijke crackers",
+            "amount": 2,
+            "unit": "stuk",
+            "name": "vezelrijke cracker",
+            "key": "vezelrijke cracker",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "boerenkaas",
