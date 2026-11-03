@@ -536,9 +536,9 @@
         "optional": false
       },
       {
-        "raw": "ui",
-        "amount": null,
-        "unit": "",
+        "raw": "1 stuk ui",
+        "amount": 1,
+        "unit": "stuk",
         "name": "ui",
         "key": "ui",
         "optional": false
@@ -5821,9 +5821,9 @@
         "optional": false
       },
       {
-        "raw": "ui",
-        "amount": null,
-        "unit": "",
+        "raw": "1 stuk ui",
+        "amount": 1,
+        "unit": "stuk",
         "name": "ui",
         "key": "ui",
         "optional": false
