@@ -6,6 +6,7 @@
   <title>Alle recepten controleren</title>
   <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" crossorigin="anonymous"></script>
   <script defer src="/recipe-parser.js"></script>
+  <script defer src="/all-recipes.js"></script>
   <style>
     body { font-family: Arial, sans-serif; color: #183f32; margin: 2rem; }
     button { background: #e9795d; border: 0; border-radius: 0.4rem; color: white; cursor: pointer; padding: 0.7rem 1rem; }
@@ -16,103 +17,5 @@
   <h1>Alle recepten controleren</h1>
   <p id="status">De PDF wordt voorbereid…</p>
   <button id="download" type="button" hidden>PDF downloaden</button>
-  <script>
-    const status = document.querySelector("#status");
-    const download = document.querySelector("#download");
-    let pdfBytes;
-
-    function textLines(doc, value, x, y, width, lineHeight) {
-      const lines = doc.splitTextToSize(String(value || ""), width);
-      doc.text(lines, x, y);
-      return y + lines.length * lineHeight;
-    }
-
-    function ingredientText(ingredient) {
-      const main = ingredient.raw || ingredient.name || "";
-      const alternatives = (ingredient.alternatives || []).map((item) => item.raw || item.name || "");
-      return alternatives.length ? main + " of " + alternatives.join(" of ") : main;
-    }
-
-    async function buildPdf(recipes) {
-      const doc = new window.jspdf.jsPDF({ orientation: "landscape", unit: "mm", format: "a4" });
-      const pageWidth = doc.internal.pageSize.getWidth();
-      const pageHeight = doc.internal.pageSize.getHeight();
-      const margin = 14;
-      const columnGap = 10;
-      const columnWidth = (pageWidth - margin * 2 - columnGap) / 2;
-
-      recipes.forEach((recipe, recipeIndex) => {
-        if (recipeIndex) doc.addPage();
-        doc.setTextColor(24, 63, 50);
-        doc.setFontSize(18);
-        doc.text(recipe.title || "Recept", margin, 18);
-        doc.setFontSize(9);
-        doc.setTextColor(70, 80, 70);
-        doc.text(
-          (recipe.category || "recept") + " · " + (recipe.portions || "?") + " personen · " + (recipeIndex + 1) + " van " + recipes.length,
-          margin,
-          25
-        );
-
-        const rightX = margin + columnWidth + columnGap;
-        doc.setFontSize(12);
-        doc.setTextColor(24, 63, 50);
-        doc.text("Ingrediënten", margin, 36);
-        doc.text("Bereidingswijze", rightX, 36);
-
-        doc.setFontSize(8.5);
-        doc.setTextColor(40, 45, 40);
-        let leftY = 43;
-        (recipe.ingredients || []).forEach((ingredient) => {
-          leftY = textLines(doc, "• " + ingredientText(ingredient), margin, leftY, columnWidth, 4.2);
-        });
-
-        let rightY = 43;
-        const steps = window.recipeMethodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
-        steps.forEach((step, index) => {
-          rightY = textLines(doc, (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
-          rightY += 1.2;
-        });
-
-        if (recipe.notes?.length) {
-          rightY += 2;
-          doc.setFontSize(10);
-          doc.setTextColor(24, 63, 50);
-          doc.text("Opmerking", rightX, rightY);
-          rightY += 5;
-          doc.setFontSize(8.5);
-          doc.setTextColor(40, 45, 40);
-          recipe.notes.forEach((note) => {
-            rightY = textLines(doc, "• " + note, rightX, rightY, columnWidth, 4.2);
-          });
-        }
-
-        doc.setFontSize(7);
-        doc.setTextColor(110, 110, 110);
-        doc.text("Controle-export · " + (recipe.id || ""), margin, pageHeight - 7);
-      });
-      return doc;
-    }
-
-    async function prepare() {
-      if (!window.jspdf?.jsPDF || !window.recipeMethodSteps) {
-        status.textContent = "De PDF-module of stappenparser kon niet worden geladen.";
-        return;
-      }
-      const response = await fetch("/recipes.json");
-      const recipes = await response.json();
-      const doc = await buildPdf(recipes);
-      pdfBytes = doc.output("arraybuffer");
-      status.textContent = recipes.length + " recepten zijn verwerkt. Eén recept per pagina.";
-      download.hidden = false;
-      download.addEventListener("click", () => doc.save("alle-recepten-ter-controle.pdf"));
-      doc.save("alle-recepten-ter-controle.pdf");
-    }
-
-    prepare().catch((error) => {
-      console.error(error);
-      status.textContent = "De PDF kon niet worden gemaakt. Controleer de browserconsole.";
-    });
-  </script>
 </body>
 </html>
