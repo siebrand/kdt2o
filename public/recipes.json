@@ -638,46 +638,6 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "1 zak van 200 gram gemengde en ongebrande noten",
-        "amount": 1,
-        "unit": "",
-        "name": "zak van 200 gram gemengde en ongebrande noten",
-        "key": "zak van 200 gram gemengde en ongebrande noten",
-        "optional": false
-      },
-      {
-        "raw": "100 gram zonnebloempitten",
-        "amount": 100,
-        "unit": "gram",
-        "name": "zonnebloempitten",
-        "key": "zonnebloempitten",
-        "optional": false
-      },
-      {
-        "raw": "100 gram pompoenpitten",
-        "amount": 100,
-        "unit": "gram",
-        "name": "pompoenpitten",
-        "key": "pompoenpitten",
-        "optional": false
-      },
-      {
-        "raw": "100 gram gebroken lijnzaad",
-        "amount": 100,
-        "unit": "gram",
-        "name": "gebroken lijnzaad",
-        "key": "gebroken lijnzaad",
-        "optional": false
-      },
-      {
-        "raw": "kaneel",
-        "amount": null,
-        "unit": "",
-        "name": "kaneel",
-        "key": "kaneel",
-        "optional": false
-      },
-      {
         "raw": "400 gram hüttenkäse",
         "amount": 400,
         "unit": "gram",
