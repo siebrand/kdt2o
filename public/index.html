@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plan ontbijt, lunch en diner voor een week.">
+  <title>Weekplanner | Voeding Leeft</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" crossorigin="anonymous"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand-mark" aria-label="Voeding Leeft">Voeding <span>Leeft</span></div>
+    <p class="eyebrow">Weekplanner</p>
+    <h1>Plan je maaltijden voor de hele week</h1>
+    <p class="intro">Kies recepten voor ontbijt, lunch en diner. Lege momenten zijn helemaal goed.</p>
+  </header>
+  <main class="container">
+    <section class="toolbar" aria-labelledby="toolbar-title">
+      <div>
+        <h2 id="toolbar-title">Jouw planning</h2>
+        <p id="status" role="status">Recepten worden geladen…</p>
+      </div>
+      <div class="actions">
+        <button id="clear-plan" class="button button-secondary" type="button">Planning wissen</button>
+        <button id="download-pdf" class="button" type="button" disabled>Download PDF</button>
+      </div>
+    </section>
+    <section id="planner" class="planner" aria-label="Weekplanning"></section>
+    <section class="recipe-panel" aria-labelledby="recipe-title">
+      <div class="panel-heading">
+        <h2 id="recipe-title">Recept kiezen</h2>
+        <label>Zoeken <input id="search" type="search" placeholder="Bijvoorbeeld courgette"></label>
+      </div>
+      <div id="recipe-options" class="recipe-options"></div>
+    </section>
+  </main>
+  <dialog id="day-dialog">
+    <form method="dialog" id="day-form">
+      <h2>Startdag kiezen</h2>
+      <p id="day-help"></p>
+      <label for="start-day">Startdag</label>
+      <select id="start-day"></select>
+      <div class="dialog-actions">
+        <button value="cancel" class="button button-secondary">Annuleren</button>
+        <button value="confirm" class="button">Toevoegen</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>
