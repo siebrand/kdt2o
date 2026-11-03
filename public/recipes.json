@@ -6886,11 +6886,11 @@
         "optional": false
       },
       {
-        "raw": "1 grote wortel of 2 kleine",
-        "amount": 1,
-        "unit": "stuk",
-        "name": "wortel (1 grote of 2 kleine)",
-        "key": "wortel (1 grote of 2 kleine)",
+        "raw": "150 gram wortel (1 grote of 2 kleine)",
+        "amount": 150,
+        "unit": "gram",
+        "name": "wortel",
+        "key": "wortel",
         "optional": false
       },
       {
