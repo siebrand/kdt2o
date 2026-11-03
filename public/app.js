@@ -217,9 +217,27 @@ function normalizeShoppingName(name) {
 }
 
 function normalizeShoppingIngredient(ingredient) {
-  const name = String(ingredient.name || "").toLocaleLowerCase("nl");
+  const name = String(ingredient.name || "").toLocaleLowerCase("nl").trim();
+  const raw = String(ingredient.raw || "").toLocaleLowerCase("nl").trim();
   if (name.includes("roomboter")) {
     return { ...ingredient, amount: ingredient.amount ?? 1, unit: "el", name: "roomboter" };
+  }
+  const descriptiveMeasures = [
+    { pattern: /^(?:een )?scheut(?:je)? (.+)$/, amount: 1, unit: "el" },
+    { pattern: /^snufje (.+)$/, amount: 1, unit: "tl" },
+    { pattern: /^mespunt (.+)$/, amount: 0.25, unit: "tl" },
+    { pattern: /^(?:een )?handje (.+)$/, amount: 1, unit: "hand" },
+    { pattern: /^handvol (.+)$/, amount: 1, unit: "hand" },
+    { pattern: /^paar takjes (.+)$/, amount: 2, unit: "takje" },
+    { pattern: /^takje (.+)$/, amount: 1, unit: "takje" },
+    { pattern: /^half bosje (.+)$/, amount: 0.5, unit: "bosje" }
+  ];
+  const descriptive = descriptiveMeasures.find((measure) => measure.pattern.test(name));
+  if (descriptive) {
+    return { ...ingredient, amount: descriptive.amount, unit: descriptive.unit, name: name.replace(descriptive.pattern, "$1") };
+  }
+  if (ingredient.amount != null && !ingredient.unit && /^\\s*(?:\\d+(?:[.,]\\d+)?|1\\/2|1-2)\\b/.test(raw)) {
+    return { ...ingredient, unit: "stuk" };
   }
   return ingredient;
 }
