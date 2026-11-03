@@ -47,11 +47,11 @@
         "optional": false
       },
       {
-        "raw": "peper en (jozo) zout",
+        "raw": "peper en zout",
         "amount": null,
         "unit": "",
-        "name": "peper en (jozo) zout",
-        "key": "peper en (jozo) zout",
+        "name": "peper en zout",
+        "key": "peper en zout",
         "optional": false
       },
       {
@@ -425,11 +425,11 @@
         "optional": false
       },
       {
-        "raw": "zout en peper naar smaak",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "zout en peper naar smaak",
-        "key": "zout en peper naar smaak",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       }
     ],
@@ -479,11 +479,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       }
     ],
@@ -541,11 +541,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -875,11 +875,11 @@
         "optional": false
       },
       {
-        "raw": "1 tl (jozo)zout",
+        "raw": "1 tl zout",
         "amount": 1,
         "unit": "tl",
-        "name": "(jozo)zout",
-        "key": "(jozo)zout",
+        "name": "zout",
+        "key": "zout",
         "optional": false
       },
       {
@@ -1031,11 +1031,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo) zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo) zout en peper",
-        "key": "(jozo) zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -1109,11 +1109,11 @@
         "optional": false
       },
       {
-        "raw": "1tl(jozo)zout",
+        "raw": "1 tl zout",
         "amount": 1,
         "unit": "tl",
-        "name": "(jozo)zout",
-        "key": "(jozo)zout",
+        "name": "zout",
+        "key": "zout",
         "optional": false
       },
       {
@@ -1203,11 +1203,11 @@
         "optional": false
       },
       {
-        "raw": "1 tl (jozo)zout",
+        "raw": "1 tl zout",
         "amount": 1,
         "unit": "tl",
-        "name": "(jozo)zout",
-        "key": "(jozo)zout",
+        "name": "zout",
+        "key": "zout",
         "optional": false
       },
       {
@@ -1383,11 +1383,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo) zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo) zout en peper",
-        "key": "(jozo) zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -1453,11 +1453,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -1617,11 +1617,11 @@
         "optional": false
       },
       {
-        "raw": "snufje (jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "snufje (jozo)zout en peper",
-        "key": "snufje (jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -1801,11 +1801,11 @@
         ]
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       }
     ],
@@ -1895,11 +1895,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -1989,11 +1989,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -2099,11 +2099,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -2233,11 +2233,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -2359,11 +2359,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -2543,11 +2543,11 @@
         "optional": false
       },
       {
-        "raw": "(lozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(lozo)zout en peper",
-        "key": "(lozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       }
     ],
@@ -2645,11 +2645,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo) zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo) zout en peper",
-        "key": "(jozo) zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       }
     ],
@@ -2841,11 +2841,11 @@
         "optional": false
       },
       {
-        "raw": "Snufje peper en (jozo)zout",
+        "raw": "peper en zout",
         "amount": null,
         "unit": "",
-        "name": "Snufje peper en (jozo)zout",
-        "key": "snufje peper en (jozo)zout",
+        "name": "peper en zout",
+        "key": "peper en zout",
         "optional": false
       }
     ],
@@ -3013,11 +3013,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -3295,11 +3295,11 @@
         "optional": false
       },
       {
-        "raw": "peper en (jozo)zout",
+        "raw": "peper en zout",
         "amount": null,
         "unit": "",
-        "name": "peper en (jozo)zout",
-        "key": "peper en (jozo)zout",
+        "name": "peper en zout",
+        "key": "peper en zout",
         "optional": false
       },
       {
@@ -3397,11 +3397,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -3523,11 +3523,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -3617,11 +3617,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       }
     ],
@@ -3719,11 +3719,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper naar smaak",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper naar smaak",
-        "key": "(jozo)zout en peper naar smaak",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -3821,11 +3821,11 @@
         "optional": true
       },
       {
-        "raw": "(jozo) zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo) zout en peper",
-        "key": "(jozo) zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": true
       },
       {
@@ -3977,11 +3977,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -4031,11 +4031,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -4087,11 +4087,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       }
     ],
@@ -4498,11 +4498,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo) zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo) zout en peper",
-        "key": "(jozo) zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -4630,11 +4630,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -4788,11 +4788,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -4890,11 +4890,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       }
     ],
@@ -4976,11 +4976,11 @@
         "optional": false
       },
       {
-        "raw": "peper en (jozo)zout",
+        "raw": "peper en zout",
         "amount": null,
         "unit": "",
-        "name": "peper en (jozo)zout",
-        "key": "peper en (jozo)zout",
+        "name": "peper en zout",
+        "key": "peper en zout",
         "optional": false
       }
     ],
@@ -5030,11 +5030,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo) zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo) zout en peper",
-        "key": "(jozo) zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -5148,11 +5148,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -5258,11 +5258,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -5400,11 +5400,11 @@
         "optional": false
       },
       {
-        "raw": "peper en (jozo)zout",
+        "raw": "peper en zout",
         "amount": null,
         "unit": "",
-        "name": "peper en (jozo)zout",
-        "key": "peper en (jozo)zout",
+        "name": "peper en zout",
+        "key": "peper en zout",
         "optional": false
       }
     ],
@@ -5446,11 +5446,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -5572,11 +5572,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -5880,11 +5880,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo) zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo) zout en peper",
-        "key": "(jozo) zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -5993,11 +5993,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       }
     ],
@@ -6208,11 +6208,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       }
     ],
@@ -6302,11 +6302,11 @@
         "optional": false
       },
       {
-        "raw": "peper en (jozo)zout",
+        "raw": "peper en zout",
         "amount": null,
         "unit": "",
-        "name": "peper en (jozo)zout",
-        "key": "peper en (jozo)zout",
+        "name": "peper en zout",
+        "key": "peper en zout",
         "optional": false
       },
       {
@@ -6436,11 +6436,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -6524,11 +6524,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -6814,11 +6814,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo) zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo) zout en peper",
-        "key": "(jozo) zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -6908,11 +6908,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo)zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo)zout en peper",
-        "key": "(jozo)zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       },
       {
@@ -7152,11 +7152,11 @@
         "optional": false
       },
       {
-        "raw": "(jozo) zout en peper",
+        "raw": "zout en peper",
         "amount": null,
         "unit": "",
-        "name": "(jozo) zout en peper",
-        "key": "(jozo) zout en peper",
+        "name": "zout en peper",
+        "key": "zout en peper",
         "optional": false
       }
     ],
