@@ -28,11 +28,10 @@ async function buildPdf(recipes) {
   recipes.forEach((recipe, recipeIndex) => {
     if (recipeIndex) doc.addPage();
     doc.setTextColor(24, 63, 50);
-    doc.setFont("helvetica", "bold");
+    doc.setFont("helvetica", "normal");
     doc.setCharSpace(0);
     doc.setFontSize(16);
-    doc.text(recipe.title || "Recept", margin, 18);
-    doc.setFont("helvetica", "normal");
+    doc.text(recipe.title || "Recept", margin, 18, { charSpace: 0 });
     doc.setFontSize(9);
     doc.setTextColor(70, 80, 70);
     doc.text(
