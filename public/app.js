@@ -184,6 +184,31 @@ function aggregateIngredients() {
   return [...totals.values()];
 }
 
+const SHOPPING_CATEGORIES = [
+  "Groente en fruit",
+  "Zuivel en eieren",
+  "Vlees, vis en vleesvervangers",
+  "Brood en ontbijt",
+  "Diepvries",
+  "Kruiden en smaakmakers",
+  "Houdbare producten",
+  "Overig"
+];
+
+function shoppingCategory(item) {
+  const name = String(item.name || "").toLocaleLowerCase("nl");
+  const has = (...terms) => terms.some((term) => name.includes(term));
+
+  if (has("diepvries", "bevroren")) return "Diepvries";
+  if (has("wortel", "ui", "courgette", "paprika", "tomaat", "komkommer", "biet", "avocado", "broccoli", "bloemkool", "spinazie", "sla", "champignon", "knoflook", "gember", "citroen", "limoen", "appel", "banaan", "aardbei", "framboos", "bosbes", "mango", "peer", "druif", "fruit")) return "Groente en fruit";
+  if (has("yoghurt", "kwark", "melk", "kaas", "feta", "hüttenkäse", "huttenkase", "boter", "room", "ei", "eieren")) return "Zuivel en eieren";
+  if (has("kip", "rund", "gehakt", "spek", "ham", "zalm", "tonijn", "vis", "tofu", "tempeh")) return "Vlees, vis en vleesvervangers";
+  if (has("brood", "cracker", "havermout", "muesli", "granola")) return "Brood en ontbijt";
+  if (has("zout", "peper", "kaneel", "kruiden", "oregano", "basilicum", "komijn", "kerrie", "paprikapoeder")) return "Kruiden en smaakmakers";
+  if (has("pasta", "rijst", "quinoa", "couscous", "linzen", "bonen", "noten", "zaad", "olie", "azijn", "meel", "bloem", "cacao", "chocolade", "pindakaas", "honing", "bouillon")) return "Houdbare producten";
+  return "Overig";
+}
+
 function addWrapped(doc, text, x, y, maxWidth, lineHeight = 6) {
   const lines = doc.splitTextToSize(String(text || ""), maxWidth);
   doc.text(lines, x, y);
@@ -191,7 +216,7 @@ function addWrapped(doc, text, x, y, maxWidth, lineHeight = 6) {
 }
 
 function addChecklistItem(doc, text, x, y, maxWidth) {
-  doc.rect(x, y - 4, 3, 3);
+  doc.rect(x, y - 2.5, 3, 3);
   return addWrapped(doc, text, x + 6, y, maxWidth - 6);
 }
 
@@ -228,10 +253,25 @@ function createPdf() {
   doc.text("Boodschappenlijst", margin, 24);
   doc.setFontSize(10);
   y = 36;
-  aggregateIngredients().forEach((item) => {
+  const shoppingItems = aggregateIngredients().sort((a, b) => {
+    const categoryDifference = SHOPPING_CATEGORIES.indexOf(shoppingCategory(a)) - SHOPPING_CATEGORIES.indexOf(shoppingCategory(b));
+    return categoryDifference || a.name.localeCompare(b.name, "nl");
+  });
+  let currentCategory = "";
+  shoppingItems.forEach((item) => {
+    if (y > 265) { doc.addPage(); y = 20; currentCategory = ""; }
+    const category = shoppingCategory(item);
+    if (category !== currentCategory) {
+      doc.setFontSize(12);
+      doc.setTextColor(24, 63, 50);
+      doc.text(category, margin, y);
+      y += 7;
+      doc.setFontSize(10);
+      doc.setTextColor(40, 45, 40);
+      currentCategory = category;
+    }
     const amount = item.amount == null ? "" : item.amount + (item.unit ? " " + item.unit : "");
     y = addChecklistItem(doc, amount + (amount ? " " : "") + item.name, margin, y, width - margin * 2);
-    if (y > 275) { doc.addPage(); y = 20; }
   });
   const ordered = Object.entries(state.plan).sort(([a], [b]) => a.localeCompare(b));
   ordered.forEach(([key, item]) => {
