@@ -9,6 +9,9 @@ const options = document.querySelector("#recipe-options");
 const status = document.querySelector("#status");
 const search = document.querySelector("#search");
 const downloadButton = document.querySelector("#download-pdf");
+const shoppingListButton = document.querySelector("#show-shopping-list");
+const shoppingListView = document.querySelector("#shopping-list-view");
+const shoppingListItems = document.querySelector("#shopping-list-items");
 
 function loadPlan() {
   try {
@@ -169,6 +172,7 @@ function render() {
   renderOptions();
   const count = Object.keys(state.plan).length;
   status.textContent = count ? count + " maaltijdmomenten gepland." : "Kies een leeg moment om te beginnen.";
+  shoppingListButton.disabled = !count;
   downloadButton.disabled = !count;
 }
 
@@ -212,6 +216,43 @@ function shoppingCategory(item) {
   if (has("zout", "peper", "kaneel", "kruiden", "oregano", "basilicum", "komijn", "kerrie", "paprikapoeder")) return "Kruiden en smaakmakers";
   if (has("pasta", "rijst", "quinoa", "couscous", "linzen", "bonen", "noten", "zaad", "olie", "azijn", "meel", "bloem", "cacao", "chocolade", "pindakaas", "honing", "bouillon")) return "Houdbare producten";
   return "Overig";
+}
+
+function sortedShoppingItems() {
+  return aggregateIngredients().sort((a, b) => {
+    const categoryDifference = SHOPPING_CATEGORIES.indexOf(shoppingCategory(a)) - SHOPPING_CATEGORIES.indexOf(shoppingCategory(b));
+    return categoryDifference || a.name.localeCompare(b.name, "nl");
+  });
+}
+
+function ingredientLabel(item) {
+  const amount = item.amount == null ? "" : item.amount + (item.unit ? " " + item.unit : "");
+  return amount + (amount ? " " : "") + item.name;
+}
+
+function renderShoppingList() {
+  shoppingListItems.replaceChildren();
+  let currentCategory = "";
+  let list;
+  sortedShoppingItems().forEach((item) => {
+    const category = shoppingCategory(item);
+    if (category !== currentCategory) {
+      const heading = document.createElement("h3");
+      heading.textContent = category;
+      shoppingListItems.append(heading);
+      list = document.createElement("ul");
+      list.className = "shopping-list";
+      shoppingListItems.append(list);
+      currentCategory = category;
+    }
+    const row = document.createElement("li");
+    const label = document.createElement("label");
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    label.append(checkbox, document.createTextNode(ingredientLabel(item)));
+    row.append(label);
+    list.append(row);
+  });
 }
 
 function addWrapped(doc, text, x, y, maxWidth, lineHeight = 6) {
@@ -324,6 +365,11 @@ document.querySelector("#clear-plan").addEventListener("click", () => {
   render();
 });
 search.addEventListener("input", renderOptions);
+shoppingListButton.addEventListener("click", () => {
+  renderShoppingList();
+  shoppingListView.hidden = false;
+  shoppingListView.scrollIntoView({ behavior: "smooth", block: "start" });
+});
 downloadButton.addEventListener("click", createPdf);
 
 fetch("/recipes.json")
