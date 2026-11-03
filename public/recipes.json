@@ -4913,9 +4913,9 @@
         "optional": false,
         "alternatives": [
           {
-            "raw": "4 el boerenkaas",
-            "amount": 4,
-            "unit": "el",
+            "raw": "40 gram boerenkaas",
+            "amount": 40,
+            "unit": "gram",
             "name": "boerenkaas",
             "key": "boerenkaas",
             "optional": false
