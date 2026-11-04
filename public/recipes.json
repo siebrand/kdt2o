@@ -832,19 +832,19 @@
         "optional": false
       },
       {
-        "raw": "200 gram havermout",
+        "raw": "200 gram amandelmeel",
         "amount": 200,
         "unit": "gram",
-        "name": "havermout",
-        "key": "havermout",
+        "name": "amandelmeel",
+        "key": "amandelmeel",
         "optional": false,
         "alternatives": [
           {
-            "raw": "200 gram amandelmeel",
+            "raw": "200 gram havermout",
             "amount": 200,
             "unit": "gram",
-            "name": "amandelmeel",
-            "key": "amandelmeel",
+            "name": "havermout",
+            "key": "havermout",
             "optional": false
           }
         ]
@@ -883,10 +883,10 @@
       },
       {
         "raw": "beetje roomboter",
-        "amount": null,
-        "unit": "",
-        "name": "beetje roomboter",
-        "key": "beetje roomboter",
+        "amount": "10",
+        "unit": "gram",
+        "name": "roomboter",
+        "key": "roomboter",
         "optional": false
       }
     ],
@@ -922,8 +922,8 @@
       },
       {
         "raw": "roomboter",
-        "amount": null,
-        "unit": "",
+        "amount": "10",
+        "unit": "gram",
         "name": "roomboter",
         "key": "roomboter",
         "optional": false
@@ -946,10 +946,10 @@
       },
       {
         "raw": "plakjes tomaat",
-        "amount": null,
-        "unit": "",
-        "name": "plakjes tomaat",
-        "key": "plakjes tomaat",
+        "amount": "1",
+        "unit": "stuk",
+        "name": "tomaat",
+        "key": "tomaat",
         "optional": false
       },
       {
@@ -1035,16 +1035,16 @@
         "raw": "1 rode paprika",
         "amount": 1,
         "unit": "stuk",
-        "name": "rode paprika",
-        "key": "rode paprika",
+        "name": "paprika (rood)",
+        "key": "paprika (rood)",
         "optional": false,
         "alternatives": [
           {
           "raw": "1 groene paprika",
             "amount": 1,
             "unit": "stuk",
-          "name": "groene paprika",
-          "key": "groene paprika",
+          "name": "paprika (groen)",
+          "key": "paprika (groen)",
             "optional": false
           }
         ]
@@ -1077,8 +1077,8 @@
         "raw": "75 gram geraspte kaas",
         "amount": 75,
         "unit": "gram",
-        "name": "geraspte kaas",
-        "key": "geraspte kaas",
+        "name": "kaas",
+        "key": "kaas",
         "optional": false
       },
       {
@@ -1114,7 +1114,7 @@
       {
         "raw": "4 plakken notenbrood",
         "amount": 4,
-        "unit": "plakken",
+        "unit": "plak",
         "name": "notenbrood",
         "key": "notenbrood",
         "componentId": "notenbrood",
@@ -1171,7 +1171,7 @@
       {
         "raw": "4 plakken notenbrood",
         "amount": 4,
-        "unit": "plakken",
+        "unit": "plak",
         "name": "notenbrood",
         "key": "notenbrood",
         "componentId": "notenbrood",
@@ -1184,8 +1184,8 @@
         "raw": "100 gram gerookte zalm",
         "amount": 100,
         "unit": "gram",
-        "name": "gerookte zalm",
-        "key": "gerookte zalm",
+        "name": "zalm (gerookt)",
+        "key": "zalm (gerookt)",
         "optional": false
       },
       {
@@ -1244,7 +1244,7 @@
       {
         "raw": "4 plakken notenbrood",
         "amount": 4,
-        "unit": "plakken",
+        "unit": "plak",
         "name": "notenbrood",
         "key": "notenbrood",
         "componentId": "notenbrood",
@@ -1253,8 +1253,8 @@
           { "raw": "notenbrood maken", "amount": null, "unit": "", "name": "notenbrood maken", "key": "notenbrood maken", "componentId": "notenbrood", "optional": false }
         ]
       },
-      { "raw": "roomboter", "amount": null, "unit": "", "name": "roomboter", "key": "roomboter", "optional": false },
-      { "raw": "plakjes boerenkaas", "amount": null, "unit": "", "name": "plakjes boerenkaas", "key": "plakjes boerenkaas", "optional": false },
+      { "raw": "roomboter", "amount": "10", "unit": "gram", "name": "roomboter", "key": "roomboter", "optional": false },
+      { "raw": "plakjes boerenkaas", "amount": "6", "unit": "plak", "name": "boerenkaas", "key": "boerenkaas", "optional": false },
       { "raw": "halve komkommer", "amount": "0.5", "unit": "stuk", "name": "komkommer", "key": "komkommer", "optional": false }
     ],
     "components": [
@@ -1324,24 +1324,24 @@
         "optional": false
       },
       {
-        "raw": "30 g noten ( naar keuze)",
+        "raw": "30 g noten (naar keuze)",
         "amount": 30,
         "unit": "gram",
-        "name": "noten ( naar keuze)",
-        "key": "noten ( naar keuze)",
+        "name": "noten",
+        "key": "noten",
         "optional": false
       },
       {
-        "raw": "1-2 vezelrijke crackers",
-        "amount": "1-2",
+        "raw": "2 vezelrijke crackers",
+        "amount": "2",
         "unit": "stuk",
         "name": "vezelrijke cracker",
         "key": "vezelrijke cracker",
         "optional": false,
         "alternatives": [
           {
-            "raw": "1-2 lijnzaadcrackers",
-            "amount": "1-2",
+            "raw": "2 lijnzaadcrackers",
+            "amount": "2",
             "unit": "stuk",
             "name": "lijnzaadcracker",
             "key": "lijnzaadcracker",
@@ -1350,11 +1350,11 @@
         ]
       },
       {
-        "raw": "4 plakken (boeren) kaas",
+        "raw": "4 plakken (boeren)kaas",
         "amount": 4,
-        "unit": "",
-        "name": "plakken (boeren) kaas",
-        "key": "plakken (boeren) kaas",
+        "unit": "plak",
+        "name": "boerenkaas",
+        "key": "boerenkaas",
         "optional": false
       },
       {
@@ -1397,8 +1397,8 @@
         "raw": "60g gerookte zalm",
         "amount": 60,
         "unit": "gram",
-        "name": "gerookte zalm",
-        "key": "gerookte zalm",
+        "name": "zalm (gerookt)",
+        "key": "zalm (gerookt)",
         "optional": false
       },
       {
@@ -1593,7 +1593,7 @@
       {
         "raw": "1 teentje knoflook",
         "amount": 1,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -1937,7 +1937,7 @@
       {
         "raw": "6 teentjes knoflook",
         "amount": 6,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -2045,7 +2045,7 @@
       {
         "raw": "3 teentjes knoflook",
         "amount": 3,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -2178,7 +2178,7 @@
       {
         "raw": "3 teentjes knoflook",
         "amount": 3,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -2303,7 +2303,7 @@
       {
         "raw": "3 tenen knoflook",
         "amount": 3,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -2967,7 +2967,7 @@
       {
         "raw": "2 teentjes knoflook",
         "amount": 2,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -3176,8 +3176,8 @@
         "raw": "50 gram gerookte zalm (snippers)",
         "amount": 50,
         "unit": "gram",
-        "name": "gerookte zalm (snippers)",
-        "key": "gerookte zalm (snippers)",
+        "name": "zalm (gerookt)",
+        "key": "zalm (gerookt)",
         "optional": false
       },
       {
@@ -3562,8 +3562,8 @@
         "raw": "100 gram gerookte zalm",
         "amount": 100,
         "unit": "gram",
-        "name": "gerookte zalm",
-        "key": "gerookte zalm",
+        "name": "zalm (gerookt)",
+        "key": "zalm (gerookt)",
         "optional": false
       },
       {
@@ -3654,16 +3654,16 @@
         "raw": "1800 gram tomaten",
         "amount": 1800,
         "unit": "gram",
-        "name": "tomaten",
-        "key": "tomaten",
+        "name": "tomaat",
+        "key": "tomaat",
         "optional": false,
         "alternatives": [
           {
             "raw": "4 blikken gepelde tomaten",
             "amount": 4,
             "unit": "blik",
-            "name": "gepelde tomaten",
-            "key": "gepelde tomaten",
+            "name": "tomaten (gepeld)",
+            "key": "tomaten (gepeld)",
             "optional": false
           }
         ]
@@ -3940,8 +3940,8 @@
         "raw": "150 gram gerookte zalm",
         "amount": 150,
         "unit": "gram",
-        "name": "gerookte zalm",
-        "key": "gerookte zalm",
+        "name": "zalm (gerookt)",
+        "key": "zalm (gerookt)",
         "optional": false
       }
     ],
@@ -4101,17 +4101,17 @@
       {
         "raw": "1 teentje knoflook",
         "amount": 1,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
       },
       {
         "raw": "1 blik tomatenblokjes (400 gram)",
-        "amount": 1,
-        "unit": "blik",
-        "name": "tomatenblokjes (400 gram)",
-        "key": "tomatenblokjes (400 gram)",
+        "amount": 400,
+        "unit": "gram",
+        "name": "tomaat (blokjes)",
+        "key": "tomaat (blokjes)",
         "optional": false
       },
       {
@@ -4146,14 +4146,14 @@
         "raw": "4 el Japanse sojasaus (geen ketjap)",
         "amount": 4,
         "unit": "el",
-        "name": "Japanse sojasaus (geen ketjap)",
-        "key": "japanse sojasaus (geen ketjap)",
+        "name": "sojasaus",
+        "key": "sojasaus",
         "optional": false
       },
       {
         "raw": "2 teentjes knoflook",
         "amount": 2,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -4170,8 +4170,8 @@
         "raw": "2 el geraspte gember",
         "amount": 2,
         "unit": "el",
-        "name": "geraspte gember",
-        "key": "geraspte gember",
+        "name": "gember",
+        "key": "gember",
         "optional": false
       },
       {
@@ -4282,14 +4282,14 @@
         "raw": "4 el Japanse sojasaus (geen ketjap)",
         "amount": 4,
         "unit": "el",
-        "name": "Japanse sojasaus (geen ketjap)",
-        "key": "japanse sojasaus (geen ketjap)",
+        "name": "sojasaus",
+        "key": "sojasaus",
         "optional": false
       },
       {
         "raw": "2 teentjes knoflook",
         "amount": 2,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -4306,8 +4306,8 @@
         "raw": "2 el geraspte gember",
         "amount": 2,
         "unit": "el",
-        "name": "geraspte gember",
-        "key": "geraspte gember",
+        "name": "gember",
+        "key": "gember",
         "optional": false
       },
       {
@@ -4447,7 +4447,7 @@
       {
         "raw": "3 knoflooktenen",
         "amount": 3,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -4590,7 +4590,7 @@
       {
         "raw": "1 teentje knoflook",
         "amount": 1,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -4692,7 +4692,7 @@
       {
         "raw": "1 teentje knoflook",
         "amount": 1,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -4780,7 +4780,7 @@
       {
         "raw": "2 teentjes knoflook",
         "amount": 2,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": true
@@ -5221,10 +5221,10 @@
       },
       {
         "raw": "teentje geperste knoflook",
-        "amount": null,
-        "unit": "",
-        "name": "teentje geperste knoflook",
-        "key": "teentje geperste knoflook",
+        "amount": 1,
+        "unit": "teen",
+        "name": "knoflook",
+        "key": "knoflook",
         "optional": true
       }
     ],
@@ -5306,7 +5306,7 @@
       {
         "raw": "teentje knoflook",
         "amount": 1,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": true
@@ -5659,14 +5659,14 @@
         "raw": "2 el sojasaus (geen ketjap)",
         "amount": 2,
         "unit": "el",
-        "name": "sojasaus (geen ketjap)",
-        "key": "sojasaus (geen ketjap)",
+        "name": "sojasaus",
+        "key": "sojasaus",
         "optional": false
       },
       {
         "raw": "2 teentjes knoflook",
         "amount": 2,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -5683,8 +5683,8 @@
             "raw": "1 stukje verse gember",
             "amount": 1,
             "unit": "stuk",
-            "name": "verse gember",
-            "key": "verse gember",
+            "name": "gember",
+            "key": "gember",
             "optional": false
           }
         ]
@@ -5765,8 +5765,8 @@
         "raw": "2 el sojasaus (geen ketjap)",
         "amount": 2,
         "unit": "el",
-        "name": "sojasaus (geen ketjap)",
-        "key": "sojasaus (geen ketjap)",
+        "name": "sojasaus",
+        "key": "sojasaus",
         "optional": false
       },
       {
@@ -5973,14 +5973,14 @@
         "raw": "2 el geraspte gember",
         "amount": 2,
         "unit": "el",
-        "name": "geraspte gember",
-        "key": "geraspte gember",
+        "name": "gember",
+        "key": "gember",
         "optional": false
       },
       {
         "raw": "4 teentjes knoflook",
         "amount": 4,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -6067,7 +6067,7 @@
       {
         "raw": "1 teentje knoflook",
         "amount": 1,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -6146,7 +6146,7 @@
       {
         "raw": "2 tenen knoflook",
         "amount": 2,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -6163,8 +6163,8 @@
         "raw": "6 el tomatenpassata (gezeefde tomaten)",
         "amount": 6,
         "unit": "el",
-        "name": "tomatenpassata (gezeefde tomaten)",
-        "key": "tomatenpassata (gezeefde tomaten)",
+        "name": "tomaat (gezeefd)",
+        "key": "tomaat (gezeefd)",
         "optional": false
       },
       {
@@ -6481,10 +6481,10 @@
       },
       {
         "raw": "een teentje knoflook",
-        "amount": null,
-        "unit": "",
-        "name": "een teentje knoflook",
-        "key": "een teentje knoflook",
+        "amount": 1,
+        "unit": "teen",
+        "name": "knoflook",
+        "key": "knoflook",
         "optional": true
       }
     ],
@@ -6526,7 +6526,7 @@
       {
         "raw": "4 tenen knoflook",
         "amount": 4,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -6573,18 +6573,18 @@
       },
       {
         "raw": "paar takjes tijm",
-        "amount": null,
-        "unit": "",
-        "name": "paar takjes tijm",
-        "key": "paar takjes tijm",
+        "amount": 3,
+        "unit": "takje",
+        "name": "tijm",
+        "key": "tijm",
         "optional": false
       },
       {
         "raw": "paar takjes oregano",
-        "amount": null,
-        "unit": "",
-        "name": "paar takjes oregano",
-        "key": "paar takjes oregano",
+        "amount": 3,
+        "unit": "takje",
+        "name": "oregano",
+        "key": "oregano",
         "optional": false
       },
       {
@@ -6605,42 +6605,42 @@
       },
       {
         "raw": "1 doosje champignons",
-        "amount": 1,
-        "unit": "",
-        "name": "doosje champignons",
-        "key": "doosje champignons",
+        "amount": 250,
+        "unit": "gram",
+        "name": "champignons",
+        "key": "champignons",
         "optional": false
       },
       {
         "raw": "1 bosje peterselie",
         "amount": 1,
-        "unit": "",
-        "name": "bosje peterselie",
-        "key": "bosje peterselie",
+        "unit": "bosje",
+        "name": "peterselie",
+        "key": "peterselie",
         "optional": false
       },
       {
-        "raw": "1 (voorgesneden) rode kool (reken op circa 200 gram per persoon)",
-        "amount": 1,
-        "unit": "",
-        "name": "(voorgesneden) rode kool (reken op circa 200 gram per persoon)",
-        "key": "(voorgesneden) rode kool (reken op circa 200 gram per persoon)",
+        "raw": "400 gram (voorgesneden) rode kool",
+        "amount": 400,
+        "unit": "gram",
+        "name": "rode kool",
+        "key": "rode kool",
         "optional": false
       },
       {
         "raw": "1 granny smith appel",
         "amount": 1,
-        "unit": "gram",
-        "name": "ranny smith appel",
-        "key": "ranny smith appel",
+        "unit": "stuk",
+        "name": "appel (granny smith)",
+        "key": "appel (granny smith)",
         "optional": false
       },
       {
         "raw": "klontje roomboter",
-        "amount": null,
-        "unit": "",
-        "name": "klontje roomboter",
-        "key": "klontje roomboter",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "key": "roomboter",
         "optional": false
       },
       {
@@ -6668,11 +6668,11 @@
         "optional": false
       },
       {
-        "raw": "2 kopjes water",
-        "amount": 2,
-        "unit": "",
-        "name": "kopjes water",
-        "key": "kopjes water",
+        "raw": "300ml water",
+        "amount": 300,
+        "unit": "ml",
+        "name": "water",
+        "key": "water",
         "optional": false
       },
       {
@@ -6693,10 +6693,10 @@
       },
       {
         "raw": "klontje roomboter",
-        "amount": null,
-        "unit": "",
-        "name": "klontje roomboter",
-        "key": "klontje roomboter",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "key": "roomboter",
         "optional": false
       }
     ],
@@ -6723,24 +6723,24 @@
         "raw": "2 rode uien",
         "amount": 2,
         "unit": "stuk",
-        "name": "rode ui",
-        "key": "rode ui",
+        "name": "ui (rood)",
+        "key": "ui (rood)",
         "optional": false
       },
       {
         "raw": "1 rode paprika",
         "amount": 1,
-        "unit": "",
-        "name": "rode paprika",
-        "key": "rode paprika",
+        "unit": "stuk",
+        "name": "paprika (rood)",
+        "key": "paprika (rood)",
         "optional": false
       },
       {
         "raw": "1 stuk gember (circa 2 cm)",
         "amount": 1,
         "unit": "stuk",
-        "name": "gember (circa 2 cm)",
-        "key": "gember (circa 2 cm)",
+        "name": "gember",
+        "key": "gember",
         "optional": false
       },
       {
@@ -6754,7 +6754,7 @@
       {
         "raw": "2 tenen knoflook",
         "amount": 2,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -6763,8 +6763,8 @@
         "raw": "4 el sojasaus (geen ketjap)",
         "amount": 4,
         "unit": "el",
-        "name": "sojasaus (geen ketjap)",
-        "key": "sojasaus (geen ketjap)",
+        "name": "sojasaus",
+        "key": "sojasaus",
         "optional": false
       },
       {
@@ -6823,16 +6823,16 @@
         "raw": "1 stuk gember van 2 cm",
         "amount": 1,
         "unit": "stuk",
-        "name": "gember van 2 cm",
-        "key": "gember van 2 cm",
+        "name": "gember",
+        "key": "gember",
         "optional": false
       },
       {
-        "raw": "% rode peper",
-        "amount": null,
-        "unit": "",
-        "name": "% rode peper",
-        "key": "% rode peper",
+        "raw": "halve rode peper",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "rode peper",
+        "key": "rode peper",
         "optional": false
       },
       {
@@ -6846,25 +6846,25 @@
       {
         "raw": "1 teen knoflook",
         "amount": 1,
-        "unit": "",
-        "name": "teen knoflook",
-        "key": "teen knoflook",
+        "unit": "teen",
+        "name": "knoflook",
+        "key": "knoflook",
         "optional": false
       },
       {
         "raw": "handvol verse koriander",
-        "amount": null,
-        "unit": "",
-        "name": "handvol verse koriander",
-        "key": "handvol verse koriander",
+        "amount": 1,
+        "unit": "bosje",
+        "name": "koriander",
+        "key": "koriander",
         "optional": false
       },
       {
         "raw": "rasp en sap van 1 limoen",
-        "amount": null,
-        "unit": "",
-        "name": "rasp en sap van 1 limoen",
-        "key": "rasp en sap van 1 limoen",
+        "amount": 1,
+        "unit": "stuk",
+        "name": "limoen",
+        "key": "limoen",
         "optional": false
       },
       {
@@ -6879,8 +6879,8 @@
         "raw": "400 gram witvisfilet naar keuze (zoals koolvis/ kabeljauw)",
         "amount": 400,
         "unit": "gram",
-        "name": "witvisfilet naar keuze (zoals koolvis/ kabeljauw)",
-        "key": "witvisfilet naar keuze (zoals koolvis/ kabeljauw)",
+        "name": "witvisfilet (koolvis/kabeljauw)",
+        "key": "witvisfilet (koolvis/kabeljauw)",
         "optional": false
       },
       {
@@ -6923,30 +6923,30 @@
         "raw": "3 el gember (geraspt)",
         "amount": 3,
         "unit": "el",
-        "name": "gember (geraspt)",
-        "key": "gember (geraspt)",
+        "name": "gember",
+        "key": "gember",
         "optional": false
       },
       {
         "raw": "2 kleine uien",
         "amount": 2,
-        "unit": "",
-        "name": "kleine uien",
-        "key": "kleine uien",
+        "unit": "stuk",
+        "name": "ui",
+        "key": "ui",
         "optional": false
       },
       {
         "raw": "scheut extra vierge olijfolie",
-        "amount": null,
-        "unit": "",
-        "name": "scheut extra vierge olijfolie",
-        "key": "scheut extra vierge olijfolie",
+        "amount": 10,
+        "unit": "ml",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
         "raw": "2 teentjes knoflook",
         "amount": 2,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -6976,27 +6976,19 @@
         "optional": false
       },
       {
-        "raw": "400 gram witte vis (bijvoorbeeld koolvis/ scholfilet of kabeljauw) liever geen",
+        "raw": "400 gram witvis vis (koolvis/scholfilet/kabeljauw, geen pangasius)",
         "amount": 400,
         "unit": "gram",
-        "name": "witte vis (bijvoorbeeld koolvis/ scholfilet of kabeljauw) liever geen",
-        "key": "witte vis (bijvoorbeeld koolvis/ scholfilet of kabeljauw) liever geen",
-        "optional": false
-      },
-      {
-        "raw": "pangasius",
-        "amount": null,
-        "unit": "",
-        "name": "pangasius",
-        "key": "pangasius",
+        "name": "witvis  (koolvis/scholfilet/kabeljauw)",
+        "key": "witvis  (koolvis/scholfilet/kabeljauw)",
         "optional": false
       },
       {
         "raw": "2 kleine paksoi",
         "amount": 2,
         "unit": "stuk",
-        "name": "kleine paksoi",
-        "key": "kleine paksoi",
+        "name": "paksoi",
+        "key": "paksoi",
         "optional": false,
         "alternatives": [
           {
@@ -7064,7 +7056,7 @@
       {
         "raw": "2 teentjes knoflook",
         "amount": 2,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -7156,8 +7148,8 @@
         "optional": false
       },
       {
-        "raw": "1-2 preien",
-        "amount": "1-2",
+        "raw": "2 preien",
+        "amount": "2",
         "unit": "stuk",
         "name": "prei",
         "key": "prei",
@@ -7172,11 +7164,11 @@
         "optional": false
       },
       {
-        "raw": "300-350 gram verse wilde zalm",
-        "amount": "300-350",
+        "raw": "350 gram verse wilde zalm",
+        "amount": "350",
         "unit": "gram",
-        "name": "verse wilde zalm",
-        "key": "verse wilde zalm",
+        "name": "zalmfilet",
+        "key": "zalmfilet",
         "optional": false
       },
       {
@@ -7242,9 +7234,9 @@
       {
         "raw": "1 kleine knolselderij",
         "amount": 1,
-        "unit": "",
-        "name": "kleine knolselderij",
-        "key": "kleine knolselderij",
+        "unit": "stuk",
+        "name": "knolselderij",
+        "key": "knolselderij",
         "optional": false
       },
       {
@@ -7274,7 +7266,7 @@
       {
         "raw": "1 teentje knoflook",
         "amount": 1,
-        "unit": "teentje",
+        "unit": "teen",
         "name": "knoflook",
         "key": "knoflook",
         "optional": false
@@ -7313,10 +7305,10 @@
       },
       {
         "raw": "scheutje extra vierge olijfolie",
-        "amount": null,
-        "unit": "",
-        "name": "scheutje extra vierge olijfolie",
-        "key": "scheutje extra vierge olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
