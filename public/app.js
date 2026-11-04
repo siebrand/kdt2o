@@ -776,9 +776,7 @@ async function createPdf() {
       doc.setFontSize(10);
       doc.setTextColor(70, 80, 70);
       doc.text(dayName(dayIndex) + " · " + meal + " · " + recipe.portions + " personen", margin, 33);
-      y = 46;
-      y = addWrapped(doc, "Gepland voor: " + dayName(dayIndex), margin, y, width - margin * 2);
-      y += 5;
+      y = 42;
       doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Hoofdrecept · Ingrediënten", margin, y); y += 7;
       doc.setFontSize(10); doc.setTextColor(40, 45, 40);
       (recipe.ingredients || []).forEach((ingredient) => {
