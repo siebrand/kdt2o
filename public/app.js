@@ -267,6 +267,12 @@ function normalizeShoppingIngredient(ingredient) {
   let raw = String(ingredient.raw || "").toLocaleLowerCase("nl").trim();
   if (name === "water") return { ...ingredient, amount: null, unit: "", name: "water", key: "water" };
   if (name === "ei" || name === "eieren") return { ...ingredient, name: "ei", key: "ei" };
+  if (name === "halve komkommer" || raw === "halve komkommer") {
+    return { ...ingredient, amount: 0.5, unit: "stuk", name: "komkommer", key: "komkommer" };
+  }
+  if (/^(?:plakjes|schijfjes) komkommer$/.test(name)) {
+    return { ...ingredient, name: "komkommer", key: "komkommer" };
+  }
   if (raw.startsWith("1/, ")) raw = "1/2 " + raw.slice(4);
   if (name.includes("roomboter")) {
     return { ...ingredient, amount: ingredient.amount ?? 1, unit: "el", name: "roomboter" };
@@ -306,7 +312,13 @@ function normalizeShoppingIngredient(ingredient) {
 
 function parseAmountRange(amount) {
   if (typeof amount === "number" && Number.isFinite(amount)) return { min: amount, max: amount };
-  const match = String(amount ?? "").trim().match(/^(\d+(?:[.,]\d+)?)\s*-\s*(\d+(?:[.,]\d+)?)$/);
+  const value = String(amount ?? "").trim();
+  const fraction = value.match(/^(\d+)\s*\/\s*(\d+)$/);
+  if (fraction && Number(fraction[2]) !== 0) {
+    const result = Number(fraction[1]) / Number(fraction[2]);
+    return { min: result, max: result };
+  }
+  const match = value.match(/^(\d+(?:[.,]\d+)?)\s*-\s*(\d+(?:[.,]\d+)?)$/);
   if (!match) return null;
   return { min: Number(match[1].replace(",", ".")), max: Number(match[2].replace(",", ".")) };
 }
@@ -323,8 +335,9 @@ function addIngredientAmounts(first, second) {
 function formatIngredientAmount(amount) {
   const range = parseAmountRange(amount);
   if (!range) return String(amount);
-  if (range.min === range.max) return String(range.min);
-  return `${range.min}-${range.max}`;
+  const roundUp = (value) => Number.isInteger(value) ? value : Math.ceil(value);
+  if (range.min === range.max) return String(roundUp(range.min));
+  return `${roundUp(range.min)}-${roundUp(range.max)}`;
 }
 
 function formatIngredientUnit(unit, amount) {
