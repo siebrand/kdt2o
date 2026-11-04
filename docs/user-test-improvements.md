@@ -1,6 +1,7 @@
 # User test improvement proposals
 
-Source: user test transcript with Marjolijn Mazeland in `kdt2o.md`.
+Source: user test transcript with Marjolijn Mazeland; the original transcript is
+not retained in the repository.
 
 Use one decision per item:
 

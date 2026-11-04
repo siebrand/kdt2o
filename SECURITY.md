@@ -7,9 +7,14 @@ the latest version where possible.
 
 ## Reporting a vulnerability
 
-Do not report security vulnerabilities through public issues. Report them
-privately through GitHub's private vulnerability reporting or by email to
-`siebrand@kitano.nl` with the subject prefix `SECURITY:`.
+Do not report security vulnerabilities through public issues. Private
+vulnerability reporting is enabled for this repository. On GitHub, open the
+repository's **Security** tab, choose **Report a vulnerability**, and submit the
+private report form. See [GitHub's private vulnerability reporting
+instructions](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/report-privately).
+
+If GitHub's reporting form is unavailable, email `siebrand@kitano.nl` with the
+subject prefix `SECURITY:`.
 
 Include the impact, reproduction steps, affected component, and any suggested
 remediation. You will receive an acknowledgement as soon as reasonably
