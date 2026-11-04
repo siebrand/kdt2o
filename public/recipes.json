@@ -1308,11 +1308,11 @@
         "optional": false
       },
       {
-        "raw": "2 scheutjes extra vierge olijfolie",
-        "amount": 2,
-        "unit": "",
-        "name": "scheutjes extra vierge olijfolie",
-        "key": "scheutjes extra vierge olijfolie",
+        "raw": "25 ml extra vierge olijfolie",
+        "amount": 25,
+        "unit": "ml",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
@@ -1608,10 +1608,10 @@
       },
       {
         "raw": "scheut extra vierge olijfolie",
-        "amount": null,
-        "unit": "",
-        "name": "scheut extra vierge olijfolie",
-        "key": "scheut extra vierge olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
@@ -1624,14 +1624,14 @@
       },
       {
         "raw": "verse basilicum",
-        "amount": null,
-        "unit": "",
+        "amount": 10,
+        "unit": "blaadjes",
         "name": "verse basilicum",
         "key": "verse basilicum",
         "optional": true
       },
       {
-        "raw": "2 crackers (Wasa Vezelrijk)",
+        "raw": "2 crackers (ezelrijk)XXX",
         "amount": 2,
         "unit": "",
         "name": "crackers (Wasa Vezelrijk)",
@@ -2802,10 +2802,10 @@
       },
       {
         "raw": "scheutje extra vierge olijfolie",
-        "amount": null,
-        "unit": "",
-        "name": "scheutje extra vierge olijfolie",
-        "key": "scheutje extra vierge olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
@@ -2914,10 +2914,10 @@
       },
       {
         "raw": "scheutje extra vierge olijfolie",
-        "amount": null,
-        "unit": "",
-        "name": "scheutje extra vierge olijfolie",
-        "key": "scheutje extra vierge olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
@@ -3734,8 +3734,8 @@
       },
       {
         "raw": "2 handjes verse basilicum",
-        "amount": 2,
-        "unit": "handjes",
+        "amount": 20,
+        "unit": "blaadjes",
         "name": "verse basilicum",
         "key": "verse basilicum",
         "optional": false
@@ -3989,11 +3989,11 @@
         "optional": false
       },
       {
-        "raw": "250 gram (kastanje) champignons",
+        "raw": "250 gram (kastanje)champignons",
         "amount": 250,
         "unit": "gram",
-        "name": "(kastanje) champignons",
-        "key": "(kastanje) champignons",
+        "name": "champignons (kastanje)",
+        "key": "champignons (kastanje)",
         "optional": false
       },
       {
@@ -4438,10 +4438,10 @@
       },
       {
         "raw": "Scheut extra vierge olijfolie",
-        "amount": null,
-        "unit": "",
-        "name": "Scheut extra vierge olijfolie",
-        "key": "scheut extra vierge olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
@@ -4518,17 +4518,17 @@
       {
         "raw": "1 kleine bloemkool",
         "amount": 1,
-        "unit": "",
-        "name": "kleine bloemkool",
-        "key": "kleine bloemkool",
+        "unit": "stuk",
+        "name": "bloemkool",
+        "key": "bloemkool",
         "optional": false
       },
       {
         "raw": "100 gram ongezouten en ongebrande cashewnoten",
         "amount": 100,
         "unit": "gram",
-        "name": "ongezouten en ongebrande cashewnoten",
-        "key": "ongezouten en ongebrande cashewnoten",
+        "name": "cashewnoten (ongezouten/ongebrand)",
+        "key": "cashewnoten (ongezouten/ongebrand)",
         "optional": false
       },
       {
@@ -4574,17 +4574,17 @@
       {
         "raw": "1 klein blikje tomatenpuree",
         "amount": 1,
-        "unit": "",
-        "name": "klein blikje tomatenpuree",
-        "key": "klein blikje tomatenpuree",
+        "unit": "blikje",
+        "name": "tomatenpuree",
+        "key": "tomatenpuree",
         "optional": false
       },
       {
-        "raw": "2 el italiaanse kruiden",
+        "raw": "2 el Italiaanse kruiden",
         "amount": 2,
         "unit": "el",
-        "name": "italiaanse kruiden",
-        "key": "italiaanse kruiden",
+        "name": "Italiaanse kruiden",
+        "key": "Italiaanse kruiden",
         "optional": false
       },
       {
@@ -4599,14 +4599,14 @@
         "raw": "1 gele paprika",
         "amount": 1,
         "unit": "stuk",
-        "name": "gele paprika",
-        "key": "gele paprika",
+        "name": "paprika (geel)",
+        "key": "paprika (geel)",
         "optional": false
       },
       {
         "raw": "verse basilicum",
-        "amount": null,
-        "unit": "",
+        "amount": 10,
+        "unit": "blaadjes",
         "name": "verse basilicum",
         "key": "verse basilicum",
         "optional": true
@@ -4615,22 +4615,22 @@
         "raw": "ansjovis",
         "amount": null,
         "unit": "",
-        "name": "ansjovis/",
+        "name": "ansjovis",
         "key": "ansjovis",
         "optional": true
       },
       {
         "raw": "champignons",
-        "amount": null,
-        "unit": "",
+        "amount": 100,
+        "unit": "gram",
         "name": "champignons",
         "key": "champignons",
         "optional": true
       },
       {
         "raw": "tonijn",
-        "amount": null,
-        "unit": "",
+        "amount": 1,
+        "unit": "blikje",
         "name": "tonijn",
         "key": "tonijn",
         "optional": true
@@ -4825,16 +4825,16 @@
       },
       {
         "raw": "roomboter",
-        "amount": null,
-        "unit": "",
+        "amount": 15,
+        "unit": "gram",
         "name": "roomboter",
         "key": "roomboter",
         "optional": false,
         "alternatives": [
           {
             "raw": "extra vierge olijfolie",
-            "amount": null,
-            "unit": "",
+            "amount": 15,
+            "unit": "ml",
             "name": "extra vierge olijfolie",
             "key": "extra vierge olijfolie",
             "optional": false
@@ -6098,9 +6098,9 @@
       },
       {
         "raw": "Extra vierge olijfolie",
-        "amount": null,
-        "unit": "",
-        "name": "Extra vierge olijfolie",
+        "amount": 10,
+        "unit": "ml",
+        "name": "extra vierge olijfolie",
         "key": "extra vierge olijfolie",
         "optional": false
       },
@@ -6184,9 +6184,9 @@
         "optional": false
       },
       {
-        "raw": "1/2 bosje verse basilicum",
-        "amount": 0.5,
-        "unit": "bosje",
+        "raw": "20 blaadjes verse basilicum",
+        "amount": 20,
+        "unit": "blaadjes",
         "name": "verse basilicum",
         "key": "verse basilicum",
         "optional": false

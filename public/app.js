@@ -235,6 +235,7 @@ function finishSelection() {
   state.activeSlot = null;
   state.pendingRecipe = null;
   render();
+  planner.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function render() {
