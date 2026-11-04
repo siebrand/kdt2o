@@ -770,13 +770,10 @@ async function createPdf() {
       doc.setTextColor(24, 63, 50);
       doc.setFont("times", "bold");
       doc.setCharSpace(0);
-      doc.setFontSize(18);
+      doc.setFontSize(14);
       const title = String(recipe.title || "Recept").normalize("NFC").replace(/\s+/g, " ").trim();
-      doc.text(title, margin, 24, { charSpace: 0 });
-      doc.setFontSize(10);
-      doc.setTextColor(70, 80, 70);
-      doc.text(dayName(dayIndex) + " · " + meal + " · " + recipe.portions + " personen", margin, 33);
-      y = 42;
+      const recipeHeading = dayName(dayIndex) + " · " + meal + " · " + recipe.portions + " personen - " + title;
+      y = addWrapped(doc, recipeHeading, margin, 24, width - margin * 2, 7) + 5;
       doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Hoofdrecept · Ingrediënten", margin, y); y += 7;
       doc.setFontSize(10); doc.setTextColor(40, 45, 40);
       (recipe.ingredients || []).forEach((ingredient) => {
