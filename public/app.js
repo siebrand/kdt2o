@@ -851,7 +851,7 @@ shoppingListButton.addEventListener("click", () => {
 });
 downloadButton.addEventListener("click", createPdf);
 
-fetch("/recipes.json")
+fetch("recipes.json")
   .then((response) => response.ok ? response.json() : Promise.reject(new Error("recipes")))
   .then((recipes) => {
     state.recipes = shuffleRecipes(attachSharedRecipeComponents(recipes).map(addPreparationTime));

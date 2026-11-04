@@ -29,6 +29,10 @@ docker run --rm -p 8080:80 kitano-meal-planner
 
 Open http://localhost:8080.
 
+## GitHub Pages deployment
+
+The repository includes a GitHub Actions workflow that deploys `public/` to GitHub Pages after every push to `main`. In the repository settings, set Pages → Build and deployment → Source to **GitHub Actions**. The project site is then available at `https://siebrand.github.io/kdt2o/`.
+
 ## Language and commits
 
 User-facing content is Dutch. Developer documentation and Git history are English. Use Conventional Commits, for example `feat: add weekly planner`.

@@ -177,7 +177,7 @@ async function prepare() {
     status.textContent = "De PDF-module of stappenparser kon niet worden geladen.";
     return;
   }
-  const response = await fetch("/recipes.json");
+  const response = await fetch("recipes.json");
   const recipes = attachSharedRecipeComponents(await response.json()).filter((recipe) => !recipe.approved).map((recipe) => ({
     ...recipe,
     preparationTime: Number.isFinite(recipe.preparationTime) ? recipe.preparationTime : estimatePreparationTime(recipe),
