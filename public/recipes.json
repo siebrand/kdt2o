@@ -1022,19 +1022,19 @@
         "optional": false
       },
       {
-        "raw": "1 kleine rode paprika",
+        "raw": "1 rode paprika",
         "amount": 1,
         "unit": "stuk",
-        "name": "kleine rode paprika",
-        "key": "kleine rode paprika",
+        "name": "rode paprika",
+        "key": "rode paprika",
         "optional": false,
         "alternatives": [
           {
-            "raw": "1 kleine groene paprika",
+          "raw": "1 groene paprika",
             "amount": 1,
             "unit": "stuk",
-            "name": "kleine groene paprika",
-            "key": "kleine groene paprika",
+          "name": "groene paprika",
+          "key": "groene paprika",
             "optional": false
           }
         ]
