@@ -633,9 +633,11 @@
   {
     "id": "huttenkase-met-rood-blauw-fruit-en-zelfgemaakte-granola",
     "title": "Huttenkase met rood blauw fruit en zelfgemaakte granola",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
+    "preparationTime": 10,
     "ingredients": [
       {
         "raw": "400 gram hüttenkäse",
@@ -721,9 +723,11 @@
   {
     "id": "kokospap",
     "title": "Kokospap",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
+    "preparationTime": 15,
     "ingredients": [
       {
         "raw": "50 gram walnoten",
@@ -901,9 +905,11 @@
   {
     "id": "lijnzaadcrackers-met-boerenkaas",
     "title": "Lijnzaadcrackers met boerenkaas",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
+    "preparationTime": 10,
     "ingredients": [
       {
         "raw": "4 lijnzaadcrackers",
@@ -962,9 +968,11 @@
   {
     "id": "mandarijnenkwark-met-pistachenoten",
     "title": "Mandarijnenkwark met pistachenoten",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
+    "preparationTime": 10,
     "ingredients": [
       {
         "raw": "400 gram volle kwark",
@@ -1009,9 +1017,11 @@
   {
     "id": "mexicaanse-roerei",
     "title": "Mexicaanse roerei",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
+    "preparationTime": 15,
     "ingredients": [
       {
         "raw": "1 lenteui",
