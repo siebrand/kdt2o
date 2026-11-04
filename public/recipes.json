@@ -75,10 +75,10 @@
           { "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaanse of Provençaalse kruiden", "amount": 3, "unit": "el", "name": "gedroogde kruiden naar keuze (Italiaanse of Provençaalse kruiden)", "key": "gedroogde kruiden naar keuze (italiaanse of provençaalse kruiden)", "optional": false }
         ],
         "equipment": ["bakpapier", "deegroller of fles"],
-        "method": "Meng de zaden en pitten met het zout in een kom en voeg het water en de gedroogde kruiden toe. Laat dit 30 minuten staan. Verwarm de oven voor op 180 °C. Bekleed een bakplaat met bakpapier. Verdeel het beslag over de bakplaat, leg er bakpapier overheen en rol uit tot 2-3 mm dikte. Verwijder het bovenste vel bakpapier en bak circa 25 minuten tot knapperig. Snijd de crackerplak na het bakken in circa 10 gelijke crackers en laat ze afkoelen. Keer ze eventueel om en verwarm ze nog even als ze niet droog genoeg zijn."
+        "method": "Meng de zaden en pitten met het zout in een kom en voeg het water en de gedroogde kruiden toe. Laat dit 30 minuten staan. Verwarm de oven voor op 180 °C. Bekleed een bakplaat met bakpapier. Verdeel het beslag over de bakplaat, leg er bakpapier overheen en rol uit tot 2-3 mm dikte. Verwijder het bovenste vel bakpapier en bak circa 25 minuten tot knapperig. Snijd de crackerplak na het bakken in circa 10 gelijke crackers en laat ze afkoelen. Keer ze eventueel om en verwarm ze nog even als ze niet droog genoeg zijn. Maak de crackers de avond van tevoren al klaar. In een afgesloten bak kunnen de crackers dagenlang goed blijven."
       }
     ],
-    "method": "Beleg de lijnzaadcrackers met geprakte avocado, hüttenkäse, komkommer en tomaat. Strooi hier wat peper en zout overheen. Maak de crackers eventueel de avond van tevoren al klaar; in een afgesloten bak blijven ze dagenlang goed.",
+    "method": "Beleg de lijnzaadcrackers met geprakte avocado, hüttenkäse, komkommer en tomaat. Strooi hier wat peper en zout overheen.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -947,7 +947,7 @@
         "optional": false
       }
     ],
-    "method": "Beleg de lijnzaadcrackers met roomboter, boerenkaas, tomaat en komkommer. Tip: Maak de crackers de avond van tevoren al klaar. In een afgesloten bak kunnen de crackers dagenlang goed blijven!",
+    "method": "Beleg de lijnzaadcrackers met roomboter, boerenkaas, tomaat en komkommer.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
