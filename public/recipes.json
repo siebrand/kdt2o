@@ -902,75 +902,12 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "125 gram gebroken lijnzaad",
-        "amount": 125,
-        "unit": "gram",
-        "name": "gebroken lijnzaad",
-        "key": "gebroken lijnzaad",
-        "optional": false
-      },
-      {
-        "raw": "25 gram sesamzaad",
-        "amount": 25,
-        "unit": "gram",
-        "name": "sesamzaad",
-        "key": "sesamzaad",
-        "optional": false
-      },
-      {
-        "raw": "50 gram pompoenpitten",
-        "amount": 50,
-        "unit": "gram",
-        "name": "pompoenpitten",
-        "key": "pompoenpitten",
-        "optional": false
-      },
-      {
-        "raw": "50 gram zonnebloempitten",
-        "amount": 50,
-        "unit": "gram",
-        "name": "zonnebloempitten",
-        "key": "zonnebloempitten",
-        "optional": false
-      },
-      {
-        "raw": "180 ml water",
-        "amount": 180,
-        "unit": "ml",
-        "name": "water",
-        "key": "water",
-        "optional": false
-      },
-      {
-        "raw": "1 tl zout",
-        "amount": 1,
-        "unit": "tl",
-        "name": "zout",
-        "key": "zout",
-        "optional": false
-      },
-      {
-        "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaanse of Provençaalse kruiden",
-        "amount": 3,
-        "unit": "el",
-        "name": "gedroogde kruiden naar keuze (Italiaanse of Provençaalse kruiden)",
-        "key": "gedroogde kruiden naar keuze (italiaanse of provençaalse kruiden)",
-        "optional": false
-      },
-      {
-        "raw": "bakpapier",
-        "amount": null,
-        "unit": "",
-        "name": "bakpapier",
-        "key": "bakpapier",
-        "optional": false
-      },
-      {
-        "raw": "deegroller of fles",
-        "amount": null,
-        "unit": "",
-        "name": "deegroller of fles",
-        "key": "deegroller of fles",
+        "raw": "4 lijnzaadcrackers",
+        "amount": 4,
+        "unit": "stuk",
+        "name": "lijnzaadcrackers",
+        "key": "lijnzaadcrackers",
+        "componentId": "lijnzaadcrackers",
         "optional": false
       },
       {
@@ -1006,7 +943,7 @@
         "optional": false
       }
     ],
-    "method": "Meng de zaden en pitten met het (jozo)zout in een kom en voeg het water en de gedroogde kruiden toe. Laat dit 30 minuten staan. Verwarm de oven voor op 180 °C. Bekleed een bakplaat met bakpapier. Na 30 minuten hebben de zaden en pitten het vocht opgenomen en is het mengsel een beslag geworden. Verdeel het beslag over de bakplaat. Leg daarna nog een vel bakpapier er overheen en rol uit met een deegroller (of gebruik een lege fles) tot een dikte van ongeveer 2-3 mm. Verwijder het bovenste vel bakpapier en bak de crackerplak circa 25 minuten in de oven tot knapperig. Snijd de crackerplak na het bakken in gelijke stukken cracker en laat ze afkoelen. Als de crackers niet droog genoeg zijn, kun je ze na het snijden omkeren en nog even in de oven verwarmen. Hierdoor wordt de onderkant van de zadencrackers mooi droog en knapperig. Beleg de crackers met roomboter, boerenkaas, plakjes ei, tomaat en komkommer. Tip: Maak de crackers de avond van tevoren al klaar. In een afgesloten bak kunnen de crackers dagenlang goed blijven!",
+    "method": "Beleg de lijnzaadcrackers met roomboter, boerenkaas, tomaat en komkommer. Tip: Maak de crackers de avond van tevoren al klaar. In een afgesloten bak kunnen de crackers dagenlang goed blijven!",
     "harmonizerVersion": "1",
     "harmonized": false
   },
