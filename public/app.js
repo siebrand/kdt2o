@@ -14,6 +14,8 @@ const shoppingListView = document.querySelector("#shopping-list-view");
 const shoppingListItems = document.querySelector("#shopping-list-items");
 const notifications = document.querySelector("#notifications");
 const recipePanel = document.querySelector("#recipe-panel");
+const includeInfographicsToggle = document.querySelector("#include-infographics");
+if (includeInfographicsToggle) includeInfographicsToggle.checked = false;
 
 function loadPlan() {
   try {
