@@ -4,6 +4,11 @@
 
 Kitano meal planner is published by Kitano ICT.
 
+## Branding
+
+The application uses the name and branding “Voeding Leeft”. Those rights remain
+with the respective rights holder; this project does not imply endorsement.
+
 ## Content
 
 Recipe content and branding remain subject to their respective source rights.
