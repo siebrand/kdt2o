@@ -1470,6 +1470,14 @@
         "optional": false
       },
       {
+        "raw": "4 eieren",
+        "amount": 4,
+        "unit": "stuk",
+        "name": "eieren",
+        "key": "eieren",
+        "optional": false
+      },
+      {
         "raw": "200 gram ricotta",
         "amount": 200,
         "unit": "gram",
