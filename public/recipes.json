@@ -1048,6 +1048,14 @@
         "optional": false
       },
       {
+        "raw": "4 eieren",
+        "amount": 4,
+        "unit": "stuk",
+        "name": "eieren",
+        "key": "eieren",
+        "optional": false
+      },
+      {
         "raw": "1 el roomboter",
         "amount": 1,
         "unit": "el",
