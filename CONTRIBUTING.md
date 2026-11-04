@@ -20,14 +20,20 @@ Open `http://localhost:8080` to test the application.
 2. Keep changes small and explain the user-visible impact.
 3. Keep all user-visible text, PDF text, and errors in Dutch.
 4. Keep code, commits, branches, issues, pull requests, and developer documentation in English.
-5. Run the relevant tests and include the results in the pull request.
+5. Run the relevant validation, such as the Docker build, and include the results in the pull request.
 6. Open a pull request against `main`.
 
 ## Recipe data
 
-Recipe sources are processed at build time. Do not edit generated data casually:
-preserve source provenance, validate quantities and portions, and check that
-ingredients and methods are not lost. Never invent unclear recipe content.
+Reviewed recipe data is maintained in `public/recipes.json`; there is no active
+recipe extractor. Do not edit recipe data casually: check source provenance,
+validate quantities and portions, and ensure ingredients and methods are not
+lost. Never invent unclear recipe content.
+
+When a code or configuration change affects behavior, architecture, deployment,
+privacy, licensing, or contributor workflow, update every relevant document in
+the same change, including the README, plan, architecture notes, LLM context,
+and FOSS policy documents.
 
 ## Pull requests
 
@@ -35,3 +41,7 @@ Pull requests should include a summary, test evidence, screenshots for UI or
 PDF changes, migration or provenance notes for recipe changes, and any license
 or privacy impact. Use Conventional Commits such as `feat:`, `fix:`, `docs:`,
 `test:`, and `chore:`.
+
+When a code or configuration change affects behavior, architecture, deployment,
+privacy, licensing, or contributor workflow, update all relevant documentation
+in the same pull request.

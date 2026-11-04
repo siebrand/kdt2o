@@ -21,11 +21,12 @@ No database, accounts, tracking, analytics, or server-side plan storage. UI and 
 Use:
 
 ```bash
-python3 -m unittest discover -s tests
 docker build -t kitano-meal-planner .
 docker run --rm -p 8080:80 kitano-meal-planner
 ```
 
 ## Change discipline
 
-Use a small atomic Conventional Commit. Update documentation when behavior or architecture changes. Check licensing before adding branding, fonts, icons, or recipe content.
+Use a small atomic Conventional Commit. Whenever a code or configuration change
+requires documentation changes, update all relevant documentation in the same
+change. Check licensing before adding branding, fonts, icons, or recipe content.

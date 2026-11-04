@@ -19,7 +19,7 @@ All user-visible text, errors, labels, PDF output, and UI content must be Dutch.
 ## Domain invariants
 
 - A recipe can be selected at most once.
-- A recipe with more than two portions is treated as multi-day. Three-day recipes are placed on the chosen day and every other day.
+- Recipes marked `multiDay` use their `days` value when present. Multi-day recipes are placed on the chosen day and the applicable subsequent days.
 - Empty meal slots are valid.
 - Shopping-list quantities are combined only when unit and normalized ingredient name are compatible.
 - Never render recipe text as HTML.
@@ -31,6 +31,11 @@ All user-visible text, errors, labels, PDF output, and UI content must be Dutch.
 3. Keep commits small and use Conventional Commits in English.
 4. Do not commit secrets, generated local state, or unlicensed branding.
 5. Keep user-visible strings in the Dutch message catalog in `public/app.js`.
+6. When a code or configuration change changes behavior, architecture,
+   deployment, privacy, licensing, or contributor workflow, update every
+   relevant document in the same change. Keep `README.md`, `docs/plan.md`,
+   `docs/architecture.md`, `docs/llm-context.md`, and the FOSS policies
+   consistent with the code.
 
 ## Useful commands
 

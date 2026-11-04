@@ -19,7 +19,7 @@ Open http://localhost:8080.
 
 ## GitHub Pages deployment
 
-The repository includes a GitHub Actions workflow that deploys `public/` to GitHub Pages after every push to `main`. In the repository settings, set Pages → Build and deployment → Source to **GitHub Actions**. The project site is then available at `https://siebrand.github.io/kdt2o/`.
+The live site is available at `https://siebrand.github.io/kdt2o/`. The GitHub Actions workflow deploys `public/` automatically after every push to `main`; GitHub Pages is configured to use that workflow.
 
 ## Language and commits
 

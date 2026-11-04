@@ -13,10 +13,10 @@ available.
 
 ## Software
 
-- Python and the Python standard library
-- `pypdf` and other build dependencies listed in `requirements.txt`
 - jsPDF, loaded by the browser for PDF generation
 - Nginx, used to serve the static application
+- Docker Desktop, used for local container development and verification
+- GitHub Actions and GitHub Pages, used for CI and public deployment
 
 Consult the dependency metadata and upstream projects for their complete
 licenses and notices.
