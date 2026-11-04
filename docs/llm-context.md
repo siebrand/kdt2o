@@ -7,7 +7,7 @@ Kitano meal planner is a static Dutch web application for planning breakfast, lu
 ## Source of truth
 
 - Recipe sources: `recipes/`
-- Extraction script: `scripts/extract_recipes.py`
+- Reviewed recipe data: `public/recipes.json`
 - Browser app: `public/index.html`, `public/app.js`, `public/styles.css`
 - Container: `Dockerfile`, `nginx.conf`
 - Agent rules: `AGENTS.md`

@@ -21,10 +21,9 @@ security headers, access-log retention rules, and a health check for `/`.
 
 ## Recipe data
 
-`recipes/` is source input. `scripts/extract_recipes.py` produces the browser
-data and preserves source hashes. Harmonization is optional and only runs when
-`RECIPE_LLM_COMMAND` is configured. Generated data must be reviewed for source
-fidelity before release.
+`recipes/` contains the source material. The reviewed browser data is committed
+as `public/recipes.json`; changes must be checked against the source material
+before release.
 
 ## Browser boundaries
 

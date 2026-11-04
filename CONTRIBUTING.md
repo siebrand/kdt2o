@@ -5,12 +5,9 @@ for planning meals and generating a shopping-list PDF.
 
 ## Development setup
 
-The project requires Python 3 and Docker for the full local workflow. Recipe
-build dependencies are listed in `requirements.txt`.
+The project requires Docker for the full local workflow.
 
 ```bash
-python3 -m unittest discover -s tests
-python3 scripts/extract_recipes.py recipes public/recipes.json
 docker build -t kitano-meal-planner .
 docker run --rm -p 8080:80 kitano-meal-planner
 ```

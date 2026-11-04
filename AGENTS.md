@@ -11,10 +11,7 @@ All user-visible text, errors, labels, PDF output, and UI content must be Dutch.
 ## Architecture
 
 - `recipes/` contains source PDF and text recipes.
-- `scripts/extract_recipes.py` converts recipe sources into static `public/recipes.json` during the container build.
-- `requirements.txt` is the single source for Python build dependencies and is managed by Dependabot.
-- Each source file is hashed with SHA-256. Cached records with the same source hash and harmonizer version are reused.
-- Optional LLM harmonization is enabled only when `RECIPE_LLM_COMMAND` is set; the command receives one recipe JSON object on stdin and must return a JSON object with the same `id`.
+- Reviewed recipe data is maintained in `public/recipes.json`; source files remain in `recipes/` for reference.
 - `public/index.html`, `public/app.js`, and `public/styles.css` are the browser application.
 - Nginx serves the static files. There is no database, account system, analytics, or server-side planning state.
 - Browser `localStorage` is the only persistence mechanism.
@@ -37,7 +34,5 @@ All user-visible text, errors, labels, PDF output, and UI content must be Dutch.
 
 ## Useful commands
 
-- `python3 scripts/extract_recipes.py recipes public/recipes.json`
-- `python3 -m unittest discover -s tests`
 - `docker build -t kitano-meal-planner .`
 - `docker run --rm -p 8080:80 kitano-meal-planner`

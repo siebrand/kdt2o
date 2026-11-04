@@ -6,19 +6,7 @@ A static, containerized Dutch meal-planning application.
 
 The application has no database and stores a plan only in the browser. Recipe sources are in `recipes/`.
 
-Generate recipe data:
-
-```bash
-python3 scripts/extract_recipes.py recipes public/recipes.json
-```
-
-The extractor stores a SHA-256 source hash and reuses unchanged recipe records. Optional harmonization is enabled only with `RECIPE_LLM_COMMAND`; the command reads one recipe JSON object from stdin and returns the harmonized object as JSON. Without that environment variable, no LLM improvement is attempted.
-
-Run parser tests:
-
-```bash
-python3 -m unittest discover -s tests
-```
+Recipe data is maintained in the reviewed `public/recipes.json` file. Recipe source files are retained in `recipes/` for reference.
 
 Build and run with Docker Desktop:
 
