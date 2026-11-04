@@ -976,7 +976,18 @@
         "unit": "gram",
         "name": "pistachenoten",
         "key": "pistachenoten",
-        "optional": false
+        "optional": false,
+        "alternatives": [
+          {
+            "raw": "60 gram granola",
+            "amount": 60,
+            "unit": "gram",
+            "name": "granola",
+            "key": "granola",
+            "componentId": "granola",
+            "optional": false
+          }
+        ]
       }
     ],
     "method": "Verdeel de ingrediënten over 2 schaaltjes en serveer. Tip: In plaats van pistachenoten kun je zelfgemaakte granola toevoegen.",
