@@ -931,6 +931,14 @@
         "optional": false
       },
       {
+        "raw": "2 eieren",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "eieren",
+        "key": "eieren",
+        "optional": false
+      },
+      {
         "raw": "plakjes tomaat",
         "amount": null,
         "unit": "",
@@ -947,7 +955,7 @@
         "optional": false
       }
     ],
-    "method": "Beleg de lijnzaadcrackers met roomboter, boerenkaas, tomaat en komkommer.",
+    "method": "Kook de eieren. Beleg de lijnzaadcrackers met roomboter, boerenkaas, ei, tomaat en komkommer.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
