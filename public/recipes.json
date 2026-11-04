@@ -443,8 +443,8 @@
         "optional": false
       },
       {
-        "raw": "halve komkommer",
-        "amount": 0.5,
+        "raw": "komkommer",
+        "amount": "0.5",
         "unit": "stuk",
         "name": "komkommer",
         "key": "komkommer",
@@ -954,10 +954,10 @@
       },
       {
         "raw": "plakjes komkommer",
-        "amount": null,
-        "unit": "",
-        "name": "plakjes komkommer",
-        "key": "plakjes komkommer",
+        "amount": "0.2",
+        "unit": "stuk",
+        "name": "komkommer",
+        "key": "komkommer",
         "optional": false
       }
     ],
@@ -1197,11 +1197,11 @@
         "optional": false
       },
       {
-        "raw": "halve komkommer",
-        "amount": null,
-        "unit": "",
-        "name": "halve komkommer",
-        "key": "halve komkommer",
+        "raw": "komkommer",
+        "amount": "0.5",
+        "unit": "stuk",
+        "name": "komkommer",
+        "key": "komkommer",
         "optional": false
       }
     ],
@@ -1255,7 +1255,7 @@
       },
       { "raw": "roomboter", "amount": null, "unit": "", "name": "roomboter", "key": "roomboter", "optional": false },
       { "raw": "plakjes boerenkaas", "amount": null, "unit": "", "name": "plakjes boerenkaas", "key": "plakjes boerenkaas", "optional": false },
-      { "raw": "halve komkommer", "amount": null, "unit": "", "name": "halve komkommer", "key": "halve komkommer", "optional": false }
+      { "raw": "halve komkommer", "amount": "0.5", "unit": "stuk", "name": "komkommer", "key": "komkommer", "optional": false }
     ],
     "components": [
       {
@@ -1367,10 +1367,10 @@
       },
       {
         "raw": "Schijfjes komkommer",
-        "amount": null,
-        "unit": "",
-        "name": "Schijfjes komkommer",
-        "key": "schijfjes komkommer",
+        "amount": "0.2",
+        "unit": "stuk",
+        "name": "komkommer",
+        "key": "komkommer",
         "optional": false
       }
     ],
@@ -2375,18 +2375,18 @@
       },
       {
         "raw": "komkommer",
-        "amount": null,
+        "amount": "0.25",
         "unit": "stuk",
         "name": "komkommer",
         "key": "komkommer",
         "optional": false
       },
       {
-        "raw": "cherry tomaten",
-        "amount": null,
-        "unit": "",
-        "name": "cherry tomaten",
-        "key": "cherry tomaten",
+        "raw": "cherrytomaten",
+        "amount": "10",
+        "unit": "stuk",
+        "name": "cherrytomaten",
+        "key": "cherrytomaten",
         "optional": false
       },
       {
@@ -2492,19 +2492,19 @@
         "optional": false
       },
       {
-        "raw": "halve komkommer",
-        "amount": null,
-        "unit": "",
-        "name": "halve komkommer",
-        "key": "halve komkommer",
+        "raw": "komkommer",
+        "amount": "0.5",
+        "unit": "stuk",
+        "name": "komkommer",
+        "key": "komkommer",
         "optional": false
       },
       {
-        "raw": "10 cherry tomaatjes",
-        "amount": 10,
+        "raw": "10 cherrytomaatjes",
+        "amount": "10",
         "unit": "stuk",
-        "name": "cherrytomaatje",
-        "key": "cherrytomaatje",
+        "name": "cherrytomaten",
+        "key": "cherrytomaten",
         "optional": false
       },
       {
@@ -2866,7 +2866,7 @@
     "ingredients": [
       {
         "raw": "2/3 komkommer",
-        "amount": 0.6666666667,
+        "amount": 0.67,
         "unit": "stuk",
         "name": "komkommer",
         "key": "komkommer",
@@ -3081,11 +3081,11 @@
         "optional": false
       },
       {
-        "raw": "10 cherry tomaten",
-        "amount": 10,
-        "unit": "",
-        "name": "cherry tomaten",
-        "key": "cherry tomaten",
+        "raw": "10 cherrytomaatjes",
+        "amount": "10",
+        "unit": "stuk",
+        "name": "cherrytomaten",
+        "key": "cherrytomaten",
         "optional": false
       },
       {
@@ -3105,11 +3105,11 @@
         "optional": false
       },
       {
-        "raw": "halve komkommer",
-        "amount": null,
-        "unit": "",
-        "name": "halve komkommer",
-        "key": "halve komkommer",
+        "raw": "komkommer",
+        "amount": "0.5",
+        "unit": "stuk",
+        "name": "komkommer",
+        "key": "komkommer",
         "optional": false
       },
       {
@@ -3121,11 +3121,11 @@
         "optional": false
       },
       {
-        "raw": "10 cherry tomaten",
-        "amount": 10,
-        "unit": "",
-        "name": "cherry tomaten",
-        "key": "cherry tomaten",
+        "raw": "10 cherrytomaatjes",
+        "amount": "10",
+        "unit": "stuk",
+        "name": "cherrytomaten",
+        "key": "cherrytomaten",
         "optional": false
       },
       {
@@ -3174,10 +3174,10 @@
       },
       {
         "raw": "plakjes komkommer",
-        "amount": null,
-        "unit": "",
-        "name": "plakjes komkommer",
-        "key": "plakjes komkommer",
+        "amount": "0.2",
+        "unit": "stuk",
+        "name": "komkommer",
+        "key": "komkommer",
         "optional": false
       },
       {
@@ -3205,11 +3205,11 @@
         "optional": false
       },
       {
-        "raw": "halve komkommer",
-        "amount": null,
-        "unit": "",
-        "name": "halve komkommer",
-        "key": "halve komkommer",
+        "raw": "komkommer",
+        "amount": "0.5",
+        "unit": "stuk",
+        "name": "komkommer",
+        "key": "komkommer",
         "optional": false
       },
       {
@@ -3221,11 +3221,11 @@
         "optional": false
       },
       {
-        "raw": "10 cherry tomaten",
-        "amount": 10,
-        "unit": "",
-        "name": "cherry tomaten",
-        "key": "cherry tomaten",
+        "raw": "10 cherrytomaatjes",
+        "amount": "10",
+        "unit": "stuk",
+        "name": "cherrytomaten",
+        "key": "cherrytomaten",
         "optional": false
       },
       {
@@ -3321,19 +3321,19 @@
         "optional": false
       },
       {
-        "raw": "halve komkommer",
-        "amount": null,
-        "unit": "",
-        "name": "halve komkommer",
-        "key": "halve komkommer",
+        "raw": "komkommer",
+        "amount": "0.5",
+        "unit": "stuk",
+        "name": "komkommer",
+        "key": "komkommer",
         "optional": false
       },
       {
-        "raw": "10 cherry tomaatjes",
-        "amount": 10,
+        "raw": "10 cherrytomaatjes",
+        "amount": "10",
         "unit": "stuk",
-        "name": "cherrytomaatje",
-        "key": "cherrytomaatje",
+        "name": "cherrytomaten",
+        "key": "cherrytomaten",
         "optional": false
       },
       {
@@ -4851,10 +4851,10 @@
       },
       {
         "raw": "250 gram cherrytomaatjes",
-        "amount": 250,
+        "amount": "250",
         "unit": "gram",
-        "name": "cherrytomaatjes",
-        "key": "cherrytomaatjes",
+        "name": "cherrytomaten",
+        "key": "cherrytomaten",
         "optional": false
       },
       {
