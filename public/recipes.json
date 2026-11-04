@@ -1108,70 +1108,20 @@
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
+    "preparationTime": 10,
+    "ovenTime": 70,
     "ingredients": [
       {
-        "raw": "100 gram amandelen",
-        "amount": 100,
-        "unit": "gram",
-        "name": "amandelen",
-        "key": "amandelen",
-        "optional": false
-      },
-      {
-        "raw": "100 gram hazelnoten",
-        "amount": 100,
-        "unit": "gram",
-        "name": "hazelnoten",
-        "key": "hazelnoten",
-        "optional": false
-      },
-      {
-        "raw": "100 gram sesamzaad",
-        "amount": 100,
-        "unit": "gram",
-        "name": "sesamzaad",
-        "key": "sesamzaad",
-        "optional": false
-      },
-      {
-        "raw": "100 gram zonnebloempitten",
-        "amount": 100,
-        "unit": "gram",
-        "name": "zonnebloempitten",
-        "key": "zonnebloempitten",
-        "optional": false
-      },
-      {
-        "raw": "100 gram lijnzaad",
-        "amount": 100,
-        "unit": "gram",
-        "name": "lijnzaad",
-        "key": "lijnzaad",
-        "optional": false
-      },
-      {
-        "raw": "100 gram pompoenpitten",
-        "amount": 100,
-        "unit": "gram",
-        "name": "pompoenpitten",
-        "key": "pompoenpitten",
-        "optional": false
-      },
-      {
-        "raw": "1 tl zout",
-        "amount": 1,
-        "unit": "tl",
-        "name": "zout",
-        "key": "zout",
-        "optional": false
-      },
-      {
-        "raw": "2elextra vierge olijfolie",
-        "amount": 2,
-        "unit": "el",
-        "name": "extra vierge olijfolie",
-        "key": "extra vierge olijfolie",
-        "optional": false
+        "raw": "4 plakken notenbrood",
+        "amount": 4,
+        "unit": "plakken",
+        "name": "notenbrood",
+        "key": "notenbrood",
+        "componentId": "notenbrood",
+        "optional": false,
+        "alternatives": [
+          { "raw": "notenbrood maken", "amount": null, "unit": "", "name": "notenbrood maken", "key": "notenbrood maken", "componentId": "notenbrood", "optional": false }
+        ]
       },
       {
         "raw": "1 avocado",
@@ -1180,17 +1130,32 @@
         "name": "avocado",
         "key": "avocado",
         "optional": false
-      },
-      {
-        "raw": "100 gram pure chocolade (minimaal 70% cacao)",
-        "amount": 100,
-        "unit": "gram",
-        "name": "pure chocolade",
-        "key": "pure chocolade",
-        "optional": true
       }
     ],
-    "method": "Hak de noten en eventueel pure chocolade in stukjes. Doe alle noten, pitten en zaden in een kom samen met het (jozo)zout en de olie. Voeg de eieren 1 voor 1 toe en meng alles goed. Schenk het beslag in een met olijfolie ingevet cakeblik en bak het 60 - 70 min in de oven op 180 graden. Mocht de bovenkant van het brood erg bruin worden, kun je voor de resterende oventijd een stuk aluminiumfolie over het blik doen. Laat het brood helemaal afkoelen voor serveren. Bewaar het in een theedoek in de koelkast (1 week) of vries het in. Eet voor dit ontbijt 1 dikke plak of 2 dunne plakjes notenbrood per persoon. Beleg ze met geprakte avocado. Tip: In plaats van amandelen en hazelnoten kun je ook 200 gram gemengde ongebrande en ongezouten noten gebruiken. Voeg voor de variatie een keer geraspte appel of wortel toe aan het brood.",
+    "components": [
+      {
+        "id": "notenbrood",
+        "title": "Notenbrood",
+        "yield": 1,
+        "yieldUnit": "brood",
+        "yieldNote": "circa 12 plakjes",
+        "ingredients": [
+          { "raw": "100 gram amandelen", "amount": 100, "unit": "gram", "name": "amandelen", "key": "amandelen", "optional": false },
+          { "raw": "100 gram hazelnoten", "amount": 100, "unit": "gram", "name": "hazelnoten", "key": "hazelnoten", "optional": false },
+          { "raw": "100 gram sesamzaad", "amount": 100, "unit": "gram", "name": "sesamzaad", "key": "sesamzaad", "optional": false },
+          { "raw": "100 gram zonnebloempitten", "amount": 100, "unit": "gram", "name": "zonnebloempitten", "key": "zonnebloempitten", "optional": false },
+          { "raw": "100 gram lijnzaad", "amount": 100, "unit": "gram", "name": "lijnzaad", "key": "lijnzaad", "optional": false },
+          { "raw": "100 gram pompoenpitten", "amount": 100, "unit": "gram", "name": "pompoenpitten", "key": "pompoenpitten", "optional": false },
+          { "raw": "1 tl (jozo)zout", "amount": 1, "unit": "tl", "name": "(jozo)zout", "key": "(jozo)zout", "optional": false },
+          { "raw": "2 el extra vierge olijfolie", "amount": 2, "unit": "el", "name": "extra vierge olijfolie", "key": "extra vierge olijfolie", "optional": false },
+          { "raw": "5 eieren", "amount": 5, "unit": "stuk", "name": "eieren", "key": "eieren", "optional": false },
+          { "raw": "100 gram pure chocolade (minimaal 70% cacao)", "amount": 100, "unit": "gram", "name": "pure chocolade", "key": "pure chocolade", "optional": true }
+        ],
+        "equipment": ["cakeblik", "aluminiumfolie"],
+        "method": "Hak de pure chocolade en noten in stukjes. Doe alle noten, pitten en zaden in een kom samen met het (jozo)zout en de olie. Voeg de eieren één voor één toe en meng alles goed. Schenk het beslag in een met olijfolie ingevet cakeblik en bak het 60-70 minuten in de oven op 180 °C. Mocht de bovenkant van het brood erg bruin worden, leg dan voor de resterende oventijd een stuk aluminiumfolie over het blik. Laat het brood helemaal afkoelen voor serveren. Bewaar het in een theedoek in de koelkast (1 week) of vries het in. Tip: In plaats van amandelen en hazelnoten kun je ook 200 gram gemengde ongebrande en ongezouten noten gebruiken. Voeg voor de variatie een keer geraspte appel of wortel toe aan het brood."
+      }
+    ],
+    "method": "Eet voor dit ontbijt 1 dikke plak of 2 dunne plakjes notenbrood per persoon. Beleg ze met geprakte avocado.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -1200,78 +1165,20 @@
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
+    "preparationTime": 10,
+    "ovenTime": 70,
     "ingredients": [
       {
-        "raw": "100 gram amandelen",
-        "amount": 100,
-        "unit": "gram",
-        "name": "amandelen",
-        "key": "amandelen",
-        "optional": false
-      },
-      {
-        "raw": "100 gram hazelnoten",
-        "amount": 100,
-        "unit": "gram",
-        "name": "hazelnoten",
-        "key": "hazelnoten",
-        "optional": false
-      },
-      {
-        "raw": "100 gram sesamzaad",
-        "amount": 100,
-        "unit": "gram",
-        "name": "sesamzaad",
-        "key": "sesamzaad",
-        "optional": false
-      },
-      {
-        "raw": "100 gram zonnebloempitten",
-        "amount": 100,
-        "unit": "gram",
-        "name": "zonnebloempitten",
-        "key": "zonnebloempitten",
-        "optional": false
-      },
-      {
-        "raw": "100 gram lijnzaad",
-        "amount": 100,
-        "unit": "gram",
-        "name": "lijnzaad",
-        "key": "lijnzaad",
-        "optional": false
-      },
-      {
-        "raw": "100 gram pompoenpitten",
-        "amount": 100,
-        "unit": "gram",
-        "name": "pompoenpitten",
-        "key": "pompoenpitten",
-        "optional": false
-      },
-      {
-        "raw": "1 tl zout",
-        "amount": 1,
-        "unit": "tl",
-        "name": "zout",
-        "key": "zout",
-        "optional": false
-      },
-      {
-        "raw": "2 el extra vierge olijfolie",
-        "amount": 2,
-        "unit": "el",
-        "name": "extra vierge olijfolie",
-        "key": "extra vierge olijfolie",
-        "optional": false
-      },
-      {
-        "raw": "100 gram pure chocolade (minimaal 70% cacao)",
-        "amount": 100,
-        "unit": "gram",
-        "name": "pure chocolade",
-        "key": "pure chocolade",
-        "optional": true
+        "raw": "4 plakken notenbrood",
+        "amount": 4,
+        "unit": "plakken",
+        "name": "notenbrood",
+        "key": "notenbrood",
+        "componentId": "notenbrood",
+        "optional": false,
+        "alternatives": [
+          { "raw": "notenbrood maken", "amount": null, "unit": "", "name": "notenbrood maken", "key": "notenbrood maken", "componentId": "notenbrood", "optional": false }
+        ]
       },
       {
         "raw": "100 gram gerookte zalm",
@@ -1298,7 +1205,82 @@
         "optional": false
       }
     ],
-    "method": "Hak noten en eventueel de pure chocolade in stukjes. Doe alle noten, pitten en zaden in een kom samen met het (jozo)zout en de olie. Voeg de eieren 1 voor 1 toe en meng alles goed. Schenk het beslag in een met olijfolie ingevet cakeblik en bak het 60-70 minuten in de oven op 180 graden Celsius. Mocht de bovenkant van het brood erg bruin worden, kun je voor de resterende oventijd een stuk aluminiumfolie over het blik doen. Laat het brood helemaal afkoelen voor serveren. Bewaar het in een theedoek in de koelkast (1 week) of vries het in. Besmeer per persoon 1 dikke of 2 dunne plakjes notenbrood met roomkaas en beleg met zalm en plakjes komkommer. Tip: In plaats van amandelen en hazelnoten kun je ook 200 gram gemengde ongebrande en ongezouten noten gebruiken. Voeg voor de variatie een keer geraspte appel of wortel toe aan het brood.",
+    "components": [
+      {
+        "id": "notenbrood",
+        "title": "Notenbrood",
+        "yield": 1,
+        "yieldUnit": "brood",
+        "yieldNote": "circa 12 plakjes",
+        "ingredients": [
+          { "raw": "100 gram amandelen", "amount": 100, "unit": "gram", "name": "amandelen", "key": "amandelen", "optional": false },
+          { "raw": "100 gram hazelnoten", "amount": 100, "unit": "gram", "name": "hazelnoten", "key": "hazelnoten", "optional": false },
+          { "raw": "100 gram sesamzaad", "amount": 100, "unit": "gram", "name": "sesamzaad", "key": "sesamzaad", "optional": false },
+          { "raw": "100 gram zonnebloempitten", "amount": 100, "unit": "gram", "name": "zonnebloempitten", "key": "zonnebloempitten", "optional": false },
+          { "raw": "100 gram lijnzaad", "amount": 100, "unit": "gram", "name": "lijnzaad", "key": "lijnzaad", "optional": false },
+          { "raw": "100 gram pompoenpitten", "amount": 100, "unit": "gram", "name": "pompoenpitten", "key": "pompoenpitten", "optional": false },
+          { "raw": "1 tl (jozo)zout", "amount": 1, "unit": "tl", "name": "(jozo)zout", "key": "(jozo)zout", "optional": false },
+          { "raw": "2 el extra vierge olijfolie", "amount": 2, "unit": "el", "name": "extra vierge olijfolie", "key": "extra vierge olijfolie", "optional": false },
+          { "raw": "5 eieren", "amount": 5, "unit": "stuk", "name": "eieren", "key": "eieren", "optional": false },
+          { "raw": "100 gram pure chocolade (minimaal 70% cacao)", "amount": 100, "unit": "gram", "name": "pure chocolade", "key": "pure chocolade", "optional": true }
+        ],
+        "equipment": ["cakeblik", "aluminiumfolie"],
+        "method": "Hak de pure chocolade en noten in stukjes. Doe alle noten, pitten en zaden in een kom samen met het (jozo)zout en de olie. Voeg de eieren één voor één toe en meng alles goed. Schenk het beslag in een met olijfolie ingevet cakeblik en bak het 60-70 minuten in de oven op 180 °C. Mocht de bovenkant van het brood erg bruin worden, leg dan voor de resterende oventijd een stuk aluminiumfolie over het blik. Laat het brood helemaal afkoelen voor serveren. Bewaar het in een theedoek in de koelkast (1 week) of vries het in. Tip: In plaats van amandelen en hazelnoten kun je ook 200 gram gemengde ongebrande en ongezouten noten gebruiken. Voeg voor de variatie een keer geraspte appel of wortel toe aan het brood."
+      }
+    ],
+    "method": "Eet voor dit ontbijt 1 dikke plak of 2 dunne plakjes notenbrood per persoon. Besmeer ze met roomkaas en beleg met zalm en plakjes komkommer.",
+    "harmonizerVersion": "1",
+    "harmonized": false
+  },
+  {
+    "id": "notenbrood-met-roomboter-boerenkaas-en-komkommer",
+    "title": "Notenbrood met roomboter, boerenkaas en komkommer",
+    "category": "ontbijt",
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 10,
+    "ovenTime": 70,
+    "ingredients": [
+      {
+        "raw": "4 plakken notenbrood",
+        "amount": 4,
+        "unit": "plakken",
+        "name": "notenbrood",
+        "key": "notenbrood",
+        "componentId": "notenbrood",
+        "optional": false,
+        "alternatives": [
+          { "raw": "notenbrood maken", "amount": null, "unit": "", "name": "notenbrood maken", "key": "notenbrood maken", "componentId": "notenbrood", "optional": false }
+        ]
+      },
+      { "raw": "roomboter", "amount": null, "unit": "", "name": "roomboter", "key": "roomboter", "optional": false },
+      { "raw": "plakjes boerenkaas", "amount": null, "unit": "", "name": "plakjes boerenkaas", "key": "plakjes boerenkaas", "optional": false },
+      { "raw": "halve komkommer", "amount": null, "unit": "", "name": "halve komkommer", "key": "halve komkommer", "optional": false }
+    ],
+    "components": [
+      {
+        "id": "notenbrood",
+        "title": "Notenbrood",
+        "yield": 1,
+        "yieldUnit": "brood",
+        "yieldNote": "circa 12 plakjes",
+        "ingredients": [
+          { "raw": "100 gram amandelen", "amount": 100, "unit": "gram", "name": "amandelen", "key": "amandelen", "optional": false },
+          { "raw": "100 gram hazelnoten", "amount": 100, "unit": "gram", "name": "hazelnoten", "key": "hazelnoten", "optional": false },
+          { "raw": "100 gram sesamzaad", "amount": 100, "unit": "gram", "name": "sesamzaad", "key": "sesamzaad", "optional": false },
+          { "raw": "100 gram zonnebloempitten", "amount": 100, "unit": "gram", "name": "zonnebloempitten", "key": "zonnebloempitten", "optional": false },
+          { "raw": "100 gram lijnzaad", "amount": 100, "unit": "gram", "name": "lijnzaad", "key": "lijnzaad", "optional": false },
+          { "raw": "100 gram pompoenpitten", "amount": 100, "unit": "gram", "name": "pompoenpitten", "key": "pompoenpitten", "optional": false },
+          { "raw": "1 tl (jozo)zout", "amount": 1, "unit": "tl", "name": "(jozo)zout", "key": "(jozo)zout", "optional": false },
+          { "raw": "2 el extra vierge olijfolie", "amount": 2, "unit": "el", "name": "extra vierge olijfolie", "key": "extra vierge olijfolie", "optional": false },
+          { "raw": "5 eieren", "amount": 5, "unit": "stuk", "name": "eieren", "key": "eieren", "optional": false },
+          { "raw": "100 gram pure chocolade (minimaal 70% cacao)", "amount": 100, "unit": "gram", "name": "pure chocolade", "key": "pure chocolade", "optional": true }
+        ],
+        "equipment": ["cakeblik", "aluminiumfolie"],
+        "method": "Hak de pure chocolade en noten in stukjes. Doe alle noten, pitten en zaden in een kom samen met het (jozo)zout en de olie. Voeg de eieren één voor één toe en meng alles goed. Schenk het beslag in een met olijfolie ingevet cakeblik en bak het 60-70 minuten in de oven op 180 °C. Mocht de bovenkant van het brood erg bruin worden, leg dan voor de resterende oventijd een stuk aluminiumfolie over het blik. Laat het brood helemaal afkoelen voor serveren. Bewaar het in een theedoek in de koelkast (1 week) of vries het in. Tip: In plaats van amandelen en hazelnoten kun je ook 200 gram gemengde ongebrande en ongezouten noten gebruiken. Voeg voor de variatie een keer geraspte appel of wortel toe aan het brood."
+      }
+    ],
+    "method": "Eet voor dit ontbijt 1 dikke plak of 2 dunne plakjes notenbrood per persoon. Besmeer ze met roomboter en beleg met boerenkaas en komkommer.",
     "harmonizerVersion": "1",
     "harmonized": false
   },

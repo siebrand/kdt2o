@@ -183,7 +183,8 @@ function renderOptions() {
     title.textContent = recipe.title;
     const preparationTime = document.createElement("p");
     preparationTime.className = "recipe-card-meta";
-    preparationTime.textContent = "Bereiding: circa " + recipe.preparationTime + " minuten";
+    preparationTime.textContent = "Bereiding: circa " + recipe.preparationTime + " minuten" +
+       (Number.isFinite(recipe.ovenTime) ? " | Oventijd: circa " + recipe.ovenTime + " minuten" : "");
     const button = document.createElement("button");
     button.type = "button";
     button.className = "button";
@@ -371,6 +372,7 @@ function aggregateIngredients() {
   let flaxCrackerCountUnknown = false;
   let flaxCrackerComponent = null;
   let granolaComponent = null;
+  let nutBreadComponent = null;
   state.shoppingWarnings = [];
   Object.values(state.plan).forEach((item) => {
     if (includedRecipeIds.has(item.recipeId)) return;
@@ -381,6 +383,8 @@ function aggregateIngredients() {
     if (component) flaxCrackerComponent ||= component;
     const recipeGranolaComponent = recipe?.components?.find((item) => item.id === "granola");
     if (recipeGranolaComponent) granolaComponent ||= recipeGranolaComponent;
+    const recipeNutBreadComponent = recipe?.components?.find((item) => item.id === "notenbrood");
+    if (recipeNutBreadComponent) nutBreadComponent ||= recipeNutBreadComponent;
     ingredients.forEach((ingredient) => {
       const isFlaxCracker = /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(ingredient.raw || "")) ||
         /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(ingredient.name || "")) ||
@@ -441,6 +445,21 @@ function aggregateIngredients() {
   }
   if (granolaComponent) {
     granolaComponent.ingredients.forEach((ingredient) => {
+      const shoppingIngredient = normalizeShoppingIngredient(ingredient);
+      if (shoppingIngredient.name === "water" || SHOPPING_LIST_EXCLUDED_NAMES.has(shoppingIngredient.name)) return;
+      const key = normalizeShoppingName(shoppingIngredient.name);
+      const unit = normalizeShoppingUnit(shoppingIngredient.unit);
+      const mapKey = key + "::" + unit;
+      const existing = totals.get(mapKey);
+      if (!existing) totals.set(mapKey, copyShoppingIngredient(shoppingIngredient, unit));
+      else if (shoppingIngredient.amount != null && existing.amount != null) {
+        const combinedAmount = addIngredientAmounts(existing.amount, shoppingIngredient.amount);
+        if (combinedAmount !== null) existing.amount = combinedAmount;
+      }
+    });
+  }
+  if (nutBreadComponent) {
+    nutBreadComponent.ingredients.forEach((ingredient) => {
       const shoppingIngredient = normalizeShoppingIngredient(ingredient);
       if (shoppingIngredient.name === "water" || SHOPPING_LIST_EXCLUDED_NAMES.has(shoppingIngredient.name)) return;
       const key = normalizeShoppingName(shoppingIngredient.name);
