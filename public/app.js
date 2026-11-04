@@ -725,6 +725,7 @@ async function createPdf() {
   const margin = 16;
   const width = doc.internal.pageSize.getWidth();
   const height = doc.internal.pageSize.getHeight();
+  const includeInfographics = document.querySelector("#include-infographics").checked;
   const overviewLinks = drawWeeklyOverview(doc, margin, width);
   const recipePages = new Map();
   doc.addPage();
@@ -756,10 +757,12 @@ async function createPdf() {
       const item = state.plan[planKey(dayIndex, meal)];
       if (!item) continue;
       const recipe = recipeById(item.recipeId);
-      const infographic = await svgToPngDataUrl(infographicSvg(recipe));
-      doc.addPage();
-      const infographicHeight = Math.min(height, width * 0.5625);
-      doc.addImage(infographic, "PNG", 0, (height - infographicHeight) / 2, width, infographicHeight);
+      if (includeInfographics) {
+        const infographic = await svgToPngDataUrl(infographicSvg(recipe));
+        doc.addPage();
+        const infographicHeight = Math.min(height, width * 0.5625);
+        doc.addImage(infographic, "PNG", 0, (height - infographicHeight) / 2, width, infographicHeight);
+      }
       doc.addPage();
       if (!recipePages.has(recipe.id)) recipePages.set(recipe.id, doc.getNumberOfPages());
       doc.setTextColor(24, 63, 50);
