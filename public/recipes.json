@@ -155,8 +155,8 @@
         "raw": "2 eieren",
         "amount": 2,
         "unit": "stuk",
-        "name": "ei",
-        "key": "ei",
+        "name": "eieren",
+        "key": "eieren",
         "optional": false
       },
       {
