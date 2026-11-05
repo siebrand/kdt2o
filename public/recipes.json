@@ -258,7 +258,7 @@
         "raw": "2 el noten naar keuze",
         "amount": 2,
         "unit": "el",
-        "name": "noten naar keuze",
+        "name": "noten",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -438,7 +438,7 @@
         "raw": "2 el noten naar keuze",
         "amount": 2,
         "unit": "el",
-        "name": "noten naar keuze",
+        "name": "noten",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -3084,7 +3084,7 @@
         "raw": "4 el zaden en pitten (bijv. zonnenbloempitten/ pompoenpitten/ etc.)",
         "amount": 4,
         "unit": "el",
-        "name": "zaden/pitten",
+        "name": "pitten/zaden",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -3604,7 +3604,7 @@
         "raw": "1 el noten/pitten/zaden naar keuze",
         "amount": 1,
         "unit": "el",
-        "name": "noten/pitten/zaden",
+        "name": "pitten/zaden",
         "optional": false,
         "category": "Houdbare producten"
       }
@@ -3848,9 +3848,9 @@
       },
       {
         "raw": "1 blikje tonijn op olijfolie",
-        "amount": 1,
-        "unit": "blik",
-        "name": "tonijn op olijfolie",
+        "amount": 150,
+        "unit": "gram",
+        "name": "tonijn uit blik op olijfolie",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -4134,20 +4134,10 @@
       },
       {
         "raw": "1 blik tonijn in olijfolie (150 gram)",
-        "amount": 1,
-        "unit": "blik",
-        "name": "tonijn in olijfolie (150 gram)",
+        "amount": 150,
+        "unit": "gram",
+        "name": "tonijn uit blik in olijfolie",
         "optional": false,
-        "alternatives": [
-          {
-            "raw": "1 blik tonijn in water (150 gram)",
-            "amount": 1,
-            "unit": "blik",
-            "name": "tonijn in water (150 gram)",
-            "optional": false,
-            "category": "Vlees, vis en vleesvervangers"
-          }
-        ],
         "category": "Vlees, vis en vleesvervangers"
       },
       {
@@ -4994,10 +4984,10 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "tonijn",
-        "amount": 1,
-        "unit": "blikje",
-        "name": "tonijn",
+        "raw": "tonijn uit blik",
+        "amount": 150,
+        "unit": "gram",
+        "name": "tonijn uit blik in olijfolie",
         "optional": true,
         "category": "Vlees, vis en vleesvervangers"
       }
@@ -6367,7 +6357,7 @@
         "raw": "4 el sesamzaadjes",
         "amount": 4,
         "unit": "el",
-        "name": "sesamzaadjes",
+        "name": "sesamzaad",
         "optional": false,
         "category": "Houdbare producten"
       }
@@ -7157,7 +7147,7 @@
         "raw": "2 el sesamzaadjes",
         "amount": 2,
         "unit": "el",
-        "name": "sesamzaadjes",
+        "name": "sesamzaad",
         "optional": false,
         "category": "Houdbare producten"
       },
