@@ -956,7 +956,6 @@
     "harmonizerVersion": "1",
     "harmonized": false,
     "notes": [
-      "Opmerking: ben je deelnemer van Keer Diabetes? Gebruik dan amandelmeel.",
       "Tip: Ook lekker met aardbeien of frambozen in plaats van blauwe bessen.",
       "Tip: Maal de havermout van tevoren tot meel voor een luchtiger cakegevoel.",
       "Tip: Geen muffinvorm? Gebruik dan een cakevorm en snijd naderhand plakjes.",
@@ -1347,7 +1346,7 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "komkommer",
+        "raw": "halve komkommer",
         "amount": "0.5",
         "unit": "stuk",
         "name": "komkommer",
@@ -6460,9 +6459,6 @@
     "method": "Maak de pesto (zie recept hieronder). Bestrooi de kipfilets met peper en bak of grill ze met een scheut extra vierge olijfolie in de pan in 10 minuten gaar (de binnenkant mag niet meer roze zijn). Eventueel kun je de kipfilet in stukjes snijden. Was de snijbonen, snijd ze in stukjes en kook/stoom deze in 5 minuten beetgaar. Verwarm de tuinerwtjes 2 minuten in een pannetje met een beetje water. Als de kipfilet gaar is, haal van het vuur en roer de pesto erdoor of erop. Serveer met de snijbonen en tuinerwtjes. Recept pesto Pel de knoflook. Rooster de pijnboompitten in een droge koekenpan tot Ze lichtbruin zijn. Doe de pijnboompitten en alle andere ingrediénten in een hoge kom. Mix en voeg net zoveel olijfolie toe tot een gladde pesto ontstaat. Proef en breng eventueel op smaak met peper en (jozo)zout. Tip: Koop een potje pesto i.p.v. deze zelf te maken. Let er wel op dat er geen toegevoegde suikers inzitten.",
     "harmonizerVersion": "1",
     "harmonized": false,
-    "notes": [
-      "Opmerking: maak eventueel ook pesto voor de lunch van morgen."
-    ]
   },
   {
     "id": "plaat-courgette",
