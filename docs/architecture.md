@@ -10,6 +10,8 @@ or server-side planning state.
 2. The browser fetches that JSON and renders the weekly planner.
 3. The browser stores the plan in versioned `localStorage`.
 4. The browser aggregates compatible ingredients and creates the PDF with jsPDF.
+5. The browser can fill empty meal slots randomly and can encode a plan in a
+   shareable URL without sending planning data to a server.
 
 Recipe text is treated as data and inserted with text APIs, never as HTML.
 

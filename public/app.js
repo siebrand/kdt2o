@@ -8,6 +8,7 @@ const planner = document.querySelector("#planner");
 const options = document.querySelector("#recipe-options");
 const status = document.querySelector("#status");
 const search = document.querySelector("#search");
+const randomFillButton = document.querySelector("#random-fill");
 const downloadButton = document.querySelector("#download-pdf");
 const shoppingListButton = document.querySelector("#show-shopping-list");
 const shoppingListView = document.querySelector("#shopping-list-view");
@@ -228,6 +229,32 @@ function chooseRecipe(recipe) {
   }
   days.forEach((day) => { state.plan[planKey(day, meal)] = { recipeId: recipe.id, sourceDay: startDay }; });
   finishSelection();
+}
+
+function fillRandomPlan() {
+  MEALS.forEach((meal) => {
+    DAYS.forEach((_, day) => {
+      if (state.plan[planKey(day, meal)]) return;
+      const selected = selectedIds();
+      const candidates = shuffleRecipes(state.recipes.filter((recipe) => recipe.category === meal && !selected.has(recipe.id)));
+      const recipe = candidates.find((candidate) => {
+        if (!isMultiDay(candidate)) return true;
+        const days = plannedDays(day, candidate.days);
+        return days.length === (candidate.days || 3) && !days.some((plannedDay) => state.plan[planKey(plannedDay, meal)]);
+      });
+      if (!recipe) return;
+      if (isMultiDay(recipe)) {
+        plannedDays(day, recipe.days).forEach((plannedDay) => {
+          state.plan[planKey(plannedDay, meal)] = { recipeId: recipe.id, sourceDay: day };
+        });
+      } else {
+        state.plan[planKey(day, meal)] = { recipeId: recipe.id, sourceDay: day };
+      }
+    });
+  });
+  savePlan();
+  render();
+  planner.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function finishSelection() {
@@ -869,6 +896,7 @@ document.querySelector("#clear-plan").addEventListener("click", () => {
   savePlan();
   render();
 });
+randomFillButton.addEventListener("click", fillRandomPlan);
 search.addEventListener("input", renderOptions);
 shoppingListButton.addEventListener("click", () => {
   renderShoppingList();
