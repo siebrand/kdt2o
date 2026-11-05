@@ -155,7 +155,8 @@ function renderPlanner() {
         const title = document.createElement("strong");
         title.textContent = recipe?.title || "Onbekend recept";
         const detail = document.createElement("small");
-        detail.textContent = "Klik om te verwijderen";
+        detail.textContent = "-";
+        slot.setAttribute("aria-label", `${recipe?.title || "Onbekend recept"}. Klik om te verwijderen`);
         slot.append(title, detail);
         if (recipe?.multiDay) {
           const schedule = document.createElement("small");
