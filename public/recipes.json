@@ -868,6 +868,7 @@
   {
     "id": "kwark-muffins",
     "title": "Kwarkmuffins",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "days": 2,
@@ -1165,6 +1166,7 @@
   {
     "id": "notenbrood-met-avocado",
     "title": "Notenbrood met avocado",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -1303,6 +1305,7 @@
   {
     "id": "notenbrood-met-roomkaas-en-zalm",
     "title": "Notenbrood met roomkaas en zalm",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
