@@ -6573,8 +6573,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -6583,15 +6583,15 @@
         "raw": "300 gram (verse) spinazie",
         "amount": 300,
         "unit": "gram",
-        "name": "(verse) spinazie",
+        "name": "spinazie",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
         "raw": "1 teen knoflook",
         "amount": 1,
-        "unit": "",
-        "name": "teen knoflook",
+        "unit": "teen",
+        "name": "knoflook",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -6696,14 +6696,6 @@
         "name": "nootmuskaat",
         "optional": false,
         "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "1 ei",
-        "amount": 1,
-        "unit": "stuk",
-        "name": "ei",
-        "optional": false,
-        "category": "Zuivel en eieren"
       },
       {
         "raw": "peper en zout",
