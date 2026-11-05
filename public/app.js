@@ -16,6 +16,7 @@ const singleRecipeResults = document.querySelector("#single-recipe-results");
 const downloadButton = document.querySelector("#download-pdf");
 const shoppingListButton = document.querySelector("#show-shopping-list");
 const shoppingListView = document.querySelector("#shopping-list-view");
+const singleRecipeSearch = document.querySelector("#single-recipe-search");
 const shoppingListItems = document.querySelector("#shopping-list-items");
 const notifications = document.querySelector("#notifications");
 const recipePanel = document.querySelector("#recipe-panel");
@@ -334,6 +335,7 @@ function finishSelection() {
 function render() {
   renderPlanner();
   renderOptions();
+  singleRecipeSearch.hidden = !shoppingListView.hidden;
   const count = Object.keys(state.plan).length;
   status.textContent = count ? count + " maaltijdmomenten gepland." : "Kies een leeg moment om te beginnen.";
   shoppingListButton.disabled = !count;
@@ -364,13 +366,13 @@ function normalizeShoppingName(name) {
 function normalizeShoppingIngredient(ingredient) {
   const name = String(ingredient.name || "").toLocaleLowerCase("nl").trim();
   let raw = String(ingredient.raw || "").toLocaleLowerCase("nl").trim();
-  if (name === "water") return { ...ingredient, amount: null, unit: "", name: "water", key: "water" };
-  if (name === "ei" || name === "eieren") return { ...ingredient, name: "ei", key: "ei" };
+  if (name === "water") return { ...ingredient, amount: null, unit: "", name: "water" };
+  if (name === "ei" || name === "eieren") return { ...ingredient, name: "ei" };
   if (name === "halve komkommer" || raw === "halve komkommer") {
-    return { ...ingredient, amount: 0.5, unit: "stuk", name: "komkommer", key: "komkommer" };
+    return { ...ingredient, amount: 0.5, unit: "stuk", name: "komkommer" };
   }
   if (/^(?:plakjes|schijfjes) komkommer$/.test(name)) {
-    return { ...ingredient, name: "komkommer", key: "komkommer" };
+    return { ...ingredient, name: "komkommer" };
   }
   if (raw.startsWith("1/, ")) raw = "1/2 " + raw.slice(4);
   if (name.includes("roomboter")) {
@@ -1016,6 +1018,7 @@ singleRecipeQuery.addEventListener("input", renderSingleRecipeSearch);
 shoppingListButton.addEventListener("click", () => {
   renderShoppingList();
   shoppingListView.hidden = false;
+  singleRecipeSearch.hidden = true;
   shoppingListView.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 downloadButton.addEventListener("click", createPdf);

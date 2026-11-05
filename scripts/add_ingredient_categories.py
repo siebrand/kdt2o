@@ -70,6 +70,7 @@ def visit(value: object) -> int:
     count = 0
     if isinstance(value, dict):
         if {"raw", "name", "optional"}.issubset(value):
+            value.pop("key", None)
             value["category"] = category_for(value)
             count += 1
         for child in value.values():
