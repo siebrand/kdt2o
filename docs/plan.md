@@ -32,6 +32,7 @@ The following features are complete and have been moved below the open work:
 
 - [x] Seven-day breakfast, lunch, and dinner planner.
 - [x] One-click random filling of empty meal slots, including multi-day rules.
+- [x] Shareable menu links that restore a plan from the URL without server storage.
 - [x] Recipe selection at most once per week, with valid empty meal slots.
 - [x] Multi-day planning with configurable `days` values and conflict checks.
 - [x] Browser-only persistence through versioned `localStorage`.

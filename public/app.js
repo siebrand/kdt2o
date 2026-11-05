@@ -9,6 +9,7 @@ const options = document.querySelector("#recipe-options");
 const status = document.querySelector("#status");
 const search = document.querySelector("#search");
 const randomFillButton = document.querySelector("#random-fill");
+const copyMenuLinkButton = document.querySelector("#copy-menu-link");
 const downloadButton = document.querySelector("#download-pdf");
 const shoppingListButton = document.querySelector("#show-shopping-list");
 const shoppingListView = document.querySelector("#shopping-list-view");
@@ -20,12 +21,41 @@ if (includeInfographicsToggle) includeInfographicsToggle.checked = false;
 
 function loadPlan() {
   try {
+    const sharedPlan = new URLSearchParams(window.location.hash.slice(1)).get("plan");
+    if (sharedPlan) {
+      const shared = JSON.parse(sharedPlan);
+      if (shared?.version === PLAN_STORAGE_VERSION && shared.plan && typeof shared.plan === "object") return shared.plan;
+    }
     const saved = JSON.parse(localStorage.getItem(PLAN_STORAGE_KEY) || "null");
     if (saved?.version !== PLAN_STORAGE_VERSION || !saved.plan || typeof saved.plan !== "object") return {};
     return saved.plan;
   } catch {
     return {};
   }
+}
+
+function shareablePlanUrl() {
+  const url = new URL(window.location.href);
+  url.hash = "plan=" + encodeURIComponent(JSON.stringify({ version: PLAN_STORAGE_VERSION, plan: state.plan }));
+  return url.toString();
+}
+
+async function copyMenuLink() {
+  const link = shareablePlanUrl();
+  try {
+    await navigator.clipboard.writeText(link);
+  } catch {
+    const input = document.createElement("textarea");
+    input.value = link;
+    input.setAttribute("readonly", "");
+    input.style.position = "fixed";
+    input.style.opacity = "0";
+    document.body.append(input);
+    input.select();
+    document.execCommand("copy");
+    input.remove();
+  }
+  showSelectionMessage("Koppeling naar menu gekopieerd.");
 }
 
 function savePlan() {
@@ -897,6 +927,7 @@ document.querySelector("#clear-plan").addEventListener("click", () => {
   render();
 });
 randomFillButton.addEventListener("click", fillRandomPlan);
+copyMenuLinkButton.addEventListener("click", copyMenuLink);
 search.addEventListener("input", renderOptions);
 shoppingListButton.addEventListener("click", () => {
   renderShoppingList();

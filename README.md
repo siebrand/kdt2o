@@ -4,7 +4,7 @@ A static, containerized Dutch meal-planning application.
 
 ## Development
 
-The application has no database and stores a plan only in the browser. Recipe sources are in `recipes/`.
+The application has no database and stores a plan only in the browser. Recipe sources are in `recipes/`. A plan can also be shared through a URL containing the plan data; no plan data is sent to a server.
 
 Recipe data is maintained in the reviewed `public/recipes.json` file. Recipe source files are retained in `recipes/` for reference.
 
