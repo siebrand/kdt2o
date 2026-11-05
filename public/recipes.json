@@ -238,8 +238,8 @@
       },
       {
         "raw": "1 el roomboter",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "gram",
         "name": "roomboter",
         "key": "roomboter",
         "optional": false,
@@ -728,11 +728,11 @@
         "yield": 1,
         "ingredients": [
           {
-            "raw": "1 zak van 200 gram gemengde en ongebrande noten",
-            "amount": 1,
-            "unit": "",
-            "name": "zak van 200 gram gemengde en ongebrande noten",
-            "key": "zak van 200 gram gemengde en ongebrande noten",
+            "raw": "200 gram gemengde en ongebrande noten",
+            "amount": 200,
+            "unit": "gram",
+            "name": "gemengde noten",
+            "key": "gemengde noten",
             "optional": false
           },
           {
@@ -1128,8 +1128,8 @@
       },
       {
         "raw": "1 el roomboter",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "gram",
         "name": "roomboter",
         "key": "roomboter",
         "optional": false
@@ -1493,9 +1493,9 @@
         "optional": false
       },
       {
-        "raw": "plakjes boerenkaas",
-        "amount": "6",
-        "unit": "plak",
+        "raw": "6 plakjes boerenkaas",
+        "amount": "40",
+        "unit": "gram",
         "name": "boerenkaas",
         "key": "boerenkaas",
         "optional": false
@@ -1676,8 +1676,8 @@
       },
       {
         "raw": "4 plakken (boeren)kaas",
-        "amount": 4,
-        "unit": "plak",
+        "amount": 25,
+        "unit": "gram",
         "name": "boerenkaas",
         "key": "boerenkaas",
         "optional": false
@@ -1976,8 +1976,8 @@
       },
       {
         "raw": "roomboter (ongezouten)",
-        "amount": null,
-        "unit": "",
+        "amount": 15,
+        "unit": "gram",
         "name": "roomboter",
         "key": "roomboter",
         "optional": false
@@ -4592,8 +4592,8 @@
       },
       {
         "raw": "2 el roomboter",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "gram",
         "name": "roomboter",
         "key": "roomboter",
         "optional": false
@@ -4718,8 +4718,8 @@
       },
       {
         "raw": "2 el roomboter",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "gram",
         "name": "roomboter",
         "key": "roomboter",
         "optional": false
@@ -4828,8 +4828,8 @@
       },
       {
         "raw": "1 el roomboter",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "gram",
         "name": "roomboter",
         "key": "roomboter",
         "optional": false
@@ -5027,8 +5027,8 @@
     "ingredients": [
       {
         "raw": "1tl roomboter",
-        "amount": 1,
-        "unit": "tl",
+        "amount": 5,
+        "unit": "gram",
         "name": "roomboter",
         "key": "roomboter",
         "optional": false
