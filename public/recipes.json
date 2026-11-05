@@ -497,8 +497,8 @@
       },
       {
         "raw": "roomboter",
-        "amount": null,
-        "unit": "",
+        "amount": 10,
+        "unit": "gram",
         "name": "roomboter",
         "key": "roomboter",
         "optional": false
@@ -554,10 +554,10 @@
     "ingredients": [
       {
         "raw": "klontje roomboter",
-        "amount": null,
-        "unit": "",
-        "name": "klontje roomboter",
-        "key": "klontje roomboter",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "key": "roomboter",
         "optional": false
       },
       {
@@ -883,7 +883,7 @@
       },
       {
         "raw": "beetje roomboter",
-        "amount": "10",
+        "amount": 10,
         "unit": "gram",
         "name": "roomboter",
         "key": "roomboter",
@@ -1361,8 +1361,8 @@
       },
       {
         "raw": "roomboter",
-        "amount": null,
-        "unit": "",
+        "amount": 10,
+        "unit": "gram",
         "name": "roomboter",
         "key": "roomboter",
         "optional": false
@@ -1460,10 +1460,10 @@
       },
       {
         "raw": "klontje roomboter",
-        "amount": null,
-        "unit": "",
-        "name": "klontje roomboter",
-        "key": "klontje roomboter",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "key": "roomboter",
         "optional": false
       },
       {
@@ -1599,8 +1599,8 @@
         "raw": "50 gram feta (of geitenkaas/ mozzarella)",
         "amount": 50,
         "unit": "gram",
-        "name": "feta (of geitenkaas/ mozzarella)",
-        "key": "feta (of geitenkaas/ mozzarella)",
+        "name": "feta",
+        "key": "feta",
         "optional": false
       },
       {
@@ -1632,15 +1632,15 @@
         "amount": 2,
         "unit": "",
         "name": "cracker",
-        "key": "cracker)",
+        "key": "cracker",
         "optional": false
       },
       {
-        "raw": "ruim belegd met boerenkaas 48+",
-        "amount": null,
-        "unit": "",
-        "name": "ruim belegd met boerenkaas 48+",
-        "key": "ruim belegd met boerenkaas 48+",
+        "raw": "boerenkaas",
+        "amount": 50,
+        "unit": "gram",
+        "name": "boerenkaas",
+        "key": "boerenkaas",
         "optional": false
       },
       {
@@ -1655,8 +1655,8 @@
         "raw": "roomboter (ongezouten)",
         "amount": null,
         "unit": "",
-        "name": "roomboter (ongezouten)",
-        "key": "roomboter (ongezouten)",
+        "name": "roomboter",
+        "key": "roomboter",
         "optional": false
       }
     ],
@@ -2049,10 +2049,10 @@
       },
       {
         "raw": "klontje roomboter",
-        "amount": null,
-        "unit": "",
-        "name": "klontje roomboter",
-        "key": "klontje roomboter",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "key": "roomboter",
         "optional": false
       },
       {
@@ -2182,10 +2182,10 @@
       },
       {
         "raw": "klontje roomboter",
-        "amount": null,
-        "unit": "",
-        "name": "klontje roomboter",
-        "key": "klontje roomboter",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "key": "roomboter",
         "optional": false
       },
       {
@@ -2307,10 +2307,10 @@
       },
       {
         "raw": "klontje roomboter",
-        "amount": null,
-        "unit": "",
-        "name": "klontje roomboter",
-        "key": "klontje roomboter",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "key": "roomboter",
         "optional": false
       },
       {
@@ -4531,7 +4531,7 @@
       {
         "raw": "1 ei",
         "amount": 1,
-        "unit": "",
+        "unit": "stuk",
         "name": "ei",
         "key": "ei",
         "optional": false
@@ -4649,7 +4649,7 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "1tlroomboter",
+        "raw": "1tl roomboter",
         "amount": 1,
         "unit": "tl",
         "name": "roomboter",
@@ -5274,10 +5274,10 @@
       },
       {
         "raw": "klontje roomboter",
-        "amount": null,
-        "unit": "",
-        "name": "klontje roomboter",
-        "key": "klontje roomboter",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "key": "roomboter",
         "optional": false
       },
       {
@@ -6349,7 +6349,7 @@
       {
         "raw": "1 ei",
         "amount": 1,
-        "unit": "",
+        "unit": "stuk",
         "name": "ei",
         "key": "ei",
         "optional": false
@@ -6426,10 +6426,10 @@
       },
       {
         "raw": "klontje roomboter",
-        "amount": null,
-        "unit": "",
-        "name": "klontje roomboter",
-        "key": "klontje roomboter",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "key": "roomboter",
         "optional": false
       },
       {

@@ -267,7 +267,7 @@ function normalizeShoppingIngredient(ingredient) {
   const name = String(ingredient.name || "").toLocaleLowerCase("nl").trim();
   let raw = String(ingredient.raw || "").toLocaleLowerCase("nl").trim();
   if (name === "water") return { ...ingredient, amount: null, unit: "", name: "water", key: "water" };
-  if (name === "ei" || name === "eieren") return { ...ingredient, amount: ingredient.amount, unit: "stuk", name: "ei", key: "ei" };
+  if (name === "ei" || name === "eieren") return { ...ingredient, name: "ei", key: "ei" };
   if (name === "halve komkommer" || raw === "halve komkommer") {
     return { ...ingredient, amount: 0.5, unit: "stuk", name: "komkommer", key: "komkommer" };
   }
@@ -529,7 +529,7 @@ function sortedShoppingItems() {
 
 function formatIngredientLabel(item) {
   const normalized = normalizeShoppingIngredient(item);
-  const displayUnit = normalized.name === "ei" ? "" : formatIngredientUnit(normalized.unit, normalized.amount);
+  const displayUnit = formatIngredientUnit(normalized.unit, normalized.amount);
   const amount = normalized.amount == null ? "" : formatIngredientAmount(normalized.amount) + (displayUnit ? " " + displayUnit : "");
   const range = parseAmountRange(normalized.amount);
   const displayName = normalized.name === "ei" && (!range || range.min !== 1 || range.max !== 1) ? "eieren" : normalized.name;
