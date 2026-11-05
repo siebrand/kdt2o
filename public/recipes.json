@@ -101,8 +101,8 @@
           },
           {
             "raw": "1 tl zout",
-            "amount": 1,
-            "unit": "tl",
+            "amount": null,
+            "unit": null,
             "name": "zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
@@ -111,7 +111,7 @@
             "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaanse of Provençaalse kruiden",
             "amount": 3,
             "unit": "el",
-            "name": "gedroogde kruiden naar keuze (Italiaanse of Provençaalse kruiden)",
+            "name": "gedroogde Italiaanse kruiden",
             "optional": false,
             "category": "Kruiden en smaakmakers"
           }
@@ -214,8 +214,8 @@
       },
       {
         "raw": "7 el Griekse yoghurt",
-        "amount": 7,
-        "unit": "el",
+        "amount": 100,
+        "unit": "ml",
         "name": "Griekse yoghurt",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -297,15 +297,15 @@
         ]
       },
       {
-        "raw": "kaneel",
-        "amount": null,
-        "unit": "",
-        "name": "kaneel",
+        "raw": "kaneelpoeder",
+        "amount": 1,
+        "unit": "tl",
+        "name": "kaneelpoeder",
         "optional": true,
         "category": "Kruiden en smaakmakers"
       }
     ],
-    "method": "Rasp de wortel en doe dit samen met het amandelmeel, de eieren, het bakpoeder en 3 el griekse yoghurt in een kom en roer dit goed door met een vork. Verhit een beetje olijfolie of roomboter in een koekenpan en schep met een kleine soeplepel wat beslag in de pan, zodat er kleine pannenkoekjes ontstaan. Bak de pannenkoekjes op middelhoog vuur en draai ze om zodra er bubbels aan de bovenkant verschijnen. Serveer de pannenkoekjes met frambozen of aardbeien en de rest van de griekse yoghurt en de noten er overheen. Strooi eventueel wat kaneel over de pannenkoekjes bij het serveren voor extra smaak.",
+    "method": "Rasp de wortel en doe dit samen met het amandelmeel, de eieren, het bakpoeder en 3 el Griekse yoghurt in een kom en roer dit goed door met een vork. Verhit een beetje olijfolie of roomboter in een koekenpan en schep met een kleine soeplepel wat beslag in de pan, zodat er kleine pannenkoekjes ontstaan. Bak de pannenkoekjes op middelhoog vuur en draai ze om zodra er bubbels aan de bovenkant verschijnen. Serveer de pannenkoekjes met frambozen of aardbeien en de rest van de Griekse yoghurt en de noten er overheen. Strooi eventueel wat kaneel over de pannenkoekjes bij het serveren voor extra smaak.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -707,7 +707,7 @@
         "raw": "50 gram granola (ongeveer 2 handjes)",
         "amount": 50,
         "unit": "gram",
-        "name": "granola (ongeveer 2 handjes)",
+        "name": "granola",
         "componentId": "granola",
         "optional": false,
         "category": "Brood en ontbijt"
@@ -760,10 +760,10 @@
             "category": "Houdbare producten"
           },
           {
-            "raw": "kaneel",
-            "amount": null,
-            "unit": "",
-            "name": "kaneel",
+            "raw": "kaneelpoeder",
+            "amount": 1,
+            "unit": "tl",
+            "name": "kaneelpoeder",
             "optional": false,
             "category": "Kruiden en smaakmakers"
           }
@@ -805,10 +805,10 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "2 el (gebroken) lijnzaad",
-        "amount": 2,
-        "unit": "el",
-        "name": "(gebroken) lijnzaad",
+        "raw": "2 el gebroken lijnzaad",
+        "amount": 20,
+        "unit": "gram",
+        "name": "gebroken lijnzaad",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -830,8 +830,8 @@
       },
       {
         "raw": "kaneelpoeder naar smaak",
-        "amount": null,
-        "unit": "",
+        "amount": 1,
+        "unit": "tl",
         "name": "kaneelpoeder",
         "optional": true,
         "category": "Kruiden en smaakmakers"
@@ -1853,7 +1853,7 @@
         "raw": "100 gram granola (ongeveer 4 handjes)",
         "amount": 100,
         "unit": "gram",
-        "name": "granola (ongeveer 4 handjes)",
+        "name": "granola",
         "componentId": "granola",
         "optional": false,
         "category": "Brood en ontbijt"
@@ -2102,9 +2102,9 @@
       },
       {
         "raw": "4 el geraspte Parmezaanse kaas",
-        "amount": 4,
-        "unit": "el",
-        "name": "geraspte Parmezaanse kaas",
+        "amount": 30,
+        "unit": "gram",
+        "name": "Parmezaanse kaas",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -2330,7 +2330,7 @@
         "raw": "60 gram harde geitenkaas",
         "amount": 60,
         "unit": "gram",
-        "name": "harde geitenkaas",
+        "name": "geitenkaas (hard)",
         "optional": false,
         "category": "Zuivel en eieren"
       }
@@ -2721,10 +2721,10 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "gemengde bladsla",
-        "amount": null,
-        "unit": "",
-        "name": "gemengde bladsla",
+        "raw": "(gemengde) groene bladsla",
+        "amount": 50,
+        "unit": "gram",
+        "name": "(gemengde) groene bladsla",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3065,10 +3065,10 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "bladsla",
+        "raw": "(gemengde) groene bladsla",
         "amount": 50,
         "unit": "gram",
-        "name": "bladsla",
+        "name": "(gemengde) groene bladsla",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3092,7 +3092,7 @@
         "raw": "100 gram zachte geitenkaas",
         "amount": 100,
         "unit": "gram",
-        "name": "zachte geitenkaas",
+        "name": "geitenkaas (zacht)",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -3105,10 +3105,10 @@
         "category": "Brood en ontbijt"
       },
       {
-        "raw": "2 stuks fruit (zie overzicht weekmenu)",
+        "raw": "2 stuks fruit",
         "amount": 2,
         "unit": "stuk",
-        "name": "fruit (zie overzicht weekmenu)",
+        "name": "fruit",
         "optional": false,
         "category": "Groente en fruit"
       }
@@ -3253,10 +3253,10 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "100 gram gemengde groene bladsla naar keuze",
+        "raw": "100 gram (gemengde) groene bladsla",
         "amount": 100,
         "unit": "gram",
-        "name": "gemengde groene bladsla",
+        "name": "(gemengde) groene bladsla",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3293,10 +3293,10 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "20 gram parmezaanse kaas",
+        "raw": "20 gram Parmezaanse kaas",
         "amount": 20,
         "unit": "gram",
-        "name": "parmezaanse kaas",
+        "name": "Parmezaanse kaas",
         "optional": false,
         "category": "Zuivel en eieren"
       }
@@ -3348,7 +3348,7 @@
         "raw": "1 blik tomatenblokjes (400 gram)",
         "amount": 1,
         "unit": "blik",
-        "name": "tomatenblokjes (400 gram)",
+        "name": "tomaat (blokjes)",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3422,8 +3422,8 @@
       },
       {
         "raw": "2 eetlepels roomkaas",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "gram",
         "name": "roomkaas",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -3514,8 +3514,8 @@
       },
       {
         "raw": "2 eetlepels roomkaas",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "gram",
         "name": "roomkaas",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -3543,14 +3543,6 @@
         "name": "peper",
         "optional": false,
         "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "Groene salade voorbeeld:",
-        "amount": null,
-        "unit": "",
-        "name": "Groene salade voorbeeld",
-        "optional": false,
-        "category": "Groente en fruit"
       },
       {
         "raw": "100g veldsla",
@@ -3638,9 +3630,9 @@
       },
       {
         "raw": "scheutje volle melk",
-        "amount": null,
-        "unit": "",
-        "name": "scheutje volle melk",
+        "amount": 30,
+        "unit": "ml",
+        "name": "volle melk",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -3669,10 +3661,10 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "2 a 3 handjes bladsla",
-        "amount": 2,
-        "unit": "",
-        "name": "a 3 handjes bladsla",
+        "raw": "2 a 3 handjes (gemengde) groene bladsla",
+        "amount": 30,
+        "unit": "gram",
+        "name": "(gemengde) groene bladsla",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3786,9 +3778,9 @@
       },
       {
         "raw": "2 el volle (Griekse) yoghurt",
-        "amount": 2,
-        "unit": "el",
-        "name": "volle (Griekse) yoghurt",
+        "amount": 30,
+        "unit": "ml",
+        "name": "yoghurt",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -4066,9 +4058,9 @@
       },
       {
         "raw": "2 kleine handjes verse peterselie",
-        "amount": 2,
-        "unit": "",
-        "name": "kleine handjes verse peterselie",
+        "amount": 15,
+        "unit": "gram",
+        "name": "verse peterselie",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -4136,7 +4128,7 @@
         "raw": "1 blik tonijn in olijfolie (150 gram)",
         "amount": 150,
         "unit": "gram",
-        "name": "tonijn uit blik in olijfolie",
+        "name": "tonijn in olijfolie uit blik",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -4173,8 +4165,8 @@
         "alternatives": [
           {
             "raw": "1 el yoghurt",
-            "amount": 1,
-            "unit": "el",
+            "amount": 15,
+            "unit": "ml",
             "name": "yoghurt",
             "optional": true,
             "category": "Zuivel en eieren"
@@ -4183,10 +4175,10 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "20 gram groene (gemengde) bladsla",
+        "raw": "20 gram groene bladsla",
         "amount": 20,
         "unit": "gram",
-        "name": "groene (gemengde) bladsla",
+        "name": "(gemengde) groene bladsla",
         "optional": true,
         "category": "Groente en fruit"
       },
@@ -4215,8 +4207,8 @@
         "alternatives": [
           {
             "raw": "1 el yoghurt",
-            "amount": 1,
-            "unit": "el",
+            "amount": 15,
+            "unit": "ml",
             "name": "yoghurt",
             "optional": true,
             "category": "Zuivel en eieren"
@@ -4464,8 +4456,8 @@
       },
       {
         "raw": "1 blik tomatenblokjes (400 gram)",
-        "amount": 400,
-        "unit": "gram",
+        "amount": 1,
+        "unit": "blik",
         "name": "tomaat (blokjes)",
         "optional": false,
         "category": "Groente en fruit"
@@ -4896,10 +4888,10 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "100 gram parmezaanse kaas",
+        "raw": "100 gram Parmezaanse kaas",
         "amount": 100,
         "unit": "gram",
-        "name": "parmezaanse kaas",
+        "name": "Parmezaanse kaas",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -4923,7 +4915,7 @@
         "raw": "1 blik tomatenblokjes",
         "amount": 1,
         "unit": "blik",
-        "name": "tomatenblokjes",
+        "name": "tomaat (blokjes)",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -4936,10 +4928,10 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "2 el Italiaanse kruiden",
+        "raw": "2 el gedroogde Italiaanse kruiden",
         "amount": 2,
         "unit": "el",
-        "name": "Italiaanse kruiden",
+        "name": "gedroogde Italiaanse kruiden",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -4987,7 +4979,7 @@
         "raw": "tonijn uit blik",
         "amount": 150,
         "unit": "gram",
-        "name": "tonijn uit blik in olijfolie",
+        "name": "tonijn in olijfolie uit blik",
         "optional": true,
         "category": "Vlees, vis en vleesvervangers"
       }
@@ -5235,8 +5227,8 @@
       },
       {
         "raw": "4 el Parmezaanse kaas",
-        "amount": 4,
-        "unit": "el",
+        "amount": 30,
+        "unit": "gram",
         "name": "Parmezaanse kaas",
         "optional": false,
         "alternatives": [
@@ -5267,7 +5259,7 @@
         "raw": "1/2 sinaasappel (sap en rasp)",
         "amount": 0.5,
         "unit": "stuk",
-        "name": "sinaasappel (sap en rasp)",
+        "name": "sinaasappel",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -5306,8 +5298,8 @@
       {
         "raw": "1 stronk broccoli (ca. 500 gram)",
         "amount": 1,
-        "unit": "",
-        "name": "stronk broccoli (ca. 500 gram)",
+        "unit": "stuk",
+        "name": "broccoli",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -5743,7 +5735,7 @@
         "raw": "50 gram geraspte Parmezaanse kaas",
         "amount": 50,
         "unit": "gram",
-        "name": "geraspte Parmezaanse kaas",
+        "name": "Parmezaanse kaas",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -5772,7 +5764,7 @@
         "category": "Groente en fruit"
       }
     ],
-    "method": "Was de bloemkool en breek in roosjes. Maal deze fijn in een keukenmachine of met een staafmixer. Was de kruiden en snijd deze fijn. Doe een scheut olijfolie in de pan en bak de bloemkool al omscheppend in 3-4 minuten gaar. Voeg de kruiden toe en haal van het vuur. Breng op smaak met peper en (jozo)zout en het sap van een citroen. Zet twee kommen klaar. Kluts in de ene kom de eieren samen met de geraspte kaas. Doe in de andere kom het meel. Doe een flinke scheut olijfolie in de pan en zet op middelhoog vuur. Sla de kalkoen eventueel wat platter, zodat deze sneller gaart. Bestrooi de kalkoenfilet met peper en (jozo)zout en dan met meel (of wentel de filet in het meel en schud overtollig meel af) en haal dan door het ei-kaasmengsel. Zet het vuur niet te hoog anders verbrandt de kaas. Schud de pan af en toe heen en weer en braad de filets in ongeveer 15 minuten gaar. Keer halverwege om. Serveer de kalkoenfilet met de bloemkool couscous en de groene salade met olijfolie en wat citroensap besprenkeld. Tip: Vervang de Parmezaanse kaas door boerenkaas. Liever vegetarisch? Vervang de eieren, parmezaanse kaas, meel en kalkoenfilet voor: 200 gram lima bonen (of witte bonen) 5 zongedroogde tomaten 1eltahin Spoel de lima bonen af onder de kraan en voeg samen met in reepjes gesneden zongedroogde tomaatjes toe aan de bloemkoolcouscous. Besprenkel met tahin.",
+    "method": "Was de bloemkool en breek in roosjes. Maal deze fijn in een keukenmachine of met een staafmixer. Was de kruiden en snijd deze fijn. Doe een scheut olijfolie in de pan en bak de bloemkool al omscheppend in 3-4 minuten gaar. Voeg de kruiden toe en haal van het vuur. Breng op smaak met peper en (jozo)zout en het sap van een citroen. Zet twee kommen klaar. Kluts in de ene kom de eieren samen met de geraspte kaas. Doe in de andere kom het meel. Doe een flinke scheut olijfolie in de pan en zet op middelhoog vuur. Sla de kalkoen eventueel wat platter, zodat deze sneller gaart. Bestrooi de kalkoenfilet met peper en (jozo)zout en dan met meel (of wentel de filet in het meel en schud overtollig meel af) en haal dan door het ei-kaasmengsel. Zet het vuur niet te hoog anders verbrandt de kaas. Schud de pan af en toe heen en weer en braad de filets in ongeveer 15 minuten gaar. Keer halverwege om. Serveer de kalkoenfilet met de bloemkool couscous en de groene salade met olijfolie en wat citroensap besprenkeld. Tip: Vervang de Parmezaanse kaas door boerenkaas. Liever vegetarisch? Vervang de eieren, Parmezaanse kaas, meel en kalkoenfilet voor: 200 gram lima bonen (of witte bonen) 5 zongedroogde tomaten 1eltahin Spoel de lima bonen af onder de kraan en voeg samen met in reepjes gesneden zongedroogde tomaatjes toe aan de bloemkoolcouscous. Besprenkel met tahin.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -5924,10 +5916,10 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "250 ml room (ongeklopt)",
+        "raw": "250 ml slagroom (ongeklopt)",
         "amount": 250,
         "unit": "ml",
-        "name": "room (ongeklopt)",
+        "name": "slagroom",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -5935,7 +5927,7 @@
         "raw": "50 gram kaas (geraspt)",
         "amount": 50,
         "unit": "gram",
-        "name": "kaas (geraspt)",
+        "name": "kaas",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -6259,8 +6251,8 @@
     "ingredients": [
       {
         "raw": "2 el yoghurt",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "yoghurt",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -6442,8 +6434,8 @@
       },
       {
         "raw": "4 el Parmezaanse kaas",
-        "amount": 4,
-        "unit": "el",
+        "amount": 30,
+        "unit": "gram",
         "name": "Parmezaanse kaas",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -6481,9 +6473,9 @@
     "ingredients": [
       {
         "raw": "1 pak van 400 gram courgette spaghetti (of 2 kleine courgettes)",
-        "amount": 1,
-        "unit": "",
-        "name": "pak van 400 gram courgette spaghetti (of 2 kleine courgettes)",
+        "amount": 400,
+        "unit": "gram",
+        "name": "courgetti (sliertjes courgette)",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -7004,10 +6996,10 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "1 tl kaneel",
+        "raw": "1 tl kaneelpoeder",
         "amount": 1,
         "unit": "tl",
-        "name": "kaneel",
+        "name": "kaneelpoeder",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
