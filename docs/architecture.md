@@ -12,6 +12,7 @@ or server-side planning state.
 4. The browser aggregates compatible ingredients and creates the PDF with jsPDF.
 5. The browser can fill empty meal slots randomly and can encode a plan in a
    shareable URL without sending planning data to a server.
+6. The browser can filter one recipe by meal and generate a single-recipe PDF.
 
 Recipe text is treated as data and inserted with text APIs, never as HTML.
 

@@ -10,6 +10,9 @@ const status = document.querySelector("#status");
 const search = document.querySelector("#search");
 const randomFillButton = document.querySelector("#random-fill");
 const copyMenuLinkButton = document.querySelector("#copy-menu-link");
+const singleRecipeCategory = document.querySelector("#single-recipe-category");
+const singleRecipeQuery = document.querySelector("#single-recipe-query");
+const singleRecipeResults = document.querySelector("#single-recipe-results");
 const downloadButton = document.querySelector("#download-pdf");
 const shoppingListButton = document.querySelector("#show-shopping-list");
 const shoppingListView = document.querySelector("#shopping-list-view");
@@ -225,6 +228,39 @@ function renderOptions() {
     button.addEventListener("click", () => chooseRecipe(recipe));
     card.append(preview, title, preparationTime, button);
     options.append(card);
+  });
+}
+
+function renderSingleRecipeSearch() {
+  singleRecipeResults.replaceChildren();
+  const query = singleRecipeQuery.value.trim().toLocaleLowerCase("nl");
+  const visible = state.recipes.filter((recipe) => recipe.category === singleRecipeCategory.value &&
+    (!query || recipe.title.toLocaleLowerCase("nl").includes(query)));
+  if (!visible.length) {
+    singleRecipeResults.append(Object.assign(document.createElement("p"), { className: "muted", textContent: "Geen recepten gevonden." }));
+    return;
+  }
+  visible.forEach((recipe) => {
+    const card = document.createElement("article");
+    card.className = "recipe-card";
+    const title = document.createElement("h3");
+    title.textContent = recipe.title;
+    const preparationTime = document.createElement("p");
+    preparationTime.className = "recipe-card-meta";
+    preparationTime.textContent = "Bereiding: circa " + recipe.preparationTime + " minuten";
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "button";
+    button.style.position = "static";
+    button.style.width = "auto";
+    button.style.height = "auto";
+    button.style.padding = ".55rem .8rem";
+    button.style.fontSize = ".9rem";
+    button.style.display = "inline-block";
+    button.textContent = "PDF downloaden";
+    button.addEventListener("click", () => createSingleRecipePdf(recipe));
+    card.append(title, preparationTime, button);
+    singleRecipeResults.append(card);
   });
 }
 
@@ -921,6 +957,51 @@ async function createPdf() {
   doc.save("weekplanning.pdf");
 }
 
+async function createSingleRecipePdf(recipe) {
+  if (!window.jspdf?.jsPDF) {
+    status.textContent = "De PDF-module kon niet worden geladen. Controleer je internetverbinding.";
+    return;
+  }
+  const doc = new window.jspdf.jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+  const margin = 16;
+  const width = doc.internal.pageSize.getWidth();
+  const height = doc.internal.pageSize.getHeight();
+  let y = 24;
+  const ensureSpace = (required = 12) => {
+    if (y + required > height - margin) { doc.addPage(); y = margin; }
+  };
+  const addSection = (heading, items) => {
+    if (!items.length) return;
+    ensureSpace(16);
+    doc.setFontSize(12);
+    doc.setTextColor(24, 63, 50);
+    doc.text(heading, margin, y);
+    y += 7;
+    doc.setFontSize(10);
+    doc.setTextColor(40, 45, 40);
+    items.forEach((item) => {
+      const lines = doc.splitTextToSize("• " + item, width - margin * 2);
+      ensureSpace(lines.length * 5 + 2);
+      doc.text(lines, margin, y);
+      y += lines.length * 5;
+    });
+    y += 4;
+  };
+  doc.setTextColor(24, 63, 50);
+  doc.setFont("times", "bold");
+  doc.setFontSize(18);
+  y = addWrapped(doc, recipe.title, margin, y, width - margin * 2, 7) + 3;
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(10);
+  doc.text(recipe.category + " · " + recipe.portions + " personen · Bereiding: circa " + recipe.preparationTime + " minuten", margin, y);
+  y += 10;
+  addSection("Ingrediënten", (recipe.ingredients || []).map(ingredientLabel));
+  (recipe.components || []).forEach((component) => addSection("Subrecept · " + component.title, (component.ingredients || []).map(ingredientLabel)));
+  addSection("Benodigdheden", recipeEquipment(recipe));
+  addSection("Bereidingswijze", methodSteps(recipeMethod(recipe)).map((step, index) => (index + 1) + ". " + step));
+  doc.save((recipe.id || "recept") + ".pdf");
+}
+
 document.querySelector("#clear-plan").addEventListener("click", () => {
   state.plan = {};
   savePlan();
@@ -929,6 +1010,8 @@ document.querySelector("#clear-plan").addEventListener("click", () => {
 randomFillButton.addEventListener("click", fillRandomPlan);
 copyMenuLinkButton.addEventListener("click", copyMenuLink);
 search.addEventListener("input", renderOptions);
+singleRecipeCategory.addEventListener("change", renderSingleRecipeSearch);
+singleRecipeQuery.addEventListener("input", renderSingleRecipeSearch);
 shoppingListButton.addEventListener("click", () => {
   renderShoppingList();
   shoppingListView.hidden = false;
@@ -941,6 +1024,7 @@ fetch("recipes.json")
   .then((recipes) => {
     state.recipes = shuffleRecipes(attachSharedRecipeComponents(recipes).map(addPreparationTime));
     render();
+    renderSingleRecipeSearch();
   })
   .catch(() => {
     status.textContent = "De recepten konden niet worden geladen.";
