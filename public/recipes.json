@@ -1675,8 +1675,8 @@
         "raw": "1 blik artisjokharten op water (uitgelekt 240 g)",
         "amount": 1,
         "unit": "blik",
-        "name": "artisjokharten op water (uitgelekt 240 g)",
-        "key": "artisjokharten op water (uitgelekt 240 g)",
+        "name": "artisjokharten",
+        "key": "artisjokharten",
         "optional": false
       },
       {
@@ -1717,8 +1717,8 @@
         "raw": "4 el pitten en zaden (pompoen-/ zonnebloem-/ pijnboompitten/ etc.)",
         "amount": 4,
         "unit": "el",
-        "name": "pitten en zaden (pompoen-/ zonnebloem-/ pijnboompitten/ etc.)",
-        "key": "pitten en zaden (pompoen-/ zonnebloem-/ pijnboompitten/ etc.)",
+        "name": "pitten en zaden",
+        "key": "pitten en zaden",
         "optional": false
       },
       {
@@ -1762,11 +1762,11 @@
         "optional": false
       },
       {
-        "raw": "1 el balsamico",
+        "raw": "1 el balsamicoazijn",
         "amount": 1,
         "unit": "el",
-        "name": "balsamico",
-        "key": "balsamico",
+        "name": "balsamicoazijn",
+        "key": "balsamicoazijn",
         "optional": false
       },
       {
@@ -2492,8 +2492,8 @@
         "raw": "100 gram bladgroente naar keuze",
         "amount": 100,
         "unit": "gram",
-        "name": "bladgroente naar keuze",
-        "key": "bladgroente naar keuze",
+        "name": "bladgroente",
+        "key": "bladgroente",
         "optional": false
       },
       {
@@ -2559,9 +2559,9 @@
       {
         "raw": "2 puntpaprika’s",
         "amount": 2,
-        "unit": "",
-        "name": "puntpaprika’s",
-        "key": "puntpaprika’s",
+        "unit": "stuk",
+        "name": "puntpaprika",
+        "key": "puntpaprika",
         "optional": false
       },
       {
@@ -2624,8 +2624,8 @@
         "raw": "2 el pitten/zaden naar keuze",
         "amount": 2,
         "unit": "el",
-        "name": "pitten/zaden naar keuze",
-        "key": "pitten/zaden naar keuze",
+        "name": "pitten/zaden",
+        "key": "pitten/zaden",
         "optional": false
       },
       {
@@ -2793,8 +2793,8 @@
         "raw": "1 rode paprika",
         "amount": 1,
         "unit": "",
-        "name": "rode paprika",
-        "key": "rode paprika",
+        "name": "paprika (rood)",
+        "key": "paprika (rood)",
         "optional": false
       },
       {
@@ -2897,16 +2897,16 @@
         "raw": "100 gram gemengde groene bladsla naar keuze",
         "amount": 100,
         "unit": "gram",
-        "name": "gemengde groene bladsla naar keuze",
-        "key": "gemengde groene bladsla naar keuze",
+        "name": "gemengde groene bladsla",
+        "key": "gemengde groene bladsla",
         "optional": false
       },
       {
         "raw": "2 kipdijfilets (ca 150 gram totaal)",
-        "amount": 2,
-        "unit": "",
-        "name": "kipdijfilets (ca 150 gram totaal)",
-        "key": "kipdijfilets (ca 150 gram totaal)",
+        "amount": 150,
+        "unit": "gram",
+        "name": "kipdijfilet",
+        "key": "kipdijfilet",
         "optional": false
       },
       {
@@ -3119,10 +3119,10 @@
       },
       {
         "raw": "halve paprika",
-        "amount": null,
-        "unit": "",
-        "name": "halve paprika",
-        "key": "halve paprika",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "paprika",
+        "key": "paprika",
         "optional": false
       },
       {
@@ -3219,10 +3219,10 @@
       },
       {
         "raw": "halve paprika",
-        "amount": null,
-        "unit": "",
-        "name": "halve paprika",
-        "key": "halve paprika",
+        "amount": 0.5,
+        "unit": "stuk",
+        "name": "paprika",
+        "key": "paprika",
         "optional": false
       },
       {
@@ -3253,8 +3253,8 @@
         "raw": "1 el noten/pitten/zaden naar keuze",
         "amount": 1,
         "unit": "el",
-        "name": "noten/pitten/zaden naar keuze",
-        "key": "noten/pitten/zaden naar keuze",
+        "name": "noten/pitten/zaden",
+        "key": "noten/pitten/zaden",
         "optional": false
       }
     ],
@@ -3369,8 +3369,8 @@
         "raw": "1 el noten/pitten/zaden naar keuze",
         "amount": 1,
         "unit": "el",
-        "name": "noten/pitten/zaden naar keuze",
-        "key": "noten/pitten/zaden naar keuze",
+        "name": "noten/pitten/zaden",
+        "key": "noten/pitten/zaden",
         "optional": false
       }
     ],
@@ -3677,8 +3677,8 @@
         "raw": "2 stuks rode paprika",
         "amount": 2,
         "unit": "stuk",
-        "name": "rode paprika",
-        "key": "rode paprika",
+        "name": "paprika (rood)",
+        "key": "paprika (rood)",
         "optional": false
       },
       {
@@ -4208,9 +4208,9 @@
       {
         "raw": "1 (rode) paprika",
         "amount": 1,
-        "unit": "",
-        "name": "(rode) paprika",
-        "key": "(rode) paprika",
+        "unit": "stuk",
+        "name": "paprika (rood)",
+        "key": "paprika (rood)",
         "optional": false
       },
       {
@@ -4335,8 +4335,8 @@
         "raw": "1 (rode) paprika",
         "amount": 1,
         "unit": "",
-        "name": "(rode) paprika",
-        "key": "(rode) paprika",
+        "name": "paprika (rood)",
+        "key": "paprika (rood)",
         "optional": false
       },
       {
@@ -4413,8 +4413,8 @@
         "raw": "3 rode paprika's",
         "amount": 3,
         "unit": "stuk",
-        "name": "rode paprika",
-        "key": "rode paprika",
+        "name": "paprika (rood)",
+        "key": "paprika (rood)",
         "optional": false
       },
       {
@@ -5094,8 +5094,8 @@
         "raw": "2 rode paprika's",
         "amount": 2,
         "unit": "stuk",
-        "name": "rode paprika",
-        "key": "rode paprika",
+        "name": "paprika (rood)",
+        "key": "paprika (rood)",
         "optional": false
       },
       {
@@ -5268,8 +5268,8 @@
         "raw": "50 gram pijnboompitten (geroosterd)",
         "amount": 50,
         "unit": "gram",
-        "name": "pijnboompitten (geroosterd)",
-        "key": "pijnboompitten (geroosterd)",
+        "name": "pijnboompitten",
+        "key": "pijnboompitten",
         "optional": false
       },
       {
@@ -5710,8 +5710,8 @@
         "raw": "200 gram nasi/bami groenten (prei, paprika, rode ui)",
         "amount": 200,
         "unit": "gram",
-        "name": "nasi/bami groenten (prei, paprika, rode ui)",
-        "key": "nasi/bami groenten (prei, paprika, rode ui)",
+        "name": "nasi/bami groenten",
+        "key": "nasi/bami groenten",
         "optional": false
       },
       {
@@ -6208,8 +6208,8 @@
         "raw": "1/2 flespompoen (zijn makkelijker te snijden)",
         "amount": 0.5,
         "unit": "stuk",
-        "name": "flespompoen (zijn makkelijker te snijden)",
-        "key": "flespompoen (zijn makkelijker te snijden)",
+        "name": "flespompoen",
+        "key": "flespompoen",
         "optional": false
       },
       {
@@ -6412,8 +6412,8 @@
         "raw": "2 rode paprika's",
         "amount": 2,
         "unit": "stuk",
-        "name": "rode paprika",
-        "key": "rode paprika",
+        "name": "paprika (rood)",
+        "key": "paprika (rood)",
         "optional": false
       },
       {
