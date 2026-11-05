@@ -3057,7 +3057,7 @@
         "optional": false
       },
       {
-        "raw": "200 gram gegrilde groenten (kan restjes zijn van eerder deze week) of",
+        "raw": "200 gram gegrilde groenten (kan restjes zijn van eerder deze week)",
         "amount": 200,
         "unit": "gram",
         "name": "gegrilde groenten",
@@ -3066,8 +3066,8 @@
       },
       {
         "raw": "bladsla",
-        "amount": null,
-        "unit": "",
+        "amount": 50,
+        "unit": "gram",
         "name": "bladsla",
         "key": "bladsla",
         "optional": false
@@ -3084,8 +3084,8 @@
         "raw": "4 el zaden en pitten (bijv. zonnenbloempitten/ pompoenpitten/ etc.)",
         "amount": 4,
         "unit": "el",
-        "name": "zaden en pitten (bijv. zonnenbloempitten/ pompoenpitten/ etc.)",
-        "key": "zaden en pitten (bijv. zonnenbloempitten/ pompoenpitten/ etc.)",
+        "name": "zaden/pitten",
+        "key": "zaden/pitten",
         "optional": false
       },
       {
@@ -3100,8 +3100,8 @@
         "raw": "2 vezelrijke crackers",
         "amount": 2,
         "unit": "",
-        "name": "crackers",
-        "key": "crackers",
+        "name": "cracker",
+        "key": "cracker",
         "optional": false
       },
       {
@@ -3450,14 +3450,6 @@
         "unit": "stuk",
         "name": "cherrytomaten",
         "key": "cherrytomaten",
-        "optional": false
-      },
-      {
-        "raw": "Groene salade voorbeeld:",
-        "amount": null,
-        "unit": "",
-        "name": "Groene salade voorbeeld",
-        "key": "groene salade voorbeeld",
         "optional": false
       },
       {
@@ -6332,11 +6324,11 @@
         "optional": false
       },
       {
-        "raw": "4 el sojasaus (suikervrije variant)",
+        "raw": "4 el sojasaus",
         "amount": 4,
         "unit": "el",
-        "name": "sojasaus (suikervrije variant)",
-        "key": "sojasaus (suikervrije variant)",
+        "name": "sojasaus",
+        "key": "sojasaus",
         "optional": false
       },
       {
