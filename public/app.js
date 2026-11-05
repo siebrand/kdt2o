@@ -373,9 +373,6 @@ function normalizeShoppingIngredient(ingredient) {
     return { ...ingredient, name: "komkommer" };
   }
   if (raw.startsWith("1/, ")) raw = "1/2 " + raw.slice(4);
-  if (name.includes("roomboter")) {
-    return { ...ingredient, amount: ingredient.amount ?? 1, unit: "el", name: "roomboter" };
-  }
   const descriptiveMeasures = [
     { pattern: /^(?:een )?scheut(?:je)? (.+)$/, amount: 1, unit: "el" },
     { pattern: /^snufje (.+)$/, amount: 1, unit: "tl" },
