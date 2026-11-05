@@ -15,7 +15,14 @@
         "key": "lijnzaadcracker",
         "optional": false,
         "alternatives": [
-          { "raw": "4 kant-en-klare lijnzaadcrackers", "amount": 4, "unit": "stuk", "name": "kant-en-klare lijnzaadcracker", "key": "kant-en-klare lijnzaadcracker", "optional": false }
+          {
+            "raw": "4 kant-en-klare lijnzaadcrackers",
+            "amount": 4,
+            "unit": "stuk",
+            "name": "kant-en-klare lijnzaadcracker",
+            "key": "kant-en-klare lijnzaadcracker",
+            "optional": false
+          }
         ]
       },
       {
@@ -68,13 +75,51 @@
         "optional": true,
         "availabilityNote": "Heb je al lijnzaadcrackers? Sla dit subrecept dan over.",
         "ingredients": [
-          { "raw": "150 gram gebroken lijnzaad", "amount": 150, "unit": "gram", "name": "gebroken lijnzaad", "key": "gebroken lijnzaad", "optional": false },
-          { "raw": "100 gram zonnebloempitten", "amount": 100, "unit": "gram", "name": "zonnebloempitten", "key": "zonnebloempitten", "optional": false },
-          { "raw": "180 ml water", "amount": 180, "unit": "ml", "name": "water", "key": "water", "optional": false },
-          { "raw": "1 tl zout", "amount": 1, "unit": "tl", "name": "zout", "key": "zout", "optional": false },
-          { "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaanse of Provençaalse kruiden", "amount": 3, "unit": "el", "name": "gedroogde kruiden naar keuze (Italiaanse of Provençaalse kruiden)", "key": "gedroogde kruiden naar keuze (italiaanse of provençaalse kruiden)", "optional": false }
+          {
+            "raw": "150 gram gebroken lijnzaad",
+            "amount": 150,
+            "unit": "gram",
+            "name": "gebroken lijnzaad",
+            "key": "gebroken lijnzaad",
+            "optional": false
+          },
+          {
+            "raw": "100 gram zonnebloempitten",
+            "amount": 100,
+            "unit": "gram",
+            "name": "zonnebloempitten",
+            "key": "zonnebloempitten",
+            "optional": false
+          },
+          {
+            "raw": "180 ml water",
+            "amount": 180,
+            "unit": "ml",
+            "name": "water",
+            "key": "water",
+            "optional": false
+          },
+          {
+            "raw": "1 tl zout",
+            "amount": 1,
+            "unit": "tl",
+            "name": "zout",
+            "key": "zout",
+            "optional": false
+          },
+          {
+            "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaanse of Provençaalse kruiden",
+            "amount": 3,
+            "unit": "el",
+            "name": "gedroogde kruiden naar keuze (Italiaanse of Provençaalse kruiden)",
+            "key": "gedroogde kruiden naar keuze (italiaanse of provençaalse kruiden)",
+            "optional": false
+          }
         ],
-        "equipment": ["bakpapier", "deegroller of fles"],
+        "equipment": [
+          "bakpapier",
+          "deegroller of fles"
+        ],
         "method": "Meng de zaden en pitten met het zout in een kom en voeg het water en de gedroogde kruiden toe. Laat dit 30 minuten staan. Verwarm de oven voor op 180 °C. Bekleed een bakplaat met bakpapier. Verdeel het beslag over de bakplaat, leg er bakpapier overheen en rol uit tot 2-3 mm dikte. Verwijder het bovenste vel bakpapier en bak circa 25 minuten tot knapperig. Snijd de crackerplak na het bakken in circa 10 gelijke crackers en laat ze afkoelen. Keer ze eventueel om en verwarm ze nog even als ze niet droog genoeg zijn. Maak de crackers de avond van tevoren al klaar. In een afgesloten bak kunnen de crackers dagenlang goed blijven."
       }
     ],
@@ -203,8 +248,8 @@
             "raw": "1 el olijfolie",
             "amount": 1,
             "unit": "el",
-            "name": "olijfolie",
-            "key": "olijfolie",
+            "name": "extra vierge olijfolie",
+            "key": "extra vierge olijfolie",
             "optional": false
           }
         ]
@@ -462,8 +507,8 @@
         "raw": "2 eetlepels pitten/noten/zaden naar keuze",
         "amount": 2,
         "unit": "el",
-        "name": "pitten/noten/zaden naar keuze",
-        "key": "pitten/noten/zaden naar keuze",
+        "name": "pitten/zaden",
+        "key": "pitten/zaden",
         "optional": false
       },
       {
@@ -510,7 +555,16 @@
         "name": "cracker",
         "key": "cracker",
         "optional": false,
-        "alternatives": [{"raw": "2 lijnzaadcrackers", "amount": 2, "unit": "stuk", "name": "lijnzaadcracker", "key": "lijnzaadcracker", "optional": false}]
+        "alternatives": [
+          {
+            "raw": "2 lijnzaadcrackers",
+            "amount": 2,
+            "unit": "stuk",
+            "name": "lijnzaadcracker",
+            "key": "lijnzaadcracker",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "1 paprika",
@@ -625,7 +679,9 @@
         "optional": true
       }
     ],
-    "equipment": ["muffinbakplaat voor 12 muffins"],
+    "equipment": [
+      "muffinbakplaat voor 12 muffins"
+    ],
     "method": "Verwarm de oven op 180 graden. Vet de muffinbakplaat in met roomboter. Snijd de ui heel fijn en fruit deze zachtjes aan in een pan. Haal van het vuur en doe de ui in een kom. Was de broccoli en breek deze in heel kleine roosjes en voeg die bij de ui. Snijd de zongedroogde tomaatjes heel fijn en voeg dit ook toe aan de broccoli en ul. Voeg vervolgens de eieren, geraspte kaas, peper, (jozo)zout en Italiaanse kruiden toe. Optioneel kun je ook amandelschaafsel toevoegen. Schep het geheel door zodat alle ingredienten goed gemixt zijn. Verdeel het mengsel over de muffinbakplaat of de vormpjes. Bak de muffins gaar in 25-35 minuten. Prik met een houten satéstokje of vork in het midden van de muffin om te kijken of ze gaar zijn. Er mag geen nat mengsel aan het stokje blijven hangen. Serveer direct warm of laat ze afkoelen. Bewaar de muffins in een afgesloten bak in de koelkost. Tip: Maak eventueel een dubbele portie om te bewaren.",
     "harmonizerVersion": "1",
     "harmonized": false
@@ -712,7 +768,10 @@
             "optional": false
           }
         ],
-        "equipment": ["bakplaat", "bakpapier"],
+        "equipment": [
+          "bakplaat",
+          "bakpapier"
+        ],
         "method": "Verwarm de oven voor op 170 graden. Doe alle ingrediënten in een kom en meng alles goed door elkaar. Spreid het mengsel uit over een met bakpapier beklede bakplaat. Bak de granola 20 tot 30 minuten. Schep het mengsel na 10 minuten om om aanbranden te voorkomen. Laat de granola afkoelen en bewaar deze in een afsluitbare pot."
       }
     ],
@@ -850,9 +909,9 @@
         ]
       },
       {
-        "raw": "250 ml volle kwark",
+        "raw": "250 gr volle kwark",
         "amount": 250,
-        "unit": "ml",
+        "unit": "gram",
         "name": "volle kwark",
         "key": "volle kwark",
         "optional": false
@@ -1042,11 +1101,11 @@
         "optional": false,
         "alternatives": [
           {
-          "raw": "1 groene paprika",
+            "raw": "1 groene paprika",
             "amount": 1,
             "unit": "stuk",
-          "name": "paprika (groen)",
-          "key": "paprika (groen)",
+            "name": "paprika (groen)",
+            "key": "paprika (groen)",
             "optional": false
           }
         ]
@@ -1122,7 +1181,15 @@
         "componentId": "notenbrood",
         "optional": false,
         "alternatives": [
-          { "raw": "notenbrood maken", "amount": null, "unit": "", "name": "notenbrood maken", "key": "notenbrood maken", "componentId": "notenbrood", "optional": false }
+          {
+            "raw": "notenbrood maken",
+            "amount": null,
+            "unit": "",
+            "name": "notenbrood maken",
+            "key": "notenbrood maken",
+            "componentId": "notenbrood",
+            "optional": false
+          }
         ]
       },
       {
@@ -1142,18 +1209,91 @@
         "yieldUnit": "brood",
         "yieldNote": "circa 12 plakjes",
         "ingredients": [
-          { "raw": "100 gram amandelen", "amount": 100, "unit": "gram", "name": "amandelen", "key": "amandelen", "optional": false },
-          { "raw": "100 gram hazelnoten", "amount": 100, "unit": "gram", "name": "hazelnoten", "key": "hazelnoten", "optional": false },
-          { "raw": "100 gram sesamzaad", "amount": 100, "unit": "gram", "name": "sesamzaad", "key": "sesamzaad", "optional": false },
-          { "raw": "100 gram zonnebloempitten", "amount": 100, "unit": "gram", "name": "zonnebloempitten", "key": "zonnebloempitten", "optional": false },
-          { "raw": "100 gram lijnzaad", "amount": 100, "unit": "gram", "name": "lijnzaad", "key": "lijnzaad", "optional": false },
-          { "raw": "100 gram pompoenpitten", "amount": 100, "unit": "gram", "name": "pompoenpitten", "key": "pompoenpitten", "optional": false },
-          { "raw": "1 tl (jozo)zout", "amount": 1, "unit": "tl", "name": "(jozo)zout", "key": "(jozo)zout", "optional": false },
-          { "raw": "2 el extra vierge olijfolie", "amount": 2, "unit": "el", "name": "extra vierge olijfolie", "key": "extra vierge olijfolie", "optional": false },
-          { "raw": "5 eieren", "amount": 5, "unit": "stuk", "name": "eieren", "key": "eieren", "optional": false },
-          { "raw": "100 gram pure chocolade (minimaal 70% cacao)", "amount": 100, "unit": "gram", "name": "pure chocolade", "key": "pure chocolade", "optional": true }
+          {
+            "raw": "100 gram amandelen",
+            "amount": 100,
+            "unit": "gram",
+            "name": "amandelen",
+            "key": "amandelen",
+            "optional": false
+          },
+          {
+            "raw": "100 gram hazelnoten",
+            "amount": 100,
+            "unit": "gram",
+            "name": "hazelnoten",
+            "key": "hazelnoten",
+            "optional": false
+          },
+          {
+            "raw": "100 gram sesamzaad",
+            "amount": 100,
+            "unit": "gram",
+            "name": "sesamzaad",
+            "key": "sesamzaad",
+            "optional": false
+          },
+          {
+            "raw": "100 gram zonnebloempitten",
+            "amount": 100,
+            "unit": "gram",
+            "name": "zonnebloempitten",
+            "key": "zonnebloempitten",
+            "optional": false
+          },
+          {
+            "raw": "100 gram lijnzaad",
+            "amount": 100,
+            "unit": "gram",
+            "name": "lijnzaad",
+            "key": "lijnzaad",
+            "optional": false
+          },
+          {
+            "raw": "100 gram pompoenpitten",
+            "amount": 100,
+            "unit": "gram",
+            "name": "pompoenpitten",
+            "key": "pompoenpitten",
+            "optional": false
+          },
+          {
+            "raw": "1 tl (jozo)zout",
+            "amount": 1,
+            "unit": "tl",
+            "name": "(jozo)zout",
+            "key": "(jozo)zout",
+            "optional": false
+          },
+          {
+            "raw": "2 el extra vierge olijfolie",
+            "amount": 2,
+            "unit": "el",
+            "name": "extra vierge olijfolie",
+            "key": "extra vierge olijfolie",
+            "optional": false
+          },
+          {
+            "raw": "5 eieren",
+            "amount": 5,
+            "unit": "stuk",
+            "name": "eieren",
+            "key": "eieren",
+            "optional": false
+          },
+          {
+            "raw": "100 gram pure chocolade (minimaal 70% cacao)",
+            "amount": 100,
+            "unit": "gram",
+            "name": "pure chocolade",
+            "key": "pure chocolade",
+            "optional": true
+          }
         ],
-        "equipment": ["cakeblik", "aluminiumfolie"],
+        "equipment": [
+          "cakeblik",
+          "aluminiumfolie"
+        ],
         "method": "Hak de pure chocolade en noten in stukjes. Doe alle noten, pitten en zaden in een kom samen met het (jozo)zout en de olie. Voeg de eieren één voor één toe en meng alles goed. Schenk het beslag in een met olijfolie ingevet cakeblik en bak het 60-70 minuten in de oven op 180 °C. Mocht de bovenkant van het brood erg bruin worden, leg dan voor de resterende oventijd een stuk aluminiumfolie over het blik. Laat het brood helemaal afkoelen voor serveren. Bewaar het in een theedoek in de koelkast (1 week) of vries het in. Tip: In plaats van amandelen en hazelnoten kun je ook 200 gram gemengde ongebrande en ongezouten noten gebruiken. Voeg voor de variatie een keer geraspte appel of wortel toe aan het brood."
       }
     ],
@@ -1179,7 +1319,15 @@
         "componentId": "notenbrood",
         "optional": false,
         "alternatives": [
-          { "raw": "notenbrood maken", "amount": null, "unit": "", "name": "notenbrood maken", "key": "notenbrood maken", "componentId": "notenbrood", "optional": false }
+          {
+            "raw": "notenbrood maken",
+            "amount": null,
+            "unit": "",
+            "name": "notenbrood maken",
+            "key": "notenbrood maken",
+            "componentId": "notenbrood",
+            "optional": false
+          }
         ]
       },
       {
@@ -1215,18 +1363,91 @@
         "yieldUnit": "brood",
         "yieldNote": "circa 12 plakjes",
         "ingredients": [
-          { "raw": "100 gram amandelen", "amount": 100, "unit": "gram", "name": "amandelen", "key": "amandelen", "optional": false },
-          { "raw": "100 gram hazelnoten", "amount": 100, "unit": "gram", "name": "hazelnoten", "key": "hazelnoten", "optional": false },
-          { "raw": "100 gram sesamzaad", "amount": 100, "unit": "gram", "name": "sesamzaad", "key": "sesamzaad", "optional": false },
-          { "raw": "100 gram zonnebloempitten", "amount": 100, "unit": "gram", "name": "zonnebloempitten", "key": "zonnebloempitten", "optional": false },
-          { "raw": "100 gram lijnzaad", "amount": 100, "unit": "gram", "name": "lijnzaad", "key": "lijnzaad", "optional": false },
-          { "raw": "100 gram pompoenpitten", "amount": 100, "unit": "gram", "name": "pompoenpitten", "key": "pompoenpitten", "optional": false },
-          { "raw": "1 tl (jozo)zout", "amount": 1, "unit": "tl", "name": "(jozo)zout", "key": "(jozo)zout", "optional": false },
-          { "raw": "2 el extra vierge olijfolie", "amount": 2, "unit": "el", "name": "extra vierge olijfolie", "key": "extra vierge olijfolie", "optional": false },
-          { "raw": "5 eieren", "amount": 5, "unit": "stuk", "name": "eieren", "key": "eieren", "optional": false },
-          { "raw": "100 gram pure chocolade (minimaal 70% cacao)", "amount": 100, "unit": "gram", "name": "pure chocolade", "key": "pure chocolade", "optional": true }
+          {
+            "raw": "100 gram amandelen",
+            "amount": 100,
+            "unit": "gram",
+            "name": "amandelen",
+            "key": "amandelen",
+            "optional": false
+          },
+          {
+            "raw": "100 gram hazelnoten",
+            "amount": 100,
+            "unit": "gram",
+            "name": "hazelnoten",
+            "key": "hazelnoten",
+            "optional": false
+          },
+          {
+            "raw": "100 gram sesamzaad",
+            "amount": 100,
+            "unit": "gram",
+            "name": "sesamzaad",
+            "key": "sesamzaad",
+            "optional": false
+          },
+          {
+            "raw": "100 gram zonnebloempitten",
+            "amount": 100,
+            "unit": "gram",
+            "name": "zonnebloempitten",
+            "key": "zonnebloempitten",
+            "optional": false
+          },
+          {
+            "raw": "100 gram lijnzaad",
+            "amount": 100,
+            "unit": "gram",
+            "name": "lijnzaad",
+            "key": "lijnzaad",
+            "optional": false
+          },
+          {
+            "raw": "100 gram pompoenpitten",
+            "amount": 100,
+            "unit": "gram",
+            "name": "pompoenpitten",
+            "key": "pompoenpitten",
+            "optional": false
+          },
+          {
+            "raw": "1 tl (jozo)zout",
+            "amount": 1,
+            "unit": "tl",
+            "name": "(jozo)zout",
+            "key": "(jozo)zout",
+            "optional": false
+          },
+          {
+            "raw": "2 el extra vierge olijfolie",
+            "amount": 2,
+            "unit": "el",
+            "name": "extra vierge olijfolie",
+            "key": "extra vierge olijfolie",
+            "optional": false
+          },
+          {
+            "raw": "5 eieren",
+            "amount": 5,
+            "unit": "stuk",
+            "name": "eieren",
+            "key": "eieren",
+            "optional": false
+          },
+          {
+            "raw": "100 gram pure chocolade (minimaal 70% cacao)",
+            "amount": 100,
+            "unit": "gram",
+            "name": "pure chocolade",
+            "key": "pure chocolade",
+            "optional": true
+          }
         ],
-        "equipment": ["cakeblik", "aluminiumfolie"],
+        "equipment": [
+          "cakeblik",
+          "aluminiumfolie"
+        ],
         "method": "Hak de pure chocolade en noten in stukjes. Doe alle noten, pitten en zaden in een kom samen met het (jozo)zout en de olie. Voeg de eieren één voor één toe en meng alles goed. Schenk het beslag in een met olijfolie ingevet cakeblik en bak het 60-70 minuten in de oven op 180 °C. Mocht de bovenkant van het brood erg bruin worden, leg dan voor de resterende oventijd een stuk aluminiumfolie over het blik. Laat het brood helemaal afkoelen voor serveren. Bewaar het in een theedoek in de koelkast (1 week) of vries het in. Tip: In plaats van amandelen en hazelnoten kun je ook 200 gram gemengde ongebrande en ongezouten noten gebruiken. Voeg voor de variatie een keer geraspte appel of wortel toe aan het brood."
       }
     ],
@@ -1252,12 +1473,41 @@
         "componentId": "notenbrood",
         "optional": false,
         "alternatives": [
-          { "raw": "notenbrood maken", "amount": null, "unit": "", "name": "notenbrood maken", "key": "notenbrood maken", "componentId": "notenbrood", "optional": false }
+          {
+            "raw": "notenbrood maken",
+            "amount": null,
+            "unit": "",
+            "name": "notenbrood maken",
+            "key": "notenbrood maken",
+            "componentId": "notenbrood",
+            "optional": false
+          }
         ]
       },
-      { "raw": "roomboter", "amount": "10", "unit": "gram", "name": "roomboter", "key": "roomboter", "optional": false },
-      { "raw": "plakjes boerenkaas", "amount": "6", "unit": "plak", "name": "boerenkaas", "key": "boerenkaas", "optional": false },
-      { "raw": "halve komkommer", "amount": "0.5", "unit": "stuk", "name": "komkommer", "key": "komkommer", "optional": false }
+      {
+        "raw": "roomboter",
+        "amount": "10",
+        "unit": "gram",
+        "name": "roomboter",
+        "key": "roomboter",
+        "optional": false
+      },
+      {
+        "raw": "plakjes boerenkaas",
+        "amount": "6",
+        "unit": "plak",
+        "name": "boerenkaas",
+        "key": "boerenkaas",
+        "optional": false
+      },
+      {
+        "raw": "halve komkommer",
+        "amount": "0.5",
+        "unit": "stuk",
+        "name": "komkommer",
+        "key": "komkommer",
+        "optional": false
+      }
     ],
     "components": [
       {
@@ -1267,18 +1517,91 @@
         "yieldUnit": "brood",
         "yieldNote": "circa 12 plakjes",
         "ingredients": [
-          { "raw": "100 gram amandelen", "amount": 100, "unit": "gram", "name": "amandelen", "key": "amandelen", "optional": false },
-          { "raw": "100 gram hazelnoten", "amount": 100, "unit": "gram", "name": "hazelnoten", "key": "hazelnoten", "optional": false },
-          { "raw": "100 gram sesamzaad", "amount": 100, "unit": "gram", "name": "sesamzaad", "key": "sesamzaad", "optional": false },
-          { "raw": "100 gram zonnebloempitten", "amount": 100, "unit": "gram", "name": "zonnebloempitten", "key": "zonnebloempitten", "optional": false },
-          { "raw": "100 gram lijnzaad", "amount": 100, "unit": "gram", "name": "lijnzaad", "key": "lijnzaad", "optional": false },
-          { "raw": "100 gram pompoenpitten", "amount": 100, "unit": "gram", "name": "pompoenpitten", "key": "pompoenpitten", "optional": false },
-          { "raw": "1 tl (jozo)zout", "amount": 1, "unit": "tl", "name": "(jozo)zout", "key": "(jozo)zout", "optional": false },
-          { "raw": "2 el extra vierge olijfolie", "amount": 2, "unit": "el", "name": "extra vierge olijfolie", "key": "extra vierge olijfolie", "optional": false },
-          { "raw": "5 eieren", "amount": 5, "unit": "stuk", "name": "eieren", "key": "eieren", "optional": false },
-          { "raw": "100 gram pure chocolade (minimaal 70% cacao)", "amount": 100, "unit": "gram", "name": "pure chocolade", "key": "pure chocolade", "optional": true }
+          {
+            "raw": "100 gram amandelen",
+            "amount": 100,
+            "unit": "gram",
+            "name": "amandelen",
+            "key": "amandelen",
+            "optional": false
+          },
+          {
+            "raw": "100 gram hazelnoten",
+            "amount": 100,
+            "unit": "gram",
+            "name": "hazelnoten",
+            "key": "hazelnoten",
+            "optional": false
+          },
+          {
+            "raw": "100 gram sesamzaad",
+            "amount": 100,
+            "unit": "gram",
+            "name": "sesamzaad",
+            "key": "sesamzaad",
+            "optional": false
+          },
+          {
+            "raw": "100 gram zonnebloempitten",
+            "amount": 100,
+            "unit": "gram",
+            "name": "zonnebloempitten",
+            "key": "zonnebloempitten",
+            "optional": false
+          },
+          {
+            "raw": "100 gram lijnzaad",
+            "amount": 100,
+            "unit": "gram",
+            "name": "lijnzaad",
+            "key": "lijnzaad",
+            "optional": false
+          },
+          {
+            "raw": "100 gram pompoenpitten",
+            "amount": 100,
+            "unit": "gram",
+            "name": "pompoenpitten",
+            "key": "pompoenpitten",
+            "optional": false
+          },
+          {
+            "raw": "1 tl (jozo)zout",
+            "amount": 1,
+            "unit": "tl",
+            "name": "(jozo)zout",
+            "key": "(jozo)zout",
+            "optional": false
+          },
+          {
+            "raw": "2 el extra vierge olijfolie",
+            "amount": 2,
+            "unit": "el",
+            "name": "extra vierge olijfolie",
+            "key": "extra vierge olijfolie",
+            "optional": false
+          },
+          {
+            "raw": "5 eieren",
+            "amount": 5,
+            "unit": "stuk",
+            "name": "eieren",
+            "key": "eieren",
+            "optional": false
+          },
+          {
+            "raw": "100 gram pure chocolade (minimaal 70% cacao)",
+            "amount": 100,
+            "unit": "gram",
+            "name": "pure chocolade",
+            "key": "pure chocolade",
+            "optional": true
+          }
         ],
-        "equipment": ["cakeblik", "aluminiumfolie"],
+        "equipment": [
+          "cakeblik",
+          "aluminiumfolie"
+        ],
         "method": "Hak de pure chocolade en noten in stukjes. Doe alle noten, pitten en zaden in een kom samen met het (jozo)zout en de olie. Voeg de eieren één voor één toe en meng alles goed. Schenk het beslag in een met olijfolie ingevet cakeblik en bak het 60-70 minuten in de oven op 180 °C. Mocht de bovenkant van het brood erg bruin worden, leg dan voor de resterende oventijd een stuk aluminiumfolie over het blik. Laat het brood helemaal afkoelen voor serveren. Bewaar het in een theedoek in de koelkast (1 week) of vries het in. Tip: In plaats van amandelen en hazelnoten kun je ook 200 gram gemengde ongebrande en ongezouten noten gebruiken. Voeg voor de variatie een keer geraspte appel of wortel toe aan het brood."
       }
     ],
@@ -1486,8 +1809,8 @@
         "raw": "2 el pitten/zaden naar keuze",
         "amount": 2,
         "unit": "el",
-        "name": "pitten/zaden naar keuze",
-        "key": "pitten/zaden naar keuze",
+        "name": "pitten/zaden",
+        "key": "pitten/zaden",
         "optional": false
       },
       {
@@ -1519,9 +1842,9 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "300 ml volle kwark",
+        "raw": "300 gr volle kwark",
         "amount": 300,
-        "unit": "ml",
+        "unit": "gram",
         "name": "volle kwark",
         "key": "volle kwark",
         "optional": false
@@ -1717,16 +2040,16 @@
         "raw": "4 el pitten en zaden (pompoen-/ zonnebloem-/ pijnboompitten/ etc.)",
         "amount": 4,
         "unit": "el",
-        "name": "pitten en zaden",
-        "key": "pitten en zaden",
+        "name": "pitten/zaden",
+        "key": "pitten/zaden",
         "optional": false
       },
       {
         "raw": "restje bloemkoolrijst (circa 200 gram rauw)",
-        "amount": null,
-        "unit": "",
-        "name": "restje bloemkoolrijst (circa 200 gram rauw)",
-        "key": "restje bloemkoolrijst (circa 200 gram rauw)",
+        "amount": 200,
+        "unit": "gram",
+        "name": "bloemkoolrijst",
+        "key": "bloemkoolrijst",
         "optional": false
       },
       {
@@ -1867,8 +2190,8 @@
         "raw": "1 el olijfolie",
         "amount": 1,
         "unit": "el",
-        "name": "olijfolie",
-        "key": "olijfolie",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
@@ -2094,7 +2417,16 @@
         "name": "slagroom",
         "key": "slagroom",
         "optional": false,
-        "alternatives": [{"raw": "100 gram crème fraîche", "amount": 100, "unit": "gram", "name": "crème fraîche", "key": "crème fraîche", "optional": false}]
+        "alternatives": [
+          {
+            "raw": "100 gram crème fraîche",
+            "amount": 100,
+            "unit": "gram",
+            "name": "crème fraîche",
+            "key": "crème fraîche",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "peper en zout",
@@ -2227,7 +2559,16 @@
         "name": "slagroom",
         "key": "slagroom",
         "optional": false,
-        "alternatives": [{"raw": "100 gram crème fraîche", "amount": 100, "unit": "gram", "name": "crème fraîche", "key": "crème fraîche", "optional": false}]
+        "alternatives": [
+          {
+            "raw": "100 gram crème fraîche",
+            "amount": 100,
+            "unit": "gram",
+            "name": "crème fraîche",
+            "key": "crème fraîche",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "peper en zout",
@@ -2352,7 +2693,16 @@
         "name": "slagroom",
         "key": "slagroom",
         "optional": false,
-        "alternatives": [{"raw": "100 gram crème fraîche", "amount": 100, "unit": "gram", "name": "crème fraîche", "key": "crème fraîche", "optional": false}]
+        "alternatives": [
+          {
+            "raw": "100 gram crème fraîche",
+            "amount": 100,
+            "unit": "gram",
+            "name": "crème fraîche",
+            "key": "crème fraîche",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "peper en zout",
@@ -2452,8 +2802,8 @@
         "raw": "2 el olijfolie",
         "amount": 2,
         "unit": "el",
-        "name": "olijfolie",
-        "key": "olijfolie",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
@@ -2524,8 +2874,8 @@
         "raw": "3 el olijfolie",
         "amount": 3,
         "unit": "el",
-        "name": "olijfolie",
-        "key": "olijfolie",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
@@ -2635,7 +2985,16 @@
         "name": "cracker",
         "key": "cracker",
         "optional": false,
-        "alternatives": [{"raw": "2 lijnzaadcrackers", "amount": 2, "unit": "stuk", "name": "lijnzaadcracker", "key": "lijnzaadcracker", "optional": false}]
+        "alternatives": [
+          {
+            "raw": "2 lijnzaadcrackers",
+            "amount": 2,
+            "unit": "stuk",
+            "name": "lijnzaadcracker",
+            "key": "lijnzaadcracker",
+            "optional": false
+          }
+        ]
       },
       {
         "raw": "peper en zout",
@@ -3369,8 +3728,8 @@
         "raw": "1 el noten/pitten/zaden naar keuze",
         "amount": 1,
         "unit": "el",
-        "name": "noten/pitten/zaden",
-        "key": "noten/pitten/zaden",
+        "name": "pitten/zaden",
+        "key": "pitten/zaden",
         "optional": false
       }
     ],
@@ -3830,7 +4189,16 @@
         "name": "mayonaise",
         "key": "mayonaise",
         "optional": true,
-        "alternatives": [{"raw": "1 el yoghurt", "amount": 1, "unit": "el", "name": "yoghurt", "key": "yoghurt", "optional": true}]
+        "alternatives": [
+          {
+            "raw": "1 el yoghurt",
+            "amount": 1,
+            "unit": "el",
+            "name": "yoghurt",
+            "key": "yoghurt",
+            "optional": true
+          }
+        ]
       },
       {
         "raw": "20 gram groene (gemengde) bladsla",
@@ -3863,7 +4231,16 @@
         "name": "mayonaise",
         "key": "mayonaise",
         "optional": true,
-        "alternatives": [{"raw": "1 el yoghurt", "amount": 1, "unit": "el", "name": "yoghurt", "key": "yoghurt", "optional": true}]
+        "alternatives": [
+          {
+            "raw": "1 el yoghurt",
+            "amount": 1,
+            "unit": "el",
+            "name": "yoghurt",
+            "key": "yoghurt",
+            "optional": true
+          }
+        ]
       },
       {
         "raw": "1 el dille",
@@ -3921,8 +4298,8 @@
         "raw": "2 el olijfolie",
         "amount": 2,
         "unit": "el",
-        "name": "olijfolie",
-        "key": "olijfolie",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
@@ -6037,8 +6414,8 @@
         "raw": "2 el olijfolie",
         "amount": 2,
         "unit": "el",
-        "name": "olijfolie",
-        "key": "olijfolie",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
@@ -6271,11 +6648,11 @@
         ]
       },
       {
-        "raw": "250 gram half om half gehakt",
+        "raw": "250 gram half-om-half gehakt",
         "amount": 250,
         "unit": "gram",
-        "name": "half om half gehakt",
-        "key": "half om half gehakt",
+        "name": "half-om-half gehakt",
+        "key": "half-om-half gehakt",
         "optional": false
       },
       {
@@ -6880,8 +7257,8 @@
         "raw": "1 el olijfolie",
         "amount": 1,
         "unit": "el",
-        "name": "olijfolie",
-        "key": "olijfolie",
+        "name": "extra vierge olijfolie",
+        "key": "extra vierge olijfolie",
         "optional": false
       },
       {
