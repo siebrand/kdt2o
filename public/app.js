@@ -321,7 +321,6 @@ function fillRandomPlan() {
   });
   savePlan();
   render();
-  planner.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function finishSelection() {
