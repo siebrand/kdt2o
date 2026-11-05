@@ -3416,8 +3416,8 @@
         "raw": "2 bollen mozzarella (125 gram per stuk)",
         "amount": 2,
         "unit": "bol",
-        "name": "mozzarella (125 gram per stuk)",
-        "key": "mozzarella (125 gram per stuk)",
+        "name": "mozzarella",
+        "key": "mozzarella",
         "optional": false
       },
       {
@@ -3508,8 +3508,8 @@
         "raw": "2 bollen mozzarella (125 gram per stuk)",
         "amount": 2,
         "unit": "bol",
-        "name": "mozzarella (125 gram per stuk)",
-        "key": "mozzarella (125 gram per stuk)",
+        "name": "mozzarella",
+        "key": "mozzarella",
         "optional": false
       },
       {
