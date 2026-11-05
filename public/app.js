@@ -245,6 +245,11 @@ function render() {
   status.textContent = count ? count + " maaltijdmomenten gepland." : "Kies een leeg moment om te beginnen.";
   shoppingListButton.disabled = !count;
   downloadButton.disabled = !count;
+  if (!count) {
+    state.shoppingWarnings = [];
+    shoppingListItems.replaceChildren();
+    shoppingListView.hidden = true;
+  }
 }
 
 function normalizeShoppingUnit(unit) {
