@@ -3060,8 +3060,8 @@
         "raw": "200 gram gegrilde groenten (kan restjes zijn van eerder deze week) of",
         "amount": 200,
         "unit": "gram",
-        "name": "gegrilde groenten (kan restjes zijn van eerder deze week) of",
-        "key": "gegrilde groenten (kan restjes zijn van eerder deze week) of",
+        "name": "gegrilde groenten",
+        "key": "gegrilde groenten",
         "optional": false
       },
       {
@@ -5476,11 +5476,11 @@
         "optional": false
       },
       {
-        "raw": "1 kleine ul",
+        "raw": "1 kleine ui",
         "amount": 1,
-        "unit": "",
-        "name": "kleine ul",
-        "key": "kleine ul",
+        "unit": "stuk",
+        "name": "ui",
+        "key": "ui",
         "optional": false
       },
       {
@@ -5574,11 +5574,11 @@
         "optional": false
       },
       {
-        "raw": "scheutje soja saus",
-        "amount": null,
-        "unit": "",
-        "name": "scheutje soja saus",
-        "key": "scheutje soja saus",
+        "raw": "1 el sojasaus",
+        "amount": 1,
+        "unit": "el",
+        "name": "sojasaus",
+        "key": "sojasaus",
         "optional": false
       },
       {
@@ -7138,11 +7138,11 @@
         "optional": false
       },
       {
-        "raw": "1 tl chiliviokken",
+        "raw": "1 tl chilivlokken",
         "amount": 1,
         "unit": "tl",
-        "name": "chiliviokken",
-        "key": "chiliviokken",
+        "name": "chilivlokken",
+        "key": "chilivlokken",
         "optional": false
       },
       {
