@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
+import re
 import shutil
 
 
@@ -22,14 +23,14 @@ CATEGORIES = {
         "venkel", "mais", "mandarijn", "champignon", "knoflook", "gember",
         "citroen", "limoen", "appel", "banaan", "aardbei", "framboos",
         "bosbes", "blauwe bes", "mango", "peer", "druif", "fruit", "kikkererwt",
-        "erwt", "snijboon", "witlof", "lenteui", "bosui", "prei", "spruit",
+        "erwt", "snijboon", "witlof", "ui", "uien", "lenteui", "bosui", "prei", "spruit",
         "taugé", "knolselderij", "pastinaak", "zuurkool", "artisjok",
         "bladgroente", "pompoen", "bladsalade", "gegrilde groenten", "paksoi",
         "chinese kool", "nasi/bami groenten", "rode kool"
     ),
     "Zuivel en eieren": (
         "yoghurt", "kwark", "melk", "kaas", "feta", "ricotta", "mozzarella",
-        "hüttenkäse", "huttenkase", "boter", "room", "crème fraîche", "creme fraiche",
+        "hüttenkäse", "huttenkase", "boter", "roomboter", "room", "slagroom", "crème fraîche", "creme fraiche",
         "ei", "eieren"
     ),
     "Vlees, vis en vleesvervangers": (
@@ -41,25 +42,26 @@ CATEGORIES = {
         "zout", "peper", "kaneel", "kruiden", "oregano", "basilicum", "komijn",
         "kerrie", "paprikapoeder", "salie", "peterselie", "dille", "koriander",
         "bieslook", "chilipoeder", "chilivlokken", "kurkuma", "nootmuskaat", "vanille",
-        "kruidnagel", "tijm", "spices"
+        "kruidnagel", "tijm", "chili", "jalapeno", "spices"
     ),
     "Houdbare producten": (
         "pasta", "rijst", "quinoa", "couscous", "linzen", "bonen", "noten",
-        "amandel", "zaad", "pitten", "olie", "azijn", "meel", "bloem", "bakpoeder",
-        "cacao", "chocolade", "pindakaas", "honing", "kokos", "mayonaise", "sojasaus",
+        "amandel", "zaad", "pitten", "olie", "olijfolie", "azijn", "meel", "bloem", "bakpoeder",
+        "cacao", "chocolade", "pindakaas", "honing", "kokos", "kokosmelk", "mayonaise", "sojasaus",
         "mosterd", "pesto", "bouillon", "olijf", "olijven", "kelp"
     ),
 }
 
 
 def category_for(ingredient: dict) -> str:
-    if ingredient.get("category"):
-        return ingredient["category"]
     name = str(ingredient.get("name", "")).casefold()
     if "diepvries" in name or "bevroren" in name:
         return "Diepvries"
+    def matches(term: str) -> bool:
+        boundary = r"[^a-zà-ÿ]"
+        return re.search(rf"(?:^|{boundary}){re.escape(term.casefold())}(?:$|{boundary})", name) is not None
     for category, terms in CATEGORIES.items():
-        if any(term in name for term in terms):
+        if any(matches(term) for term in terms):
             return category
     return "Overig"
 
