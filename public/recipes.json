@@ -5103,8 +5103,8 @@
         "raw": "25 gram zonnebloempitten (eventueel geroosterd)",
         "amount": 25,
         "unit": "gram",
-        "name": "zonnebloempitten (eventueel geroosterd)",
-        "key": "zonnebloempitten (eventueel geroosterd)",
+        "name": "zonnebloempitten",
+        "key": "zonnebloempitten",
         "optional": false
       },
       {
