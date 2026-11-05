@@ -6675,8 +6675,8 @@
         "raw": "250 ml slagroom (ongeklopt)",
         "amount": 250,
         "unit": "ml",
-        "name": "slagroom (ongeklopt)",
-        "key": "slagroom (ongeklopt)",
+        "name": "slagroom",
+        "key": "slagroom",
         "optional": false,
         "alternatives": [
           {
