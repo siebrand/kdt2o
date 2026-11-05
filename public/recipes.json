@@ -377,8 +377,8 @@
         "raw": "140 gram frambozen (1 bakje)",
         "amount": 140,
         "unit": "gram",
-        "name": "frambozen (1 bakje)",
-        "key": "frambozen (1 bakje)",
+        "name": "frambozen",
+        "key": "frambozen",
         "optional": false
       },
       {
@@ -2210,11 +2210,11 @@
         "optional": false
       },
       {
-        "raw": "500 tot 1000 ml water (naar wens voor dikte)",
-        "amount": 500,
-        "unit": "",
-        "name": "tot 1000 ml water (naar wens voor dikte)",
-        "key": "tot 1000 ml water (naar wens voor dikte)",
+        "raw": "500 tot 1000 ml water",
+        "amount": "500-1000",
+        "unit": "ml",
+        "name": "water",
+        "key": "water",
         "optional": false
       },
       {
@@ -3458,8 +3458,8 @@
         "raw": "100 gram groene bladsalade (rucola, botersla, romaine sla, etc.)",
         "amount": 100,
         "unit": "gram",
-        "name": "groene bladsalade (rucola, botersla, romaine sla, etc.)",
-        "key": "groene bladsalade (rucola, botersla, romaine sla, etc.)",
+        "name": "groene bladsalade",
+        "key": "groene bladsalade",
         "optional": false
       },
       {
