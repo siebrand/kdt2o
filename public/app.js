@@ -551,10 +551,8 @@ function renderShoppingList() {
   let currentCategory = "";
   let list;
   const items = sortedShoppingItems();
-  const uncategorized = [];
   items.forEach((item) => {
     const category = shoppingCategory(item);
-    if (category === "Overig" && !APPROVED_OTHER_NAMES.has(item.name)) uncategorized.push(item.name);
     if (category !== currentCategory) {
       const heading = document.createElement("h3");
       heading.textContent = category;
@@ -572,16 +570,6 @@ function renderShoppingList() {
     row.append(label);
     list.append(row);
   });
-  if (state.shoppingWarnings.length || uncategorized.length) {
-    const warnings = document.createElement("ul");
-    warnings.className = "shopping-list shopping-warnings";
-    [...state.shoppingWarnings, ...uncategorized.map((name) => "Controleer de categorie van " + name + ".")].forEach((warning) => {
-      const row = document.createElement("li");
-      row.textContent = warning;
-      warnings.append(row);
-    });
-    shoppingListItems.append(warnings);
-  }
 }
 
 function addWrapped(doc, text, x, y, maxWidth, lineHeight = 6) {
