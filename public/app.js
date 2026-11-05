@@ -573,9 +573,6 @@ function renderShoppingList() {
     list.append(row);
   });
   if (state.shoppingWarnings.length || uncategorized.length) {
-    const heading = document.createElement("h3");
-    heading.textContent = "Controleer deze boodschappen";
-    shoppingListItems.append(heading);
     const warnings = document.createElement("ul");
     warnings.className = "shopping-list shopping-warnings";
     [...state.shoppingWarnings, ...uncategorized.map((name) => "Controleer de categorie van " + name + ".")].forEach((warning) => {
