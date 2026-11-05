@@ -20,40 +20,49 @@ CATEGORIES = {
         "wortel", "courgette", "paprika", "tomaat", "tomaten", "cherry tom",
         "komkommer", "biet", "avocado", "broccoli", "bloemkool", "spinazie",
         "sla", "rucola", "andijvie", "aubergine", "augurk", "bleekselderij",
-        "venkel", "mais", "mandarijn", "champignon", "knoflook", "gember",
-        "citroen", "limoen", "appel", "banaan", "aardbei", "framboos",
-        "bosbes", "blauwe bes", "mango", "peer", "druif", "fruit", "kikkererwt",
+        "venkel", "venkelzaad", "mais", "mandarijn", "sinaasappel", "champignon", "champignons", "knoflook", "knoflookteen", "gember",
+        "citroen", "citroensap", "limoen", "appel", "banaan", "aardbei", "aardbeien", "framboos", "frambozen",
+        "bosbes", "blauwe bes", "blauwe bessen", "mango", "peer", "druif", "fruit", "kikkererwt", "kikkererwten",
         "erwt", "snijboon", "witlof", "ui", "uien", "lenteui", "bosui", "prei", "spruit",
-        "taugé", "knolselderij", "pastinaak", "zuurkool", "artisjok",
-        "bladgroente", "pompoen", "bladsalade", "gegrilde groenten", "paksoi",
-        "chinese kool", "nasi/bami groenten", "rode kool"
+        "taugé", "knolselderij", "pastinaak", "zuurkool", "artisjok", "artisjokharten",
+        "bladgroente", "pompoen", "bladsalade", "bladsla", "salade", "gegrilde groenten", "paksoi",
+        "chinese kool", "nasi/bami groenten", "rode kool", "courgettes", "cherrytomaten", "tomatenblokjes",
+        "tomatenpuree", "kleine tomaatjes", "puntpaprika", "aardbei", "aardbeien", "erwten", "erwtjes", "doperwten", "tuinerwtjes", "spruitjes",
+        "sperziebonen", "snijbonen", "witlofstronken", "veldsla", "bladspinazie", "boerenkool", "flespompoen",
+        "bloemkoolrijst", "winterwortel", "bieten (voorgekookt)", "andere groenten", "groenten"
     ),
     "Zuivel en eieren": (
         "yoghurt", "kwark", "melk", "kaas", "feta", "ricotta", "mozzarella",
         "hüttenkäse", "huttenkase", "boter", "roomboter", "room", "slagroom", "crème fraîche", "creme fraiche",
-        "ei", "eieren"
+        "crême fraiche", "crême fraîche", "roomkaas", "geitenkaas", "harde geitenkaas", "zachte geitenkaas", "boerenkaas", "ei", "eieren"
     ),
     "Vlees, vis en vleesvervangers": (
         "kip", "rund", "gehakt", "spek", "ham", "zalm", "tonijn", "vis",
-        "pangasius", "haring", "biefstuk", "tartaar", "tofu", "tempeh"
+        "pangasius", "haring", "haringen", "biefstuk", "tartaar", "tartaartjes", "tofu", "tempeh", "garnalen", "ansjovis", "ansjovisfilet", "speklap", "speklapje",
+        "kipfilet", "kipfilets", "kipdijfilet", "kippenvleugels", "kippendijen", "kalkoenfilet", "rundergehakt", "runderstoofvlees",
+        "zalmmoot", "zalmfilet", "witvisfilet", "witvis"
     ),
     "Brood en ontbijt": ("brood", "cracker", "havermout", "muesli", "granola"),
     "Kruiden en smaakmakers": (
         "zout", "peper", "kaneel", "kruiden", "oregano", "basilicum", "komijn",
         "kerrie", "paprikapoeder", "salie", "peterselie", "dille", "koriander",
         "bieslook", "chilipoeder", "chilivlokken", "kurkuma", "nootmuskaat", "vanille",
-        "kruidnagel", "tijm", "chili", "jalapeno", "spices"
+        "kruidnagel", "tijm", "munt", "verse munt", "chili", "jalapeno", "gemberpoeder", "cayennepeper", "kaneelpoeder", "komijnzaad", "kerriepoeder", "shoarmakruiden", "spices"
     ),
     "Houdbare producten": (
-        "pasta", "rijst", "quinoa", "couscous", "linzen", "bonen", "noten",
-        "amandel", "zaad", "pitten", "olie", "olijfolie", "azijn", "meel", "bloem", "bakpoeder",
-        "cacao", "chocolade", "pindakaas", "honing", "kokos", "kokosmelk", "mayonaise", "sojasaus",
-        "mosterd", "pesto", "bouillon", "olijf", "olijven", "kelp"
+        "pasta", "rijst", "zilvervliesrijst", "quinoa", "couscous", "linzen", "bonen", "soja", "sojabonen", "noten",
+        "walnoten", "hazelnoten", "amandel", "amandelen", "amandelschaafsel", "amandelmeel", "zaad", "chiazaad", "lijnzaad", "gebroken lijnzaad", "sesamzaad", "sesamzaadjes", "pitten", "zonnebloempitten", "pompoenpitten", "pijnboompitten",
+        "olie", "olijfolie", "azijn", "witte wijnazijn", "balsamicoazijn", "meel", "volkorenmeel", "bloem", "bakpoeder",
+        "cacao", "cacaopoeder", "chocolade", "pindakaas", "honing", "kokos", "kokosmelk", "kokosrasp", "kokosrap", "kokosflakes", "cashew", "cashewnoten", "mayonaise", "sojasaus", "mosterd", "dyonmosterd",
+        "pesto", "bouillon", "groentebouillonblokje", "visbouillonblokje", "vissaus", "olijf", "olijven", "kelp", "bakpapier", "water", "lijnzaadcracker"
     ),
 }
 
 
 def category_for(ingredient: dict) -> str:
+    component_id = str(ingredient.get("componentId", "")).casefold()
+    if component_id in {"lijnzaadcrackers", "notenbrood"}:
+        return "Brood en ontbijt"
     name = str(ingredient.get("name", "")).casefold()
     if "diepvries" in name or "bevroren" in name:
         return "Diepvries"

@@ -20,10 +20,10 @@
             "unit": "stuk",
             "name": "kant-en-klare lijnzaadcracker",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           }
         ],
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "1 avocado",
@@ -81,7 +81,7 @@
             "unit": "gram",
             "name": "gebroken lijnzaad",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram zonnebloempitten",
@@ -89,7 +89,7 @@
             "unit": "gram",
             "name": "zonnebloempitten",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "180 ml water",
@@ -97,7 +97,7 @@
             "unit": "ml",
             "name": "water",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "1 tl zout",
@@ -157,7 +157,7 @@
         "unit": "el",
         "name": "amandelschaafsel",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "30 gram kokosrasp/kokosflakes",
@@ -165,7 +165,7 @@
         "unit": "gram",
         "name": "kokosrasp/kokosflakes",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "50 gram gemengde noten",
@@ -210,7 +210,7 @@
         "unit": "gram",
         "name": "amandelmeel",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "7 el Griekse yoghurt",
@@ -268,7 +268,7 @@
         "unit": "gram",
         "name": "frambozen",
         "optional": false,
-        "category": "Overig",
+        "category": "Groente en fruit",
         "alternatives": [
           {
             "raw": "200 gram aardbeien",
@@ -276,7 +276,7 @@
             "unit": "gram",
             "name": "aardbeien",
             "optional": false,
-            "category": "Overig"
+            "category": "Groente en fruit"
           },
           {
             "raw": "200 gram frambozen (diepvries)",
@@ -341,7 +341,7 @@
         "unit": "gram",
         "name": "chiazaad",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "400 ml griekse yoghurt",
@@ -364,10 +364,10 @@
             "unit": "gram",
             "name": "geroosterd amandelschaafsel",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           }
         ],
-        "category": "Overig"
+        "category": "Houdbare producten"
       }
     ],
     "method": "Indien nodig snijd het fruit in kleine stukjes en meng dit met de chiazaad en griekse yoghurt. Zet dit afgedekt een nacht in de koelkast. Strooi de volgende ochtend een handje walnoten of geroosterd amandelschaafsel over de pudding heen.",
@@ -416,7 +416,7 @@
         "unit": "tl",
         "name": "ongezoete cacaopoeder",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "140 gram frambozen (1 bakje)",
@@ -424,7 +424,7 @@
         "unit": "gram",
         "name": "frambozen",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "30 gram kokosrasp",
@@ -432,7 +432,7 @@
         "unit": "gram",
         "name": "kokosrasp",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "2 el noten naar keuze",
@@ -538,7 +538,7 @@
         "unit": "stuk",
         "name": "speklapje",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "roomboter",
@@ -561,7 +561,7 @@
             "unit": "stuk",
             "name": "lijnzaadcracker",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           }
         ],
         "category": "Brood en ontbijt"
@@ -579,7 +579,7 @@
             "unit": "stuk",
             "name": "andere groenten die je nog in huis hebt",
             "optional": false,
-            "category": "Overig"
+            "category": "Groente en fruit"
           }
         ],
         "category": "Groente en fruit"
@@ -644,7 +644,7 @@
         "unit": "gram",
         "name": "boerenkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "8 eieren",
@@ -676,7 +676,7 @@
         "unit": "el",
         "name": "amandelschaafsel",
         "optional": true,
-        "category": "Overig"
+        "category": "Houdbare producten"
       }
     ],
     "equipment": [
@@ -741,7 +741,7 @@
             "unit": "gram",
             "name": "zonnebloempitten",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram pompoenpitten",
@@ -749,7 +749,7 @@
             "unit": "gram",
             "name": "pompoenpitten",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram gebroken lijnzaad",
@@ -757,7 +757,7 @@
             "unit": "gram",
             "name": "gebroken lijnzaad",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "kaneel",
@@ -794,7 +794,7 @@
         "unit": "gram",
         "name": "walnoten",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "50 gram amandelen",
@@ -802,7 +802,7 @@
         "unit": "gram",
         "name": "amandelen",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "2 el (gebroken) lijnzaad",
@@ -810,7 +810,7 @@
         "unit": "el",
         "name": "(gebroken) lijnzaad",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "100 ml kokosmelk",
@@ -826,7 +826,7 @@
         "unit": "ml",
         "name": "water",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "kaneelpoeder naar smaak",
@@ -834,7 +834,7 @@
         "unit": "",
         "name": "kaneelpoeder",
         "optional": true,
-        "category": "Overig"
+        "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "cacaopoeder naar smaak",
@@ -842,7 +842,7 @@
         "unit": "",
         "name": "cacaopoeder",
         "optional": true,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "150 gram bosbessen (vers/diepvries)",
@@ -858,7 +858,7 @@
         "unit": "gram",
         "name": "kokosrap",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       }
     ],
     "method": "Weeg de noten en lijnzaad af en maal ze fijn in een hakmolentje of keukenmachine. Warm de kokosmelk met het water op in een klein steelpannetje, voeg het notenmengsel toe. Roer de kaneel door de pap en dek af. Laat even opkoken en dan 10 minuten verder pruttelen op een lager vuurtje. Als je de pap graag wat vaster wilt, kook dan even verder zonder deksel. Heb je het liever vloeibaar, dan kan je wat water/kokosmelk toevoegen. Garneer met blauw bessen en bestrooi met kokosrasp en cacaopoeder.",
@@ -906,7 +906,7 @@
             "category": "Brood en ontbijt"
           }
         ],
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "250 gr volle kwark",
@@ -938,7 +938,7 @@
         "unit": "gram",
         "name": "blauwe bessen",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "beetje roomboter",
@@ -979,7 +979,7 @@
         "name": "lijnzaadcrackers",
         "componentId": "lijnzaadcrackers",
         "optional": false,
-        "category": "Overig"
+        "category": "Brood en ontbijt"
       },
       {
         "raw": "roomboter",
@@ -995,7 +995,7 @@
         "unit": "gram",
         "name": "boerenkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "2 eieren",
@@ -1187,10 +1187,10 @@
             "name": "notenbrood maken",
             "componentId": "notenbrood",
             "optional": false,
-            "category": "Overig"
+            "category": "Brood en ontbijt"
           }
         ],
-        "category": "Overig"
+        "category": "Brood en ontbijt"
       },
       {
         "raw": "1 avocado",
@@ -1215,7 +1215,7 @@
             "unit": "gram",
             "name": "amandelen",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram hazelnoten",
@@ -1223,7 +1223,7 @@
             "unit": "gram",
             "name": "hazelnoten",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram sesamzaad",
@@ -1231,7 +1231,7 @@
             "unit": "gram",
             "name": "sesamzaad",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram zonnebloempitten",
@@ -1239,7 +1239,7 @@
             "unit": "gram",
             "name": "zonnebloempitten",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram lijnzaad",
@@ -1247,7 +1247,7 @@
             "unit": "gram",
             "name": "lijnzaad",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram pompoenpitten",
@@ -1255,7 +1255,7 @@
             "unit": "gram",
             "name": "pompoenpitten",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "1 tl (jozo)zout",
@@ -1325,10 +1325,10 @@
             "name": "notenbrood maken",
             "componentId": "notenbrood",
             "optional": false,
-            "category": "Overig"
+            "category": "Brood en ontbijt"
           }
         ],
-        "category": "Overig"
+        "category": "Brood en ontbijt"
       },
       {
         "raw": "100 gram gerookte zalm",
@@ -1344,7 +1344,7 @@
         "unit": "gram",
         "name": "roomkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "komkommer",
@@ -1369,7 +1369,7 @@
             "unit": "gram",
             "name": "amandelen",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram hazelnoten",
@@ -1377,7 +1377,7 @@
             "unit": "gram",
             "name": "hazelnoten",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram sesamzaad",
@@ -1385,7 +1385,7 @@
             "unit": "gram",
             "name": "sesamzaad",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram zonnebloempitten",
@@ -1393,7 +1393,7 @@
             "unit": "gram",
             "name": "zonnebloempitten",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram lijnzaad",
@@ -1401,7 +1401,7 @@
             "unit": "gram",
             "name": "lijnzaad",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram pompoenpitten",
@@ -1409,7 +1409,7 @@
             "unit": "gram",
             "name": "pompoenpitten",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "1 tl (jozo)zout",
@@ -1479,10 +1479,10 @@
             "name": "notenbrood maken",
             "componentId": "notenbrood",
             "optional": false,
-            "category": "Overig"
+            "category": "Brood en ontbijt"
           }
         ],
-        "category": "Overig"
+        "category": "Brood en ontbijt"
       },
       {
         "raw": "roomboter",
@@ -1498,7 +1498,7 @@
         "unit": "gram",
         "name": "boerenkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "halve komkommer",
@@ -1523,7 +1523,7 @@
             "unit": "gram",
             "name": "amandelen",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram hazelnoten",
@@ -1531,7 +1531,7 @@
             "unit": "gram",
             "name": "hazelnoten",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram sesamzaad",
@@ -1539,7 +1539,7 @@
             "unit": "gram",
             "name": "sesamzaad",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram zonnebloempitten",
@@ -1547,7 +1547,7 @@
             "unit": "gram",
             "name": "zonnebloempitten",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram lijnzaad",
@@ -1555,7 +1555,7 @@
             "unit": "gram",
             "name": "lijnzaad",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "100 gram pompoenpitten",
@@ -1563,7 +1563,7 @@
             "unit": "gram",
             "name": "pompoenpitten",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           },
           {
             "raw": "1 tl (jozo)zout",
@@ -1669,7 +1669,7 @@
             "unit": "stuk",
             "name": "lijnzaadcracker",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           }
         ],
         "category": "Brood en ontbijt"
@@ -1680,7 +1680,7 @@
         "unit": "gram",
         "name": "boerenkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "roomboter",
@@ -1716,7 +1716,7 @@
         "unit": "gram",
         "name": "geitenkaas (hard)",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "60g gerookte zalm",
@@ -1964,7 +1964,7 @@
         "unit": "gram",
         "name": "boerenkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "1/2 avocado",
@@ -2000,7 +2000,7 @@
         "unit": "blik",
         "name": "artisjokharten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "50 gram rucola",
@@ -2050,7 +2050,7 @@
         "unit": "gram",
         "name": "bloemkoolrijst",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "4 el extra vierge olijfolie",
@@ -2066,7 +2066,7 @@
         "unit": "el",
         "name": "water",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "1 el azijn",
@@ -2082,7 +2082,7 @@
         "unit": "el",
         "name": "citroensap",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 el balsamicoazijn",
@@ -2090,7 +2090,7 @@
         "unit": "el",
         "name": "balsamicoazijn",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "3 tl mosterd",
@@ -2124,7 +2124,7 @@
             "category": "Brood en ontbijt"
           }
         ],
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "peper en zout",
@@ -2152,7 +2152,7 @@
         "unit": "gram",
         "name": "bieten (voorgekookt)",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 rode ui",
@@ -2184,7 +2184,7 @@
         "unit": "",
         "name": "haringen",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "1 el olijfolie",
@@ -2200,7 +2200,7 @@
         "unit": "el",
         "name": "citroensap",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "mespunt mosterd",
@@ -2276,7 +2276,7 @@
         "unit": "ml",
         "name": "water",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "2 stuks groentebouillonblokje",
@@ -2284,7 +2284,7 @@
         "unit": "stuk",
         "name": "groentebouillonblokje",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "2 potten kikkererwten",
@@ -2292,7 +2292,7 @@
         "unit": "",
         "name": "potten kikkererwten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "Beetje kelp",
@@ -2324,7 +2324,7 @@
         "unit": "ml",
         "name": "crême fraiche",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "60 gram harde geitenkaas",
@@ -2332,7 +2332,7 @@
         "unit": "gram",
         "name": "harde geitenkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       }
     ],
     "method": "Snijd de ui en bak op middelhoog vuur glazig in een soeppan met wat olijfolie en de uitgeperste knoflook. Was en breek de broccoli in stukken (inclusief de steel) en voeg samen met het water en de bouillonblokjes toe aan de uien. Spoel de kikkererwten af en voeg ook toe. Breng vervolgens zachtjes aan de kook en laat het ongeveer 15 minuten pruttelen. Voeg een beetje kelp toe en pureer het geheel dan fijn. Voeg tot slot een scheutje olijfolie, peper en zout naar smaak en de crême fraiche toe. Serveer op een bord of neem mee in een thermoskan. Strooi tot slot de geitenkaas over je soep heen.",
@@ -2352,7 +2352,7 @@
         "unit": "",
         "name": "courgettes",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "5 uien",
@@ -2392,7 +2392,7 @@
         "unit": "stuk",
         "name": "groentebouillonblokje",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "1 liter water",
@@ -2400,7 +2400,7 @@
         "unit": "liter",
         "name": "water",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "25 gram kelp",
@@ -2450,7 +2450,7 @@
         "unit": "gram",
         "name": "sojabonen",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "2 bietjes",
@@ -2466,7 +2466,7 @@
         "unit": "gram",
         "name": "geitenkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "60 gram walnoten",
@@ -2474,7 +2474,7 @@
         "unit": "gram",
         "name": "walnoten",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       }
     ],
     "method": "Snijd de courgettes in grove stukken. Pel de uien en snijd in grove stukken. Pel de knoflook en snijd grof. Verhit een flinke klont roomboter in een soeppan. Bak hierin de uien en knoflook in circa 3 minuten tot de uien glazig zijn. Voeg dan de courgette en salie toe en bak nog circa 5 minuten mee. Voeg zoveel bouillon (water met bouillonpoeder of blokjes) toe tot de groenten onder water staan. Laat zo nog circa 10 minuten pruttelen tot de groenten zacht zijn. Voeg een handje kelp toe. Pureer met een staafmixer fijn. Roer de crême fraîche of slagroom erdoorheen. Breng eventueel op smaak met peper en zout en het sap van een citroen en voeg de sojabonen toe. Snij de bietjes, geitenkaas en walnoten. Mix in een kom en eet samen met de soep.",
@@ -2494,7 +2494,7 @@
         "unit": "",
         "name": "courgettes",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "5 uien",
@@ -2534,7 +2534,7 @@
         "unit": "stuk",
         "name": "groentebouillonblokje",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "500 tot 1000 ml water",
@@ -2542,7 +2542,7 @@
         "unit": "ml",
         "name": "water",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "25 gram kelp",
@@ -2592,7 +2592,7 @@
         "unit": "gram",
         "name": "sojabonen",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "lijnzaadcracker(s)",
@@ -2600,7 +2600,7 @@
         "unit": "",
         "name": "lijnzaadcracker(s)",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "pindakaas (circa 30 gram per persoon)",
@@ -2628,7 +2628,7 @@
         "unit": "",
         "name": "courgettes",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "3 uien",
@@ -2668,7 +2668,7 @@
         "unit": "stuk",
         "name": "groentebouillonblokje",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "1 liter water",
@@ -2676,7 +2676,7 @@
         "unit": "liter",
         "name": "water",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "25 gram kelp",
@@ -2726,7 +2726,7 @@
         "unit": "",
         "name": "gemengde bladsla",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "komkommer",
@@ -2742,7 +2742,7 @@
         "unit": "stuk",
         "name": "cherrytomaten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "olijven",
@@ -2768,7 +2768,7 @@
             "category": "Brood en ontbijt"
           }
         ],
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "50 gram boerenkaas",
@@ -2776,7 +2776,7 @@
         "unit": "gram",
         "name": "boerenkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       }
     ],
     "method": "Soep - Snijd de courgettes in grove stukken. Pel de uien en snijd in grove stukken. Pel de knoflook en snijd grof. Verhit een flinke klont roomboter in een soeppan. Bak hierin de uien en knoflook in circa 3 minuten tot de uien glazig zijn. Voeg dan de courgette en salie toe en bak nog circa 5 minuten mee. Voeg zoveel bouillon (water met bouillonpoeder of blokjes) toe tot de groenten onder water staan. Laat zo nog circa 10 minuten pruttelen tot de groente zacht zijn. Voeg een handje kelp toe. Pureer met een staafmixer fijn. Roer de crême fraîche of slagroom erdoorheen. Breng eventueel op smaak met peper en zout en het sap van een citroen. Salade — serveer een kleurrijke salade van gemengde bladsla, komkommer, tomaat en olijven. Een vezelrijke cracker belegd met boerenkaas zorgt voor een bite erbij. Slik je schildklier medicatie? Overleg dan met jouw arts of extra jodium dmv kelp/ nori- of zeewiervellen gebruikt kan worden.",
@@ -2796,7 +2796,7 @@
         "unit": "gram",
         "name": "champignons",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "2 el olijfolie",
@@ -2860,7 +2860,7 @@
         "unit": "stuk",
         "name": "cherrytomaten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "2 vezelrijke crackers",
@@ -2912,7 +2912,7 @@
         "unit": "stuk",
         "name": "puntpaprika",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 komkommer",
@@ -2991,7 +2991,7 @@
             "unit": "stuk",
             "name": "lijnzaadcracker",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           }
         ],
         "category": "Brood en ontbijt"
@@ -3054,7 +3054,7 @@
         "unit": "el",
         "name": "water",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "200 gram gegrilde groenten (kan restjes zijn van eerder deze week)",
@@ -3070,7 +3070,7 @@
         "unit": "gram",
         "name": "bladsla",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "100 gram spinazie",
@@ -3094,7 +3094,7 @@
         "unit": "gram",
         "name": "zachte geitenkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "2 vezelrijke crackers",
@@ -3206,7 +3206,7 @@
             "category": "Zuivel en eieren"
           }
         ],
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "peper en zout",
@@ -3250,7 +3250,7 @@
         "unit": "",
         "name": "kleine tomaatjes",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "100 gram gemengde groene bladsla naar keuze",
@@ -3258,7 +3258,7 @@
         "unit": "gram",
         "name": "gemengde groene bladsla",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "2 kipdijfilets (ca 150 gram totaal)",
@@ -3266,7 +3266,7 @@
         "unit": "gram",
         "name": "kipdijfilet",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "scheutje extra vierge olijfolie",
@@ -3290,7 +3290,7 @@
         "unit": "gram",
         "name": "pijnboompitten",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "20 gram parmezaanse kaas",
@@ -3350,7 +3350,7 @@
         "unit": "blik",
         "name": "tomatenblokjes (400 gram)",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "500 ml water",
@@ -3358,7 +3358,7 @@
         "unit": "ml",
         "name": "water",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "1 stuk groentebouillonblokje",
@@ -3366,7 +3366,7 @@
         "unit": "stuk",
         "name": "groentebouillonblokje",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "100 gram gedroogde rode linzen",
@@ -3426,7 +3426,7 @@
         "unit": "el",
         "name": "roomkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "peper",
@@ -3450,7 +3450,7 @@
         "unit": "stuk",
         "name": "cherrytomaten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "100g veldsla",
@@ -3458,7 +3458,7 @@
         "unit": "gram",
         "name": "veldsla",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "komkommer",
@@ -3482,7 +3482,7 @@
         "unit": "stuk",
         "name": "cherrytomaten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 el olijven",
@@ -3518,7 +3518,7 @@
         "unit": "el",
         "name": "roomkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "50 gram gerookte zalm (snippers)",
@@ -3550,7 +3550,7 @@
         "unit": "",
         "name": "Groene salade voorbeeld",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "100g veldsla",
@@ -3558,7 +3558,7 @@
         "unit": "gram",
         "name": "veldsla",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "komkommer",
@@ -3582,7 +3582,7 @@
         "unit": "stuk",
         "name": "cherrytomaten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1elolijven",
@@ -3634,7 +3634,7 @@
         "unit": "gram",
         "name": "champignons",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "scheutje volle melk",
@@ -3674,7 +3674,7 @@
         "unit": "",
         "name": "a 3 handjes bladsla",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "komkommer",
@@ -3690,7 +3690,7 @@
         "unit": "stuk",
         "name": "cherrytomaten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 el olijven",
@@ -3742,7 +3742,7 @@
         "unit": "",
         "name": "kipfilets",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "peper en zout",
@@ -3798,7 +3798,7 @@
         "unit": "el",
         "name": "citroensap",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "100 gram groene bladsalade (rucola, botersla, romaine sla, etc.)",
@@ -3844,7 +3844,7 @@
         "unit": "gram",
         "name": "sperziebonen",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 blikje tonijn op olijfolie",
@@ -3876,7 +3876,7 @@
         "unit": "el",
         "name": "witte wijnazijn",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "peper en zout",
@@ -3968,7 +3968,7 @@
         "unit": "el",
         "name": "citroensap",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "peper en zout",
@@ -4022,7 +4022,7 @@
         "unit": "stuk",
         "name": "winterwortel",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "2 stuks rode paprika",
@@ -4054,7 +4054,7 @@
         "unit": "stuk",
         "name": "groentebouillonblokje",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "900 ml water",
@@ -4062,7 +4062,7 @@
         "unit": "ml",
         "name": "water",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "2 kleine handjes verse peterselie",
@@ -4122,7 +4122,7 @@
         "unit": "gram",
         "name": "erwten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 kleine rode ui",
@@ -4156,7 +4156,7 @@
         "unit": "gram",
         "name": "kikkererwten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "3 el extra vierge olijfolie",
@@ -4198,7 +4198,7 @@
         "unit": "gram",
         "name": "groene (gemengde) bladsla",
         "optional": true,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 tl chilivlokken",
@@ -4268,7 +4268,7 @@
         "unit": "el",
         "name": "pijnboompitten",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "4 stukjes witlof",
@@ -4336,7 +4336,7 @@
         "unit": "gram",
         "name": "ongezouten en ongebrande cashewnoten",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "1 knolselderij",
@@ -4360,7 +4360,7 @@
         "unit": "gram",
         "name": "champignons (kastanje)",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 el extra vierge olijfolie",
@@ -4564,7 +4564,7 @@
         "unit": "gram",
         "name": "spruitjes",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 rode ui",
@@ -4596,7 +4596,7 @@
         "unit": "gram",
         "name": "sesamzaad",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "50 gram taugé",
@@ -4630,7 +4630,7 @@
         "unit": "gram",
         "name": "zilvervliesrijst",
         "optional": true,
-        "category": "Overig"
+        "category": "Houdbare producten"
       }
     ],
     "method": "Meng de sojasaus, uitgeperste knoflook, azijn, gember (en chilivlokken) en roer dit door de runderreepjes. Laat even intrekken (hoe langer hoe lekkerder). Was de spruitjes en snijd het stronkje eraf. Kook of stoom de spruitjes in ongeveer 7 minuten gaar. Snijd de ui in dunne ringen en was en snijd de paprika in dunne reepjes. Smoor de ui en paprika zachtjes gaar in een pan met wat boter. Roerbak vervolgens op middelhoog vuur de runderreepjes (of tofu) bij de ui en paprika. Voeg het teveel aan marinade toe. Voeg de spruitjes, taugé en sesamzaadjes toe. Roerbak alles een paar minuten totdat de taugé gaar, maar nog wel knapperig is. Liever vegetarisch? Vervang de runderreepjes door tofu. Snijd de tofu in blokjes. Meng de sojasaus, uitgeperste knoflook, gember (en chilivlokken) en roer dit door de tofu. Laat even intrekken (hoe langer hoe lekkerder).",
@@ -4690,7 +4690,7 @@
         "unit": "gram",
         "name": "spruitjes",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 rode ui",
@@ -4722,7 +4722,7 @@
         "unit": "gram",
         "name": "sesamzaad",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "50 gram taugé",
@@ -4756,7 +4756,7 @@
         "unit": "gram",
         "name": "zilvervliesrijst",
         "optional": true,
-        "category": "Overig"
+        "category": "Houdbare producten"
       }
     ],
     "method": "Meng de sojasaus, uitgeperste knoflook, azijn, gember en chilivlokken en roer dit door de tofu. Laat even intrekken (hoe langer hoe lekkerder). Was de spruitjes en snijd het stronkje eraf. Kook of stoom de spruitjes in ongeveer 7 minuten gaar. Snijd de ui in dunne ringen en was en snijd de paprika in dunne reepjes. Smoor de ui en paprika zachtjes gaar in een pan met wat boter. Roerbak vervolgens op middelhoog vuur de tofu bij de ui en paprika. Voeg het teveel aan marinade toe. Voeg de spruitjes, taugé en sesamzaadjes toe. Roerbak alles een paar minuten totdat de taugé gaar, maar nog wel knapperig is.",
@@ -4776,7 +4776,7 @@
         "unit": "",
         "name": "courgettes",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "3 rode paprika's",
@@ -4832,7 +4832,7 @@
         "unit": "gram",
         "name": "champignons",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "30 ml slagroom",
@@ -4895,7 +4895,7 @@
         "unit": "gram",
         "name": "cashewnoten (ongezouten/ongebrand)",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "1 ei",
@@ -4935,7 +4935,7 @@
         "unit": "blik",
         "name": "tomatenblokjes",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 klein blikje tomatenpuree",
@@ -4943,7 +4943,7 @@
         "unit": "blikje",
         "name": "tomatenpuree",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "2 el Italiaanse kruiden",
@@ -4983,7 +4983,7 @@
         "unit": "",
         "name": "ansjovis",
         "optional": true,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "champignons",
@@ -4991,7 +4991,7 @@
         "unit": "gram",
         "name": "champignons",
         "optional": true,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "tonijn",
@@ -5046,7 +5046,7 @@
             "unit": "gram",
             "name": "grote garnalen (vers)",
             "optional": false,
-            "category": "Overig"
+            "category": "Vlees, vis en vleesvervangers"
           }
         ],
         "category": "Diepvries"
@@ -5097,7 +5097,7 @@
         "unit": "gram",
         "name": "zonnebloempitten",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "50 gram Parmezaanse kaas",
@@ -5113,7 +5113,7 @@
         "unit": "el",
         "name": "citroensap",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "2 tl dyonmosterd",
@@ -5121,7 +5121,7 @@
         "unit": "tl",
         "name": "dyonmosterd",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "2 el (witte wijn) azijn",
@@ -5175,7 +5175,7 @@
             "category": "Diepvries"
           }
         ],
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "200 gram kip(dij)filet",
@@ -5225,7 +5225,7 @@
         "unit": "gram",
         "name": "cherrytomaten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 potje pesto",
@@ -5256,7 +5256,7 @@
             "unit": "gram",
             "name": "boerenkaas",
             "optional": false,
-            "category": "Overig"
+            "category": "Zuivel en eieren"
           }
         ],
         "category": "Zuivel en eieren"
@@ -5279,7 +5279,7 @@
         "unit": "stuk",
         "name": "sinaasappel (sap en rasp)",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "2 el extra vierge olijfolie",
@@ -5295,7 +5295,7 @@
         "unit": "tl",
         "name": "gemberpoeder",
         "optional": false,
-        "category": "Overig"
+        "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "1/2 tl cayennepeper",
@@ -5303,7 +5303,7 @@
         "unit": "tl",
         "name": "cayennepeper",
         "optional": false,
-        "category": "Overig"
+        "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "500 gram kippenvleugels",
@@ -5311,7 +5311,7 @@
         "unit": "gram",
         "name": "kippenvleugels",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "1 stronk broccoli (ca. 500 gram)",
@@ -5403,7 +5403,7 @@
         "unit": "",
         "name": "knoflookteen",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "400 gram zalmfilet",
@@ -5418,10 +5418,10 @@
             "unit": "gram",
             "name": "zalmmoot",
             "optional": false,
-            "category": "Overig"
+            "category": "Vlees, vis en vleesvervangers"
           }
         ],
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "30 ml mayonaise",
@@ -5489,7 +5489,7 @@
         "unit": "gram",
         "name": "rundergehakt",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "peper en zout",
@@ -5520,7 +5520,7 @@
             "unit": "gram",
             "name": "boerenkool",
             "optional": false,
-            "category": "Overig"
+            "category": "Groente en fruit"
           }
         ],
         "category": "Groente en fruit"
@@ -5531,7 +5531,7 @@
         "unit": "gram",
         "name": "erwten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 blikje of 2 el tomatenpuree",
@@ -5539,7 +5539,7 @@
         "unit": "blik",
         "name": "tomatenpuree",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "2 el Provençaalse kruiden",
@@ -5623,7 +5623,7 @@
         "unit": "",
         "name": "tartaartjes",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "peper en zout",
@@ -5639,7 +5639,7 @@
         "unit": "gram",
         "name": "pijnboompitten",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "klontje roomboter",
@@ -5655,7 +5655,7 @@
         "unit": "gram",
         "name": "bladspinazie",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "100 gram feta",
@@ -5679,7 +5679,7 @@
         "unit": "el",
         "name": "citroensap",
         "optional": true,
-        "category": "Overig"
+        "category": "Groente en fruit"
       }
     ],
     "method": "Verwarm de oven voor op 200 graden. Schil de pastinaken en snijd deze in de lengte. Leg ze in een ovenschaal of op bakpapier op het ovenrooster en besprenkel met olijfolie. Bak ze gaar in ongeveer 20 minuten (af en toe omkeren in de oven). Bestrooi het tartaartje met peper en een klein beetje (jozo)zout. Als de pastinaken bijna gaar zijn (even met de vork prikken of de binnenkant zacht is en rooster tijdens de laatste minuten de pijnboompitten mee), doe dan een klontje boter in de pan en bak het tartaartje in 5-7 minuten aan beide kanten gaar. Was ondertussen de spinazie en roerbak deze op hoog vuur in 2-5 minuten gaar in een koekenpan met een scheutje olijfolie. Eventueel kun je er een teentje knoflook doorheen persen en citroensap toevoegen. Als de spinazie bijna gaar is, strooi je de pijnboompitten erdoor en verkruimel je de feta erboven. Schep even goed door in de pan en serveer het dan op een bord, samen met het tartaartje en de pastinaken. Tip: Verwijder pijnboompitten uit het gerecht.",
@@ -5723,7 +5723,7 @@
         "unit": "gram",
         "name": "verse munt",
         "optional": false,
-        "category": "Overig"
+        "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "1 el extra vierge olijfolie",
@@ -5763,7 +5763,7 @@
         "unit": "el",
         "name": "volkorenmeel",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "400 gram kalkoenfilet",
@@ -5771,7 +5771,7 @@
         "unit": "gram",
         "name": "kalkoenfilet",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "50 gram groene bladsalade",
@@ -5831,7 +5831,7 @@
         "unit": "gram",
         "name": "kippendijen",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "1 el kerriepoeder",
@@ -5839,7 +5839,7 @@
         "unit": "el",
         "name": "kerriepoeder",
         "optional": false,
-        "category": "Overig"
+        "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "150 ml crême fraîche",
@@ -5847,7 +5847,7 @@
         "unit": "ml",
         "name": "crême fraîche",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "150 gram doperwten",
@@ -5855,7 +5855,7 @@
         "unit": "gram",
         "name": "doperwten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 grote bloemkool geraspt (of 400 gram kant en klaar)",
@@ -5907,7 +5907,7 @@
         "unit": "gram",
         "name": "champignons",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 teen knoflook",
@@ -6015,7 +6015,7 @@
         "unit": "gram",
         "name": "kipfilet",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "2 el sojasaus (geen ketjap)",
@@ -6089,7 +6089,7 @@
         "unit": "gram",
         "name": "bloemkoolrijst",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "100 gram taugé",
@@ -6157,7 +6157,7 @@
         "unit": "gram",
         "name": "kikkererwten",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 stuk ui",
@@ -6221,7 +6221,7 @@
         "unit": "el",
         "name": "venkelzaad",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 el komijnzaad",
@@ -6229,7 +6229,7 @@
         "unit": "el",
         "name": "komijnzaad",
         "optional": false,
-        "category": "Overig"
+        "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "1/2 rode peper",
@@ -6305,7 +6305,7 @@
         "unit": "",
         "name": "witlofstronken",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "2 kipfilets",
@@ -6313,7 +6313,7 @@
         "unit": "",
         "name": "kipfilets",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "2 kleine uien",
@@ -6353,7 +6353,7 @@
         "unit": "gram",
         "name": "erwtjes",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "peper en zout",
@@ -6369,7 +6369,7 @@
         "unit": "el",
         "name": "sesamzaadjes",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       }
     ],
     "method": "Neem een slakom, doe hierin de yoghurt, mayonaise en azijn en roer goed door. Voeg zoveel olijfolie toe tot je een goede dressing hebt. Snijd de witlof doormidden, verwijder de harde kern. Snijd de witlof in dunne reepjes en doe deze in de slakom en roer de saus er goed doorheen. Snijd de kipfilet in reepjes van ongeveer 1,5 cm. Snijd de ui fijn. Verhit 1 el olie zachtjes in een pan en fruit het uitje hierin zachtjes aan. Voeg na 4 minuten de sojasaus, gember en uitgeperste knoflook in de pan en bak de kipfiletreepjes hierin. Blijf roeren en bak in circa 6 minuten gaar. Zet kokend water op in een pannetje, kook de erwtjes in 3 minuten gaar en giet af. Haal de kipfilet van het vuur en besprenkel de helft van de kip met sesamzaadjes. Serveer met de erwtjes en de witlofsalade.",
@@ -6400,7 +6400,7 @@
         "unit": "gram",
         "name": "kipfilet",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "2 el olijfolie",
@@ -6416,7 +6416,7 @@
         "unit": "gram",
         "name": "snijbonen",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "100 gram tuinerwtjes",
@@ -6424,7 +6424,7 @@
         "unit": "gram",
         "name": "tuinerwtjes",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 teentje knoflook",
@@ -6440,7 +6440,7 @@
         "unit": "el",
         "name": "pijnboompitten",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "50 gram verse basilicum",
@@ -6543,7 +6543,7 @@
         "unit": "blik",
         "name": "ansjovisfilet",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "20 blaadjes verse basilicum",
@@ -6579,7 +6579,7 @@
         "unit": "stuk",
         "name": "flespompoen",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1/2 el paprikapoeder",
@@ -6634,10 +6634,10 @@
             "unit": "gram",
             "name": "geitenkaas",
             "optional": false,
-            "category": "Overig"
+            "category": "Zuivel en eieren"
           }
         ],
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "250 gram half-om-half gehakt",
@@ -6661,7 +6661,7 @@
         "unit": "el",
         "name": "volkorenmeel",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "250 ml slagroom (ongeklopt)",
@@ -6702,10 +6702,10 @@
             "unit": "gram",
             "name": "geitenkaas",
             "optional": false,
-            "category": "Overig"
+            "category": "Zuivel en eieren"
           }
         ],
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "1 tl nootmuskaat",
@@ -6759,7 +6759,7 @@
             "category": "Houdbare producten"
           }
         ],
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "2 el shoarmakruiden (zonder toegevoegde suiker)",
@@ -6767,7 +6767,7 @@
         "unit": "el",
         "name": "shoarmakruiden (zonder toegevoegde suiker)",
         "optional": false,
-        "category": "Overig"
+        "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "2 preien",
@@ -6791,7 +6791,7 @@
         "unit": "gram",
         "name": "sperziebonen",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "klontje roomboter",
@@ -6839,7 +6839,7 @@
         "unit": "el",
         "name": "citroensap",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "een teentje knoflook",
@@ -6867,7 +6867,7 @@
         "unit": "gram",
         "name": "speklap",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "250 gram runderstoofvlees",
@@ -6875,7 +6875,7 @@
         "unit": "gram",
         "name": "runderstoofvlees",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "3 uien",
@@ -6915,7 +6915,7 @@
         "unit": "stuk",
         "name": "groentebouillonblokje",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "70 gram tomatenpuree (1 klein blikje)",
@@ -6923,7 +6923,7 @@
         "unit": "gram",
         "name": "tomatenpuree (1 klein blikje)",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "scheutje azijn",
@@ -6971,7 +6971,7 @@
         "unit": "gram",
         "name": "champignons",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 bosje peterselie",
@@ -7035,7 +7035,7 @@
         "unit": "ml",
         "name": "water",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "1 knolselderij",
@@ -7159,7 +7159,7 @@
         "unit": "el",
         "name": "sesamzaadjes",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "1 avocado",
@@ -7235,7 +7235,7 @@
         "unit": "el",
         "name": "vissaus",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "400 gram witvisfilet naar keuze (zoals koolvis/ kabeljauw)",
@@ -7243,7 +7243,7 @@
         "unit": "gram",
         "name": "witvisfilet (koolvis/kabeljauw)",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "1 el olijfolie",
@@ -7267,7 +7267,7 @@
         "unit": "gram",
         "name": "sperziebonen",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       }
     ],
     "method": "Snijd de gember, rode peper en ui in stukjes en doe in een hoge kom. Verwijder de zaadjes en zaadlijsten van de rode peper als je niet van heel pittig houdt (bewaar een paar ringetjes voor de garnering). Pel de knoflook en voeg toe. Hak de koriander met stengel en al grof en voeg toe. Rasp de schil van de limoen en voeg toe. Snijd de limoen daarna in tweeën en knijp het sap boven de kom uit. Voeg tot slot de vissaus toe en maak er met de staafmixer een currypasta van. Snijd de witvis in blokjes van 2 bij 2 centimeter. Verhit de olijfolie in een diepe koekenpan. Bak hierin de currypasta op middelhoog vuur in ca. 2 minuten tot deze gaar bubbelen, blijf goed roeren. Voeg de kokosmelk en de visblokjes toe, breng aan de kook en draai het vuur daarna laag. Laat de curry ca. 8 minuten pruttelen. Snijd ondertussen de uiteinde van de sperziebonen eraf. Doe de sperziebonen in een pan en zet net onder water. Kook de sperziebonen in ca. 8 minuten beetgaar. Garneer de viscurry met de ringetjes rode peper en serveer met sperziebonen Tip: Koop ingevroren witte vis.",
@@ -7319,7 +7319,7 @@
         "unit": "el",
         "name": "kerriepoeder",
         "optional": false,
-        "category": "Overig"
+        "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "200 ml kokosmelk",
@@ -7343,7 +7343,7 @@
         "unit": "gram",
         "name": "witvis  (koolvis/scholfilet/kabeljauw)",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "2 kleine paksoi",
@@ -7377,7 +7377,7 @@
         "unit": "gram",
         "name": "cashewnoten",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "5 el sojasaus",
@@ -7468,10 +7468,10 @@
             "unit": "stuk",
             "name": "visbouillonblokje",
             "optional": false,
-            "category": "Overig"
+            "category": "Houdbare producten"
           }
         ],
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "400 gram zalmmoot",
@@ -7479,7 +7479,7 @@
         "unit": "gram",
         "name": "zalmmoot",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "3 el extra vierge olijfolie",
@@ -7531,7 +7531,7 @@
         "unit": "gram",
         "name": "zalmfilet",
         "optional": false,
-        "category": "Overig"
+        "category": "Vlees, vis en vleesvervangers"
       },
       {
         "raw": "100 gram veldsla",
@@ -7539,7 +7539,7 @@
         "unit": "gram",
         "name": "veldsla",
         "optional": false,
-        "category": "Overig"
+        "category": "Groente en fruit"
       },
       {
         "raw": "150 gram wortel (1 grote of 2 kleine)",
@@ -7555,7 +7555,7 @@
         "unit": "gram",
         "name": "walnoten",
         "optional": false,
-        "category": "Overig"
+        "category": "Houdbare producten"
       },
       {
         "raw": "3 el extra vierge olijfolie",
@@ -7663,7 +7663,7 @@
         "unit": "gram",
         "name": "boerenkaas",
         "optional": false,
-        "category": "Overig"
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "scheutje extra vierge olijfolie",
