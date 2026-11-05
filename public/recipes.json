@@ -1427,14 +1427,9 @@
         "key": "peper en zout",
         "optional": false
       },
-      {
-        "raw": "vorm voor muffins",
-        "amount": null,
-        "unit": "",
-        "name": "vorm voor muffins",
-        "key": "vorm voor muffins",
-        "optional": false
-      }
+    ],
+    "equipment": [
+      "vorm voor muffins"
     ],
     "method": "Kluts de eieren in een grote kom en voeg (jozo)zout en peper toe. Snijd de geitenkaas, zalm, ui en paprika in kleine stukjes en meng dit met de eieren. Giet het mengsel in 4 vormpjes en zet het 25 minuten in de oven op 190 graden. Tip: Heb je geen oven of haast? Maak dan een gevulde omelet van dit recept door de eieren te bakken in een anti-aanbakpan en de omelet te vullen met de overige ingrediënten",
     "harmonizerVersion": "1",
