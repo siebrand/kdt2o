@@ -154,10 +154,8 @@ function renderPlanner() {
         slot.innerHTML = "";
         const title = document.createElement("strong");
         title.textContent = recipe?.title || "Onbekend recept";
-        const detail = document.createElement("small");
-        detail.textContent = "-";
         slot.setAttribute("aria-label", `${recipe?.title || "Onbekend recept"}. Klik om te verwijderen`);
-        slot.append(title, detail);
+        slot.append(title);
         if (recipe?.multiDay) {
           const schedule = document.createElement("small");
           schedule.textContent = plannedDays(item.sourceDay, recipe.days).map((day) => shortDayName(day)).join(", ");
