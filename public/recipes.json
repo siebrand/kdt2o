@@ -507,8 +507,8 @@
         "raw": "2 vezelrijke crackers",
         "amount": 2,
         "unit": "stuk",
-        "name": "vezelrijke cracker",
-        "key": "vezelrijke cracker",
+        "name": "cracker",
+        "key": "cracker",
         "optional": false,
         "alternatives": [{"raw": "2 lijnzaadcrackers", "amount": 2, "unit": "stuk", "name": "lijnzaadcracker", "key": "lijnzaadcracker", "optional": false}]
       },
@@ -1335,8 +1335,8 @@
         "raw": "2 vezelrijke crackers",
         "amount": "2",
         "unit": "stuk",
-        "name": "vezelrijke cracker",
-        "key": "vezelrijke cracker",
+        "name": "cracker",
+        "key": "cracker",
         "optional": false,
         "alternatives": [
           {
@@ -1631,11 +1631,11 @@
         "optional": true
       },
       {
-        "raw": "2 crackers (ezelrijk)XXX",
+        "raw": "2 vezelrijke crackers",
         "amount": 2,
         "unit": "",
-        "name": "crackers (Wasa Vezelrijk)",
-        "key": "crackers (wasa vezelrijk)",
+        "name": "cracker",
+        "key": "cracker)",
         "optional": false
       },
       {
@@ -1800,8 +1800,8 @@
             "raw": "2 vezelrijke crackers",
             "amount": 2,
             "unit": "stuk",
-            "name": "vezelrijke cracker",
-            "key": "vezelrijke cracker",
+            "name": "cracker",
+            "key": "cracker",
             "optional": false
           }
         ]
@@ -2417,8 +2417,8 @@
             "raw": "2 vezelrijke crackers",
             "amount": 2,
             "unit": "stuk",
-            "name": "vezelrijke cracker",
-            "key": "vezelrijke cracker",
+            "name": "cracker",
+            "key": "cracker",
             "optional": false
           }
         ]
@@ -2516,11 +2516,11 @@
         "optional": false
       },
       {
-        "raw": "1 vezelrijke cracker per persoon",
-        "amount": 1,
-        "unit": "",
-        "name": "vezelrijke cracker per persoon",
-        "key": "vezelrijke cracker per persoon",
+        "raw": "2 vezelrijke crackers",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "cracker",
+        "key": "cracker",
         "optional": false
       },
       {
@@ -2635,8 +2635,8 @@
         "raw": "2 vezelrijke crackers",
         "amount": 2,
         "unit": "stuk",
-        "name": "vezelrijke cracker",
-        "key": "vezelrijke cracker",
+        "name": "cracker",
+        "key": "cracker",
         "optional": false,
         "alternatives": [{"raw": "2 lijnzaadcrackers", "amount": 2, "unit": "stuk", "name": "lijnzaadcracker", "key": "lijnzaadcracker", "optional": false}]
       },
@@ -2744,8 +2744,8 @@
         "raw": "2 vezelrijke crackers",
         "amount": 2,
         "unit": "",
-        "name": "vezelrijke crackers",
-        "key": "vezelrijke crackers",
+        "name": "crackers",
+        "key": "crackers",
         "optional": false
       },
       {
