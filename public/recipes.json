@@ -1619,6 +1619,14 @@
     "multiDay": false,
     "ingredients": [
       {
+        "raw": "4 eieren",
+        "amount": 4,
+        "unit": "stuk",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
         "raw": "2 el volle kwark",
         "amount": 2,
         "unit": "el",
@@ -1693,7 +1701,7 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "Schijfjes komkommer",
+        "raw": "schijfjes komkommer",
         "amount": "0.2",
         "unit": "stuk",
         "name": "komkommer",
@@ -1701,7 +1709,7 @@
         "category": "Groente en fruit"
       }
     ],
-    "method": "Kluts de eieren met de volle kwark en de geelwortel. Doe een scheutje olijfolie in de pan en bak het ei op een laag vuur gaar. Strooi de bieslook over de omelet. Serveer de omelet met één of twee vezelrijke of lijnzaad crackers met roomboter, ( boeren) kaas en schijfjes komkommer. Eet dit met een handje noten.",
+    "method": "Kluts de eieren met de volle kwark en de geelwortel. Doe een scheutje olijfolie in de pan en bak het ei op een laag vuur gaar. Strooi de bieslook over de omelet. Serveer de omelet met één of twee vezelrijke of lijnzaad crackers met roomboter, (boeren)kaas en schijfjes komkommer. Eet dit met een handje noten.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -1712,6 +1720,14 @@
     "portions": 2,
     "multiDay": false,
     "ingredients": [
+      {
+        "raw": "4 eieren",
+        "amount": 4,
+        "unit": "stuk",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
       {
         "raw": "60g geitenkaas (hard)",
         "amount": 60,
