@@ -269,6 +269,7 @@
         "name": "frambozen",
         "key": "frambozen",
         "optional": false,
+        "category": "Groente en fruit",
         "alternatives": [
           {
             "raw": "200 gram aardbeien",
@@ -276,7 +277,8 @@
             "unit": "gram",
             "name": "aardbeien",
             "key": "aardbeien",
-            "optional": false
+            "optional": false,
+            "category": "Groente en fruit"
           },
           {
             "raw": "200 gram frambozen (diepvries)",
@@ -284,7 +286,8 @@
             "unit": "gram",
             "name": "frambozen (diepvries)",
             "key": "frambozen (diepvries)",
-            "optional": false
+            "optional": false,
+            "category": "Diepvries"
           },
           {
             "raw": "200 gram aardbeien (diepvries)",
@@ -292,7 +295,8 @@
             "unit": "gram",
             "name": "aardbeien (diepvries)",
             "key": "aardbeien (diepvries)",
-            "optional": false
+            "optional": false,
+            "category": "Diepvries"
           }
         ]
       },
@@ -424,7 +428,8 @@
         "unit": "gram",
         "name": "frambozen",
         "key": "frambozen",
-        "optional": false
+        "optional": false,
+        "category": "Groente en fruit"
       },
       {
         "raw": "30 gram kokosrasp",
@@ -448,7 +453,8 @@
         "unit": "",
         "name": "vanille",
         "key": "vanille",
-        "optional": true
+        "optional": true,
+        "category": "Kruiden en smaakmakers"
       }
     ],
     "method": "Doe de avocado samen met de slagroom in een blender. Smelt de pure chocolade au bain-marie. Voeg deze chocolade en de cacaopoeder toe aan het avocadomengsel en roer het goed door. Serveer de mousse direct na het klaarmaken met de frambozen en de kokosrasp en de noten. Tip: Voor de variatie kun je dit gerecht ook serveren met Griekse yoghurt, kokosflakes, granola of stukjes 85% pure chocolade.",
@@ -1156,7 +1162,8 @@
         "unit": "",
         "name": "chili en gepekelde jalapenos",
         "key": "chili en gepekelde jalapenos",
-        "optional": true
+        "optional": true,
+        "category": "Kruiden en smaakmakers"
       }
     ],
     "method": "Snijd de lente-ui, tomaat en paprika fijn. Bak 5 minuten aan in de boter op middelhoog vuur. Klop de eieren en giet bovenop de groente en ‘hussel 2 minuten. Haal het roerei uit de pan, voeg de kaas toe, breng op smaak met (jozo)zout, peper en optioneel chili en gepekelde jalapenos.",
@@ -6081,7 +6088,8 @@
         "unit": "gram",
         "name": "nasi/bami groenten",
         "key": "nasi/bami groenten",
-        "optional": false
+        "optional": false,
+        "category": "Groente en fruit"
       },
       {
         "raw": "200 gram bloemkoolrijst",
@@ -6939,7 +6947,8 @@
         "unit": "takje",
         "name": "tijm",
         "key": "tijm",
-        "optional": false
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "paar takjes oregano",
@@ -6987,7 +6996,8 @@
         "unit": "gram",
         "name": "rode kool",
         "key": "rode kool",
-        "optional": false
+        "optional": false,
+        "category": "Groente en fruit"
       },
       {
         "raw": "1 granny smith appel",
@@ -7027,7 +7037,8 @@
         "unit": "",
         "name": "kruidnagel",
         "key": "kruidnagel",
-        "optional": false
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "300ml water",

@@ -603,17 +603,18 @@ const SHOPPING_LIST_EXCLUDED_NAMES = new Set(["deegroller of fles", "muffinbakpl
 const APPROVED_OTHER_NAMES = new Set(["bakpapier"]);
 
 function shoppingCategory(item) {
+  if (item.category) return item.category;
   const name = String(item.name || "").toLocaleLowerCase("nl");
   const has = (...terms) => terms.some((term) => name.includes(term));
   const hasWord = (...terms) => terms.some((term) => new RegExp(`(^|[^a-z])${term}($|[^a-z])`).test(name));
 
   if (has("diepvries", "bevroren")) return "Diepvries";
   if (has("kokosmelk", "bouillon", "zongedroogde", "olijf", "olijven", "kelp")) return "Houdbare producten";
-  if (has("wortel", "courgette", "paprika", "tomaat", "tomaten", "cherry tom", "komkommer", "biet", "avocado", "broccoli", "bloemkool", "spinazie", "sla", "rucola", "andijvie", "aubergine", "augurk", "bleekselderij", "venkel", "mais", "mandarijn", "champignon", "knoflook", "gember", "citroen", "limoen", "appel", "banaan", "aardbei", "aardbeien", "framboos", "frambozen", "bosbes", "blauwe bes", "mango", "peer", "druif", "fruit", "kikkererwt", "erwt", "snijboon", "snijbonen", "sperzieboon", "sperziebonen", "witlof", "lenteui", "bosui", "prei", "preien", "spruit", "taugé", "knolselderij", "pastinaak", "zuurkool", "artisjok", "bladgroente", "pompoen", "bladsalade", "gegrilde groenten", "paksoi", "chinese kool", "nasi/bami groenten", "rode kool") || hasWord("ui", "uien")) return "Groente en fruit";
+  if (has("wortel", "courgette", "paprika", "tomaat", "tomaten", "cherry tom", "komkommer", "biet", "avocado", "broccoli", "bloemkool", "spinazie", "sla", "rucola", "andijvie", "aubergine", "augurk", "bleekselderij", "venkel", "mais", "mandarijn", "champignon", "knoflook", "gember", "citroen", "limoen", "appel", "banaan", "aardbei", "framboos", "bosbes", "blauwe bes", "mango", "peer", "druif", "fruit", "kikkererwt", "erwt", "snijboon", "witlof", "lenteui", "bosui", "prei", "preien", "spruit", "taugé", "knolselderij", "pastinaak", "zuurkool") || hasWord("ui", "uien")) return "Groente en fruit";
   if (has("yoghurt", "kwark", "melk", "kaas", "feta", "ricotta", "mozzarella", "hüttenkäse", "huttenkase", "boter", "room", "crême", "crème", "creme", "fraiche", "fraîche") || hasWord("ei", "eieren")) return "Zuivel en eieren";
   if (has("kip", "rund", "gehakt", "spek", "ham", "zalm", "tonijn", "vis", "pangasius", "haring", "biefstuk", "tartaar", "tofu", "tempeh")) return "Vlees, vis en vleesvervangers";
   if (has("brood", "cracker", "havermout", "muesli", "granola")) return "Brood en ontbijt";
-  if (has("zout", "peper", "kaneel", "kruiden", "oregano", "basilicum", "komijn", "kerrie", "paprikapoeder", "salie", "peterselie", "dille", "koriander", "bieslook", "chilipoeder", "chilivlokken", "chili", "jalapeno", "kurkuma", "nootmuskaat", "vanille", "kruidnagel", "tijm", "spices")) return "Kruiden en smaakmakers";
+  if (has("zout", "peper", "kaneel", "kruiden", "oregano", "basilicum", "komijn", "kerrie", "paprikapoeder", "salie", "peterselie", "dille", "koriander", "bieslook", "chilipoeder", "chilivlokken", "kurkuma", "nootmuskaat", "spices")) return "Kruiden en smaakmakers";
   if (has("pasta", "rijst", "quinoa", "couscous", "linzen", "bonen", "noten", "amandel", "zaad", "pitten", "olie", "azijn", "meel", "bloem", "bakpoeder", "cacao", "chocolade", "pindakaas", "honing", "kokos", "mayonaise", "sojasaus", "mosterd", "pesto", "kokosmelk")) return "Houdbare producten";
   return "Overig";
 }
