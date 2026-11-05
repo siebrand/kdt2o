@@ -6551,6 +6551,7 @@
   {
     "id": "pompoenlasagne",
     "title": "Pompoenlasagne",
+    "approved": true,
     "category": "diner",
     "portions": 2,
     "multiDay": false,
