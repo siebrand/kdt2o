@@ -452,31 +452,8 @@ function formatIngredientUnit(unit, amount) {
 function copyShoppingIngredient(ingredient, normalizedUnit) {
   return {
     ...ingredient,
-    alternatives: ingredient.alternatives?.map((alternative) => ({ ...alternative })),
     normalizedUnit
   };
-}
-
-function aggregateIngredientAlternatives(existing, incoming) {
-  if (!incoming.alternatives?.length) return;
-  if (!existing.alternatives) {
-    existing.alternatives = incoming.alternatives.map((alternative) => ({ ...alternative }));
-    return;
-  }
-  incoming.alternatives.forEach((incomingAlternative) => {
-    const incomingUnit = normalizeShoppingUnit(incomingAlternative.unit);
-    const incomingKey = normalizeShoppingName(incomingAlternative.name);
-    const existingAlternative = existing.alternatives.find((alternative) =>
-      normalizeShoppingUnit(alternative.unit) === incomingUnit &&
-      normalizeShoppingName(alternative.name) === incomingKey
-    );
-    if (!existingAlternative) {
-      existing.alternatives.push({ ...incomingAlternative });
-      return;
-    }
-    const combinedAmount = addIngredientAmounts(existingAlternative.amount, incomingAlternative.amount);
-    if (combinedAmount !== null) existingAlternative.amount = combinedAmount;
-  });
 }
 
 function aggregateIngredients() {
@@ -501,10 +478,9 @@ function aggregateIngredients() {
     if (recipeNutBreadComponent) nutBreadComponent ||= recipeNutBreadComponent;
     ingredients.forEach((ingredient) => {
       const isFlaxCracker = /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(ingredient.raw || "")) ||
-        /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(ingredient.name || "")) ||
-        (ingredient.alternatives || []).some((alternative) => /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(alternative.raw || alternative.name || "")));
+        /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(ingredient.name || ""));
       if (isFlaxCracker) {
-        const amount = ingredient.amount ?? ingredient.alternatives?.find((alternative) => /lijnzaad\s*cracker/i.test(String(alternative.name || "")))?.amount;
+        const amount = ingredient.amount;
         const parsed = parseAmountRange(amount);
         if (parsed) flaxCrackerCount += parsed.max;
         else flaxCrackerCountUnknown = true;
@@ -537,7 +513,6 @@ function aggregateIngredients() {
       }
       const combinedAmount = addIngredientAmounts(existing.amount, shoppingIngredient.amount);
       if (combinedAmount !== null) existing.amount = combinedAmount;
-      aggregateIngredientAlternatives(existing, shoppingIngredient);
     });
   });
   if (flaxCrackerComponent && (flaxCrackerCount || flaxCrackerCountUnknown)) {
@@ -637,8 +612,7 @@ function formatIngredientLabel(item) {
 }
 
 function ingredientLabel(item) {
-  const labels = [item, ...(item.alternatives || [])].map(formatIngredientLabel);
-  return labels.join(" of ");
+  return formatIngredientLabel(item);
 }
 
 function renderShoppingList() {
