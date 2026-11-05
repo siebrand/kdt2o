@@ -719,6 +719,7 @@ function infographicSvg(recipe) {
   }).join("");
   const stepMarkup = steps.map((step, index) => {
     const y = 493 + index * 92;
+    if (/^Tip:/i.test(step)) return `<text x="795" y="${y + 8}" fill="#174c45" font-size="23" font-weight="700">${escapeXml(step.slice(0, 92))}</text>`;
     return `<circle cx="735" cy="${y}" r="34" fill="#e9795d"/><text x="735" y="${y + 12}" text-anchor="middle" fill="#fff" font-size="28" font-weight="800">${index + 1}</text><text x="795" y="${y - 7}" fill="#174c45" font-size="23" font-weight="700">Stap ${index + 1}</text><text x="795" y="${y + 27}" fill="#365f57" font-size="19">${escapeXml(step.slice(0, 92))}</text>`;
   }).join("");
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
@@ -904,8 +905,8 @@ async function createPdf() {
       doc.setFontSize(10); doc.setTextColor(40, 45, 40);
       const mainSteps = methodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
       mainSteps.forEach((step) => {
-        y = addWrapped(doc, `${stepNumber}. ${step}`, margin, y, width - margin * 2, 5);
-        stepNumber += 1;
+        y = addWrapped(doc, /^Tip:/i.test(step) ? step : `${stepNumber}. ${step}`, margin, y, width - margin * 2, 5);
+        if (!/^Tip:/i.test(step)) stepNumber += 1;
         if (y > height - margin) { doc.addPage(); y = 20; }
       });
       if (recipe.notes?.length) {

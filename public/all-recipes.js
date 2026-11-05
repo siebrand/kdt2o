@@ -136,7 +136,7 @@ async function buildPdf(recipes) {
       }
       const componentSteps = window.recipeMethodSteps(component.method || "");
       componentSteps.forEach((step, index) => {
-        rightY = textLines(doc, (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
+        rightY = textLines(doc, /^Tip:/i.test(step) ? step : (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
         rightY += 1.2;
       });
       rightY += 1.5;
@@ -148,7 +148,7 @@ async function buildPdf(recipes) {
     });
     const mainSteps = window.recipeMethodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
     mainSteps.forEach((step, index) => {
-      rightY = textLines(doc, (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
+      rightY = textLines(doc, /^Tip:/i.test(step) ? step : (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
       rightY += 1.2;
     });
 
