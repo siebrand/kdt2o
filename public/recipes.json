@@ -245,8 +245,8 @@
         "alternatives": [
           {
             "raw": "1 el olijfolie",
-            "amount": 1,
-            "unit": "el",
+            "amount": 15,
+            "unit": "ml",
             "name": "extra vierge olijfolie",
             "optional": false,
             "category": "Houdbare producten"
@@ -497,8 +497,8 @@
       },
       {
         "raw": "2 eetlepels extra vierge olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -1268,8 +1268,8 @@
           },
           {
             "raw": "2 el extra vierge olijfolie",
-            "amount": 2,
-            "unit": "el",
+            "amount": 30,
+            "unit": "ml",
             "name": "extra vierge olijfolie",
             "optional": false,
             "category": "Houdbare producten"
@@ -1423,8 +1423,8 @@
           },
           {
             "raw": "2 el extra vierge olijfolie",
-            "amount": 2,
-            "unit": "el",
+            "amount": 30,
+            "unit": "ml",
             "name": "extra vierge olijfolie",
             "optional": false,
             "category": "Houdbare producten"
@@ -1577,8 +1577,8 @@
           },
           {
             "raw": "2 el extra vierge olijfolie",
-            "amount": 2,
-            "unit": "el",
+            "amount": 30,
+            "unit": "ml",
             "name": "extra vierge olijfolie",
             "optional": false,
             "category": "Houdbare producten"
@@ -1643,8 +1643,8 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "25 ml extra vierge olijfolie",
-        "amount": 25,
+        "raw": "30 ml extra vierge olijfolie",
+        "amount": 30,
         "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
@@ -2072,8 +2072,8 @@
       },
       {
         "raw": "4 el extra vierge olijfolie",
-        "amount": 4,
-        "unit": "el",
+        "amount": 60,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -2088,24 +2088,24 @@
       },
       {
         "raw": "1 el azijn",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "azijn",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
         "raw": "1 el citroensap",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "citroensap",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
         "raw": "1 el balsamicoazijn",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "balsamicoazijn",
         "optional": false,
         "category": "Houdbare producten"
@@ -2206,16 +2206,16 @@
       },
       {
         "raw": "1 el olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
         "raw": "1 el citroensap",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "citroensap",
         "optional": false,
         "category": "Groente en fruit"
@@ -2322,8 +2322,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -2818,8 +2818,8 @@
       },
       {
         "raw": "2 el olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -2890,17 +2890,17 @@
       },
       {
         "raw": "3 el olijfolie",
-        "amount": 3,
-        "unit": "el",
+        "amount":45,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
-        "raw": "1 el witte wijn azijn",
-        "amount": 1,
-        "unit": "el",
-        "name": "witte wijn azijn",
+        "raw": "1 el witte wijnazijn",
+        "amount": 15,
+        "unit": "ml",
+        "name": "witte wijnazijn",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -2974,16 +2974,16 @@
       },
       {
         "raw": "2 el extra vierge olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
         "raw": "2 el azijn",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "azijn",
         "optional": false,
         "category": "Houdbare producten"
@@ -3052,16 +3052,16 @@
       },
       {
         "raw": "2 el azijn",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "azijn",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
         "raw": "2 el extra vierge olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -3348,8 +3348,8 @@
       },
       {
         "raw": "2 el extra vierge olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -3672,8 +3672,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -3764,8 +3764,8 @@
       },
       {
         "raw": "2 el extra vierge olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -3804,8 +3804,8 @@
       },
       {
         "raw": "4 el citroensap",
-        "amount": 4,
-        "unit": "el",
+        "amount": 60,
+        "unit": "ml",
         "name": "citroensap",
         "optional": false,
         "category": "Groente en fruit"
@@ -3865,9 +3865,9 @@
         "category": "Vlees, vis en vleesvervangers"
       },
       {
-        "raw": "2elextra vierge olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "raw": "2 el extra vierge olijfolie",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -3882,8 +3882,8 @@
       },
       {
         "raw": "2el witte wijnazijn",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "witte wijnazijn",
         "optional": false,
         "category": "Houdbare producten"
@@ -3966,16 +3966,16 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
         "raw": "2elcitroensap",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "citroensap",
         "optional": false,
         "category": "Groente en fruit"
@@ -4052,8 +4052,8 @@
       },
       {
         "raw": "6 eetlepels extra vierge olijfolie",
-        "amount": 6,
-        "unit": "el",
+        "amount": 90,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -4160,16 +4160,16 @@
       },
       {
         "raw": "3 el extra vierge olijfolie",
-        "amount": 3,
-        "unit": "el",
+        "amount": 45,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
         "raw": "2 el azijn",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "azijn",
         "optional": false,
         "category": "Houdbare producten"
@@ -4288,8 +4288,8 @@
       },
       {
         "raw": "2 el olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -4364,8 +4364,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -4408,8 +4408,8 @@
       },
       {
         "raw": "4 el extra vierge olijfolie",
-        "amount": 4,
-        "unit": "el",
+        "amount": 60,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -4482,8 +4482,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -4510,8 +4510,8 @@
     "ingredients": [
       {
         "raw": "4 el Japanse sojasaus (geen ketjap)",
-        "amount": 4,
-        "unit": "el",
+        "amount": 60,
+        "unit": "ml",
         "name": "sojasaus",
         "optional": false,
         "category": "Houdbare producten"
@@ -4526,8 +4526,8 @@
       },
       {
         "raw": "2 el azijn",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "azijn",
         "optional": false,
         "category": "Houdbare producten"
@@ -4646,8 +4646,8 @@
     "ingredients": [
       {
         "raw": "4 el Japanse sojasaus (geen ketjap)",
-        "amount": 4,
-        "unit": "el",
+        "amount": 60,
+        "unit": "ml",
         "name": "sojasaus",
         "optional": false,
         "category": "Houdbare producten"
@@ -4662,8 +4662,8 @@
       },
       {
         "raw": "2 el azijn",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "azijn",
         "optional": false,
         "category": "Houdbare producten"
@@ -5027,8 +5027,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -5108,9 +5108,9 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "1elcitroensap",
-        "amount": 1,
-        "unit": "el",
+        "raw": "1 el citroensap",
+        "amount": 15,
+        "unit": "ml",
         "name": "citroensap",
         "optional": false,
         "category": "Groente en fruit"
@@ -5124,10 +5124,10 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "2 el (witte wijn) azijn",
-        "amount": 2,
-        "unit": "el",
-        "name": "(witte wijn) azijn",
+        "raw": "2 el (witte wijn)azijn",
+        "amount": 30,
+        "unit": "ml",
+        "name": "witte wijnazijn",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -5283,8 +5283,8 @@
       },
       {
         "raw": "2 el extra vierge olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -5433,8 +5433,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -5477,8 +5477,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -5551,9 +5551,9 @@
       },
       {
         "raw": "4 el geraspte (boeren)kaas",
-        "amount": 4,
-        "unit": "el",
-        "name": "geraspte (boeren)kaas",
+        "amount": 40,
+        "unit": "gram",
+        "name": "boerenkaas",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -5567,8 +5567,8 @@
       },
       {
         "raw": "1 el sojasaus",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "sojasaus",
         "optional": false,
         "category": "Houdbare producten"
@@ -5611,8 +5611,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -5675,8 +5675,8 @@
       },
       {
         "raw": "2 el citroensap",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "citroensap",
         "optional": true,
         "category": "Groente en fruit"
@@ -5727,8 +5727,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -5819,9 +5819,9 @@
       },
       {
         "raw": "scheut extra vierge olijfolie",
-        "amount": null,
-        "unit": "",
-        "name": "scheut extra vierge olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -5967,8 +5967,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -6003,8 +6003,8 @@
     "ingredients": [
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -6019,8 +6019,8 @@
       },
       {
         "raw": "2 el sojasaus (geen ketjap)",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "sojasaus",
         "optional": false,
         "category": "Houdbare producten"
@@ -6125,8 +6125,8 @@
       },
       {
         "raw": "2 el sojasaus (geen ketjap)",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "sojasaus",
         "optional": false,
         "category": "Houdbare producten"
@@ -6177,8 +6177,8 @@
       },
       {
         "raw": "2 el extra vierge olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -6285,16 +6285,16 @@
       },
       {
         "raw": "2 el azijn",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "azijn",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -6325,8 +6325,8 @@
       },
       {
         "raw": "4 el sojasaus",
-        "amount": 4,
-        "unit": "el",
+        "amount": 60,
+        "unit": "ml",
         "name": "sojasaus",
         "optional": false,
         "category": "Houdbare producten"
@@ -6404,8 +6404,8 @@
       },
       {
         "raw": "2 el olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -6460,7 +6460,7 @@
       },
       {
         "raw": "Extra vierge olijfolie",
-        "amount": 10,
+        "amount": 15,
         "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
@@ -6552,8 +6552,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -6825,8 +6825,8 @@
       },
       {
         "raw": "1 el citroensap",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "citroensap",
         "optional": false,
         "category": "Groente en fruit"
@@ -6885,8 +6885,8 @@
       },
       {
         "raw": "2 el extra vierge olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -6917,9 +6917,9 @@
       },
       {
         "raw": "scheutje azijn",
-        "amount": null,
-        "unit": "",
-        "name": "scheutje azijn",
+        "amount": 15,
+        "unit": "ml",
+        "name": "azijn",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -6997,8 +6997,8 @@
       },
       {
         "raw": "1 el azijn",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "azijn",
         "optional": false,
         "category": "Houdbare producten"
@@ -7097,8 +7097,8 @@
       },
       {
         "raw": "1 el extra vierge olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -7113,8 +7113,8 @@
       },
       {
         "raw": "4 el sojasaus (geen ketjap)",
-        "amount": 4,
-        "unit": "el",
+        "amount": 60,
+        "unit": "ml",
         "name": "sojasaus",
         "optional": false,
         "category": "Houdbare producten"
@@ -7237,8 +7237,8 @@
       },
       {
         "raw": "1 el olijfolie",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -7289,7 +7289,7 @@
       },
       {
         "raw": "scheut extra vierge olijfolie",
-        "amount": 10,
+        "amount": 15,
         "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
@@ -7371,8 +7371,8 @@
       },
       {
         "raw": "5 el sojasaus",
-        "amount": 5,
-        "unit": "el",
+        "amount": 75,
+        "unit": "ml",
         "name": "sojasaus",
         "optional": false,
         "category": "Houdbare producten"
@@ -7473,8 +7473,8 @@
       },
       {
         "raw": "3 el extra vierge olijfolie",
-        "amount": 3,
-        "unit": "el",
+        "amount": 45,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -7509,8 +7509,8 @@
       },
       {
         "raw": "2 el extra vierge olijfolie",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -7549,8 +7549,8 @@
       },
       {
         "raw": "3 el extra vierge olijfolie",
-        "amount": 3,
-        "unit": "el",
+        "amount": 45,
+        "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
@@ -7657,7 +7657,7 @@
       },
       {
         "raw": "scheutje extra vierge olijfolie",
-        "amount": 15,
+        "amount": 10,
         "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
