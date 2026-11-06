@@ -1628,8 +1628,8 @@
       },
       {
         "raw": "2 el volle kwark",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "gram",
         "name": "volle kwark",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -3748,9 +3748,9 @@
     "ingredients": [
       {
         "raw": "2 kipfilets",
-        "amount": 2,
-        "unit": "",
-        "name": "kipfilets",
+        "amount": 300,
+        "unit": "gram",
+        "name": "kipfilet",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -4534,8 +4534,8 @@
       },
       {
         "raw": "2 el geraspte gember",
-        "amount": 2,
-        "unit": "el",
+        "amount": 20,
+        "unit": "gram",
         "name": "gember",
         "optional": false,
         "category": "Groente en fruit"
@@ -4670,8 +4670,8 @@
       },
       {
         "raw": "2 el geraspte gember",
-        "amount": 2,
-        "unit": "el",
+        "amount": 20,
+        "unit": "gram",
         "name": "gember",
         "optional": false,
         "category": "Groente en fruit"
@@ -5400,8 +5400,8 @@
       {
         "raw": "1 knoflookteen",
         "amount": 1,
-        "unit": "",
-        "name": "knoflookteen",
+        "unit": "teen",
+        "name": "knoflook",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -5575,8 +5575,8 @@
       },
       {
         "raw": "5 el volle kwark",
-        "amount": 5,
-        "unit": "el",
+        "amount": 75,
+        "unit": "gram",
         "name": "volle kwark",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -6035,8 +6035,8 @@
       },
       {
         "raw": "1 tl gember",
-        "amount": 1,
-        "unit": "tl",
+        "amount": 10,
+        "unit": "gram",
         "name": "gember",
         "optional": false,
         "alternatives": [
@@ -6309,9 +6309,9 @@
       },
       {
         "raw": "2 kipfilets",
-        "amount": 2,
-        "unit": "",
-        "name": "kipfilets",
+        "amount": 300,
+        "unit": "gram",
+        "name": "kipfilet",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -6333,8 +6333,8 @@
       },
       {
         "raw": "2 el geraspte gember",
-        "amount": 2,
-        "unit": "el",
+        "amount": 20,
+        "unit": "gram",
         "name": "gember",
         "optional": false,
         "category": "Groente en fruit"
@@ -6735,8 +6735,8 @@
     "ingredients": [
       {
         "raw": "2 kipfilets",
-        "amount": 2,
-        "unit": "stuk",
+        "amount": 300,
+        "unit": "gram",
         "name": "kipfilet",
         "optional": false,
         "alternatives": [
@@ -6801,8 +6801,8 @@
       },
       {
         "raw": "4 el volle kwark",
-        "amount": 4,
-        "unit": "el",
+        "amount": 60,
+        "unit": "gram",
         "name": "volle kwark",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -7089,8 +7089,8 @@
       },
       {
         "raw": "1 stuk gember (circa 2 cm)",
-        "amount": 1,
-        "unit": "stuk",
+        "amount": 20,
+        "unit": "gram",
         "name": "gember",
         "optional": false,
         "category": "Groente en fruit"
@@ -7173,8 +7173,8 @@
     "ingredients": [
       {
         "raw": "1 stuk gember van 2 cm",
-        "amount": 1,
-        "unit": "stuk",
+        "amount": 20,
+        "unit": "gram",
         "name": "gember",
         "optional": false,
         "category": "Groente en fruit"
@@ -7273,8 +7273,8 @@
     "ingredients": [
       {
         "raw": "3 el gember (geraspt)",
-        "amount": 3,
-        "unit": "el",
+        "amount": 30,
+        "unit": "gram",
         "name": "gember",
         "optional": false,
         "category": "Groente en fruit"
