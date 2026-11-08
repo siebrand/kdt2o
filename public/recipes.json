@@ -2615,6 +2615,8 @@
     "category": "lunch",
     "portions": 3,
     "multiDay": false,
+    "preparationTime": 15,
+    "ovenTime": 25,
     "ingredients": [
       {
         "raw": "250 gram champignons",
@@ -2673,7 +2675,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "komkommer",
+        "raw": "halve komkommer",
         "amount": "0.5",
         "unit": "stuk",
         "name": "komkommer",
@@ -2695,30 +2697,40 @@
         "name": "cracker",
         "optional": false,
         "category": "Brood en ontbijt"
-      },
+      }
+    ],
+    "components": [
       {
-        "raw": "3 el olijfolie",
-        "amount": 45,
-        "unit": "ml",
-        "name": "extra vierge olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "1 el witte wijnazijn",
-        "amount": 15,
-        "unit": "ml",
-        "name": "witte wijnazijn",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
+        "id": "dressing",
+        "title": "Dressing",
+        "includeInShoppingList": true,
+        "ingredients": [
+          {
+            "raw": "3 el olijfolie",
+            "amount": 45,
+            "unit": "ml",
+            "name": "extra vierge olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "1 el witte wijnazijn",
+            "amount": 15,
+            "unit": "ml",
+            "name": "witte wijnazijn",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "peper en zout",
+            "amount": null,
+            "unit": "",
+            "name": "peper en zout",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          }
+        ],
+        "method": "Meng de olijfolie en witte wijnazijn door elkaar en breng op smaak met peper en zout."
       }
     ],
     "method": "Verwarm de oven voor op 175°C. Bereid de dressing en zet apart. Vet de ovenschaal in met olijfolie. Snijd de champignons en bak ze in 1 eetlepel olijfolie. Snijd ondertussen de lente-ui. Draai het vuur laag en voeg de lente-ui toe. Breng op smaak met zout en peper. Voeg de peterselie toe. Meng de eieren kaas en mayonaise in een aparte kom. Breng op smaak met (jozo)zout en peper indien gewenst. Voeg de champignons en lente-ui toe aan het eiermengsel en giet het geheel in een goed ingevette ovenschaal. Bak 25-30 minuten, of totdat de frittata bruin wordt en de eieren gaar (geheel gestold) zijn. Laat 5 minuten afkoelen. Serveer bij de frittata een vezelrijke cracker en een simpele groene salade van sla, komkommer, tomaat en de dressing.",
