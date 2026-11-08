@@ -2117,9 +2117,9 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "3 tl mosterd",
-        "amount": 3,
-        "unit": "tl",
+        "raw": "1 el mosterd",
+        "amount": 1,
+        "unit": "el",
         "name": "mosterd",
         "optional": false,
         "category": "Houdbare producten"
@@ -2235,7 +2235,7 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "1/2 bosje verse bieslook",
+        "raw": "half bosje verse bieslook",
         "amount": 0.5,
         "unit": "bosje",
         "name": "verse bieslook",
@@ -2271,7 +2271,7 @@
     "multiDay": true,
     "ingredients": [
       {
-        "raw": "2uien",
+        "raw": "2 uien",
         "amount": 2,
         "unit": "stuk",
         "name": "ui",
@@ -2311,18 +2311,18 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "2 potten kikkererwten",
-        "amount": 2,
-        "unit": "",
-        "name": "potten kikkererwten",
+        "raw": "2 potten kikkererwten (2 potten à 400 gram)",
+        "amount": 800,
+        "unit": "gram",
+        "name": "kikkererwten",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "Beetje kelp",
-        "amount": null,
-        "unit": "",
-        "name": "Beetje kelp",
+        "raw": "2 norivellen",
+        "amount": 2,
+        "unit": null,
+        "name": "norivellen",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -2359,7 +2359,7 @@
         "category": "Zuivel en eieren"
       }
     ],
-    "method": "Snijd de ui en bak op middelhoog vuur glazig in een soeppan met wat olijfolie en de uitgeperste knoflook. Was en breek de broccoli in stukken (inclusief de steel) en voeg samen met het water en de bouillonblokjes toe aan de uien. Spoel de kikkererwten af en voeg ook toe. Breng vervolgens zachtjes aan de kook en laat het ongeveer 15 minuten pruttelen. Voeg een beetje kelp toe en pureer het geheel dan fijn. Voeg tot slot een scheutje olijfolie, peper en zout naar smaak en de crême fraiche toe. Serveer op een bord of neem mee in een thermoskan. Strooi tot slot de geitenkaas over je soep heen.",
+    "method": "Snijd de ui en bak op middelhoog vuur glazig in een soeppan met wat olijfolie en de uitgeperste knoflook. Was en breek de broccoli in stukken (inclusief de steel) en voeg samen met het water en de bouillonblokjes toe aan de uien. Spoel de kikkererwten af en voeg ook toe. Breng vervolgens zachtjes aan de kook en laat het ongeveer 15 minuten pruttelen. Voeg een 2 norivellen toe en pureer het geheel dan fijn. Voeg tot slot een scheutje olijfolie, peper en zout naar smaak en de crême fraiche toe. Serveer op een bord of neem mee in een thermoskan. Strooi tot slot de geitenkaas over je soep heen.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -2371,16 +2371,16 @@
     "multiDay": true,
     "ingredients": [
       {
-        "raw": "5 courgettes",
-        "amount": 5,
+        "raw": "3 courgettes",
+        "amount": 3,
         "unit": "",
         "name": "courgettes",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "5 uien",
-        "amount": 5,
+        "raw": "3 uien",
+        "amount": 3,
         "unit": "stuk",
         "name": "ui",
         "optional": false,
@@ -2427,10 +2427,10 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "25 gram kelp",
-        "amount": 25,
-        "unit": "gram",
-        "name": "kelp",
+        "raw": "3 norivellen",
+        "amount": 3,
+        "unit": "",
+        "name": "norivellen",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -2501,7 +2501,7 @@
         "category": "Houdbare producten"
       }
     ],
-    "method": "Snijd de courgettes in grove stukken. Pel de uien en snijd in grove stukken. Pel de knoflook en snijd grof. Verhit een flinke klont roomboter in een soeppan. Bak hierin de uien en knoflook in circa 3 minuten tot de uien glazig zijn. Voeg dan de courgette en salie toe en bak nog circa 5 minuten mee. Voeg zoveel bouillon (water met bouillonpoeder of blokjes) toe tot de groenten onder water staan. Laat zo nog circa 10 minuten pruttelen tot de groenten zacht zijn. Voeg een handje kelp toe. Pureer met een staafmixer fijn. Roer de crême fraîche of slagroom erdoorheen. Breng eventueel op smaak met peper en zout en het sap van een citroen en voeg de sojabonen toe. Snij de bietjes, geitenkaas en walnoten. Mix in een kom en eet samen met de soep.",
+    "method": "Snijd de courgettes in grove stukken. Pel de uien en snijd in grove stukken. Pel de knoflook en snijd grof. Verhit een flinke klont roomboter in een soeppan. Bak hierin de uien en knoflook in circa 3 minuten tot de uien glazig zijn. Voeg dan de courgette en salie toe en bak nog circa 5 minuten mee. Voeg zoveel bouillon (water met bouillonpoeder of blokjes) toe tot de groenten onder water staan. Laat zo nog circa 10 minuten pruttelen tot de groenten zacht zijn. Voeg een aantal norivellen toe. Pureer met een staafmixer fijn. Roer de crême fraîche of slagroom erdoorheen. Breng eventueel op smaak met peper en zout en het sap van een citroen en voeg de sojabonen toe. Snij de bietjes, geitenkaas en walnoten. Mix in een kom en eet samen met de soep.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -2569,10 +2569,10 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "25 gram kelp",
-        "amount": 25,
-        "unit": "gram",
-        "name": "kelp",
+        "raw": "3 norivellen",
+        "amount": 3,
+        "unit": null,
+        "name": "norivellen",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -2597,7 +2597,7 @@
       {
         "raw": "peper en zout",
         "amount": null,
-        "unit": "",
+        "unit": null,
         "name": "peper en zout",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -2621,7 +2621,7 @@
       {
         "raw": "lijnzaadcracker(s)",
         "amount": null,
-        "unit": "",
+        "unit": null,
         "name": "lijnzaadcracker(s)",
         "optional": false,
         "category": "Houdbare producten"
@@ -2635,7 +2635,7 @@
         "category": "Houdbare producten"
       }
     ],
-    "method": "Snijd de courgettes in grove stukken. Pel de uien en snijd in grove stukken. Pel de knoflook en snijd grof. Verhit een flinke klont roomboter in een soeppan. Bak hierin de uien en knoflook in circa 5 minuten tot de uien glazig zijn. Voeg dan de courgette en salie toe en bak nog circa 5 minuten mee. Voeg zoveel bouillon (water met bouillonpoeder of blokjes) toe tot de groenten onder water staan. Laat zo nog circa 10 minuten pruttelen tot de groenten zacht zijn. Voeg een handje kelp toe. Pureer met een staafmixer fijn. Roer de crême fraîche of slagroom erdoorheen. Breng eventueel op smaak met peper en zout en het sap van een citroen en voeg de sojabonen toe. Serveer op een bord of neem het mee in een thermoskan. Eet hierbij een lijnzaadcracker met pindakaas.",
+    "method": "Snijd de courgettes in grove stukken. Pel de uien en snijd in grove stukken. Pel de knoflook en snijd grof. Verhit een flinke klont roomboter in een soeppan. Bak hierin de uien en knoflook in circa 5 minuten tot de uien glazig zijn. Voeg dan de courgette en salie toe en bak nog circa 5 minuten mee. Voeg zoveel bouillon (water met bouillonpoeder of blokjes) toe tot de groenten onder water staan. Laat zo nog circa 10 minuten pruttelen tot de groenten zacht zijn. Voeg een aantal norivellen toe. Pureer met een staafmixer fijn. Roer de crême fraîche of slagroom erdoorheen. Breng eventueel op smaak met peper en zout en het sap van een citroen en voeg de sojabonen toe. Serveer op een bord of neem het mee in een thermoskan. Eet hierbij een lijnzaadcracker met pindakaas.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -2649,7 +2649,7 @@
       {
         "raw": "3 courgettes",
         "amount": 3,
-        "unit": "",
+        "unit": null,
         "name": "courgettes",
         "optional": false,
         "category": "Groente en fruit"
@@ -2703,10 +2703,10 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "25 gram kelp",
-        "amount": 25,
-        "unit": "gram",
-        "name": "kelp",
+        "raw": "3 norivellen",
+        "amount": 3,
+        "unit": "null",
+        "name": "norivellen",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -2803,7 +2803,7 @@
         "category": "Zuivel en eieren"
       }
     ],
-    "method": "Soep - Snijd de courgettes in grove stukken. Pel de uien en snijd in grove stukken. Pel de knoflook en snijd grof. Verhit een flinke klont roomboter in een soeppan. Bak hierin de uien en knoflook in circa 3 minuten tot de uien glazig zijn. Voeg dan de courgette en salie toe en bak nog circa 5 minuten mee. Voeg zoveel bouillon (water met bouillonpoeder of blokjes) toe tot de groenten onder water staan. Laat zo nog circa 10 minuten pruttelen tot de groente zacht zijn. Voeg een handje kelp toe. Pureer met een staafmixer fijn. Roer de crême fraîche of slagroom erdoorheen. Breng eventueel op smaak met peper en zout en het sap van een citroen. Salade — serveer een kleurrijke salade van gemengde bladsla, komkommer, tomaat en olijven. Een vezelrijke cracker belegd met boerenkaas zorgt voor een bite erbij. Slik je schildklier medicatie? Overleg dan met jouw arts of extra jodium dmv kelp/ nori- of zeewiervellen gebruikt kan worden.",
+    "method": "Soep - Snijd de courgettes in grove stukken. Pel de uien en snijd in grove stukken. Pel de knoflook en snijd grof. Verhit een flinke klont roomboter in een soeppan. Bak hierin de uien en knoflook in circa 3 minuten tot de uien glazig zijn. Voeg dan de courgette en salie toe en bak nog circa 5 minuten mee. Voeg zoveel bouillon (water met bouillonpoeder of blokjes) toe tot de groenten onder water staan. Laat zo nog circa 10 minuten pruttelen tot de groente zacht zijn. Voeg 3 norivellen toe. Pureer met een staafmixer fijn. Roer de crême fraîche of slagroom erdoorheen. Breng eventueel op smaak met peper en zout en het sap van een citroen. Salade — serveer een kleurrijke salade van gemengde bladsla, komkommer, tomaat en olijven. Een vezelrijke cracker belegd met boerenkaas zorgt voor een bite erbij. Slik je schildklier medicatie? Overleg dan met jouw arts of extra jodium dmv norivellen gebruikt kan worden.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -3417,10 +3417,10 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "beetje kelp/zeewier mix/nori vellen*",
-        "amount": null,
-        "unit": "",
-        "name": "beetje kelp/zeewier mix/nori vellen*",
+        "raw": "2 norivellen",
+        "amount": 2,
+        "unit": null,
+        "name": "norivellen",
         "optional": false,
         "category": "Houdbare producten"
       }
@@ -4113,15 +4113,15 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "beetje kelp/zeewier mix/nori vellen*",
-        "amount": null,
-        "unit": "",
-        "name": "beetje kelp/zeewier mix/nori vellen*",
+        "raw": "norivellen",
+        "amount": 2,
+        "unit": null,
+        "name": "norivellen",
         "optional": false,
         "category": "Houdbare producten"
       }
     ],
-    "method": "Tomatensoep - Pel en snipper de ui. Was de tomaten en snijd deze in stukken of open de blikken. Verwijder de uiteinden van de wortel, schil en hak in grove stukken. Was en snij de paprika in stukken. Doe de olijfolie in soeppan. Bak hierin de ui op middelmatig vuur in 5 minuten zacht en glazig. Voeg de tomaten, paprika, wortelen, bleekselderij en de bouillonblokjes met water en peterselie toe. Breng het aan de kook. Wanneer het kookt, zet je het vuur laag, doe je de deksel op de pan en laat het zo 15 minuten staan. Als de groenten zacht en gaar zijn voeg je een beetje kelp toe en pureer je de soep met een staafmixer. Spoel de linzen af en voeg toe aan de soep. Bestrooi daarna met de basilicumblaadjes. Voeg eventueel wat peper toe. Voeg wat verpulverde nori vellen over de soep toe voor dat je het serveert. Tip: Als de tomaten weinig smaak hebben of je de soep intenser rood wilt maken, voeg dan tijdens het bakken van de ui een klein blikje tomatenpuree toe. Serveer de tomatensoep in een kom of neem het mee in een thermoskan. Tip: Koop de paprika niet per stuk, maar in een voordeelverpakking van drie. Tip: Koop de paprika op de markt; daar is deze goedkoper. Serveer met: zie weekmenu ees KEER Voeding | Leeft OM Slik je schildklier medicatie? Overleg dan met jouw arts of extra jodium dmv kelp/ nori- of zeewiervellen gebruikt kan worden.",
+    "method": "Tomatensoep - Pel en snipper de ui. Was de tomaten en snijd deze in stukken of open de blikken. Verwijder de uiteinden van de wortel, schil en hak in grove stukken. Was en snij de paprika in stukken. Doe de olijfolie in soeppan. Bak hierin de ui op middelmatig vuur in 5 minuten zacht en glazig. Voeg de tomaten, paprika, wortelen, bleekselderij en de bouillonblokjes met water en peterselie toe. Breng het aan de kook. Wanneer het kookt, zet je het vuur laag, doe je de deksel op de pan en laat het zo 15 minuten staan. Als de groenten zacht en gaar zijn voeg je 2 norivellen toe en pureer je de soep met een staafmixer. Spoel de linzen af en voeg toe aan de soep. Bestrooi daarna met de basilicumblaadjes. Voeg eventueel wat peper toe. Voeg wat verpulverde nori vellen over de soep toe voor dat je het serveert. Tip: Als de tomaten weinig smaak hebben of je de soep intenser rood wilt maken, voeg dan tijdens het bakken van de ui een klein blikje tomatenpuree toe. Serveer de tomatensoep in een kom of neem het mee in een thermoskan. Tip: Koop de paprika niet per stuk, maar in een voordeelverpakking van drie. Tip: Koop de paprika op de markt; daar is deze goedkoper. Serveer met: zie weekmenu ees KEER Voeding | Leeft OM Slik je schildklier medicatie? Overleg dan met jouw arts of extra jodium dmv norivellen gebruikt kan worden.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -5122,10 +5122,10 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "2 tl dyonmosterd",
+        "raw": "2 tl mosterd",
         "amount": 2,
         "unit": "tl",
-        "name": "dyonmosterd",
+        "name": "mosterd",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -6254,7 +6254,7 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "1/2 bosje verse koriander",
+        "raw": "half bosje verse koriander",
         "amount": 0.5,
         "unit": "bosje",
         "name": "verse koriander",
@@ -7436,7 +7436,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "12 tl mosterd",
+        "raw": "4 el mosterd",
         "amount": 12,
         "unit": "tl",
         "name": "mosterd",
@@ -7638,7 +7638,7 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "6 tl mosterd",
+        "raw": "3 el mosterd",
         "amount": 6,
         "unit": "tl",
         "name": "mosterd",
