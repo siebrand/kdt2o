@@ -13,6 +13,8 @@ or server-side planning state.
 5. The browser can fill empty meal slots randomly and can encode a plan in a
    shareable URL without sending planning data to a server.
 6. The browser can filter one recipe by meal and generate a single-recipe PDF.
+7. Recipe lists and random selection use recipes with `approved: true` by
+   default; the user can explicitly enable all recipes.
 
 Recipe text is treated as data and inserted with text APIs, never as HTML.
 

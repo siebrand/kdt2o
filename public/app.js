@@ -2,7 +2,7 @@ const DAYS = ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterda
 const MEALS = ["ontbijt", "lunch", "diner"];
 const PLAN_STORAGE_KEY = "kitano-weekplan";
 const PLAN_STORAGE_VERSION = 2;
-const state = { recipes: [], plan: loadPlan(), activeSlot: null, pendingRecipe: null, shoppingWarnings: [] };
+const state = { recipes: [], plan: loadPlan(), activeSlot: null, pendingRecipe: null, shoppingWarnings: [], showAllRecipes: false };
 
 const planner = document.querySelector("#planner");
 const options = document.querySelector("#recipe-options");
@@ -20,8 +20,13 @@ const singleRecipeSearch = document.querySelector("#single-recipe-search");
 const shoppingListItems = document.querySelector("#shopping-list-items");
 const notifications = document.querySelector("#notifications");
 const recipePanel = document.querySelector("#recipe-panel");
+const showAllRecipesToggle = document.querySelector("#show-all-recipes");
 const includeInfographicsToggle = document.querySelector("#include-infographics");
 if (includeInfographicsToggle) includeInfographicsToggle.checked = false;
+
+function recipeIsAvailable(recipe) {
+  return state.showAllRecipes || recipe.approved === true;
+}
 
 function loadPlan() {
   try {
@@ -212,7 +217,7 @@ function renderOptions() {
   const visible = state.recipes.filter((recipe) => {
     const matchesMeal = state.activeSlot && recipe.category === state.activeSlot.meal;
     const matchesSearch = !query || recipe.title.toLocaleLowerCase("nl").includes(query);
-    return matchesMeal && !selected.has(recipe.id) && matchesSearch;
+    return recipeIsAvailable(recipe) && matchesMeal && !selected.has(recipe.id) && matchesSearch;
   });
   if (!visible.length) {
     options.append(Object.assign(document.createElement("p"), { className: "muted", textContent: "Geen recepten gevonden." }));
@@ -246,7 +251,7 @@ function renderOptions() {
 function renderSingleRecipeSearch() {
   singleRecipeResults.replaceChildren();
   const query = singleRecipeQuery.value.trim().toLocaleLowerCase("nl");
-  const visible = state.recipes.filter((recipe) => recipe.category === singleRecipeCategory.value &&
+  const visible = state.recipes.filter((recipe) => recipeIsAvailable(recipe) && recipe.category === singleRecipeCategory.value &&
     (!query || recipe.title.toLocaleLowerCase("nl").includes(query)));
   if (!visible.length) {
     singleRecipeResults.append(Object.assign(document.createElement("p"), { className: "muted", textContent: "Geen recepten gevonden." }));
@@ -314,7 +319,7 @@ function fillRandomPlan() {
     DAYS.forEach((_, day) => {
       if (state.plan[planKey(day, meal)]) return;
       const selected = selectedIds();
-      const candidates = shuffleRecipes(state.recipes.filter((recipe) => recipe.category === meal && !selected.has(recipe.id)));
+      const candidates = shuffleRecipes(state.recipes.filter((recipe) => recipeIsAvailable(recipe) && recipe.category === meal && !selected.has(recipe.id)));
       const recipe = candidates.find((candidate) => {
         if (!isMultiDay(candidate)) return true;
         const days = plannedDays(day, candidate.days);
@@ -1022,6 +1027,11 @@ document.querySelector("#clear-plan").addEventListener("click", () => {
 randomFillButton.addEventListener("click", fillRandomPlan);
 copyMenuLinkButton.addEventListener("click", copyMenuLink);
 search.addEventListener("input", renderOptions);
+showAllRecipesToggle.addEventListener("change", () => {
+  state.showAllRecipes = showAllRecipesToggle.checked;
+  renderOptions();
+  renderSingleRecipeSearch();
+});
 singleRecipeCategory.addEventListener("change", renderSingleRecipeSearch);
 singleRecipeQuery.addEventListener("input", renderSingleRecipeSearch);
 shoppingListButton.addEventListener("click", () => {

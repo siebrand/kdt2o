@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" crossorigin="anonymous"></script>
   <script defer src="recipe-parser.js"></script>
-  <script defer src="app.js?v=4"></script>
+  <script defer src="app.js?v=5"></script>
 </head>
 <body>
   <header class="site-header">
@@ -29,6 +29,7 @@
         <button id="clear-plan" class="button button-secondary" type="button">Planning wissen</button>
         <button id="show-shopping-list" class="button" type="button" disabled>Afronden en boodschappenlijst bekijken</button>
       </div>
+      <label class="recipe-visibility-toggle"><input id="show-all-recipes" type="checkbox" autocomplete="off"> Alle recepten weergeven</label>
     </section>
     <section id="planner" class="planner" aria-label="Weekplanning"></section>
     <section id="single-recipe-search" class="recipe-panel" aria-labelledby="single-recipe-search-title">

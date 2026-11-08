@@ -45,6 +45,8 @@ The following features are complete and have been moved below the open work:
 - [x] Recipe preparation-time fields shown on recipe cards and in PDFs.
 - [x] Recipe approval markers and exclusion of approved recipes from the review
   PDF at `all-recipes.html`.
+- [x] Approved-only recipe visibility and random selection by default, with an
+  explicit option to include all recipes.
 - [x] Optional infographic pages controlled by the PDF checkbox.
 - [x] Recipe and shopping-list PDF generation in the browser with jsPDF.
 - [x] Privacy page, MIT/CC0 licensing, FOSS governance, contribution, conduct,
