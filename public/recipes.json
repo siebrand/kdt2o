@@ -1460,6 +1460,7 @@
   {
     "id": "notenbrood-met-roomboter-boerenkaas-en-komkommer",
     "title": "Notenbrood met roomboter, boerenkaas en komkommer",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -1614,6 +1615,7 @@
   {
     "id": "omelet-met-geelwortel",
     "title": "Omelet met geelwortel",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -1716,6 +1718,7 @@
   {
     "id": "ontbijtmuffins",
     "title": "Ontbijtmuffins",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -1779,6 +1782,7 @@
   {
     "id": "roerei-met-ricotta",
     "title": "Roerei met ricotta",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
