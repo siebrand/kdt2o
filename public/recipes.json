@@ -3471,6 +3471,7 @@
     "id": "omelet-champignons-en-salade",
     "title": "Omelet champignons en salade",
     "category": "lunch",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -3495,6 +3496,14 @@
         "amount": 30,
         "unit": "ml",
         "name": "volle melk",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "5 eieren",
+        "amount": 5,
+        "unit": "stuk",
+        "name": "eieren",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -3531,7 +3540,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "komkommer",
+        "raw": "halve komkommer",
         "amount": "0.5",
         "unit": "stuk",
         "name": "komkommer",
@@ -3579,7 +3588,7 @@
         "category": "Houdbare producten"
       }
     ],
-    "method": "Snijd de ui fijn en bak zachtjes aan totdat ze glazig zijn. Borstel de paddenstoelen schoon en snijd deze in stukjes. Voeg dit toe aan de ui en bak het mengsel nog 2 minuten op laag vuur. Haal vervolgens van het vuur, voeg een scheutje melk toe en pureer het geheel. Kluts vijf eieren en meng hierin het gepureerde ui- paddenstoelenmengsel, peper, (jozo)zout en peterselie. Roer alles goed door en bak de omelet in twee keer in een koekenpan met een beetje olijfolie. Serveer met een frisse salade van bladsla, komkommer, cherrytomaatjes, olijven, avocado, feta en een eetlepel noten, pitten of zaden.",
+    "method": "Snijd de uien fijn en bak zachtjes aan totdat ze glazig zijn. Borstel de paddenstoelen schoon en snijd deze in stukjes. Voeg dit toe aan de uien en bak het mengsel nog 2 minuten op laag vuur. Haal vervolgens van het vuur, voeg een scheutje melk toe en pureer het geheel. Kluts vijf eieren en meng hierin het gepureerde ui-paddenstoelenmengsel, peper, (jozo)zout en peterselie. Roer alles goed door en bak de omelet in twee keer in een koekenpan met een beetje olijfolie. Serveer met een frisse salade van bladsla, komkommer, cherrytomaatjes, olijven, avocado, feta en een eetlepel noten, pitten of zaden.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -3631,7 +3640,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "30 ml mayonaise",
+        "raw": "2 el mayonaise",
         "amount": 30,
         "unit": "ml",
         "name": "mayonaise",
