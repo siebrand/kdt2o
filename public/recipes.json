@@ -4949,16 +4949,6 @@
         "unit": "gram",
         "name": "grote garnalen (diepvries)",
         "optional": false,
-        "alternatives": [
-          {
-            "raw": "300 gram grote garnalen (vers)",
-            "amount": 300,
-            "unit": "gram",
-            "name": "grote garnalen (vers)",
-            "optional": false,
-            "category": "Vlees, vis en vleesvervangers"
-          }
-        ],
         "category": "Diepvries"
       },
       {
@@ -5026,46 +5016,208 @@
         "name": "Parmezaanse kaas",
         "optional": false,
         "category": "Zuivel en eieren"
+      }
+    ],
+    "components": [
+      {
+        "id": "caesardressing",
+        "title": "Caesardressing",
+        "yield": 2,
+        "yieldUnit": "porties",
+        "yieldNote": "",
+        "includeInShoppingList": true,
+        "ingredients": [
+          {
+            "raw": "1 el citroensap",
+            "amount": 15,
+            "unit": "ml",
+            "name": "citroensap",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "2 tl mosterd",
+            "amount": 2,
+            "unit": "tl",
+            "name": "mosterd",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "2 el (witte wijn)azijn",
+            "amount": 30,
+            "unit": "ml",
+            "name": "witte wijnazijn",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "50 ml extra vierge olijfolie",
+            "amount": 50,
+            "unit": "ml",
+            "name": "extra vierge olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          }
+        ],
+        "equipment": [],
+        "method": "Doe alle ingrediënten in een kommetje en meng met een vork."
+      }
+    ],
+    "method": "Verhit de roomboter en olie in een koekenpan. Bestrooi de garnalen met knoflook, peper, (jozo)zout en kurkuma. Bak de garnalen in olijfolie op middelhoog vuur rondom bruin. Zet het vuur lager en bak zachtjes gaar in circa 8 minuten. Verwijder intussen de harde kern van de sla, scheur deze in grove stukken en leg het samen met de afgespoelde mais op een diep bord. Strooi de zonnebloempitten erover. Haal de garnalen uit de pan als ze klaar zijn, pel ze en leg ze op de sla. Rasp de Parmezaanse kaas grof en strooi over de sla. Bereid de caesardressing volgens het subrecept en serveer de salade ermee. Tip: Liever geen vieze handen? Je kunt de garnalen ook pellen voordat je ze bakt; de smaak blijft echter beter behouden als je ze erna pas pelt."
+  },
+  {
+    "id": "caesarsalade-met-kipfilet",
+    "title": "Caesarsalade met kipfilet",
+    "category": "diner",
+    "approved": true,
+    "portions": 2,
+    "multiDay": false,
+    "ingredients": [
+      {
+        "raw": "1 tl roomboter",
+        "amount": 5,
+        "unit": "gram",
+        "name": "roomboter",
+        "optional": false,
+        "category": "Zuivel en eieren"
       },
       {
-        "raw": "1 el citroensap",
+        "raw": "1 el extra vierge olijfolie",
         "amount": 15,
-        "unit": "ml",
-        "name": "citroensap",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "2 tl mosterd",
-        "amount": 2,
-        "unit": "tl",
-        "name": "mosterd",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "2 el (witte wijn)azijn",
-        "amount": 30,
-        "unit": "ml",
-        "name": "witte wijnazijn",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "50 ml extra vierge olijfolie",
-        "amount": 50,
         "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
+      },
+      {
+        "raw": "300 gram kipfilet",
+        "amount": 300,
+        "unit": "gram",
+        "name": "kipfilet",
+        "optional": false,
+        "category": "Vlees, vis en vleesvervangers"
+      },
+      {
+        "raw": "2 teentjes knoflook",
+        "amount": 2,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "1 tl geelwortel (kurkuma)",
+        "amount": 1,
+        "unit": "tl",
+        "name": "geelwortel (kurkuma)",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "1 kropje little gem sla",
+        "amount": 1,
+        "unit": "kropje",
+        "name": "little gem sla",
+        "optional": false,
+        "alternatives": [
+          {
+            "raw": "1/4 krop ijsbergsla",
+            "amount": 0.25,
+            "unit": "krop",
+            "name": "ijsbergsla",
+            "optional": false,
+            "category": "Groente en fruit"
+          }
+        ],
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 blikje mais (150 gram)",
+        "amount": 1,
+        "unit": "blik",
+        "name": "mais (150 gram)",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 handje zonnebloempitten (eventueel geroosterd)",
+        "amount": 25,
+        "unit": "gram",
+        "name": "zonnebloempitten",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "50 gram Parmezaanse kaas",
+        "amount": 50,
+        "unit": "gram",
+        "name": "Parmezaanse kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
       }
     ],
-    "method": "Verhit de roomboter en olie in een koekenpan. Bestrooi de garnalen met knoflook, peper, (jozo)zout en kurkuma. Bak de garnalen in olijfolie op middelhoog vuur rondom bruin. Zet het vuur lager en bak zachtjes gaar in circa 8 minuten. Verwijder intussen de harde kern van de sla, scheur deze in grove stukken en leg het samen met de afgespoelde mais op een diep bord. Strooi de zonnebloempitten erover. Haal de garnalen uit de pan als ze klaar zijn, pel ze en leg ze op de sla. Rasp de Parmezaanse kaas grof en strooi over de sla. Serveer met de caesardressing. Voor de dressing: doe alle ingrediënten in een kommetje en mix met een vork. 7IP - Liever geen vieze handen? Je kunt de garnalen ook pellen voordat je ze bakt. De smaak blijft echter beter behouden als je ze erna pas pelt. 7IP - In deze salade kun je de garnalen ook vervangen door kipfilet."
+    "components": [
+      {
+        "id": "caesardressing",
+        "title": "Caesardressing",
+        "yield": 2,
+        "yieldUnit": "porties",
+        "yieldNote": "",
+        "includeInShoppingList": true,
+        "ingredients": [
+          {
+            "raw": "1 el citroensap",
+            "amount": 15,
+            "unit": "ml",
+            "name": "citroensap",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "2 tl mosterd",
+            "amount": 2,
+            "unit": "tl",
+            "name": "mosterd",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "2 el (witte wijn)azijn",
+            "amount": 30,
+            "unit": "ml",
+            "name": "witte wijnazijn",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "50 ml extra vierge olijfolie",
+            "amount": 50,
+            "unit": "ml",
+            "name": "extra vierge olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          }
+        ],
+        "equipment": [],
+        "method": "Doe alle ingrediënten in een kommetje en meng met een vork."
+      }
+    ],
+    "method": "Verhit de roomboter en olie in een koekenpan. Snijd de kipfilet in reepjes. Bestrooi de kip met knoflook, peper, (jozo)zout en kurkuma. Bak de kip in olijfolie op middelhoog vuur rondom bruin. Zet het vuur lager en bak zachtjes gaar in circa 8 minuten. Verwijder intussen de harde kern van de sla, scheur deze in grove stukken en leg het samen met de afgespoelde mais op een diep bord. Strooi de zonnebloempitten erover. Haal de kip uit de pan als die klaar is en leg de kip op de sla. Rasp de Parmezaanse kaas grof en strooi over de sla. Bereid de Caesardressing volgens het subrecept en serveer de salade ermee."
   },
   {
     "id": "courgetti-pasta",
-    "title": "Courgetti pasta",
+    "title": "Courgettipasta",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -5138,9 +5290,9 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1 potje pesto",
-        "amount": 1,
-        "unit": "potje",
+        "raw": "50 gram pesto",
+        "amount": 50,
+        "unit": "gram",
         "name": "pesto",
         "optional": false,
         "category": "Houdbare producten"
@@ -5178,11 +5330,12 @@
     "id": "gebakken-kippenvleugels",
     "title": "Gebakken kippenvleugels",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "1/2 sinaasappel (sap en rasp)",
+        "raw": "halve sinaasappel (sap en rasp)",
         "amount": 0.5,
         "unit": "stuk",
         "name": "sinaasappel",
@@ -5206,7 +5359,7 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "1/2 tl cayennepeper",
+        "raw": "halve tl cayennepeper",
         "amount": 0.5,
         "unit": "tl",
         "name": "cayennepeper",
@@ -5248,7 +5401,7 @@
       {
         "raw": "paar takjes verse dille",
         "amount": null,
-        "unit": "",
+        "unit": null,
         "name": "paar takjes verse dille",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -5256,18 +5409,19 @@
       {
         "raw": "peper en zout",
         "amount": null,
-        "unit": "",
+        "unit": null,
         "name": "peper en zout",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       }
     ],
-    "method": "Verwarm de oven voor op 200°C. Mix sinaasappelsap en —rasp met de olie en kruiden in een kom. Plaats de kippenvleugels in een plastic zak of (ruime) afsluitbare bak. Giet de kruiden- marinade erbij en schud het geheel goed door elkaar. Zet apart voor minimaal 5 minuten (liever langer). Plaats de kippenvleugels in één laag op de bodem van een ingevette ovenschotel. Bak in het midden van de oven gedurende ongeveer 45 minuten, of totdat de vleugels goudbruin en gaar zijn, keer regelmatig om. Verdeel ondertussen de broccoli in kleine roosjes, en blancheer ze een paar minuten in zout water: ze moeten zachter worden, maar niet van kleur of vorm veranderen. Giet de broccoli af en voeg de mais, mayonaise, dille, (jozo)zout en peper toe. Serveer samen met de gebakken kippenvleugels."
+    "method": "Verwarm de oven voor op 200°C. Meng sinaasappelsap en -rasp met de olie en kruiden in een kom. Plaats de kippenvleugels in een plastic zak of (ruime) afsluitbare bak. Giet de kruidenmarinade erbij en schud het geheel goed door elkaar. Laat minimaal 5 minuten marineren; liever langer. Plaats de kippenvleugels in één laag op de bodem van een ingevette ovenschotel. Bak in het midden van de oven gedurende ongeveer 45 minuten, of totdat de vleugels goudbruin en gaar zijn; keer regelmatig om. Verdeel ondertussen de broccoli in kleine roosjes, en blancheer ze een paar minuten in zout water: ze moeten zachter worden, maar niet van kleur of vorm veranderen. Giet de broccoli af en voeg de mais, mayonaise, dille, (jozo)zout en peper toe. Serveer samen met de gebakken kippenvleugels."
   },
   {
     "id": "gegrilde-groenten-met-pastinaakfrietjes-en-gebakken-zalm",
     "title": "Gegrilde groenten met pastinaakfrietjes en gebakken zalm",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -5330,7 +5484,7 @@
         "category": "Vlees, vis en vleesvervangers"
       },
       {
-        "raw": "30 ml mayonaise",
+        "raw": "2 el mayonaise",
         "amount": 30,
         "unit": "ml",
         "name": "mayonaise",
@@ -5360,6 +5514,7 @@
     "id": "gevulde-paprika-met-gehakt-uit-de-oven",
     "title": "Gevulde paprika met gehakt uit de oven",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -5486,6 +5641,14 @@
         "category": "Zuivel en eieren"
       },
       {
+        "raw": "2 eieren",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
         "raw": "teentje geperste knoflook",
         "amount": 1,
         "unit": "teen",
@@ -5494,12 +5657,13 @@
         "category": "Groente en fruit"
       }
     ],
-    "method": "Verwarm de oven voor op 180 graden. Was en halveer de paprika en verwijder de zaden en het groene stronkje. Snipper een uitje en smoor dit 5 minuten in de olijfolie. Voeg het gehakt toe samen met peper en (jozo)zout. Rul het gehakt tot dat het bruin is. Voeg de spinazie, andijvie of de boerenkool toe samen met de erwtjes. Roerbak het geheel 10 minuten (totdat de spinazie, andijvie of de boerenkool gaar is). Voeg tot slot de tomatenpuree en de Provengaalse kruiden toe. Roer de eieren goed door het lauwwarme mengsel, net voordat je de paprika's vult. Vul de paprikahelften met het gehaktmengsel. Leg dit 20 minuten in een ingevette schaal in de oven. Bestrooi in de laatste minuut van de baktijd de paprika's met de geraspte kaas. Meng de mosterd, sojasaus, peper en (jozo)zout en eventueel de knoflook, door de kwark en roer goed door. Leg de paprika's op een bord (leg er eventueel extra gehaktmengsel naast als dit over is). Schep de kwark saus over de paprika's."
+    "method": "Verwarm de oven voor op 180 graden. Was en halveer de paprika en verwijder de zaden en het groene stronkje. Snipper een uitje en smoor dit 5 minuten in de olijfolie. Voeg het gehakt toe samen met peper en (jozo)zout. Rul het gehakt tot dat het bruin is. Voeg de spinazie, andijvie of de boerenkool toe samen met de erwtjes. Roerbak het geheel 10 minuten (totdat de spinazie, andijvie of de boerenkool gaar is). Voeg tot slot de tomatenpuree en de Provengaalse kruiden toe. Roer de eieren goed door het lauwwarme mengsel, net voordat je de paprika's vult. Vul de paprikahelften met het gehaktmengsel. Leg dit 20 minuten in een ingevette schaal in de oven. Bestrooi in de laatste minuut van de baktijd de paprika's met de geraspte kaas. Meng de mosterd, sojasaus, peper en (jozo)zout en eventueel de knoflook, door de kwark en roer goed door. Leg de paprika's op een bord (leg er eventueel extra gehaktmengsel naast als dit over is). Schep de kwarksaus over de paprika's."
   },
   {
     "id": "hamburger-met-spinazie-feta-en-pastinaak",
-    "title": "Hamburger met spinazie feta en pastinaak",
+    "title": "Hamburger met spinazie, feta en pastinaak",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -5512,7 +5676,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1 el extra vierge olijfolie",
+        "raw": "extra vierge olijfolie",
         "amount": 15,
         "unit": "ml",
         "name": "extra vierge olijfolie",
@@ -5521,9 +5685,9 @@
       },
       {
         "raw": "2 tartaartjes",
-        "amount": 2,
-        "unit": "",
-        "name": "tartaartjes",
+        "amount": 200,
+        "unit": "gram",
+        "name": "tartaar",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -5584,12 +5748,13 @@
         "category": "Groente en fruit"
       }
     ],
-    "method": "Verwarm de oven voor op 200 graden. Schil de pastinaken en snijd deze in de lengte. Leg ze in een ovenschaal of op bakpapier op het ovenrooster en besprenkel met olijfolie. Bak ze gaar in ongeveer 20 minuten (af en toe omkeren in de oven). Bestrooi het tartaartje met peper en een klein beetje (jozo)zout. Als de pastinaken bijna gaar zijn (even met de vork prikken of de binnenkant zacht is en rooster tijdens de laatste minuten de pijnboompitten mee), doe dan een klontje boter in de pan en bak het tartaartje in 5-7 minuten aan beide kanten gaar. Was ondertussen de spinazie en roerbak deze op hoog vuur in 2-5 minuten gaar in een koekenpan met een scheutje olijfolie. Eventueel kun je er een teentje knoflook doorheen persen en citroensap toevoegen. Als de spinazie bijna gaar is, strooi je de pijnboompitten erdoor en verkruimel je de feta erboven. Schep even goed door in de pan en serveer het dan op een bord, samen met het tartaartje en de pastinaken. Tip: Verwijder pijnboompitten uit het gerecht."
+    "method": "Verwarm de oven voor op 200 graden. Schil de pastinaken en snijd deze in de lengte. Leg ze in een ovenschaal of op bakpapier op het ovenrooster en besprenkel met olijfolie. Bak ze gaar in ongeveer 20 minuten (af en toe omkeren in de oven). Bestrooi het tartaartje met peper en een klein beetje (jozo)zout. Als de pastinaken bijna gaar zijn (even met de vork prikken of de binnenkant zacht is en rooster tijdens de laatste minuten de pijnboompitten mee), doe dan een klontje boter in de pan en bak de tartaartjes in 5-7 minuten aan beide kanten gaar. Was ondertussen de spinazie en roerbak deze op hoog vuur in 2-5 minuten gaar in een wok of koekenpan met een scheutje olijfolie. Eventueel kun je er een teentje knoflook doorheen persen en citroensap toevoegen. Als de spinazie bijna gaar is, strooi je de pijnboompitten erdoor en verkruimel je de feta erboven. Schep even goed door in de pan en serveer het dan op een bord, samen met het tartaartje en de pastinaken. Tip: Verwijder pijnboompitten uit het gerecht."
   },
   {
     "id": "kalkoenfilet-met-parmezaanse-kaas",
     "title": "Kalkoenfilet met parmezaanse kaas",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -5626,7 +5791,7 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "1 el extra vierge olijfolie",
+        "raw": "extra vierge olijfolie",
         "amount": 15,
         "unit": "ml",
         "name": "extra vierge olijfolie",
@@ -5650,6 +5815,14 @@
         "category": "Groente en fruit"
       },
       {
+        "raw": "2 eieren",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
         "raw": "50 gram geraspte Parmezaanse kaas",
         "amount": 50,
         "unit": "gram",
@@ -5671,6 +5844,16 @@
         "unit": "gram",
         "name": "kalkoenfilet",
         "optional": false,
+        "alternatives": [
+          {
+            "raw": "400 gram kipfilet",
+            "amount": 400,
+            "unit": "gram",
+            "name": "kipfilet",
+            "optional": false,
+            "category": "Vlees, vis en vleesvervangers"
+          }
+        ],
         "category": "Vlees, vis en vleesvervangers"
       },
       {
@@ -5682,7 +5865,116 @@
         "category": "Groente en fruit"
       }
     ],
-    "method": "Was de bloemkool en breek in roosjes. Maal deze fijn in een keukenmachine of met een staafmixer. Was de kruiden en snijd deze fijn. Doe een scheut olijfolie in de pan en bak de bloemkool al omscheppend in 3-4 minuten gaar. Voeg de kruiden toe en haal van het vuur. Breng op smaak met peper en (jozo)zout en het sap van een citroen. Zet twee kommen klaar. Kluts in de ene kom de eieren samen met de geraspte kaas. Doe in de andere kom het meel. Doe een flinke scheut olijfolie in de pan en zet op middelhoog vuur. Sla de kalkoen eventueel wat platter, zodat deze sneller gaart. Bestrooi de kalkoenfilet met peper en (jozo)zout en dan met meel (of wentel de filet in het meel en schud overtollig meel af) en haal dan door het ei-kaasmengsel. Zet het vuur niet te hoog anders verbrandt de kaas. Schud de pan af en toe heen en weer en braad de filets in ongeveer 15 minuten gaar. Keer halverwege om. Serveer de kalkoenfilet met de bloemkool couscous en de groene salade met olijfolie en wat citroensap besprenkeld. Tip: Vervang de Parmezaanse kaas door boerenkaas. Liever vegetarisch? Vervang de eieren, Parmezaanse kaas, meel en kalkoenfilet voor: 200 gram lima bonen (of witte bonen) 5 zongedroogde tomaten 1eltahin Spoel de lima bonen af onder de kraan en voeg samen met in reepjes gesneden zongedroogde tomaatjes toe aan de bloemkoolcouscous. Besprenkel met tahin."
+    "method": "Was de bloemkool en breek in roosjes. Maal deze fijn in een keukenmachine of met een staafmixer. Was de kruiden en snijd deze fijn. Doe een scheut olijfolie in de pan en bak de bloemkool al omscheppend in 3-4 minuten gaar. Voeg de kruiden toe en haal van het vuur. Breng op smaak met peper en (jozo)zout en het sap van een citroen. Zet twee kommen klaar. Kluts in de ene kom de eieren samen met de geraspte kaas. Doe in de andere kom het meel. Doe een flinke scheut olijfolie in de pan en zet op middelhoog vuur. Sla de kalkoen eventueel wat platter, zodat deze sneller gaart. Bestrooi de kalkoenfilet met peper en (jozo)zout en dan met meel (of wentel de filet in het meel en schud overtollig meel af) en haal dan door het ei-kaasmengsel. Zet het vuur niet te hoog anders verbrandt de kaas. Schud de pan af en toe heen en weer en braad de filets in ongeveer 15 minuten gaar. Keer halverwege om. Serveer de kalkoenfilet met de bloemkool couscous en de groene salade met olijfolie en wat citroensap besprenkeld. Tip: Vervang de Parmezaanse kaas door boerenkaas."
+  },
+  {
+    "id": "bloemkoolcouscous-met-limabonen-zongedroogde-tahin",
+    "title": "Bloemkoolcouscous met limabonen, zongedroogde tomaat en tahin",
+    "category": "diner",
+    "approved": true,
+    "portions": 2,
+    "multiDay": false,
+    "ingredients": [
+      {
+        "raw": "1 bloemkool",
+        "amount": 1,
+        "unit": "",
+        "name": "bloemkool",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "15 gram verse peterselie",
+        "amount": 15,
+        "unit": "gram",
+        "name": "verse peterselie",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "15 gram verse basilicum",
+        "amount": 15,
+        "unit": "gram",
+        "name": "verse basilicum",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "15 gram verse munt",
+        "amount": 15,
+        "unit": "gram",
+        "name": "verse munt",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "extra vierge olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "extra vierge olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "sap van 1 citroen",
+        "amount": 1,
+        "unit": "stuk",
+        "name": "citroen",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "200 gram limabonen",
+        "amount": 200,
+        "unit": "gram",
+        "name": "limabonen",
+        "optional": false,
+        "alternatives": [
+          {
+            "raw": "200 gram witte bonen",
+            "amount": 200,
+            "unit": "gram",
+            "name": "witte bonen",
+            "optional": false,
+            "category": "Houdbare producten"
+          }
+        ],
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "5 zongedroogde tomaten",
+        "amount": 5,
+        "unit": "stuks",
+        "name": "zongedroogde tomaten",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 el tahin",
+        "amount": 1,
+        "unit": "el",
+        "name": "tahin",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "50 gram groene bladsalade",
+        "amount": 50,
+        "unit": "gram",
+        "name": "groene bladsalade",
+        "optional": false,
+        "category": "Groente en fruit"
+      }
+    ],
+    "method": "Was de bloemkool en breek in roosjes. Maal deze fijn in een keukenmachine of met een staafmixer. Was de kruiden en snijd deze fijn. Doe een scheut olijfolie in de pan en bak de bloemkool al omscheppend in 3-4 minuten gaar. Voeg de kruiden toe en haal van het vuur. Breng op smaak met peper en (jozo)zout en het sap van een citroen. Spoel de lima bonen af onder de kraan en voeg samen met in reepjes gesneden zongedroogde tomaatjes toe aan de bloemkoolcouscous. Besprenkel met tahin."
   },
   {
     "id": "kipkerrie-met-bloemkoolrijst",
