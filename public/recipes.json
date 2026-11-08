@@ -2612,6 +2612,7 @@
   {
     "id": "frittata-met-champignons-en-kaas",
     "title": "Frittata met champignons en kaas",
+    "approved": true,
     "category": "lunch",
     "portions": 3,
     "multiDay": false,
@@ -2740,6 +2741,7 @@
   {
     "id": "griekse-salade",
     "title": "Griekse salade",
+    "approved": true,
     "category": "lunch",
     "portions": 2,
     "multiDay": false,
@@ -2850,6 +2852,7 @@
   {
     "id": "groente-salade-restje-avondeten-met-geitenkaas-en-mosterddressing",
     "title": "Groente salade restje avondeten met geitenkaas en mosterddressing",
+    "approved": true,
     "category": "lunch",
     "portions": 2,
     "multiDay": false,
@@ -2958,6 +2961,7 @@
   {
     "id": "kleurrijke-frittata",
     "title": "Kleurrijke frittata",
+    "approved": true,
     "category": "lunch",
     "portions": 2,
     "multiDay": false,
@@ -3070,6 +3074,7 @@
   {
     "id": "koud-kippesto-salade",
     "title": "Koude kippestosalade",
+    "approved": true,
     "category": "lunch",
     "portions": 2,
     "multiDay": false,
@@ -3154,6 +3159,7 @@
   {
     "id": "linzensoep",
     "title": "Linzensoep",
+    "approved": true,
     "category": "lunch",
     "portions": 4,
     "multiDay": false,
@@ -3254,6 +3260,7 @@
   {
     "id": "mozzarellawraps-met-avocado-en-tomaat",
     "title": "Mozzarellawraps met avocado en tomaat",
+    "approved": true,
     "category": "lunch",
     "portions": 2,
     "multiDay": false,
@@ -3354,6 +3361,7 @@
   {
     "id": "mozzarellawraps-met-zalm-en-roomkaas",
     "title": "Mozzarellawraps met zalm en roomkaas",
+    "approved": true,
     "category": "lunch",
     "portions": 2,
     "multiDay": false,
