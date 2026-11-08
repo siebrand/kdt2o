@@ -614,27 +614,33 @@ function shoppingCategory(item) {
 function sortedShoppingItems() {
   return aggregateIngredients().sort((a, b) => {
     const categoryDifference = SHOPPING_CATEGORIES.indexOf(shoppingCategory(a)) - SHOPPING_CATEGORIES.indexOf(shoppingCategory(b));
-    return categoryDifference || a.name.localeCompare(b.name, "nl");
+    const optionalDifference = Number(Boolean(a.optional)) - Number(Boolean(b.optional));
+    return categoryDifference || optionalDifference || a.name.localeCompare(b.name, "nl");
   });
 }
 
-function formatIngredientLabel(item) {
+function sortIngredientsForDisplay(ingredients) {
+  return [...ingredients].sort((a, b) => Number(Boolean(a.optional)) - Number(Boolean(b.optional)));
+}
+
+function formatIngredientLabel(item, includeOptionalPrefix = true) {
   const normalized = normalizeShoppingIngredient(item);
   const displayUnit = formatIngredientUnit(normalized.unit, normalized.amount);
   const amount = normalized.amount == null ? "" : formatIngredientAmount(normalized.amount) + (displayUnit ? " " + displayUnit : "");
   const range = parseAmountRange(normalized.amount);
   const displayName = normalized.name === "ei" && (!range || range.min !== 1 || range.max !== 1) ? "eieren" : normalized.name;
-  return amount + (amount ? " " : "") + displayName;
+  return (includeOptionalPrefix && normalized.optional ? "optioneel: " : "") + amount + (amount ? " " : "") + displayName;
 }
 
-function ingredientLabel(item) {
-  return formatIngredientLabel(item);
+function ingredientLabel(item, includeOptionalPrefix = true) {
+  return formatIngredientLabel(item, includeOptionalPrefix);
 }
 
 function renderShoppingList() {
   shoppingListItems.replaceChildren();
   let currentCategory = "";
-  let list;
+  let requiredList;
+  let optionalList;
   const items = sortedShoppingItems();
   items.forEach((item) => {
     const category = shoppingCategory(item);
@@ -642,18 +648,30 @@ function renderShoppingList() {
       const heading = document.createElement("h3");
       heading.textContent = category;
       shoppingListItems.append(heading);
-      list = document.createElement("ul");
-      list.className = "shopping-list";
-      shoppingListItems.append(list);
+      requiredList = null;
+      optionalList = null;
       currentCategory = category;
+    }
+    if (!item.optional && !requiredList) {
+      requiredList = document.createElement("ul");
+      requiredList.className = "shopping-list";
+      shoppingListItems.append(requiredList);
+    }
+    if (item.optional && !optionalList) {
+      const optionalHeading = document.createElement("h4");
+      optionalHeading.textContent = "Optioneel";
+      shoppingListItems.append(optionalHeading);
+      optionalList = document.createElement("ul");
+      optionalList.className = "shopping-list";
+      shoppingListItems.append(optionalList);
     }
     const row = document.createElement("li");
     const label = document.createElement("label");
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
-    label.append(checkbox, document.createTextNode(ingredientLabel(item)));
+    label.append(checkbox, document.createTextNode(ingredientLabel(item, false)));
     row.append(label);
-    list.append(row);
+    (item.optional ? optionalList : requiredList).append(row);
   });
 }
 
@@ -735,7 +753,7 @@ function escapeXml(value) {
 function infographicSvg(recipe) {
   const title = escapeXml(recipe.title || "Recept");
   const category = escapeXml(String(recipe.category || "recept").toUpperCase());
-  const ingredients = recipeIngredients(recipe).slice(0, 8).map(formatIngredientLabel);
+  const ingredients = sortIngredientsForDisplay(recipeIngredients(recipe)).slice(0, 8).map(formatIngredientLabel);
   const steps = methodSteps(recipeMethod(recipe) || "Volg de bereidingswijze uit het recept.").slice(0, 5);
   const ingredientMarkup = ingredients.map((ingredient, index) => {
     const lines = wrapSvgText(ingredient, 38, 2);
@@ -893,7 +911,7 @@ async function createPdf() {
       y = addWrapped(doc, recipeHeading, margin, 24, width - margin * 2, 7) + 5;
       doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Hoofdrecept · Ingrediënten", margin, y); y += 7;
       doc.setFontSize(10); doc.setTextColor(40, 45, 40);
-      (recipe.ingredients || []).forEach((ingredient) => {
+      sortIngredientsForDisplay(recipe.ingredients || []).forEach((ingredient) => {
         y = addWrapped(doc, "• " + ingredientLabel(ingredient), margin, y, width - margin * 2);
       });
       (recipe.components || []).forEach((component) => {
@@ -1011,9 +1029,9 @@ async function createSingleRecipePdf(recipe) {
   doc.setFontSize(10);
   doc.text(recipe.category + " · " + recipe.portions + " personen · Bereiding: circa " + recipe.preparationTime + " minuten", margin, y);
   y += 10;
-  addSection("Ingrediënten", (recipe.ingredients || []).map(ingredientLabel));
-  (recipe.components || []).forEach((component) => addSection("Subrecept · " + component.title, (component.ingredients || []).map(ingredientLabel)));
-  (recipe.dailyVariants || []).forEach((variant) => addSection("Variant · " + variant.title, (variant.ingredients || []).map(ingredientLabel)));
+  addSection("Ingrediënten", sortIngredientsForDisplay(recipe.ingredients || []).map(ingredientLabel));
+  (recipe.components || []).forEach((component) => addSection("Subrecept · " + component.title, sortIngredientsForDisplay(component.ingredients || []).map(ingredientLabel)));
+  (recipe.dailyVariants || []).forEach((variant) => addSection("Variant · " + variant.title, sortIngredientsForDisplay(variant.ingredients || []).map(ingredientLabel)));
   addSection("Benodigdheden", recipeEquipment(recipe));
   addSection("Bereidingswijze", methodSteps(recipeMethod(recipe)).map((step, index) => (index + 1) + ". " + step));
   doc.save((recipe.id || "recept") + ".pdf");

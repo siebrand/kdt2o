@@ -205,12 +205,6 @@
       "method": {
         "type": "string"
       },
-      "harmonizerVersion": {
-        "type": "string"
-      },
-      "harmonized": {
-        "type": "boolean"
-      },
       "notes": {
         "type": "array",
         "items": {
@@ -335,8 +329,6 @@
       "multiDay",
       "ingredients",
       "method",
-      "harmonizerVersion",
-      "harmonized",
       "components",
       "preparationTime",
       "days",

@@ -47,8 +47,9 @@ function ingredientText(ingredient) {
     .replace(/(\d+(?:[.,]\d+)?)\s+of\s+meer\s+(?:tl|theelepel|theelepels)\b/gi, "$1 of meer theelepels")
     .replace(/(\d+(?:[.,]\d+)?|\d+\/\d+)\s+(?:el|eetlepel|eetlepels)\b/gi, (_, amount) => `${amount} ${isSingularMeasure(amount) ? "eetlepel" : "eetlepels"}`)
     .replace(/(\d+(?:[.,]\d+)?|\d+\/\d+)\s+(?:tl|theelepel|theelepels)\b/gi, (_, amount) => `${amount} ${isSingularMeasure(amount) ? "theelepel" : "theelepels"}`);
-  const main = formatTablespoons(ingredient.raw || ingredient.name || "");
-  const alternatives = (ingredient.alternatives || []).map((item) => formatTablespoons(item.raw || item.name || ""));
+  const prefix = (item) => item.optional ? "optioneel: " : "";
+  const main = prefix(ingredient) + formatTablespoons(ingredient.raw || ingredient.name || "");
+  const alternatives = (ingredient.alternatives || []).map((item) => prefix(item) + formatTablespoons(item.raw || item.name || ""));
   return alternatives.length ? main + " of " + alternatives.join(" of ") : main;
 }
 
@@ -63,7 +64,7 @@ function recipeIngredients(recipe) {
   return [
     ...(recipe.ingredients || []),
     ...(recipe.dailyVariants || []).flatMap((variant) => variant.ingredients || [])
-  ];
+  ].sort((a, b) => Number(Boolean(a.optional)) - Number(Boolean(b.optional)));
 }
 
 async function buildPdf(recipes) {

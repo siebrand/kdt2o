@@ -2365,6 +2365,9 @@
       }
     ],
     "method": "Snijd de ui en bak op middelhoog vuur glazig in een soeppan met wat olijfolie en de uitgeperste knoflook. Was en breek de broccoli in stukken (inclusief de steel) en voeg samen met het water en de bouillonblokjes toe aan de uien. Spoel de kikkererwten af en voeg ook toe. Breng vervolgens zachtjes aan de kook en laat het ongeveer 15 minuten pruttelen. Voeg een 2 norivellen toe en pureer het geheel dan fijn. Voeg tot slot een scheutje olijfolie, peper en zout naar smaak en de crême fraiche toe. Serveer op een bord of neem mee in een thermoskan. Strooi tot slot de geitenkaas over je soep heen. Tip: Vries overgebleven soep in om er later nog eens van te genieten.",
+    "notes": [
+      "Let op: slik je schildkliermedicatie? Overleg dan met je arts of je extra jodium door middel van norivellen kunt gebruiken."
+    ],
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -2606,6 +2609,9 @@
       }
     ],
     "method": "Snijd de courgettes, uien en knoflook in grove stukken. Verhit de roomboter in een soeppan en bak de uien en knoflook glazig. Voeg de courgette en salie toe en bak kort mee. Voeg de bouillon en het water toe tot de groenten onderstaan en laat de soep zacht koken tot de groenten gaar zijn. Voeg de norivellen toe en pureer de soep. Roer de slagroom of crème fraîche erdoor, breng op smaak met peper, zout en citroensap en voeg de sojabonen toe. Tip: Vries overgebleven soep in om er later nog eens van te genieten.",
+    "notes": [
+      "Let op: slik je schildkliermedicatie? Overleg dan met je arts of je extra jodium door middel van norivellen kunt gebruiken."
+    ],
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -3254,6 +3260,9 @@
       }
     ],
     "method": "Snijd de ui en knoflook fijn en fruit dit in olijfolie in een pan. Voeg de kurkuma hieraan toe en bak kort mee. Voeg hierna de tomatenblokjes, het water met een bouillonblokje en de linzen toe. Laat de soep nu voor ongeveer een half uurtje doorkoken tot de linzen gaar zijn en roer regelmatig. Als de linzen gaar zijn kun je de soep pureren met een staafmixer. Zonder pureren heeft de soep wat meer structuur. Breng de soep op smaak met peper en eventueel zout, en roer als laatste de kokosmelk erdoorheen. Tip: Vries overgebleven soep in om er later nog eens van te genieten.",
+    "notes": [
+      "Let op: slik je schildkliermedicatie? Overleg dan met je arts of je extra jodium door middel van norivellen kunt gebruiken."
+    ],
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -3594,8 +3603,9 @@
   },
   {
     "id": "quinoa-kip-salade",
-    "title": "Quinoa kip salade",
+    "title": "Quinoa kipsalade",
     "category": "lunch",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -3698,9 +3708,18 @@
     "id": "salade-nicoise",
     "title": "Salade nicoise",
     "category": "lunch",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
+      {
+        "raw": "2 eieren",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
       {
         "raw": "200 gram sperziebonen",
         "amount": 200,
@@ -3726,7 +3745,7 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "30 ml mayonaise",
+        "raw": "2 el mayonaise",
         "amount": 30,
         "unit": "ml",
         "name": "mayonaise",
@@ -3734,7 +3753,7 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "2el witte wijnazijn",
+        "raw": "2 el witte wijnazijn",
         "amount": 30,
         "unit": "ml",
         "name": "witte wijnazijn",
@@ -3750,7 +3769,7 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "50 gram (zwarte) olijven",
+        "raw": "2 handjes (zwarte) olijven",
         "amount": 50,
         "unit": "gram",
         "name": "(zwarte) olijven",
@@ -3766,6 +3785,7 @@
     "id": "salade-zalm-met-bonen",
     "title": "Salade zalm met bonen",
     "category": "lunch",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -3794,8 +3814,8 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "380 gram feta",
-        "amount": 380,
+        "raw": "80 gram feta",
+        "amount": 80,
         "unit": "gram",
         "name": "feta",
         "optional": false,
@@ -3810,15 +3830,15 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "een blikje edamame bonen (155 gram)",
-        "amount": null,
-        "unit": "",
-        "name": "een blikje edamame bonen (155 gram)",
+        "raw": "een blikje edamame (155 gram)",
+        "amount": 155,
+        "unit": "gram",
+        "name": "edamame",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
-        "raw": "1 el extra vierge olijfolie",
+        "raw": "extra vierge olijfolie",
         "amount": 15,
         "unit": "ml",
         "name": "extra vierge olijfolie",
@@ -3826,7 +3846,7 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "2elcitroensap",
+        "raw": "2 el citroensap",
         "amount": 30,
         "unit": "ml",
         "name": "citroensap",
@@ -3850,11 +3870,12 @@
     "id": "tomatensoep",
     "title": "Tomatensoep",
     "category": "lunch",
+    "approved": true,
     "portions": 6,
     "multiDay": true,
     "ingredients": [
       {
-        "raw": "2uien",
+        "raw": "2 uien",
         "amount": 2,
         "unit": "stuk",
         "name": "ui",
@@ -3881,9 +3902,9 @@
       },
       {
         "raw": "2 stuk winterwortel",
-        "amount": 2,
-        "unit": "stuk",
-        "name": "winterwortel",
+        "amount": 350,
+        "unit": "gram",
+        "name": "wortel",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3904,15 +3925,15 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "6 eetlepels extra vierge olijfolie",
-        "amount": 90,
+        "raw": "3 eetlepels extra vierge olijfolie",
+        "amount": 45,
         "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
-        "raw": "2 stuks groentebouillonblokje",
+        "raw": "2 groentebouillonblokjes",
         "amount": 2,
         "unit": "stuk",
         "name": "groentebouillonblokje",
@@ -3936,7 +3957,7 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "400 g linzen",
+        "raw": "400 gram linzen (blik)",
         "amount": 400,
         "unit": "gram",
         "name": "linzen",
@@ -3966,16 +3987,28 @@
         "name": "norivellen",
         "optional": false,
         "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 klein blikje tomatenpuree",
+        "amount": 1,
+        "unit": "blikje",
+        "name": "tomatenpuree",
+        "optional": true,
+        "category": "Groente en fruit"
       }
     ],
-    "method": "Tomatensoep - Pel en snipper de ui. Was de tomaten en snijd deze in stukken of open de blikken. Verwijder de uiteinden van de wortel, schil en hak in grove stukken. Was en snij de paprika in stukken. Doe de olijfolie in soeppan. Bak hierin de ui op middelmatig vuur in 5 minuten zacht en glazig. Voeg de tomaten, paprika, wortelen, bleekselderij en de bouillonblokjes met water en peterselie toe. Breng het aan de kook. Wanneer het kookt, zet je het vuur laag, doe je de deksel op de pan en laat het zo 15 minuten staan. Als de groenten zacht en gaar zijn voeg je 2 norivellen toe en pureer je de soep met een staafmixer. Spoel de linzen af en voeg toe aan de soep. Bestrooi daarna met de basilicumblaadjes. Voeg eventueel wat peper toe. Voeg wat verpulverde nori vellen over de soep toe voor dat je het serveert. Tip: Als de tomaten weinig smaak hebben of je de soep intenser rood wilt maken, voeg dan tijdens het bakken van de ui een klein blikje tomatenpuree toe. Serveer de tomatensoep in een kom of neem het mee in een thermoskan. Tip: Koop de paprika niet per stuk, maar in een voordeelverpakking van drie. Tip: Koop de paprika op de markt; daar is deze goedkoper. Slik je schildklier medicatie? Overleg dan met jouw arts of extra jodium dmv norivellen gebruikt kan worden. Tip: Vries overgebleven soep in om er later nog eens van te genieten.",
+    "method": "Pel en snipper de ui. Was de tomaten en snijd deze in stukken of open de blikken. Verwijder de uiteinden van de wortel, schil en hak in grove stukken. Was en snij de paprika in stukken. Doe de olijfolie in soeppan. Bak hierin de ui op middelmatig vuur in 5 minuten zacht en glazig. Voeg de tomaten, paprika, wortelen, bleekselderij en de bouillonblokjes met water en peterselie toe. Breng het aan de kook. Wanneer het kookt, zet je het vuur laag, doe je de deksel op de pan en laat het zo 15 minuten staan. Als de groenten zacht en gaar zijn voeg je 2 norivellen toe en pureer je de soep met een staafmixer. Spoel de linzen af en voeg toe aan de soep. Bestrooi daarna met de basilicumblaadjes. Voeg eventueel wat peper toe. Voeg wat verpulverde norivellen over de soep toe voor dat je het serveert. Tip: Als de tomaten weinig smaak hebben of je de soep intenser rood wilt maken, voeg dan tijdens het bakken van de ui een klein blikje tomatenpuree toe. Serveer de tomatensoep in een kom of neem het mee in een thermoskan. Tip: Koop de paprika niet per stuk, maar in een voordeelverpakking van drie. Tip: Koop de paprika op de markt; daar is deze goedkoper. Tip: Vries overgebleven soep in om er later nog eens van te genieten.",
+    "notes": [
+      "Let op: slik je schildkliermedicatie? Overleg dan met je arts of je extra jodium door middel van norivellen kunt gebruiken."
+    ],
     "harmonizerVersion": "1",
     "harmonized": false
   },
   {
     "id": "tonijn-kikkererwten-salade",
-    "title": "Tonijn kikkererwten salade",
+    "title": "Tonijn-kikkererwtensalade",
     "category": "lunch",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -4028,7 +4061,7 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "15 ml mayonaise",
+        "raw": "1 el mayonaise",
         "amount": 15,
         "unit": "ml",
         "name": "mayonaise",
@@ -4064,28 +4097,10 @@
       {
         "raw": "peper en zout",
         "amount": null,
-        "unit": "",
+        "unit": null,
         "name": "peper en zout",
         "optional": true,
         "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "15 ml mayonaise",
-        "amount": 15,
-        "unit": "ml",
-        "name": "mayonaise",
-        "optional": true,
-        "alternatives": [
-          {
-            "raw": "1 el yoghurt",
-            "amount": 15,
-            "unit": "ml",
-            "name": "yoghurt",
-            "optional": true,
-            "category": "Zuivel en eieren"
-          }
-        ],
-        "category": "Houdbare producten"
       },
       {
         "raw": "1 el dille",
@@ -4096,7 +4111,7 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "sap van 1/2 citroen",
+        "raw": "sap van een halve citroen",
         "amount": 0.5,
         "unit": "stuk",
         "name": "citroen",
@@ -4104,7 +4119,7 @@
         "category": "Groente en fruit"
       }
     ],
-    "method": "Kook de erwtjes 3 minuut in kokend water. Snipper het rode uitje heel fijn. Meng de tonijn met de erwtjes, ui en kikkererwten. Voeg de extra vierge olijfolie en azijn toe. Om het wat smeuiger te maken kun je een beetje yoghurt en/of mayonaise erdoor roeren. Leg de salade op een bord en leg hier het tonijnmengsel op. . Tip: Je kunt eventueel ook een appel fijnsnijden en door de salade mengen.",
+    "method": "Kook de erwtjes 3 minuten in kokend water. Snipper het rode uitje heel fijn. Meng de tonijn met de erwtjes, ui en kikkererwten. Voeg de extra vierge olijfolie en azijn toe. Om het wat smeuiger te maken kun je een beetje yoghurt en/of mayonaise erdoor roeren. Leg de salade op een bord en leg hier het tonijnmengsel op. Tip: Je kunt eventueel ook een appel fijnsnijden en door de salade mengen.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -4112,11 +4127,12 @@
     "id": "witlofsalade-met-zalm",
     "title": "Witlofsalade met zalm",
     "category": "lunch",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "4el pijnboompitten",
+        "raw": "4 el pijnboompitten",
         "amount": 4,
         "unit": "el",
         "name": "pijnboompitten",
@@ -4132,7 +4148,15 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "30 ml mayonaise",
+        "raw": "2 eieren",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "2 el mayonaise",
         "amount": 30,
         "unit": "ml",
         "name": "mayonaise",
@@ -4140,7 +4164,7 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "2 el olijfolie",
+        "raw": "2 el extra vierge olijfolie",
         "amount": 30,
         "unit": "ml",
         "name": "extra vierge olijfolie",
@@ -4164,14 +4188,15 @@
         "category": "Vlees, vis en vleesvervangers"
       }
     ],
-    "method": "Rooster de pijnboompitten tot ze lichtbruin zijn. Snijd de witlof in smalle reepjes. Kook het ei hard en snijd deze in partjes. Maak een dressing van de olijfolie en de mayonaise. Maak de dressing op smaak met versgemalen peper. Houd één plakje zalm achter door de garnering, snijd de overige plakjes in stukjes. Meng de witlof, de zalm en het ei met de dressing. Schep de salade op een bord en garneer het met het plakje gerookte zalm. Strooi de pijnboompitten over de salade.",
+    "method": "Rooster de pijnboompitten tot ze lichtbruin zijn. Snijd de witlof in smalle reepjes. Kook de eieren hard en snijd deze in partjes. Maak een dressing van de olijfolie en de mayonaise. Maak de dressing op smaak met versgemalen peper. Houd één plakje zalm achter voor de garnering, snijd de overige plakjes in stukjes. Meng de witlof, de zalm en het ei met de dressing. Schep de salade op een bord en garneer het met het plakje gerookte zalm. Strooi de pijnboompitten over de salade.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
   {
     "id": "andijviestamppot-vegetarische-variant",
-    "title": "Andijviestamppot vegetarische variant",
+    "title": "Andijviestamppot (vegetarisch)",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -4216,7 +4241,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1 el extra vierge olijfolie",
+        "raw": "extra vierge olijfolie",
         "amount": 15,
         "unit": "ml",
         "name": "extra vierge olijfolie",
@@ -4240,7 +4265,7 @@
         "category": "Zuivel en eieren"
       }
     ],
-    "method": "Was en snijd de andijvie in reepjes. Hak de nootjes fijn met een vijzel of staafmixer. Schil de knolselderij, snijd deze in kleine blokjes en kook deze met een beetje water in ongeveer 15 minuten gaar (moet echt zacht zijn). Snipper de ui, borstel de champignons schoon en snijd ze in plakjes. Bak de ui in een pan met wat olijfolie en voeg de champignons toe als de uitjes glazig zijn. Bak dan nog 5 minuten door. Giet de knolselderij af maar bewaar het vocht. Pureer de knolselderij met de ui en champignons en maak het smeuïg met het overgebleven kookvocht. Voeg een scheutje olijfolie toe en wat peper en (jozo)zout. Meng de andijvie door de puree. Voeg vervolgens de cashewnoten en geraspte kaas toe. Schep alles goed door en serveer het op de borden. Tip: Koop fijngesneden andijvie. Pureer de knolselderij, ui en champignons met de staafmixer of keukenmachine (of zonder champignons als je die graag groter laat).",
+    "method": "Was en snijd de andijvie in reepjes. Hak de nootjes fijn met een vijzel of staafmixer. Schil de knolselderij, snijd deze in kleine blokjes en kook deze met een beetje water in ongeveer 15 minuten gaar (moet echt zacht zijn). Snipper de ui, borstel de champignons schoon en snijd ze in plakjes. Bak de ui in een pan met wat olijfolie en voeg de champignons toe als de uitjes glazig zijn. Bak dan nog 5 minuten door. Giet de knolselderij af maar bewaar het vocht. Pureer de knolselderij met de ui en champignons en maak het smeuïg met het overgebleven kookvocht. Voeg een scheutje olijfolie toe en wat peper en (jozo)zout. Meng de andijvie door de puree. Voeg vervolgens de cashewnoten en geraspte kaas toe. Schep alles goed door en serveer het op de borden. Tip: Koop fijngesneden andijvie. Tip: Pureer de knolselderij, ui en champignons met de staafmixer of keukenmachine (of zonder champignons als je die graag groter laat).",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -4248,6 +4273,7 @@
     "id": "aubergine-uit-de-oven",
     "title": "Aubergine uit de oven",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -4268,7 +4294,7 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "1 el gedroogde Italiaanse kruiden",
+        "raw": "gedroogde Italiaanse kruiden",
         "amount": 1,
         "unit": "el",
         "name": "gedroogde Italiaanse kruiden",
@@ -4350,7 +4376,7 @@
         "category": "Kruiden en smaakmakers"
       }
     ],
-    "method": "Verwarm de oven op 190 graden. Snijd de aubergine in de lengte in dunne plakken van ca. 1 cm dik. Meng de olijfolie met de italiaanse kruiden, (jozo)zout en peper in een kom. Plaats de plakken aubergine op een rooster van de oven dat belegd is met bakpapier. Smeer de aubergines in met de olijfolie. Plaats de aubergines in de oven en bak dit ca. 15 minuten. Haal de aubergines uit de oven. Maak dan de tomatensaus. Verwarm de olijfolie in een pan, waar een deksel op kan. Fruit de ui en knoflook samen ca. 10 minuten op een middelmatig vuur tot ze doorzichtig en zacht zijn. Voeg het blik tomatenblokjes, de basilicum blaadjes, (jozo)zout en peper toe. Breng het geheel zachtjes aan de kook. Doe de deksel op de pan en zet het vuur laag. Laat de saus een paar minuten zachtjes doorkoken. De saus is 3 dagen in de koelkast te bewaren of 1 maand in de vriezer. Plaats de aubergines in een grote ovenschaal en giet de tomatensaus met een lepel hier overheen (je kan ook meerdere laagjes maken). Snijd de mozzarella in plakken en plaats deze op de aubergines met de saus. Plaats de ovenschaal met de aubergines terug in de oven voor 5 minuten totdat de mozzarella gesmolten is. Serveer de aubergines in een schaal en garneer met de basillicumblaadjes.",
+    "method": "Verwarm de oven op 190 graden. Snijd de aubergine in de lengte in dunne plakken van ca. 1 cm dik. Meng de olijfolie met de Italiaanse kruiden, (jozo)zout en peper in een kom. Plaats de plakken aubergine op een rooster van de oven dat belegd is met bakpapier. Smeer de aubergines in met de olijfolie. Plaats de aubergines in de oven en bak dit ca. 15 minuten. Haal de aubergines uit de oven. Maak dan de tomatensaus. Verwarm de olijfolie in een pan, waar een deksel op kan. Fruit de ui en knoflook samen ca. 10 minuten op een middelmatig vuur tot ze doorzichtig en zacht zijn. Voeg het blik tomatenblokjes, de basilicum blaadjes, (jozo)zout en peper toe. Breng het geheel zachtjes aan de kook. Doe de deksel op de pan en zet het vuur laag. Laat de saus een paar minuten zachtjes doorkoken. Plaats de aubergines in een grote ovenschaal en giet de tomatensaus met een lepel hier overheen (je kan ook meerdere laagjes maken). Snijd de mozzarella in plakken en plaats deze op de aubergines met de saus. Plaats de ovenschaal met de aubergines terug in de oven voor 5 minuten totdat de mozzarella gesmolten is. Serveer de aubergines in een schaal en garneer met de basillicumblaadjes. Tip: De tomatensaus is 3 dagen in de koelkast te bewaren of 1 maand in de vriezer.",
     "harmonizerVersion": "1",
     "harmonized": false
   },

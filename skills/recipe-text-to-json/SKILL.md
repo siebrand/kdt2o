@@ -30,8 +30,6 @@ planner. Read `schemas/schema.json` before producing output.
   defaults for absent optional content: `components: []`, `equipment: []`,
   `notes: []`, `days: 0`, `ovenTime: 0`, and `preparationTime: 0` only when the
   schema requires those fields and the project convention accepts zero.
-- Emit `harmonizerVersion: "1"` and `harmonized: false` unless the user gives a
-  different value.
 
 ## Ingredient normalization
 
@@ -75,7 +73,7 @@ Include these fields in this order when applicable:
 1. `id`, `title`, `approved`, `category`, `portions`, `multiDay`, `days`
 2. `preparationTime`, `ovenTime`
 3. `ingredients`, `components`, `dailyVariants`, `equipment`
-4. `method`, `notes`, `advanceNotice`, `harmonizerVersion`, `harmonized`
+4. `method`, `notes`, `advanceNotice`
 
 Use `method` as plain text. Keep steps in a readable Dutch paragraph or separate
 sentences; never emit HTML or Markdown inside recipe fields. Use `components`
@@ -88,9 +86,7 @@ day-specific variants, with a zero-based numeric `dayIndex`.
 
 Set `preparationTime` and `ovenTime` only when stated or reliably derivable
 from explicit timing. Do not convert vague phrases such as “even bakken” into
-invented minutes. `harmonizerVersion` and `harmonized` are optional metadata;
-when producing data intended for this repository, use `"1"` and `false` unless
-the user provides a different project convention.
+invented minutes.
 
 ## Workflow
 

@@ -10,7 +10,6 @@ Every recipe object must include:
 
 - `id`, `title`, `approved`, `category`, `portions`, `multiDay`
 - `ingredients`, `method`
-- `harmonizerVersion`, `harmonized`
 - `components`, `preparationTime`, `days`, `equipment`, `notes`, `ovenTime`
 
 When the source does not provide a value, preserve uncertainty where the schema
