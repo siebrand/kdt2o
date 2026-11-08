@@ -752,10 +752,10 @@
             "category": "Houdbare producten"
           },
           {
-            "raw": "100 gram gebroken lijnzaad",
+            "raw": "100 gram lijnzaad",
             "amount": 100,
             "unit": "gram",
-            "name": "gebroken lijnzaad",
+            "name": "lijnzaad",
             "optional": false,
             "category": "Houdbare producten"
           },
@@ -1889,7 +1889,7 @@
         "category": "Diepvries"
       }
     ],
-    "method": "Verdeel de kwark over 2 schaaltjes. Voeg per schaaltje twee handjes granola en 100 gram fruit toe. Tip: Maak de granola zoals in week 1, met alleen lijnzaad en zonnebloempitten.",
+    "method": "Verdeel de kwark over 2 schaaltjes. Voeg per schaaltje twee handjes granola en 100 gram rood/blauw diepvriesfruit toe. Tip: Maak de granola zoals in week 1, met alleen lijnzaad en zonnebloempitten.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
