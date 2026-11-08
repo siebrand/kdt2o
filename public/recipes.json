@@ -2364,10 +2364,11 @@
     "harmonized": false
   },
   {
-    "id": "courgette-soep-en-sla-met-bietjes-geitenkaas-en-walnoten",
-    "title": "Courgette soep en sla met bietjes geitenkaas en walnoten",
+    "id": "courgettesoep-3-dagen",
+    "title": "Courgettesoep, drie variaties",
     "category": "lunch",
     "portions": 6,
+    "days": 3,
     "multiDay": true,
     "ingredients": [
       {
@@ -2475,335 +2476,130 @@
         "name": "sojabonen",
         "optional": false,
         "category": "Houdbare producten"
-      },
-      {
-        "raw": "2 bietjes",
-        "amount": 2,
-        "unit": "stuk",
-        "name": "biet",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "100 gram geitenkaas",
-        "amount": 100,
-        "unit": "gram",
-        "name": "geitenkaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "60 gram walnoten",
-        "amount": 60,
-        "unit": "gram",
-        "name": "walnoten",
-        "optional": false,
-        "category": "Houdbare producten"
       }
     ],
-    "method": "Snijd de courgettes in grove stukken. Pel de uien en snijd in grove stukken. Pel de knoflook en snijd grof. Verhit een flinke klont roomboter in een soeppan. Bak hierin de uien en knoflook in circa 3 minuten tot de uien glazig zijn. Voeg dan de courgette en salie toe en bak nog circa 5 minuten mee. Voeg zoveel bouillon (water met bouillonpoeder of blokjes) toe tot de groenten onder water staan. Laat zo nog circa 10 minuten pruttelen tot de groenten zacht zijn. Voeg een aantal norivellen toe. Pureer met een staafmixer fijn. Roer de crême fraîche of slagroom erdoorheen. Breng eventueel op smaak met peper en zout en het sap van een citroen en voeg de sojabonen toe. Snij de bietjes, geitenkaas en walnoten. Mix in een kom en eet samen met de soep.",
-    "harmonizerVersion": "1",
-    "harmonized": false
-  },
-  {
-    "id": "courgette-soep-met-lijnzaadcrackers-en-pindakaas",
-    "title": "Courgette soep met lijnzaadcrackers en pindakaas",
-    "category": "lunch",
-    "portions": 6,
-    "multiDay": true,
-    "ingredients": [
+    "dailyVariants": [
       {
-        "raw": "5 courgettes",
-        "amount": 5,
-        "unit": "",
-        "name": "courgettes",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "5 uien",
-        "amount": 5,
-        "unit": "stuk",
-        "name": "ui",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "3 teentjes knoflook",
-        "amount": 3,
-        "unit": "teen",
-        "name": "knoflook",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "klontje roomboter",
-        "amount": 10,
-        "unit": "gram",
-        "name": "roomboter",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "half bosje verse salie",
-        "amount": 0.5,
-        "unit": "bosje",
-        "name": "verse salie",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "2 stuks groentebouillonblokje",
-        "amount": 2,
-        "unit": "stuk",
-        "name": "groentebouillonblokje",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "500 tot 1000 ml water",
-        "amount": "500-1000",
-        "unit": "ml",
-        "name": "water",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "3 norivellen",
-        "amount": 3,
-        "unit": null,
-        "name": "norivellen",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "200 ml slagroom",
-        "amount": 200,
-        "unit": "ml",
-        "name": "slagroom",
-        "optional": false,
-        "alternatives": [
+        "dayIndex": 0,
+        "title": "Met bietjes, geitenkaas en walnoten",
+        "ingredients": [
           {
-            "raw": "100 gram crème fraîche",
-            "amount": 100,
-            "unit": "gram",
-            "name": "crème fraîche",
-            "optional": false,
-            "category": "Zuivel en eieren"
-          }
-        ],
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": null,
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "sap van 1/2 citroen",
-        "amount": 0.5,
-        "unit": "stuk",
-        "name": "citroen",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "200 gram sojabonen",
-        "amount": 200,
-        "unit": "gram",
-        "name": "sojabonen",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "lijnzaadcracker(s)",
-        "amount": null,
-        "unit": null,
-        "name": "lijnzaadcracker(s)",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "pindakaas (circa 30 gram per persoon)",
-        "amount": 30,
-        "unit": "gram",
-        "name": "pindakaas (per persoon)",
-        "optional": false,
-        "category": "Houdbare producten"
-      }
-    ],
-    "method": "Snijd de courgettes in grove stukken. Pel de uien en snijd in grove stukken. Pel de knoflook en snijd grof. Verhit een flinke klont roomboter in een soeppan. Bak hierin de uien en knoflook in circa 5 minuten tot de uien glazig zijn. Voeg dan de courgette en salie toe en bak nog circa 5 minuten mee. Voeg zoveel bouillon (water met bouillonpoeder of blokjes) toe tot de groenten onder water staan. Laat zo nog circa 10 minuten pruttelen tot de groenten zacht zijn. Voeg een aantal norivellen toe. Pureer met een staafmixer fijn. Roer de crême fraîche of slagroom erdoorheen. Breng eventueel op smaak met peper en zout en het sap van een citroen en voeg de sojabonen toe. Serveer op een bord of neem het mee in een thermoskan. Eet hierbij een lijnzaadcracker met pindakaas.",
-    "harmonizerVersion": "1",
-    "harmonized": false
-  },
-  {
-    "id": "courgettesoep-met-zomerse-salade",
-    "title": "Courgettesoep met zomerse salade",
-    "category": "lunch",
-    "portions": 6,
-    "multiDay": true,
-    "ingredients": [
-      {
-        "raw": "3 courgettes",
-        "amount": 3,
-        "unit": null,
-        "name": "courgettes",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "3 uien",
-        "amount": 3,
-        "unit": "stuk",
-        "name": "ui",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "3 tenen knoflook",
-        "amount": 3,
-        "unit": "teen",
-        "name": "knoflook",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "klontje roomboter",
-        "amount": 10,
-        "unit": "gram",
-        "name": "roomboter",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "half bosje verse salie",
-        "amount": 0.5,
-        "unit": "bosje",
-        "name": "verse salie",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "2 stuks groentebouillonblokje",
-        "amount": 2,
-        "unit": "stuk",
-        "name": "groentebouillonblokje",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "1 liter water",
-        "amount": 1,
-        "unit": "liter",
-        "name": "water",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "3 norivellen",
-        "amount": 3,
-        "unit": "null",
-        "name": "norivellen",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "200 ml slagroom",
-        "amount": 200,
-        "unit": "ml",
-        "name": "slagroom",
-        "optional": false,
-        "alternatives": [
-          {
-            "raw": "100 gram crème fraîche",
-            "amount": 100,
-            "unit": "gram",
-            "name": "crème fraîche",
-            "optional": false,
-            "category": "Zuivel en eieren"
-          }
-        ],
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "sap van 1/2 citroen",
-        "amount": 0.5,
-        "unit": "stuk",
-        "name": "citroen",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "(gemengde) groene bladsla",
-        "amount": 50,
-        "unit": "gram",
-        "name": "(gemengde) groene bladsla",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "komkommer",
-        "amount": "0.25",
-        "unit": "stuk",
-        "name": "komkommer",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "cherrytomaten",
-        "amount": "10",
-        "unit": "stuk",
-        "name": "cherrytomaten",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "olijven",
-        "amount": null,
-        "unit": "",
-        "name": "olijven",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "2 lijnzaad crackers",
-        "amount": 2,
-        "unit": "stuk",
-        "name": "lijnzaadcracker",
-        "optional": false,
-        "alternatives": [
-          {
-            "raw": "2 vezelrijke crackers",
+            "raw": "2 bietjes",
             "amount": 2,
             "unit": "stuk",
-            "name": "cracker",
+            "name": "biet",
             "optional": false,
-            "category": "Brood en ontbijt"
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "100 gram geitenkaas",
+            "amount": 100,
+            "unit": "gram",
+            "name": "geitenkaas",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          },
+          {
+            "raw": "60 gram walnoten",
+            "amount": 60,
+            "unit": "gram",
+            "name": "walnoten",
+            "optional": false,
+            "category": "Houdbare producten"
           }
         ],
-        "category": "Houdbare producten"
+        "method": "Snijd de bietjes en serveer ze bij de soep met de geitenkaas en walnoten."
       },
       {
-        "raw": "50 gram boerenkaas",
-        "amount": 50,
-        "unit": "gram",
-        "name": "boerenkaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
+        "dayIndex": 1,
+        "title": "Met lijnzaadcrackers en pindakaas",
+        "ingredients": [
+          {
+            "raw": "lijnzaadcracker(s)",
+            "amount": null,
+            "unit": null,
+            "name": "lijnzaadcracker(s)",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "pindakaas (circa 30 gram per persoon)",
+            "amount": 30,
+            "unit": "gram",
+            "name": "pindakaas (per persoon)",
+            "optional": false,
+            "category": "Houdbare producten"
+          }
+        ],
+        "method": "Serveer de soep met een lijnzaadcracker met pindakaas."
+      },
+      {
+        "dayIndex": 2,
+        "title": "Met zomerse salade en boerenkaas",
+        "ingredients": [
+          {
+            "raw": "(gemengde) groene bladsla",
+            "amount": 50,
+            "unit": "gram",
+            "name": "(gemengde) groene bladsla",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "komkommer",
+            "amount": "0.25",
+            "unit": "stuk",
+            "name": "komkommer",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "cherrytomaten",
+            "amount": "10",
+            "unit": "stuk",
+            "name": "cherrytomaten",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "olijven",
+            "amount": null,
+            "unit": "",
+            "name": "olijven",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "2 lijnzaad crackers",
+            "amount": 2,
+            "unit": "stuk",
+            "name": "lijnzaadcracker",
+            "optional": false,
+            "alternatives": [
+              {
+                "raw": "2 vezelrijke crackers",
+                "amount": 2,
+                "unit": "stuk",
+                "name": "cracker",
+                "optional": false,
+                "category": "Brood en ontbijt"
+              }
+            ],
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "50 gram boerenkaas",
+            "amount": 50,
+            "unit": "gram",
+            "name": "boerenkaas",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          }
+        ],
+        "method": "Maak een salade van de bladsla, komkommer, cherrytomaten en olijven. Serveer de soep met de salade en een lijnzaadcracker met boerenkaas."
       }
     ],
-    "method": "Soep - Snijd de courgettes in grove stukken. Pel de uien en snijd in grove stukken. Pel de knoflook en snijd grof. Verhit een flinke klont roomboter in een soeppan. Bak hierin de uien en knoflook in circa 3 minuten tot de uien glazig zijn. Voeg dan de courgette en salie toe en bak nog circa 5 minuten mee. Voeg zoveel bouillon (water met bouillonpoeder of blokjes) toe tot de groenten onder water staan. Laat zo nog circa 10 minuten pruttelen tot de groente zacht zijn. Voeg 3 norivellen toe. Pureer met een staafmixer fijn. Roer de crême fraîche of slagroom erdoorheen. Breng eventueel op smaak met peper en zout en het sap van een citroen. Salade — serveer een kleurrijke salade van gemengde bladsla, komkommer, tomaat en olijven. Een vezelrijke cracker belegd met boerenkaas zorgt voor een bite erbij. Slik je schildklier medicatie? Overleg dan met jouw arts of extra jodium dmv norivellen gebruikt kan worden.",
+    "method": "Snijd de courgettes, uien en knoflook in grove stukken. Verhit de roomboter in een soeppan en bak de uien en knoflook glazig. Voeg de courgette en salie toe en bak kort mee. Voeg de bouillon en het water toe tot de groenten onderstaan en laat de soep zacht koken tot de groenten gaar zijn. Voeg de norivellen toe en pureer de soep. Roer de slagroom of crème fraîche erdoor, breng op smaak met peper, zout en citroensap en voeg de sojabonen toe.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -2896,7 +2692,7 @@
       },
       {
         "raw": "3 el olijfolie",
-        "amount":45,
+        "amount": 45,
         "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,

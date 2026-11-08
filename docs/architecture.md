@@ -16,6 +16,12 @@ or server-side planning state.
 
 Recipe text is treated as data and inserted with text APIs, never as HTML.
 
+Multi-day recipes use `multiDay: true` and a numeric `days` count. A recipe may
+also contain `dailyVariants`; each variant has a zero-based `dayIndex`, its own
+ingredients, and its own method. The shared recipe ingredients and all variant
+ingredients are aggregated once for the shopping list, while the planner and
+PDF identify the variant for each scheduled day.
+
 ## Build and deployment
 
 The Docker build creates a small Nginx image. The container serves static assets

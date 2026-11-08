@@ -136,6 +136,12 @@ function plannedDays(startDay, dayCount = 3) {
   return Array.from({ length: dayCount }, (_, index) => startDay + index * 2).filter((day) => day < DAYS.length);
 }
 
+function recipeVariantForDay(recipe, dayIndex, sourceDay) {
+  if (!recipe?.dailyVariants?.length) return null;
+  const variantIndex = Number.isInteger(sourceDay) ? Math.round((dayIndex - sourceDay) / 2) : 0;
+  return recipe.dailyVariants.find((variant) => variant.dayIndex === variantIndex) || null;
+}
+
 function renderPlanner() {
   planner.replaceChildren();
   planner.append(Object.assign(document.createElement("div"), { className: "planner-cell day", textContent: "Maaltijd" }));
@@ -160,6 +166,12 @@ function renderPlanner() {
           const schedule = document.createElement("small");
           schedule.textContent = plannedDays(item.sourceDay, recipe.days).map((day) => shortDayName(day)).join(", ");
           slot.append(schedule);
+        }
+        const variant = recipeVariantForDay(recipe, dayIndex, item.sourceDay);
+        if (variant) {
+          const variantLabel = document.createElement("small");
+          variantLabel.textContent = variant.title;
+          slot.append(variantLabel);
         }
         if (recipe?.advanceNotice) {
           const notice = document.createElement("small");
@@ -465,7 +477,10 @@ function aggregateIngredients() {
     if (includedRecipeIds.has(item.recipeId)) return;
     includedRecipeIds.add(item.recipeId);
     const recipe = recipeById(item.recipeId);
-    const ingredients = recipe?.ingredients || [];
+    const ingredients = [
+      ...(recipe?.ingredients || []),
+      ...(recipe?.dailyVariants || []).flatMap((variant) => variant.ingredients || [])
+    ];
     const component = recipe?.components?.find((item) => item.id === "lijnzaadcrackers");
     if (component) flaxCrackerComponent ||= component;
     const recipeGranolaComponent = recipe?.components?.find((item) => item.id === "granola");
@@ -655,6 +670,7 @@ function methodSteps(method) {
 function recipeIngredients(recipe) {
   return [
     ...(recipe?.ingredients || []),
+    ...(recipe?.dailyVariants || []).flatMap((variant) => variant.ingredients || []),
     ...(recipe?.components || []).flatMap((component) => component.ingredients || [])
   ];
 }
@@ -673,6 +689,10 @@ function recipeMethod(recipe) {
     sections.push(component.method || "");
   });
   if (recipe?.method) sections.push(recipe.method);
+  (recipe?.dailyVariants || []).forEach((variant) => {
+    sections.push(variant.title + ":");
+    sections.push(variant.method || "");
+  });
   return sections.join(" ").trim();
 }
 
@@ -880,6 +900,14 @@ async function createPdf() {
           y = addWrapped(doc, "• " + ingredientLabel(ingredient), margin, y, width - margin * 2);
         });
       });
+      (recipe.dailyVariants || []).forEach((variant) => {
+        y += 4;
+        doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Variant · " + variant.title, margin, y); y += 7;
+        doc.setFontSize(10); doc.setTextColor(40, 45, 40);
+        (variant.ingredients || []).forEach((ingredient) => {
+          y = addWrapped(doc, "• " + ingredientLabel(ingredient), margin, y, width - margin * 2);
+        });
+      });
       const equipment = recipeEquipment(recipe);
       if (equipment.length) {
         y += 4;
@@ -908,6 +936,16 @@ async function createPdf() {
         y = addWrapped(doc, /^Tip:/i.test(step) ? step : `${stepNumber}. ${step}`, margin, y, width - margin * 2, 5);
         if (!/^Tip:/i.test(step)) stepNumber += 1;
         if (y > height - margin) { doc.addPage(); y = 20; }
+      });
+      (recipe.dailyVariants || []).forEach((variant) => {
+        y += 4;
+        doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Variant · " + variant.title, margin, y); y += 7;
+        doc.setFontSize(10); doc.setTextColor(40, 45, 40);
+        methodSteps(variant.method || "").forEach((step) => {
+          y = addWrapped(doc, /^Tip:/i.test(step) ? step : `${stepNumber}. ${step}`, margin, y, width - margin * 2, 5);
+          if (!/^Tip:/i.test(step)) stepNumber += 1;
+          if (y > height - margin) { doc.addPage(); y = 20; }
+        });
       });
       if (recipe.notes?.length) {
         y += 5;
@@ -970,6 +1008,7 @@ async function createSingleRecipePdf(recipe) {
   y += 10;
   addSection("Ingrediënten", (recipe.ingredients || []).map(ingredientLabel));
   (recipe.components || []).forEach((component) => addSection("Subrecept · " + component.title, (component.ingredients || []).map(ingredientLabel)));
+  (recipe.dailyVariants || []).forEach((variant) => addSection("Variant · " + variant.title, (variant.ingredients || []).map(ingredientLabel)));
   addSection("Benodigdheden", recipeEquipment(recipe));
   addSection("Bereidingswijze", methodSteps(recipeMethod(recipe)).map((step, index) => (index + 1) + ". " + step));
   doc.save((recipe.id || "recept") + ".pdf");

@@ -59,6 +59,13 @@ function recipeEquipment(recipe) {
   ];
 }
 
+function recipeIngredients(recipe) {
+  return [
+    ...(recipe.ingredients || []),
+    ...(recipe.dailyVariants || []).flatMap((variant) => variant.ingredients || [])
+  ];
+}
+
 async function buildPdf(recipes) {
   const doc = new window.jspdf.jsPDF({ orientation: "landscape", unit: "mm", format: "a4" });
   const pageWidth = doc.internal.pageSize.getWidth();
@@ -92,7 +99,7 @@ async function buildPdf(recipes) {
     doc.setFontSize(8.5);
     doc.setTextColor(40, 45, 40);
     let leftY = 43;
-    (recipe.ingredients || []).forEach((ingredient) => {
+    recipeIngredients(recipe).forEach((ingredient) => {
       leftY = textLines(doc, "• " + ingredientText(ingredient), margin, leftY, columnWidth, 4.2);
     });
     (recipe.components || []).forEach((component) => {
@@ -150,6 +157,18 @@ async function buildPdf(recipes) {
     mainSteps.forEach((step, index) => {
       rightY = textLines(doc, /^Tip:/i.test(step) ? step : (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
       rightY += 1.2;
+    });
+    (recipe.dailyVariants || []).forEach((variant) => {
+      rightY += 1.5;
+      doc.setFontSize(10);
+      doc.setTextColor(24, 63, 50);
+      rightY = textLines(doc, "Variant: " + variant.title, rightX, rightY, columnWidth, 4.2);
+      doc.setFontSize(8.5);
+      doc.setTextColor(40, 45, 40);
+      window.recipeMethodSteps(variant.method || "").forEach((step, index) => {
+        rightY = textLines(doc, /^Tip:/i.test(step) ? step : (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
+        rightY += 1.2;
+      });
     });
 
     if (recipe.notes?.length) {
