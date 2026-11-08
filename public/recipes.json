@@ -7519,5 +7519,126 @@
     "method": "Verwarm de oven voor op 180 graden. Schil de knolselderij en pastinaak. Snijd in grove stukken. Doe de knolselderij en pastinaak in een pan en zet het net onder water. Breng aan de kook en kook dit in circa 15 minuten gaar. Snipper de ui en bak deze zachtjes in de pan met wat olijfolie tot de ui glazig is. Voeg vervolgens het gehakt, de knoflook, de kruiden, mosterd, peper en (jozo)zout toe en laat het geheel gaar worden. Giet de knolselderij en pastinaak af als het geheel gaar is en vang het kookvocht op. Stamp er een puree van en voeg net zoveel kookvocht toe dat het een zachte puree wordt. Laat de zuurkool uitlekken en roer door de puree. Vet de ovenschaal in met een scheutje olijfolie. Schep een derde van de puree in de ovenschaal en verdeel gelijkmatig. Schep de helft van het gehaktmengsel erover. Schep een derde van de puree erover en dan weer een laag gehaktmengsel. Eindig met de rest van de puree. Rasp de kaas en verdeel dit als laatste over de bovenkant. Bak de schotel in circa 8 minuten in de oven tot de kaas gesmolten is. Tip: Pureer de knolselderij en pastinaak met de staafmixer of keukenmachine. Let op: door aanpassingen in het recept kunnen de hoeveelheden in het filmpje verschillen met die van het recept. Volg hierin altijd het recept voor juiste hoeveelheden.",
     "harmonizerVersion": "1",
     "harmonized": false
-  }
+  },
+    {
+      "id": "groentesoep-met-aardappel-en-balletjes",
+      "title": "Groentesoep met aardappel en balletjes",
+      "approved": false,
+      "category": "diner",
+      "portions": 2,
+      "multiDay": false,
+      "ingredients": [
+        {
+          "raw": "1 ui",
+          "amount": 1,
+          "unit": "stuk",
+          "name": "ui",
+          "optional": false,
+          "alternatives": [],
+          "category": "Groente en fruit",
+          "componentId": ""
+        },
+        {
+          "raw": "100 g aardappel (vastkokend)",
+          "amount": 100,
+          "unit": "gram",
+          "name": "aardappel",
+          "optional": false,
+          "alternatives": [],
+          "category": "Groente en fruit",
+          "componentId": ""
+        },
+        {
+          "raw": "200 g rundergehakt",
+          "amount": 200,
+          "unit": "gram",
+          "name": "rundergehakt",
+          "optional": false,
+          "alternatives": [
+            {
+              "raw": "wat stukjes omelet",
+              "amount": null,
+              "unit": "",
+              "name": "omelet",
+              "optional": false,
+              "category": "Zuivel en eieren",
+              "componentId": ""
+            }
+          ],
+          "category": "Vlees, vis en vleesvervangers",
+          "componentId": ""
+        },
+        {
+          "raw": "peper naar smaak",
+          "amount": null,
+          "unit": "",
+          "name": "peper",
+          "optional": false,
+          "alternatives": [],
+          "category": "Kruiden en smaakmakers",
+          "componentId": ""
+        },
+        {
+          "raw": "snufje knoflookpoeder",
+          "amount": 1,
+          "unit": "gram",
+          "name": "knoflookpoeder",
+          "optional": false,
+          "alternatives": [],
+          "category": "Kruiden en smaakmakers",
+          "componentId": ""
+        },
+        {
+          "raw": "1½ theelepel paprikapoeder",
+          "amount": 1.5,
+          "unit": "tl",
+          "name": "paprikapoeder",
+          "optional": false,
+          "alternatives": [],
+          "category": "Kruiden en smaakmakers",
+          "componentId": ""
+        },
+        {
+          "raw": "1 eetlepel olijfolie",
+          "amount": 15,
+          "unit": "ml",
+          "name": "olijfolie",
+          "optional": false,
+          "alternatives": [],
+          "category": "Houdbare producten",
+          "componentId": ""
+        },
+        {
+          "raw": "400 g voorgesneden soepgroenten",
+          "amount": 400,
+          "unit": "gram",
+          "name": "soepgroenten",
+          "optional": false,
+          "alternatives": [],
+          "category": "Groente en fruit",
+          "componentId": ""
+        },
+        {
+          "raw": "750 ml groentebouillon minder zout",
+          "amount": 750,
+          "unit": "ml",
+          "name": "groentebouillon",
+          "optional": false,
+          "alternatives": [],
+          "category": "Houdbare producten",
+          "componentId": ""
+        }
+      ],
+      "components": [],
+      "method": "Snipper de ui. Schil de aardappel en snijd deze in kleine blokjes. Meng het rundergehakt met de peper, het knoflookpoeder en 1 tl paprikapoeder. Rol het gehakt tot kleine balletjes. Verhit de olijfolie in een soeppan en fruit de ui. Voeg de soepgroenten toe en bak kort mee. Voeg de groentebouillon toe en breng aan de kook. Voeg de aardappelblokjes en de gehaktballetjes toe en kook 10 minuten met de deksel op de pan. Breng de soep verder op smaak met peper, knoflookpoeder en ½ tl paprikapoeder. Tip: voor een vegetarische versie kun je het gehakt vervangen door stukjes omelet.",
+      "harmonizerVersion": "1",
+      "harmonized": false,
+      "advanceNotice": "",
+      "days": 0,
+      "equipment": [
+        "soeppan"
+      ],
+      "preparationTime": 25,
+      "ovenTime": 0
+    }
 ]
