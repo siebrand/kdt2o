@@ -1654,8 +1654,8 @@
       },
       {
         "raw": "2 el bieslook",
-        "amount": 2,
-        "unit": "el",
+        "amount": 10,
+        "unit": "gram",
         "name": "bieslook",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -2240,9 +2240,9 @@
       },
       {
         "raw": "half bosje verse bieslook",
-        "amount": 0.5,
-        "unit": "bosje",
-        "name": "verse bieslook",
+        "amount": 10,
+        "unit": "gram",
+        "name": "bieslook",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -2411,8 +2411,8 @@
       },
       {
         "raw": "half bosje verse salie",
-        "amount": 0.5,
-        "unit": "bosje",
+        "amount": 5,
+        "unit": "gram",
         "name": "verse salie",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -2642,9 +2642,9 @@
       },
       {
         "raw": "1 el fijngesneden peterselie",
-        "amount": 1,
-        "unit": "el",
-        "name": "fijngesneden peterselie",
+        "amount": 5,
+        "unit": "gram",
+        "name": "peterselie",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -6057,8 +6057,8 @@
       },
       {
         "raw": "half bosje verse koriander",
-        "amount": 0.5,
-        "unit": "bosje",
+        "amount": 8,
+        "unit": "gram",
         "name": "verse koriander",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -6616,10 +6616,10 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "2 el bieslook fijngesneden (diepvries)",
-        "amount": 2,
-        "unit": "el",
-        "name": "bieslook fijngesneden (diepvries)",
+        "raw": "2 el bieslook fijngesneden (evt. diepvries)",
+        "amount": 10,
+        "unit": "gram",
+        "name": "bieslook",
         "optional": false,
         "category": "Diepvries"
       },
@@ -6773,8 +6773,8 @@
       },
       {
         "raw": "1 bosje peterselie",
-        "amount": 1,
-        "unit": "bosje",
+        "amount": 15,
+        "unit": "gram",
         "name": "peterselie",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -7013,8 +7013,8 @@
       },
       {
         "raw": "handvol verse koriander",
-        "amount": 1,
-        "unit": "bosje",
+        "amount": 15,
+        "unit": "gram",
         "name": "koriander",
         "optional": false,
         "category": "Kruiden en smaakmakers"
