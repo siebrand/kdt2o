@@ -1087,7 +1087,7 @@
       {
         "raw": "1 lenteui",
         "amount": 1,
-        "unit": "stuk",
+        "unit": null,
         "name": "lenteui",
         "optional": false,
         "category": "Groente en fruit"
@@ -1750,7 +1750,7 @@
       {
         "raw": "1 lenteui",
         "amount": 1,
-        "unit": "stuk",
+        "unit": null,
         "name": "lenteui",
         "optional": false,
         "category": "Groente en fruit"
@@ -2637,7 +2637,7 @@
       {
         "raw": "3 lenteui",
         "amount": 3,
-        "unit": "stuk",
+        "unit": null,
         "name": "lenteui",
         "optional": false,
         "category": "Groente en fruit"
@@ -2951,7 +2951,7 @@
         "category": "Groente en fruit"
       }
     ],
-    "method": "Snipper de ui heel fijn. Meng de ui met mosterd, azijn, olijfolie en water goed door elkaar. Roer dit door de gegrilde groeten (hoe langer je het laat intrekken hoe lekkerder). Doe de flinke handen spinazie op een bord of in een meeneem bakje. Leg hier bovenop de gegrilde groeten, bestrooi met de zaden en pitten en verkruimel de geitenkaas erboven. Eet hierbij een (vezelrijke) cracker met wat geitenkaas. Eet een stuk fruit toe (zie overzicht weekmenu).",
+    "method": "Snipper de ui heel fijn. Meng de ui met mosterd, azijn, olijfolie en water goed door elkaar. Roer dit door de gegrilde groeten (hoe langer je het laat intrekken hoe lekkerder). Doe de flinke handen spinazie op een bord of in een meeneem bakje. Leg hier bovenop de gegrilde groeten, bestrooi met de zaden en pitten en verkruimel de geitenkaas erboven. Eet hierbij een (vezelrijke) cracker met wat geitenkaas. Eet een stuk fruit toe.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -2963,10 +2963,10 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "300 gram (diepvries) pompoen",
+        "raw": "300 gram (diepvries)pompoen",
         "amount": 300,
         "unit": "gram",
-        "name": "(diepvries) pompoen",
+        "name": "(diepvries)pompoen",
         "optional": false,
         "category": "Diepvries"
       },
@@ -2979,10 +2979,10 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "2 stengels bosui",
+        "raw": "2 stengels lenteui",
         "amount": 2,
-        "unit": "stengels",
-        "name": "bosui",
+        "unit": null,
+        "name": "lenteui",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3001,6 +3001,14 @@
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
+      },
+      {
+        "raw": "5 eieren",
+        "amount": 5,
+        "unit": "stuk",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
       },
       {
         "raw": "snufje chilipoeder",
@@ -3055,13 +3063,13 @@
         "category": "Kruiden en smaakmakers"
       }
     ],
-    "method": "Maak de pompoen schoon en snijd in blokjes. Kook de pompoenblokjes ongeveer 5 minuten in een pan zodat ze een beetje zacht worden. Snijd ondertussen de rode ui, de bosui en rode paprika in kleine stukjes. Giet na 5 minuten de pompoenblokjes af en prak ze fijn. Verwarm een pan met een scheutje olijfolie en bak de rode ui. Voeg na een minuut de paprika, pompoen en driekwart van de bosui toe. Bewaar een kwart bosui om te garneren. Klop ondertussen de eieren los in een aparte kom en voeg de chilipoeder en melk/kwark toe. Roer het mengsel door elkaar. Voeg peper en (jozo)zout toe naar smaak. Schenk het mengsel over de groenten. Bak het ei (eventueel met deksel op de pan) op middelhoog vuur totdat het ei begint te stollen. Verkruimel de kaas en strooi over het ei. Wanneer de frittata goed gestold is, draai je de frittata om en bak je de andere kant nog ongeveer 2 minuten mee. . Tip: Leg de frittata vijf minuten onder de grill voor een mooi goudbruin laagje. Tip: De frittata is zowel warm als koud lekker en daardoor gemakkelijk mee te nemen als lunch. Tip: Duurt het te lang voordat de frittata gaar is? Maak er roerei van.",
+    "method": "Maak de pompoen schoon en snijd in blokjes. Kook de pompoenblokjes ongeveer 5 minuten in een pan zodat ze een beetje zacht worden. Snijd ondertussen de rode ui, de lenteui en rode paprika in kleine stukjes. Giet na 5 minuten de pompoenblokjes af en prak ze fijn. Verwarm een pan met een scheutje olijfolie en bak de rode ui. Voeg na een minuut de paprika, pompoen en driekwart van de lenteui toe. Bewaar een kwart lenteui om te garneren. Klop ondertussen de eieren los in een aparte kom en voeg de chilipoeder en melk/kwark toe. Roer het mengsel door elkaar. Voeg peper en (jozo)zout toe naar smaak. Schenk het mengsel over de groenten. Bak het ei (eventueel met deksel op de pan) op middelhoog vuur totdat het ei begint te stollen. Verkruimel de kaas en strooi over het ei. Wanneer de frittata goed gestold is, draai je de frittata om en bak je de andere kant nog ongeveer 2 minuten mee. Tip: leg de frittata vijf minuten onder de grill voor een mooi goudbruin laagje. Tip: de frittata is zowel warm als koud lekker en daardoor gemakkelijk mee te nemen als lunch. Tip: duurt het te lang voordat de frittata gaar is? Maak er roerei van.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
   {
     "id": "koud-kippesto-salade",
-    "title": "Koud kippesto salade",
+    "title": "Koude kippestosalade",
     "category": "lunch",
     "portions": 2,
     "multiDay": false,
@@ -3099,10 +3107,10 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "2 kipdijfilets (ca 150 gram totaal)",
+        "raw": "2 kippendijfilet (ca 150 gram totaal)",
         "amount": 150,
         "unit": "gram",
-        "name": "kipdijfilet",
+        "name": "kippendijfilet",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -3151,64 +3159,64 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "1 ui",
-        "amount": 1,
+        "raw": "2 uien",
+        "amount": 2,
         "unit": "stuk",
         "name": "ui",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "2 teentjes knoflook",
-        "amount": 2,
+        "raw": "4 teentjes knoflook",
+        "amount": 4,
         "unit": "teen",
         "name": "knoflook",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "2 el extra vierge olijfolie",
-        "amount": 30,
+        "raw": "4 el extra vierge olijfolie",
+        "amount": 60,
         "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
-        "raw": "2 tl kurkuma",
-        "amount": 2,
+        "raw": "4 tl kurkuma",
+        "amount": 4,
         "unit": "tl",
         "name": "kurkuma",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "1 blik tomatenblokjes (400 gram)",
-        "amount": 1,
+        "raw": "2 blikken tomatenblokjes (400 gram)",
+        "amount": 2,
         "unit": "blik",
         "name": "tomaat (blokjes)",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "500 ml water",
-        "amount": 500,
+        "raw": "1 liter water",
+        "amount": 1000,
         "unit": "ml",
         "name": "water",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
-        "raw": "1 stuk groentebouillonblokje",
-        "amount": 1,
+        "raw": "2 groentebouillonblokjes",
+        "amount": 2,
         "unit": "stuk",
         "name": "groentebouillonblokje",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
-        "raw": "100 gram gedroogde rode linzen",
-        "amount": 100,
+        "raw": "200 gram gedroogde rode linzen",
+        "amount": 200,
         "unit": "gram",
         "name": "gedroogde rode linzen",
         "optional": false,
@@ -3239,13 +3247,13 @@
         "category": "Houdbare producten"
       }
     ],
-    "method": "Snijd de ui en knoflook fijn en fruit dit in olijfolie in een pan. Voeg de kurkuma hieraan toe en bak kort mee. Voeg hierna de tomatenblokjes, het water met een bouillonblokje en de linzen toe. Laat de soep nu voor ongeveer een half uurtje doorkoken tot de linzen gaar zijn en roer regelmatig. Als de linzen gaar zijn kun je de soep pureren met een staafmixer. Zonder pureren heeft de soep wat meer structuur. Breng de soep op smaak met peper en eventueel zout, en roer als laatste het pakje kokosmelk erdoorheen. Serveer de linzensoep met zie weekmenu Tip: Vries overgebleven soep in om er later nog eens van te genieten.",
+    "method": "Snijd de ui en knoflook fijn en fruit dit in olijfolie in een pan. Voeg de kurkuma hieraan toe en bak kort mee. Voeg hierna de tomatenblokjes, het water met een bouillonblokje en de linzen toe. Laat de soep nu voor ongeveer een half uurtje doorkoken tot de linzen gaar zijn en roer regelmatig. Als de linzen gaar zijn kun je de soep pureren met een staafmixer. Zonder pureren heeft de soep wat meer structuur. Breng de soep op smaak met peper en eventueel zout, en roer als laatste de kokosmelk erdoorheen. Tip: Vries overgebleven soep in om er later nog eens van te genieten.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
   {
-    "id": "mozzarella-wraps-met-avocado-en-tomaat",
-    "title": "Mozzarella wraps met avocado en tomaat",
+    "id": "mozzarellawraps-met-avocado-en-tomaat",
+    "title": "Mozzarellawraps met avocado en tomaat",
     "category": "lunch",
     "portions": 2,
     "multiDay": false,
@@ -3329,15 +3337,23 @@
         "name": "olijven",
         "optional": false,
         "category": "Houdbare producten"
+      },
+      {
+        "raw": "3 el gekookte linen",
+        "amount": 20,
+        "unit": "gram",
+        "name": "linzen",
+        "optional": false,
+        "category": "Houdbare producten"
       }
     ],
-    "method": "Doe de bol mozzarella in een klein pannetje met water (zodat de bolletjes bijna onder water staat). Verhit het zachtjes (het water mag niet koken), het gaat erom dat de mozzarella zacht wordt. Na 5 tot 7 minuutjes is de bol vaak zacht genoeg. Haal ze uit het water en leg op een bakpapier vel. Leg er vervolgens een bakpapier vel boven op en rol ze plat met een deegroller tot een dunne pannenkoek. Laat vervolgens afkoelen. Besmeer vervolgens met roomkaas, besprenkel met wat peper en leg de avocado erboven op. Snij de tomaat in stukjes en doe er bovenop. Rol de wraps vervolgens op en snij door de helft. Eet met een groene salade erbij (je kunt ook zeker groenten gebruiken die je nog in huis hebt hiervoor) Maak eventueel nog een wrap indien 1 wrap per persoon niet genoeg voor je is. En je kan eindeloos variëren met deze wrap: denk aan de restjes groenten die je hebt of een blikje tonijn!",
+    "method": "Doe de bol mozzarella in een klein pannetje met water (zodat de bolletjes bijna onder water staat). Verhit het zachtjes (het water mag niet koken), het gaat erom dat de mozzarella zacht wordt. Na 5 tot 7 minuutjes is de bol vaak zacht genoeg. Haal ze uit het water en leg op een bakpapier vel. Leg er vervolgens een bakpapier vel boven op en rol ze plat met een deegroller tot een dunne pannenkoek. Laat vervolgens afkoelen. Besmeer vervolgens met roomkaas, besprenkel met wat peper en leg de avocado erboven op. Snij de tomaat in stukjes en doe er bovenop. Rol de wraps vervolgens op en snij door de helft. Eet met een groene salade erbij (je kunt ook zeker groenten gebruiken die je nog in huis hebt hiervoor) Maak eventueel nog een wrap indien 1 wrap per persoon niet genoeg voor je is. Tip: je kan eindeloos variëren met deze wrap: denk aan de restjes groenten die je hebt of een blikje tonijn!",
     "harmonizerVersion": "1",
     "harmonized": false
   },
   {
-    "id": "mozzarella-wraps-met-zalm-en-roomkaas",
-    "title": "Mozzarella wraps met zalm en roomkaas",
+    "id": "mozzarellawraps-met-zalm-en-roomkaas",
+    "title": "Mozzarellawraps met zalm en roomkaas",
     "category": "lunch",
     "portions": 2,
     "multiDay": false,
@@ -3391,7 +3407,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "komkommer",
+        "raw": "halve komkommer",
         "amount": "0.5",
         "unit": "stuk",
         "name": "komkommer",
@@ -3415,7 +3431,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1elolijven",
+        "raw": "1 el olijven",
         "amount": 1,
         "unit": "el",
         "name": "olijven",
@@ -3935,7 +3951,7 @@
         "category": "Houdbare producten"
       }
     ],
-    "method": "Tomatensoep - Pel en snipper de ui. Was de tomaten en snijd deze in stukken of open de blikken. Verwijder de uiteinden van de wortel, schil en hak in grove stukken. Was en snij de paprika in stukken. Doe de olijfolie in soeppan. Bak hierin de ui op middelmatig vuur in 5 minuten zacht en glazig. Voeg de tomaten, paprika, wortelen, bleekselderij en de bouillonblokjes met water en peterselie toe. Breng het aan de kook. Wanneer het kookt, zet je het vuur laag, doe je de deksel op de pan en laat het zo 15 minuten staan. Als de groenten zacht en gaar zijn voeg je 2 norivellen toe en pureer je de soep met een staafmixer. Spoel de linzen af en voeg toe aan de soep. Bestrooi daarna met de basilicumblaadjes. Voeg eventueel wat peper toe. Voeg wat verpulverde nori vellen over de soep toe voor dat je het serveert. Tip: Als de tomaten weinig smaak hebben of je de soep intenser rood wilt maken, voeg dan tijdens het bakken van de ui een klein blikje tomatenpuree toe. Serveer de tomatensoep in een kom of neem het mee in een thermoskan. Tip: Koop de paprika niet per stuk, maar in een voordeelverpakking van drie. Tip: Koop de paprika op de markt; daar is deze goedkoper. Serveer met: zie weekmenu ees KEER Voeding | Leeft OM Slik je schildklier medicatie? Overleg dan met jouw arts of extra jodium dmv norivellen gebruikt kan worden. Tip: Vries overgebleven soep in om er later nog eens van te genieten.",
+    "method": "Tomatensoep - Pel en snipper de ui. Was de tomaten en snijd deze in stukken of open de blikken. Verwijder de uiteinden van de wortel, schil en hak in grove stukken. Was en snij de paprika in stukken. Doe de olijfolie in soeppan. Bak hierin de ui op middelmatig vuur in 5 minuten zacht en glazig. Voeg de tomaten, paprika, wortelen, bleekselderij en de bouillonblokjes met water en peterselie toe. Breng het aan de kook. Wanneer het kookt, zet je het vuur laag, doe je de deksel op de pan en laat het zo 15 minuten staan. Als de groenten zacht en gaar zijn voeg je 2 norivellen toe en pureer je de soep met een staafmixer. Spoel de linzen af en voeg toe aan de soep. Bestrooi daarna met de basilicumblaadjes. Voeg eventueel wat peper toe. Voeg wat verpulverde nori vellen over de soep toe voor dat je het serveert. Tip: Als de tomaten weinig smaak hebben of je de soep intenser rood wilt maken, voeg dan tijdens het bakken van de ui een klein blikje tomatenpuree toe. Serveer de tomatensoep in een kom of neem het mee in een thermoskan. Tip: Koop de paprika niet per stuk, maar in een voordeelverpakking van drie. Tip: Koop de paprika op de markt; daar is deze goedkoper. Slik je schildklier medicatie? Overleg dan met jouw arts of extra jodium dmv norivellen gebruikt kan worden. Tip: Vries overgebleven soep in om er later nog eens van te genieten.",
     "harmonizerVersion": "1",
     "harmonized": false
   },
@@ -4998,10 +5014,10 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "200 gram kip(dij)filet",
+        "raw": "200 gram kippendijfilet",
         "amount": 200,
         "unit": "gram",
-        "name": "kip(dij)filet",
+        "name": "kippendijfilet",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -5646,10 +5662,10 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "200 gram kippendijen",
+        "raw": "200 gram kippendijfilet",
         "amount": 200,
         "unit": "gram",
-        "name": "kippendijen",
+        "name": "kippendijfilet",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
