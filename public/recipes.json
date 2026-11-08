@@ -1859,6 +1859,7 @@
   {
     "id": "volle-kwark-met-granola-en-diepvries-rood-fruit",
     "title": "Volle kwark met granola en diepvries rood fruit",
+    "approved": true,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -1896,6 +1897,7 @@
   {
     "id": "Gegrilde groenten met feta en crackers met kaas avocado",
     "title": "Gegrilde groenten met feta en crackers met kaas & avocado",
+    "approved": true,
     "category": "lunch",
     "portions": 1,
     "multiDay": false,
@@ -2014,6 +2016,7 @@
   {
     "id": "artisjok-salade-met-bloemkoolrijst",
     "title": "Artisjok salade met bloemkoolrijst",
+    "approved": true,
     "category": "lunch",
     "portions": 2,
     "multiDay": false,
@@ -2166,6 +2169,7 @@
   {
     "id": "bietensalade-met-haring",
     "title": "Bietensalade met haring",
+    "approved": true,
     "category": "lunch",
     "portions": 2,
     "multiDay": false,
@@ -2266,6 +2270,7 @@
   {
     "id": "broccolisoep",
     "title": "Broccolisoep",
+    "approved": true,
     "category": "lunch",
     "portions": 6,
     "multiDay": true,
@@ -2366,6 +2371,7 @@
   {
     "id": "courgettesoep-3-dagen",
     "title": "Courgettesoep, drie variaties",
+    "approved": true,
     "category": "lunch",
     "portions": 6,
     "days": 3,
