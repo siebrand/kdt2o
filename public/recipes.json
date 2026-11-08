@@ -2904,7 +2904,7 @@
         "category": "Groente en fruit"
       }
     ],
-    "method": "Snipper de ui heel fijn. Meng de ui met mosterd, azijn, olijfolie en water goed door elkaar. Roer dit door de gegrilde groeten (hoe langer je het laat intrekken hoe lekkerder). Doe de flinke handen spinazie op een bord of in een meeneem bakje. Leg hier bovenop de gegrilde groeten, bestrooi met de zaden en pitten en verkruimel de geitenkaas erboven. Eet hierbij een (vezelrijke) cracker met wat geitenkaas. Eet een stuk fruit toe."
+    "method": "Snipper de ui heel fijn. Meng de ui met mosterd, azijn, olijfolie en water goed door elkaar. Roer dit door de gegrilde groeten (hoe langer je het laat marineren hoe lekkerder). Doe de flinke handen spinazie op een bord of in een meeneem bakje. Leg hier bovenop de gegrilde groeten, bestrooi met de zaden en pitten en verkruimel de geitenkaas erboven. Eet hierbij een (vezelrijke) cracker met wat geitenkaas. Eet een stuk fruit toe."
   },
   {
     "id": "kleurrijke-frittata",
@@ -4295,143 +4295,10 @@
     "method": "Verwarm de oven op 190 graden. Snijd de aubergine in de lengte in dunne plakken van ca. 1 cm dik. Meng de olijfolie met de Italiaanse kruiden, (jozo)zout en peper in een kom. Plaats de plakken aubergine op een rooster van de oven dat belegd is met bakpapier. Smeer de aubergines in met de olijfolie. Plaats de aubergines in de oven en bak dit ca. 15 minuten. Haal de aubergines uit de oven. Maak dan de tomatensaus. Verwarm de olijfolie in een pan, waar een deksel op kan. Fruit de ui en knoflook samen ca. 10 minuten op een middelmatig vuur tot ze doorzichtig en zacht zijn. Voeg het blik tomatenblokjes, de basilicum blaadjes, (jozo)zout en peper toe. Breng het geheel zachtjes aan de kook. Doe de deksel op de pan en zet het vuur laag. Laat de saus een paar minuten zachtjes doorkoken. Plaats de aubergines in een grote ovenschaal en giet de tomatensaus met een lepel hier overheen (je kan ook meerdere laagjes maken). Snijd de mozzarella in plakken en plaats deze op de aubergines met de saus. Plaats de ovenschaal met de aubergines terug in de oven voor 5 minuten totdat de mozzarella gesmolten is. Serveer de aubergines in een schaal en garneer met de basillicumblaadjes. Tip: De tomatensaus is 3 dagen in de koelkast te bewaren of 1 maand in de vriezer."
   },
   {
-    "id": "aziatische-runderreepjes",
-    "title": "Aziatische runderreepjes",
-    "category": "diner",
-    "portions": 2,
-    "multiDay": false,
-    "ingredients": [
-      {
-        "raw": "4 el Japanse sojasaus (geen ketjap)",
-        "amount": 60,
-        "unit": "ml",
-        "name": "sojasaus",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "2 teentjes knoflook",
-        "amount": 2,
-        "unit": "teen",
-        "name": "knoflook",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "2 el azijn",
-        "amount": 30,
-        "unit": "ml",
-        "name": "azijn",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "2 el geraspte gember",
-        "amount": 20,
-        "unit": "gram",
-        "name": "gember",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "300 gram runderreepjes",
-        "amount": 300,
-        "unit": "gram",
-        "name": "runderreepjes",
-        "optional": false,
-        "alternatives": [
-          {
-            "raw": "200 gram tofu",
-            "amount": 200,
-            "unit": "gram",
-            "name": "tofu",
-            "optional": false,
-            "category": "Vlees, vis en vleesvervangers"
-          }
-        ],
-        "category": "Overig"
-      },
-      {
-        "raw": "300 gram spruitjes",
-        "amount": 300,
-        "unit": "gram",
-        "name": "spruitjes",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 rode ui",
-        "amount": 1,
-        "unit": "stuk",
-        "name": "rode ui",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 (rode) paprika",
-        "amount": 1,
-        "unit": "stuk",
-        "name": "paprika (rood)",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "2 el roomboter",
-        "amount": 30,
-        "unit": "gram",
-        "name": "roomboter",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "32 gram sesamzaad",
-        "amount": 32,
-        "unit": "gram",
-        "name": "sesamzaad",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "50 gram taugé",
-        "amount": 50,
-        "unit": "gram",
-        "name": "taugé",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 tl chilivlokken",
-        "amount": 1,
-        "unit": "tl",
-        "name": "chilivlokken",
-        "optional": true,
-        "alternatives": [
-          {
-            "raw": "1 tl rode peper",
-            "amount": 1,
-            "unit": "tl",
-            "name": "rode peper",
-            "optional": false,
-            "category": "Kruiden en smaakmakers"
-          }
-        ],
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "150 gram zilvervliesrijst (niet voor deelnemers Keer Diabetes2 Om)",
-        "amount": 150,
-        "unit": "gram",
-        "name": "zilvervliesrijst",
-        "optional": true,
-        "category": "Houdbare producten"
-      }
-    ],
-    "method": "Meng de sojasaus, uitgeperste knoflook, azijn, gember (en chilivlokken) en roer dit door de runderreepjes. Laat even intrekken (hoe langer hoe lekkerder). Was de spruitjes en snijd het stronkje eraf. Kook of stoom de spruitjes in ongeveer 7 minuten gaar. Snijd de ui in dunne ringen en was en snijd de paprika in dunne reepjes. Smoor de ui en paprika zachtjes gaar in een pan met wat boter. Roerbak vervolgens op middelhoog vuur de runderreepjes (of tofu) bij de ui en paprika. Voeg het teveel aan marinade toe. Voeg de spruitjes, taugé en sesamzaadjes toe. Roerbak alles een paar minuten totdat de taugé gaar, maar nog wel knapperig is. Liever vegetarisch? Vervang de runderreepjes door tofu. Snijd de tofu in blokjes. Meng de sojasaus, uitgeperste knoflook, gember (en chilivlokken) en roer dit door de tofu. Laat even intrekken (hoe langer hoe lekkerder)."
-  },
-  {
     "id": "aziatische-tofu",
     "title": "Aziatische tofu",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -4494,7 +4361,7 @@
       {
         "raw": "1 (rode) paprika",
         "amount": 1,
-        "unit": "",
+        "unit": "stuk",
         "name": "paprika (rood)",
         "optional": false,
         "category": "Groente en fruit"
@@ -4508,7 +4375,7 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "32 gram sesamzaad",
+        "raw": "4 el sesamzaad",
         "amount": 32,
         "unit": "gram",
         "name": "sesamzaad",
@@ -4516,7 +4383,7 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "50 gram taugé",
+        "raw": "2 handjes taugé",
         "amount": 50,
         "unit": "gram",
         "name": "taugé",
@@ -4528,7 +4395,7 @@
         "amount": 1,
         "unit": "tl",
         "name": "chilivlokken",
-        "optional": true,
+        "optional": false,
         "alternatives": [
           {
             "raw": "1 tl rode peper",
@@ -4550,49 +4417,175 @@
         "category": "Houdbare producten"
       }
     ],
-    "method": "Meng de sojasaus, uitgeperste knoflook, azijn, gember en chilivlokken en roer dit door de tofu. Laat even intrekken (hoe langer hoe lekkerder). Was de spruitjes en snijd het stronkje eraf. Kook of stoom de spruitjes in ongeveer 7 minuten gaar. Snijd de ui in dunne ringen en was en snijd de paprika in dunne reepjes. Smoor de ui en paprika zachtjes gaar in een pan met wat boter. Roerbak vervolgens op middelhoog vuur de tofu bij de ui en paprika. Voeg het teveel aan marinade toe. Voeg de spruitjes, taugé en sesamzaadjes toe. Roerbak alles een paar minuten totdat de taugé gaar, maar nog wel knapperig is."
+    "method": "Snijd de tofu in blokjes. Meng de sojasaus, uitgeperste knoflook, azijn, gember (en chilivlokken) en roer dit door de tofu. Laat even marineren (hoe langer hoe lekkerder). Was de spruitjes en snijd het stronkje eraf. Kook of stoom de spruitjes in ongeveer 7 minuten gaar. Snijd de ui in dunne ringen en was en snijd de paprika in dunne reepjes. Smoor de ui en paprika zachtjes gaar in een pan met wat boter. Roerbak vervolgens op middelhoog vuur de  tofu bij de ui en paprika. Voeg het teveel aan marinade toe. Voeg de spruitjes, taugé en sesamzaadjes toe. Roerbak alles een paar minuten totdat de taugé gaar, maar nog wel knapperig is."
   },
   {
-    "id": "biefstuk-met-champignons-en-geroosterde-groenten",
-    "title": "Biefstuk met champignons en geroosterde groenten",
+    "id": "aziatische-runderreepjes",
+    "title": "Aziatische runderreepjes",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "3 courgettes",
-        "amount": 3,
-        "unit": "",
-        "name": "courgettes",
+        "raw": "4 el Japanse sojasaus (geen ketjap)",
+        "amount": 60,
+        "unit": "ml",
+        "name": "sojasaus",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "2 teentjes knoflook",
+        "amount": 2,
+        "unit": "teen",
+        "name": "knoflook",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "3 rode paprika's",
-        "amount": 3,
+        "raw": "2 el azijn",
+        "amount": 30,
+        "unit": "ml",
+        "name": "azijn",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "2 el geraspte gember",
+        "amount": 20,
+        "unit": "gram",
+        "name": "gember",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "300 gram runderreepjes",
+        "amount": 300,
+        "unit": "gram",
+        "name": "runderreepjes",
+        "optional": false,
+        "category": "Vlees, vis en vleesvervangers"
+      },
+      {
+        "raw": "300 gram spruitjes",
+        "amount": 300,
+        "unit": "gram",
+        "name": "spruitjes",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 rode ui",
+        "amount": 1,
+        "unit": "stuk",
+        "name": "rode ui",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 (rode) paprika",
+        "amount": 1,
         "unit": "stuk",
         "name": "paprika (rood)",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "300 gram wortel",
-        "amount": 300,
+        "raw": "2 el roomboter",
+        "amount": 30,
+        "unit": "gram",
+        "name": "roomboter",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "4 el sesamzaad",
+        "amount": 32,
+        "unit": "gram",
+        "name": "sesamzaad",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "2 handjes taugé",
+        "amount": 50,
+        "unit": "gram",
+        "name": "taugé",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 tl chilivlokken",
+        "amount": 1,
+        "unit": "tl",
+        "name": "chilivlokken",
+        "optional": true,
+        "alternatives": [
+          {
+            "raw": "1 tl rode peper",
+            "amount": 1,
+            "unit": "tl",
+            "name": "rode peper",
+            "optional": true,
+            "category": "Kruiden en smaakmakers"
+          }
+        ],
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "150 gram zilvervliesrijst (niet voor deelnemers Keer Diabetes2 Om)",
+        "amount": 150,
+        "unit": "gram",
+        "name": "zilvervliesrijst",
+        "optional": true,
+        "category": "Houdbare producten"
+      }
+    ],
+    "method": "Meng de sojasaus, uitgeperste knoflook, azijn, gember (en chilivlokken) en roer dit door de runderreepjes. Laat even marineren (hoe langer hoe lekkerder). Was de spruitjes en snijd het stronkje eraf. Kook of stoom de spruitjes in ongeveer 7 minuten gaar. Snijd de ui in dunne ringen en was en snijd de paprika in dunne reepjes. Smoor de ui en paprika zachtjes gaar in een pan met wat boter. Roerbak vervolgens op middelhoog vuur de runderreepjes bij de ui en paprika. Voeg het teveel aan marinade toe. Voeg de spruitjes, taugé en sesamzaadjes toe. Roerbak alles een paar minuten totdat de taugé gaar, maar nog wel knapperig is."
+  },
+  {
+    "id": "biefstuk-met-champignons-en-geroosterde-groenten",
+    "title": "Biefstuk met champignons en geroosterde groenten",
+    "category": "diner",
+    "approved": true,
+    "portions": 2,
+    "multiDay": false,
+    "ingredients": [
+      {
+        "raw": "2 courgettes",
+        "amount": 2,
+        "unit": "",
+        "name": "courgettes",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 rode paprika's",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "paprika (rood)",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 wortelen",
+        "amount": 200,
         "unit": "gram",
         "name": "wortel",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "3 (rode) uien",
-        "amount": 3,
+        "raw": "2 (rode) uien",
+        "amount": 2,
         "unit": "stuk",
         "name": "ui",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "Scheut extra vierge olijfolie",
+        "raw": "scheut extra vierge olijfolie",
         "amount": 15,
         "unit": "ml",
         "name": "extra vierge olijfolie",
@@ -4600,8 +4593,8 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "3 knoflooktenen",
-        "amount": 3,
+        "raw": "2 knoflooktenen",
+        "amount": 2,
         "unit": "teen",
         "name": "knoflook",
         "optional": false,
@@ -4624,7 +4617,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "30 ml slagroom",
+        "raw": "2 el slagroom",
         "amount": 30,
         "unit": "ml",
         "name": "slagroom",
@@ -4642,29 +4635,160 @@
       {
         "raw": "snufje peper",
         "amount": null,
-        "unit": "",
-        "name": "snufje peper",
+        "unit": null,
+        "name": "peper",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "snufje (jozo) zout",
         "amount": null,
-        "unit": "",
-        "name": "snufje (jozo) zout",
+        "unit": null,
+        "name": "zout",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       }
     ],
-    "method": "Verwarm de oven voor op 180 graden. Was de courgettes, paprika's en wortelen en snijd in lange repen van ongeveer 2 cm breed. Pel de uien en snijd in grove parten. Bekleed een bakplat met bakpapier. Leg hierop de groenten en de uien. Giet er flink olijfolie overheen en strooi er wat zout en peper over. Voeg ook de knoflooktenen toe. Hussel de groenten en zet circa 30 minuten in de oven. Snij de champignons. Verwarm de boter en een klein scheutje olijfolie op een laag vuurtje in de pan tot lichtbruin. Zet het vuur middelhoog. Als de boter bruin wordt, leg de biefstuk en de champignons in de pan. Laat aan beide kanten lichtbruin worden en draai het vuur dan middelhoog. Bak voor medium rose de biefstuk dan nog 5 minuten. Keer regelmatig en bestrooi met peper en zout. Haal de biefstuk uit de pan en dek deze een paar minuten af in een kom met een bord bovenop. Voeg de slagroom toe aan de champignons en laat een paar minuten inkoken. Serveer over de biefstuk en leg de gegrilde groenten ernaast. Let op! Bewaar de helft van de groenten voor de lunch van morgen. Je kunt deze als ze afgekoeld zijn in een goed afsluitbaar bakje doen en in de koelkast bewaren. Tip: Vervang de biefstuk voor tartaar. Vegetarische optie: Laat bij de vegetarische optie de champignons, biefstuk en slagroom weg en vervang voor: 2 portobello's 2 tl Italiaanse kruiden, 200 gram boterbonen of witte bonen, 2 tenen knoflook 2 el pijnboompitten Nadat je de groente in de over hebt gezet: Verwijder het steeltje van de portobello's. Vet een ovenschaal in met wat olijfolie en leg de portobello’s met de bolle kant naar beneden in een ovenschaal. Giet een scheut olijfolie in een bakje, pers daarin ook de knoflook uit en strooi de Italiaanse kruiden en de boterbonen erin. Prak met een vork totdat je een papje hebt. Breng op smaak met wat (jozo)zout en peper. Doe het mengsel dan in de portobello’s, strooi de pijnboompitten erover en zet voor circa 20-25 minuten in de oven bij de groenten.",
-    "notes": [
-      "Opmerking: bewaar de helft van de geroosterde groenten voor de lunch van morgen."
-    ]
+    "method": "Verwarm de oven voor op 180 graden. Was de courgettes, paprika's en wortelen en snijd in lange repen van ongeveer 2 cm breed. Pel de uien en snijd in grove parten. Bekleed een bakplaat met bakpapier. Leg hierop de groenten en de uien. Giet er flink olijfolie overheen en strooi er wat zout en peper over. Voeg ook de knoflooktenen in hun geheel toe. Hussel de groenten en rooster ze in circa 30 minuten gaar in de oven. Snijd ondertussen de champignons. Verwarm de roomboter samen met een klein scheutje olijfolie op een laag vuurtje in een koekenpan. Zet het vuur middelhoog zodra de boter lichtbruin wordt en leg de biefstuk en de champignons in de pan. Bak de biefstuk aan beide kanten lichtbruin. Bak het vlees daarna nog circa 5 minuten voor een medium-rosé resultaat. Keer regelmatig en bestrooi met peper en zout. Haal de biefstuk uit de pan en laat deze een paar minuten rusten op een bord, afgedekt met een ander bord (of kom). Voeg de slagroom toe aan de achtergebleven champignons in de pan en laat dit een paar minuten inkoken tot een saus. Serveer de biefstuk met de romige champignonsaus en leg de geroosterde groenten ernaast. Tip: Je kunt de biefstuk eventueel ook vervangen door tartaar."
+  },
+  {
+    "id": "gevulde-portobello-met-geroosterde-groenten",
+    "title": "Gevulde portobello met geroosterde groenten",
+    "category": "diner",
+    "approved": true,
+    "portions": 2,
+    "multiDay": false,
+    "ingredients": [
+      {
+        "raw": "2 courgettes",
+        "amount": 2,
+        "unit": "",
+        "name": "courgettes",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 rode paprika's",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "paprika (rood)",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 wortelen",
+        "amount": 200,
+        "unit": "gram",
+        "name": "wortel",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 (rode) uien",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "ui",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "scheut extra vierge olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "extra vierge olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "2 knoflooktenen",
+        "amount": 2,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 el roomboter",
+        "amount": 15,
+        "unit": "gram",
+        "name": "roomboter",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "2 portobello's",
+        "amount": 2,
+        "unit": "stuks",
+        "name": "portobello",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 tl Italiaanse kruiden",
+        "amount": 2,
+        "unit": "tl",
+        "name": "Italiaanse kruiden",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "200 gram boterbonen",
+        "amount": 200,
+        "unit": "gram",
+        "name": "boterbonen",
+        "optional": false,
+        "alternatives": [
+          {
+            "raw": "200 gram witte bonen",
+            "amount": 200,
+            "unit": "gram",
+            "name": "witte bonen",
+            "optional": false,
+            "category": "Houdbare producten"
+          }
+        ],
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "2 tenen knoflook",
+        "amount": 2,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 el pijnboompitten",
+        "amount": 2,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "snufje peper",
+        "amount": null,
+        "unit": null,
+        "name": "peper",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "snufje (jozo) zout",
+        "amount": null,
+        "unit": null,
+        "name": "zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      }
+    ],
+    "method": "Verwarm de oven voor op 180 graden. Was de courgettes, paprika's en wortelen en snijd in lange repen van ongeveer 2 cm breed. Pel de uien en snijd in grove parten. Bekleed een bakplaat met bakpapier. Leg hierop de groenten en de uien. Giet er flink olijfolie overheen en strooi er wat zout en peper over. Voeg ook de knoflooktenen toe. Hussel de groenten en zet circa 30 minuten in de oven. Verwijder het steeltje van de portobello's. Vet een ovenschaal in met wat olijfolie en leg de portobello’s met de bolle kant naar beneden in een ovenschaal. Giet een scheut olijfolie in een bakje, pers daarin ook de knoflook uit en strooi de Italiaanse kruiden en de boterbonen erin. Prak met een vork totdat je een papje hebt. Breng op smaak met wat (jozo)zout en peper. Doe het mengsel dan in de portobello’s, strooi de pijnboompitten erover en zet voor circa 20-25 minuten in de oven bij de groenten. Serveer de portobello met de gegrilde groenten ernaast."
   },
   {
     "id": "bloemkoolpizza",
     "title": "Bloemkoolpizza",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -4688,7 +4812,7 @@
         "raw": "1 ei",
         "amount": 1,
         "unit": "stuk",
-        "name": "ei",
+        "name": "eieren",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -4793,17 +4917,18 @@
       "bakpapier",
       "keukenmachine of staafmixer met hakbakje"
     ],
-    "method": "Verwarm de oven voor op 180 graden. Breek de bloemkool in kleine roosjes en gebruik ook de steel. Hak de bloemkool met een keukenmachine tot fijne korrels. Bak de bloemkool even kort in een pan en schep gedurende een paar minuten om. Leg de bloemkool in een schone theedoek en knijp het vocht uit de bloemkool door een bol te vormen van de bloemkool in de theedoek. Ga door totdat er geen vocht meer uit de bloemkool komt. Hak de cashewnoten fijn met een keukenmachine (of stamp deze met een vijzel). Voeg de bloemkool samen met het ei, cashewnoten, geraspte Parmezaanse kaas, oregano, peper en zout en meng alles goed. Leg het bakpapier op een bakplaat en maak 1 grote plaatpizza of twee kleinere ronde pizzabodems van % cm dikte. Bak de bodems in 25 minuten lichtbruin. Meng de tomatenblokjes met de tomatenpuree, de Italiaanse kruiden en een teentje uitgeperste knoflook. Voeg eventueel wat peper en zout toe. Smeer dit uit over de pizza als de bodem gaar is. Was en snijd de paprika in ringen en leg dit op de pizza. Leg eventueel eigen gekozen beleg op de pizza. Bak de pizza nog 10 minuten. Serveer eventueel met wat verse basilicumblaadjes. Let op! -MAAK DUBBEL VOOR MORGEN BIJ DE LUNCH BEHALVE ALS JE ANDERE RESTJES HEBT DIE JE MORGEN WILT OPETEN. Tip: Parmezaanse kaas vervangen voor pecorino of grana pardano"
+    "method": "Verwarm de oven voor op 180 graden. Breek de bloemkool in kleine roosjes en gebruik ook de steel. Hak de bloemkool met een keukenmachine tot fijne korrels. Bak de bloemkool even kort in een pan en schep gedurende een paar minuten om. Leg de bloemkool in een schone theedoek en knijp het vocht uit de bloemkool door een bol te vormen van de bloemkool in de theedoek. Ga door totdat er geen vocht meer uit de bloemkool komt. Hak de cashewnoten fijn met een keukenmachine (of stamp deze met een vijzel). Voeg de bloemkool samen met het ei, cashewnoten, geraspte Parmezaanse kaas, oregano, peper en zout en meng alles goed. Leg het bakpapier op een bakplaat en maak 1 grote plaatpizza of twee kleinere ronde pizzabodems van een halve centimeter dikte. Bak de bodems in 25 minuten lichtbruin. Meng de tomatenblokjes met de tomatenpuree, de Italiaanse kruiden en een teentje uitgeperste knoflook. Voeg eventueel wat peper en zout toe. Smeer dit uit over de pizza als de bodem gaar is. Was en snijd de paprika in ringen en leg die op de pizza. Leg eventueel eigen gekozen beleg op de pizza. Bak de pizza nog 10 minuten. Serveer eventueel met wat verse basilicumblaadjes. Tip: Parmezaanse kaas vervangen voor Pecorino of Grana Padano"
   },
   {
     "id": "caesarsalade-met-garnalen",
     "title": "Caesarsalade met garnalen",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "1tl roomboter",
+        "raw": "1 tl roomboter",
         "amount": 5,
         "unit": "gram",
         "name": "roomboter",
@@ -4837,8 +4962,8 @@
         "category": "Diepvries"
       },
       {
-        "raw": "1 teentje knoflook",
-        "amount": 1,
+        "raw": "2 teentjes knoflook",
+        "amount": 2,
         "unit": "teen",
         "name": "knoflook",
         "optional": false,
@@ -4861,11 +4986,21 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "1 kropje little gem sla (of 14 krop ijsbergsla)",
+        "raw": "1 kropje little gem sla",
         "amount": 1,
-        "unit": "",
-        "name": "kropje little gem sla (of 14 krop ijsbergsla)",
+        "unit": "kropje",
+        "name": "little gem sla",
         "optional": false,
+        "alternatives": [
+          {
+            "raw": "1/4 krop ijsbergsla",
+            "amount": 0.25,
+            "unit": "krop",
+            "name": "ijsbergsla",
+            "optional": false,
+            "category": "Groente en fruit"
+          }
+        ],
         "category": "Groente en fruit"
       },
       {
@@ -4877,7 +5012,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "25 gram zonnebloempitten (eventueel geroosterd)",
+        "raw": "1 handje zonnebloempitten (eventueel geroosterd)",
         "amount": 25,
         "unit": "gram",
         "name": "zonnebloempitten",
@@ -4923,14 +5058,6 @@
         "name": "extra vierge olijfolie",
         "optional": false,
         "category": "Houdbare producten"
-      },
-      {
-        "raw": "2 teentjes knoflook",
-        "amount": 2,
-        "unit": "teen",
-        "name": "knoflook",
-        "optional": true,
-        "category": "Groente en fruit"
       }
     ],
     "method": "Verhit de roomboter en olie in een koekenpan. Bestrooi de garnalen met knoflook, peper, (jozo)zout en kurkuma. Bak de garnalen in olijfolie op middelhoog vuur rondom bruin. Zet het vuur lager en bak zachtjes gaar in circa 8 minuten. Verwijder intussen de harde kern van de sla, scheur deze in grove stukken en leg het samen met de afgespoelde mais op een diep bord. Strooi de zonnebloempitten erover. Haal de garnalen uit de pan als ze klaar zijn, pel ze en leg ze op de sla. Rasp de Parmezaanse kaas grof en strooi over de sla. Serveer met de caesardressing. Voor de dressing: doe alle ingrediënten in een kommetje en mix met een vork. 7IP - Liever geen vieze handen? Je kunt de garnalen ook pellen voordat je ze bakt. De smaak blijft echter beter behouden als je ze erna pas pelt. 7IP - In deze salade kun je de garnalen ook vervangen door kipfilet."
