@@ -1,0 +1,349 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Model Set",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "approved": {
+        "type": "boolean"
+      },
+      "category": {
+        "type": "string"
+      },
+      "portions": {
+        "type": "number"
+      },
+      "multiDay": {
+        "type": "boolean"
+      },
+      "ingredients": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "raw": {
+              "type": "string"
+            },
+            "amount": {
+              "type": [
+                "number",
+                "null",
+                "string"
+              ]
+            },
+            "unit": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "name": {
+              "type": "string"
+            },
+            "optional": {
+              "type": "boolean"
+            },
+            "alternatives": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "raw": {
+                    "type": "string"
+                  },
+                  "amount": {
+                    "type": [
+                      "number",
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "unit": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "optional": {
+                    "type": "boolean"
+                  },
+                  "category": {
+                    "type": "string"
+                  },
+                  "componentId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "raw",
+                  "amount",
+                  "unit",
+                  "name",
+                  "optional",
+                  "category",
+                  "componentId"
+                ]
+              }
+            },
+            "category": {
+              "type": "string"
+            },
+            "componentId": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "raw",
+            "amount",
+            "unit",
+            "name",
+            "optional",
+            "category",
+            "alternatives",
+            "componentId"
+          ]
+        }
+      },
+      "components": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "yield": {
+              "type": "number"
+            },
+            "yieldUnit": {
+              "type": "string"
+            },
+            "optional": {
+              "type": "boolean"
+            },
+            "availabilityNote": {
+              "type": "string"
+            },
+            "ingredients": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "raw": {
+                    "type": "string"
+                  },
+                  "amount": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "unit": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "optional": {
+                    "type": "boolean"
+                  },
+                  "category": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "raw",
+                  "amount",
+                  "unit",
+                  "name",
+                  "optional",
+                  "category"
+                ]
+              }
+            },
+            "equipment": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "method": {
+              "type": "string"
+            },
+            "yieldNote": {
+              "type": "string"
+            },
+            "includeInShoppingList": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "yield",
+            "ingredients",
+            "equipment",
+            "method",
+            "yieldUnit",
+            "yieldNote"
+          ]
+        }
+      },
+      "method": {
+        "type": "string"
+      },
+      "harmonizerVersion": {
+        "type": "string"
+      },
+      "harmonized": {
+        "type": "boolean"
+      },
+      "notes": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "advanceNotice": {
+        "type": "string"
+      },
+      "days": {
+        "type": "number"
+      },
+      "equipment": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "preparationTime": {
+        "type": "number"
+      },
+      "ovenTime": {
+        "type": "number"
+      },
+      "dailyVariants": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "dayIndex": {
+              "type": "number"
+            },
+            "title": {
+              "type": "string"
+            },
+            "ingredients": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "raw": {
+                    "type": "string"
+                  },
+                  "amount": {
+                    "type": [
+                      "number",
+                      "null",
+                      "string"
+                    ]
+                  },
+                  "unit": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "optional": {
+                    "type": "boolean"
+                  },
+                  "category": {
+                    "type": "string"
+                  },
+                  "alternatives": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "raw": {
+                          "type": "string"
+                        },
+                        "amount": {
+                          "type": "number"
+                        },
+                        "unit": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "optional": {
+                          "type": "boolean"
+                        },
+                        "category": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "raw",
+                  "amount",
+                  "unit",
+                  "name",
+                  "optional",
+                  "category"
+                ]
+              }
+            },
+            "method": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "dayIndex",
+            "title",
+            "ingredients",
+            "method"
+          ]
+        }
+      }
+    },
+    "required": [
+      "id",
+      "title",
+      "approved",
+      "category",
+      "portions",
+      "multiDay",
+      "ingredients",
+      "method",
+      "harmonizerVersion",
+      "harmonized",
+      "components",
+      "preparationTime",
+      "days",
+      "equipment",
+      "notes",
+      "ovenTime"
+    ],
+    "title": "Model"
+  }
+}
