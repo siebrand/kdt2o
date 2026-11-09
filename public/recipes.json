@@ -231,7 +231,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1/2 tl bakpoeder",
+        "raw": "halve tl bakpoeder",
         "amount": 0.5,
         "unit": "tl",
         "name": "bakpoeder",
@@ -6152,6 +6152,7 @@
     "id": "kipkerrie-met-bloemkoolrijst",
     "title": "Kipkerrie met bloemkoolrijst",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -6172,7 +6173,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1/2 bos verse peterselie",
+        "raw": "halve bos verse peterselie",
         "amount": 0.5,
         "unit": "stuk",
         "name": "bos verse peterselie",
@@ -6220,15 +6221,25 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1 grote bloemkool geraspt (of 400 gram kant en klaar)",
+        "raw": "1 grote bloemkool geraspt",
         "amount": 1,
         "unit": "stuk",
         "name": "bloemkool, geraspt (of 400 gram kant en klaar)",
         "optional": false,
+        "alternatives": [
+          {
+            "raw": "400 gram bloemkoolrijst",
+            "amount": 400,
+            "unit": "gram",
+            "name": "bloemkoolrijst",
+            "optional": false,
+            "category": "Groente en fruit"
+          }
+        ],
         "category": "Groente en fruit"
       },
       {
-        "raw": "1/2 rode peper",
+        "raw": "halve rode peper",
         "amount": 0.5,
         "unit": "stuk",
         "name": "rode peper",
@@ -6253,14 +6264,15 @@
     "id": "korstloze-quiche-met-gewokte-groenten",
     "title": "Korstloze quiche met gewokte groenten",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "250 gram diepvries spinazie",
+        "raw": "250 gram diepvriesspinazie",
         "amount": 250,
         "unit": "gram",
-        "name": "diepvries spinazie",
+        "name": "diepvriesspinazie",
         "optional": false,
         "category": "Diepvries"
       },
@@ -6297,10 +6309,10 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "250 ml slagroom (ongeklopt)",
+        "raw": "250 gram hüttenkäse",
         "amount": 250,
-        "unit": "ml",
-        "name": "slagroom",
+        "unit": "gram",
+        "name": "hüttenkäse",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -6329,7 +6341,7 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "1 el extra vierge olijfolie",
+        "raw": "extra vierge olijfolie",
         "amount": 15,
         "unit": "ml",
         "name": "extra vierge olijfolie",
@@ -6345,7 +6357,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1 courgette",
+        "raw": "1 courgette"XXX,
         "amount": 1,
         "unit": "",
         "name": "courgette",
@@ -6597,7 +6609,7 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "1/2 rode peper",
+        "raw": "halve rode peper",
         "amount": 0.5,
         "unit": "stuk",
         "name": "rode peper",
@@ -6941,7 +6953,7 @@
     "multiDay": false,
     "ingredients": [
       {
-        "raw": "1/2 flespompoen (zijn makkelijker te snijden)",
+        "raw": "halve flespompoen (zijn makkelijker te snijden)",
         "amount": 0.5,
         "unit": "stuk",
         "name": "flespompoen",
@@ -6949,7 +6961,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1/2 el paprikapoeder",
+        "raw": "halve el paprikapoeder",
         "amount": 0.5,
         "unit": "el",
         "name": "paprikapoeder",
@@ -7500,7 +7512,7 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "1/2 broccoli",
+        "raw": "halve broccoli",
         "amount": 0.5,
         "unit": "stuk",
         "name": "broccoli",
@@ -7821,14 +7833,14 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "1/2 groentebouillonblokje",
+        "raw": "half groentebouillonblokje",
         "amount": 0.5,
         "unit": "stuk",
         "name": "groentebouillonblokje",
         "optional": false,
         "alternatives": [
           {
-            "raw": "1/2 visbouillonblokje",
+            "raw": "half visbouillonblokje",
             "amount": 0.5,
             "unit": "stuk",
             "name": "visbouillonblokje",
@@ -7932,7 +7944,7 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "sap van 1/2 citroen",
+        "raw": "sap van halve citroen",
         "amount": 0.5,
         "unit": "stuk",
         "name": "citroen",
