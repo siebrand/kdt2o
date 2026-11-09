@@ -1004,7 +1004,7 @@ async function createSingleRecipePdf(recipe) {
   const ensureSpace = (required = 12) => {
     if (y + required > height - margin) { doc.addPage(); y = margin; }
   };
-  const addSection = (heading, items) => {
+  const addSection = (heading, items, bullet = true) => {
     if (!items.length) return;
     ensureSpace(16);
     doc.setFontSize(12);
@@ -1014,7 +1014,7 @@ async function createSingleRecipePdf(recipe) {
     doc.setFontSize(10);
     doc.setTextColor(40, 45, 40);
     items.forEach((item) => {
-      const lines = doc.splitTextToSize("• " + item, width - margin * 2);
+      const lines = doc.splitTextToSize((bullet ? "• " : "") + item, width - margin * 2);
       ensureSpace(lines.length * 5 + 2);
       doc.text(lines, margin, y);
       y += lines.length * 5;
@@ -1033,7 +1033,7 @@ async function createSingleRecipePdf(recipe) {
   (recipe.components || []).forEach((component) => addSection("Subrecept · " + component.title, sortIngredientsForDisplay(component.ingredients || []).map(ingredientLabel)));
   (recipe.dailyVariants || []).forEach((variant) => addSection("Variant · " + variant.title, sortIngredientsForDisplay(variant.ingredients || []).map(ingredientLabel)));
   addSection("Benodigdheden", recipeEquipment(recipe));
-  addSection("Bereidingswijze", methodSteps(recipeMethod(recipe)).map((step, index) => (index + 1) + ". " + step));
+  addSection("Bereidingswijze", methodSteps(recipeMethod(recipe)).map((step, index) => (index + 1) + ". " + step), false);
   doc.save((recipe.id || "recept") + ".pdf");
 }
 
