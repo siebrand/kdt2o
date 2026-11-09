@@ -251,7 +251,7 @@ function renderOptions() {
 function renderSingleRecipeSearch() {
   singleRecipeResults.replaceChildren();
   const query = singleRecipeQuery.value.trim().toLocaleLowerCase("nl");
-  const visible = state.recipes.filter((recipe) => recipeIsAvailable(recipe) && recipe.category === singleRecipeCategory.value &&
+  const visible = state.recipes.filter((recipe) => recipeIsAvailable(recipe) && (!singleRecipeCategory.value || recipe.category === singleRecipeCategory.value) &&
     (!query || recipe.title.toLocaleLowerCase("nl").includes(query)));
   if (!visible.length) {
     singleRecipeResults.append(Object.assign(document.createElement("p"), { className: "muted", textContent: "Geen recepten gevonden." }));
