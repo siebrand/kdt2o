@@ -22,9 +22,10 @@ Recipe text is treated as data and inserted with text APIs, never as HTML.
 
 Multi-day recipes use `multiDay: true` and a numeric `days` count. A recipe may
 also contain `dailyVariants`; each variant has a zero-based `dayIndex`, its own
-ingredients, and its own method. The shared recipe ingredients and all variant
-ingredients are aggregated once for the shopping list, while the planner and
-PDF identify the variant for each scheduled day.
+ingredients, and its own method. Recipe ingredients, component ingredients marked
+for shopping, and all variant ingredients are aggregated once for the shopping
+list, while the planner and PDF identify the variant or component for each
+scheduled day.
 
 ## Build and deployment
 

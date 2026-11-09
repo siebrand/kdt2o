@@ -554,7 +554,11 @@ function aggregateIngredients() {
     const recipe = recipeById(item.recipeId);
     const ingredients = [
       ...(recipe?.ingredients || []),
-      ...(recipe?.dailyVariants || []).flatMap((variant) => variant.ingredients || [])
+      ...(recipe?.dailyVariants || []).flatMap((variant) => variant.ingredients || []),
+      ...(recipe?.components || [])
+        .filter((component) => component.includeInShoppingList !== false &&
+          !["lijnzaadcrackers", "granola", "notenbrood"].includes(component.id))
+        .flatMap((component) => component.ingredients || [])
     ];
     const component = recipe?.components?.find((item) => item.id === "lijnzaadcrackers");
     if (component) flaxCrackerComponent ||= component;
@@ -1012,6 +1016,24 @@ async function createSingleRecipePdf(recipe) {
     });
     y += 4;
   };
+  const addMethodHeading = (heading) => {
+    ensureSpace(16);
+    doc.setFontSize(12);
+    doc.setTextColor(24, 63, 50);
+    doc.text(heading, margin, y);
+    y += 7;
+    doc.setFontSize(10);
+    doc.setTextColor(40, 45, 40);
+  };
+  let stepNumber = 1;
+  const addMethodSteps = (method) => {
+    methodSteps(method).forEach((step) => {
+      const text = /^Tip:/i.test(step) ? step : stepNumber + ". " + step;
+      y = addWrapped(doc, text, margin, y, width - margin * 2, 5);
+      if (!/^Tip:/i.test(step)) stepNumber += 1;
+      if (y > height - margin) { doc.addPage(); y = margin; }
+    });
+  };
   doc.setTextColor(24, 63, 50);
   doc.setFont("times", "bold");
   doc.setFontSize(18);
@@ -1024,7 +1046,22 @@ async function createSingleRecipePdf(recipe) {
   (recipe.components || []).forEach((component) => addSection("Subrecept · " + component.title, sortIngredientsForDisplay(component.ingredients || []).map(ingredientLabel)));
   (recipe.dailyVariants || []).forEach((variant) => addSection("Variant · " + variant.title, sortIngredientsForDisplay(variant.ingredients || []).map(ingredientLabel)));
   addSection("Benodigdheden", recipeEquipment(recipe));
-  addSection("Bereidingswijze", methodSteps(recipeMethod(recipe)).map((step, index) => (index + 1) + ". " + step), false);
+  if ((recipe.components || []).length || recipe.method || (recipe.dailyVariants || []).length) {
+    addMethodHeading("Bereidingswijze");
+    if (recipe.components?.length) {
+      recipe.components.forEach((component) => {
+        addMethodHeading("Subrecept · " + component.title);
+        addMethodSteps(component.method || "");
+      });
+    } else {
+      addMethodHeading("Hoofdrecept");
+      addMethodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
+    }
+    (recipe.dailyVariants || []).forEach((variant) => {
+      addMethodHeading("Variant · " + variant.title);
+      addMethodSteps(variant.method || "");
+    });
+  }
   doc.save((recipe.id || "recept") + ".pdf");
 }
 
