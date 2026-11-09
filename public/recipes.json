@@ -6267,105 +6267,162 @@
     "approved": true,
     "portions": 2,
     "multiDay": false,
-    "ingredients": [
+    "ingredients": [],
+    "components": [
       {
-        "raw": "250 gram diepvriesspinazie",
-        "amount": 250,
-        "unit": "gram",
-        "name": "diepvriesspinazie",
+        "id": "korstloze-quiche",
+        "title": "Korstloze quiche",
+        "yield": 2,
+        "yieldUnit": "porties",
+        "yieldNote": "",
         "optional": false,
-        "category": "Diepvries"
+        "includeInShoppingList": true,
+        "ingredients": [
+          {
+            "raw": "250 gram diepvriesspinazie",
+            "amount": 250,
+            "unit": "gram",
+            "name": "diepvriesspinazie",
+            "optional": false,
+            "category": "Diepvries"
+          },
+          {
+            "raw": "250 gram champignons",
+            "amount": 250,
+            "unit": "gram",
+            "name": "champignons",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "1 teen knoflook",
+            "amount": 1,
+            "unit": "",
+            "name": "teen knoflook",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "peper en zout",
+            "amount": null,
+            "unit": "",
+            "name": "peper en zout",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          },
+          {
+            "raw": "4 grote eieren",
+            "amount": 4,
+            "unit": "stuk",
+            "name": "eieren",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          },
+          {
+            "raw": "250 gram hüttenkäse",
+            "amount": 250,
+            "unit": "gram",
+            "name": "hüttenkäse",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          },
+          {
+            "raw": "50 gram kaas (geraspt)",
+            "amount": 50,
+            "unit": "gram",
+            "name": "kaas",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          },
+          {
+            "raw": "60 gram feta",
+            "amount": 60,
+            "unit": "gram",
+            "name": "feta",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          },
+          {
+            "raw": "1 bol mozzarella",
+            "amount": 1,
+            "unit": "bol",
+            "name": "mozzarella",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          },
+          {
+            "raw": "extra vierge olijfolie",
+            "amount": 15,
+            "unit": "ml",
+            "name": "extra vierge olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          }
+        ],
+        "equipment": [
+          "oven",
+          "springvorm van 22 cm",
+          "koekenpan"
+        ],
+        "method": "Verwarm de oven voor op 180 graden. Druk het extra water goed uit de ontdooide spinazie. Snijd 250 gram champignons in dunne plakjes en pers de knoflook. Bak de champignons en knoflook in de olijfolie in een koekenpan. Breng op smaak met zout en peper en bak tot de champignons volledig zacht zijn en al het vocht is verdampt. Meng de eieren, hüttenkäse en geraspte kaas. Breng op smaak met peper. Vet een springvorm van 22 cm in. Leg de drooggedrukte spinazie op de bodem, voeg de champignons en feta toe. Giet het eimengsel erover en bedek het geheel met de mozzarella. Bak de quiche 45-55 minuten in het midden van de oven, of totdat de bovenkant goudbruin is."
       },
       {
-        "raw": "500 gram champignons",
-        "amount": 500,
-        "unit": "gram",
-        "name": "champignons",
+        "id": "gewokte-groenten",
+        "title": "Gewokte groenten",
+        "yield": 2,
+        "yieldUnit": "porties",
+        "yieldNote": "",
         "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 teen knoflook",
-        "amount": 1,
-        "unit": "",
-        "name": "teen knoflook",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "4 grote eieren",
-        "amount": 4,
-        "unit": "stuk",
-        "name": "eieren",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "250 gram hüttenkäse",
-        "amount": 250,
-        "unit": "gram",
-        "name": "hüttenkäse",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "50 gram kaas (geraspt)",
-        "amount": 50,
-        "unit": "gram",
-        "name": "kaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "60 gram feta",
-        "amount": 60,
-        "unit": "gram",
-        "name": "feta",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "1 bol mozzarella",
-        "amount": 1,
-        "unit": "bol",
-        "name": "mozzarella",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "extra vierge olijfolie",
-        "amount": 15,
-        "unit": "ml",
-        "name": "extra vierge olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "2 stuks paprika",
-        "amount": 2,
-        "unit": "stuk",
-        "name": "paprika",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 courgette"XXX,
-        "amount": 1,
-        "unit": "",
-        "name": "courgette",
-        "optional": false,
-        "category": "Groente en fruit"
+        "includeInShoppingList": true,
+        "ingredients": [
+          {
+            "raw": "250 gram champignons",
+            "amount": 250,
+            "unit": "gram",
+            "name": "champignons",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "2 stuks paprika",
+            "amount": 2,
+            "unit": "stuk",
+            "name": "paprika",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "1 courgette",
+            "amount": 1,
+            "unit": "",
+            "name": "courgette",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "een beetje extra vierge olijfolie",
+            "amount": null,
+            "unit": "",
+            "name": "extra vierge olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "(jozo)zout en peper naar smaak",
+            "amount": null,
+            "unit": "",
+            "name": "zout en peper",
+            "optional": true,
+            "category": "Kruiden en smaakmakers"
+          }
+        ],
+        "equipment": [
+          "wok of koekenpan"
+        ],
+        "method": "Snijd de champignons, paprika en courgette. Wok de groenten kort in een pan met een beetje olijfolie wanneer de quiche bijna gaar is. Voeg eventueel (jozo)zout en peper naar smaak toe."
       }
     ],
-    "method": "Quiche - Verwarm de oven voor op 180 graden. Druk het extra water goed uit de ontdooide spinazie. Snijd de champignons (250 gram) in dunne plakjes. Pers de knoflook. Bak de champignons en knoflook in olijfolie in een koekenpan; breng op smaak met zout en peper. Bak de champignons tot ze volledig zacht zijn en al het vocht is verdampt. Meng de eieren, room en geraspte kaas. Breng op smaak met peper. Vet een springvorm (22 cm) in. Bouw de quiche als volgt op: leg de droog- gedrukte spinazie op de bodem, voeg dan de champignons en feta toe. Giet het elermengsel hier overheen en bedek het geheel vervolgens met de mozzarella. Plaats de springvorm in het midden van de oven en bak ongeveer 45-55 minuten, of totdat de bovenkant goudbruin is. Gewokte groenten - Snijd champignons (250 gram), paprika en courgette en wok de groenten kort in een pan met een beetje olijfolie wanneer de quiche bijna gaar is. Voeg eventueel (jozo)zout en peper naar smaak toe. Serveer samen met de quiche.",
+    "method": "Bereid de korstloze quiche volgens het subrecept. Bereid de gewokte groenten volgens het subrecept wanneer de quiche bijna gaar is. Serveer de gewokte groenten samen met de quiche.",
     "diet": [
       "vlees"
     ]
