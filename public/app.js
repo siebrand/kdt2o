@@ -941,14 +941,16 @@ async function createPdf() {
         });
         y += 4;
       });
-      doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Hoofdrecept", margin, y); y += 7;
-      doc.setFontSize(10); doc.setTextColor(40, 45, 40);
-      const mainSteps = methodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
-      mainSteps.forEach((step) => {
-        y = addWrapped(doc, /^Tip:/i.test(step) ? step : `${stepNumber}. ${step}`, margin, y, width - margin * 2, 5);
-        if (!/^Tip:/i.test(step)) stepNumber += 1;
-        if (y > height - margin) { doc.addPage(); y = 20; }
-      });
+      if (!(recipe.components || []).length) {
+        doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Hoofdrecept", margin, y); y += 7;
+        doc.setFontSize(10); doc.setTextColor(40, 45, 40);
+        const mainSteps = methodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
+        mainSteps.forEach((step) => {
+          y = addWrapped(doc, /^Tip:/i.test(step) ? step : `${stepNumber}. ${step}`, margin, y, width - margin * 2, 5);
+          if (!/^Tip:/i.test(step)) stepNumber += 1;
+          if (y > height - margin) { doc.addPage(); y = 20; }
+        });
+      }
       (recipe.dailyVariants || []).forEach((variant) => {
         y += 4;
         doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Variant · " + variant.title, margin, y); y += 7;
