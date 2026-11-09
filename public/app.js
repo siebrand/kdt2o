@@ -946,6 +946,8 @@ async function createPdf() {
         y += 4;
       });
       if ((recipe.components || []).length) {
+        doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Hoofdrecept", margin, y); y += 7;
+        doc.setFontSize(10); doc.setTextColor(40, 45, 40);
         methodSteps(recipe.method || "").forEach((step) => {
           y = addWrapped(doc, /^Tip:/i.test(step) ? step : `${stepNumber}. ${step}`, margin, y, width - margin * 2, 5);
           if (!/^Tip:/i.test(step)) stepNumber += 1;
@@ -1059,6 +1061,7 @@ async function createSingleRecipePdf(recipe) {
         addMethodHeading("Subrecept · " + component.title);
         addMethodSteps(component.method || "");
       });
+      addMethodHeading("Hoofdrecept");
       addMethodSteps(recipe.method || "");
     } else {
       addMethodHeading("Hoofdrecept");

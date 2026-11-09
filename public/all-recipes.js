@@ -149,6 +149,13 @@ async function buildPdf(recipes) {
       });
     });
     const mainSteps = window.recipeMethodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
+    if ((recipe.components || []).length) {
+      doc.setFontSize(10);
+      doc.setTextColor(24, 63, 50);
+      rightY = textLines(doc, "Hoofdrecept", rightX, rightY, columnWidth, 4.2);
+      doc.setFontSize(8.5);
+      doc.setTextColor(40, 45, 40);
+    }
     mainSteps.forEach((step, index) => {
       rightY = textLines(doc, /^Tip:/i.test(step) ? step : (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
       rightY += 1.2;
