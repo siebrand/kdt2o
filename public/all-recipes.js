@@ -148,13 +148,11 @@ async function buildPdf(recipes) {
         rightY += 1.2;
       });
     });
-    if (!(recipe.components || []).length) {
-      const mainSteps = window.recipeMethodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
-      mainSteps.forEach((step, index) => {
-        rightY = textLines(doc, /^Tip:/i.test(step) ? step : (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
-        rightY += 1.2;
-      });
-    }
+    const mainSteps = window.recipeMethodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
+    mainSteps.forEach((step, index) => {
+      rightY = textLines(doc, /^Tip:/i.test(step) ? step : (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
+      rightY += 1.2;
+    });
     (recipe.dailyVariants || []).forEach((variant) => {
       rightY += 1.5;
       doc.setFontSize(10);
