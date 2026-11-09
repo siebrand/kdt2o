@@ -6431,7 +6431,7 @@
     "id": "nasi-met-kipsate",
     "title": "Nasi met kipsate",
     "category": "diner",
-    "approved": true,
+    "approved": false,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -6591,7 +6591,7 @@
         "method": "Warm de kokosmelk op in een pannetje. Roer de pindakaas erdoor. Roer tot slot de sojasaus, wat peper en (jozo)zout door de saus. Voeg de chilivlokken toe voor een beetje pittigheid. Voeg wat water toe als de satésaus te dik is."
       }
     ],
-    "method": "Doe een scheutje olijfolie in de pan. Doe de kipfilet erbij samen met sojasaus, knoflook, gember en peper. Roer goed door elkaar. Voeg hierna de kurkuma en 2 theelepels Jonnie de Boer 5 spices eraan toe (of meer naar smaak). Je kunt ook nog wat komijn en/of koriander toevoegen naar wens. Als de kip aangebraden is, doe je de nasi/bami groenten erbij. Roer 5 minuten goed door en voeg daarna de bloemkoolrijst aan het groente- en kipmengsel toe. Roer 1 minuut. Voeg in de laatste minuut de taugé toe en bak nog 1 minuut mee. Optioneel: tik 2 eitjes kapot boven de pan en roer deze erdoor. Zodra je ziet dat de eitjes meegebakken zijn, is de nasi klaar. Bereid de satésaus volgens het subrecept. Serveer de nasi met kip en satésaus. Tip: Maak het gerecht helemaal af met een salade van boontjes, komkommer en tomaat. Tip: Haal de 5 spices uit het gerecht en vervang deze voor de optionele komijn en/of koriander.",
+    "method": "Doe een scheutje olijfolie in de pan. Doe de kipfilet erbij samen met sojasaus, knoflook, gember en peper. Roer goed door elkaar. Voeg hierna de kurkuma en 2 theelepels Jonnie de Boer Chinese 5 spices eraan toe (of meer naar smaak). Je kunt ook nog wat komijn en/of koriander toevoegen naar wens. Als de kip aangebraden is, doe je de nasi/bami groenten erbij. Roer 5 minuten goed door en voeg daarna de bloemkoolrijst aan het groente- en kipmengsel toe. Roer 1 minuut. Voeg in de laatste minuut de taugé toe en bak nog 1 minuut mee. Optioneel: tik 2 eitjes kapot boven de pan en roer deze erdoor. Zodra je ziet dat de eitjes meegebakken zijn, is de nasi klaar. Bereid de satésaus volgens het subrecept. Serveer de nasi met kip en satésaus. Tip: Maak het gerecht helemaal af met een salade van boontjes, komkommer en tomaat. Tip: Haal de 5 spices uit het gerecht en vervang deze voor de optionele komijn en/of koriander.",
     "diet": [
       "vlees"
     ]
