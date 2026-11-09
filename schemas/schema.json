@@ -17,6 +17,29 @@
       "category": {
         "type": "string"
       },
+      "diet": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "enum": [
+            "vlees",
+            "vis",
+            "vegetarisch",
+            "vegan"
+          ]
+        },
+        "enum": [
+          ["vlees"],
+          ["vis"],
+          ["vlees", "vis"],
+          ["vis", "vlees"],
+          ["vegetarisch"],
+          ["vegan"]
+        ]
+      },
       "portions": {
         "type": "number"
       },

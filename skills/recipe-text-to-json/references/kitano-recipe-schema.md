@@ -12,6 +12,12 @@ Every recipe object must include:
 - `ingredients`, `method`
 - `components`, `preparationTime`, `days`, `equipment`, `notes`, `ovenTime`
 
+Optional dietary classification:
+
+- `diet`: an array containing `["vlees"]`, `["vis"]`, `["vlees", "vis"]`,
+  `["vegetarisch"]`, or `["vegan"]`.
+- `vegetarisch` and `vegan` cannot be combined with `vlees` or `vis`.
+
 When the source does not provide a value, preserve uncertainty where the schema
 allows it. For required fields that are arrays, use an empty array. Use project
 conventions for required numeric defaults; do not invent timings or servings.
