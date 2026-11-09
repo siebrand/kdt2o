@@ -895,11 +895,14 @@ async function createPdf() {
       const title = String(recipe.title || "Recept").normalize("NFC").replace(/\s+/g, " ").trim();
       const recipeHeading = dayName(dayIndex) + " · " + meal + " · " + recipe.portions + " personen - " + title;
       y = addWrapped(doc, recipeHeading, margin, 24, width - margin * 2, 7) + 5;
-      doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Hoofdrecept · Ingrediënten", margin, y); y += 7;
-      doc.setFontSize(10); doc.setTextColor(40, 45, 40);
-      sortIngredientsForDisplay(recipe.ingredients || []).forEach((ingredient) => {
-        y = addWrapped(doc, "• " + ingredientLabel(ingredient), margin, y, width - margin * 2);
-      });
+      const mainIngredients = sortIngredientsForDisplay(recipe.ingredients || []);
+      if (mainIngredients.length) {
+        doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Hoofdrecept · Ingrediënten", margin, y); y += 7;
+        doc.setFontSize(10); doc.setTextColor(40, 45, 40);
+        mainIngredients.forEach((ingredient) => {
+          y = addWrapped(doc, "• " + ingredientLabel(ingredient), margin, y, width - margin * 2);
+        });
+      }
       (recipe.components || []).forEach((component) => {
         y += 4;
         doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Subrecept · " + component.title, margin, y); y += 7;
