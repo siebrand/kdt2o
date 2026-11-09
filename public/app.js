@@ -389,7 +389,6 @@ function normalizeShoppingIngredient(ingredient) {
   if (/^(?:plakjes|schijfjes) komkommer$/.test(name)) {
     return { ...ingredient, name: "komkommer" };
   }
-  if (raw.startsWith("1/, ")) raw = "1/2 " + raw.slice(4);
   const descriptiveMeasures = [
     { pattern: /^(?:een )?scheut(?:je)? (.+)$/, amount: 1, unit: "el" },
     { pattern: /^snufje (.+)$/, amount: 1, unit: "tl" },
@@ -633,6 +632,11 @@ function formatIngredientLabel(item, includeOptionalPrefix = true) {
 }
 
 function ingredientLabel(item, includeOptionalPrefix = true) {
+  const raw = String(item.raw || "");
+  return (includeOptionalPrefix && item.optional ? "optioneel: " : "") + raw;
+}
+
+function shoppingIngredientLabel(item, includeOptionalPrefix = true) {
   return formatIngredientLabel(item, includeOptionalPrefix);
 }
 
@@ -669,7 +673,7 @@ function renderShoppingList() {
     const label = document.createElement("label");
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
-    label.append(checkbox, document.createTextNode(ingredientLabel(item, false)));
+    label.append(checkbox, document.createTextNode(shoppingIngredientLabel(item, false)));
     row.append(label);
     (item.optional ? optionalList : requiredList).append(row);
   });
