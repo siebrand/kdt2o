@@ -6599,7 +6599,7 @@
         "method": "Warm de kokosmelk op in een pannetje. Roer de pindakaas erdoor. Roer tot slot de sojasaus, wat peper en (jozo)zout door de saus. Voeg de chilivlokken toe voor een beetje pittigheid. Voeg wat water toe als de satésaus te dik is."
       }
     ],
-    "method": "Doe een scheutje olijfolie in de pan. Doe de kipfilet erbij samen met sojasaus, knoflook, gember en peper. Roer goed door elkaar. Voeg hierna de kurkuma en 2 theelepels Jonnie de Boer 5 spices eraan toe (of meer naar smaak). Je kunt ook nog wat komijn en/of koriander toevoegen naar wens. Als de kip aangebraden is, doe je de nasi/bami groenten erbij. Roer 5 minuten goed door en voeg daarna de bloemkoolrijst aan het groente- en kipmengsel toe. Roer 1 minuut. Voeg in de laatste minuut de taugé toe en bak nog 1 minuut mee. Optioneel: tik 2 eitjes kapot boven de pan en roer deze erdoor. Zodra je ziet dat de eitjes meegebakken zijn, is de nasi klaar. Bereid de satésaus volgens het subrecept. Serveer de nasi met kip en satésaus. Tip: Maak het gerecht helemaal af met een salade van boontjes, komkommer en tomaat. Tip: Haal de 5 spices uit het gerecht en vervang deze voor de optionele komijn en/of koriander.",
+    "method": "Doe een scheutje olijfolie in de pan. Doe de kipfilet erbij samen met sojasaus, knoflook, gember en peper. Roer goed door elkaar. Voeg hierna de kurkuma en 2 theelepels Jonnie de Boer Chinese 5 spices eraan toe (of meer naar smaak). Je kunt ook nog wat komijn en/of koriander toevoegen naar wens. Als de kip aangebraden is, doe je de nasi/bami groenten erbij. Roer 5 minuten goed door en voeg daarna de bloemkoolrijst aan het groente- en kipmengsel toe. Roer 1 minuut. Voeg in de laatste minuut de taugé toe en bak nog 1 minuut mee. Optioneel: tik 2 eitjes kapot boven de pan en roer deze erdoor. Zodra je ziet dat de eitjes meegebakken zijn, is de nasi klaar. Bereid de satésaus volgens het subrecept. Serveer de nasi met kip en satésaus. Tip: Maak het gerecht helemaal af met een salade van boontjes, komkommer en tomaat. Tip: Haal de 5 spices uit het gerecht en vervang deze voor de optionele komijn en/of koriander.",
     "diet": [
       "vlees"
     ]
@@ -6921,7 +6921,7 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "Extra vierge olijfolie",
+        "raw": "extra vierge olijfolie",
         "amount": 15,
         "unit": "ml",
         "name": "extra vierge olijfolie",
@@ -6945,7 +6945,6 @@
         "yieldUnit": "el",
         "yieldNote": "",
         "optional": false,
-        "availabilityNote": "Je kunt ook een potje pesto gebruiken. Let er wel op dat er geen toegevoegde suikers inzitten.",
         "ingredients": [
           {
             "raw": "1 teentje knoflook",
@@ -6980,7 +6979,7 @@
             "category": "Zuivel en eieren"
           },
           {
-            "raw": "Extra vierge olijfolie",
+            "raw": "extra vierge olijfolie",
             "amount": 15,
             "unit": "ml",
             "name": "extra vierge olijfolie",
@@ -6993,7 +6992,7 @@
           "hoge kom",
           "staafmixer of blender"
         ],
-        "method": "Pel de knoflook. Rooster de pijnboompitten in een droge koekenpan tot ze lichtbruin zijn. Doe de pijnboompitten en alle andere ingrediënten in een hoge kom. Mix en voeg net zoveel olijfolie toe tot een gladde pesto ontstaat. Proef en breng eventueel op smaak met peper en (jozo)zout.",
+        "method": "Pel de knoflook. Rooster de pijnboompitten in een droge koekenpan tot ze lichtbruin zijn. Doe de pijnboompitten en alle andere ingrediënten in een hoge kom. Mix en voeg net zoveel olijfolie toe tot een gladde pesto ontstaat. Proef en breng eventueel op smaak met peper en (jozo)zout. Tip: Je kunt ook een potje pesto gebruiken. Let er wel op dat er geen toegevoegde suikers inzitten.",
         "includeInShoppingList": true
       }
     ],
@@ -7004,8 +7003,9 @@
   },
   {
     "id": "plaat-courgette",
-    "title": "Plaat courgette",
+    "title": "Plaatcourgette",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -7066,7 +7066,7 @@
         "category": "Vlees, vis en vleesvervangers"
       },
       {
-        "raw": "20 blaadjes verse basilicum",
+        "raw": "halve bos verse basilicum",
         "amount": 20,
         "unit": "blaadjes",
         "name": "verse basilicum",
@@ -7074,7 +7074,7 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "1 el extra vierge olijfolie",
+        "raw": "extra vierge olijfolie",
         "amount": 15,
         "unit": "ml",
         "name": "extra vierge olijfolie",
@@ -7252,8 +7252,8 @@
     ]
   },
   {
-    "id": "shoarmaschotel-kwark",
-    "title": "Shoarmaschotel kwark",
+    "id": "shoarmaschotel",
+    "title": "Shoarmaschotel",
     "category": "diner",
     "portions": 2,
     "multiDay": false,
