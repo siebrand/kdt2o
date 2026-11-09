@@ -6264,15 +6264,15 @@
     "id": "korstloze-quiche-met-gewokte-groenten",
     "title": "Korstloze quiche met gewokte groenten",
     "category": "diner",
-    "approved": true,
-    "portions": 2,
+    "approved": false,
+    "portions": 3,
     "multiDay": false,
     "ingredients": [],
     "components": [
       {
         "id": "korstloze-quiche",
         "title": "Korstloze quiche",
-        "yield": 2,
+        "yield": 3,
         "yieldUnit": "porties",
         "yieldNote": "",
         "optional": false,
