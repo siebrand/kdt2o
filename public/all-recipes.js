@@ -94,8 +94,8 @@ async function buildPdf(recipes) {
     const rightX = margin + columnWidth + columnGap;
     doc.setFontSize(12);
     doc.setTextColor(24, 63, 50);
-    doc.text("Hoofdrecept · Ingrediënten", margin, 36);
-    doc.text("Hoofdrecept · Bereidingswijze", rightX, 36);
+    doc.text(recipe.ingredients?.length ? "Hoofdrecept · Ingrediënten" : "Ingrediënten", margin, 36);
+    doc.text(recipe.components?.length ? "Bereidingswijze" : "Hoofdrecept · Bereidingswijze", rightX, 36);
 
     doc.setFontSize(8.5);
     doc.setTextColor(40, 45, 40);
@@ -147,18 +147,14 @@ async function buildPdf(recipes) {
         rightY = textLines(doc, /^Tip:/i.test(step) ? step : (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
         rightY += 1.2;
       });
-      rightY += 1.5;
-      doc.setFontSize(10);
-      doc.setTextColor(24, 63, 50);
-      rightY = textLines(doc, "Hoofdrecept", rightX, rightY, columnWidth, 4.2);
-      doc.setFontSize(8.5);
-      doc.setTextColor(40, 45, 40);
     });
-    const mainSteps = window.recipeMethodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
-    mainSteps.forEach((step, index) => {
-      rightY = textLines(doc, /^Tip:/i.test(step) ? step : (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
-      rightY += 1.2;
-    });
+    if (!(recipe.components || []).length) {
+      const mainSteps = window.recipeMethodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
+      mainSteps.forEach((step, index) => {
+        rightY = textLines(doc, /^Tip:/i.test(step) ? step : (index + 1) + ". " + step, rightX, rightY, columnWidth, 4.2);
+        rightY += 1.2;
+      });
+    }
     (recipe.dailyVariants || []).forEach((variant) => {
       rightY += 1.5;
       doc.setFontSize(10);
