@@ -21,8 +21,6 @@ const shoppingListItems = document.querySelector("#shopping-list-items");
 const notifications = document.querySelector("#notifications");
 const recipePanel = document.querySelector("#recipe-panel");
 const showAllRecipesToggle = document.querySelector("#show-all-recipes");
-const includeInfographicsToggle = document.querySelector("#include-infographics");
-if (includeInfographicsToggle) includeInfographicsToggle.checked = false;
 
 function recipeIsAvailable(recipe) {
   return state.showAllRecipes || recipe.approved === true;
@@ -226,10 +224,6 @@ function renderOptions() {
   visible.forEach((recipe) => {
     const card = document.createElement("article");
     card.className = "recipe-card";
-    const preview = document.createElement("img");
-    preview.className = "recipe-card-image";
-    preview.src = svgDataUrl(infographicSvg(recipe));
-    preview.alt = "Infographic van " + recipe.title;
     const title = document.createElement("h3");
     title.textContent = recipe.title;
     const preparationTime = document.createElement("p");
@@ -243,7 +237,7 @@ function renderOptions() {
     button.setAttribute("aria-label", "Toevoegen");
     button.title = "Toevoegen";
     button.addEventListener("click", () => chooseRecipe(recipe));
-    card.append(preview, title, preparationTime, button);
+    card.append(title, preparationTime, button);
     options.append(card);
   });
 }
@@ -723,89 +717,6 @@ function recipeMethod(recipe) {
   return sections.join(" ").trim();
 }
 
-function wrapSvgText(value, maxLength, maxLines) {
-  const words = String(value || "").split(/\s+/).filter(Boolean);
-  const lines = [];
-  let current = "";
-  words.forEach((word) => {
-    const candidate = current ? current + " " + word : word;
-    if (current && candidate.length > maxLength) {
-      lines.push(current);
-      current = word;
-    } else {
-      current = candidate;
-    }
-  });
-  if (current) lines.push(current);
-  if (lines.length > maxLines) {
-    lines.length = maxLines;
-    lines[maxLines - 1] = lines[maxLines - 1].slice(0, maxLength - 1).trimEnd() + "…";
-  }
-  return lines;
-}
-
-function escapeXml(value) {
-  return String(value || "").replace(/[&<>"']/g, (character) => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-    "'": "&apos;"
-  }[character]));
-}
-
-function infographicSvg(recipe) {
-  const title = escapeXml(recipe.title || "Recept");
-  const category = escapeXml(String(recipe.category || "recept").toUpperCase());
-  const ingredients = sortIngredientsForDisplay(recipeIngredients(recipe)).slice(0, 8).map(formatIngredientLabel);
-  const steps = methodSteps(recipeMethod(recipe) || "Volg de bereidingswijze uit het recept.").slice(0, 5);
-  const ingredientMarkup = ingredients.map((ingredient, index) => {
-    const lines = wrapSvgText(ingredient, 38, 2);
-    const y = 480 + index * 38;
-    return `<circle cx="118" cy="${y}" r="5"/><text x="128" y="${y + 8}">${lines.map((line, lineIndex) => `<tspan x="128" dy="${lineIndex ? 21 : 0}">${escapeXml(line)}</tspan>`).join("")}</text>`;
-  }).join("");
-  const stepMarkup = steps.map((step, index) => {
-    const y = 493 + index * 92;
-    if (/^Tip:/i.test(step)) return `<text x="795" y="${y + 8}" fill="#174c45" font-size="23" font-weight="700">${escapeXml(step.slice(0, 92))}</text>`;
-    return `<circle cx="735" cy="${y}" r="34" fill="#e9795d"/><text x="735" y="${y + 12}" text-anchor="middle" fill="#fff" font-size="28" font-weight="800">${index + 1}</text><text x="795" y="${y - 7}" fill="#174c45" font-size="23" font-weight="700">Stap ${index + 1}</text><text x="795" y="${y + 27}" fill="#365f57" font-size="19">${escapeXml(step.slice(0, 92))}</text>`;
-  }).join("");
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">${title}</title>
-  <desc id="desc">Infographic met ingrediënten en bereidingsstappen voor ${title}.</desc>
-  <rect width="1600" height="900" rx="36" fill="#fff9f0"/>
-  <circle cx="1470" cy="90" r="180" fill="#e9f0dc"/><circle cx="80" cy="830" r="210" fill="#f7ded4"/>
-  <g fill="none" stroke="#174c45" stroke-width="7" stroke-linecap="round" opacity=".8"><path d="M1390 170c55-42 111-43 148-14-36 3-72 23-98 55"/><path d="M1420 208c-4-38 9-70 37-91"/></g>
-  <text x="92" y="105" fill="#e9795d" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="3">${category} · ${recipe.portions || 2} PERSONEN</text>
-  <text x="88" y="182" fill="#174c45" font-family="Arial,sans-serif" font-size="48" font-weight="800">${title.slice(0, 42)}</text>
-  <rect x="90" y="280" width="185" height="52" rx="26" fill="#174c45"/><text x="182" y="315" text-anchor="middle" fill="#fff9f0" font-family="Arial,sans-serif" font-size="23" font-weight="700">RECEPT</text>
-  <rect x="88" y="382" width="535" height="410" rx="28" fill="#fff" stroke="#d6e3d4" stroke-width="3"/>
-  <text x="125" y="437" fill="#174c45" font-family="Arial,sans-serif" font-size="30" font-weight="800">INGREDIËNTEN</text>
-  <g fill="#365f57" font-family="Arial,sans-serif" font-size="22">${ingredientMarkup}</g>
-  <text x="700" y="405" fill="#174c45" font-family="Arial,sans-serif" font-size="30" font-weight="800">ZO MAAK JE HET</text>
-  <g font-family="Arial,sans-serif">${stepMarkup}</g>
-  <g transform="translate(1280 210) scale(.65)"><ellipse cx="100" cy="120" rx="250" ry="55" fill="#d6e3d4"/><path d="M-70 42c45-102 185-125 282-55 46 33 64 76 49 113-35 83-244 78-331 18-22-15-17-45 0-76z" fill="#d8a261" stroke="#174c45" stroke-width="7"/><circle cx="22" cy="62" r="20" fill="#d9584d" stroke="#174c45" stroke-width="6"/><circle cx="165" cy="67" r="18" fill="#83aa65" stroke="#174c45" stroke-width="6"/></g>
-  </svg>`;
-}
-
-function svgDataUrl(svg) {
-  return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
-}
-
-function svgToPngDataUrl(svg) {
-  return new Promise((resolve, reject) => {
-    const image = new Image();
-    image.onload = () => {
-      const canvas = document.createElement("canvas");
-      canvas.width = 1600;
-      canvas.height = 900;
-      canvas.getContext("2d").drawImage(image, 0, 0, canvas.width, canvas.height);
-      resolve(canvas.toDataURL("image/png"));
-    };
-    image.onerror = reject;
-    image.src = svgDataUrl(svg);
-  });
-}
-
 function drawWeeklyOverview(doc, margin, width) {
   const links = [];
   const gridTop = 52;
@@ -866,7 +777,6 @@ async function createPdf() {
   const margin = 16;
   const width = doc.internal.pageSize.getWidth();
   const height = doc.internal.pageSize.getHeight();
-  const includeInfographics = document.querySelector("#include-infographics").checked;
   const overviewLinks = drawWeeklyOverview(doc, margin, width);
   const recipePages = new Map();
   doc.addPage();
@@ -898,12 +808,6 @@ async function createPdf() {
       const item = state.plan[planKey(dayIndex, meal)];
       if (!item) continue;
       const recipe = recipeById(item.recipeId);
-      if (includeInfographics) {
-        const infographic = await svgToPngDataUrl(infographicSvg(recipe));
-        doc.addPage();
-        const infographicHeight = Math.min(height, width * 0.5625);
-        doc.addImage(infographic, "PNG", 0, (height - infographicHeight) / 2, width, infographicHeight);
-      }
       doc.addPage();
       if (!recipePages.has(recipe.id)) recipePages.set(recipe.id, doc.getNumberOfPages());
       doc.setTextColor(24, 63, 50);

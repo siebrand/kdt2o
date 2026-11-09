@@ -6,7 +6,7 @@ These are the remaining planned improvements. They are intentionally kept at the
 top of this document.
 
 - Add browser-level smoke tests for planning, shopping-list aggregation, PDF
-  generation, optional infographic pages, and the GitHub Pages base path.
+  generation, and the GitHub Pages base path.
 - Add a JSON Schema or equivalent runtime validation for `public/recipes.json`.
 - Add dedicated security and dependency workflows for action, dependency,
   Docker-image, and link scanning.
@@ -47,7 +47,6 @@ The following features are complete and have been moved below the open work:
   PDF at `all-recipes.html`.
 - [x] Approved-only recipe visibility and random selection by default, with an
   explicit option to include all recipes.
-- [x] Optional infographic pages controlled by the PDF checkbox.
 - [x] Recipe and shopping-list PDF generation in the browser with jsPDF.
 - [x] Privacy page, MIT/CC0 licensing, FOSS governance, contribution, conduct,
   and security documentation.
