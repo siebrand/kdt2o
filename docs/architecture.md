@@ -11,8 +11,9 @@ or server-side planning state.
 3. The browser stores the plan in versioned `localStorage`.
 4. The browser aggregates compatible ingredients and creates the PDF with jsPDF.
 5. The browser can fill empty meal slots randomly and can encode a compact plan
-   containing stable recipe IDs in a shareable URL without sending planning data
-   to a server. Unknown recipe IDs remain visible as unresolved recipe slots.
+   using stable codes derived from recipe IDs in a shareable URL without sending
+   planning data to a server. Unknown recipe codes remain visible as unresolved
+   recipe slots.
 6. The browser can filter one recipe by meal and generate a single-recipe PDF.
 7. Recipe lists and random selection use recipes with `approved: true` by
    default; the user can explicitly enable all recipes.

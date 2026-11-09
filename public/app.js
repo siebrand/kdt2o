@@ -1,7 +1,7 @@
 const DAYS = ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag", "Zondag"];
 const MEALS = ["ontbijt", "lunch", "diner"];
 const PLAN_STORAGE_KEY = "kitano-weekplan";
-const PLAN_STORAGE_VERSION = 3;
+const PLAN_STORAGE_VERSION = 4;
 const state = { recipes: [], plan: loadPlan(), activeSlot: null, pendingRecipe: null, shoppingWarnings: [], showAllRecipes: false };
 
 const planner = document.querySelector("#planner");
@@ -26,24 +26,63 @@ function recipeIsAvailable(recipe) {
   return state.showAllRecipes || recipe.approved === true;
 }
 
+function recipeToken(id) {
+  let hash = 14695981039346656037n;
+  for (const byte of new TextEncoder().encode(id)) {
+    hash ^= BigInt(byte);
+    hash = BigInt.asUintN(64, hash * 1099511628211n);
+  }
+  const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
+  let token = "";
+  let value = hash & ((1n << 48n) - 1n);
+  for (let index = 0; index < 8; index += 1) {
+    token = alphabet[Number(value & 63n)] + token;
+    value >>= 6n;
+  }
+  return token;
+}
+
 function compactPlan(plan) {
   return DAYS.flatMap((_, day) => MEALS.map((meal) => {
     const item = plan[planKey(day, meal)];
-    return item ? [item.recipeId, Number.isInteger(item.sourceDay) ? item.sourceDay : day] : null;
-  }));
+    if (!item) return "";
+    if (typeof item.recipeId !== "string" || !item.recipeId) return "";
+    const token = item.recipeId.startsWith("@token:") ? item.recipeId.slice(7) : recipeToken(item.recipeId);
+    const sourceDay = Number.isInteger(item.sourceDay) && item.sourceDay >= 0 && item.sourceDay < DAYS.length ? item.sourceDay : day;
+    return token + sourceDay;
+  })).join(".");
 }
 
 function expandPlan(compact) {
-  if (!Array.isArray(compact) || compact.length !== DAYS.length * MEALS.length) return null;
+  const slots = typeof compact === "string" ? compact.split(".") : [];
+  if (slots.length !== DAYS.length * MEALS.length) return null;
   const plan = {};
-  compact.forEach((item, index) => {
-    if (!Array.isArray(item) || typeof item[0] !== "string" || !item[0]) return;
+  slots.forEach((slot, index) => {
+    if (!slot) return;
+    const sourceDay = Number(slot.slice(-1));
+    const token = slot.slice(0, -1);
+    if (!/^[A-Za-z0-9_-]{8}$/.test(token) || !Number.isInteger(sourceDay) || sourceDay < 0 || sourceDay >= DAYS.length) return;
     const day = Math.floor(index / MEALS.length);
     const meal = MEALS[index % MEALS.length];
     plan[planKey(day, meal)] = {
-      recipeId: item[0],
-      sourceDay: Number.isInteger(item[1]) && item[1] >= 0 && item[1] < DAYS.length ? item[1] : day
+      recipeId: "@token:" + token,
+      sourceDay
     };
+  });
+  return plan;
+}
+
+function resolvePlanRecipeTokens(plan, recipes) {
+  const tokenMap = new Map();
+  recipes.forEach((recipe) => {
+    const token = recipeToken(recipe.id);
+    if (tokenMap.has(token)) tokenMap.set(token, null);
+    else tokenMap.set(token, recipe.id);
+  });
+  Object.values(plan).forEach((item) => {
+    if (!item?.recipeId?.startsWith("@token:")) return;
+    const recipeId = tokenMap.get(item.recipeId.slice(7));
+    if (recipeId) item.recipeId = recipeId;
   });
   return plan;
 }
@@ -66,8 +105,8 @@ function loadPlan() {
   try {
     const sharedPlan = new URLSearchParams(window.location.hash.slice(1)).get("plan");
     if (sharedPlan) {
-      if (sharedPlan.startsWith("v3.")) {
-        const shared = expandPlan(JSON.parse(decodeBase64Url(sharedPlan.slice(3))));
+      if (sharedPlan.startsWith("v4.")) {
+        const shared = expandPlan(decodeBase64Url(sharedPlan.slice(3)));
         if (shared) return shared;
       }
     }
@@ -81,7 +120,7 @@ function loadPlan() {
 
 function shareablePlanUrl() {
   const url = new URL(window.location.href);
-  url.hash = "plan=v3." + encodeBase64Url(JSON.stringify(compactPlan(state.plan)));
+  url.hash = "plan=v4." + encodeBase64Url(compactPlan(state.plan));
   return url.toString();
 }
 
@@ -1011,6 +1050,7 @@ fetch("recipes.json")
   .then((response) => response.ok ? response.json() : Promise.reject(new Error("recipes")))
   .then((recipes) => {
     state.recipes = shuffleRecipes(attachSharedRecipeComponents(recipes).map(addPreparationTime));
+    state.plan = resolvePlanRecipeTokens(state.plan, state.recipes);
     render();
     renderSingleRecipeSearch();
   })
