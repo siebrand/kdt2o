@@ -1,7 +1,7 @@
 const DAYS = ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag", "Zondag"];
 const MEALS = ["ontbijt", "lunch", "diner"];
 const PLAN_STORAGE_KEY = "kitano-weekplan";
-const PLAN_STORAGE_VERSION = 2;
+const PLAN_STORAGE_VERSION = 3;
 const state = { recipes: [], plan: loadPlan(), activeSlot: null, pendingRecipe: null, shoppingWarnings: [], showAllRecipes: false };
 
 const planner = document.querySelector("#planner");
@@ -26,16 +26,54 @@ function recipeIsAvailable(recipe) {
   return state.showAllRecipes || recipe.approved === true;
 }
 
+function compactPlan(plan) {
+  return DAYS.flatMap((_, day) => MEALS.map((meal) => {
+    const item = plan[planKey(day, meal)];
+    return item ? [item.recipeId, Number.isInteger(item.sourceDay) ? item.sourceDay : day] : null;
+  }));
+}
+
+function expandPlan(compact) {
+  if (!Array.isArray(compact) || compact.length !== DAYS.length * MEALS.length) return null;
+  const plan = {};
+  compact.forEach((item, index) => {
+    if (!Array.isArray(item) || typeof item[0] !== "string" || !item[0]) return;
+    const day = Math.floor(index / MEALS.length);
+    const meal = MEALS[index % MEALS.length];
+    plan[planKey(day, meal)] = {
+      recipeId: item[0],
+      sourceDay: Number.isInteger(item[1]) && item[1] >= 0 && item[1] < DAYS.length ? item[1] : day
+    };
+  });
+  return plan;
+}
+
+function encodeBase64Url(value) {
+  const bytes = new TextEncoder().encode(value);
+  let binary = "";
+  bytes.forEach((byte) => { binary += String.fromCharCode(byte); });
+  return btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+}
+
+function decodeBase64Url(value) {
+  const normalized = value.replace(/-/g, "+").replace(/_/g, "/");
+  const binary = atob(normalized + "=".repeat((4 - normalized.length % 4) % 4));
+  const bytes = Uint8Array.from(binary, (character) => character.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
 function loadPlan() {
   try {
     const sharedPlan = new URLSearchParams(window.location.hash.slice(1)).get("plan");
     if (sharedPlan) {
-      const shared = JSON.parse(sharedPlan);
-      if (shared?.version === PLAN_STORAGE_VERSION && shared.plan && typeof shared.plan === "object") return shared.plan;
+      if (sharedPlan.startsWith("v3.")) {
+        const shared = expandPlan(JSON.parse(decodeBase64Url(sharedPlan.slice(3))));
+        if (shared) return shared;
+      }
     }
     const saved = JSON.parse(localStorage.getItem(PLAN_STORAGE_KEY) || "null");
-    if (saved?.version !== PLAN_STORAGE_VERSION || !saved.plan || typeof saved.plan !== "object") return {};
-    return saved.plan;
+    if (saved?.version === PLAN_STORAGE_VERSION) return expandPlan(saved.plan) || {};
+    return {};
   } catch {
     return {};
   }
@@ -43,7 +81,7 @@ function loadPlan() {
 
 function shareablePlanUrl() {
   const url = new URL(window.location.href);
-  url.hash = "plan=" + encodeURIComponent(JSON.stringify({ version: PLAN_STORAGE_VERSION, plan: state.plan }));
+  url.hash = "plan=v3." + encodeBase64Url(JSON.stringify(compactPlan(state.plan)));
   return url.toString();
 }
 
@@ -66,7 +104,7 @@ async function copyMenuLink() {
 }
 
 function savePlan() {
-  localStorage.setItem(PLAN_STORAGE_KEY, JSON.stringify({ version: PLAN_STORAGE_VERSION, plan: state.plan }));
+  localStorage.setItem(PLAN_STORAGE_KEY, JSON.stringify({ version: PLAN_STORAGE_VERSION, plan: compactPlan(state.plan) }));
 }
 
 function dayName(dayIndex) {
@@ -808,6 +846,7 @@ async function createPdf() {
       const item = state.plan[planKey(dayIndex, meal)];
       if (!item) continue;
       const recipe = recipeById(item.recipeId);
+      if (!recipe) continue;
       doc.addPage();
       if (!recipePages.has(recipe.id)) recipePages.set(recipe.id, doc.getNumberOfPages());
       doc.setTextColor(24, 63, 50);
