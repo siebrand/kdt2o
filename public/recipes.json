@@ -7952,5 +7952,117 @@
     ],
     "preparationTime": 25,
     "ovenTime": 0
+  },
+  {
+    "id": "snelle-uiensoep-met-kaaskoekje",
+    "title": "Snelle uiensoep met kaaskoekje",
+    "approved": true,
+    "category": "lunch",
+    "portions": 2,
+    "multiDay": false,
+    "ingredients": [
+      {
+        "raw": "2 tl olijfolie",
+        "amount": 10,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten",
+        "componentId": ""
+      },
+      {
+        "raw": "250 gram uien",
+        "amount": 250,
+        "unit": "gram",
+        "name": "ui",
+        "optional": false,
+        "alternatives": [],
+        "category": "Groente en fruit",
+        "componentId": ""
+      },
+      {
+        "raw": "½ eetlepel bloem",
+        "amount": 10,
+        "unit": "gram",
+        "name": "bloem",
+        "optional": false,
+        "alternatives": [],
+        "category": "Houdbare producten",
+        "componentId": ""
+      },
+      {
+        "raw": "1 teentje knoflook",
+        "amount": 1,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "alternatives": [],
+        "category": "Groente en fruit",
+        "componentId": ""
+      },
+      {
+        "raw": "700 ml groentebouillon minder zout",
+        "amount": 700,
+        "unit": "ml",
+        "name": "groentebouillon",
+        "optional": false,
+        "alternatives": [],
+        "category": "Houdbare producten",
+        "componentId": ""
+      },
+      {
+        "raw": "1 theelepel gedroogde tijm",
+        "amount": 1,
+        "unit": "tl",
+        "name": "gedroogde tijm",
+        "optional": false,
+        "alternatives": [],
+        "category": "Kruiden en smaakmakers",
+        "componentId": ""
+      },
+      {
+        "raw": "peper naar smaak",
+        "amount": null,
+        "unit": "",
+        "name": "peper",
+        "optional": false,
+        "alternatives": [],
+        "category": "Kruiden en smaakmakers",
+        "componentId": ""
+      }
+    ],
+    "components": [
+      {
+        "id": "kaaskoekjes",
+        "title": "Kaaskoekjes",
+        "yield": 2,
+        "yieldUnit": "stuk",
+        "yieldNote": "",
+        "includeInShoppingList": true,
+        "ingredients": [
+          {
+            "raw": "10 gram geraspte Parmezaanse kaas",
+            "amount": 10,
+            "unit": "gram",
+            "name": "Parmezaanse kaas",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          }
+        ],
+        "equipment": [
+          "bakplaat",
+          "bakpapier"
+        ],
+        "method": "Verwarm de oven voor op 200 graden. Maak 2 hoopjes van de Parmezaanse kaas op een met bakpapier beklede bakplaat. Bak de kaaskoekjes 8 minuten in de oven en laat ze vervolgens afkoelen."
+      }
+    ],
+    "method": "Bereid eerst de kaaskoekjes volgens het subrecept. Verwijder de schil van de uien en snijd ze in halve ringen. Maak de knoflook schoon en snijd deze fijn. Verhit de olijfolie in een soeppan en bak de uien 5 minuten op middelhoog vuur totdat ze beginnen te karamelliseren. Voeg de bloem, knoflook, tijm en peper toe en bak kort mee. Voeg de bouillon toe en breng aan de kook. Laat 5 minuten koken. Schep de soep in kommen en leg in elke kom een kaaskoekje. Lekker met (koolhydraatverlaagd) brood. Dit recept is ook geschikt als voorgerecht.",
+    "advanceNotice": "",
+    "days": 0,
+    "equipment": [
+      "soeppan"
+    ],
+    "preparationTime": 20,
+    "ovenTime": 8
   }
 ]
