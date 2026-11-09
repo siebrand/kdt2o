@@ -6431,7 +6431,7 @@
     "id": "nasi-met-kipsate",
     "title": "Nasi met kipsate",
     "category": "diner",
-    "approved": false,
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -6534,6 +6534,14 @@
         "category": "Groente en fruit"
       },
       {
+        "raw": "2 eieren",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "eieren",
+        "optional": true,
+        "category": "Zuivel en eieren"
+      },
+      {
         "raw": "1 tl komijn en/of koriander",
         "amount": 1,
         "unit": "tl",
@@ -6591,15 +6599,16 @@
         "method": "Warm de kokosmelk op in een pannetje. Roer de pindakaas erdoor. Roer tot slot de sojasaus, wat peper en (jozo)zout door de saus. Voeg de chilivlokken toe voor een beetje pittigheid. Voeg wat water toe als de satésaus te dik is."
       }
     ],
-    "method": "Doe een scheutje olijfolie in de pan. Doe de kipfilet erbij samen met sojasaus, knoflook, gember en peper. Roer goed door elkaar. Voeg hierna de kurkuma en 2 theelepels Jonnie de Boer Chinese 5 spices eraan toe (of meer naar smaak). Je kunt ook nog wat komijn en/of koriander toevoegen naar wens. Als de kip aangebraden is, doe je de nasi/bami groenten erbij. Roer 5 minuten goed door en voeg daarna de bloemkoolrijst aan het groente- en kipmengsel toe. Roer 1 minuut. Voeg in de laatste minuut de taugé toe en bak nog 1 minuut mee. Optioneel: tik 2 eitjes kapot boven de pan en roer deze erdoor. Zodra je ziet dat de eitjes meegebakken zijn, is de nasi klaar. Bereid de satésaus volgens het subrecept. Serveer de nasi met kip en satésaus. Tip: Maak het gerecht helemaal af met een salade van boontjes, komkommer en tomaat. Tip: Haal de 5 spices uit het gerecht en vervang deze voor de optionele komijn en/of koriander.",
+    "method": "Doe een scheutje olijfolie in de pan. Doe de kipfilet erbij samen met sojasaus, knoflook, gember en peper. Roer goed door elkaar. Voeg hierna de kurkuma en 2 theelepels Jonnie de Boer 5 spices eraan toe (of meer naar smaak). Je kunt ook nog wat komijn en/of koriander toevoegen naar wens. Als de kip aangebraden is, doe je de nasi/bami groenten erbij. Roer 5 minuten goed door en voeg daarna de bloemkoolrijst aan het groente- en kipmengsel toe. Roer 1 minuut. Voeg in de laatste minuut de taugé toe en bak nog 1 minuut mee. Optioneel: tik 2 eitjes kapot boven de pan en roer deze erdoor. Zodra je ziet dat de eitjes meegebakken zijn, is de nasi klaar. Bereid de satésaus volgens het subrecept. Serveer de nasi met kip en satésaus. Tip: Maak het gerecht helemaal af met een salade van boontjes, komkommer en tomaat. Tip: Haal de 5 spices uit het gerecht en vervang deze voor de optionele komijn en/of koriander.",
     "diet": [
       "vlees"
     ]
   },
   {
-    "id": "oosterse-groentestoof-kwark",
-    "title": "Oosterse groentestoof kwark",
+    "id": "oosterse-groentestoof-ei",
+    "title": "Oosterse groentestoof met ei",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -6700,6 +6709,14 @@
         "category": "Zuivel en eieren"
       },
       {
+        "raw": "4 eieren",
+        "amount": 4,
+        "unit": "stuk",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
         "raw": "half bosje verse koriander",
         "amount": 8,
         "unit": "gram",
@@ -6717,6 +6734,7 @@
     "id": "oosterse-kipfilet-met-witlofsalade",
     "title": "Oosterse kipfilet met witlofsalade",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -6729,7 +6747,7 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "30 ml mayonaise",
+        "raw": "2 el mayonaise",
         "amount": 30,
         "unit": "ml",
         "name": "mayonaise",
@@ -6745,7 +6763,7 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "1 el extra vierge olijfolie",
+        "raw": "extra vierge olijfolie",
         "amount": 15,
         "unit": "ml",
         "name": "extra vierge olijfolie",
@@ -6826,9 +6844,6 @@
       }
     ],
     "method": "Neem een slakom, doe hierin de yoghurt, mayonaise en azijn en roer goed door. Voeg zoveel olijfolie toe tot je een goede dressing hebt. Snijd de witlof doormidden, verwijder de harde kern. Snijd de witlof in dunne reepjes en doe deze in de slakom en roer de saus er goed doorheen. Snijd de kipfilet in reepjes van ongeveer 1,5 cm. Snijd de ui fijn. Verhit 1 el olie zachtjes in een pan en fruit het uitje hierin zachtjes aan. Voeg na 4 minuten de sojasaus, gember en uitgeperste knoflook in de pan en bak de kipfiletreepjes hierin. Blijf roeren en bak in circa 6 minuten gaar. Zet kokend water op in een pannetje, kook de erwtjes in 3 minuten gaar en giet af. Haal de kipfilet van het vuur en besprenkel de helft van de kip met sesamzaadjes. Serveer met de erwtjes en de witlofsalade.",
-    "notes": [
-      "Opmerking: de ingrediënten zijn voor 1 persoon."
-    ],
     "diet": [
       "vlees"
     ]
@@ -6837,17 +6852,10 @@
     "id": "pesto-kip-met-snijbonen-en-tuinerwtjes",
     "title": "Pesto kip met snijbonen en tuinerwtjes",
     "category": "diner",
+    "approved": true,
     "portions": 2,
     "multiDay": false,
     "ingredients": [
-      {
-        "raw": "4 el pesto",
-        "amount": 4,
-        "unit": "el",
-        "name": "pesto",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
       {
         "raw": "300 gram kipfilet",
         "amount": 300,
@@ -6929,7 +6937,67 @@
         "category": "Kruiden en smaakmakers"
       }
     ],
-    "method": "Maak de pesto (zie recept hieronder). Bestrooi de kipfilets met peper en bak of grill ze met een scheut extra vierge olijfolie in de pan in 10 minuten gaar (de binnenkant mag niet meer roze zijn). Eventueel kun je de kipfilet in stukjes snijden. Was de snijbonen, snijd ze in stukjes en kook/stoom deze in 5 minuten beetgaar. Verwarm de tuinerwtjes 2 minuten in een pannetje met een beetje water. Als de kipfilet gaar is, haal van het vuur en roer de pesto erdoor of erop. Serveer met de snijbonen en tuinerwtjes. Recept pesto Pel de knoflook. Rooster de pijnboompitten in een droge koekenpan tot Ze lichtbruin zijn. Doe de pijnboompitten en alle andere ingrediénten in een hoge kom. Mix en voeg net zoveel olijfolie toe tot een gladde pesto ontstaat. Proef en breng eventueel op smaak met peper en (jozo)zout. Tip: Koop een potje pesto i.p.v. deze zelf te maken. Let er wel op dat er geen toegevoegde suikers inzitten.",
+    "components": [
+      {
+        "id": "pesto",
+        "title": "Pesto",
+        "yield": 4,
+        "yieldUnit": "el",
+        "yieldNote": "",
+        "optional": false,
+        "availabilityNote": "Je kunt ook een potje pesto gebruiken. Let er wel op dat er geen toegevoegde suikers inzitten.",
+        "ingredients": [
+          {
+            "raw": "1 teentje knoflook",
+            "amount": 1,
+            "unit": "teen",
+            "name": "knoflook",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "4 el pijnboompitten",
+            "amount": 4,
+            "unit": "el",
+            "name": "pijnboompitten",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "50 gram verse basilicum",
+            "amount": 50,
+            "unit": "gram",
+            "name": "verse basilicum",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          },
+          {
+            "raw": "4 el Parmezaanse kaas",
+            "amount": 30,
+            "unit": "gram",
+            "name": "Parmezaanse kaas",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          },
+          {
+            "raw": "Extra vierge olijfolie",
+            "amount": 15,
+            "unit": "ml",
+            "name": "extra vierge olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          }
+        ],
+        "equipment": [
+          "droge koekenpan",
+          "hoge kom",
+          "staafmixer of blender"
+        ],
+        "method": "Pel de knoflook. Rooster de pijnboompitten in een droge koekenpan tot ze lichtbruin zijn. Doe de pijnboompitten en alle andere ingrediënten in een hoge kom. Mix en voeg net zoveel olijfolie toe tot een gladde pesto ontstaat. Proef en breng eventueel op smaak met peper en (jozo)zout.",
+        "includeInShoppingList": true
+      }
+    ],
+    "method": "Bereid de pesto volgens het subrecept. Bestrooi de kipfilets met peper en bak of grill ze met een scheut extra vierge olijfolie in de pan in 10 minuten gaar (de binnenkant mag niet meer roze zijn). Eventueel kun je de kipfilet in stukjes snijden. Was de snijbonen, snijd ze in stukjes en kook/stoom deze in 5 minuten beetgaar. Verwarm de tuinerwtjes 2 minuten in een pannetje met een beetje water. Als de kipfilet gaar is, haal van het vuur en roer de pesto erdoor of erop. Serveer met de snijbonen en tuinerwtjes.",
     "diet": [
       "vlees"
     ]
