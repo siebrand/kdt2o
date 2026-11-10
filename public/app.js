@@ -305,8 +305,7 @@ function renderOptions() {
     title.textContent = recipe.title;
     const preparationTime = document.createElement("p");
     preparationTime.className = "recipe-card-meta";
-    preparationTime.textContent = "Bereiding: circa " + recipe.preparationTime + " minuten" +
-       (Number.isFinite(recipe.ovenTime) ? " | Oventijd: circa " + recipe.ovenTime + " minuten" : "");
+    preparationTime.textContent = recipeTimingLabel(recipe);
     const button = document.createElement("button");
     button.type = "button";
     button.className = "button";
@@ -314,7 +313,10 @@ function renderOptions() {
     button.setAttribute("aria-label", "Toevoegen");
     button.title = "Toevoegen";
     button.addEventListener("click", () => chooseRecipe(recipe));
-    card.append(title, preparationTime, button);
+    card.append(title, preparationTime);
+    const note = recipeCardNote(recipe);
+    if (note) card.append(note);
+    card.append(button);
     options.append(card);
   });
 }
@@ -335,7 +337,7 @@ function renderSingleRecipeSearch() {
     title.textContent = recipe.title;
     const preparationTime = document.createElement("p");
     preparationTime.className = "recipe-card-meta";
-    preparationTime.textContent = "Bereiding: circa " + recipe.preparationTime + " minuten";
+    preparationTime.textContent = recipeTimingLabel(recipe);
     const button = document.createElement("button");
     button.type = "button";
     button.className = "button";
@@ -347,7 +349,10 @@ function renderSingleRecipeSearch() {
     button.style.display = "inline-block";
     button.textContent = "PDF downloaden";
     button.addEventListener("click", () => createSingleRecipePdf(recipe));
-    card.append(title, preparationTime, button);
+    card.append(title, preparationTime);
+    const note = recipeCardNote(recipe);
+    if (note) card.append(note);
+    card.append(button);
     singleRecipeResults.append(card);
   });
 }
@@ -707,12 +712,39 @@ function formatIngredientLabel(item, includeOptionalPrefix = true) {
 }
 
 function ingredientLabel(item, includeOptionalPrefix = true) {
-  const raw = String(item.raw || "");
-  return (includeOptionalPrefix && item.optional ? "optioneel: " : "") + raw;
+  const prefix = includeOptionalPrefix && item.optional ? "optioneel: " : "";
+  const main = prefix + String(item.raw || item.name || "");
+  const alternatives = (item.alternatives || []).map((alternative) => {
+    const alternativePrefix = includeOptionalPrefix && alternative.optional ? "optioneel: " : "";
+    return alternativePrefix + String(alternative.raw || alternative.name || "");
+  });
+  return alternatives.length ? main + " of " + alternatives.join(" of ") : main;
 }
 
 function shoppingIngredientLabel(item, includeOptionalPrefix = true) {
   return formatIngredientLabel(item, includeOptionalPrefix);
+}
+
+function recipeTimingLabel(recipe) {
+  const timing = [];
+  if (Number.isFinite(recipe?.preparationTime)) timing.push("Bereiding: circa " + recipe.preparationTime + " minuten");
+  if (Number.isFinite(recipe?.ovenTime)) timing.push("Oventijd: circa " + recipe.ovenTime + " minuten");
+  return timing.join(" | ");
+}
+
+function recipeMetadataLabel(recipe) {
+  const metadata = [recipe?.category || "recept", recipe?.portions ? recipe.portions + " personen" : ""].filter(Boolean);
+  const timing = recipeTimingLabel(recipe);
+  if (timing) metadata.push(timing);
+  return metadata.join(" · ");
+}
+
+function recipeCardNote(recipe) {
+  if (!recipe?.notes?.length) return null;
+  const note = document.createElement("p");
+  note.className = "recipe-card-meta";
+  note.textContent = "Opmerking: " + recipe.notes.join(" ");
+  return note;
 }
 
 function renderShoppingList() {
@@ -898,7 +930,11 @@ async function createPdf() {
       doc.setFontSize(14);
       const title = String(recipe.title || "Recept").normalize("NFC").replace(/\s+/g, " ").trim();
       const recipeHeading = dayName(dayIndex) + " · " + meal + " · " + recipe.portions + " personen - " + title;
-      y = addWrapped(doc, recipeHeading, margin, 24, width - margin * 2, 7) + 5;
+      y = addWrapped(doc, recipeHeading, margin, 24, width - margin * 2, 7) + 2;
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(9);
+      doc.setTextColor(70, 80, 70);
+      y = addWrapped(doc, recipeTimingLabel(recipe), margin, y, width - margin * 2, 4) + 3;
       const mainIngredients = sortIngredientsForDisplay(recipe.ingredients || []);
       if (mainIngredients.length) {
         doc.setFontSize(12); doc.setTextColor(24, 63, 50); doc.text("Hoofdrecept · Ingrediënten", margin, y); y += 7;
@@ -1048,10 +1084,15 @@ async function createSingleRecipePdf(recipe) {
   y = addWrapped(doc, recipe.title, margin, y, width - margin * 2, 7) + 3;
   doc.setFont("helvetica", "normal");
   doc.setFontSize(10);
-  doc.text(recipe.category + " · " + recipe.portions + " personen · Bereiding: circa " + recipe.preparationTime + " minuten", margin, y);
+  doc.text(recipeMetadataLabel(recipe), margin, y);
   y += 10;
   addSection("Ingrediënten", sortIngredientsForDisplay(recipe.ingredients || []).map(ingredientLabel));
-  (recipe.components || []).forEach((component) => addSection("Subrecept · " + component.title, sortIngredientsForDisplay(component.ingredients || []).map(ingredientLabel)));
+  (recipe.components || []).forEach((component) => {
+    const items = [];
+    if (component.availabilityNote) items.push(component.availabilityNote);
+    items.push(...sortIngredientsForDisplay(component.ingredients || []).map(ingredientLabel));
+    addSection("Subrecept · " + component.title, items);
+  });
   (recipe.dailyVariants || []).forEach((variant) => addSection("Variant · " + variant.title, sortIngredientsForDisplay(variant.ingredients || []).map(ingredientLabel)));
   addSection("Benodigdheden", recipeEquipment(recipe));
   if ((recipe.components || []).length || recipe.method || (recipe.dailyVariants || []).length) {
