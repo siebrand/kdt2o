@@ -18,6 +18,11 @@ Optional dietary classification:
   `["vegetarisch"]`, or `["vegan"]`.
 - `vegetarisch` and `vegan` cannot be combined with `vlees` or `vis`.
 
+Optional program classification:
+
+- `programs`: an array of one or more program names for which the recipe is
+  suitable. A recipe may belong to multiple programs; names must be unique.
+
 When the source does not provide a value, preserve uncertainty where the schema
 allows it. For required fields that are arrays, use an empty array. Use project
 conventions for required numeric defaults; do not invent timings or servings.

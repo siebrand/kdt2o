@@ -25,6 +25,9 @@ planner. Read `schemas/schema.json` before producing output.
 - If dietary classification is provided, use the optional `diet` array with one
   of `["vlees"]`, `["vis"]`, `["vlees", "vis"]`, `["vegetarisch"]`, or
   `["vegan"]`. Do not combine `vegetarisch` or `vegan` with `vlees` or `vis`.
+- If program suitability is provided, use the optional `programs` array with one
+  or more program names. Keep each program name as a string and do not duplicate
+  names within the array.
 - Use numeric `portions` when known. Ask when portions are essential and absent;
   do not silently assume a serving count.
 - Set `multiDay` to `false` unless the text clearly describes a multi-day dish.

@@ -40,6 +40,13 @@
           ["vegan"]
         ]
       },
+      "programs": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "type": "string"
+        }
+      },
       "portions": {
         "type": "number"
       },
