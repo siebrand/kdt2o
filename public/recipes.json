@@ -7462,16 +7462,6 @@
         "unit": "gram",
         "name": "kipfilet",
         "optional": false,
-        "alternatives": [
-          {
-            "raw": "200 gram witte bonen (uit blik)",
-            "amount": 200,
-            "unit": "gram",
-            "name": "witte bonen (uit blik)",
-            "optional": false,
-            "category": "Houdbare producten"
-          }
-        ],
         "category": "Vlees, vis en vleesvervangers"
       },
       {
@@ -7525,7 +7515,7 @@
         "optional": false,
         "ingredients": [
           {
-            "raw": "15 ml mayonaise",
+            "raw": "1 el mayonaise",
             "amount": 15,
             "unit": "ml",
             "name": "mayonaise",
@@ -7580,7 +7570,133 @@
         "includeInShoppingList": true
       }
     ],
-    "method": "Snijd de kipfilets in kleine blokjes en marineer dit met de shoarmakruiden. Was en snijd de preien in kleine ringetjes en de paprika in kleine blokjes. Haal de puntjes van de boontjes en breek ze doormidden. Stoom de boontjes gaar in ongeveer 5 minuten. Doe een klontje roomboter in de pan en bak de kipfilets gaar, voeg de paprika en prei toe en roerbak tot de paprika zacht begin te worden. Voeg de boontjes toe. Bereid de kruidensaus volgens het subrecept. Serveer het op de borden en sprenkel de kruidensaus over het gerecht. Liever vegetarisch? Vervang de kip voor witte bonen. Spoel de witte bonen af onder de kraan en voeg ze toe in de pan nadat de paprika en prei wat zachter zijn geworden.",
+    "method": "Snijd de kipfilets in kleine blokjes en marineer dit met de shoarmakruiden. Was en snijd de preien in kleine ringetjes en de paprika in kleine blokjes. Haal de puntjes van de boontjes en breek ze doormidden. Stoom de boontjes gaar in ongeveer 5 minuten. Doe een klontje roomboter in de pan en bak de kipfilets gaar, voeg de paprika en prei toe en roerbak tot de paprika zacht begin te worden. Voeg de boontjes toe. Bereid de kruidensaus volgens het subrecept. Serveer het op de borden en sprenkel de kruidensaus over het gerecht.",
+    "diet": [
+      "vlees"
+    ]
+  },
+  {
+    "id": "shoarmaschotel-vegetarisch",
+    "title": "Shoarmaschotel (vegetarisch)",
+    "category": "diner",
+    "portions": 2,
+    "multiDay": false,
+    "ingredients": [
+      {
+        "raw": "200 gram witte bonen (uit blik)",
+        "amount": 200,
+        "unit": "gram",
+        "name": "witte bonen (uit blik)",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "2 el shoarmakruiden (zonder toegevoegde suiker)",
+        "amount": 2,
+        "unit": "el",
+        "name": "shoarmakruiden (zonder toegevoegde suiker)",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "2 preien",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "prei",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 rode paprika's",
+        "amount": 2,
+        "unit": "stuk",
+        "name": "paprika (rood)",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "200 gram sperziebonen",
+        "amount": 200,
+        "unit": "gram",
+        "name": "sperziebonen",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "klontje roomboter",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      }
+    ],
+    "components": [
+      {
+        "id": "kruidensaus",
+        "title": "Kruidensaus",
+        "yield": 2,
+        "yieldUnit": "porties",
+        "yieldNote": "",
+        "optional": false,
+        "ingredients": [
+          {
+            "raw": "1 el mayonaise",
+            "amount": 15,
+            "unit": "ml",
+            "name": "mayonaise",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "4 el volle kwark",
+            "amount": 60,
+            "unit": "gram",
+            "name": "volle kwark",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          },
+          {
+            "raw": "2 el bieslook fijngesneden (evt. diepvries)",
+            "amount": 10,
+            "unit": "gram",
+            "name": "bieslook",
+            "optional": false,
+            "category": "Diepvries"
+          },
+          {
+            "raw": "peper en zout",
+            "amount": null,
+            "unit": "",
+            "name": "peper en zout",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          },
+          {
+            "raw": "1 el citroensap",
+            "amount": 15,
+            "unit": "ml",
+            "name": "citroensap",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "een teentje knoflook",
+            "amount": 1,
+            "unit": "teen",
+            "name": "knoflook",
+            "optional": true,
+            "category": "Groente en fruit"
+          }
+        ],
+        "equipment": [
+          "mengkom"
+        ],
+        "method": "Meng de mayonaise, kwark, bieslook, peper en zout en citroensap. Voeg eventueel de uitgeperste knoflook toe. Mocht de saus te dik zijn, meng deze dan met een beetje water.",
+        "includeInShoppingList": true
+      }
+    ],
+    "method": "Was en snijd de preien in kleine ringetjes en de paprika in kleine blokjes. Haal de puntjes van de boontjes en breek ze doormidden. Stoom de boontjes gaar in ongeveer 5 minuten. Doe een klontje roomboter in de pan en voeg de paprika, prei en  de shoarmakruiden toe en roerbak tot de paprika zacht begin te worden. Voeg de sperzieboontjes toe. Spoel de witte bonen af onder de kraan en voeg ze toe. Bereid de kruidensaus volgens het subrecept. Serveer het op de borden en sprenkel de kruidensaus over het gerecht.",
     "diet": [
       "vlees"
     ]
