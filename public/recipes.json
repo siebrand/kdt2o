@@ -898,10 +898,10 @@
         "category": "Diepvries"
       },
       {
-        "raw": "25 gram kokosrap",
+        "raw": "25 gram kokosrasp",
         "amount": 25,
         "unit": "gram",
-        "name": "kokosrap",
+        "name": "kokosrasp",
         "optional": false,
         "category": "Houdbare producten"
       }
