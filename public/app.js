@@ -1072,6 +1072,7 @@ async function createSingleRecipePdf(recipe) {
       addMethodSteps(variant.method || "");
     });
   }
+  addSection("Opmerking", recipe.notes || []);
   doc.save((recipe.id || "recept") + ".pdf");
 }
 
