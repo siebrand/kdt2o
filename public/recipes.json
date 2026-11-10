@@ -1319,8 +1319,8 @@
           },
           {
             "raw": "1 tl (jozo)zout",
-            "amount": 1,
-            "unit": "tl",
+            "amount": null,
+            "unit": null,
             "name": "(jozo)zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
@@ -1478,8 +1478,8 @@
           },
           {
             "raw": "1 tl (jozo)zout",
-            "amount": 1,
-            "unit": "tl",
+            "amount": null,
+            "unit": null,
             "name": "(jozo)zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
@@ -1637,8 +1637,8 @@
           },
           {
             "raw": "1 tl (jozo)zout",
-            "amount": 1,
-            "unit": "tl",
+            "amount": null,
+            "unit": null,
             "name": "(jozo)zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
@@ -2627,10 +2627,10 @@
         "title": "Met lijnzaadcrackers en pindakaas",
         "ingredients": [
           {
-            "raw": "lijnzaadcracker(s)",
-            "amount": null,
-            "unit": null,
-            "name": "lijnzaadcracker(s)",
+            "raw": "lijnzaadcrackers",
+            "amount": 2,
+            "unit": "stuk",
+            "name": "lijnzaadcracker",
             "optional": false,
             "category": "Houdbare producten"
           },
