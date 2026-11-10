@@ -123,10 +123,13 @@
           "bakpapier",
           "deegroller of fles"
         ],
-        "method": "Meng de zaden en pitten met het zout in een kom en voeg het water en de gedroogde kruiden toe. Laat dit 30 minuten staan. Verwarm de oven voor op 180 °C. Bekleed een bakplaat met bakpapier. Verdeel het beslag over de bakplaat, leg er bakpapier overheen en rol uit tot 2-3 mm dikte. Verwijder het bovenste vel bakpapier en bak circa 25 minuten tot knapperig. Snijd de crackerplak na het bakken in circa 10 gelijke crackers en laat ze afkoelen. Keer ze eventueel om en verwarm ze nog even als ze niet droog genoeg zijn. Maak de crackers de avond van tevoren al klaar. In een afgesloten bak kunnen de crackers dagenlang goed blijven."
+        "method": "Meng de zaden en pitten met het zout in een kom en voeg het water en de gedroogde kruiden toe. Laat dit 30 minuten staan. Verwarm de oven voor op 180 °C. Bekleed een bakplaat met bakpapier. Verdeel het beslag over de bakplaat, leg er bakpapier overheen en rol uit tot 2-3 mm dikte. Verwijder het bovenste vel bakpapier en bak circa 25 minuten tot knapperig. Snijd de crackerplak na het bakken in circa 10 gelijke crackers en laat ze afkoelen. Keer ze eventueel om en verwarm ze nog even als ze niet droog genoeg zijn. Maak de crackers de avond van tevoren al klaar. In een afgesloten bak kunnen de crackers dagenlang goed blijven.",
+        "preparationTime": 10,
+        "ovenTime": 30
       }
     ],
     "method": "Beleg de lijnzaadcrackers met geprakte avocado, hüttenkäse, komkommer en tomaat. Strooi hier wat peper en zout overheen.",
+    "preparationTime": 5,
     "diet": [
       "vegetarisch"
     ]
@@ -134,6 +137,7 @@
   {
     "id": "aardbeienkwark",
     "title": "Aardbeienkwark",
+    "preparationTime": 10,
     "approved": true,
     "category": "ontbijt",
     "portions": 2,
@@ -200,6 +204,7 @@
     "id": "amandel-pannenkoeken",
     "title": "Amandelpannenkoeken",
     "approved": true,
+    "preparationTime": 20,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -325,6 +330,7 @@
     "id": "chiapudding",
     "title": "Chiapudding",
     "approved": true,
+    "preparationTime": 10,
     "category": "ontbijt",
     "portions": 2,
     "multiDay": false,
@@ -6780,6 +6786,7 @@
       }
     ],
     "method": "Doe een scheutje olijfolie in de pan. Doe de kipfilet erbij samen met sojasaus, knoflook, gember en peper. Roer goed door elkaar. Voeg hierna de kurkuma en 2 theelepels Jonnie de Boer Chinese 5 spices eraan toe (of meer naar smaak). Je kunt ook nog wat komijn en/of koriander toevoegen naar wens. Als de kip aangebraden is, doe je de nasi/bami groenten erbij. Roer 5 minuten goed door en voeg daarna de bloemkoolrijst aan het groente- en kipmengsel toe. Roer 1 minuut. Voeg in de laatste minuut de taugé toe en bak nog 1 minuut mee. Optioneel: tik 2 eitjes kapot boven de pan en roer deze erdoor. Zodra je ziet dat de eitjes meegebakken zijn, is de nasi klaar. Bereid de satésaus volgens het subrecept. Serveer de nasi met kip en satésaus. Tip: Maak het gerecht helemaal af met een salade van boontjes, komkommer en tomaat. Tip: Haal de 5 spices uit het gerecht en vervang deze voor de optionele komijn en/of koriander.",
+    "preparationTime": 30,
     "diet": [
       "vlees"
     ]
