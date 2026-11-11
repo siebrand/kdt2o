@@ -618,6 +618,14 @@
         "category": "Groente en fruit"
       },
       {
+        "raw": "4 eieren",
+        "amount": 4,
+        "unit": "stuk",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
         "raw": "peper en zout",
         "amount": null,
         "unit": "",
