@@ -17,9 +17,13 @@ or server-side planning state.
 6. The browser can filter one recipe by meal and generate a single-recipe PDF.
 7. Recipe lists and random selection use recipes with `approved: true` by
    default; the user can explicitly enable all recipes.
-8. Planned recipes can be swapped by drag and drop within the same meal type.
-   Multi-day recipes move as a whole, and a swap is rejected if it would overlap
-   other planned recipes.
+8. Planned recipes can be moved by drag and drop within the same meal type. The
+   dragged selection shifts by the distance between the dragged card and the
+   drop cell, so multi-day recipes move as a whole and may be dropped on empty
+   cells or on their own days. The recipe on the drop cell takes the dragged
+   position (a swap); other recipes in the way move to the nearest free slots of
+   the same meal. A move is rejected if a recipe does not fit in the week or
+   there is no room.
 
 Recipe text is treated as data and inserted with text APIs, never as HTML.
 

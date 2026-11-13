@@ -200,48 +200,74 @@ function selectionDays(recipe, startDay) {
 function swapPlanSelections(sourceKey, targetKey) {
     if (sourceKey === targetKey) return;
     const sourceItem = state.plan[sourceKey];
-    const targetItem = state.plan[targetKey];
-    if (!sourceItem || !targetItem) {
-        showSelectionMessage("Sleep twee gevulde kaarten naar elkaar toe.");
-        return;
-    }
-    const sourceMeal = planKeyMeal(sourceKey);
-    if (sourceMeal !== planKeyMeal(targetKey)) {
-        showSelectionMessage("Kaarten kunnen alleen binnen hetzelfde maaltijdtype worden gewisseld.");
+    if (!sourceItem) return;
+    const meal = planKeyMeal(sourceKey);
+    if (meal !== planKeyMeal(targetKey)) {
+        showSelectionMessage("Kaarten kunnen alleen binnen hetzelfde maaltijdtype worden verplaatst.");
         return;
     }
     const sourceRecipe = recipeById(sourceItem.recipeId);
-    const targetRecipe = recipeById(targetItem.recipeId);
-    if (!sourceRecipe || !targetRecipe) {
-        showSelectionMessage("Een onbekend recept kan niet worden gewisseld.");
+    if (!sourceRecipe) {
+        showSelectionMessage("Een onbekend recept kan niet worden verplaatst.");
         return;
     }
+    // The dragged selection shifts by the distance between the dragged card and the drop cell. This also allows a
+    // multi-day recipe to be dropped on one of its own later days or on an empty cell.
+    const draggedDay = planKeyDay(sourceKey);
+    const targetDay = planKeyDay(targetKey);
+    const offset = targetDay - draggedDay;
     const sourceStart = selectionStartDay(sourceKey, sourceItem);
-    const targetStart = selectionStartDay(targetKey, targetItem);
-    if (sourceStart === targetStart) return;
-    const sourceKeys = selectionKeys(sourceItem.recipeId, sourceMeal, sourceStart);
-    const targetKeys = selectionKeys(targetItem.recipeId, sourceMeal, targetStart);
-    const occupiedKeys = new Set([...sourceKeys, ...targetKeys]);
-    const sourceDays = selectionDays(sourceRecipe, targetStart);
-    const targetDays = selectionDays(targetRecipe, sourceStart);
-    const sourceDestinationKeys = sourceDays.map((day) => planKey(day, sourceMeal));
-    const targetDestinationKeys = targetDays.map((day) => planKey(day, sourceMeal));
-    const destinationKeys = [...sourceDestinationKeys, ...targetDestinationKeys];
-    if (new Set(destinationKeys).size !== destinationKeys.length ||
-        sourceDays.length !== selectionDayCount(sourceRecipe) ||
-        targetDays.length !== selectionDayCount(targetRecipe) ||
-        destinationKeys.some((key) => state.plan[key] && !occupiedKeys.has(key))) {
-        showSelectionMessage("Deze kaarten kunnen niet worden gewisseld omdat een meerdaags recept zou overlappen.");
+    const newStart = sourceStart + offset;
+    const sourceKeys = selectionKeys(sourceItem.recipeId, meal, sourceStart);
+    const sourceDays = newStart >= 0 ? selectionDays(sourceRecipe, newStart) : [];
+    if (sourceDays.length !== selectionDayCount(sourceRecipe)) {
+        showSelectionMessage("Deze kaart kan hier niet worden geplaatst omdat een meerdaags recept niet in de week past.");
         return;
     }
-    sourceKeys.forEach((key) => delete state.plan[key]);
-    targetKeys.forEach((key) => delete state.plan[key]);
+    // Every other selection in the way is moved aside. The recipe on the drop cell prefers the dragged position, so a
+    // drop on another card behaves like a swap; other recipes prefer to stay as close as possible to where they were.
+    const targetItem = state.plan[targetKey];
+    const displaced = [];
     sourceDays.forEach((day) => {
-        state.plan[planKey(day, sourceMeal)] = {recipeId: sourceItem.recipeId, sourceDay: targetStart};
+        const key = planKey(day, meal);
+        const item = state.plan[key];
+        if (!item || sourceKeys.includes(key)) return;
+        const originalStart = selectionStartDay(key, item);
+        if (displaced.some((entry) => entry.recipeId === item.recipeId && entry.originalStart === originalStart)) return;
+        const isTarget = key === targetKey && targetItem;
+        displaced.push({
+            recipeId: item.recipeId,
+            originalStart,
+            preferredStart: isTarget ? originalStart - offset : originalStart
+        });
     });
-    targetDays.forEach((day) => {
-        state.plan[planKey(day, sourceMeal)] = {recipeId: targetItem.recipeId, sourceDay: sourceStart};
+    const nextPlan = {...state.plan};
+    sourceKeys.forEach((key) => delete nextPlan[key]);
+    displaced.forEach((entry) => {
+        selectionKeys(entry.recipeId, meal, entry.originalStart).forEach((key) => delete nextPlan[key]);
     });
+    sourceDays.forEach((day) => {
+        nextPlan[planKey(day, meal)] = {recipeId: sourceItem.recipeId, sourceDay: newStart};
+    });
+    for (const entry of displaced) {
+        const recipe = recipeById(entry.recipeId);
+        const count = recipe ? selectionDayCount(recipe) : 1;
+        const starts = DAYS.map((_, day) => day)
+            .filter((start) => {
+                const days = recipe ? selectionDays(recipe, start) : [start];
+                return days.length === count && days.every((day) => !nextPlan[planKey(day, meal)]);
+            })
+            .sort((a, b) => Math.abs(a - entry.preferredStart) - Math.abs(b - entry.preferredStart) || a - b);
+        if (!starts.length) {
+            showSelectionMessage("Deze kaart kan hier niet worden geplaatst omdat er geen ruimte is om de andere recepten te verplaatsen.");
+            return;
+        }
+        const days = recipe ? selectionDays(recipe, starts[0]) : [starts[0]];
+        days.forEach((day) => {
+            nextPlan[planKey(day, meal)] = {recipeId: entry.recipeId, sourceDay: starts[0]};
+        });
+    }
+    state.plan = nextPlan;
     savePlan();
     render();
 }
@@ -337,7 +363,7 @@ function renderPlanner() {
             const cell = document.createElement("div");
             cell.className = "planner-cell";
             cell.addEventListener("dragover", (event) => {
-                if (dragState.sourceKey && planKeyMeal(dragState.sourceKey) === meal && state.plan[planKey(dayIndex, meal)]) {
+                if (dragState.sourceKey && planKeyMeal(dragState.sourceKey) === meal) {
                     event.preventDefault();
                     event.dataTransfer.dropEffect = "move";
                     cell.classList.add("drag-over");

@@ -11,7 +11,8 @@ Recipe data is maintained in the reviewed `public/recipes.json` file. Recipe sou
 reference.
 Only approved recipes are shown and selected by default; the planner provides an explicit option to include all recipes.
 
-Planned recipes can be swapped by dragging one filled slot onto another within the same meal type.
+Planned recipes can be moved by dragging them to another slot of the same meal type. Dropping onto another recipe swaps
+the two; other recipes in the way are moved aside.
 
 Build and run with Docker Desktop:
 
