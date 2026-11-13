@@ -662,8 +662,8 @@
       {
         "raw": "1 stuk ui",
         "amount": 1,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -2391,8 +2391,8 @@
       {
         "raw": "2 uien",
         "amount": 2,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -2508,8 +2508,8 @@
       {
         "raw": "3 uien",
         "amount": 3,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3314,8 +3314,8 @@
       {
         "raw": "2 uien",
         "amount": 2,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3640,8 +3640,8 @@
       {
         "raw": "1 ui",
         "amount": 1,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3988,9 +3988,9 @@
       },
       {
         "raw": "1 zakje rucola (85 gram)",
-        "amount": 1,
-        "unit": "zak",
-        "name": "rucola (85 gram)",
+        "amount": 85,
+        "unit": "gram",
+        "name": "rucola",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -4046,8 +4046,8 @@
       {
         "raw": "2 uien",
         "amount": 2,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -4408,8 +4408,8 @@
       {
         "raw": "1 ui",
         "amount": 1,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -4866,8 +4866,8 @@
       {
         "raw": "2 (rode) uien",
         "amount": 2,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -4979,8 +4979,8 @@
       {
         "raw": "2 (rode) uien",
         "amount": 2,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -5865,8 +5865,8 @@
       {
         "raw": "1 kleine ui",
         "amount": 1,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -6821,8 +6821,8 @@
       {
         "raw": "1 stuk ui",
         "amount": 1,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -6991,7 +6991,7 @@
         "raw": "2 kleine uien",
         "amount": 2,
         "unit": "",
-        "name": "kleine uien",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -7020,10 +7020,10 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "180 gram erwtjes",
+        "raw": "180 gram erwten",
         "amount": 180,
         "unit": "gram",
-        "name": "erwtjes",
+        "name": "erwten",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -7085,10 +7085,10 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "100 gram tuinerwtjes",
+        "raw": "100 gram erwten",
         "amount": 100,
         "unit": "gram",
-        "name": "tuinerwtjes",
+        "name": "erwten",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -7750,8 +7750,8 @@
       {
         "raw": "3 uien",
         "amount": 3,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -8078,8 +8078,8 @@
       {
         "raw": "1 ui",
         "amount": 1,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -8174,8 +8174,8 @@
       {
         "raw": "2 kleine uien",
         "amount": 2,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -8320,8 +8320,8 @@
       {
         "raw": "1 ui",
         "amount": 1,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -8506,8 +8506,8 @@
       {
         "raw": "1 ui",
         "amount": 1,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -8592,8 +8592,8 @@
       {
         "raw": "1 ui",
         "amount": 1,
-        "unit": "stuk",
-        "name": "ui",
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "alternatives": [],
         "category": "Groente en fruit",
@@ -8722,16 +8722,16 @@
       },
       {
         "raw": "250 gram uien",
-        "amount": 250,
-        "unit": "gram",
-        "name": "ui",
+        "amount": 2,
+        "unit": "",
+        "name": "uien",
         "optional": false,
         "alternatives": [],
         "category": "Groente en fruit",
         "componentId": ""
       },
       {
-        "raw": "½ eetlepel bloem",
+        "raw": "halve eetlepel bloem",
         "amount": 10,
         "unit": "gram",
         "name": "bloem",
