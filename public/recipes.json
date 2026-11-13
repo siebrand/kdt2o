@@ -105,7 +105,7 @@
           {
             "raw": "1 tl zout",
             "amount": null,
-            "unit": null,
+            "unit": "",
             "name": "zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
@@ -1156,7 +1156,7 @@
       {
         "raw": "1 lenteui",
         "amount": 1,
-        "unit": null,
+        "unit": "stuk",
         "name": "lenteui",
         "optional": false,
         "category": "Groente en fruit"
@@ -1334,7 +1334,7 @@
           {
             "raw": "1 tl (jozo)zout",
             "amount": null,
-            "unit": null,
+            "unit": "",
             "name": "(jozo)zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
@@ -1493,7 +1493,7 @@
           {
             "raw": "1 tl (jozo)zout",
             "amount": null,
-            "unit": null,
+            "unit": "",
             "name": "(jozo)zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
@@ -1652,7 +1652,7 @@
           {
             "raw": "1 tl (jozo)zout",
             "amount": null,
-            "unit": null,
+            "unit": "",
             "name": "(jozo)zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
@@ -1839,7 +1839,7 @@
       {
         "raw": "1 lenteui",
         "amount": 1,
-        "unit": null,
+        "unit": "stuk",
         "name": "lenteui",
         "optional": false,
         "category": "Groente en fruit"
@@ -2439,7 +2439,7 @@
       {
         "raw": "2 norivellen",
         "amount": 2,
-        "unit": null,
+        "unit": "stuk",
         "name": "norivellen",
         "optional": false,
         "category": "Houdbare producten"
@@ -2765,7 +2765,7 @@
       {
         "raw": "3 lenteui",
         "amount": 3,
-        "unit": null,
+        "unit": "stuk",
         "name": "lenteui",
         "optional": false,
         "category": "Groente en fruit"
@@ -3124,7 +3124,7 @@
       {
         "raw": "2 stengels lenteui",
         "amount": 2,
-        "unit": null,
+        "unit": "stuk",
         "name": "lenteui",
         "optional": false,
         "category": "Groente en fruit"
@@ -3394,7 +3394,7 @@
       {
         "raw": "2 norivellen",
         "amount": 2,
-        "unit": null,
+        "unit": "stuk",
         "name": "norivellen",
         "optional": false,
         "category": "Houdbare producten"
@@ -4152,7 +4152,7 @@
       {
         "raw": "norivellen",
         "amount": 2,
-        "unit": null,
+        "unit": "stuk",
         "name": "norivellen",
         "optional": false,
         "category": "Houdbare producten"
@@ -4160,7 +4160,7 @@
       {
         "raw": "1 klein blikje tomatenpuree",
         "amount": 1,
-        "unit": "blikje",
+        "unit": "blik",
         "name": "tomatenpuree",
         "optional": true,
         "category": "Groente en fruit"
@@ -4270,7 +4270,7 @@
       {
         "raw": "peper en zout",
         "amount": null,
-        "unit": null,
+        "unit": "",
         "name": "peper en zout",
         "optional": true,
         "category": "Kruiden en smaakmakers"
@@ -4922,7 +4922,7 @@
       {
         "raw": "snufje peper",
         "amount": null,
-        "unit": null,
+        "unit": "",
         "name": "peper",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -4930,7 +4930,7 @@
       {
         "raw": "snufje (jozo) zout",
         "amount": null,
-        "unit": null,
+        "unit": "",
         "name": "zout",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -5011,7 +5011,7 @@
       {
         "raw": "2 portobello's",
         "amount": 2,
-        "unit": "stuks",
+        "unit": "stuk",
         "name": "portobello",
         "optional": false,
         "category": "Groente en fruit"
@@ -5061,7 +5061,7 @@
       {
         "raw": "snufje peper",
         "amount": null,
-        "unit": null,
+        "unit": "",
         "name": "peper",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -5069,7 +5069,7 @@
       {
         "raw": "snufje (jozo) zout",
         "amount": null,
-        "unit": null,
+        "unit": "",
         "name": "zout",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -5725,7 +5725,7 @@
       {
         "raw": "paar takjes verse dille",
         "amount": null,
-        "unit": null,
+        "unit": "",
         "name": "paar takjes verse dille",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -5733,7 +5733,7 @@
       {
         "raw": "peper en zout",
         "amount": null,
-        "unit": null,
+        "unit": "",
         "name": "peper en zout",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -6306,7 +6306,7 @@
       {
         "raw": "5 zongedroogde tomaten",
         "amount": 5,
-        "unit": "stuks",
+        "unit": "stuk",
         "name": "zongedroogde tomaten",
         "optional": false,
         "category": "Houdbare producten"
@@ -7935,7 +7935,8 @@
     "method": "Stoofvlees - Snijd de speklap in stukjes en braad deze even aan. Voeg hierna het vlees toe en bak op hoog vuur in een braadpan totdat het mooi bruin is. Er moet geen sap uit het vlees komen. Haal het vlees uit de pan. Pel tijdens het braden de uien en snijd in lange dikke plakjes, pers de knoflook. Fruit dit in de pan met een beetje olijfolie. Schil de wortels en snijd dit in plakjes. Voeg dit bij de uien en bak dit mee. Voeg de bouillon, de tomatenpurree, het scheutje azijn, de verse kruiden, chilivlokken en peper en zout toe aan het vlees in de braadpan. Laat het vlees stoven ca. drie uur op laag vuur en blijf regelmatig roeren. Zorg dat het niet droog kookt, voeg eventueel water toe. Snijd daarna de champignons in dikke plakjes en voeg dit ook toe aan het vlees 10 minuten voordat het vlees opgediend wordt. Snijd de peterselie fijn en strooien voor het opdienen. Het gerecht wordt geserveerd met gepureerde knolselderij en rode kool. Verse rode kool- Snijd of rasp een rode kool fijn. Snijd of rasp een granny smith appel in kleine stukjes. Laat in een grote pan een blokje roomboter smelten op laag vuur. Doe de rode kool en de appel in de pan met de gesmolten boter. Voeg een eetlepel azijn toe. Voeg naar smaak een of meerdere kruidnageltjes toe en een theelepel kaneel. Voeg tot slot 2 kopjes water toe (waar nodig meer water). Doe de deksel op de pan en laat het geheel een uur op laag vuur smoren. Knolselderijpuree - Schil een knolselderij en snijd ‘m in stukken. Zet de knolselderij in een laagje water met een beetje zout en laat 10-15 minuten koken. Giet het water af en stamp de knolselderij tot puree. Naar smaak peper en een klontje roomboter toevoegen.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "approved": false
   },
   {
     "id": "tempeh-met-sesamzaad-en-ei",
@@ -8047,7 +8048,8 @@
     "method": "Snijd de tempeh in reepjes. Pel de uien, snijd ze doormidden en dan in halve ringen. Snijd de paprika doormidden, verwijder de zaadlijsten en snijd dan in reepjes. Rasp de gember. Verwarm een scheut olijfolie in een koekenpan. Bak hierin de ui en paprika in ca. 8 minuten op middelhoog vuur gaar. Pers de knoflook uit boven de pan en voeg de sojasaus, gember en chilivlokken toe. Bak nog eens ca. 2 minuten. Haal het ui- paprikamengsel uit de pan en zet apart. Breek de broccoli in roosjes en hak de stam in plakjes. Kook of stoom de broccoli in ca. 8 minuten gaar. Kook tegelijkertijd de eieren in ca. 8-9 minuten hard. Laat de eieren schrikken onder koud water, pel ze en snijd ze in partjes. Doe ondertussen nog een scheutje olijfolie in de pan en roerbak de tempeh reepjes in 4 minuten op middelhoog vuur. Voeg vervolgens het ui-paprika mengsel toe, samen met de broccoli, taugé en sesamzaadjes. Roerbak alles nog heel kort totdat de taugé gaar is, maar nog wel knapperig. Halveer vlak voor het serveren een avocado, verwijder de pit en snijd het vruchtvlees in blokjes. Voeg deze op het laatste moment toe aan het gerecht, samen met de partjes gekookt ei.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "approved": false
   },
   {
     "id": "viscurry-met-sperziebonen",
@@ -8151,7 +8153,8 @@
     "method": "Snijd de gember, rode peper en ui in stukjes en doe in een hoge kom. Verwijder de zaadjes en zaadlijsten van de rode peper als je niet van heel pittig houdt (bewaar een paar ringetjes voor de garnering). Pel de knoflook en voeg toe. Hak de koriander met stengel en al grof en voeg toe. Rasp de schil van de limoen en voeg toe. Snijd de limoen daarna in tweeën en knijp het sap boven de kom uit. Voeg tot slot de vissaus toe en maak er met de staafmixer een currypasta van. Snijd de witvis in blokjes van 2 bij 2 centimeter. Verhit de olijfolie in een diepe koekenpan. Bak hierin de currypasta op middelhoog vuur in ca. 2 minuten tot deze gaar bubbelen, blijf goed roeren. Voeg de kokosmelk en de visblokjes toe, breng aan de kook en draai het vuur daarna laag. Laat de curry ca. 8 minuten pruttelen. Snijd ondertussen de uiteinde van de sperziebonen eraf. Doe de sperziebonen in een pan en zet net onder water. Kook de sperziebonen in ca. 8 minuten beetgaar. Garneer de viscurry met de ringetjes rode peper en serveer met sperziebonen Tip: Koop ingevroren witte vis.",
     "diet": [
       "vis"
-    ]
+    ],
+    "approved": false
   },
   {
     "id": "witte-vis-met-kokoskerriesaus",
@@ -8273,7 +8276,8 @@
     "method": "Verwarm de oven voor op 180 graden. Schil en rasp de gember. Pel en snipper de ul. Doe een scheutje olijfolie in de pan op een zacht vuur en fruit het uitje hierin zachtjes. Voeg de uitgeperste knoflook, kerriepoeder en 2 el gerapste verse gember toe. Roer het geheel goed door. Voeg vervolgens de kokosmelk en een beetje (jozo)zout toe. Zorg dat alles goed gemengd is. Leg de vis in de schaal en schenk het kerrie-kokosmengsel over de vis. Bak het geheel gaar in ongeveer 20 tot 50 minuten. Als de vis bijna klaar is, was en snijd dan de Chinese kool of paksoi. Doe een klontje boter of olijfolie in de pan en 1 el geraspte gember en roerbak de paksoi 1 minuut. Voeg vervolgens de cashewnoten, sojasaus en de tauge toe. Roerbak het geheel nog een paar minuten. Haal de vis uit de oven en leg het op een bord met wat saus en de paksoi/Chineeskool-taugé. Tip: Koop ingevroren witte vis.",
     "diet": [
       "vis"
-    ]
+    ],
+    "approved": false
   },
   {
     "id": "zalm-in-mosterdsaus",
@@ -8379,7 +8383,8 @@
     "method": "Verwarm de oven voor op 180 graden Celsius. Snijd de venkel in heel dunne plakken. Snijd 3 el peterselie en het venkelgroen fijn. Schep dit door elkaar. Voeg vervolgens de uitgeperste knoflook en wat peper en (jozo)zout toe. Schenk er vervolgens een flinke scheut olijfolie over en zet in de oven voor 30 minuten. Snijd de ui fijn en bak zachtjes gaar met wat boter of olijfolie en 1 el peterselie. Voeg hier de mosterd, slagroom en bouillon aan toe. Laat het inkoken tot de helft van het vocht verdampt is. Laat de saus inkoken tot deze dikker is. Breng het geheel op smaak met peper en (jozo)zout. Verhit intussen een grillpan op hoog vuur. Bestrijk de zalmfilet aan beide kanten met olijfolie en peper. Leg de zalm in de grillpan en bak deze in circa 6 minuten op middelhoog vuur tot er mooie bruine strepen ontstaan, keer ze halverwege de baktijd. Schep de saus op (warme) borden en leg de zalmfilet erop. Serveer de vis met de venkel en eventueel restjes groenten. Tip: Koop ingevroren zalm i.p.v. de zalmmoot. Tip: Liever zonder oven? Bak de venkel met de uitgeperste knoflook, peterselie, peper en (jozo)zout in de pan met een scheutje olijfolie.",
     "diet": [
       "vis"
-    ]
+    ],
+    "approved": false
   },
   {
     "id": "zalm-met-zuurkool-en-veldsla",
@@ -8475,7 +8480,8 @@
     "method": "Laat de zuurkool uitlekken. Was de prei en snijd deze fijn. Fruit deze zacht in de olijfolie. Snijd de zalm in blokjes. Bak de vis samen met de prei gedurende een paar minuten, schep af en toe om. Voeg de zuurkool toe en bak het geheel nog even goed door. Was en droog de veldsla en verwijder eventuele worteltjes. Rasp de wortel en doe dit door de veldsla. Hak de walnoten grof. Strooi deze over de sla. Meng de olie, het citroensap en de mosterd tot een dressing en serveer dit bij de salade. Tip: Vervang de verse wilde zalm voor diepvries zalm. Tip: Vervang de walnoten door de ongebrande notenmix of laat ze weg.",
     "diet": [
       "vis"
-    ]
+    ],
+    "approved": false
   },
   {
     "id": "zuurkoolpotje-met-gehakt",
@@ -8579,7 +8585,8 @@
     "method": "Verwarm de oven voor op 180 graden. Schil de knolselderij en pastinaak. Snijd in grove stukken. Doe de knolselderij en pastinaak in een pan en zet het net onder water. Breng aan de kook en kook dit in circa 15 minuten gaar. Snipper de ui en bak deze zachtjes in de pan met wat olijfolie tot de ui glazig is. Voeg vervolgens het gehakt, de knoflook, de kruiden, mosterd, peper en (jozo)zout toe en laat het geheel gaar worden. Giet de knolselderij en pastinaak af als het geheel gaar is en vang het kookvocht op. Stamp er een puree van en voeg net zoveel kookvocht toe dat het een zachte puree wordt. Laat de zuurkool uitlekken en roer door de puree. Vet de ovenschaal in met een scheutje olijfolie. Schep een derde van de puree in de ovenschaal en verdeel gelijkmatig. Schep de helft van het gehaktmengsel erover. Schep een derde van de puree erover en dan weer een laag gehaktmengsel. Eindig met de rest van de puree. Rasp de kaas en verdeel dit als laatste over de bovenkant. Bak de schotel in circa 8 minuten in de oven tot de kaas gesmolten is. Tip: Pureer de knolselderij en pastinaak met de staafmixer of keukenmachine. Let op: door aanpassingen in het recept kunnen de hoeveelheden in het filmpje verschillen met die van het recept. Volg hierin altijd het recept voor juiste hoeveelheden.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "approved": false
   },
   {
     "id": "groentesoep-met-aardappel-en-balletjes",
