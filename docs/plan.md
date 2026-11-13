@@ -32,6 +32,8 @@ The following features are complete and have been moved below the open work:
 
 - [x] Seven-day breakfast, lunch, and dinner planner.
 - [x] One-click random filling of empty meal slots, including multi-day rules.
+- [x] Drag-and-drop swapping of planned recipes within the same meal type, with
+  overlap protection for multi-day recipes.
 - [x] Shareable menu links that restore a plan from the URL without server storage.
 - [x] Single-recipe search by meal with direct PDF generation.
 - [x] Recipe selection at most once per week, with valid empty meal slots.
