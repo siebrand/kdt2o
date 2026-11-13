@@ -7037,8 +7037,8 @@
       },
       {
         "raw": "4 el sesamzaadjes",
-        "amount": 4,
-        "unit": "el",
+        "amount": 32,
+        "unit": "gram",
         "name": "sesamzaad",
         "optional": false,
         "category": "Houdbare producten"
@@ -8663,7 +8663,7 @@
         "raw": "1 eetlepel olijfolie",
         "amount": 15,
         "unit": "ml",
-        "name": "olijfolie",
+        "name": "extra vierge olijfolie",
         "optional": false,
         "alternatives": [],
         "category": "Houdbare producten",
