@@ -1,29 +1,55 @@
-# Changelog
+# Wijzigingen
 
-All notable changes to this project are documented here.
+De belangrijkste verbeteringen voor de planner en recepten.
 
-## 2026-11-16
+## 16 november 2026
 
-- Removed the option to include unapproved recipes; the planner now only shows approved recipes.
-- Aligned `schemas/schema.json` with the recipe data and added a pre-commit hook, also run in CI, that validates
-  `public/recipes.json`.
-- Attached shared subrecipes only by `componentId`, so a recipe that merely mentions granola no longer adds a granola
-  batch to the shopping list, and defined the nut bread once.
-- Removed the recipe review page `all-recipes.html`; recipe data is now checked by the validator.
-- Added browser smoke tests with Playwright, run in CI, for loading, planning, the shopping list, and the PDF.
-- Consolidated the agent guidance into `AGENTS.md`, written in ASD-STE100 Simplified Technical English, and removed the
-  outdated `docs/llm-context.md` and `docs/user-test-improvements.md`.
-- Reviewed and corrected recipe data: shopping units, ingredient names, amounts, portions, diet labels, and timings.
+- De planner gebruikt alleen goedgekeurde recepten.
+- Bij alle recepten staat welk keukengerei je nodig hebt. Bij sommige ontbijtgerechten staat welke
+  voorbereiding je de dag ervoor kunt doen.
+- Ingrediënten, hoeveelheden, dieetinformatie en bereidingstijden zijn nagekeken. Gedeelde
+  receptonderdelen worden correct op de boodschappenlijst verwerkt.
 
-## 2026-11-04
+## 13 november 2026
 
-- Published the static site through GitHub Pages with automatic deployment from `main`.
-- Added optional infographic pages to the planning PDF.
-- Added shared subrecipes, preparation times, recipe approval filtering, and reviewed recipe data updates.
-- Removed obsolete extractor tests, CI steps, PDF/OCR tooling, and Python dependency automation after the extractor was
-  retired.
+- Meerdaagse recepten verplaats je als één geheel. Andere recepten schuiven zo nodig mee.
 
-## 2026-11-03
+## 11 november 2026
 
-- Added recipe subrecipe support and shared flax-cracker batch handling.
-- Added browser-generated shopping-list and recipe PDF improvements.
+- Receptgegevens en hoeveelheden zijn bijgewerkt voor duidelijkere bereiding en boodschappen.
+
+## 10 november 2026
+
+- De vegetarische shoarmaschotel is toegevoegd.
+- Recepten zijn ingedeeld op dieetwensen en programma's, zodat je makkelijker een passend recept vindt.
+
+## 9 november 2026
+
+- Gedeelde weekmenu's krijgen kortere koppelingen.
+- Je kunt één recept zoeken zonder eerst een maaltijd te kiezen.
+
+## 8 november 2026
+
+- Optionele ingrediënten zijn apart herkenbaar op de boodschappenlijst.
+- Receptvarianten en gedeelde receptonderdelen worden beter verwerkt.
+
+## 6 november 2026
+
+- Ingrediënten en hoeveelheden zijn bijgewerkt, zodat de boodschappenlijst nauwkeuriger is.
+
+## 5 november 2026
+
+- Vul lege momenten in je weekmenu willekeurig op en deel je menu via een koppeling.
+- Zoek één recept en maak er een PDF van.
+- De boodschappenlijst telt ingrediënten nauwkeuriger samen en rekent alternatieven niet dubbel.
+
+## 4 november 2026
+
+- Recepten kunnen een bereidingstijd hebben.
+- Gedeelde receptonderdelen, zoals lijnzaadcrackers, worden correct verwerkt.
+
+## 3 november 2026
+
+- De PDF van de weekplanning geeft een overzicht per dag en een aparte pagina voor elk recept.
+- Recepten met gedeelde onderdelen en gerechten voor meerdere dagen worden goed verwerkt in de
+  planning en de boodschappenlijst.

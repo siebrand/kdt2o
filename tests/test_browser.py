@@ -130,12 +130,28 @@ def test_planner_shows_only_approved_recipes(page: Page, server_url: str, path: 
 @pytest.mark.parametrize("path", ["", BASE_PATH])
 def test_changelog_page_loads(page: Page, server_url: str, path: str):
     page.goto(f"{server_url}{path}/changelog.html")
-    expect(page.locator("#changelog-content h1")).to_have_text("Changelog")
+    expect(page.locator("#changelog-content h1")).to_have_text("Wijzigingen")
     expect(page.locator("#changelog-content")).to_contain_text(
-        "All notable changes to this project are documented here.")
+        "De belangrijkste verbeteringen voor de planner en recepten.")
+    assert page.locator("#changelog-content h2").all_inner_texts() == [
+        "16 november 2026",
+        "13 november 2026",
+        "11 november 2026",
+        "10 november 2026",
+        "9 november 2026",
+        "8 november 2026",
+        "6 november 2026",
+        "5 november 2026",
+        "4 november 2026",
+        "3 november 2026",
+    ]
     entries = page.locator("#changelog-content li").all_inner_texts()
-    entry = next(item for item in entries if item.startswith("Consolidated the agent guidance"))
-    assert "outdated docs/llm-context.md and docs/user-test-improvements.md." in " ".join(entry.split())
+    entry = next(item for item in entries if item.startswith("Bij 51 recepten"))
+    normalized_entry = " ".join(entry.split())
+    assert (
+        "Bij sommige ontbijtgerechten staat welke voorbereiding je de dag ervoor kunt doen."
+        in normalized_entry
+    )
 
 
 def test_random_fill_persists_and_clears(page: Page, server_url: str):
