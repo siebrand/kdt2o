@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wijzigingen | Kitano meal planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .markdown-body {
+            max-width: 760px;
+            line-height: 1.6;
+        }
+
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3 {
+            color: #183f32;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .markdown-body ul,
+        .markdown-body ol {
+            padding-left: 1.5rem;
+        }
+
+        .markdown-body code {
+            background: #f2f4ef;
+            border-radius: 0.35rem;
+            padding: 0.1rem 0.35rem;
+            font-size: 0.95em;
+        }
+
+        .markdown-body a {
+            color: #285d4b;
+        }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="brand-mark" aria-label="Kitano ICT">Kitano <span>ICT</span></div>
+    <p class="eyebrow">Wijzigingen</p>
+    <h1>Ontwikkelgeschiedenis</h1>
+</header>
+
+<main class="container privacy-content">
+    <article id="changelog-content" class="markdown-body" aria-live="polite">Laden…</article>
+</main>
+
+<footer class="site-footer">
+    <a href="index.html">Terug naar de planner</a>
+    <span aria-hidden="true">·</span>
+    <span>Uitgever: <a href="https://kitano.nl/" rel="noopener noreferrer">Kitano ICT</a></span>
+    <span aria-hidden="true">·</span>
+    <a class="source-link" href="https://github.com/siebrand/kdt2o" rel="noopener noreferrer">
+        <svg class="github-icon" width="18" height="18" aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+            <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.3.7 1 .7 1.9v2.8c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/>
+        </svg>
+        Broncode op GitHub
+    </a>
+</footer>
+
+<script>
+    const changelogUrl = "https://raw.githubusercontent.com/siebrand/kdt2o/main/CHANGELOG.md";
+    const target = document.getElementById("changelog-content");
+
+    function escapeHtml(value) {
+        return value
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+    }
+
+    function renderInlineMarkdown(value) {
+        let html = escapeHtml(value);
+        html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
+        html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+        html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_, text, url) => '<a href="' + url + '" rel="noopener noreferrer">' + text + '</a>');
+        return html;
+    }
+
+    function renderMarkdown(markdown) {
+        const lines = markdown.split(/\r?\n/);
+        const output = [];
+        let listItems = [];
+
+        function flushList() {
+            if (!listItems.length) return;
+            output.push("<ul>" + listItems.map((item) => "<li>" + renderInlineMarkdown(item) + "</li>").join("") + "</ul>");
+            listItems = [];
+        }
+
+        for (const line of lines) {
+            if (!line.trim()) {
+                flushList();
+                continue;
+            }
+
+            if (line.startsWith("## ")) {
+                flushList();
+                output.push("<h2>" + renderInlineMarkdown(line.slice(3)) + "</h2>");
+                continue;
+            }
+
+            if (line.startsWith("# ")) {
+                flushList();
+                output.push("<h1>" + renderInlineMarkdown(line.slice(2)) + "</h1>");
+                continue;
+            }
+
+            if (/^- /.test(line)) {
+                listItems.push(line.replace(/^-\s*/, ""));
+                continue;
+            }
+
+            flushList();
+            output.push("<p>" + renderInlineMarkdown(line) + "</p>");
+        }
+
+        flushList();
+        return output.join("");
+    }
+
+    async function loadChangelog() {
+        try {
+            const response = await fetch(changelogUrl, {cache: "no-store"});
+            if (!response.ok) {
+                throw new Error("Changelog not available");
+            }
+            const markdown = await response.text();
+            target.innerHTML = renderMarkdown(markdown);
+        } catch (error) {
+            target.textContent = "De changelog kon niet worden geladen.";
+        }
+    }
+
+    loadChangelog();
+</script>
+</body>
+</html>

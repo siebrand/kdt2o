@@ -1,76 +1,83 @@
 <!doctype html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Plan ontbijt, lunch en diner voor een week.">
-  <title>Weekplanner | Voeding Leeft</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" crossorigin="anonymous"></script>
-  <script defer src="recipe-parser.js"></script>
-  <script defer src="app.js?v=5"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Plan ontbijt, lunch en diner voor een week.">
+    <title>Weekplanner | Voeding Leeft</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" crossorigin="anonymous"></script>
+    <script defer src="recipe-parser.js"></script>
+    <script defer src="app.js?v=5"></script>
 </head>
 <body>
-  <header class="site-header">
+<header class="site-header">
     <div class="brand-mark" aria-label="Voeding Leeft">Voeding <span>Leeft</span></div>
     <p class="eyebrow">Weekplanner</p>
     <h1>Plan je maaltijden voor de hele week</h1>
     <p class="intro">Kies recepten voor ontbijt, lunch en diner. Lege momenten zijn helemaal goed.</p>
-  </header>
-  <main class="container">
+</header>
+<main class="container">
     <section class="toolbar" aria-labelledby="toolbar-title">
-      <div>
-        <h2 id="toolbar-title">Jouw planning</h2>
-        <p id="status" role="status">Recepten worden geladen…</p>
-      </div>
-      <div class="actions">
-        <button id="random-fill" class="button" type="button">Willekeurig vullen</button>
-        <button id="copy-menu-link" class="button" type="button">Koppeling naar menu kopiëren</button>
-        <button id="clear-plan" class="button button-secondary" type="button">Planning wissen</button>
-        <button id="show-shopping-list" class="button" type="button" disabled>Afronden en boodschappenlijst bekijken</button>
-      </div>
-      <label class="recipe-visibility-toggle"><input id="show-all-recipes" type="checkbox" autocomplete="off"> Alle recepten weergeven</label>
+        <div>
+            <h2 id="toolbar-title">Jouw planning</h2>
+            <p id="status" role="status">Recepten worden geladen…</p>
+        </div>
+        <div class="actions">
+            <button id="random-fill" class="button" type="button">Willekeurig vullen</button>
+            <button id="copy-menu-link" class="button" type="button">Koppeling naar menu kopiëren</button>
+            <button id="clear-plan" class="button button-secondary" type="button">Planning wissen</button>
+            <button id="show-shopping-list" class="button" type="button" disabled>Afronden en boodschappenlijst
+                bekijken
+            </button>
+        </div>
+        <label class="recipe-visibility-toggle"><input id="show-all-recipes" type="checkbox" autocomplete="off"> Alle
+            recepten weergeven</label>
     </section>
     <section id="planner" class="planner" aria-label="Weekplanning"></section>
     <section id="single-recipe-search" class="recipe-panel" aria-labelledby="single-recipe-search-title">
-      <div class="panel-heading">
-        <h2 id="single-recipe-search-title">Eén recept zoeken</h2>
-        <label>Maaltijd
-          <select id="single-recipe-category">
-            <option value="" selected>Alle maaltijden</option>
-            <option value="ontbijt">Ontbijt</option>
-            <option value="lunch">Lunch</option>
-            <option value="diner">Diner</option>
-          </select>
-        </label>
-        <label>Zoeken <input id="single-recipe-query" type="search" placeholder="Bijvoorbeeld omelet"></label>
-      </div>
-      <div id="single-recipe-results" class="recipe-options"></div>
+        <div class="panel-heading">
+            <h2 id="single-recipe-search-title">Eén recept zoeken</h2>
+            <label>Maaltijd
+                <select id="single-recipe-category">
+                    <option value="" selected>Alle maaltijden</option>
+                    <option value="ontbijt">Ontbijt</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="diner">Diner</option>
+                </select>
+            </label>
+            <label>Zoeken <input id="single-recipe-query" type="search" placeholder="Bijvoorbeeld omelet"></label>
+        </div>
+        <div id="single-recipe-results" class="recipe-options"></div>
     </section>
     <section id="shopping-list-view" class="shopping-list-view" aria-labelledby="shopping-list-title" hidden>
-      <h2 id="shopping-list-title">Boodschappenlijst</h2>
-      <p>Controleer de lijst en download daarna de PDF voor je volledige weekplanning.</p>
-      <button id="download-pdf" class="button" type="button" disabled>PDF downloaden</button>
-      <div id="shopping-list-items"></div>
+        <h2 id="shopping-list-title">Boodschappenlijst</h2>
+        <p>Controleer de lijst en download daarna de PDF voor je volledige weekplanning.</p>
+        <button id="download-pdf" class="button" type="button" disabled>PDF downloaden</button>
+        <div id="shopping-list-items"></div>
     </section>
     <section id="recipe-panel" class="recipe-panel" aria-labelledby="recipe-title" hidden>
-      <div class="panel-heading">
-        <h2 id="recipe-title">Recept kiezen</h2>
-        <label>Zoeken <input id="search" type="search" placeholder="Bijvoorbeeld courgette"></label>
-      </div>
-      <div id="recipe-options" class="recipe-options"></div>
+        <div class="panel-heading">
+            <h2 id="recipe-title">Recept kiezen</h2>
+            <label>Zoeken <input id="search" type="search" placeholder="Bijvoorbeeld courgette"></label>
+        </div>
+        <div id="recipe-options" class="recipe-options"></div>
     </section>
-  </main>
-  <div id="notifications" class="notifications" aria-live="assertive" aria-atomic="true"></div>
-  <footer class="site-footer">
+</main>
+<div id="notifications" class="notifications" aria-live="assertive" aria-atomic="true"></div>
+<footer class="site-footer">
     <a href="privacy.html">Privacybeleid</a>
     <span aria-hidden="true">·</span>
-    <span>Uitgever: <a href="mailto:info@kitano.nl">Kitano ICT</a></span>
+    <a href="changelog.html">Wijzigingen</a>
+    <span aria-hidden="true">·</span>
+    <span>Uitgever: <a href="https://kitano.nl/" rel="noopener noreferrer">Kitano ICT</a></span>
     <span aria-hidden="true">·</span>
     <a class="source-link" href="https://github.com/siebrand/kdt2o" rel="noopener noreferrer">
-      <svg class="github-icon" width="18" height="18" aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.3.7 1 .7 1.9v2.8c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
-      Broncode op GitHub
+        <svg class="github-icon" width="18" height="18" aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+            <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.3.7 1 .7 1.9v2.8c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/>
+        </svg>
+        Broncode op GitHub
     </a>
-  </footer>
+</footer>
 </body>
 </html>

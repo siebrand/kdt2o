@@ -5,8 +5,6 @@
 These are the remaining planned improvements. They are intentionally kept at the
 top of this document.
 
-- Link the changelog from the application footer.
-- Update the link to point to https://kitano.nl/ instead of opening email.
 - Add dedicated security and dependency workflows for action, dependency,
   Docker-image, and link scanning.
 - Add a release process with versioned release notes, an SBOM, and a tested
@@ -69,6 +67,8 @@ The following features are complete and have been moved below the open work:
 - [x] GitHub Pages deployment with relative asset paths for the `/kdt2o/`
   project site.
 - [x] Docker/Nginx container build for local and alternative hosting.
+- [x] Footer links to the deployed changelog page and the publisher homepage at
+  https://kitano.nl/.
 
 ## Rejected or superseded initial plans
 
