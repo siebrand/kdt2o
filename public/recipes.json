@@ -8637,7 +8637,7 @@
   {
     "id": "groentesoep-met-aardappel-en-balletjes",
     "title": "Groentesoep met aardappel en balletjes",
-    "approved": false,
+    "approved": true,
     "category": "diner",
     "portions": 2,
     "multiDay": false,
@@ -8668,17 +8668,7 @@
         "unit": "gram",
         "name": "rundergehakt",
         "optional": false,
-        "alternatives": [
-          {
-            "raw": "wat stukjes omelet",
-            "amount": null,
-            "unit": "",
-            "name": "omelet",
-            "optional": false,
-            "category": "Zuivel en eieren",
-            "componentId": ""
-          }
-        ],
+        "alternatives": [],
         "category": "Vlees, vis en vleesvervangers",
         "componentId": ""
       },
@@ -8694,8 +8684,8 @@
       },
       {
         "raw": "snufje knoflookpoeder",
-        "amount": 1,
-        "unit": "gram",
+        "amount": 0.25,
+        "unit": "tl",
         "name": "knoflookpoeder",
         "optional": false,
         "alternatives": [],
@@ -8744,16 +8734,129 @@
       }
     ],
     "components": [],
-    "method": "Snipper de ui. Schil de aardappel en snijd deze in kleine blokjes. Meng het rundergehakt met de peper, het knoflookpoeder en 1 tl paprikapoeder. Rol het gehakt tot kleine balletjes. Verhit de olijfolie in een soeppan en fruit de ui. Voeg de soepgroenten toe en bak kort mee. Voeg de groentebouillon toe en breng aan de kook. Voeg de aardappelblokjes en de gehaktballetjes toe en kook 10 minuten met de deksel op de pan. Breng de soep verder op smaak met peper, knoflookpoeder en ½ tl paprikapoeder. Tip: voor een vegetarische versie kun je het gehakt vervangen door stukjes omelet.",
-    "advanceNotice": "",
-    "days": 0,
+    "method": "Snipper de ui. Schil de aardappel en snijd deze in kleine blokjes. Meng het rundergehakt met de peper, het knoflookpoeder en 1 tl paprikapoeder. Rol het gehakt tot kleine balletjes. Verhit de olijfolie in een soeppan en fruit de ui. Voeg de soepgroenten toe en bak kort mee. Voeg de groentebouillon toe en breng aan de kook. Voeg de aardappelblokjes en de gehaktballetjes toe en kook 10 minuten met de deksel op de pan. Breng de soep verder op smaak met peper, knoflookpoeder en ½ tl paprikapoeder.",
     "equipment": [
       "soeppan"
     ],
     "preparationTime": 25,
-    "ovenTime": 0,
     "diet": [
       "vlees"
+    ],
+    "programs": [
+      "Suikerchallenge"
+    ]
+  },
+  {
+    "id": "groentesoep-met-aardappel-vegetarisch",
+    "title": "Groentesoep met aardappel (vegetarisch)",
+    "approved": true,
+    "category": "diner",
+    "portions": 2,
+    "multiDay": false,
+    "ingredients": [
+      {
+        "raw": "1 ui",
+        "amount": 1,
+        "unit": "",
+        "name": "uien",
+        "optional": false,
+        "alternatives": [],
+        "category": "Groente en fruit",
+        "componentId": ""
+      },
+      {
+        "raw": "100 g aardappel (vastkokend)",
+        "amount": 100,
+        "unit": "gram",
+        "name": "aardappel",
+        "optional": false,
+        "alternatives": [],
+        "category": "Groente en fruit",
+        "componentId": ""
+      },
+      {
+        "raw": "3 eieren",
+        "amount": 3,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "alternatives": [],
+        "category": "Zuivel en eieren",
+        "componentId": ""
+      },
+      {
+        "raw": "peper naar smaak",
+        "amount": null,
+        "unit": "",
+        "name": "peper",
+        "optional": false,
+        "alternatives": [],
+        "category": "Kruiden en smaakmakers",
+        "componentId": ""
+      },
+      {
+        "raw": "snufje knoflookpoeder",
+        "amount": 0.25,
+        "unit": "tl",
+        "name": "knoflookpoeder",
+        "optional": false,
+        "alternatives": [],
+        "category": "Kruiden en smaakmakers",
+        "componentId": ""
+      },
+      {
+        "raw": "1½ theelepel paprikapoeder",
+        "amount": 1.5,
+        "unit": "tl",
+        "name": "paprikapoeder",
+        "optional": false,
+        "alternatives": [],
+        "category": "Kruiden en smaakmakers",
+        "componentId": ""
+      },
+      {
+        "raw": "2 eetlepels olijfolie",
+        "amount": 30,
+        "unit": "ml",
+        "name": "extra vierge olijfolie",
+        "optional": false,
+        "alternatives": [],
+        "category": "Houdbare producten",
+        "componentId": ""
+      },
+      {
+        "raw": "400 g voorgesneden soepgroenten",
+        "amount": 400,
+        "unit": "gram",
+        "name": "soepgroenten",
+        "optional": false,
+        "alternatives": [],
+        "category": "Groente en fruit",
+        "componentId": ""
+      },
+      {
+        "raw": "750 ml groentebouillon minder zout",
+        "amount": 750,
+        "unit": "ml",
+        "name": "groentebouillon",
+        "optional": false,
+        "alternatives": [],
+        "category": "Houdbare producten",
+        "componentId": ""
+      }
+    ],
+    "components": [],
+    "method": "Snipper de ui. Schil de aardappel en snijd deze in kleine blokjes. Klop de eieren los met de peper, het knoflookpoeder en 1 tl paprikapoeder. Verhit 1 eetlepel olijfolie in een koekenpan en bak er op middelhoog vuur in circa 4 minuten een omelet van. Laat de omelet iets afkoelen en snijd deze in stukjes. Verhit de rest van de olijfolie in een soeppan en fruit de ui. Voeg de soepgroenten toe en bak kort mee. Voeg de groentebouillon toe en breng aan de kook. Voeg de aardappelblokjes toe en kook 10 minuten met de deksel op de pan. Voeg de stukjes omelet toe en warm ze kort mee. Breng de soep verder op smaak met peper, knoflookpoeder en ½ tl paprikapoeder.",
+    "equipment": [
+      "soeppan",
+      "koekenpan"
+    ],
+    "preparationTime": 25,
+    "diet": [
+      "vegetarisch"
+    ],
+    "programs": [
+      "Suikerchallenge"
     ]
   },
   {
