@@ -2152,20 +2152,10 @@
       },
       {
         "raw": "10 zwarte olijven",
-        "amount": 10,
-        "unit": "",
-        "name": "zwarte olijf",
+        "amount": 40,
+        "unit": "gram",
+        "name": "olijven",
         "optional": false,
-        "alternatives": [
-          {
-            "raw": "10 groene olijven",
-            "amount": 10,
-            "unit": "",
-            "name": "groene olijf",
-            "optional": false,
-            "category": "Houdbare producten"
-          }
-        ],
         "category": "Houdbare producten"
       },
       {
