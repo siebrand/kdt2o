@@ -8206,14 +8206,6 @@
     ],
     "ingredients": [
       {
-        "raw": "3 el gember (geraspt)",
-        "amount": 30,
-        "unit": "gram",
-        "name": "gember",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
         "raw": "2 kleine uien",
         "amount": 2,
         "unit": "",
@@ -8246,6 +8238,14 @@
         "category": "Kruiden en smaakmakers"
       },
       {
+        "raw": "3 el gember (geraspt)",
+        "amount": 30,
+        "unit": "gram",
+        "name": "gember",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
         "raw": "200 ml kokosmelk",
         "amount": 200,
         "unit": "ml",
@@ -8262,7 +8262,7 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "400 gram witvis vis (koolvis/scholfilet/kabeljauw, geen pangasius)",
+        "raw": "400 gram witte vis (bijvoorbeeld koolvis/ scholfilet of kabeljauw) liever geen pangasius",
         "amount": 400,
         "unit": "gram",
         "name": "witvis  (koolvis/scholfilet/kabeljauw)",
@@ -8304,19 +8304,21 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "5 el sojasaus",
-        "amount": 75,
+        "raw": "3 el sojasaus",
+        "amount": 45,
         "unit": "ml",
         "name": "sojasaus",
         "optional": false,
         "category": "Houdbare producten"
       }
     ],
-    "method": "Verwarm de oven voor op 180 graden. Schil en rasp de gember. Pel en snipper de ul. Doe een scheutje olijfolie in de pan op een zacht vuur en fruit het uitje hierin zachtjes. Voeg de uitgeperste knoflook, kerriepoeder en 2 el gerapste verse gember toe. Roer het geheel goed door. Voeg vervolgens de kokosmelk en een beetje (jozo)zout toe. Zorg dat alles goed gemengd is. Leg de vis in de schaal en schenk het kerrie-kokosmengsel over de vis. Bak het geheel gaar in ongeveer 20 tot 50 minuten. Als de vis bijna klaar is, was en snijd dan de Chinese kool of paksoi. Doe een klontje boter of olijfolie in de pan en 1 el geraspte gember en roerbak de paksoi 1 minuut. Voeg vervolgens de cashewnoten, sojasaus en de tauge toe. Roerbak het geheel nog een paar minuten. Haal de vis uit de oven en leg het op een bord met wat saus en de paksoi/Chineeskool-taugé. Tip: Koop ingevroren witte vis.",
+    "method": "Verwarm de oven voor op 180 graden celsius. Pel en snipper de ui. Doe een scheutje extra vierge olijfolie in een pan op een zacht vuur en fruit het uitje hierin. Voeg de uitgeperste knoflook, kerriepoeder en 2 el geraspte gember toe en bak een paar minuten mee. Roer het geheel goed door. Voeg vervolgens de kokosmelk en een snufje (jozo)zout toe. Zorg dat alles goed gemengd is. Leg de vis in de schaal en schenk de saus over de vis. Bak het geheel gaar in ongeveer 20 tot 30 minuten. Als de vis bijna klaar is, was en snijd dan de Chinese kool of paksoi. Doe een klontje boter of olijfolie in de pan en 1 el geraspte gember en roerbak de paksoi 1 minuut. Voeg vervolgens de cashewnoten, sojasaus en de taugé toe. Roerbak het geheel nog een paar minuten. Haal de vis uit de oven en leg hem op een bord met wat saus en de paksoi/Chinese kool - taugé. Tip: Koop ingevroren witte vis.",
     "diet": [
       "vis"
     ],
-    "approved": false
+    "approved": true,
+    "preparationTime": 15,
+    "ovenTime": 30
   },
   {
     "id": "zalm-in-mosterdsaus",
