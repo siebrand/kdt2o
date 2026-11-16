@@ -55,6 +55,12 @@ schema cannot express, such as unique IDs and resolvable component references.
 The CI workflow runs the same hook, so invalid data cannot reach `main`
 unnoticed.
 
+Shared subrecipes, such as `lijnzaadcrackers`, `granola`, and `notenbrood`,
+are defined once in one recipe's `components`. When the browser loads the
+data, it copies a shared subrecipe into every recipe whose main or daily-variant
+ingredients reference it by `componentId`. Mentions in recipe text or in
+alternatives do not attach a subrecipe.
+
 ## Browser boundaries
 
 The only persistence mechanism is local browser storage. Clearing site data

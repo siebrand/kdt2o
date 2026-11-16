@@ -46,8 +46,10 @@ Ingredients may also have:
 - `alternatives`: an array of alternative ingredient objects with the same
   required fields. Preserve explicit substitutions as alternatives; do not put
   them into the main ingredient name.
-- `componentId`: the `id` of a component in the same recipe, or of the shared
-  `lijnzaadcrackers` or `granola` component.
+- `componentId`: the `id` of a component in the same recipe, or of a shared
+  component defined in another recipe, such as `lijnzaadcrackers`, `granola`,
+  or `notenbrood`. Only a `componentId` on a main or daily-variant ingredient
+  attaches a shared component; do not copy shared components into recipes.
 
 ## Components
 

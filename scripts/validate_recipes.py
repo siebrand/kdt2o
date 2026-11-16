@@ -23,8 +23,6 @@ ROOT = Path(__file__).resolve().parent.parent
 RECIPES = ROOT / "public" / "recipes.json"
 SCHEMA = ROOT / "schemas" / "schema.json"
 
-# Components that app.js copies into every recipe that mentions them.
-SHARED_COMPONENT_IDS = {"lijnzaadcrackers", "granola"}
 HTML_TAG = re.compile(r"<\s*/?\s*[a-zA-Z][^>]*>")
 
 
@@ -75,11 +73,12 @@ def rule_errors(recipes: list) -> list[str]:
     errors = []
     seen_ids: set[str] = set()
     seen_titles: set[str] = set()
+    # app.js copies a component defined in one recipe into every recipe that
+    # references it by componentId without defining it.
     defined_shared = {
         component.get("id")
         for recipe in recipes
         for component in recipe.get("components", [])
-        if component.get("id") in SHARED_COMPONENT_IDS
     }
     for recipe in recipes:
         recipe_id = recipe.get("id", "?")

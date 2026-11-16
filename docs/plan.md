@@ -43,6 +43,8 @@ The following features are complete and have been moved below the open work:
   shopping-list aggregation.
 - [x] Shared flax-cracker subrecipes, including batch calculation and equipment.
 - [x] Shared granola subrecipes, with one granola preparation per weekly list.
+- [x] Shared subrecipes defined once in `public/recipes.json` and attached only
+  to recipes whose ingredients reference them by `componentId`.
 - [x] Recipe preparation-time fields shown on recipe cards and in PDFs.
 - [x] JSON Schema for `public/recipes.json` in `schemas/schema.json`, enforced
   by a pre-commit hook running `scripts/validate_recipes.py`, locally and in CI.

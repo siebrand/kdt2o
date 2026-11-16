@@ -301,27 +301,25 @@ function addPreparationTime(recipe) {
 }
 
 function attachSharedRecipeComponents(recipes) {
-    const flaxTemplate = recipes.find((recipe) => recipe.components?.some((component) => component.id === "lijnzaadcrackers"));
-    const granolaTemplate = recipes.find((recipe) => recipe.components?.some((component) => component.id === "granola"));
-    if (!flaxTemplate && !granolaTemplate) return recipes;
-    const flaxComponent = flaxTemplate?.components.find((item) => item.id === "lijnzaadcrackers");
-    const granolaComponent = granolaTemplate?.components.find((item) => item.id === "granola");
+    const sharedComponents = new Map();
+    recipes.forEach((recipe) => (recipe.components || []).forEach((component) => {
+        if (!sharedComponents.has(component.id)) sharedComponents.set(component.id, component);
+    }));
     return recipes.map((recipe) => {
         const components = [...(recipe.components || [])];
-        if (flaxComponent && /lijnzaad\s*cracker(?:s|\(s\))?/i.test(JSON.stringify(recipe)) && !components.some((item) => item.id === "lijnzaadcrackers")) {
+        const referencedIds = new Set([
+            ...(recipe.ingredients || []),
+            ...(recipe.dailyVariants || []).flatMap((variant) => variant.ingredients || [])
+        ].map((ingredient) => ingredient.componentId).filter(Boolean));
+        referencedIds.forEach((id) => {
+            const shared = sharedComponents.get(id);
+            if (!shared || components.some((item) => item.id === id)) return;
             components.push({
-                ...flaxComponent,
-                ingredients: flaxComponent.ingredients.map((ingredient) => ({...ingredient})),
-                equipment: [...(flaxComponent.equipment || [])]
+                ...shared,
+                ingredients: shared.ingredients.map((ingredient) => ({...ingredient})),
+                equipment: [...(shared.equipment || [])]
             });
-        }
-        if (granolaComponent && /granola/i.test(JSON.stringify(recipe)) && !components.some((item) => item.id === "granola")) {
-            components.push({
-                ...granolaComponent,
-                ingredients: granolaComponent.ingredients.map((ingredient) => ({...ingredient})),
-                equipment: [...(granolaComponent.equipment || [])]
-            });
-        }
+        });
         return components.length === (recipe.components || []).length ? recipe : {...recipe, components};
     });
 }

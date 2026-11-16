@@ -5,6 +5,7 @@ All notable changes to this project are documented here.
 ## 2026-11-16
 
 - Aligned `schemas/schema.json` with the recipe data and added a pre-commit hook, also run in CI, that validates `public/recipes.json`.
+- Attached shared subrecipes only by `componentId`, so a recipe that merely mentions granola no longer adds a granola batch to the shopping list, and defined the nut bread once.
 - Reviewed and corrected recipe data: shopping units, ingredient names, amounts, portions, diet labels, and timings.
 
 ## 2026-11-04
