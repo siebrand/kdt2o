@@ -26,7 +26,8 @@
             "category": "Houdbare producten"
           }
         ],
-        "category": "Houdbare producten"
+        "category": "Houdbare producten",
+        "componentId": "lijnzaadcrackers"
       },
       {
         "raw": "1 avocado",
@@ -582,22 +583,13 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "2 vezelrijke crackers",
+        "raw": "2 lijnzaadcrackers",
         "amount": 2,
         "unit": "",
-        "name": "cracker",
+        "name": "lijnzaadcracker",
         "optional": false,
-        "alternatives": [
-          {
-            "raw": "2 lijnzaadcrackers",
-            "amount": 2,
-            "unit": "",
-            "name": "lijnzaadcracker",
-            "optional": false,
-            "category": "Houdbare producten"
-          }
-        ],
-        "category": "Brood en ontbijt"
+        "category": "Houdbare producten",
+        "componentId": "lijnzaadcrackers"
       },
       {
         "raw": "1 paprika",
@@ -634,7 +626,7 @@
         "category": "Kruiden en smaakmakers"
       }
     ],
-    "method": "Bak de speklapjes in een pan tot ze krokant zijn. Doe een beetje roomboter in een pan en bak hierin de stukjes paprika tot ze zacht zijn. Voeg de eieren toe en bak ze op de manier die jij het lekkerst vindt. Voeg peper en (jozo) zout toe. Serveer het speklapje met de gebakken eieren met een knapperige cracker erbij.",
+    "method": "Bak de speklapjes in een pan tot ze krokant zijn. Doe een beetje roomboter in een pan en bak hierin de stukjes paprika tot ze zacht zijn. Voeg de eieren toe en bak ze op de manier die jij het lekkerst vindt. Voeg peper en (jozo) zout toe. Serveer het speklapje met de gebakken eieren met een knapperige lijnzaadcracker erbij.",
     "diet": [
       "vlees"
     ]
@@ -1754,22 +1746,13 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "2 vezelrijke crackers",
+        "raw": "2 lijnzaadcrackers",
         "amount": 2,
         "unit": "",
-        "name": "cracker",
+        "name": "lijnzaadcracker",
         "optional": false,
-        "alternatives": [
-          {
-            "raw": "2 lijnzaadcrackers",
-            "amount": 2,
-            "unit": "",
-            "name": "lijnzaadcracker",
-            "optional": false,
-            "category": "Houdbare producten"
-          }
-        ],
-        "category": "Brood en ontbijt"
+        "category": "Houdbare producten",
+        "componentId": "lijnzaadcrackers"
       },
       {
         "raw": "4 plakken (boeren)kaas",
@@ -1796,7 +1779,7 @@
         "category": "Groente en fruit"
       }
     ],
-    "method": "Kluts de eieren met de volle kwark en de geelwortel. Doe een scheutje olijfolie in de pan en bak het ei op een laag vuur gaar. Strooi de bieslook over de omelet. Serveer de omelet met één of twee vezelrijke of lijnzaad crackers met roomboter, (boeren)kaas en schijfjes komkommer. Eet dit met een handje noten.",
+    "method": "Kluts de eieren met de volle kwark en de geelwortel. Doe een scheutje olijfolie in de pan en bak het ei op een laag vuur gaar. Strooi de bieslook over de omelet. Serveer de omelet met één of twee lijnzaadcrackers met roomboter, (boeren)kaas en schijfjes komkommer. Eet dit met een handje noten.",
     "diet": [
       "vegetarisch"
     ]
@@ -2078,12 +2061,13 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "2 vezelrijke crackers",
+        "raw": "2 lijnzaadcrackers",
         "amount": 2,
         "unit": "",
-        "name": "cracker",
+        "name": "lijnzaadcracker",
         "optional": false,
-        "category": "Brood en ontbijt"
+        "category": "Houdbare producten",
+        "componentId": "lijnzaadcrackers"
       },
       {
         "raw": "boerenkaas",
@@ -2231,22 +2215,13 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "2 lijnzaad crackers",
+        "raw": "2 lijnzaadcrackers",
         "amount": 2,
         "unit": "",
         "name": "lijnzaadcracker",
         "optional": false,
-        "alternatives": [
-          {
-            "raw": "2 vezelrijke crackers",
-            "amount": 2,
-            "unit": "",
-            "name": "cracker",
-            "optional": false,
-            "category": "Brood en ontbijt"
-          }
-        ],
-        "category": "Houdbare producten"
+        "category": "Houdbare producten",
+        "componentId": "lijnzaadcrackers"
       },
       {
         "raw": "peper en zout",
@@ -2257,7 +2232,7 @@
         "category": "Kruiden en smaakmakers"
       }
     ],
-    "method": "Open het blik artisjokharten en spoel ze af. Snijd de artisjokharten doormidden. Leg de rucola en sla op een bord of in een bakje en voeg de artisjokharten, olijven en pitten en zaden toe. Voeg kort in olijfolie gebakken bloemkoolrijst toe aan de salade Schep het geheel door elkaar. Meng de olijfolie, water, azijn, citroensap, balsamico en mosterd goed. Voeg eventueel (jozo)peper en zout toe. Sprenkel over de salade of houd apart indien je de salade meeneemt. Strooi de geraspte Parmezaanse kaas erover. Serveer met een vezelrijke cracker voor een bite erbij. Let op: de hoeveelheden in het filmpje kunnen afwijken. Volg het recept voor de juiste verhoudingen. Tip: Vervang de Parmezaanse kaas door boerenkaas. Tip: Laat de olijven weg.",
+    "method": "Open het blik artisjokharten en spoel ze af. Snijd de artisjokharten doormidden. Leg de rucola en sla op een bord of in een bakje en voeg de artisjokharten, olijven en pitten en zaden toe. Voeg kort in olijfolie gebakken bloemkoolrijst toe aan de salade Schep het geheel door elkaar. Meng de olijfolie, water, azijn, citroensap, balsamico en mosterd goed. Voeg eventueel (jozo)peper en zout toe. Sprenkel over de salade of houd apart indien je de salade meeneemt. Strooi de geraspte Parmezaanse kaas erover. Serveer met een lijnzaadcracker voor een bite erbij. Let op: de hoeveelheden in het filmpje kunnen afwijken. Volg het recept voor de juiste verhoudingen. Tip: Vervang de Parmezaanse kaas door boerenkaas. Tip: Laat de olijven weg.",
     "diet": [
       "vegetarisch"
     ]
@@ -2631,12 +2606,13 @@
         "title": "Met lijnzaadcrackers en pindakaas",
         "ingredients": [
           {
-            "raw": "lijnzaadcrackers",
+            "raw": "2 lijnzaadcrackers",
             "amount": 2,
             "unit": "",
             "name": "lijnzaadcracker",
             "optional": false,
-            "category": "Houdbare producten"
+            "category": "Houdbare producten",
+            "componentId": "lijnzaadcrackers"
           },
           {
             "raw": "pindakaas (circa 30 gram per persoon)",
@@ -2686,22 +2662,13 @@
             "category": "Houdbare producten"
           },
           {
-            "raw": "2 lijnzaad crackers",
+            "raw": "2 lijnzaadcrackers",
             "amount": 2,
             "unit": "",
             "name": "lijnzaadcracker",
             "optional": false,
-            "alternatives": [
-              {
-                "raw": "2 vezelrijke crackers",
-                "amount": 2,
-                "unit": "",
-                "name": "cracker",
-                "optional": false,
-                "category": "Brood en ontbijt"
-              }
-            ],
-            "category": "Houdbare producten"
+            "category": "Houdbare producten",
+            "componentId": "lijnzaadcrackers"
           },
           {
             "raw": "50 gram boerenkaas",
@@ -2809,12 +2776,13 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "2 vezelrijke crackers",
+        "raw": "2 lijnzaadcrackers",
         "amount": 2,
         "unit": "",
-        "name": "cracker",
+        "name": "lijnzaadcracker",
         "optional": false,
-        "category": "Brood en ontbijt"
+        "category": "Houdbare producten",
+        "componentId": "lijnzaadcrackers"
       }
     ],
     "components": [
@@ -2851,7 +2819,7 @@
         "method": "Meng de olijfolie en witte wijnazijn door elkaar en breng op smaak met peper en zout."
       }
     ],
-    "method": "Verwarm de oven voor op 175°C. Bereid de dressing en zet apart. Vet de ovenschaal in met olijfolie. Snijd de champignons en bak ze in 1 eetlepel olijfolie. Snijd ondertussen de lente-ui. Draai het vuur laag en voeg de lente-ui toe. Breng op smaak met peper en zout. Voeg de peterselie toe. Meng de eieren kaas en mayonaise in een aparte kom. Breng op smaak met (jozo)peper en zout indien gewenst. Voeg de champignons en lente-ui toe aan het eiermengsel en giet het geheel in een goed ingevette ovenschaal. Bak 25-30 minuten, of totdat de frittata bruin wordt en de eieren gaar (geheel gestold) zijn. Laat 5 minuten afkoelen. Serveer bij de frittata een vezelrijke cracker en een simpele groene salade van sla, komkommer, tomaat en de dressing.",
+    "method": "Verwarm de oven voor op 175°C. Bereid de dressing en zet apart. Vet de ovenschaal in met olijfolie. Snijd de champignons en bak ze in 1 eetlepel olijfolie. Snijd ondertussen de lente-ui. Draai het vuur laag en voeg de lente-ui toe. Breng op smaak met peper en zout. Voeg de peterselie toe. Meng de eieren kaas en mayonaise in een aparte kom. Breng op smaak met (jozo)peper en zout indien gewenst. Voeg de champignons en lente-ui toe aan het eiermengsel en giet het geheel in een goed ingevette ovenschaal. Bak 25-30 minuten, of totdat de frittata bruin wordt en de eieren gaar (geheel gestold) zijn. Laat 5 minuten afkoelen. Serveer bij de frittata een lijnzaadcracker en een simpele groene salade van sla, komkommer, tomaat en de dressing.",
     "diet": [
       "vlees"
     ]
@@ -2940,22 +2908,13 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "2 vezelrijke crackers",
+        "raw": "2 lijnzaadcrackers",
         "amount": 2,
         "unit": "",
-        "name": "cracker",
+        "name": "lijnzaadcracker",
         "optional": false,
-        "alternatives": [
-          {
-            "raw": "2 lijnzaadcrackers",
-            "amount": 2,
-            "unit": "",
-            "name": "lijnzaadcracker",
-            "optional": false,
-            "category": "Houdbare producten"
-          }
-        ],
-        "category": "Brood en ontbijt"
+        "category": "Houdbare producten",
+        "componentId": "lijnzaadcrackers"
       },
       {
         "raw": "peper en zout",
@@ -2966,7 +2925,7 @@
         "category": "Kruiden en smaakmakers"
       }
     ],
-    "method": "Snijd de puntpaprika's doormidden, verwijder de zaadlijsten en snijd in grove blokken. Snijd de komkommer in grove blokken. Snijd de tomaten doormidden en verwijder het harde gedeelte. Snijd ook de tomaten in grove blokken. Pel de ui en snijd in ringen. Doe alle groente in een slakom en verkruimel de feta erboven. Bestrooi de salade met de olijven. Meng de olijfolie en de azijn door elkaar en breng op smaak met peper en zout. Giet de dressing over de salade heen en garneer met de pitten/zaden en eventueel met verse kruiden. Eet de vezelrijke cracker als een lekkere bite voor erbij. Tip: Je kunt van deze salade een grotere portie maken. Zo kun je het de volgende dag bijvoorbeeld makkelijk meenemen naar werk voor lunch.",
+    "method": "Snijd de puntpaprika's doormidden, verwijder de zaadlijsten en snijd in grove blokken. Snijd de komkommer in grove blokken. Snijd de tomaten doormidden en verwijder het harde gedeelte. Snijd ook de tomaten in grove blokken. Pel de ui en snijd in ringen. Doe alle groente in een slakom en verkruimel de feta erboven. Bestrooi de salade met de olijven. Meng de olijfolie en de azijn door elkaar en breng op smaak met peper en zout. Giet de dressing over de salade heen en garneer met de pitten/zaden en eventueel met verse kruiden. Eet de lijnzaadcracker als een lekkere bite voor erbij. Tip: Je kunt van deze salade een grotere portie maken. Zo kun je het de volgende dag bijvoorbeeld makkelijk meenemen naar werk voor lunch.",
     "diet": [
       "vegetarisch"
     ]
@@ -3063,12 +3022,13 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "2 vezelrijke crackers",
+        "raw": "2 lijnzaadcrackers",
         "amount": 2,
         "unit": "",
-        "name": "cracker",
+        "name": "lijnzaadcracker",
         "optional": false,
-        "category": "Brood en ontbijt"
+        "category": "Houdbare producten",
+        "componentId": "lijnzaadcrackers"
       },
       {
         "raw": "2 stuks fruit",
@@ -3079,7 +3039,7 @@
         "category": "Groente en fruit"
       }
     ],
-    "method": "Snipper de ui heel fijn. Meng de ui met mosterd, azijn, olijfolie en water goed door elkaar. Roer dit door de gegrilde groeten (hoe langer je het laat marineren hoe lekkerder). Doe de flinke handen spinazie op een bord of in een meeneem bakje. Leg hier bovenop de gegrilde groeten, bestrooi met de zaden en pitten en verkruimel de geitenkaas erboven. Eet hierbij een (vezelrijke) cracker met wat geitenkaas. Eet een stuk fruit toe.",
+    "method": "Snipper de ui heel fijn. Meng de ui met mosterd, azijn, olijfolie en water goed door elkaar. Roer dit door de gegrilde groeten (hoe langer je het laat marineren hoe lekkerder). Doe de flinke handen spinazie op een bord of in een meeneem bakje. Leg hier bovenop de gegrilde groeten, bestrooi met de zaden en pitten en verkruimel de geitenkaas erboven. Eet hierbij een lijnzaadcracker met wat geitenkaas. Eet een stuk fruit toe.",
     "diet": [
       "vegetarisch"
     ]
