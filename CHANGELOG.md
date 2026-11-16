@@ -7,6 +7,7 @@ All notable changes to this project are documented here.
 - Aligned `schemas/schema.json` with the recipe data and added a pre-commit hook, also run in CI, that validates `public/recipes.json`.
 - Attached shared subrecipes only by `componentId`, so a recipe that merely mentions granola no longer adds a granola batch to the shopping list, and defined the nut bread once.
 - Removed the recipe review page `all-recipes.html`; recipe data is now checked by the validator.
+- Added browser smoke tests with Playwright, run in CI, for loading, planning, the shopping list, and the PDF.
 - Consolidated the agent guidance into `AGENTS.md`, written in ASD-STE100 Simplified Technical English, and removed the outdated `docs/llm-context.md` and `docs/user-test-improvements.md`.
 - Reviewed and corrected recipe data: shopping units, ingredient names, amounts, portions, diet labels, and timings.
 

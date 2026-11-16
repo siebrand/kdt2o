@@ -28,6 +28,16 @@ additional rules in `scripts/validate_recipes.py` whenever recipe data, the
 schema, or the validator changes. CI runs the same hooks on every push to
 `main` and on every pull request.
 
+Browser smoke tests in `tests/test_browser.py` check loading at the site root
+and under `/kdt2o/`, planning, the shopping list, and the PDF. They use
+Playwright for Python and run in CI. To run them locally with
+[uv](https://docs.astral.sh/uv/):
+
+```bash
+uv run --no-project --with-requirements tests/requirements.txt python -m playwright install chromium
+uv run --no-project --with-requirements tests/requirements.txt pytest tests
+```
+
 ## Workflow
 
 1. Create a focused branch from `main`.

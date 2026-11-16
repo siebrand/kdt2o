@@ -5,8 +5,6 @@
 These are the remaining planned improvements. They are intentionally kept at the
 top of this document.
 
-- Add browser-level smoke tests for planning, shopping-list aggregation, PDF
-  generation, and the GitHub Pages base path.
 - Link the changelog from the application footer.
 - Add dedicated security and dependency workflows for action, dependency,
   Docker-image, and link scanning.
@@ -49,6 +47,8 @@ The following features are complete and have been moved below the open work:
 - [x] Recipe preparation-time fields shown on recipe cards and in PDFs.
 - [x] JSON Schema for `public/recipes.json` in `schemas/schema.json`, enforced
   by a pre-commit hook running `scripts/validate_recipes.py`, locally and in CI.
+- [x] Browser smoke tests with Playwright for loading at the site root and under
+  `/kdt2o/`, planning, shopping-list aggregation, and PDF generation, run in CI.
 - [x] Recipe approval markers.
 - [x] Approved-only recipe visibility and random selection by default, with an
   explicit option to include all recipes.

@@ -21,6 +21,7 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
   `public/recipes.json` with the original recipe.
 - `schemas/schema.json`: the rules for the recipe data.
 - `scripts/validate_recipes.py`: the script that checks the recipe data.
+- `tests/test_browser.py`: the browser tests for the application.
 - `public/index.html`, `public/app.js`, `public/styles.css`: the browser
   application.
 - `Dockerfile`, `nginx.conf`: the container. Nginx serves the static files.
@@ -48,11 +49,15 @@ Do these steps before you commit:
 
 1. Run `pre-commit install` one time for each clone.
 2. Run `pre-commit run --all-files`. This step checks `public/recipes.json`.
-3. If the change affects data or deployment, run
+3. If the change affects the application or the data, run the browser tests:
+   `uv run --no-project --with-requirements tests/requirements.txt pytest tests`.
+   Before the first run, install the browser with
+   `uv run --no-project --with-requirements tests/requirements.txt python -m playwright install chromium`.
+4. If the change affects data or deployment, run
    `docker build -t kitano-meal-planner .`.
 
-CI runs the same pre-commit checks. To see the application, run
-`docker run --rm -p 8080:80 kitano-meal-planner`. Then open
+CI runs the same pre-commit checks and browser tests. To see the application,
+run `docker run --rm -p 8080:80 kitano-meal-planner`. Then open
 `http://localhost:8080`.
 
 ## Changes

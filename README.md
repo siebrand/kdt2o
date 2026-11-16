@@ -9,6 +9,7 @@ containing the plan data; no plan data is sent to a server.
 
 Recipe data is maintained by hand in the reviewed `public/recipes.json` file. The original recipes are kept outside the
 repository. A pre-commit hook validates the data against `schemas/schema.json`; run `pre-commit install` once per clone.
+Browser smoke tests in `tests/` run in CI; see [CONTRIBUTING.md](CONTRIBUTING.md) to run them locally.
 Only approved recipes are shown and selected by default; the planner provides an explicit option to include all recipes.
 
 Planned recipes can be moved by dragging them to another slot of the same meal type. Dropping onto another recipe swaps

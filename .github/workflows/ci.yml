@@ -20,6 +20,18 @@ jobs:
       - name: Run pre-commit hooks
         run: pipx run pre-commit run --all-files --show-diff-on-failure
 
+  browser-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install test dependencies
+        run: |
+          python3 -m venv .venv
+          .venv/bin/pip install -r tests/requirements.txt
+          .venv/bin/python -m playwright install --with-deps chromium
+      - name: Run browser tests
+        run: .venv/bin/pytest tests -v
+
   tests:
     runs-on: ubuntu-latest
     steps:
