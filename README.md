@@ -8,9 +8,9 @@ The application has no database and stores a plan only in the browser. A plan ca
 containing the plan data; no plan data is sent to a server.
 
 Recipe data is maintained by hand in the reviewed `public/recipes.json` file. The original recipes are kept outside the
-repository. A pre-commit hook validates the data against `schemas/schema.json`; run `pre-commit install` once per clone.
-Browser smoke tests in `tests/` run in CI; see [CONTRIBUTING.md](CONTRIBUTING.md) to run them locally.
-Only approved recipes are shown and selected.
+repository. Pre-commit validates the data against `schemas/schema.json` and lints GitHub Actions workflows with pinned
+actionlint; run `pre-commit install` once per clone. Browser smoke tests in `tests/` run in CI; see
+[CONTRIBUTING.md](CONTRIBUTING.md) to run them locally. Only approved recipes are shown and selected.
 
 Planned recipes can be moved by dragging them to another slot of the same meal type. Dropping onto another recipe swaps
 the two; other recipes in the way are moved aside.
@@ -29,6 +29,24 @@ Open http://localhost:8080.
 The live site is available at `https://siebrand.github.io/kdt2o/`. The GitHub Actions workflow deploys `public/`
 automatically after every push to `main`; `public/CHANGELOG.md` is served directly from that artifact. GitHub Pages is
 configured to use that workflow.
+
+## Commit versions, releases, and rollback
+
+Each commit reachable from `main` receives an annotated tag in the deterministic CalVer form
+`YYYY-MM-DD.NNNNNNNNNNNN-<full-commit-SHA>`. The date is the commit's ISO 8601 committer date; the zero-padded count
+of commits reachable from it and the full SHA make versions
+unique and lexically sortable by date, count, and SHA. This is CalVer, not SemVer. The version workflow backfills
+history and tags new commits automatically.
+
+To prepare a release, run **Create release draft** from GitHub Actions and enter a version tag. The workflow validates
+the tag, builds the Docker image, generates an SPDX SBOM for that image, and creates a draft GitHub Release. The SBOM
+covers the container contents; the CDN-hosted jsPDF dependency remains external and is pinned in `public/index.html`.
+Release notes are generated from the matching date section of `public/CHANGELOG.md`, the canonical changelog. Review the
+draft and publish it when ready.
+
+To roll back GitHub Pages, run **Deploy GitHub Pages** from Actions and enter a previous version tag. The workflow
+verifies the tag and deploys `public/` from that commit. Run it with an empty version on `main`, or push `main`, to
+return to the current version.
 
 ## Language and commits
 

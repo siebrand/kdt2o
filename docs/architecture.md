@@ -67,3 +67,25 @@ alternatives do not attach a subrecipe.
 The only persistence mechanism is local browser storage. Clearing site data
 removes the local plan. The static app has no endpoint that accepts or exports
 planning data.
+
+## Versioning and releases
+
+`scripts/release.py` derives a deterministic CalVer tag for any commit from its
+ISO committer date, zero-padded count of reachable commits, and full SHA. This
+produces unique, lexically sortable version tags without a mutable version file.
+The **Version commits** workflow tags every commit reachable from `main`,
+including untagged history, and tags new commits automatically.
+
+The **Create release draft** workflow checks out a selected version tag, validates
+it against the commit, builds the Nginx image, generates an SPDX SBOM for that
+image with Syft, and creates a draft GitHub Release. The SBOM covers the
+container contents; the browser-loaded jsPDF dependency remains external and is
+pinned in `public/index.html`. Release notes are generated from the matching date
+section of the single canonical `public/CHANGELOG.md`; there is no second
+checked-in release-notes source. A maintainer reviews and publishes the draft.
+
+GitHub Pages remains deployed from `main` on pushes. Its manual dispatch accepts
+a version tag, validates it with the same version script, and deploys that
+commit's `public/` directory for rollback. Dispatching without a version deploys
+the selected branch commit. Pre-commit and CI lint GitHub Actions workflows with
+actionlint from a pinned Docker image.

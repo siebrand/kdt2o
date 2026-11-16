@@ -7,8 +7,6 @@ top of this document.
 
 - Add dedicated security and dependency workflows for action, dependency,
   Docker-image, and link scanning.
-- Add a release process with versioned release notes, an SBOM, and a tested
-  rollback procedure.
 - Add production security headers and document the final deployment policy if
   the site moves from GitHub Pages to a self-hosted Nginx deployment.
 
@@ -65,6 +63,13 @@ The following features are complete and have been moved below the open work:
   and security documentation.
 - [x] GitHub Pages deployment with relative asset paths for the `/kdt2o/`
   project site.
+- [x] Deterministic CalVer version tags for every commit reachable from `main`,
+  prefixed with the ISO commit date and disambiguated by commit count and SHA.
+- [x] Draft GitHub releases with Dutch notes sourced from the canonical changelog
+  and an SPDX SBOM for the built Nginx image.
+- [x] Version-validated manual rollback of GitHub Pages to a tagged commit.
+- [x] Actionlint validation of GitHub Actions workflows through pre-commit
+  and CI.
 - [x] Docker/Nginx container build for local and alternative hosting.
 - [x] Footer links to the deployed changelog page and the publisher homepage at
   https://kitano.nl/.

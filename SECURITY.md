@@ -2,8 +2,11 @@
 
 ## Supported versions
 
-Only the current `main` branch is supported. Please reproduce reports against
-the latest version where possible.
+Only the current `main` branch is supported. Historical version tags identify
+individual commits but do not receive separate support. Please reproduce
+reports against the latest version where possible and include the CalVer tag
+and full commit SHA when reporting a released version. Published GitHub releases
+include an SPDX SBOM for the corresponding Nginx image.
 
 ## Reporting a vulnerability
 

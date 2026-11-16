@@ -23,10 +23,11 @@ pre-commit install
 pre-commit run --all-files
 ```
 
-The hook validates `public/recipes.json` against `schemas/schema.json` and
+The hooks validate `public/recipes.json` against `schemas/schema.json` and
 additional rules in `scripts/validate_recipes.py` whenever recipe data, the
-schema, or the validator changes. CI runs the same hooks on every push to
-`main` and on every pull request.
+schema, or the validator changes. They also lint `.github/workflows/` with
+actionlint 1.7.12 in a pinned Docker image, so no separate actionlint install is
+needed. CI runs the same hooks on every push to `main` and on every pull request.
 
 Browser smoke tests in `tests/test_browser.py` check loading at the site root
 and under `/kdt2o/`, changelog rendering, planning, the shopping list, and the
@@ -46,6 +47,21 @@ uv run --no-project --with-requirements tests/requirements.txt pytest tests
 4. Keep code, commits, branches, issues, pull requests, and developer documentation in English.
 5. Run the relevant validation, such as the pre-commit hooks and the Docker build, and include the results in the pull request.
 6. Open a pull request against `main`.
+
+## Version tags, releases, and rollback
+
+The **Version commits** workflow creates a deterministic, date-prefixed CalVer tag for every commit reachable from
+`main`. Tags use the commit's ISO committer date, a zero-padded reachable-commit count, and the full commit SHA; do not
+create or move these tags manually.
+
+To prepare a release, run **Create release draft** from GitHub Actions and enter the tag to release. It verifies the
+version, builds the container, generates an SPDX SBOM, and creates a draft with notes sourced from the matching date
+section of `public/CHANGELOG.md`. Review the notes and SBOM, then publish the draft on GitHub. The workflows require
+`GITHUB_TOKEN` to have `contents: write` permission.
+
+To roll back the Pages deployment, run **Deploy GitHub Pages** with a previous version tag. The workflow validates the
+version and deploys that commit's `public/` directory. Run it without a version on `main`, or push `main`, to return to
+the latest site.
 
 ## Recipe data
 

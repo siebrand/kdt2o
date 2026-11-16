@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      version:
+        description: Optional version tag for a rollback deployment
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -21,8 +26,17 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Check out repository
+      - name: Check out deployment source
         uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.version || github.sha }}
+          fetch-depth: 0
+
+      - name: Verify rollback version
+        if: ${{ inputs.version != '' }}
+        env:
+          VERSION: ${{ inputs.version }}
+        run: python scripts/release.py verify --version "$VERSION"
 
       - name: Configure Pages
         uses: actions/configure-pages@v6

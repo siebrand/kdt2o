@@ -22,6 +22,8 @@ not record the source of each recipe.
 - Nginx, used to serve the static application
 - Docker Desktop, used for local container development and verification
 - GitHub Actions and GitHub Pages, used for CI and public deployment
+- actionlint, used to validate GitHub Actions workflows
+- Syft, through Anchore's SBOM Action, used to generate release container SBOMs
 
 Consult the dependency metadata and upstream projects for their complete
 licenses and notices.
