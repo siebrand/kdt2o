@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## 2026-11-16
 
+- Removed the option to include unapproved recipes; the planner now only shows approved recipes.
 - Aligned `schemas/schema.json` with the recipe data and added a pre-commit hook, also run in CI, that validates
   `public/recipes.json`.
 - Attached shared subrecipes only by `componentId`, so a recipe that merely mentions granola no longer adds a granola

@@ -15,8 +15,7 @@ or server-side planning state.
    planning data to a server. Unknown recipe codes remain visible as unresolved
    recipe slots.
 6. The browser can filter one recipe by meal and generate a single-recipe PDF.
-7. Recipe lists and random selection use recipes with `approved: true` by
-   default; the user can explicitly enable all recipes.
+7. Recipe lists and random selection use only recipes with `approved: true`.
 8. Planned recipes can be moved by drag and drop within the same meal type. The
    dragged selection shifts by the distance between the dragged card and the
    drop cell, so multi-day recipes move as a whole and may be dropped on empty

@@ -49,8 +49,7 @@ The following features are complete and have been moved below the open work:
 - [x] Browser smoke tests with Playwright for loading at the site root and under
   `/kdt2o/`, planning, shopping-list aggregation, and PDF generation, run in CI.
 - [x] Recipe approval markers.
-- [x] Approved-only recipe visibility and random selection by default, with an
-  explicit option to include all recipes.
+- [x] Approved-only recipe visibility and random selection.
 - [x] Recipe and shopping-list PDF generation in the browser with jsPDF.
 - [x] An explicit "Afronden en boodschappenlijst bekijken" action that shows the
   shopping list in the application before the PDF download.

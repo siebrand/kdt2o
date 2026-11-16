@@ -113,9 +113,10 @@ def shopping_list(page: Page) -> list[str]:
 
 
 @pytest.mark.parametrize("path", ["", BASE_PATH])
-def test_planner_loads_all_approved_recipes(page: Page, server_url: str, path: str):
+def test_planner_shows_only_approved_recipes(page: Page, server_url: str, path: str):
     open_planner(page, f"{server_url}{path}/")
     expect(page.locator("#planner .slot")).to_have_count(7 * len(MEALS))
+    expect(page.locator("#show-all-recipes")).to_have_count(0)
     approved = sum(1 for recipe in RECIPES if recipe["approved"])
     expect(page.locator("#single-recipe-results .recipe-card")).to_have_count(approved)
 

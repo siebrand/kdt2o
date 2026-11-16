@@ -7,8 +7,7 @@ const state = {
     plan: loadPlan(),
     activeSlot: null,
     pendingRecipe: null,
-    shoppingWarnings: [],
-    showAllRecipes: false
+    shoppingWarnings: []
 };
 
 const planner = document.querySelector("#planner");
@@ -27,11 +26,10 @@ const singleRecipeSearch = document.querySelector("#single-recipe-search");
 const shoppingListItems = document.querySelector("#shopping-list-items");
 const notifications = document.querySelector("#notifications");
 const recipePanel = document.querySelector("#recipe-panel");
-const showAllRecipesToggle = document.querySelector("#show-all-recipes");
 const dragState = {sourceKey: null, dropped: false};
 
 function recipeIsAvailable(recipe) {
-    return state.showAllRecipes || recipe.approved === true;
+    return recipe.approved === true;
 }
 
 function recipeToken(id) {
@@ -1380,11 +1378,6 @@ document.querySelector("#clear-plan").addEventListener("click", () => {
 randomFillButton.addEventListener("click", fillRandomPlan);
 copyMenuLinkButton.addEventListener("click", copyMenuLink);
 search.addEventListener("input", renderOptions);
-showAllRecipesToggle.addEventListener("change", () => {
-    state.showAllRecipes = showAllRecipesToggle.checked;
-    renderOptions();
-    renderSingleRecipeSearch();
-});
 singleRecipeCategory.addEventListener("change", renderSingleRecipeSearch);
 singleRecipeQuery.addEventListener("input", renderSingleRecipeSearch);
 shoppingListButton.addEventListener("click", () => {
