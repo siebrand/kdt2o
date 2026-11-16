@@ -8010,8 +8010,8 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1 el extra vierge olijfolie",
-        "amount": 15,
+        "raw": "extra vierge olijfolie",
+        "amount": 30,
         "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,
@@ -8066,6 +8066,14 @@
         "category": "Houdbare producten"
       },
       {
+        "raw": "2 eieren",
+        "amount": 2,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
         "raw": "1 avocado",
         "amount": 1,
         "unit": "",
@@ -8078,7 +8086,8 @@
     "diet": [
       "vegetarisch"
     ],
-    "approved": false
+    "approved": true,
+    "preparationTime": 30
   },
   {
     "id": "viscurry-met-sperziebonen",
