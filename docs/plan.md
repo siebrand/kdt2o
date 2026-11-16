@@ -6,6 +6,7 @@ These are the remaining planned improvements. They are intentionally kept at the
 top of this document.
 
 - Link the changelog from the application footer.
+- Update the link to point to https://kitano.nl/ instead of opening email.
 - Add dedicated security and dependency workflows for action, dependency,
   Docker-image, and link scanning.
 - Add a release process with versioned release notes, an SBOM, and a tested
