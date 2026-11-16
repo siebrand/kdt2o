@@ -916,7 +916,7 @@
     "title": "Kwarkmuffins",
     "approved": true,
     "category": "ontbijt",
-    "portions": 2,
+    "portions": 4,
     "days": 2,
     "multiDay": true,
     "programs": [
@@ -2448,7 +2448,8 @@
     ],
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "days": 3
   },
   {
     "id": "courgettesoep-3-dagen",
@@ -3256,7 +3257,7 @@
     "approved": true,
     "category": "lunch",
     "portions": 4,
-    "multiDay": false,
+    "multiDay": true,
     "programs": [
       "Keer Diabetes2 Om"
     ],
@@ -3356,7 +3357,8 @@
     ],
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "days": 2
   },
   {
     "id": "mozzarellawraps-met-avocado-en-tomaat",
@@ -4122,7 +4124,8 @@
     ],
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "days": 3
   },
   {
     "id": "tonijn-kikkererwten-salade",
