@@ -4,8 +4,8 @@
 Besides the JSON Schema, the script checks rules a schema cannot express:
 unique recipe IDs and titles, unique component IDs per recipe, component
 references that resolve, days only on multi-day recipes, daily variants
-within the planned days, and recipe text without HTML. It exits with
-status 1 when any check fails.
+within the planned days, and NFC-normalized recipe text without HTML. It
+exits with status 1 when any check fails.
 """
 
 from __future__ import annotations
@@ -15,6 +15,7 @@ import json
 from pathlib import Path
 import re
 import sys
+import unicodedata
 
 from jsonschema import Draft202012Validator
 
@@ -105,9 +106,11 @@ def rule_errors(recipes: list) -> list[str]:
             if variant.get("dayIndex", 0) >= days:
                 errors.append(f"{recipe_id}: daily variant {variant.get('title')!r} is outside the {days} planned days")
 
-        for text in all_texts(recipe):
+        for text in [recipe_id, *all_texts(recipe)]:
             if HTML_TAG.search(text or ""):
                 errors.append(f"{recipe_id}: recipe text contains HTML: {text[:60]!r}")
+            if text and unicodedata.normalize("NFC", text) != text:
+                errors.append(f"{recipe_id}: text is not NFC-normalized: {text[:60]!r}")
     return errors
 
 

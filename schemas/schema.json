@@ -201,7 +201,9 @@
       "type": "object",
       "properties": {
         "id": {
-          "$ref": "#/$defs/nonEmptyString"
+          "description": "Lowercase slug. Saved plans and share links store a hash of the id, so do not change it once published.",
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
         },
         "title": {
           "$ref": "#/$defs/nonEmptyString"

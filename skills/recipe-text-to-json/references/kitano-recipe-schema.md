@@ -13,6 +13,10 @@ Every recipe object must include:
 - `id`, `title`, `approved`, `category`, `portions`, `multiDay`
 - `ingredients`, `method`, `diet`
 
+`id` is a lowercase slug (`a-z`, `0-9`, and single hyphens). Saved plans and
+share links store a hash of the ID, so never change the ID of a published
+recipe; correct the `title` instead.
+
 `diet` is an array containing `["vlees"]`, `["vis"]`, `["vlees", "vis"]`,
 `["vegetarisch"]`, or `["vegan"]`. `vegetarisch` and `vegan` cannot be
 combined with `vlees` or `vis`.
@@ -78,5 +82,5 @@ Shopping categories:
 - `Kruiden en smaakmakers`
 - `Houdbare producten`
 
-All recipe text is plain Dutch text. Do not emit HTML, Markdown, comments, or
-trailing commas in JSON.
+All recipe text is plain, NFC-normalized Dutch text. Do not emit HTML,
+Markdown, comments, or trailing commas in JSON.
