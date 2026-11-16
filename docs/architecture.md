@@ -41,9 +41,12 @@ and does not receive planning data. GitHub Pages is the current public host; an
 alternative self-hosted deployment should provide HTTPS, appropriate security
 headers, access-log retention rules, and a health check for `/`.
 
-GitHub Pages publishes the same `public/` directory through
-`.github/workflows/deploy-pages.yml`. Relative asset paths make the application
-work both at the local site root and at the project path `/kdt2o/`.
+GitHub Pages publishes `public/` through
+`.github/workflows/deploy-pages.yml`, which copies the canonical root
+`CHANGELOG.md` into the deployment artifact. The Docker image copies the same
+source file into its static root. No second changelog source is kept in the
+repository. Relative asset paths make the application work both at the local
+site root and at the project path `/kdt2o/`.
 
 ## Recipe data
 

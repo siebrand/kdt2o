@@ -69,6 +69,8 @@ The following features are complete and have been moved below the open work:
 - [x] Docker/Nginx container build for local and alternative hosting.
 - [x] Footer links to the deployed changelog page and the publisher homepage at
   https://kitano.nl/.
+- [x] Changelog page renders the canonical root `CHANGELOG.md`, packaged for
+  GitHub Pages and Docker without a second checked-in copy.
 
 ## Rejected or superseded initial plans
 

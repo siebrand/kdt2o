@@ -1,9 +1,10 @@
 """Browser smoke tests for the meal planner.
 
-The tests serve public/ over HTTP, at the site root and under the GitHub
-Pages base path /kdt2o/, and drive the application with Playwright. Fixed
-plans are opened through share links, so the tests do not depend on the
-random recipe order. Expected values are derived from public/recipes.json.
+The tests serve public/ and the canonical root CHANGELOG.md over HTTP, at the
+site root and under the GitHub Pages base path /kdt2o/, and drive the application
+with Playwright. Fixed plans are opened through share links, so the tests do not
+depend on the random recipe order. Expected values are derived from
+public/recipes.json.
 """
 
 from __future__ import annotations
@@ -36,6 +37,8 @@ class StaticHandler(SimpleHTTPRequestHandler):
     def translate_path(self, path: str) -> str:
         if path == BASE_PATH or path.startswith(BASE_PATH + "/"):
             path = path[len(BASE_PATH):] or "/"
+        if path == "/CHANGELOG.md":
+            return str(ROOT / "CHANGELOG.md")
         return super().translate_path(path)
 
     def log_message(self, format: str, *args) -> None:
@@ -115,6 +118,14 @@ def test_planner_loads_all_approved_recipes(page: Page, server_url: str, path: s
     expect(page.locator("#planner .slot")).to_have_count(7 * len(MEALS))
     approved = sum(1 for recipe in RECIPES if recipe["approved"])
     expect(page.locator("#single-recipe-results .recipe-card")).to_have_count(approved)
+
+
+@pytest.mark.parametrize("path", ["", BASE_PATH])
+def test_changelog_page_loads(page: Page, server_url: str, path: str):
+    page.goto(f"{server_url}{path}/changelog.html")
+    expect(page.locator("#changelog-content h1")).to_have_text("Changelog")
+    expect(page.locator("#changelog-content")).to_contain_text(
+        "All notable changes to this project are documented here.")
 
 
 def test_random_fill_persists_and_clears(page: Page, server_url: str):
