@@ -518,7 +518,7 @@
       },
       {
         "raw": "komkommer",
-        "amount": "0.5",
+        "amount": 0.5,
         "unit": "",
         "name": "komkommer",
         "optional": false,
@@ -1044,7 +1044,7 @@
       },
       {
         "raw": "roomboter",
-        "amount": "10",
+        "amount": 10,
         "unit": "gram",
         "name": "roomboter",
         "optional": false,
@@ -1068,7 +1068,7 @@
       },
       {
         "raw": "plakjes tomaat",
-        "amount": "1",
+        "amount": 1,
         "unit": "",
         "name": "tomaat",
         "optional": false,
@@ -1076,7 +1076,7 @@
       },
       {
         "raw": "plakjes komkommer",
-        "amount": "0.2",
+        "amount": 0.2,
         "unit": "",
         "name": "komkommer",
         "optional": false,
@@ -1427,7 +1427,7 @@
       },
       {
         "raw": "halve komkommer",
-        "amount": "0.5",
+        "amount": 0.5,
         "unit": "",
         "name": "komkommer",
         "optional": false,
@@ -1570,7 +1570,7 @@
       },
       {
         "raw": "roomboter",
-        "amount": "10",
+        "amount": 10,
         "unit": "gram",
         "name": "roomboter",
         "optional": false,
@@ -1578,7 +1578,7 @@
       },
       {
         "raw": "6 plakjes boerenkaas",
-        "amount": "40",
+        "amount": 40,
         "unit": "gram",
         "name": "boerenkaas",
         "optional": false,
@@ -1586,7 +1586,7 @@
       },
       {
         "raw": "halve komkommer",
-        "amount": "0.5",
+        "amount": 0.5,
         "unit": "",
         "name": "komkommer",
         "optional": false,
@@ -1755,14 +1755,14 @@
       },
       {
         "raw": "2 vezelrijke crackers",
-        "amount": "2",
+        "amount": 2,
         "unit": "",
         "name": "cracker",
         "optional": false,
         "alternatives": [
           {
             "raw": "2 lijnzaadcrackers",
-            "amount": "2",
+            "amount": 2,
             "unit": "",
             "name": "lijnzaadcracker",
             "optional": false,
@@ -1789,7 +1789,7 @@
       },
       {
         "raw": "schijfjes komkommer",
-        "amount": "0.2",
+        "amount": 0.2,
         "unit": "",
         "name": "komkommer",
         "optional": false,
@@ -2673,7 +2673,7 @@
           },
           {
             "raw": "komkommer",
-            "amount": "0.25",
+            "amount": 0.25,
             "unit": "",
             "name": "komkommer",
             "optional": false,
@@ -2681,7 +2681,7 @@
           },
           {
             "raw": "cherrytomaten",
-            "amount": "10",
+            "amount": 10,
             "unit": "",
             "name": "cherrytomaten",
             "optional": false,
@@ -2804,7 +2804,7 @@
       },
       {
         "raw": "halve komkommer",
-        "amount": "0.5",
+        "amount": 0.5,
         "unit": "",
         "name": "komkommer",
         "optional": false,
@@ -2812,7 +2812,7 @@
       },
       {
         "raw": "10 cherrytomaatjes",
-        "amount": "10",
+        "amount": 10,
         "unit": "",
         "name": "cherrytomaten",
         "optional": false,
@@ -3453,7 +3453,7 @@
       },
       {
         "raw": "10 cherrytomaatjes",
-        "amount": "10",
+        "amount": 10,
         "unit": "",
         "name": "cherrytomaten",
         "optional": false,
@@ -3469,7 +3469,7 @@
       },
       {
         "raw": "komkommer",
-        "amount": "0.5",
+        "amount": 0.5,
         "unit": "",
         "name": "komkommer",
         "optional": false,
@@ -3485,7 +3485,7 @@
       },
       {
         "raw": "10 cherrytomaatjes",
-        "amount": "10",
+        "amount": 10,
         "unit": "",
         "name": "cherrytomaten",
         "optional": false,
@@ -3550,7 +3550,7 @@
       },
       {
         "raw": "plakjes komkommer",
-        "amount": "0.2",
+        "amount": 0.2,
         "unit": "",
         "name": "komkommer",
         "optional": false,
@@ -3574,7 +3574,7 @@
       },
       {
         "raw": "halve komkommer",
-        "amount": "0.5",
+        "amount": 0.5,
         "unit": "",
         "name": "komkommer",
         "optional": false,
@@ -3590,7 +3590,7 @@
       },
       {
         "raw": "10 cherrytomaatjes",
-        "amount": "10",
+        "amount": 10,
         "unit": "",
         "name": "cherrytomaten",
         "optional": false,
@@ -3703,7 +3703,7 @@
       },
       {
         "raw": "halve komkommer",
-        "amount": "0.5",
+        "amount": 0.5,
         "unit": "",
         "name": "komkommer",
         "optional": false,
@@ -3711,7 +3711,7 @@
       },
       {
         "raw": "10 cherrytomaatjes",
-        "amount": "10",
+        "amount": 10,
         "unit": "",
         "name": "cherrytomaten",
         "optional": false,
@@ -5601,7 +5601,7 @@
       },
       {
         "raw": "250 gram cherrytomaatjes",
-        "amount": "250",
+        "amount": 250,
         "unit": "gram",
         "name": "cherrytomaten",
         "optional": false,
@@ -8448,8 +8448,8 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "2 preien",
-        "amount": "2",
+        "raw": "1-2 preien",
+        "amount": "1-2",
         "unit": "",
         "name": "prei",
         "optional": false,
@@ -8464,8 +8464,8 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "350 gram verse wilde zalm",
-        "amount": "350",
+        "raw": "300-350 gram verse wilde zalm",
+        "amount": "300-350",
         "unit": "gram",
         "name": "zalmfilet",
         "optional": false,
