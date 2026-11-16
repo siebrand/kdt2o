@@ -54,7 +54,9 @@ Every ingredient must be an object with:
 
 - Preserve the original ingredient wording in `raw`.
 - Normalize `amount` to a number when the quantity is explicit; use `null` for
-  an unquantified ingredient.
+  an unquantified ingredient. Never store a number as a string. For a range
+  such as `1-2 preien`, keep the range in `raw` and store the maximum
+  (`2`) in `amount`.
 - `amount` and `unit` drive only the shopping list; `raw` keeps the recipe
   wording. Express them the way the ingredient is bought:
   - Liquids in `ml` (1 el = 15 ml, 1 tl = 5 ml).

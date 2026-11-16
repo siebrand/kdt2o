@@ -8449,7 +8449,7 @@
       },
       {
         "raw": "1-2 preien",
-        "amount": "1-2",
+        "amount": 2,
         "unit": "",
         "name": "prei",
         "optional": false,
@@ -8465,7 +8465,7 @@
       },
       {
         "raw": "300-350 gram verse wilde zalm",
-        "amount": "300-350",
+        "amount": 350,
         "unit": "gram",
         "name": "zalmfilet",
         "optional": false,
