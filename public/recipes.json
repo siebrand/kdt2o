@@ -1980,7 +1980,7 @@
     "title": "Gegrilde groenten met feta en crackers met kaas & avocado",
     "approved": true,
     "category": "lunch",
-    "portions": 1,
+    "portions": 2,
     "multiDay": false,
     "programs": [
       "Keer Diabetes2 Om"
@@ -1997,40 +1997,40 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1 paprika",
-        "amount": 1,
+        "raw": "2 paprika's",
+        "amount": 2,
         "unit": "",
         "name": "paprika",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "1 rode ui",
-        "amount": 1,
+        "raw": "1 rode uien",
+        "amount": 2,
         "unit": "",
         "name": "rode ui",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "100 gram wortel",
-        "amount": 100,
+        "raw": "200 gram wortel",
+        "amount": 200,
         "unit": "gram",
         "name": "wortel",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "1 teentje knoflook",
-        "amount": 1,
+        "raw": "2 teentjes knoflook",
+        "amount": 2,
         "unit": "teen",
         "name": "knoflook",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
-        "raw": "50 gram feta (of geitenkaas/ mozzarella)",
-        "amount": 50,
+        "raw": "100 gram feta (of geitenkaas/ mozzarella)",
+        "amount": 100,
         "unit": "gram",
         "name": "feta",
         "optional": false,
@@ -2061,8 +2061,8 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "2 lijnzaadcrackers",
-        "amount": 2,
+        "raw": "4 lijnzaadcrackers",
+        "amount": 4,
         "unit": "",
         "name": "lijnzaadcracker",
         "optional": false,
@@ -2070,16 +2070,16 @@
         "componentId": "lijnzaadcrackers"
       },
       {
-        "raw": "boerenkaas",
-        "amount": 50,
+        "raw": "100 gram boerenkaas",
+        "amount": 100,
         "unit": "gram",
         "name": "boerenkaas",
         "optional": false,
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "halve avocado",
-        "amount": 0.5,
+        "raw": "1 avocado",
+        "amount": 1,
         "unit": "",
         "name": "avocado",
         "optional": false,
