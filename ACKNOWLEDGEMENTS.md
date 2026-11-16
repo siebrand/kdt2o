@@ -13,8 +13,8 @@ with the respective rights holder; this project does not imply endorsement.
 
 Recipe content and branding remain subject to their respective source rights.
 The repository must not be used to imply endorsement by a recipe author or
-brand. Source provenance is retained in generated recipe records where
-available.
+brand. The original recipes are not in the repository. The recipe data does
+not record the source of each recipe.
 
 ## Software
 

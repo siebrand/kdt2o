@@ -22,6 +22,6 @@ possible, followed by coordinated remediation and disclosure.
 
 ## Scope
 
-In scope are the static application, build scripts, Docker/Nginx configuration,
-recipe-data processing, and repository automation. Do not include secrets,
-personal data, or live credentials in reports.
+The scope includes the static application, the Docker and Nginx
+configuration, the recipe data validation script, and the CI workflows. Do not
+put secrets, personal data, or live credentials in a report.
