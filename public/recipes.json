@@ -7723,7 +7723,7 @@
   },
   {
     "id": "stoofvlees-met-knolselderij-met-rode-kool",
-    "title": "Stoofvlees met knolselderij met rode kool",
+    "title": "Stoofvlees met knolselderij en rode kool",
     "category": "diner",
     "portions": 2,
     "multiDay": false,
@@ -7780,20 +7780,20 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1 stuk groentebouillonblokje",
+        "raw": "1 bouillonblokje",
         "amount": 1,
         "unit": "",
-        "name": "groentebouillonblokje",
+        "name": "bouillonblokje",
         "optional": false,
         "category": "Houdbare producten"
       },
       {
         "raw": "70 gram tomatenpuree (1 klein blikje)",
-        "amount": 70,
-        "unit": "gram",
-        "name": "tomatenpuree (1 klein blikje)",
+        "amount": 1,
+        "unit": "blik",
+        "name": "tomatenpuree",
         "optional": false,
-        "category": "Groente en fruit"
+        "category": "Houdbare producten"
       },
       {
         "raw": "scheutje azijn",
@@ -7820,7 +7820,7 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "0.5 tl chilivlokken",
+        "raw": "chilivlokken",
         "amount": 0.5,
         "unit": "tl",
         "name": "chilivlokken",
@@ -7850,93 +7850,122 @@
         "name": "peterselie",
         "optional": false,
         "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "400 gram (voorgesneden) rode kool",
-        "amount": 400,
-        "unit": "gram",
-        "name": "rode kool",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 granny smith appel",
-        "amount": 1,
-        "unit": "",
-        "name": "appel (granny smith)",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "klontje roomboter",
-        "amount": 10,
-        "unit": "gram",
-        "name": "roomboter",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "1 el azijn",
-        "amount": 15,
-        "unit": "ml",
-        "name": "azijn",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "1 tl kaneelpoeder",
-        "amount": 1,
-        "unit": "tl",
-        "name": "kaneelpoeder",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "kruidnagel",
-        "amount": null,
-        "unit": "",
-        "name": "kruidnagel",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "300ml water",
-        "amount": 300,
-        "unit": "ml",
-        "name": "water",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "1 knolselderij",
-        "amount": 1,
-        "unit": "",
-        "name": "knolselderij",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "klontje roomboter",
-        "amount": 10,
-        "unit": "gram",
-        "name": "roomboter",
-        "optional": false,
-        "category": "Zuivel en eieren"
       }
     ],
-    "method": "Stoofvlees - Snijd de speklap in stukjes en braad deze even aan. Voeg hierna het vlees toe en bak op hoog vuur in een braadpan totdat het mooi bruin is. Er moet geen sap uit het vlees komen. Haal het vlees uit de pan. Pel tijdens het braden de uien en snijd in lange dikke plakjes, pers de knoflook. Fruit dit in de pan met een beetje olijfolie. Schil de wortels en snijd dit in plakjes. Voeg dit bij de uien en bak dit mee. Voeg de bouillon, de tomatenpurree, het scheutje azijn, de verse kruiden, chilivlokken en peper en zout toe aan het vlees in de braadpan. Laat het vlees stoven ca. drie uur op laag vuur en blijf regelmatig roeren. Zorg dat het niet droog kookt, voeg eventueel water toe. Snijd daarna de champignons in dikke plakjes en voeg dit ook toe aan het vlees 10 minuten voordat het vlees opgediend wordt. Snijd de peterselie fijn en strooien voor het opdienen. Het gerecht wordt geserveerd met gepureerde knolselderij en rode kool. Verse rode kool- Snijd of rasp een rode kool fijn. Snijd of rasp een granny smith appel in kleine stukjes. Laat in een grote pan een blokje roomboter smelten op laag vuur. Doe de rode kool en de appel in de pan met de gesmolten boter. Voeg een eetlepel azijn toe. Voeg naar smaak een of meerdere kruidnageltjes toe en een theelepel kaneel. Voeg tot slot 2 kopjes water toe (waar nodig meer water). Doe de deksel op de pan en laat het geheel een uur op laag vuur smoren. Knolselderijpuree - Schil een knolselderij en snijd ‘m in stukken. Zet de knolselderij in een laagje water met een beetje zout en laat 10-15 minuten koken. Giet het water af en stamp de knolselderij tot puree. Naar smaak peper en een klontje roomboter toevoegen.",
+    "components": [
+      {
+        "id": "verse-rode-kool",
+        "title": "Verse rode kool",
+        "yield": 2,
+        "yieldUnit": "porties",
+        "yieldNote": "",
+        "optional": false,
+        "includeInShoppingList": true,
+        "equipment": [],
+        "ingredients": [
+          {
+            "raw": "400 gram (voorgesneden) rode kool",
+            "amount": 400,
+            "unit": "gram",
+            "name": "rode kool",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "1 granny smith appel",
+            "amount": 1,
+            "unit": "",
+            "name": "appel (granny smith)",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "klontje roomboter",
+            "amount": 10,
+            "unit": "gram",
+            "name": "roomboter",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          },
+          {
+            "raw": "1 el azijn",
+            "amount": 15,
+            "unit": "ml",
+            "name": "azijn",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "1 tl kaneelpoeder",
+            "amount": 1,
+            "unit": "tl",
+            "name": "kaneelpoeder",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          },
+          {
+            "raw": "kruidnagel",
+            "amount": null,
+            "unit": "",
+            "name": "kruidnagel",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          },
+          {
+            "raw": "300ml water",
+            "amount": 300,
+            "unit": "ml",
+            "name": "water",
+            "optional": false,
+            "category": "Houdbare producten"
+          }
+        ],
+        "method": "Snijd of rasp een rode kool fijn. Snijd of rasp een granny smith appel in kleine stukjes. Laat in een grote pan een blokje roomboter smelten op laag vuur. Doe de rode kool en de appel in de pan met de gesmolten boter. Voeg een eetlepel azijn toe. Voeg naar smaak een of meerdere kruidnageltjes toe en een theelepel kaneel. Voeg tot slot 2 kopjes water toe (waar nodig meer water). Doe de deksel op de pan en laat het geheel een uur op laag vuur smoren."
+      },
+      {
+        "id": "knolselderijpuree",
+        "title": "Knolselderijpuree",
+        "yield": 2,
+        "yieldUnit": "porties",
+        "yieldNote": "",
+        "optional": false,
+        "includeInShoppingList": true,
+        "equipment": [],
+        "ingredients": [
+          {
+            "raw": "1 knolselderij",
+            "amount": 1,
+            "unit": "",
+            "name": "knolselderij",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "peper en zout",
+            "amount": null,
+            "unit": "",
+            "name": "peper en zout",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          },
+          {
+            "raw": "klontje roomboter",
+            "amount": 10,
+            "unit": "gram",
+            "name": "roomboter",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          }
+        ],
+        "method": "Schil een knolselderij en snijd ‘m in stukken. Zet de knolselderij in een laagje water met een beetje zout en laat 10-15 minuten koken. Giet het water af en stamp de knolselderij tot puree. Naar smaak peper en een klontje roomboter toevoegen."
+      }
+    ],
+    "method": "Snijd de speklap in stukjes en braad deze even aan. Voeg hierna het vlees toe en bak op hoog vuur in een braadpan totdat het mooi bruin is. Er moet geen sap uit het vlees komen. Haal het vlees uit de pan. Pel tijdens het braden de uien en snijd in lange dikke plakjes, pers de knoflook. Fruit dit in de pan met een beetje olijfolie. Schil de wortels en snijd dit in plakjes. Voeg dit bij de uien en bak dit mee. Voeg de bouillon, de tomatenpuree, het scheutje azijn, de verse kruiden, chilivlokken en peper en zout toe aan het vlees in de braadpan. Laat het vlees stoven ca. drie uur op laag vuur en blijf regelmatig roeren. Zorg dat het niet droog kookt, voeg eventueel water toe. Snijd daarna de champignons in dikke plakjes en voeg dit ook toe aan het vlees 10 minuten voordat het vlees opgediend wordt. Snijd de peterselie fijn en strooi deze voor het opdienen. Het gerecht wordt geserveerd met gepureerde knolselderij en rode kool.",
     "diet": [
       "vlees"
     ],
-    "approved": false
+    "approved": true,
+    "preparationTime": 240
   },
   {
     "id": "tempeh-met-sesamzaad-en-ei",
