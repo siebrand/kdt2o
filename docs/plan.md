@@ -7,7 +7,6 @@ top of this document.
 
 - Add browser-level smoke tests for planning, shopping-list aggregation, PDF
   generation, and the GitHub Pages base path.
-- Add a JSON Schema or equivalent runtime validation for `public/recipes.json`.
 - Add dedicated security and dependency workflows for action, dependency,
   Docker-image, and link scanning.
 - Add a release process with versioned release notes, an SBOM, and a tested
@@ -45,6 +44,8 @@ The following features are complete and have been moved below the open work:
 - [x] Shared flax-cracker subrecipes, including batch calculation and equipment.
 - [x] Shared granola subrecipes, with one granola preparation per weekly list.
 - [x] Recipe preparation-time fields shown on recipe cards and in PDFs.
+- [x] JSON Schema for `public/recipes.json` in `schemas/schema.json`, enforced
+  by a pre-commit hook running `scripts/validate_recipes.py`.
 - [x] Recipe approval markers and exclusion of approved recipes from the review
   PDF at `all-recipes.html`.
 - [x] Approved-only recipe visibility and random selection by default, with an

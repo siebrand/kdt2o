@@ -8,6 +8,7 @@ Kitano meal planner is a static Dutch web application for planning breakfast, lu
 
 - Recipe sources: `recipes/`
 - Reviewed recipe data: `public/recipes.json`
+- Recipe data contract: `schemas/schema.json`, checked by `scripts/validate_recipes.py`
 - Browser app: `public/index.html`, `public/app.js`, `public/styles.css`
 - Container: `Dockerfile`, `nginx.conf`
 - Agent rules: `AGENTS.md`
@@ -21,6 +22,7 @@ No database, accounts, tracking, analytics, or server-side plan storage. UI and 
 Use:
 
 ```bash
+pre-commit run --all-files
 docker build -t kitano-meal-planner .
 docker run --rm -p 8080:80 kitano-meal-planner
 ```

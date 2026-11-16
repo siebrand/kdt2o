@@ -2,79 +2,79 @@
 
 The authoritative schema is `schemas/schema.json` in the repository. The maintained
 browser data is the array in `public/recipes.json`. Read and validate against
-`schemas/schema.json`; this reference is only an operational summary.
+`schemas/schema.json`; this reference is only an operational summary. In the
+repository, `pre-commit run --all-files` runs `scripts/validate_recipes.py`,
+which applies the schema plus rules a schema cannot express.
 
 ## Required top-level fields
 
 Every recipe object must include:
 
 - `id`, `title`, `approved`, `category`, `portions`, `multiDay`
-- `ingredients`, `method`
-- `components`, `preparationTime`, `days`, `equipment`, `notes`, `ovenTime`
+- `ingredients`, `method`, `diet`
 
-Optional dietary classification:
+`diet` is an array containing `["vlees"]`, `["vis"]`, `["vlees", "vis"]`,
+`["vegetarisch"]`, or `["vegan"]`. `vegetarisch` and `vegan` cannot be
+combined with `vlees` or `vis`.
 
-- `diet`: an array containing `["vlees"]`, `["vis"]`, `["vlees", "vis"]`,
-  `["vegetarisch"]`, or `["vegan"]`.
-- `vegetarisch` and `vegan` cannot be combined with `vlees` or `vis`.
+## Optional top-level fields
 
-Optional program classification:
+- `days`: an integer of at least 2. Required when `multiDay` is `true`, and
+  not allowed otherwise.
+- `preparationTime` and `ovenTime`: positive whole minutes.
+- `programs`: an array of one or more unique program names for which the
+  recipe is suitable.
+- `components`, `dailyVariants`, `equipment`, `notes`, `advanceNotice`.
 
-- `programs`: an array of one or more program names for which the recipe is
-  suitable. A recipe may belong to multiple programs; names must be unique.
+Omit an optional field when the source provides no value. Do not use
+placeholders such as `0`, empty strings, or empty arrays, and do not invent
+timings or servings. No other fields are allowed.
 
-When the source does not provide a value, preserve uncertainty where the schema
-allows it. For required fields that are arrays, use an empty array. Use project
-conventions for required numeric defaults; do not invent timings or servings.
+## Ingredients
 
-## Main ingredients
-
-Each main ingredient requires:
+Each ingredient requires:
 
 - `raw`: original Dutch ingredient wording
-- `amount`: number, string, or `null`
-- `unit`: string or `null`
+- `amount`: a positive number, or `null` when unquantified; never a string
+- `unit`: a string, empty for countable or unitless items
 - `name`: normalized shopping-list name
 - `optional`: boolean
-- `category`: Dutch shopping category
-- `alternatives`: array of alternative ingredient objects
-- `componentId`: string linking the ingredient to a component, or `""`
+- `category`: one of the shopping categories below
 
-Alternative objects require `raw`, `amount`, `unit`, `name`, `optional`,
-`category`, and `componentId`. Preserve explicit substitutions as
-alternatives; do not put them into the main ingredient name.
+Ingredients may also have:
+
+- `alternatives`: an array of alternative ingredient objects with the same
+  required fields. Preserve explicit substitutions as alternatives; do not put
+  them into the main ingredient name.
+- `componentId`: the `id` of a component in the same recipe, or of the shared
+  `lijnzaadcrackers` or `granola` component.
 
 ## Components
 
-Each component requires:
-
-- `id`, `title`, `yield`, `yieldUnit`, `yieldNote`
-- `ingredients`, `equipment`, and `method`
-
-Component ingredients require `raw`, `amount`, `unit`, `name`,
-`optional`, and `category`. Components may also use `optional`,
-`availabilityNote`, and `includeInShoppingList`.
+Each component requires `id`, `title`, `ingredients`, and `method`. Components
+may also use `yield`, `yieldUnit`, `yieldNote`, `equipment`, `optional`,
+`availabilityNote`, `includeInShoppingList`, `preparationTime`, and
+`ovenTime`. Component IDs must be unique within a recipe.
 
 ## Other structures
 
-- `dailyVariants` entries require numeric `dayIndex`, `title`,
-  `ingredients`, and `method`.
+- `dailyVariants` entries require a zero-based integer `dayIndex` within the
+  planned `days`, plus `title`, `ingredients`, and `method`.
 - `equipment` is an array of Dutch plain-text item names.
 - `notes` is an array of Dutch plain-text notes.
-- `preparationTime` and `ovenTime` are numeric minutes.
-- `days` is numeric and is used with `multiDay`.
-- Recipe `category` is a meal category such as `ontbijt`, `lunch`, or
-  `diner`; ingredient `category` is a shopping category.
+- Recipe `category` is one of `ontbijt`, `lunch`, or `diner`; ingredient
+  `category` is a shopping category.
+- Recipe IDs and titles must be unique.
 
-Ingredient categories currently present in the data include:
+Shopping categories:
 
 - `Groente en fruit`
 - `Zuivel en eieren`
 - `Vlees, vis en vleesvervangers`
-- `Houdbare producten`
-- `Diepvries`
 - `Brood en ontbijt`
+- `Diepvries`
 - `Kruiden en smaakmakers`
+- `Houdbare producten`
 
 All recipe text is plain Dutch text. Do not emit HTML, Markdown, comments, or
 trailing commas in JSON.

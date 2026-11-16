@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: validate-recipes
+        name: Validate public/recipes.json
+        entry: python scripts/validate_recipes.py
+        language: python
+        additional_dependencies: ["jsonschema>=4.18"]
+        files: ^(public/recipes\.json|schemas/schema\.json|scripts/validate_recipes\.py)$
+        pass_filenames: false

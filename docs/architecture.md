@@ -49,7 +49,9 @@ work both at the local site root and at the project path `/kdt2o/`.
 
 `recipes/` contains the source material. The reviewed browser data is committed
 as `public/recipes.json`; changes must be checked against the source material
-before release.
+before release. `schemas/schema.json` defines the data contract. A pre-commit
+hook runs `scripts/validate_recipes.py`, which applies the schema plus rules a
+schema cannot express, such as unique IDs and resolvable component references.
 
 ## Browser boundaries
 

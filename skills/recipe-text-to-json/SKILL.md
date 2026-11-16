@@ -22,9 +22,10 @@ planner. Read `schemas/schema.json` before producing output.
   reviewed and approved.
 - Use `category` as exactly one of `ontbijt`, `lunch`, or `diner`. Ask when it
   cannot be inferred safely; do not invent a category.
-- If dietary classification is provided, use the optional `diet` array with one
-  of `["vlees"]`, `["vis"]`, `["vlees", "vis"]`, `["vegetarisch"]`, or
-  `["vegan"]`. Do not combine `vegetarisch` or `vegan` with `vlees` or `vis`.
+- Set the required `diet` array to one of `["vlees"]`, `["vis"]`,
+  `["vlees", "vis"]`, `["vegetarisch"]`, or `["vegan"]`, based on the
+  non-optional ingredients. Do not combine `vegetarisch` or `vegan` with
+  `vlees` or `vis`.
 - If program suitability is provided, use the optional `programs` array with one
   or more program names. Keep each program name as a string and do not duplicate
   names within the array.
@@ -32,10 +33,10 @@ planner. Read `schemas/schema.json` before producing output.
   do not silently assume a serving count.
 - Set `multiDay` to `false` unless the text clearly describes a multi-day dish.
   For multi-day recipes, include a numeric `days` value when stated.
-- Emit every top-level field listed as required by `schema.json`. Use safe empty
-  defaults for absent optional content: `components: []`, `equipment: []`,
-  `notes: []`, `days: 0`, `ovenTime: 0`, and `preparationTime: 0` only when the
-  schema requires those fields and the project convention accepts zero.
+- Emit every field listed as required by `schema.json`. Omit optional fields
+  that have no content instead of using placeholders: never emit `days: 0`,
+  `ovenTime: 0`, `preparationTime: 0`, an empty `advanceNotice`, or empty
+  arrays.
 
 ## Ingredient normalization
 
@@ -82,8 +83,7 @@ Every ingredient must be an object with:
   `public/recipes.json` when a newer category appears in the project.
 - Represent explicit substitutions in an `alternatives` array using the same
   ingredient-object shape. Do not merge alternatives into the main ingredient.
-- Emit `alternatives: []` and `componentId: ""` when required by the schema and
-  the ingredient is not an alternative or component ingredient.
+- Omit `alternatives` and `componentId` when an ingredient has none.
 - Use `componentId` to associate an ingredient with a component; do not infer a
   component relationship from the ingredient name alone.
 
@@ -98,10 +98,9 @@ Include these fields in this order when applicable:
 
 Use `method` as plain text. Keep steps in a readable Dutch paragraph or separate
 sentences; never emit HTML or Markdown inside recipe fields. Use `components`
-for separately prepared subrecipes. Components must include the required
-`id`, `title`, `yield`, `ingredients`, `equipment`, `method`, `yieldUnit`, and
-  `yieldNote` fields from `schemas/schema.json`; use an empty string, empty array, or
-`false` only where that is an appropriate schema-compatible default. Use
+for separately prepared subrecipes. Components require `id`, `title`,
+`ingredients`, and `method`; add `yield`, `yieldUnit`, `yieldNote`,
+`equipment`, `preparationTime`, and `ovenTime` when the source states them. Use
 `dailyVariants` only when the source genuinely gives
 day-specific variants, with a zero-based numeric `dayIndex`.
 
@@ -119,7 +118,8 @@ invented minutes.
    unit, or a note rather than guessing.
 3. Normalize the extracted data into the schema above.
 4. Validate the result against `schemas/schema.json`, then check that it contains no
-   comments or trailing commas and has no HTML in recipe text.
+   comments or trailing commas and has no HTML in recipe text. After adding it to
+   `public/recipes.json`, run `pre-commit run --all-files`.
 5. If the user wants to add it to the repository, show the proposed object and
    identify the target file before making the edit. Do not mark it approved
    merely because it was converted.

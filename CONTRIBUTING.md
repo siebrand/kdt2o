@@ -14,13 +14,26 @@ docker run --rm -p 8080:80 kitano-meal-planner
 
 Open `http://localhost:8080` to test the application.
 
+Install the Git hooks once per clone. They require
+[pre-commit](https://pre-commit.com/), which installs the hook's own Python
+dependencies.
+
+```bash
+pre-commit install
+pre-commit run --all-files
+```
+
+The hook validates `public/recipes.json` against `schemas/schema.json` and
+additional rules in `scripts/validate_recipes.py` whenever recipe data, the
+schema, or the validator changes.
+
 ## Workflow
 
 1. Create a focused branch from `main`.
 2. Keep changes small and explain the user-visible impact.
 3. Keep all user-visible text, PDF text, and errors in Dutch.
 4. Keep code, commits, branches, issues, pull requests, and developer documentation in English.
-5. Run the relevant validation, such as the Docker build, and include the results in the pull request.
+5. Run the relevant validation, such as the pre-commit hooks and the Docker build, and include the results in the pull request.
 6. Open a pull request against `main`.
 
 ## Recipe data
@@ -28,7 +41,8 @@ Open `http://localhost:8080` to test the application.
 Reviewed recipe data is maintained in `public/recipes.json`; there is no active
 recipe extractor. Do not edit recipe data casually: check source provenance,
 validate quantities and portions, and ensure ingredients and methods are not
-lost. Never invent unclear recipe content.
+lost. Never invent unclear recipe content. Every change must pass
+`scripts/validate_recipes.py`.
 
 When a code or configuration change affects behavior, architecture, deployment,
 privacy, licensing, or contributor workflow, update every relevant document in

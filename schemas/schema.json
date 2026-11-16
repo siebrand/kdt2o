@@ -1,371 +1,324 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Model Set",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://siebrand.github.io/kdt2o/schemas/schema.json",
+  "title": "Kitano meal planner recipes",
+  "description": "Schema for public/recipes.json. Ingredient amount and unit drive the shopping list only; raw keeps the recipe wording.",
   "type": "array",
   "items": {
-    "type": "object",
-    "properties": {
-      "id": {
-        "type": "string"
-      },
-      "title": {
-        "type": "string"
-      },
-      "approved": {
-        "type": "boolean"
-      },
-      "category": {
-        "type": "string"
-      },
-      "diet": {
-        "type": "array",
-        "minItems": 1,
-        "maxItems": 2,
-        "uniqueItems": true,
-        "items": {
-          "type": "string",
-          "enum": [
-            "vlees",
-            "vis",
-            "vegetarisch",
-            "vegan"
-          ]
+    "$ref": "#/$defs/recipe"
+  },
+  "$defs": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "minutes": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "shoppingCategory": {
+      "enum": [
+        "Groente en fruit",
+        "Zuivel en eieren",
+        "Vlees, vis en vleesvervangers",
+        "Brood en ontbijt",
+        "Diepvries",
+        "Kruiden en smaakmakers",
+        "Houdbare producten"
+      ]
+    },
+    "amount": {
+      "description": "A number, or null for an unquantified ingredient. Never a string; for a range, store the maximum.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "exclusiveMinimum": 0
+    },
+    "alternative": {
+      "type": "object",
+      "properties": {
+        "raw": {
+          "$ref": "#/$defs/nonEmptyString"
         },
-        "enum": [
-          ["vlees"],
-          ["vis"],
-          ["vlees", "vis"],
-          ["vis", "vlees"],
-          ["vegetarisch"],
-          ["vegan"]
-        ]
-      },
-      "programs": {
-        "type": "array",
-        "uniqueItems": true,
-        "items": {
+        "amount": {
+          "$ref": "#/$defs/amount"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "name": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "optional": {
+          "type": "boolean"
+        },
+        "category": {
+          "$ref": "#/$defs/shoppingCategory"
+        },
+        "componentId": {
           "type": "string"
         }
       },
-      "portions": {
-        "type": "number"
-      },
-      "multiDay": {
-        "type": "boolean"
-      },
-      "ingredients": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "raw": {
-              "type": "string"
-            },
-            "amount": {
-              "type": [
-                "number",
-                "null",
-                "string"
-              ]
-            },
-            "unit": {
-              "type": [
-                "string",
-                "null"
-              ]
-            },
-            "name": {
-              "type": "string"
-            },
-            "optional": {
-              "type": "boolean"
-            },
-            "alternatives": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "raw": {
-                    "type": "string"
-                  },
-                  "amount": {
-                    "type": [
-                      "number",
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "unit": {
-                    "type": "string"
-                  },
-                  "name": {
-                    "type": "string"
-                  },
-                  "optional": {
-                    "type": "boolean"
-                  },
-                  "category": {
-                    "type": "string"
-                  },
-                  "componentId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "raw",
-                  "amount",
-                  "unit",
-                  "name",
-                  "optional",
-                  "category",
-                  "componentId"
-                ]
-              }
-            },
-            "category": {
-              "type": "string"
-            },
-            "componentId": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "raw",
-            "amount",
-            "unit",
-            "name",
-            "optional",
-            "category",
-            "alternatives",
-            "componentId"
-          ]
-        }
-      },
-      "components": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "string"
-            },
-            "title": {
-              "type": "string"
-            },
-            "yield": {
-              "type": "number"
-            },
-            "yieldUnit": {
-              "type": "string"
-            },
-            "optional": {
-              "type": "boolean"
-            },
-            "availabilityNote": {
-              "type": "string"
-            },
-            "ingredients": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "raw": {
-                    "type": "string"
-                  },
-                  "amount": {
-                    "type": [
-                      "number",
-                      "null"
-                    ]
-                  },
-                  "unit": {
-                    "type": [
-                      "string",
-                      "null"
-                    ]
-                  },
-                  "name": {
-                    "type": "string"
-                  },
-                  "optional": {
-                    "type": "boolean"
-                  },
-                  "category": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "raw",
-                  "amount",
-                  "unit",
-                  "name",
-                  "optional",
-                  "category"
-                ]
-              }
-            },
-            "equipment": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "method": {
-              "type": "string"
-            },
-            "yieldNote": {
-              "type": "string"
-            },
-            "includeInShoppingList": {
-              "type": "boolean"
-            }
-          },
-          "required": [
-            "id",
-            "title",
-            "yield",
-            "ingredients",
-            "equipment",
-            "method",
-            "yieldUnit",
-            "yieldNote"
-          ]
-        }
-      },
-      "method": {
-        "type": "string"
-      },
-      "notes": {
-        "type": "array",
-        "items": {
+      "required": [
+        "raw",
+        "amount",
+        "unit",
+        "name",
+        "optional",
+        "category"
+      ],
+      "additionalProperties": false
+    },
+    "ingredient": {
+      "type": "object",
+      "properties": {
+        "raw": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "amount": {
+          "$ref": "#/$defs/amount"
+        },
+        "unit": {
           "type": "string"
-        }
-      },
-      "advanceNotice": {
-        "type": "string"
-      },
-      "days": {
-        "type": "number"
-      },
-      "equipment": {
-        "type": "array",
-        "items": {
+        },
+        "name": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "optional": {
+          "type": "boolean"
+        },
+        "category": {
+          "$ref": "#/$defs/shoppingCategory"
+        },
+        "componentId": {
           "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          }
         }
       },
-      "preparationTime": {
-        "type": "number"
-      },
-      "ovenTime": {
-        "type": "number"
-      },
-      "dailyVariants": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "dayIndex": {
-              "type": "number"
-            },
-            "title": {
-              "type": "string"
-            },
-            "ingredients": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "raw": {
-                    "type": "string"
-                  },
-                  "amount": {
-                    "type": [
-                      "number",
-                      "null",
-                      "string"
-                    ]
-                  },
-                  "unit": {
-                    "type": [
-                      "string",
-                      "null"
-                    ]
-                  },
-                  "name": {
-                    "type": "string"
-                  },
-                  "optional": {
-                    "type": "boolean"
-                  },
-                  "category": {
-                    "type": "string"
-                  },
-                  "alternatives": {
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "raw": {
-                          "type": "string"
-                        },
-                        "amount": {
-                          "type": "number"
-                        },
-                        "unit": {
-                          "type": "string"
-                        },
-                        "name": {
-                          "type": "string"
-                        },
-                        "optional": {
-                          "type": "boolean"
-                        },
-                        "category": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  }
-                },
-                "required": [
-                  "raw",
-                  "amount",
-                  "unit",
-                  "name",
-                  "optional",
-                  "category"
-                ]
-              }
-            },
-            "method": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "dayIndex",
-            "title",
-            "ingredients",
-            "method"
-          ]
-        }
+      "required": [
+        "raw",
+        "amount",
+        "unit",
+        "name",
+        "optional",
+        "category"
+      ],
+      "additionalProperties": false
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ingredient"
       }
     },
-    "required": [
-      "id",
-      "title",
-      "approved",
-      "category",
-      "portions",
-      "multiDay",
-      "ingredients",
-      "method",
-      "components",
-      "preparationTime",
-      "days",
-      "equipment",
-      "notes",
-      "ovenTime"
-    ],
-    "title": "Model"
+    "component": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "title": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "yield": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "yieldUnit": {
+          "type": "string"
+        },
+        "yieldNote": {
+          "type": "string"
+        },
+        "optional": {
+          "type": "boolean"
+        },
+        "availabilityNote": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "includeInShoppingList": {
+          "type": "boolean"
+        },
+        "preparationTime": {
+          "$ref": "#/$defs/minutes"
+        },
+        "ovenTime": {
+          "$ref": "#/$defs/minutes"
+        },
+        "ingredients": {
+          "$ref": "#/$defs/ingredients"
+        },
+        "equipment": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "method": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "ingredients",
+        "method"
+      ],
+      "additionalProperties": false
+    },
+    "dailyVariant": {
+      "type": "object",
+      "properties": {
+        "dayIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "title": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "ingredients": {
+          "$ref": "#/$defs/ingredients"
+        },
+        "method": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      },
+      "required": [
+        "dayIndex",
+        "title",
+        "ingredients",
+        "method"
+      ],
+      "additionalProperties": false
+    },
+    "recipe": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "title": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "approved": {
+          "type": "boolean"
+        },
+        "category": {
+          "enum": [
+            "ontbijt",
+            "lunch",
+            "diner"
+          ]
+        },
+        "portions": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "multiDay": {
+          "type": "boolean"
+        },
+        "days": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "preparationTime": {
+          "$ref": "#/$defs/minutes"
+        },
+        "ovenTime": {
+          "$ref": "#/$defs/minutes"
+        },
+        "diet": {
+          "enum": [
+            [
+              "vlees"
+            ],
+            [
+              "vis"
+            ],
+            [
+              "vlees",
+              "vis"
+            ],
+            [
+              "vegetarisch"
+            ],
+            [
+              "vegan"
+            ]
+          ]
+        },
+        "programs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "ingredients": {
+          "$ref": "#/$defs/ingredients"
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/component"
+          }
+        },
+        "dailyVariants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/dailyVariant"
+          }
+        },
+        "equipment": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "method": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "advanceNotice": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "approved",
+        "category",
+        "portions",
+        "multiDay",
+        "ingredients",
+        "method",
+        "diet"
+      ],
+      "additionalProperties": false,
+      "if": {
+        "properties": {
+          "multiDay": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "days"
+        ]
+      }
+    }
   }
 }

@@ -27,7 +27,8 @@ All user-visible text, errors, labels, PDF output, and UI content must be Dutch.
 ## Safe workflow
 
 1. Read this file and `docs/plan.md` before changing architecture.
-2. Run the documented checks before committing.
+2. Run the documented checks before committing. The `pre-commit` hook
+   validates `public/recipes.json` against `schemas/schema.json`.
 3. Keep commits small and use Conventional Commits in English.
 4. Do not commit secrets, generated local state, or unlicensed branding.
 5. Keep user-visible strings in the Dutch message catalog in `public/app.js`.
@@ -39,5 +40,7 @@ All user-visible text, errors, labels, PDF output, and UI content must be Dutch.
 
 ## Useful commands
 
+- `pre-commit install` (once per clone)
+- `pre-commit run --all-files`
 - `docker build -t kitano-meal-planner .`
 - `docker run --rm -p 8080:80 kitano-meal-planner`
