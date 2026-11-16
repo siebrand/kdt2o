@@ -10,8 +10,8 @@ All user-visible text, errors, labels, PDF output, and UI content must be Dutch.
 
 ## Architecture
 
-- `recipes/` contains source PDF and text recipes.
-- Reviewed recipe data is maintained in `public/recipes.json`; source files remain in `recipes/` for reference.
+- Reviewed recipe data is maintained by hand in `public/recipes.json`. The original recipes are kept outside the repository; check changes against them.
+- `schemas/schema.json` defines the recipe data contract; `scripts/validate_recipes.py` enforces it.
 - `public/index.html`, `public/app.js`, and `public/styles.css` are the browser application.
 - Nginx serves the static files. There is no database, account system, analytics, or server-side planning state.
 - Browser `localStorage` is the only persistence mechanism.

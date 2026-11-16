@@ -47,13 +47,13 @@ work both at the local site root and at the project path `/kdt2o/`.
 
 ## Recipe data
 
-`recipes/` contains the source material. The reviewed browser data is committed
-as `public/recipes.json`; changes must be checked against the source material
-before release. `schemas/schema.json` defines the data contract. A pre-commit
-hook runs `scripts/validate_recipes.py`, which applies the schema plus rules a
-schema cannot express, such as unique IDs and resolvable component references.
-The CI workflow runs the same hook, so invalid data cannot reach `main`
-unnoticed.
+The reviewed browser data is maintained by hand and committed as
+`public/recipes.json`. The original recipes are kept outside the repository;
+changes must be checked against them before release. `schemas/schema.json`
+defines the data contract. A pre-commit hook runs `scripts/validate_recipes.py`,
+which applies the schema plus rules a schema cannot express, such as unique IDs
+and resolvable component references. The CI workflow runs the same hook, so
+invalid data cannot reach `main` unnoticed.
 
 Shared subrecipes, such as `lijnzaadcrackers`, `granola`, and `notenbrood`,
 are defined once in one recipe's `components`. When the browser loads the

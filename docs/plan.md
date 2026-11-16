@@ -21,9 +21,9 @@ published at `https://siebrand.github.io/kdt2o/` and is deployed automatically
 from `main` by `.github/workflows/deploy-pages.yml`. Docker remains available
 for local testing and alternative static hosting.
 
-Recipe data is reviewed and committed in `public/recipes.json`. The repository
-does not contain an active recipe extractor; `recipes/` is retained as source
-reference material.
+Recipe data is reviewed, maintained by hand, and committed in
+`public/recipes.json`. The repository does not contain a recipe extractor; the
+original recipes are kept outside the repository.
 
 ## Implemented features
 
@@ -68,8 +68,8 @@ application and are retained here for historical context only:
 - ~~`pdf-lib` PDF generation~~ — superseded by jsPDF already used by the app.
 - ~~Build-time PDF/TXT extraction with `scripts/extract_recipes.py`~~ — removed;
   reviewed `public/recipes.json` is now the maintained browser data source.
-- ~~OCR migration and deletion of the original recipe sources~~ — rejected;
-  source reference material remains in the repository.
+- ~~OCR migration of the original recipe sources~~ — rejected; the originals
+  are kept outside the repository and used for manual review.
 - ~~Docker build-time recipe parsing and LLM harmonization~~ — rejected for the
   current static release; no extractor or `RECIPE_LLM_COMMAND` is active.
 - ~~A database, account system, analytics, or server-side planning state~~ —

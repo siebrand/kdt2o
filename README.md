@@ -4,11 +4,11 @@ A static, containerized Dutch meal-planning application.
 
 ## Development
 
-The application has no database and stores a plan only in the browser. Recipe sources are in `recipes/`. A plan can also
-be shared through a URL containing the plan data; no plan data is sent to a server.
+The application has no database and stores a plan only in the browser. A plan can also be shared through a URL
+containing the plan data; no plan data is sent to a server.
 
-Recipe data is maintained in the reviewed `public/recipes.json` file. Recipe source files are retained in `recipes/` for
-reference. A pre-commit hook validates the data against `schemas/schema.json`; run `pre-commit install` once per clone.
+Recipe data is maintained by hand in the reviewed `public/recipes.json` file. The original recipes are kept outside the
+repository. A pre-commit hook validates the data against `schemas/schema.json`; run `pre-commit install` once per clone.
 Only approved recipes are shown and selected by default; the planner provides an explicit option to include all recipes.
 
 Planned recipes can be moved by dragging them to another slot of the same meal type. Dropping onto another recipe swaps
