@@ -27,8 +27,8 @@ Open http://localhost:8080.
 ## GitHub Pages deployment
 
 The live site is available at `https://siebrand.github.io/kdt2o/`. The GitHub Actions workflow deploys `public/`
-automatically after every push to `main`; it adds the canonical root `CHANGELOG.md` to the site artifact. GitHub Pages
-is configured to use that workflow.
+automatically after every push to `main`; `public/CHANGELOG.md` is served directly from that artifact. GitHub Pages is
+configured to use that workflow.
 
 ## Language and commits
 

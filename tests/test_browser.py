@@ -1,10 +1,9 @@
 """Browser smoke tests for the meal planner.
 
-The tests serve public/ and the canonical root CHANGELOG.md over HTTP, at the
-site root and under the GitHub Pages base path /kdt2o/, and drive the application
-with Playwright. Fixed plans are opened through share links, so the tests do not
-depend on the random recipe order. Expected values are derived from
-public/recipes.json.
+The tests serve public/ over HTTP, at the site root and under the GitHub Pages
+base path /kdt2o/, and drive the application with Playwright. Fixed plans are
+opened through share links, so the tests do not depend on the random recipe
+order. Expected values are derived from public/recipes.json.
 """
 
 from __future__ import annotations
@@ -37,9 +36,16 @@ class StaticHandler(SimpleHTTPRequestHandler):
     def translate_path(self, path: str) -> str:
         if path == BASE_PATH or path.startswith(BASE_PATH + "/"):
             path = path[len(BASE_PATH):] or "/"
-        if path == "/CHANGELOG.md":
-            return str(ROOT / "CHANGELOG.md")
         return super().translate_path(path)
+
+    def end_headers(self) -> None:
+        self.send_header(
+            "Content-Security-Policy",
+            "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; "
+            "img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; "
+            "form-action 'self'",
+        )
+        super().end_headers()
 
     def log_message(self, format: str, *args) -> None:
         pass
@@ -127,6 +133,9 @@ def test_changelog_page_loads(page: Page, server_url: str, path: str):
     expect(page.locator("#changelog-content h1")).to_have_text("Changelog")
     expect(page.locator("#changelog-content")).to_contain_text(
         "All notable changes to this project are documented here.")
+    entries = page.locator("#changelog-content li").all_inner_texts()
+    entry = next(item for item in entries if item.startswith("Consolidated the agent guidance"))
+    assert "outdated docs/llm-context.md and docs/user-test-improvements.md." in " ".join(entry.split())
 
 
 def test_random_fill_persists_and_clears(page: Page, server_url: str):
