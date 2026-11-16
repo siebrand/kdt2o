@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Privacybeleid | Kitano meal planner</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js?v=8"></script>
 </head>
 <body>
 <header class="site-header">
@@ -14,8 +15,8 @@
 </header>
 <main class="container privacy-content">
     <h2>Welke gegevens gebruikt deze toepassing?</h2>
-    <p>De maaltijdplanner gebruikt alleen de recepten die nodig zijn om de planner en de PDF te tonen. Je weekplanning
-        wordt uitsluitend in de lokale opslag van je browser bewaard.</p>
+    <p>De planner laadt recepten om de planning en de PDF te tonen. Elke pagina laadt ook de openbare versieaanduiding.
+        Je weekplanning wordt uitsluitend in de lokale opslag van je browser bewaard.</p>
 
     <h2>Wat wordt niet verzameld?</h2>
     <p>Er zijn geen accounts, database, analytics, tracking of server-side opslag van je planning. De toepassing stuurt
@@ -46,6 +47,8 @@
         </svg>
         Broncode op GitHub
     </a>
+    <span aria-hidden="true">·</span>
+    <span id="app-version" class="app-version" aria-live="polite"></span>
 </footer>
 </body>
 </html>

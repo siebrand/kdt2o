@@ -65,6 +65,8 @@ The following features are complete and have been moved below the open work:
   project site.
 - [x] Deterministic CalVer version tags for every commit reachable from `main`,
   prefixed with the ISO commit date and disambiguated by commit count and SHA.
+- [x] Display the deployed CalVer ID in every public page footer; deployment and
+  release workflows stamp the checked-out commit version into the static site.
 - [x] Draft GitHub releases with Dutch notes sourced from the canonical changelog
   and an SPDX SBOM for the built Nginx image.
 - [x] Version-validated manual rollback of GitHub Pages to a tagged commit.

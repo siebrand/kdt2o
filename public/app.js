@@ -2,9 +2,16 @@ const DAYS = ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterda
 const MEALS = ["ontbijt", "lunch", "diner"];
 const PLAN_STORAGE_KEY = "kitano-weekplan";
 const PLAN_STORAGE_VERSION = 4;
+const MESSAGES = {
+    versionLabel: "Versie",
+    localVersion: "Lokale versie",
+    versionUnavailable: "Versie onbekend"
+};
+const VERSION_PATTERN = /^[0-9]{4}-[0-9]{2}-[0-9]{2}\.[0-9]{12,}-[0-9a-f]{40}$/;
+const hasPlanner = document.querySelector("#planner") !== null;
 const state = {
     recipes: [],
-    plan: loadPlan(),
+    plan: hasPlanner ? loadPlan() : {},
     activeSlot: null,
     pendingRecipe: null,
     shoppingWarnings: []
@@ -26,6 +33,7 @@ const singleRecipeSearch = document.querySelector("#single-recipe-search");
 const shoppingListItems = document.querySelector("#shopping-list-items");
 const notifications = document.querySelector("#notifications");
 const recipePanel = document.querySelector("#recipe-panel");
+const appVersion = document.querySelector("#app-version");
 const dragState = {sourceKey: null, dropped: false};
 
 function recipeIsAvailable(recipe) {
@@ -1370,33 +1378,50 @@ async function createSingleRecipePdf(recipe) {
     doc.save((recipe.id || "recept") + ".pdf");
 }
 
-document.querySelector("#clear-plan").addEventListener("click", () => {
-    state.plan = {};
-    savePlan();
-    render();
-});
-randomFillButton.addEventListener("click", fillRandomPlan);
-copyMenuLinkButton.addEventListener("click", copyMenuLink);
-search.addEventListener("input", renderOptions);
-singleRecipeCategory.addEventListener("change", renderSingleRecipeSearch);
-singleRecipeQuery.addEventListener("input", renderSingleRecipeSearch);
-shoppingListButton.addEventListener("click", () => {
-    renderShoppingList();
-    shoppingListView.hidden = false;
-    singleRecipeSearch.hidden = true;
-    shoppingListView.scrollIntoView({behavior: "smooth", block: "start"});
-});
-downloadButton.addEventListener("click", createPdf);
+async function loadAppVersion() {
+    const response = await fetch("version.txt", {cache: "no-store"});
+    if (!response.ok) throw new Error(`Version request failed with status ${response.status}`);
+    const version = (await response.text()).trim();
+    if (version !== "local" && !VERSION_PATTERN.test(version)) throw new Error("Invalid version file");
+    appVersion.textContent = version === "local"
+        ? `${MESSAGES.versionLabel}: ${MESSAGES.localVersion}`
+        : `${MESSAGES.versionLabel}: ${version}`;
+}
 
-fetch("recipes.json")
-    .then((response) => response.ok ? response.json() : Promise.reject(new Error("recipes")))
-    .then((recipes) => {
-        state.recipes = shuffleRecipes(attachSharedRecipeComponents(recipes).map(addPreparationTime));
-        state.plan = resolvePlanRecipeTokens(state.plan, state.recipes);
-        render();
-        renderSingleRecipeSearch();
-    })
-    .catch(() => {
-        status.textContent = "De recepten konden niet worden geladen.";
+loadAppVersion().catch((error) => {
+    console.error("Could not load application version.", error);
+    appVersion.textContent = MESSAGES.versionUnavailable;
+});
+
+if (hasPlanner) {
+    document.querySelector("#clear-plan").addEventListener("click", () => {
+        state.plan = {};
+        savePlan();
         render();
     });
+    randomFillButton.addEventListener("click", fillRandomPlan);
+    copyMenuLinkButton.addEventListener("click", copyMenuLink);
+    search.addEventListener("input", renderOptions);
+    singleRecipeCategory.addEventListener("change", renderSingleRecipeSearch);
+    singleRecipeQuery.addEventListener("input", renderSingleRecipeSearch);
+    shoppingListButton.addEventListener("click", () => {
+        renderShoppingList();
+        shoppingListView.hidden = false;
+        singleRecipeSearch.hidden = true;
+        shoppingListView.scrollIntoView({behavior: "smooth", block: "start"});
+    });
+    downloadButton.addEventListener("click", createPdf);
+
+    fetch("recipes.json")
+        .then((response) => response.ok ? response.json() : Promise.reject(new Error("recipes")))
+        .then((recipes) => {
+            state.recipes = shuffleRecipes(attachSharedRecipeComponents(recipes).map(addPreparationTime));
+            state.plan = resolvePlanRecipeTokens(state.plan, state.recipes);
+            render();
+            renderSingleRecipeSearch();
+        })
+        .catch(() => {
+            status.textContent = "De recepten konden niet worden geladen.";
+            render();
+        });
+}

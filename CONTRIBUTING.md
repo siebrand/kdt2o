@@ -57,7 +57,9 @@ create or move these tags manually.
 To prepare a release, run **Create release draft** from GitHub Actions and enter the tag to release. It verifies the
 version, builds the container, generates an SPDX SBOM, and creates a draft with notes sourced from the matching date
 section of `public/CHANGELOG.md`. Review the notes and SBOM, then publish the draft on GitHub. The workflows require
-`GITHUB_TOKEN` to have `contents: write` permission.
+`GITHUB_TOKEN` to have `contents: write` permission. Pages and release workflows stamp the CalVer into
+`public/version.txt` before publishing it; the deployed identifier appears in every page footer. Local builds show
+“Lokale versie”.
 
 To roll back the Pages deployment, run **Deploy GitHub Pages** with a previous version tag. The workflow validates the
 version and deploys that commit's `public/` directory. Run it without a version on `main`, or push `main`, to return to

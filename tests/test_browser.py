@@ -128,12 +128,33 @@ def test_planner_shows_only_approved_recipes(page: Page, server_url: str, path: 
 
 
 @pytest.mark.parametrize("path", ["", BASE_PATH])
+def test_app_displays_local_version(page: Page, server_url: str, path: str):
+    open_planner(page, f"{server_url}{path}/")
+    expect(page.locator("#app-version")).to_have_text("Versie: Lokale versie")
+
+
+@pytest.mark.parametrize("path", ["", BASE_PATH])
+@pytest.mark.parametrize("page_name", ["changelog.html", "privacy.html"])
+def test_static_pages_display_version(page: Page, server_url: str, path: str, page_name: str):
+    page.goto(f"{server_url}{path}/{page_name}")
+    expect(page.locator("#app-version")).to_have_text("Versie: Lokale versie")
+
+
+def test_app_displays_calver_version(page: Page, server_url: str):
+    version = "2026-11-17.000000000342-" + "a" * 40
+    page.route("**/version.txt", lambda route: route.fulfill(body=version))
+    open_planner(page, f"{server_url}/")
+    expect(page.locator("#app-version")).to_have_text(f"Versie: {version}")
+
+
+@pytest.mark.parametrize("path", ["", BASE_PATH])
 def test_changelog_page_loads(page: Page, server_url: str, path: str):
     page.goto(f"{server_url}{path}/changelog.html")
     expect(page.locator("#changelog-content h1")).to_have_text("Wijzigingen")
     expect(page.locator("#changelog-content")).to_contain_text(
         "De belangrijkste verbeteringen voor de planner en recepten.")
     assert page.locator("#changelog-content h2").all_inner_texts() == [
+        "17 november 2026",
         "16 november 2026",
         "13 november 2026",
         "11 november 2026",

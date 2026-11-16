@@ -24,6 +24,8 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 - `tests/test_browser.py`: the browser tests for the application.
 - `public/index.html`, `public/app.js`, `public/styles.css`: the browser
   application.
+- `public/version.txt`: local marker stamped with CalVer by deployment and
+  release workflows.
 - `Dockerfile`, `nginx.conf`: the container. Nginx serves the static files.
 - `scripts/release.py`: deterministic commit versions, tags, and release notes.
 - `.github/workflows/`: CI, Pages deployment, commit version tags, and releases.

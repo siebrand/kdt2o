@@ -2,6 +2,10 @@
 
 De belangrijkste verbeteringen voor de planner en recepten.
 
+## 17 november 2026
+
+- Onderaan elke pagina staat de versie van de planner.
+
 ## 16 november 2026
 
 - De planner gebruikt alleen goedgekeurde recepten.

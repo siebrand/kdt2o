@@ -42,7 +42,8 @@ To prepare a release, run **Create release draft** from GitHub Actions and enter
 the tag, builds the Docker image, generates an SPDX SBOM for that image, and creates a draft GitHub Release. The SBOM
 covers the container contents; the CDN-hosted jsPDF dependency remains external and is pinned in `public/index.html`.
 Release notes are generated from the matching date section of `public/CHANGELOG.md`, the canonical changelog. Review the
-draft and publish it when ready.
+draft and publish it when ready. The deployed CalVer ID appears in every page footer; local builds show
+`Lokale versie`.
 
 To roll back GitHub Pages, run **Deploy GitHub Pages** from Actions and enter a previous version tag. The workflow
 verifies the tag and deploys `public/` from that commit. Run it with an empty version on `main`, or push `main`, to

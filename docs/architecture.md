@@ -87,5 +87,7 @@ checked-in release-notes source. A maintainer reviews and publishes the draft.
 GitHub Pages remains deployed from `main` on pushes. Its manual dispatch accepts
 a version tag, validates it with the same version script, and deploys that
 commit's `public/` directory for rollback. Dispatching without a version deploys
-the selected branch commit. Pre-commit and CI lint GitHub Actions workflows with
-actionlint from a pinned Docker image.
+the selected branch commit. Both deployment workflows overwrite the source
+`public/version.txt` local marker with the checked-out commit's CalVer before
+publishing. All public pages display that ID in their footer. Pre-commit and CI
+lint GitHub Actions workflows with actionlint from a pinned Docker image.
