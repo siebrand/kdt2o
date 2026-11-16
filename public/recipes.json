@@ -8586,8 +8586,8 @@
         "category": "Kruiden en smaakmakers"
       },
       {
-        "raw": "3 el mosterd",
-        "amount": 9,
+        "raw": "2 el mosterd",
+        "amount": 6,
         "unit": "tl",
         "name": "mosterd",
         "optional": false,
@@ -8626,11 +8626,13 @@
         "category": "Kruiden en smaakmakers"
       }
     ],
-    "method": "Verwarm de oven voor op 180 graden. Schil de knolselderij en pastinaak. Snijd in grove stukken. Doe de knolselderij en pastinaak in een pan en zet het net onder water. Breng aan de kook en kook dit in circa 15 minuten gaar. Snipper de ui en bak deze zachtjes in de pan met wat olijfolie tot de ui glazig is. Voeg vervolgens het gehakt, de knoflook, de kruiden, mosterd, peper en (jozo)zout toe en laat het geheel gaar worden. Giet de knolselderij en pastinaak af als het geheel gaar is en vang het kookvocht op. Stamp er een puree van en voeg net zoveel kookvocht toe dat het een zachte puree wordt. Laat de zuurkool uitlekken en roer door de puree. Vet de ovenschaal in met een scheutje olijfolie. Schep een derde van de puree in de ovenschaal en verdeel gelijkmatig. Schep de helft van het gehaktmengsel erover. Schep een derde van de puree erover en dan weer een laag gehaktmengsel. Eindig met de rest van de puree. Rasp de kaas en verdeel dit als laatste over de bovenkant. Bak de schotel in circa 8 minuten in de oven tot de kaas gesmolten is. Tip: Pureer de knolselderij en pastinaak met de staafmixer of keukenmachine. Let op: door aanpassingen in het recept kunnen de hoeveelheden in het filmpje verschillen met die van het recept. Volg hierin altijd het recept voor juiste hoeveelheden.",
+    "method": "Verwarm de oven voor op 180 graden. Schil de knolselderij en pastinaak. Snijd in grove stukken. Doe de knolselderij en pastinaak in een pan en zet het net onder water. Breng aan de kook en kook dit in circa 15 minuten gaar. Snipper de ui en bak deze zachtjes in de pan met wat olijfolie tot de ui glazig is. Voeg vervolgens het gehakt, de knoflook, de kruiden, mosterd, peper en (jozo)zout toe en laat het geheel gaar worden. Giet de knolselderij en pastinaak af als het geheel gaar is en vang het kookvocht op. Stamp er een puree van en voeg net zoveel kookvocht toe dat het een zachte puree wordt. Laat de zuurkool uitlekken en roer door de puree. Vet de ovenschaal in met een scheutje olijfolie. Schep een derde van de puree in de ovenschaal en verdeel gelijkmatig. Schep de helft van het gehaktmengsel erover. Schep een derde van de puree erover en dan weer een laag gehaktmengsel. Eindig met de rest van de puree. Rasp de kaas en verdeel dit als laatste over de bovenkant. Bak de schotel in circa 8 minuten in de oven tot de kaas gesmolten is. Tip: Pureer de knolselderij en pastinaak met de staafmixer of keukenmachine.",
     "diet": [
       "vlees"
     ],
-    "approved": false
+    "approved": true,
+    "preparationTime": 25,
+    "ovenTime": 8
   },
   {
     "id": "groentesoep-met-aardappel-en-balletjes",
