@@ -8480,7 +8480,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "150 gram wortel (1 grote of 2 kleine)",
+        "raw": "1 grote wortel of 2 kleine",
         "amount": 150,
         "unit": "gram",
         "name": "wortel",
@@ -8488,7 +8488,7 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "30 gram gepelde walnoten",
+        "raw": "30 gram walnoten",
         "amount": 30,
         "unit": "gram",
         "name": "walnoten",
@@ -8520,11 +8520,12 @@
         "category": "Houdbare producten"
       }
     ],
-    "method": "Laat de zuurkool uitlekken. Was de prei en snijd deze fijn. Fruit deze zacht in de olijfolie. Snijd de zalm in blokjes. Bak de vis samen met de prei gedurende een paar minuten, schep af en toe om. Voeg de zuurkool toe en bak het geheel nog even goed door. Was en droog de veldsla en verwijder eventuele worteltjes. Rasp de wortel en doe dit door de veldsla. Hak de walnoten grof. Strooi deze over de sla. Meng de olie, het citroensap en de mosterd tot een dressing en serveer dit bij de salade. Tip: Vervang de verse wilde zalm voor diepvries zalm. Tip: Vervang de walnoten door de ongebrande notenmix of laat ze weg.",
+    "method": "Laat de zuurkool uitlekken. Was de prei en snijd deze fijn. Fruit deze zacht in de olijfolie. Snijd de zalm in blokjes. Bak de vis samen met de prei gedurende een paar minuten, schep af en toe om. Voeg de zuurkool toe en bak het geheel nog even goed door. Was en droog de veldsla en verwijder eventuele worteltjes. Rasp de wortel en doe dit door de veldsla. Hak de walnoten grof. Strooi deze over de sla. Meng de olie, het citroensap en de mosterd tot een dressing en serveer dit bij de salade. Tip: Vervang de verse wilde zalm door diepvries zalm. Tip: Vervang de walnoten door de ongebrande notenmix of laat ze weg.",
     "diet": [
       "vis"
     ],
-    "approved": false
+    "approved": true,
+    "preparationTime": 20
   },
   {
     "id": "zuurkoolpotje-met-gehakt",
