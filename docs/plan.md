@@ -48,8 +48,7 @@ The following features are complete and have been moved below the open work:
 - [x] Recipe preparation-time fields shown on recipe cards and in PDFs.
 - [x] JSON Schema for `public/recipes.json` in `schemas/schema.json`, enforced
   by a pre-commit hook running `scripts/validate_recipes.py`, locally and in CI.
-- [x] Recipe approval markers and exclusion of approved recipes from the review
-  PDF at `all-recipes.html`.
+- [x] Recipe approval markers.
 - [x] Approved-only recipe visibility and random selection by default, with an
   explicit option to include all recipes.
 - [x] Recipe and shopping-list PDF generation in the browser with jsPDF.
