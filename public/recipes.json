@@ -4121,7 +4121,7 @@
         "raw": "2 kleine handjes verse peterselie",
         "amount": 15,
         "unit": "gram",
-        "name": "verse peterselie",
+        "name": "peterselie",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -6118,7 +6118,7 @@
         "raw": "15 gram verse peterselie",
         "amount": 15,
         "unit": "gram",
-        "name": "verse peterselie",
+        "name": "peterselie",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -6241,7 +6241,7 @@
         "raw": "15 gram verse peterselie",
         "amount": 15,
         "unit": "gram",
-        "name": "verse peterselie",
+        "name": "peterselie",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -6249,7 +6249,7 @@
         "raw": "15 gram verse basilicum",
         "amount": 15,
         "unit": "gram",
-        "name": "verse basilicum",
+        "name": "basilicum",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -8301,7 +8301,7 @@
         "raw": "4 el verse peterselie",
         "amount": 4,
         "unit": "el",
-        "name": "verse peterselie",
+        "name": "peterselie",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
