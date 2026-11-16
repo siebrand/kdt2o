@@ -133,7 +133,8 @@
     "preparationTime": 5,
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "advanceNotice": "Bak de lijnzaadcrackers de dag ervoor, als je ze nog niet hebt."
   },
   {
     "id": "aardbeienkwark",
@@ -646,7 +647,8 @@
     "preparationTime": 15,
     "equipment": [
       "pan"
-    ]
+    ],
+    "advanceNotice": "Bak de lijnzaadcrackers de dag ervoor, als je ze nog niet hebt."
   },
   {
     "id": "groentemuffins",
@@ -741,7 +743,8 @@
       "vegetarisch"
     ],
     "ovenTime": 35,
-    "preparationTime": 15
+    "preparationTime": 15,
+    "advanceNotice": "Bak de muffins de dag ervoor."
   },
   {
     "id": "huttenkase-met-rood-blauw-fruit-en-zelfgemaakte-granola",
@@ -840,7 +843,8 @@
     "method": "Verdeel de hüttenkäse over 2 schaaltjes. Voeg hier een handje granola en het (rood/blauw) fruit aan toe. Alternatief voor granola is een handje gemengde noten. Tip: Maak de granola al de avond van tevoren klaar. Tip: Mocht je de structuur van de hüttenkäse niet lekker vinden, kun je de hüttenkäse ook pureren.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "advanceNotice": "Maak de granola de dag ervoor, als je die nog niet hebt."
   },
   {
     "id": "kokospap",
@@ -1036,7 +1040,8 @@
     "diet": [
       "vegetarisch"
     ],
-    "ovenTime": 25
+    "ovenTime": 25,
+    "advanceNotice": "Bak de muffins de dag ervoor."
   },
   {
     "id": "lijnzaadcrackers-met-boerenkaas",
@@ -1103,7 +1108,8 @@
     "method": "Kook de eieren. Beleg de lijnzaadcrackers met roomboter, boerenkaas, ei, tomaat en komkommer.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "advanceNotice": "Bak de lijnzaadcrackers de dag ervoor, als je ze nog niet hebt."
   },
   {
     "id": "mandarijnenkwark-met-pistachenoten",
@@ -1625,7 +1631,8 @@
     "preparationTime": 20,
     "equipment": [
       "pan"
-    ]
+    ],
+    "advanceNotice": "Bak de lijnzaadcrackers de dag ervoor, als je ze nog niet hebt."
   },
   {
     "id": "ontbijtmuffins",
@@ -1695,7 +1702,8 @@
       "vis"
     ],
     "ovenTime": 25,
-    "preparationTime": 15
+    "preparationTime": 15,
+    "advanceNotice": "Bak de muffins de dag ervoor."
   },
   {
     "id": "roerei-met-ricotta",
@@ -1827,7 +1835,8 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 10
+    "preparationTime": 10,
+    "advanceNotice": "Maak de granola de dag ervoor, als je die nog niet hebt."
   },
   {
     "id": "gegrilde-groenten-met-feta-en-crackers-met-kaas-avocado",
