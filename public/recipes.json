@@ -760,9 +760,9 @@
       },
       {
         "raw": "2 schaaltjes (200 gram) rood/blauw fruit",
-        "amount": 2,
-        "unit": "schaaltjes",
-        "name": "(200 gram) rood/blauw fruit",
+        "amount": 200,
+        "unit": "gram",
+        "name": "rood/blauw fruit",
         "optional": false,
         "category": "Groente en fruit"
       }
@@ -1983,7 +1983,7 @@
         "raw": "200 gram rood/blauw diepvries fruit",
         "amount": 200,
         "unit": "gram",
-        "name": "rood/blauw diepvries fruit",
+        "name": "rood/blauw fruit",
         "optional": false,
         "category": "Diepvries"
       }
