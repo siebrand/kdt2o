@@ -2103,7 +2103,7 @@
       },
       {
         "raw": "roomboter (ongezouten)",
-        "amount": 15,
+        "amount": 10,
         "unit": "gram",
         "name": "roomboter",
         "optional": false,
@@ -5567,7 +5567,7 @@
       },
       {
         "raw": "roomboter",
-        "amount": 15,
+        "amount": 10,
         "unit": "gram",
         "name": "roomboter",
         "optional": false,
@@ -8611,7 +8611,7 @@
       },
       {
         "raw": "scheutje extra vierge olijfolie",
-        "amount": 10,
+        "amount": 15,
         "unit": "ml",
         "name": "extra vierge olijfolie",
         "optional": false,

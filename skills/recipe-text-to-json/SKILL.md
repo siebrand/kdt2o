@@ -66,6 +66,9 @@ Every ingredient must be an object with:
   - Countable items (`2 tomaten`) with an empty unit; never use `stuk` as an
     ingredient unit.
   Do not use `el` as an ingredient unit.
+- For vague pantry amounts, use fixed estimates: a scheut, scheutje, or
+  unquantified olive oil is 15 ml; a klontje or unquantified butter is
+  10 gram.
 - Normalize `name` to a concise singular shopping-list name without removing
   meaningful qualifiers such as `(diepvries)`.
 - Set `optional: true` only when the source marks the ingredient as optional or
