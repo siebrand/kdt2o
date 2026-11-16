@@ -4,7 +4,7 @@ All notable changes to this project are documented here.
 
 ## 2026-11-16
 
-- Aligned `schemas/schema.json` with the recipe data and added a pre-commit hook that validates `public/recipes.json`.
+- Aligned `schemas/schema.json` with the recipe data and added a pre-commit hook, also run in CI, that validates `public/recipes.json`.
 - Reviewed and corrected recipe data: shopping units, ingredient names, amounts, portions, diet labels, and timings.
 
 ## 2026-11-04

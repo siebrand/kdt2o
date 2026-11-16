@@ -52,6 +52,8 @@ as `public/recipes.json`; changes must be checked against the source material
 before release. `schemas/schema.json` defines the data contract. A pre-commit
 hook runs `scripts/validate_recipes.py`, which applies the schema plus rules a
 schema cannot express, such as unique IDs and resolvable component references.
+The CI workflow runs the same hook, so invalid data cannot reach `main`
+unnoticed.
 
 ## Browser boundaries
 

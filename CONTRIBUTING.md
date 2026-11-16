@@ -25,7 +25,8 @@ pre-commit run --all-files
 
 The hook validates `public/recipes.json` against `schemas/schema.json` and
 additional rules in `scripts/validate_recipes.py` whenever recipe data, the
-schema, or the validator changes.
+schema, or the validator changes. CI runs the same hooks on every push to
+`main` and on every pull request.
 
 ## Workflow
 

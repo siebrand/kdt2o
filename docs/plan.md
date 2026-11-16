@@ -45,7 +45,7 @@ The following features are complete and have been moved below the open work:
 - [x] Shared granola subrecipes, with one granola preparation per weekly list.
 - [x] Recipe preparation-time fields shown on recipe cards and in PDFs.
 - [x] JSON Schema for `public/recipes.json` in `schemas/schema.json`, enforced
-  by a pre-commit hook running `scripts/validate_recipes.py`.
+  by a pre-commit hook running `scripts/validate_recipes.py`, locally and in CI.
 - [x] Recipe approval markers and exclusion of approved recipes from the review
   PDF at `all-recipes.html`.
 - [x] Approved-only recipe visibility and random selection by default, with an
