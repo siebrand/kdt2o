@@ -55,9 +55,15 @@ Every ingredient must be an object with:
 - Preserve the original ingredient wording in `raw`.
 - Normalize `amount` to a number when the quantity is explicit; use `null` for
   an unquantified ingredient.
-- Use the app's compatible units where possible: `gram`, `ml`, `el`, and
-  `tl`. Use an empty string for countable items (`2 tomaten`) and for a
-  genuinely unitless quantity; never use `stuk` as an ingredient unit.
+- `amount` and `unit` drive only the shopping list; `raw` keeps the recipe
+  wording. Express them the way the ingredient is bought:
+  - Liquids in `ml` (1 el = 15 ml, 1 tl = 5 ml).
+  - Solids in `gram`, including Griekse yoghurt and fresh herbs (1 el of
+    chopped herbs ≈ 4 g, 1 basil leaf ≈ 0.5 g, 1 sprig ≈ 1 g).
+  - Dried spices, salt, mustard, and baking powder in `tl` (1 el = 3 tl).
+  - Countable items (`2 tomaten`) with an empty unit; never use `stuk` as an
+    ingredient unit.
+  Do not use `el` as an ingredient unit.
 - Normalize `name` to a concise singular shopping-list name without removing
   meaningful qualifiers such as `(diepvries)`.
 - Set `optional: true` only when the source marks the ingredient as optional or

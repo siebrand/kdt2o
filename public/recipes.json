@@ -104,16 +104,16 @@
           },
           {
             "raw": "1 tl zout",
-            "amount": null,
-            "unit": "",
+            "amount": 1,
+            "unit": "tl",
             "name": "zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
           },
           {
             "raw": "3 el gedroogde kruiden naar keuze, zoals Italiaanse of Provençaalse kruiden",
-            "amount": 3,
-            "unit": "el",
+            "amount": 9,
+            "unit": "tl",
             "name": "gedroogde Italiaanse kruiden",
             "optional": false,
             "category": "Kruiden en smaakmakers"
@@ -164,8 +164,8 @@
       },
       {
         "raw": "2 el amandelschaafsel",
-        "amount": 2,
-        "unit": "el",
+        "amount": 10,
+        "unit": "gram",
         "name": "amandelschaafsel",
         "optional": false,
         "category": "Houdbare producten"
@@ -188,8 +188,8 @@
       },
       {
         "raw": "2 el pindakaas",
-        "amount": 2,
-        "unit": "el",
+        "amount": 30,
+        "unit": "gram",
         "name": "pindakaas",
         "optional": false,
         "category": "Houdbare producten"
@@ -231,7 +231,7 @@
       {
         "raw": "7 el Griekse yoghurt",
         "amount": 100,
-        "unit": "ml",
+        "unit": "gram",
         "name": "Griekse yoghurt",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -272,8 +272,8 @@
       },
       {
         "raw": "2 el noten naar keuze",
-        "amount": 2,
-        "unit": "el",
+        "amount": 20,
+        "unit": "gram",
         "name": "noten",
         "optional": false,
         "category": "Houdbare producten"
@@ -367,7 +367,7 @@
       {
         "raw": "400 ml griekse yoghurt",
         "amount": 400,
-        "unit": "ml",
+        "unit": "gram",
         "name": "griekse yoghurt",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -461,8 +461,8 @@
       },
       {
         "raw": "2 el noten naar keuze",
-        "amount": 2,
-        "unit": "el",
+        "amount": 20,
+        "unit": "gram",
         "name": "noten",
         "optional": false,
         "category": "Houdbare producten"
@@ -534,8 +534,8 @@
       },
       {
         "raw": "2 eetlepels pitten/noten/zaden naar keuze",
-        "amount": 2,
-        "unit": "el",
+        "amount": 20,
+        "unit": "gram",
         "name": "pitten/zaden",
         "optional": false,
         "category": "Houdbare producten"
@@ -709,16 +709,16 @@
       },
       {
         "raw": "2 el gedroogde Italiaanse kruiden",
-        "amount": 2,
-        "unit": "el",
+        "amount": 6,
+        "unit": "tl",
         "name": "gedroogde Italiaanse kruiden",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "3 el amandelschaafsel",
-        "amount": 3,
-        "unit": "el",
+        "amount": 15,
+        "unit": "gram",
         "name": "amandelschaafsel",
         "optional": true,
         "category": "Houdbare producten"
@@ -1333,8 +1333,8 @@
           },
           {
             "raw": "1 tl (jozo)zout",
-            "amount": null,
-            "unit": "",
+            "amount": 1,
+            "unit": "tl",
             "name": "(jozo)zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
@@ -1492,8 +1492,8 @@
           },
           {
             "raw": "1 tl (jozo)zout",
-            "amount": null,
-            "unit": "",
+            "amount": 1,
+            "unit": "tl",
             "name": "(jozo)zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
@@ -1651,8 +1651,8 @@
           },
           {
             "raw": "1 tl (jozo)zout",
-            "amount": null,
-            "unit": "",
+            "amount": 1,
+            "unit": "tl",
             "name": "(jozo)zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
@@ -1922,8 +1922,8 @@
       },
       {
         "raw": "2 el pitten/zaden naar keuze",
-        "amount": 2,
-        "unit": "el",
+        "amount": 20,
+        "unit": "gram",
         "name": "pitten/zaden",
         "optional": false,
         "category": "Houdbare producten"
@@ -2071,8 +2071,8 @@
       },
       {
         "raw": "verse basilicum",
-        "amount": 10,
-        "unit": "blaadjes",
+        "amount": 5,
+        "unit": "gram",
         "name": "verse basilicum",
         "optional": true,
         "category": "Kruiden en smaakmakers"
@@ -2170,8 +2170,8 @@
       },
       {
         "raw": "4 el pitten en zaden (pompoen-/ zonnebloem-/ pijnboompitten/ etc.)",
-        "amount": 4,
-        "unit": "el",
+        "amount": 40,
+        "unit": "gram",
         "name": "pitten/zaden",
         "optional": false,
         "category": "Houdbare producten"
@@ -2226,8 +2226,8 @@
       },
       {
         "raw": "1 el mosterd",
-        "amount": 1,
-        "unit": "el",
+        "amount": 3,
+        "unit": "tl",
         "name": "mosterd",
         "optional": false,
         "category": "Houdbare producten"
@@ -2365,9 +2365,9 @@
       },
       {
         "raw": "takje verse dille",
-        "amount": null,
-        "unit": "",
-        "name": "takje verse dille",
+        "amount": 1,
+        "unit": "gram",
+        "name": "verse dille",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       }
@@ -2772,7 +2772,7 @@
       },
       {
         "raw": "1 el fijngesneden peterselie",
-        "amount": 5,
+        "amount": 4,
         "unit": "gram",
         "name": "peterselie",
         "optional": false,
@@ -2919,8 +2919,8 @@
       },
       {
         "raw": "8 el olijven",
-        "amount": 8,
-        "unit": "el",
+        "amount": 80,
+        "unit": "gram",
         "name": "olijven",
         "optional": false,
         "category": "Houdbare producten"
@@ -2943,8 +2943,8 @@
       },
       {
         "raw": "2 el pitten/zaden naar keuze",
-        "amount": 2,
-        "unit": "el",
+        "amount": 20,
+        "unit": "gram",
         "name": "pitten/zaden",
         "optional": false,
         "category": "Houdbare producten"
@@ -3058,8 +3058,8 @@
       },
       {
         "raw": "4 el zaden en pitten (bijv. zonnenbloempitten/ pompoenpitten/ etc.)",
-        "amount": 4,
-        "unit": "el",
+        "amount": 40,
+        "unit": "gram",
         "name": "pitten/zaden",
         "optional": false,
         "category": "Houdbare producten"
@@ -3272,8 +3272,8 @@
       },
       {
         "raw": "4 el pesto",
-        "amount": 4,
-        "unit": "el",
+        "amount": 60,
+        "unit": "gram",
         "name": "pesto",
         "optional": false,
         "category": "Houdbare producten"
@@ -3493,8 +3493,8 @@
       },
       {
         "raw": "1 el olijven",
-        "amount": 1,
-        "unit": "el",
+        "amount": 10,
+        "unit": "gram",
         "name": "olijven",
         "optional": false,
         "category": "Houdbare producten"
@@ -3598,8 +3598,8 @@
       },
       {
         "raw": "1 el olijven",
-        "amount": 1,
-        "unit": "el",
+        "amount": 10,
+        "unit": "gram",
         "name": "olijven",
         "optional": false,
         "category": "Houdbare producten"
@@ -3614,8 +3614,8 @@
       },
       {
         "raw": "1 el noten/pitten/zaden naar keuze",
-        "amount": 1,
-        "unit": "el",
+        "amount": 10,
+        "unit": "gram",
         "name": "pitten/zaden",
         "optional": false,
         "category": "Houdbare producten"
@@ -3679,8 +3679,8 @@
       },
       {
         "raw": "4 el peterselie",
-        "amount": 4,
-        "unit": "el",
+        "amount": 16,
+        "unit": "gram",
         "name": "peterselie",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -3719,8 +3719,8 @@
       },
       {
         "raw": "1 el olijven",
-        "amount": 1,
-        "unit": "el",
+        "amount": 10,
+        "unit": "gram",
         "name": "olijven",
         "optional": false,
         "category": "Houdbare producten"
@@ -3743,8 +3743,8 @@
       },
       {
         "raw": "1 el noten/pitten/zaden naar keuze",
-        "amount": 1,
-        "unit": "el",
+        "amount": 10,
+        "unit": "gram",
         "name": "pitten/zaden",
         "optional": false,
         "category": "Houdbare producten"
@@ -4135,8 +4135,8 @@
       },
       {
         "raw": "2 handjes verse basilicum",
-        "amount": 20,
-        "unit": "blaadjes",
+        "amount": 10,
+        "unit": "gram",
         "name": "verse basilicum",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -4277,9 +4277,9 @@
       },
       {
         "raw": "1 el dille",
-        "amount": 1,
-        "unit": "el",
-        "name": "dille",
+        "amount": 4,
+        "unit": "gram",
+        "name": "verse dille",
         "optional": true,
         "category": "Kruiden en smaakmakers"
       },
@@ -4310,8 +4310,8 @@
     "ingredients": [
       {
         "raw": "4 el pijnboompitten",
-        "amount": 4,
-        "unit": "el",
+        "amount": 40,
+        "unit": "gram",
         "name": "pijnboompitten",
         "optional": false,
         "category": "Houdbare producten"
@@ -4480,8 +4480,8 @@
       },
       {
         "raw": "gedroogde Italiaanse kruiden",
-        "amount": 1,
-        "unit": "el",
+        "amount": 3,
+        "unit": "tl",
         "name": "gedroogde Italiaanse kruiden",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -4504,9 +4504,9 @@
       },
       {
         "raw": "1 handje basilicum blaadjes",
-        "amount": 1,
-        "unit": "hand",
-        "name": "basilicum blaadjes",
+        "amount": 10,
+        "unit": "gram",
+        "name": "verse basilicum",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -5125,8 +5125,8 @@
       },
       {
         "raw": "2 el oregano",
-        "amount": 2,
-        "unit": "el",
+        "amount": 6,
+        "unit": "tl",
         "name": "oregano",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -5150,15 +5150,15 @@
       {
         "raw": "1 klein blikje tomatenpuree",
         "amount": 1,
-        "unit": "blikje",
+        "unit": "blik",
         "name": "tomatenpuree",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
         "raw": "2 el gedroogde Italiaanse kruiden",
-        "amount": 2,
-        "unit": "el",
+        "amount": 6,
+        "unit": "tl",
         "name": "gedroogde Italiaanse kruiden",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -5181,8 +5181,8 @@
       },
       {
         "raw": "verse basilicum",
-        "amount": 10,
-        "unit": "blaadjes",
+        "amount": 5,
+        "unit": "gram",
         "name": "verse basilicum",
         "optional": true,
         "category": "Kruiden en smaakmakers"
@@ -5724,9 +5724,9 @@
       },
       {
         "raw": "paar takjes verse dille",
-        "amount": null,
-        "unit": "",
-        "name": "paar takjes verse dille",
+        "amount": 3,
+        "unit": "gram",
+        "name": "verse dille",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -5938,8 +5938,8 @@
       },
       {
         "raw": "2 el Provençaalse kruiden",
-        "amount": 2,
-        "unit": "el",
+        "amount": 6,
+        "unit": "tl",
         "name": "Provençaalse kruiden",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -6180,8 +6180,8 @@
       },
       {
         "raw": "2 el volkorenmeel",
-        "amount": 2,
-        "unit": "el",
+        "amount": 20,
+        "unit": "gram",
         "name": "volkorenmeel",
         "optional": false,
         "category": "Houdbare producten"
@@ -6249,7 +6249,7 @@
         "raw": "15 gram verse basilicum",
         "amount": 15,
         "unit": "gram",
-        "name": "basilicum",
+        "name": "verse basilicum",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -6313,8 +6313,8 @@
       },
       {
         "raw": "1 el tahin",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "gram",
         "name": "tahin",
         "optional": false,
         "category": "Houdbare producten"
@@ -6362,9 +6362,9 @@
       },
       {
         "raw": "halve bos verse peterselie",
-        "amount": 0.5,
-        "unit": "",
-        "name": "bos verse peterselie",
+        "amount": 8,
+        "unit": "gram",
+        "name": "peterselie",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -6386,8 +6386,8 @@
       },
       {
         "raw": "1 el kerriepoeder",
-        "amount": 1,
-        "unit": "el",
+        "amount": 3,
+        "unit": "tl",
         "name": "kerriepoeder",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -6663,7 +6663,7 @@
       },
       {
         "raw": "1 tl gember",
-        "amount": 10,
+        "amount": 3,
         "unit": "gram",
         "name": "gember",
         "optional": false,
@@ -6764,8 +6764,8 @@
           },
           {
             "raw": "2 el pindakaas",
-            "amount": 2,
-            "unit": "el",
+            "amount": 30,
+            "unit": "gram",
             "name": "pindakaas",
             "optional": false,
             "category": "Houdbare producten"
@@ -6876,16 +6876,16 @@
       },
       {
         "raw": "1 el venkelzaad",
-        "amount": 1,
-        "unit": "el",
+        "amount": 3,
+        "unit": "tl",
         "name": "venkelzaad",
         "optional": false,
         "category": "Groente en fruit"
       },
       {
         "raw": "1 el komijnzaad",
-        "amount": 1,
-        "unit": "el",
+        "amount": 3,
+        "unit": "tl",
         "name": "komijnzaad",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -7102,8 +7102,8 @@
       },
       {
         "raw": "4 el pijnboompitten",
-        "amount": 4,
-        "unit": "el",
+        "amount": 40,
+        "unit": "gram",
         "name": "pijnboompitten",
         "optional": false,
         "category": "Houdbare producten"
@@ -7160,8 +7160,8 @@
           },
           {
             "raw": "4 el pijnboompitten",
-            "amount": 4,
-            "unit": "el",
+            "amount": 40,
+            "unit": "gram",
             "name": "pijnboompitten",
             "optional": false,
             "category": "Houdbare producten"
@@ -7250,8 +7250,8 @@
       },
       {
         "raw": "6 el tomatenpassata (gezeefde tomaten)",
-        "amount": 6,
-        "unit": "el",
+        "amount": 90,
+        "unit": "ml",
         "name": "tomaat (gezeefd)",
         "optional": false,
         "category": "Groente en fruit"
@@ -7274,8 +7274,8 @@
       },
       {
         "raw": "halve bos verse basilicum",
-        "amount": 20,
-        "unit": "blaadjes",
+        "amount": 10,
+        "unit": "gram",
         "name": "verse basilicum",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -7315,8 +7315,8 @@
       },
       {
         "raw": "halve el paprikapoeder",
-        "amount": 0.5,
-        "unit": "el",
+        "amount": 1.5,
+        "unit": "tl",
         "name": "paprikapoeder",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -7389,8 +7389,8 @@
       },
       {
         "raw": "1 el volkorenmeel",
-        "amount": 1,
-        "unit": "el",
+        "amount": 10,
+        "unit": "gram",
         "name": "volkorenmeel",
         "optional": false,
         "category": "Houdbare producten"
@@ -7482,8 +7482,8 @@
       },
       {
         "raw": "2 el shoarmakruiden (zonder toegevoegde suiker)",
-        "amount": 2,
-        "unit": "el",
+        "amount": 6,
+        "unit": "tl",
         "name": "shoarmakruiden (zonder toegevoegde suiker)",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -7609,8 +7609,8 @@
       },
       {
         "raw": "2 el shoarmakruiden (zonder toegevoegde suiker)",
-        "amount": 2,
-        "unit": "el",
+        "amount": 6,
+        "unit": "tl",
         "name": "shoarmakruiden (zonder toegevoegde suiker)",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -7806,16 +7806,16 @@
       {
         "raw": "paar takjes tijm",
         "amount": 3,
-        "unit": "takje",
-        "name": "tijm",
+        "unit": "gram",
+        "name": "verse tijm",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "paar takjes oregano",
         "amount": 3,
-        "unit": "takje",
-        "name": "oregano",
+        "unit": "gram",
+        "name": "verse oregano",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -8030,8 +8030,8 @@
       },
       {
         "raw": "2 el sesamzaadjes",
-        "amount": 2,
-        "unit": "el",
+        "amount": 16,
+        "unit": "gram",
         "name": "sesamzaad",
         "optional": false,
         "category": "Houdbare producten"
@@ -8097,7 +8097,7 @@
         "raw": "handvol verse koriander",
         "amount": 15,
         "unit": "gram",
-        "name": "koriander",
+        "name": "verse koriander",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -8111,8 +8111,8 @@
       },
       {
         "raw": "1 el vissaus",
-        "amount": 1,
-        "unit": "el",
+        "amount": 15,
+        "unit": "ml",
         "name": "vissaus",
         "optional": false,
         "category": "Houdbare producten"
@@ -8200,8 +8200,8 @@
       },
       {
         "raw": "2 el kerriepoeder",
-        "amount": 2,
-        "unit": "el",
+        "amount": 6,
+        "unit": "tl",
         "name": "kerriepoeder",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -8299,8 +8299,8 @@
       },
       {
         "raw": "4 el verse peterselie",
-        "amount": 4,
-        "unit": "el",
+        "amount": 16,
+        "unit": "gram",
         "name": "peterselie",
         "optional": false,
         "category": "Kruiden en smaakmakers"
@@ -8535,15 +8535,15 @@
       },
       {
         "raw": "2 el Provençaalse kruiden",
-        "amount": 2,
-        "unit": "el",
+        "amount": 6,
+        "unit": "tl",
         "name": "Provençaalse kruiden",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
       {
         "raw": "3 el mosterd",
-        "amount": 6,
+        "amount": 9,
         "unit": "tl",
         "name": "mosterd",
         "optional": false,
@@ -8739,7 +8739,7 @@
       },
       {
         "raw": "halve eetlepel bloem",
-        "amount": 10,
+        "amount": 5,
         "unit": "gram",
         "name": "bloem",
         "optional": false,
