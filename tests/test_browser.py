@@ -146,7 +146,7 @@ def test_changelog_page_loads(page: Page, server_url: str, path: str):
         "3 november 2026",
     ]
     entries = page.locator("#changelog-content li").all_inner_texts()
-    entry = next(item for item in entries if item.startswith("Bij 51 recepten"))
+    entry = next(item for item in entries if item.startswith("Bij alle recepten"))
     normalized_entry = " ".join(entry.split())
     assert (
         "Bij sommige ontbijtgerechten staat welke voorbereiding je de dag ervoor kunt doen."
