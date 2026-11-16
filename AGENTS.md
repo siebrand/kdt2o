@@ -1,46 +1,65 @@
 # Agent guide
 
-## Project purpose
+## Product
 
-Kitano meal planner is a static Dutch web application that lets a user select breakfast, lunch, and dinner recipes for Monday through Sunday and download a PDF with a combined shopping list and one recipe per page.
+Kitano meal planner is a static web application in Dutch. The user selects
+breakfast, lunch, and dinner recipes for Monday to Sunday. The application
+makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 
-## Language rule
+## Language
 
-All user-visible text, errors, labels, PDF output, and UI content must be Dutch. Code, commit messages, branches, issues, pull requests, and developer documentation must be English.
+- Write all text that the user sees in Dutch. This includes the user
+  interface, error messages, and the PDF.
+- Write code, commit messages, branch names, issues, pull requests, and
+  developer documents in English.
+- Put Dutch user interface text in the message catalog in `public/app.js`.
 
-## Architecture
+## Files
 
-- Reviewed recipe data is maintained by hand in `public/recipes.json`. The original recipes are kept outside the repository; check changes against them.
-- `schemas/schema.json` defines the recipe data contract; `scripts/validate_recipes.py` enforces it.
-- `public/index.html`, `public/app.js`, and `public/styles.css` are the browser application.
-- Nginx serves the static files. There is no database, account system, analytics, or server-side planning state.
-- Browser `localStorage` is the only persistence mechanism.
+- `public/recipes.json`: the recipe data. Edit this file manually.
+- The original recipes are not in the repository. Compare each change to
+  `public/recipes.json` with the original recipe.
+- `schemas/schema.json`: the rules for the recipe data.
+- `scripts/validate_recipes.py`: the script that checks the recipe data.
+- `public/index.html`, `public/app.js`, `public/styles.css`: the browser
+  application.
+- `Dockerfile`, `nginx.conf`: the container. Nginx serves the static files.
+- `docs/plan.md`: open work and completed features. Read it before you change
+  the architecture.
 
-## Domain invariants
+## Constraints
 
-- A recipe can be selected at most once.
-- Recipes marked `multiDay` use their `days` value when present. Multi-day recipes are placed on the chosen day and the applicable subsequent days.
-- Empty meal slots are valid.
-- Shopping-list quantities are combined only when unit and normalized ingredient name are compatible.
-- Never render recipe text as HTML.
+- Do not add a database, accounts, analytics, tracking, or server storage.
+- Keep the weekly plan only in the browser `localStorage` or in a share link.
+- Do not show recipe text as HTML.
 
-## Safe workflow
+## Domain rules
 
-1. Read this file and `docs/plan.md` before changing architecture.
-2. Run the documented checks before committing. The `pre-commit` hook
-   validates `public/recipes.json` against `schemas/schema.json`.
-3. Keep commits small and use Conventional Commits in English.
-4. Do not commit secrets, generated local state, or unlicensed branding.
-5. Keep user-visible strings in the Dutch message catalog in `public/app.js`.
-6. When a code or configuration change changes behavior, architecture,
-   deployment, privacy, licensing, or contributor workflow, update every
-   relevant document in the same change. Keep `README.md`, `docs/plan.md`,
-   `docs/architecture.md`, `docs/llm-context.md`, and the FOSS policies
-   consistent with the code.
+- The user can select each recipe only one time in a week.
+- An empty meal slot is correct.
+- A multi-day recipe uses its `days` value. The planner puts the recipe on the
+  selected day and on each second day after it.
+- The shopping list adds quantities only when the unit and the normalized
+  ingredient name are the same.
 
-## Useful commands
+## Checks
 
-- `pre-commit install` (once per clone)
-- `pre-commit run --all-files`
-- `docker build -t kitano-meal-planner .`
-- `docker run --rm -p 8080:80 kitano-meal-planner`
+Do these steps before you commit:
+
+1. Run `pre-commit install` one time for each clone.
+2. Run `pre-commit run --all-files`. This step checks `public/recipes.json`.
+3. If the change affects data or deployment, run
+   `docker build -t kitano-meal-planner .`.
+
+CI runs the same pre-commit checks. To see the application, run
+`docker run --rm -p 8080:80 kitano-meal-planner`. Then open
+`http://localhost:8080`.
+
+## Changes
+
+- Make small commits. Use Conventional Commits in English.
+- Do not commit secrets, local state, or branding without a license.
+- If a change affects behavior, architecture, deployment, privacy, licensing,
+  or the contributor workflow, update all documents that describe it. Do this
+  in the same change. These documents are `README.md`, `CONTRIBUTING.md`,
+  `docs/plan.md`, `docs/architecture.md`, and the policy files.

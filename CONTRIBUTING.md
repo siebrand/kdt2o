@@ -45,11 +45,6 @@ validate quantities and portions, and ensure ingredients and methods are not
 lost. Never invent unclear recipe content. Every change must pass
 `scripts/validate_recipes.py`.
 
-When a code or configuration change affects behavior, architecture, deployment,
-privacy, licensing, or contributor workflow, update every relevant document in
-the same change, including the README, plan, architecture notes, LLM context,
-and FOSS policy documents.
-
 ## Pull requests
 
 Pull requests should include a summary, test evidence, screenshots for UI or
@@ -59,4 +54,5 @@ or privacy impact. Use Conventional Commits such as `feat:`, `fix:`, `docs:`,
 
 When a code or configuration change affects behavior, architecture, deployment,
 privacy, licensing, or contributor workflow, update all relevant documentation
-in the same pull request.
+in the same pull request: `AGENTS.md`, `README.md`, `docs/plan.md`,
+`docs/architecture.md`, and the FOSS policy documents.
