@@ -199,6 +199,10 @@
     "method": "Doe de kwark, pindakaas en de helft van de aardbeien in de blender en mix door elkaar (of gebruik een staafmixer). Verdeel het mengsel over 2 bakjes. Snijd de andere helft van de aardbeien in kleine stukjes. Voeg de aardbeien en noten toe aan de bakjes en meng dit er doorheen. Strooi er tot slot wat kokosrasp of kokosflakes en het geroosterde amandelschaafsel overheen. Tip: Rooster het amandelschaafsel kort in een pan zonder vet.",
     "diet": [
       "vegetarisch"
+    ],
+    "equipment": [
+      "staafmixer of keukenmachine",
+      "pan"
     ]
   },
   {
@@ -325,6 +329,10 @@
     "method": "Rasp de wortel en doe dit samen met het amandelmeel, de eieren, het bakpoeder en 3 el Griekse yoghurt in een kom en roer dit goed door met een vork. Verhit een beetje olijfolie of roomboter in een koekenpan en schep met een kleine soeplepel wat beslag in de pan, zodat er kleine pannenkoekjes ontstaan. Bak de pannenkoekjes op middelhoog vuur en draai ze om zodra er bubbels aan de bovenkant verschijnen. Serveer de pannenkoekjes met frambozen of aardbeien en de rest van de Griekse yoghurt en de noten er overheen. Strooi eventueel wat kaneel over de pannenkoekjes bij het serveren voor extra smaak. Tip: Vries overgebleven soep in om er later nog eens van te genieten.",
     "diet": [
       "vegetarisch"
+    ],
+    "equipment": [
+      "koekenpan",
+      "rasp"
     ]
   },
   {
@@ -481,7 +489,10 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 20
+    "preparationTime": 20,
+    "equipment": [
+      "blender of keukenmachine"
+    ]
   },
   {
     "id": "frisse-ontbijtsalade",
@@ -632,7 +643,10 @@
     "diet": [
       "vlees"
     ],
-    "preparationTime": 15
+    "preparationTime": 15,
+    "equipment": [
+      "pan"
+    ]
   },
   {
     "id": "groentemuffins",
@@ -916,6 +930,9 @@
     "method": "Weeg de noten en lijnzaad af en maal ze fijn in een hakmolentje of keukenmachine. Warm de kokosmelk met het water op in een klein steelpannetje, voeg het notenmengsel toe. Roer de kaneel door de pap en dek af. Laat even opkoken en dan 10 minuten verder pruttelen op een lager vuurtje. Als je de pap graag wat vaster wilt, kook dan even verder zonder deksel. Heb je het liever vloeibaar, dan kan je wat water/kokosmelk toevoegen. Garneer met blauw bessen en bestrooi met kokosrasp en cacaopoeder.",
     "diet": [
       "vegetarisch"
+    ],
+    "equipment": [
+      "blender of keukenmachine"
     ]
   },
   {
@@ -1231,6 +1248,9 @@
     "method": "Snijd de lente-ui, tomaat en paprika fijn. Bak 5 minuten aan in de boter op middelhoog vuur. Klop de eieren en giet bovenop de groente en ‘hussel 2 minuten. Haal het roerei uit de pan, voeg de kaas toe, breng op smaak met (jozo)zout, peper en optioneel chili en gepekelde jalapenos.",
     "diet": [
       "vegetarisch"
+    ],
+    "equipment": [
+      "pan"
     ]
   },
   {
@@ -1602,7 +1622,10 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 20
+    "preparationTime": 20,
+    "equipment": [
+      "pan"
+    ]
   },
   {
     "id": "ontbijtmuffins",
@@ -1757,7 +1780,11 @@
     "notes": [
       "Kies voor een strikt vegetarisch gerecht een vegetarische harde kaas."
     ],
-    "preparationTime": 20
+    "preparationTime": 20,
+    "equipment": [
+      "rasp",
+      "pan"
+    ]
   },
   {
     "id": "volle-kwark-met-granola-en-diepvries-rood-fruit",
@@ -1924,6 +1951,11 @@
     "method": "Grillen (15 minuten voorbereiding, 45 minuten in de oven). Verwarm de oven voor op 180 graden. Snipper de rode ui en snijd de paprika, courgette en wortel in reepjes; verdeel de groenten samen met de knoflook over een met bakpapier beklede bakplaat; besprenkel ze met de olijfolie en breng ze op smaak met peper en (jozo)zout; rooster de groenten 45 minuten in de oven. Afbakken (5 minuten in de pan, alleen als je van te voren de groeten hebt gegrild): bak de gegrilde groenten kort op hoog vuur in een pan. Schep de groenten op een bord. Verkruimel de feta erover en voeg eventueel de basilicum toe. Beleg tot slot de crackers met roomboter en boerenkaas en/of avocado, naar smaak.",
     "diet": [
       "vegetarisch"
+    ],
+    "equipment": [
+      "bakplaat",
+      "bakpapier",
+      "pan"
     ]
   },
   {
@@ -2282,7 +2314,10 @@
       "vegetarisch"
     ],
     "days": 3,
-    "preparationTime": 35
+    "preparationTime": 35,
+    "equipment": [
+      "soeppan"
+    ]
   },
   {
     "id": "courgettesoep-3-dagen",
@@ -2523,7 +2558,10 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 25
+    "preparationTime": 25,
+    "equipment": [
+      "soeppan"
+    ]
   },
   {
     "id": "frittata-met-champignons-en-kaas",
@@ -2657,6 +2695,9 @@
     "method": "Verwarm de oven voor op 175°C. Bereid de dressing en zet apart. Vet de ovenschaal in met olijfolie. Snijd de champignons en bak ze in 1 eetlepel olijfolie. Snijd ondertussen de lente-ui. Draai het vuur laag en voeg de lente-ui toe. Breng op smaak met peper en zout. Voeg de peterselie toe. Meng de eieren kaas en mayonaise in een aparte kom. Breng op smaak met (jozo)peper en zout indien gewenst. Voeg de champignons en lente-ui toe aan het eiermengsel en giet het geheel in een goed ingevette ovenschaal. Bak 25-30 minuten, of totdat de frittata bruin wordt en de eieren gaar (geheel gestold) zijn. Laat 5 minuten afkoelen. Serveer bij de frittata een lijnzaadcracker en een simpele groene salade van sla, komkommer, tomaat en de dressing.",
     "diet": [
       "vegetarisch"
+    ],
+    "equipment": [
+      "ovenschaal"
     ]
   },
   {
@@ -2997,7 +3038,10 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 30
+    "preparationTime": 30,
+    "equipment": [
+      "pan"
+    ]
   },
   {
     "id": "koud-kippesto-salade",
@@ -3087,7 +3131,11 @@
     "diet": [
       "vlees"
     ],
-    "preparationTime": 20
+    "preparationTime": 20,
+    "equipment": [
+      "rasp",
+      "pan"
+    ]
   },
   {
     "id": "linzensoep",
@@ -3197,7 +3245,11 @@
       "vegetarisch"
     ],
     "days": 2,
-    "preparationTime": 25
+    "preparationTime": 25,
+    "equipment": [
+      "staafmixer",
+      "pan"
+    ]
   },
   {
     "id": "mozzarellawraps-met-avocado-en-tomaat",
@@ -3303,7 +3355,11 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 25
+    "preparationTime": 25,
+    "equipment": [
+      "bakpapier",
+      "pan"
+    ]
   },
   {
     "id": "mozzarellawraps-met-zalm-en-roomkaas",
@@ -3417,7 +3473,11 @@
     "diet": [
       "vis"
     ],
-    "preparationTime": 25
+    "preparationTime": 25,
+    "equipment": [
+      "bakpapier",
+      "pan"
+    ]
   },
   {
     "id": "omelet-champignons-en-salade",
@@ -3547,7 +3607,10 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 25
+    "preparationTime": 25,
+    "equipment": [
+      "koekenpan"
+    ]
   },
   {
     "id": "quinoa-kip-salade",
@@ -3655,7 +3718,10 @@
     "diet": [
       "vlees"
     ],
-    "preparationTime": 20
+    "preparationTime": 20,
+    "equipment": [
+      "koekenpan"
+    ]
   },
   {
     "id": "salade-nicoise",
@@ -3971,7 +4037,11 @@
       "vegan"
     ],
     "days": 3,
-    "preparationTime": 25
+    "preparationTime": 25,
+    "equipment": [
+      "soeppan",
+      "staafmixer"
+    ]
   },
   {
     "id": "tonijn-kikkererwten-salade",
@@ -4251,7 +4321,12 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 35
+    "preparationTime": 35,
+    "equipment": [
+      "staafmixer of keukenmachine",
+      "vijzel",
+      "pan"
+    ]
   },
   {
     "id": "aubergine-uit-de-oven",
@@ -4368,7 +4443,12 @@
       "vegetarisch"
     ],
     "ovenTime": 20,
-    "preparationTime": 25
+    "preparationTime": 25,
+    "equipment": [
+      "ovenschaal",
+      "bakpapier",
+      "pan"
+    ]
   },
   {
     "id": "aziatische-tofu",
@@ -4500,7 +4580,10 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 25
+    "preparationTime": 25,
+    "equipment": [
+      "pan"
+    ]
   },
   {
     "id": "aziatische-runderreepjes",
@@ -4632,7 +4715,10 @@
     "diet": [
       "vlees"
     ],
-    "preparationTime": 25
+    "preparationTime": 25,
+    "equipment": [
+      "pan"
+    ]
   },
   {
     "id": "biefstuk-met-champignons-en-geroosterde-groenten",
@@ -4747,7 +4833,12 @@
       "vlees"
     ],
     "ovenTime": 30,
-    "preparationTime": 35
+    "preparationTime": 35,
+    "equipment": [
+      "bakplaat",
+      "bakpapier",
+      "koekenpan"
+    ]
   },
   {
     "id": "gevulde-portobello-met-geroosterde-groenten",
@@ -4888,7 +4979,12 @@
       "vegetarisch"
     ],
     "ovenTime": 20,
-    "preparationTime": 15
+    "preparationTime": 15,
+    "equipment": [
+      "ovenschaal",
+      "bakplaat",
+      "bakpapier"
+    ]
   },
   {
     "id": "bloemkoolpizza",
@@ -5185,7 +5281,11 @@
     "diet": [
       "vis"
     ],
-    "preparationTime": 30
+    "preparationTime": 30,
+    "equipment": [
+      "koekenpan",
+      "rasp"
+    ]
   },
   {
     "id": "caesarsalade-met-kipfilet",
@@ -5339,7 +5439,11 @@
     "diet": [
       "vlees"
     ],
-    "preparationTime": 30
+    "preparationTime": 30,
+    "equipment": [
+      "koekenpan",
+      "rasp"
+    ]
   },
   {
     "id": "courgetti-pasta",
@@ -5459,7 +5563,10 @@
     "diet": [
       "vlees"
     ],
-    "preparationTime": 20
+    "preparationTime": 20,
+    "equipment": [
+      "pan"
+    ]
   },
   {
     "id": "gebakken-kippenvleugels",
@@ -5558,7 +5665,10 @@
       "vlees"
     ],
     "ovenTime": 45,
-    "preparationTime": 20
+    "preparationTime": 20,
+    "equipment": [
+      "rasp"
+    ]
   },
   {
     "id": "gegrilde-groenten-met-pastinaakfrietjes-en-gebakken-zalm",
@@ -5659,7 +5769,10 @@
       "vis"
     ],
     "ovenTime": 30,
-    "preparationTime": 20
+    "preparationTime": 20,
+    "equipment": [
+      "bakplaat"
+    ]
   },
   {
     "id": "gevulde-paprika-met-gehakt-uit-de-oven",
@@ -5816,7 +5929,10 @@
       "vlees"
     ],
     "ovenTime": 20,
-    "preparationTime": 15
+    "preparationTime": 15,
+    "equipment": [
+      "ovenschaal"
+    ]
   },
   {
     "id": "hamburger-met-spinazie-feta-en-pastinaak",
@@ -5915,7 +6031,13 @@
       "vlees"
     ],
     "ovenTime": 20,
-    "preparationTime": 35
+    "preparationTime": 35,
+    "equipment": [
+      "ovenschaal",
+      "bakpapier",
+      "wok",
+      "koekenpan"
+    ]
   },
   {
     "id": "kalkoenfilet-met-parmezaanse-kaas",
@@ -6039,7 +6161,11 @@
     "diet": [
       "vlees"
     ],
-    "preparationTime": 40
+    "preparationTime": 40,
+    "equipment": [
+      "staafmixer of keukenmachine",
+      "pan"
+    ]
   },
   {
     "id": "bloemkoolcouscous-met-limabonen-zongedroogde-tahin",
@@ -6155,7 +6281,11 @@
     "diet": [
       "vegan"
     ],
-    "preparationTime": 20
+    "preparationTime": 20,
+    "equipment": [
+      "staafmixer of keukenmachine",
+      "pan"
+    ]
   },
   {
     "id": "kipkerrie-met-bloemkoolrijst",
@@ -6271,7 +6401,11 @@
     "diet": [
       "vlees"
     ],
-    "preparationTime": 35
+    "preparationTime": 35,
+    "equipment": [
+      "wok",
+      "koekenpan"
+    ]
   },
   {
     "id": "korstloze-quiche-met-gewokte-groenten",
@@ -6634,6 +6768,9 @@
     "preparationTime": 30,
     "diet": [
       "vlees"
+    ],
+    "equipment": [
+      "pan"
     ]
   },
   {
@@ -6764,7 +6901,10 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 45
+    "preparationTime": 45,
+    "equipment": [
+      "koekenpan"
+    ]
   },
   {
     "id": "oosterse-kipfilet-met-witlofsalade",
@@ -6886,7 +7026,10 @@
     "diet": [
       "vlees"
     ],
-    "preparationTime": 35
+    "preparationTime": 35,
+    "equipment": [
+      "pan"
+    ]
   },
   {
     "id": "pesto-kip-met-snijbonen-en-tuinerwtjes",
@@ -7043,7 +7186,10 @@
     "diet": [
       "vlees"
     ],
-    "preparationTime": 50
+    "preparationTime": 50,
+    "equipment": [
+      "pan"
+    ]
   },
   {
     "id": "plaat-courgette",
@@ -7134,7 +7280,12 @@
       "vis"
     ],
     "ovenTime": 30,
-    "preparationTime": 15
+    "preparationTime": 15,
+    "equipment": [
+      "bakplaat",
+      "bakpapier",
+      "rasp"
+    ]
   },
   {
     "id": "pompoenlasagne",
@@ -7303,7 +7454,14 @@
       "vlees"
     ],
     "ovenTime": 55,
-    "preparationTime": 35
+    "preparationTime": 35,
+    "equipment": [
+      "ovenschaal",
+      "bakplaat",
+      "bakpapier",
+      "rasp",
+      "pan"
+    ]
   },
   {
     "id": "shoarmaschotel",
@@ -7434,7 +7592,10 @@
     "diet": [
       "vlees"
     ],
-    "preparationTime": 25
+    "preparationTime": 25,
+    "equipment": [
+      "pan"
+    ]
   },
   {
     "id": "shoarmaschotel-vegetarisch",
@@ -7565,7 +7726,10 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 25
+    "preparationTime": 25,
+    "equipment": [
+      "pan"
+    ]
   },
   {
     "id": "stoofvlees-met-knolselderij-met-rode-kool",
@@ -7812,7 +7976,12 @@
     ],
     "approved": true,
     "preparationTime": 240,
-    "advanceNotice": "Het stoofvlees moet circa 3 uur stoven."
+    "advanceNotice": "Het stoofvlees moet circa 3 uur stoven.",
+    "equipment": [
+      "braadpan",
+      "rasp",
+      "pureestamper"
+    ]
   },
   {
     "id": "tempeh-met-sesamzaad-en-ei",
@@ -7934,7 +8103,11 @@
       "vegetarisch"
     ],
     "approved": true,
-    "preparationTime": 30
+    "preparationTime": 30,
+    "equipment": [
+      "koekenpan",
+      "rasp"
+    ]
   },
   {
     "id": "viscurry-met-sperziebonen",
@@ -8040,7 +8213,12 @@
       "vis"
     ],
     "approved": true,
-    "preparationTime": 35
+    "preparationTime": 35,
+    "equipment": [
+      "koekenpan",
+      "staafmixer",
+      "rasp"
+    ]
   },
   {
     "id": "witte-vis-met-kokoskerriesaus",
@@ -8165,7 +8343,11 @@
     ],
     "approved": true,
     "preparationTime": 15,
-    "ovenTime": 30
+    "ovenTime": 30,
+    "equipment": [
+      "ovenschaal",
+      "pan"
+    ]
   },
   {
     "id": "zalm-in-mosterdsaus",
@@ -8274,7 +8456,10 @@
     ],
     "approved": true,
     "preparationTime": 20,
-    "ovenTime": 30
+    "ovenTime": 30,
+    "equipment": [
+      "grillpan"
+    ]
   },
   {
     "id": "zalm-met-zuurkool-en-veldsla",
@@ -8372,7 +8557,10 @@
       "vis"
     ],
     "approved": true,
-    "preparationTime": 20
+    "preparationTime": 20,
+    "equipment": [
+      "rasp"
+    ]
   },
   {
     "id": "zuurkoolpotje-met-gehakt",
@@ -8479,7 +8667,14 @@
     ],
     "approved": true,
     "preparationTime": 25,
-    "ovenTime": 8
+    "ovenTime": 8,
+    "equipment": [
+      "ovenschaal",
+      "staafmixer of keukenmachine",
+      "rasp",
+      "pureestamper",
+      "pan"
+    ]
   },
   {
     "id": "groentesoep-met-aardappel-en-balletjes",
