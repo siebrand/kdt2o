@@ -2417,10 +2417,10 @@
             "category": "Groente en fruit"
           },
           {
-            "raw": "100 gram geitenkaas",
+            "raw": "100 gram zachte geitenkaas",
             "amount": 100,
             "unit": "gram",
-            "name": "geitenkaas",
+            "name": "geitenkaas (zacht)",
             "optional": false,
             "category": "Zuivel en eieren"
           },
@@ -2967,10 +2967,10 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "75 gram geitenkaas",
+        "raw": "75 gram zachte geitenkaas",
         "amount": 75,
         "unit": "gram",
-        "name": "geitenkaas",
+        "name": "geitenkaas (zacht)",
         "optional": false,
         "alternatives": [
           {
@@ -7203,10 +7203,10 @@
             "category": "Zuivel en eieren"
           },
           {
-            "raw": "50 gram geitenkaas",
+            "raw": "50 gram harde geitenkaas",
             "amount": 50,
             "unit": "gram",
-            "name": "geitenkaas",
+            "name": "geitenkaas (hard)",
             "optional": false,
             "category": "Zuivel en eieren"
           }
@@ -7271,10 +7271,10 @@
             "category": "Zuivel en eieren"
           },
           {
-            "raw": "75 gram geitenkaas",
+            "raw": "75 gram harde geitenkaas",
             "amount": 75,
             "unit": "gram",
-            "name": "geitenkaas",
+            "name": "geitenkaas (hard)",
             "optional": false,
             "category": "Zuivel en eieren"
           }
