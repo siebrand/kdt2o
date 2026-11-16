@@ -480,7 +480,8 @@
     "method": "Doe de avocado samen met de slagroom in een blender. Smelt de pure chocolade au bain-marie. Voeg deze chocolade en de cacaopoeder toe aan het avocadomengsel en roer het goed door. Serveer de mousse direct na het klaarmaken met de frambozen en de kokosrasp en de noten. Tip: Voor de variatie kun je dit gerecht ook serveren met Griekse yoghurt, kokosflakes, granola of stukjes 85% pure chocolade.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 20
   },
   {
     "id": "frisse-ontbijtsalade",
@@ -553,7 +554,8 @@
     "method": "Snijd de tomaat, paprika en komkommer in kleine stukjes en meng deze door de huttenkase samen met de olijfolie. Breng het geheel op smaak met een snufje zout en wat peper. Strooi de pitten/noten/zaden over het geheel heen. Tip: Ook erg lekker met andere kruiden.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 20
   },
   {
     "id": "gebakken-eieren-met-paprika-en-een-krokant-speklapje",
@@ -629,7 +631,8 @@
     "method": "Bak de speklapjes in een pan tot ze krokant zijn. Doe een beetje roomboter in een pan en bak hierin de stukjes paprika tot ze zacht zijn. Voeg de eieren toe en bak ze op de manier die jij het lekkerst vindt. Voeg peper en (jozo) zout toe. Serveer het speklapje met de gebakken eieren met een knapperige lijnzaadcracker erbij.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "preparationTime": 15
   },
   {
     "id": "groentemuffins",
@@ -723,7 +726,8 @@
     "diet": [
       "vegetarisch"
     ],
-    "ovenTime": 35
+    "ovenTime": 35,
+    "preparationTime": 15
   },
   {
     "id": "huttenkase-met-rood-blauw-fruit-en-zelfgemaakte-granola",
@@ -1789,7 +1793,8 @@
     "method": "Kluts de eieren met de volle kwark en de geelwortel. Doe een scheutje olijfolie in de pan en bak het ei op een laag vuur gaar. Strooi de bieslook over de omelet. Serveer de omelet met één of twee lijnzaadcrackers met roomboter, (boeren)kaas en schijfjes komkommer. Eet dit met een handje noten.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 20
   },
   {
     "id": "ontbijtmuffins",
@@ -1858,7 +1863,8 @@
     "diet": [
       "vis"
     ],
-    "ovenTime": 25
+    "ovenTime": 25,
+    "preparationTime": 15
   },
   {
     "id": "roerei-met-ricotta",
@@ -1942,7 +1948,8 @@
     ],
     "notes": [
       "Kies voor een strikt vegetarisch gerecht een vegetarische harde kaas."
-    ]
+    ],
+    "preparationTime": 20
   },
   {
     "id": "volle-kwark-met-granola-en-diepvries-rood-fruit",
@@ -1984,7 +1991,8 @@
     "method": "Verdeel de kwark over 2 schaaltjes. Voeg per schaaltje twee handjes granola en 100 gram rood/blauw diepvriesfruit toe. Tip: Maak de granola zoals in week 1, met alleen lijnzaad en zonnebloempitten.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 10
   },
   {
     "id": "Gegrilde groenten met feta en crackers met kaas avocado",
@@ -2249,7 +2257,8 @@
     ],
     "notes": [
       "Kies voor een strikt vegetarisch gerecht een vegetarische harde kaas."
-    ]
+    ],
+    "preparationTime": 30
   },
   {
     "id": "bietensalade-met-haring",
@@ -2354,7 +2363,8 @@
     "method": "Schil de bietjes en snijd deze in stukjes. Sla deze stap over als je voorgesneden bietjes koopt. Snipper het rode uitje en de augurk. Snijd de appel in blokjes en de haring in stukjes. Meng deze ingrediënten door elkaar. Roer een dressing van 1 el olijfolie, 1 el citroensap, mosterd en bieslook. Voeg peper en (jozo)zout naar smaak toe. Roer de dressing door de salade en garneer de salade met verse dille.",
     "diet": [
       "vis"
-    ]
+    ],
+    "preparationTime": 25
   },
   {
     "id": "broccolisoep",
@@ -2463,7 +2473,8 @@
     "diet": [
       "vegetarisch"
     ],
-    "days": 3
+    "days": 3,
+    "preparationTime": 35
   },
   {
     "id": "courgettesoep-3-dagen",
@@ -2703,7 +2714,8 @@
     ],
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 25
   },
   {
     "id": "frittata-met-champignons-en-kaas",
@@ -2943,7 +2955,8 @@
     "method": "Snijd de puntpaprika's doormidden, verwijder de zaadlijsten en snijd in grove blokken. Snijd de komkommer in grove blokken. Snijd de tomaten doormidden en verwijder het harde gedeelte. Snijd ook de tomaten in grove blokken. Pel de ui en snijd in ringen. Doe alle groente in een slakom en verkruimel de feta erboven. Bestrooi de salade met de olijven. Meng de olijfolie en de azijn door elkaar en breng op smaak met peper en zout. Giet de dressing over de salade heen en garneer met de pitten/zaden en eventueel met verse kruiden. Eet de lijnzaadcracker als een lekkere bite voor erbij. Tip: Je kunt van deze salade een grotere portie maken. Zo kun je het de volgende dag bijvoorbeeld makkelijk meenemen naar werk voor lunch.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 25
   },
   {
     "id": "groente-salade-restje-avondeten-met-geitenkaas-en-mosterddressing",
@@ -3057,7 +3070,8 @@
     "method": "Snipper de ui heel fijn. Meng de ui met mosterd, azijn, olijfolie en water goed door elkaar. Roer dit door de gegrilde groeten (hoe langer je het laat marineren hoe lekkerder). Doe de flinke handen spinazie op een bord of in een meeneem bakje. Leg hier bovenop de gegrilde groeten, bestrooi met de zaden en pitten en verkruimel de geitenkaas erboven. Eet hierbij een lijnzaadcracker met wat geitenkaas. Eet een stuk fruit toe.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 25
   },
   {
     "id": "kleurrijke-frittata",
@@ -3174,7 +3188,8 @@
     "method": "Maak de pompoen schoon en snijd in blokjes. Kook de pompoenblokjes ongeveer 5 minuten in een pan zodat ze een beetje zacht worden. Snijd ondertussen de rode ui, de lenteui en rode paprika in kleine stukjes. Giet na 5 minuten de pompoenblokjes af en prak ze fijn. Verwarm een pan met een scheutje olijfolie en bak de rode ui. Voeg na een minuut de paprika, pompoen en driekwart van de lenteui toe. Bewaar een kwart lenteui om te garneren. Klop ondertussen de eieren los in een aparte kom en voeg de chilipoeder en melk/kwark toe. Roer het mengsel door elkaar. Voeg peper en (jozo)zout toe naar smaak. Schenk het mengsel over de groenten. Bak het ei (eventueel met deksel op de pan) op middelhoog vuur totdat het ei begint te stollen. Verkruimel de kaas en strooi over het ei. Wanneer de frittata goed gestold is, draai je de frittata om en bak je de andere kant nog ongeveer 2 minuten mee. Tip: leg de frittata vijf minuten onder de grill voor een mooi goudbruin laagje. Tip: de frittata is zowel warm als koud lekker en daardoor gemakkelijk mee te nemen als lunch. Tip: duurt het te lang voordat de frittata gaar is? Maak er roerei van.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 30
   },
   {
     "id": "koud-kippesto-salade",
@@ -3263,7 +3278,8 @@
     "method": "Snijd de komkommer en de avocado in stukjes en halveer de tomaatjes. Meng dit door de salade en leg het op een bord. Snijd de kipfilet in stukjes en bak dit rustig aan in een scheutje olijfolie. Roer hier de pesto doorheen en leg het op de salade. Rooster de pijnboompitten kort in een pan zonder boter of olie en bestrooi de salade ermee. Rasp een beetje Parmezaanse kaas over je salade. Je kunt ook alles meenemen in een bakje of trommel. Bind eventueel een koelelement om het bakje of trommel. Tip: Laat de Parmezaanse kaas weg of vervang deze door een andere kaas, zoals boerenkaas. Tip: Vervang de pijnboompitten door een ongebrande notenmix.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "preparationTime": 20
   },
   {
     "id": "linzensoep",
@@ -3372,7 +3388,8 @@
     "diet": [
       "vegetarisch"
     ],
-    "days": 2
+    "days": 2,
+    "preparationTime": 25
   },
   {
     "id": "mozzarellawraps-met-avocado-en-tomaat",
@@ -3477,7 +3494,8 @@
     "method": "Doe de bol mozzarella in een klein pannetje met water (zodat de bolletjes bijna onder water staat). Verhit het zachtjes (het water mag niet koken), het gaat erom dat de mozzarella zacht wordt. Na 5 tot 7 minuutjes is de bol vaak zacht genoeg. Haal ze uit het water en leg op een bakpapier vel. Leg er vervolgens een bakpapier vel boven op en rol ze plat met een deegroller tot een dunne pannenkoek. Laat vervolgens afkoelen. Besmeer vervolgens met roomkaas, besprenkel met wat peper en leg de avocado erboven op. Snij de tomaat in stukjes en doe er bovenop. Rol de wraps vervolgens op en snij door de helft. Eet met een groene salade erbij (je kunt ook zeker groenten gebruiken die je nog in huis hebt hiervoor) Maak eventueel nog een wrap indien 1 wrap per persoon niet genoeg voor je is. Tip: je kan eindeloos variëren met deze wrap: denk aan de restjes groenten die je hebt of een blikje tonijn!",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 25
   },
   {
     "id": "mozzarellawraps-met-zalm-en-roomkaas",
@@ -3590,7 +3608,8 @@
     "method": "Doe de bol mozzarella in een klein pannetje met water (zodat de bolletjes bijna onder water staan). Verhit het zachtjes (het water mag niet koken), het gaat erom dat de mozzarella zacht wordt. Na 5 tot 7 minuutjes is de bol vaak zacht genoeg. Haal ze uit het water en leg op een bakpapiervel. Leg er vervolgens een bakpapier vel boven op en rol ze plat met een deegroller tot een dunne pannenkoek. Laat vervolgens afkoelen. Besmeer vervolgens met roomkaas, besprenkel met wat peper en leg de zalm erboven op. Snij met een kaasschaaf hele dunne plakjes komkommer en leg deze erbovenop. Rol de wraps vervolgens op en snij door de helft. Eet met een groene salade erbij (je kunt ook zeker groenten gebruiken die je nog in huis hebt hiervoor). Maak eventueel nog een wrap indien 1 wrap per persoon niet genoeg voor je is. Je kan eindeloos variëren met deze wrap: denk aan de restjes groenten die je hebt of een blikje tonijn.",
     "diet": [
       "vis"
-    ]
+    ],
+    "preparationTime": 25
   },
   {
     "id": "omelet-champignons-en-salade",
@@ -3719,7 +3738,8 @@
     "method": "Snijd de uien fijn en bak zachtjes aan totdat ze glazig zijn. Borstel de paddenstoelen schoon en snijd deze in stukjes. Voeg dit toe aan de uien en bak het mengsel nog 2 minuten op laag vuur. Haal vervolgens van het vuur, voeg een scheutje melk toe en pureer het geheel. Kluts vijf eieren en meng hierin het gepureerde ui-paddenstoelenmengsel, peper, (jozo)zout en peterselie. Roer alles goed door en bak de omelet in twee keer in een koekenpan met een beetje olijfolie. Serveer met een frisse salade van bladsla, komkommer, cherrytomaatjes, olijven, avocado, feta en een eetlepel noten, pitten of zaden.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 25
   },
   {
     "id": "quinoa-kip-salade",
@@ -3826,7 +3846,8 @@
     "method": "Snijd de kipfilet in stukjes en bestrooi met (jozo) zout. Braad deze aan in een koekenpan met wat olijfolie. Kook de quinoa gaar zoals aangegeven op de verpakking. Meng de kipfilet door de quinoa. Lepel een avocado uit en meng deze ook door het kip-quinoa mengsel. Maak vervolgens de dressing door de mayonaise, yoghurt en peper en het citroensap en (jozo)zout door elkaar te roeren. Voeg de dressing toe aan het mengsel. Leg een hand bladsla op een bord of in een meeneembakje en leg het kip-quinoa mengsel erop. Tip: Kruid de kip met kerrie of garam masala voor extra smaak!",
     "diet": [
       "vlees"
-    ]
+    ],
+    "preparationTime": 20
   },
   {
     "id": "salade-nicoise",
@@ -3907,7 +3928,8 @@
     "method": "Kook de eieren totdat ze hardgekookt zijn. Haal de uiteinden van de sperziebonen, kook ze in 5 minuten gaar en spoel ze af met koud water. Laat de sperziebonen en eieren afkoelen. Laat de tonijn uitlekken. Maak een dressing van de olijfolie, mayonaise, azijn, peper en (jozo)zout. Meng alles door elkaar: de eieren, boontjes, tonijn, olijven en de dressing.",
     "diet": [
       "vis"
-    ]
+    ],
+    "preparationTime": 20
   },
   {
     "id": "salade-zalm-met-bonen",
@@ -3996,7 +4018,8 @@
     "method": "Snijd de gerookte zalm, rode ui, tomaten en feta in stukjes. Spoel de edamame bonen af. Meng de gerookte zalm, rode ui, tomaten en feta door de rucola en edamame bonen. Maak een dressing van olijfolie, citroensap en peper en zout en verdeel dit over de salade.",
     "diet": [
       "vis"
-    ]
+    ],
+    "preparationTime": 20
   },
   {
     "id": "tomatensoep",
@@ -4139,7 +4162,8 @@
     "diet": [
       "vegan"
     ],
-    "days": 3
+    "days": 3,
+    "preparationTime": 25
   },
   {
     "id": "tonijn-kikkererwten-salade",
@@ -4262,7 +4286,8 @@
     "method": "Kook de erwtjes 3 minuten in kokend water. Snipper het rode uitje heel fijn. Meng de tonijn met de erwtjes, ui en kikkererwten. Voeg de extra vierge olijfolie en azijn toe. Om het wat smeuiger te maken kun je een beetje yoghurt en/of mayonaise erdoor roeren. Leg de salade op een bord en leg hier het tonijnmengsel op. Tip: Je kunt eventueel ook een appel fijnsnijden en door de salade mengen.",
     "diet": [
       "vis"
-    ]
+    ],
+    "preparationTime": 20
   },
   {
     "id": "witlofsalade-met-zalm",
@@ -4335,7 +4360,8 @@
     "method": "Rooster de pijnboompitten tot ze lichtbruin zijn. Snijd de witlof in smalle reepjes. Kook de eieren hard en snijd deze in partjes. Maak een dressing van de olijfolie en de mayonaise. Maak de dressing op smaak met versgemalen peper. Houd één plakje zalm achter voor de garnering, snijd de overige plakjes in stukjes. Meng de witlof, de zalm en het ei met de dressing. Schep de salade op een bord en garneer het met het plakje gerookte zalm. Strooi de pijnboompitten over de salade.",
     "diet": [
       "vis"
-    ]
+    ],
+    "preparationTime": 20
   },
   {
     "id": "andijviestamppot-vegetarische-variant",
@@ -4416,7 +4442,8 @@
     "method": "Was en snijd de andijvie in reepjes. Hak de nootjes fijn met een vijzel of staafmixer. Schil de knolselderij, snijd deze in kleine blokjes en kook deze met een beetje water in ongeveer 15 minuten gaar (moet echt zacht zijn). Snipper de ui, borstel de champignons schoon en snijd ze in plakjes. Bak de ui in een pan met wat olijfolie en voeg de champignons toe als de uitjes glazig zijn. Bak dan nog 5 minuten door. Giet de knolselderij af maar bewaar het vocht. Pureer de knolselderij met de ui en champignons en maak het smeuïg met het overgebleven kookvocht. Voeg een scheutje olijfolie toe en wat peper en (jozo)zout. Meng de andijvie door de puree. Voeg vervolgens de cashewnoten en geraspte kaas toe. Schep alles goed door en serveer het op de borden. Tip: Koop fijngesneden andijvie. Tip: Pureer de knolselderij, ui en champignons met de staafmixer of keukenmachine (of zonder champignons als je die graag groter laat).",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 35
   },
   {
     "id": "aubergine-uit-de-oven",
@@ -4532,7 +4559,8 @@
     "diet": [
       "vegetarisch"
     ],
-    "ovenTime": 20
+    "ovenTime": 20,
+    "preparationTime": 25
   },
   {
     "id": "aziatische-tofu",
@@ -4663,7 +4691,8 @@
     "method": "Snijd de tofu in blokjes. Meng de sojasaus, uitgeperste knoflook, azijn, gember (en chilivlokken) en roer dit door de tofu. Laat even marineren (hoe langer hoe lekkerder). Was de spruitjes en snijd het stronkje eraf. Kook of stoom de spruitjes in ongeveer 7 minuten gaar. Snijd de ui in dunne ringen en was en snijd de paprika in dunne reepjes. Smoor de ui en paprika zachtjes gaar in een pan met wat boter. Roerbak vervolgens op middelhoog vuur de  tofu bij de ui en paprika. Voeg het teveel aan marinade toe. Voeg de spruitjes, taugé en sesamzaadjes toe. Roerbak alles een paar minuten totdat de taugé gaar, maar nog wel knapperig is.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 25
   },
   {
     "id": "aziatische-runderreepjes",
@@ -4794,7 +4823,8 @@
     "method": "Meng de sojasaus, uitgeperste knoflook, azijn, gember (en chilivlokken) en roer dit door de runderreepjes. Laat even marineren (hoe langer hoe lekkerder). Was de spruitjes en snijd het stronkje eraf. Kook of stoom de spruitjes in ongeveer 7 minuten gaar. Snijd de ui in dunne ringen en was en snijd de paprika in dunne reepjes. Smoor de ui en paprika zachtjes gaar in een pan met wat boter. Roerbak vervolgens op middelhoog vuur de runderreepjes bij de ui en paprika. Voeg het teveel aan marinade toe. Voeg de spruitjes, taugé en sesamzaadjes toe. Roerbak alles een paar minuten totdat de taugé gaar, maar nog wel knapperig is.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "preparationTime": 25
   },
   {
     "id": "biefstuk-met-champignons-en-geroosterde-groenten",
@@ -5192,7 +5222,8 @@
     "diet": [
       "vis"
     ],
-    "ovenTime": 35
+    "ovenTime": 35,
+    "preparationTime": 25
   },
   {
     "id": "caesarsalade-met-garnalen",
@@ -5345,7 +5376,8 @@
     "method": "Verhit de roomboter en olie in een koekenpan. Bestrooi de garnalen met knoflook, peper, (jozo)zout en kurkuma. Bak de garnalen in olijfolie op middelhoog vuur rondom bruin. Zet het vuur lager en bak zachtjes gaar in circa 8 minuten. Verwijder intussen de harde kern van de sla, scheur deze in grove stukken en leg het samen met de afgespoelde mais op een diep bord. Strooi de zonnebloempitten erover. Haal de garnalen uit de pan als ze klaar zijn, pel ze en leg ze op de sla. Rasp de Parmezaanse kaas grof en strooi over de sla. Bereid de caesardressing volgens het subrecept en serveer de salade ermee. Tip: Liever geen vieze handen? Je kunt de garnalen ook pellen voordat je ze bakt; de smaak blijft echter beter behouden als je ze erna pas pelt.",
     "diet": [
       "vis"
-    ]
+    ],
+    "preparationTime": 30
   },
   {
     "id": "caesarsalade-met-kipfilet",
@@ -5498,7 +5530,8 @@
     "method": "Verhit de roomboter en olie in een koekenpan. Snijd de kipfilet in reepjes. Bestrooi de kip met knoflook, peper, (jozo)zout en kurkuma. Bak de kip in olijfolie op middelhoog vuur rondom bruin. Zet het vuur lager en bak zachtjes gaar in circa 8 minuten. Verwijder intussen de harde kern van de sla, scheur deze in grove stukken en leg het samen met de afgespoelde mais op een diep bord. Strooi de zonnebloempitten erover. Haal de kip uit de pan als die klaar is en leg de kip op de sla. Rasp de Parmezaanse kaas grof en strooi over de sla. Bereid de Caesardressing volgens het subrecept en serveer de salade ermee.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "preparationTime": 30
   },
   {
     "id": "courgetti-pasta",
@@ -5617,7 +5650,8 @@
     "method": "Snijd de snijbonen in stukjes en kook of stoom deze bijna gaar. Snijd de kipfilet in stukjes en bak deze in ongezouten roomboter of olijfolie. Voeg vervolgens de spinazie en courgette sliertjes toe aan de kipfilet. Snijd ongeveer de helft van de cherrytomaatjes doormidden en bak deze nog kort mee. Voeg tot slot de gekookte snijbonen en de pesto toe aan de pan en eventueel wat peper en zout, meng alles goed. Voeg op het einde de overige tomaatjes en wat geraspte kaas toe. Tip: Je kunt de snijbonen ook in kleine sliertjes (net als de courgette) snijden! Tip: In plaats van kipfilet ook lekker met speklapjes",
     "diet": [
       "vlees"
-    ]
+    ],
+    "preparationTime": 20
   },
   {
     "id": "gebakken-kippenvleugels",
@@ -5715,7 +5749,8 @@
     "diet": [
       "vlees"
     ],
-    "ovenTime": 45
+    "ovenTime": 45,
+    "preparationTime": 20
   },
   {
     "id": "gegrilde-groenten-met-pastinaakfrietjes-en-gebakken-zalm",
@@ -5815,7 +5850,8 @@
     "diet": [
       "vis"
     ],
-    "ovenTime": 30
+    "ovenTime": 30,
+    "preparationTime": 20
   },
   {
     "id": "gevulde-paprika-met-gehakt-uit-de-oven",
@@ -6194,7 +6230,8 @@
     "method": "Was de bloemkool en breek in roosjes. Maal deze fijn in een keukenmachine of met een staafmixer. Was de kruiden en snijd deze fijn. Doe een scheut olijfolie in de pan en bak de bloemkool al omscheppend in 3-4 minuten gaar. Voeg de kruiden toe en haal van het vuur. Breng op smaak met peper en (jozo)zout en het sap van een citroen. Zet twee kommen klaar. Kluts in de ene kom de eieren samen met de geraspte kaas. Doe in de andere kom het meel. Doe een flinke scheut olijfolie in de pan en zet op middelhoog vuur. Sla de kalkoen eventueel wat platter, zodat deze sneller gaart. Bestrooi de kalkoenfilet met peper en (jozo)zout en dan met meel (of wentel de filet in het meel en schud overtollig meel af) en haal dan door het ei-kaasmengsel. Zet het vuur niet te hoog anders verbrandt de kaas. Schud de pan af en toe heen en weer en braad de filets in ongeveer 15 minuten gaar. Keer halverwege om. Serveer de kalkoenfilet met de bloemkool couscous en de groene salade met olijfolie en wat citroensap besprenkeld. Tip: Vervang de Parmezaanse kaas door boerenkaas.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "preparationTime": 40
   },
   {
     "id": "bloemkoolcouscous-met-limabonen-zongedroogde-tahin",
@@ -6309,7 +6346,8 @@
     "method": "Was de bloemkool en breek in roosjes. Maal deze fijn in een keukenmachine of met een staafmixer. Was de kruiden en snijd deze fijn. Doe een scheut olijfolie in de pan en bak de bloemkool al omscheppend in 3-4 minuten gaar. Voeg de kruiden toe en haal van het vuur. Breng op smaak met peper en (jozo)zout en het sap van een citroen. Spoel de lima bonen af onder de kraan en voeg samen met in reepjes gesneden zongedroogde tomaatjes toe aan de bloemkoolcouscous. Besprenkel met tahin.",
     "diet": [
       "vegan"
-    ]
+    ],
+    "preparationTime": 20
   },
   {
     "id": "kipkerrie-met-bloemkoolrijst",
@@ -6424,7 +6462,8 @@
     "method": "Pel de ui en snijd in grove parten. Snijd de paprika in repen. Hak de peterselie grof. Verhit een scheut olijfolie in een koekenpan en bak hierin de ui in circa 3 minuten glazig. Snijd de kip in stukjes en leg deze op een schaal en bestrooi met de kerriepoeder en schep om. Voeg de kip toe aan de ui (en eventueel een klontje roomboter) en bak nog circa 7 minuten mee tot de kip goudbruin is. Voeg de paprika toe en bak kort mee. Voeg de crême fraîche toe en laat dit zachtjes nog circa 4 minuten pruttelen. Roer de doperwten er doorheen en verhit tot alles goed warm is. Breng op smaak met peper en zout. Verhit een scheut olijfolie in een wok of koekenpan en wok hierin in circa 2 minuten de bloemkoolrijst tot beetgaar. Doe dit in kleinere hoeveelheden anders wordt de bloemkool papperig. Serveer de bloemkoolrijst met de kipkerrie. Garneer met de rode peper en peterselie.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "preparationTime": 35
   },
   {
     "id": "korstloze-quiche-met-gewokte-groenten",
@@ -6916,7 +6955,8 @@
     "method": "Giet de kikkererwten af en laat goed uitlekken in een vergiet. Pel en snipper de ui. Pel de knoflook en hak fijn. Verhit een flinke scheut olijfolie in een koekenpan. Bak hierin de ui in circa 2 minuten, voeg dan de knoflook toe. Snijd ondertussen de aubergine en courgette in blokjes. Snijd de paprika doormidden, verwijder de zaadjes en snijd in blokjes. Verwijder de harde kern van de tomaat en snijd in blokjes. Breng in een andere pan water aan de kook en kook hierin de 4 eieren in circa 8 a 10 minuten hard. Laat ze daarna schrikken onder koud water, pel ze en houd apart. Voeg alle groenten en het venkel- en komijnzaad toe aan de ui en knoflook in de pan en bak circa 8 minuten op middelhoog vuur. Voeg de kikkererwten toe en bak nog circa 4 minuten mee. Snijd de rode peper in de lengte doormidden. Verwijder de zaadlijsten en zaadjes. Verdeel de groentestoof over de borden, schep op elk bord 1 eetlepel volle kwark en garneer met de rode peper. Hak de koriander grof en strooi over de groentestoof. Serveer met gekookte eieren, 2 per persoon.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 45
   },
   {
     "id": "oosterse-kipfilet-met-witlofsalade",
@@ -7037,7 +7077,8 @@
     "method": "Neem een slakom, doe hierin de yoghurt, mayonaise en azijn en roer goed door. Voeg zoveel olijfolie toe tot je een goede dressing hebt. Snijd de witlof doormidden, verwijder de harde kern. Snijd de witlof in dunne reepjes en doe deze in de slakom en roer de saus er goed doorheen. Snijd de kipfilet in reepjes van ongeveer 1,5 cm. Snijd de ui fijn. Verhit 1 el olie zachtjes in een pan en fruit het uitje hierin zachtjes aan. Voeg na 4 minuten de sojasaus, gember en uitgeperste knoflook in de pan en bak de kipfiletreepjes hierin. Blijf roeren en bak in circa 6 minuten gaar. Zet kokend water op in een pannetje, kook de erwtjes in 3 minuten gaar en giet af. Haal de kipfilet van het vuur en besprenkel de helft van de kip met sesamzaadjes. Serveer met de erwtjes en de witlofsalade.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "preparationTime": 35
   },
   {
     "id": "pesto-kip-met-snijbonen-en-tuinerwtjes",
@@ -7193,7 +7234,8 @@
     "method": "Bereid de pesto volgens het subrecept. Bestrooi de kipfilets met peper en bak of grill ze met een scheut extra vierge olijfolie in de pan in 10 minuten gaar (de binnenkant mag niet meer roze zijn). Eventueel kun je de kipfilet in stukjes snijden. Was de snijbonen, snijd ze in stukjes en kook/stoom deze in 5 minuten beetgaar. Verwarm de tuinerwtjes 2 minuten in een pannetje met een beetje water. Als de kipfilet gaar is, haal van het vuur en roer de pesto erdoor of erop. Serveer met de snijbonen en tuinerwtjes.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "preparationTime": 50
   },
   {
     "id": "plaat-courgette",
@@ -7583,7 +7625,8 @@
     "method": "Snijd de kipfilets in kleine blokjes en marineer dit met de shoarmakruiden. Was en snijd de preien in kleine ringetjes en de paprika in kleine blokjes. Haal de puntjes van de boontjes en breek ze doormidden. Stoom de boontjes gaar in ongeveer 5 minuten. Doe een klontje roomboter in de pan en bak de kipfilets gaar, voeg de paprika en prei toe en roerbak tot de paprika zacht begin te worden. Voeg de boontjes toe. Bereid de kruidensaus volgens het subrecept. Serveer het op de borden en sprenkel de kruidensaus over het gerecht.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "preparationTime": 25
   },
   {
     "id": "shoarmaschotel-vegetarisch",
@@ -7713,7 +7756,8 @@
     ],
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "preparationTime": 25
   },
   {
     "id": "stoofvlees-met-knolselderij-met-rode-kool",
