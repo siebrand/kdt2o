@@ -676,7 +676,7 @@
         "unit": "gram",
         "name": "zongedroogde tomaten",
         "optional": false,
-        "category": "Groente en fruit"
+        "category": "Houdbare producten"
       },
       {
         "raw": "150 gram geraspte (boeren)kaas",
@@ -1791,7 +1791,7 @@
         "raw": "200 gram rood/blauw diepvries fruit",
         "amount": 200,
         "unit": "gram",
-        "name": "rood/blauw fruit",
+        "name": "rood/blauw fruit (diepvries)",
         "optional": false,
         "category": "Diepvries"
       }
@@ -3212,8 +3212,8 @@
     "ingredients": [
       {
         "raw": "2 bollen mozzarella (125 gram per stuk)",
-        "amount": 2,
-        "unit": "bol",
+        "amount": 250,
+        "unit": "gram",
         "name": "mozzarella",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -3318,8 +3318,8 @@
     "ingredients": [
       {
         "raw": "2 bollen mozzarella (125 gram per stuk)",
-        "amount": 2,
-        "unit": "bol",
+        "amount": 250,
+        "unit": "gram",
         "name": "mozzarella",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -3960,7 +3960,7 @@
         "unit": "blik",
         "name": "tomatenpuree",
         "optional": true,
-        "category": "Groente en fruit"
+        "category": "Houdbare producten"
       }
     ],
     "method": "Pel en snipper de ui. Was de tomaten en snijd deze in stukken of open de blikken. Verwijder de uiteinden van de wortel, schil en hak in grove stukken. Was en snij de paprika in stukken. Doe de olijfolie in soeppan. Bak hierin de ui op middelmatig vuur in 5 minuten zacht en glazig. Voeg de tomaten, paprika, wortelen, bleekselderij en de bouillonblokjes met water en peterselie toe. Breng het aan de kook. Wanneer het kookt, zet je het vuur laag, doe je de deksel op de pan en laat het zo 15 minuten staan. Als de groenten zacht en gaar zijn voeg je 2 norivellen toe en pureer je de soep met een staafmixer. Spoel de linzen af en voeg toe aan de soep. Bestrooi daarna met de basilicumblaadjes. Voeg eventueel wat peper toe. Voeg wat verpulverde norivellen over de soep toe voor dat je het serveert. Tip: Als de tomaten weinig smaak hebben of je de soep intenser rood wilt maken, voeg dan tijdens het bakken van de ui een klein blikje tomatenpuree toe. Serveer de tomatensoep in een kom of neem het mee in een thermoskan. Tip: Koop de paprika niet per stuk, maar in een voordeelverpakking van drie. Tip: Koop de paprika op de markt; daar is deze goedkoper. Tip: Vries overgebleven soep in om er later nog eens van te genieten.",
@@ -4298,8 +4298,8 @@
       },
       {
         "raw": "2 bollen mozzarella",
-        "amount": 2,
-        "unit": "bol",
+        "amount": 250,
+        "unit": "gram",
         "name": "mozzarella",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -4963,7 +4963,7 @@
         "unit": "blik",
         "name": "tomatenpuree",
         "optional": false,
-        "category": "Groente en fruit"
+        "category": "Houdbare producten"
       },
       {
         "raw": "2 el gedroogde Italiaanse kruiden",
@@ -5752,7 +5752,7 @@
         "unit": "blik",
         "name": "tomatenpuree",
         "optional": false,
-        "category": "Groente en fruit"
+        "category": "Houdbare producten"
       },
       {
         "raw": "2 el Provençaalse kruiden",
@@ -6360,8 +6360,8 @@
           },
           {
             "raw": "1 bol mozzarella",
-            "amount": 1,
-            "unit": "bol",
+            "amount": 125,
+            "unit": "gram",
             "name": "mozzarella",
             "optional": false,
             "category": "Zuivel en eieren"
@@ -7098,8 +7098,8 @@
       },
       {
         "raw": "1 bol mozzarella",
-        "amount": 1,
-        "unit": "bol",
+        "amount": 125,
+        "unit": "gram",
         "name": "mozzarella",
         "optional": false,
         "category": "Zuivel en eieren"
@@ -7396,7 +7396,7 @@
             "unit": "gram",
             "name": "bieslook",
             "optional": false,
-            "category": "Diepvries"
+            "category": "Kruiden en smaakmakers"
           },
           {
             "raw": "peper en zout",
@@ -7524,7 +7524,7 @@
             "unit": "gram",
             "name": "bieslook",
             "optional": false,
-            "category": "Diepvries"
+            "category": "Kruiden en smaakmakers"
           },
           {
             "raw": "peper en zout",
