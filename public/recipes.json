@@ -722,7 +722,8 @@
     "method": "Verwarm de oven op 180 graden. Vet de muffinbakplaat in met roomboter. Snijd de ui heel fijn en fruit deze zachtjes aan in een pan. Haal van het vuur en doe de ui in een kom. Was de broccoli en breek deze in heel kleine roosjes en voeg die bij de ui. Snijd de zongedroogde tomaatjes heel fijn en voeg dit ook toe aan de broccoli en ul. Voeg vervolgens de eieren, geraspte kaas, peper, (jozo)zout en Italiaanse kruiden toe. Optioneel kun je ook amandelschaafsel toevoegen. Schep het geheel door zodat alle ingredienten goed gemixt zijn. Verdeel het mengsel over de muffinbakplaat of de vormpjes. Bak de muffins gaar in 25-35 minuten. Prik met een houten satéstokje of vork in het midden van de muffin om te kijken of ze gaar zijn. Er mag geen nat mengsel aan het stokje blijven hangen. Serveer direct warm of laat ze afkoelen. Bewaar de muffins in een afgesloten bak in de koelkost. Tip: Maak eventueel een dubbele portie om te bewaren.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "ovenTime": 35
   },
   {
     "id": "huttenkase-met-rood-blauw-fruit-en-zelfgemaakte-granola",
@@ -813,7 +814,9 @@
           "bakplaat",
           "bakpapier"
         ],
-        "method": "Verwarm de oven voor op 170 graden. Doe alle ingrediënten in een kom en meng alles goed door elkaar. Spreid het mengsel uit over een met bakpapier beklede bakplaat. Bak de granola 20 tot 30 minuten. Schep het mengsel na 10 minuten om om aanbranden te voorkomen. Laat de granola afkoelen en bewaar deze in een afsluitbare pot."
+        "method": "Verwarm de oven voor op 170 graden. Doe alle ingrediënten in een kom en meng alles goed door elkaar. Spreid het mengsel uit over een met bakpapier beklede bakplaat. Bak de granola 20 tot 30 minuten. Schep het mengsel na 10 minuten om om aanbranden te voorkomen. Laat de granola afkoelen en bewaar deze in een afsluitbare pot.",
+        "preparationTime": 5,
+        "ovenTime": 30
       }
     ],
     "method": "Verdeel de hüttenkäse over 2 schaaltjes. Voeg hier een handje granola en het (rood/blauw) fruit aan toe. Alternatief voor granola is een handje gemengde noten. Tip: Maak de granola al de avond van tevoren klaar. Tip: Mocht je de structuur van de hüttenkäse niet lekker vinden, kun je de hüttenkäse ook pureren.",
@@ -1011,7 +1014,8 @@
     ],
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "ovenTime": 25
   },
   {
     "id": "lijnzaadcrackers-met-boerenkaas",
@@ -1366,7 +1370,8 @@
     "method": "Eet voor dit ontbijt 1 dikke plak of 2 dunne plakjes notenbrood per persoon. Beleg ze met geprakte avocado.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "advanceNotice": "Bak het notenbrood vooraf; het moet 70 minuten in de oven."
   },
   {
     "id": "notenbrood-met-roomkaas-en-zalm",
@@ -1525,7 +1530,8 @@
     "method": "Eet voor dit ontbijt 1 dikke plak of 2 dunne plakjes notenbrood per persoon. Besmeer ze met roomkaas en beleg met zalm en plakjes komkommer.",
     "diet": [
       "vis"
-    ]
+    ],
+    "advanceNotice": "Bak het notenbrood vooraf; het moet 70 minuten in de oven."
   },
   {
     "id": "notenbrood-met-roomboter-boerenkaas-en-komkommer",
@@ -1684,7 +1690,8 @@
     "method": "Eet voor dit ontbijt 1 dikke plak of 2 dunne plakjes notenbrood per persoon. Besmeer ze met roomboter en beleg met boerenkaas en komkommer.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "advanceNotice": "Bak het notenbrood vooraf; het moet 70 minuten in de oven."
   },
   {
     "id": "omelet-met-geelwortel",
@@ -1850,7 +1857,8 @@
     "method": "Verwarm de oven voor op 190 graden. Kluts de eieren in een grote kom en voeg (jozo)peper en zout toe. Snijd de geitenkaas, zalm, ui en paprika in kleine stukjes en meng dit met de eieren. Giet het mengsel in 4 vormpjes en zet het 25 minuten in de oven op 190 graden. Tip: Heb je geen oven of haast? Maak dan een gevulde omelet van dit recept door de eieren te bakken in een anti-aanbakpan en de omelet te vullen met de overige ingrediënten",
     "diet": [
       "vis"
-    ]
+    ],
+    "ovenTime": 25
   },
   {
     "id": "roerei-met-ricotta",
@@ -4523,7 +4531,8 @@
     "method": "Verwarm de oven op 190 graden. Snijd de aubergine in de lengte in dunne plakken van ca. 1 cm dik. Meng de olijfolie met de Italiaanse kruiden, (jozo)peper en zout in een kom. Plaats de plakken aubergine op een rooster van de oven dat belegd is met bakpapier. Smeer de aubergines in met de olijfolie. Plaats de aubergines in de oven en bak dit ca. 15 minuten. Haal de aubergines uit de oven. Maak dan de tomatensaus. Verwarm de olijfolie in een pan, waar een deksel op kan. Fruit de ui en knoflook samen ca. 10 minuten op een middelmatig vuur tot ze doorzichtig en zacht zijn. Voeg het blik tomatenblokjes, de basilicum blaadjes, (jozo)peper en zout toe. Breng het geheel zachtjes aan de kook. Doe de deksel op de pan en zet het vuur laag. Laat de saus een paar minuten zachtjes doorkoken. Plaats de aubergines in een grote ovenschaal en giet de tomatensaus met een lepel hier overheen (je kan ook meerdere laagjes maken). Snijd de mozzarella in plakken en plaats deze op de aubergines met de saus. Plaats de ovenschaal met de aubergines terug in de oven voor 5 minuten totdat de mozzarella gesmolten is. Serveer de aubergines in een schaal en garneer met de basillicumblaadjes. Tip: De tomatensaus is 3 dagen in de koelkast te bewaren of 1 maand in de vriezer.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "ovenTime": 20
   },
   {
     "id": "aziatische-tofu",
@@ -4898,7 +4907,9 @@
     "method": "Verwarm de oven voor op 180 graden. Was de courgettes, paprika's en wortelen en snijd in lange repen van ongeveer 2 cm breed. Pel de uien en snijd in grove parten. Bekleed een bakplaat met bakpapier. Leg hierop de groenten en de uien. Giet er flink olijfolie overheen en strooi er wat peper en zout over. Voeg ook de knoflooktenen in hun geheel toe. Hussel de groenten en rooster ze in circa 30 minuten gaar in de oven. Snijd ondertussen de champignons. Verwarm de roomboter samen met een klein scheutje olijfolie op een laag vuurtje in een koekenpan. Zet het vuur middelhoog zodra de boter lichtbruin wordt en leg de biefstuk en de champignons in de pan. Bak de biefstuk aan beide kanten lichtbruin. Bak het vlees daarna nog circa 5 minuten voor een medium-rosé resultaat. Keer regelmatig en bestrooi met peper en zout. Haal de biefstuk uit de pan en laat deze een paar minuten rusten op een bord, afgedekt met een ander bord (of kom). Voeg de slagroom toe aan de achtergebleven champignons in de pan en laat dit een paar minuten inkoken tot een saus. Serveer de biefstuk met de romige champignonsaus en leg de geroosterde groenten ernaast. Tip: Je kunt de biefstuk eventueel ook vervangen door tartaar.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "ovenTime": 30,
+    "preparationTime": 35
   },
   {
     "id": "gevulde-portobello-met-geroosterde-groenten",
@@ -5037,7 +5048,9 @@
     "method": "Verwarm de oven voor op 180 graden. Was de courgettes, paprika's en wortelen en snijd in lange repen van ongeveer 2 cm breed. Pel de uien en snijd in grove parten. Bekleed een bakplaat met bakpapier. Leg hierop de groenten en de uien. Giet er flink olijfolie overheen en strooi er wat peper en zout over. Voeg ook de knoflooktenen toe. Hussel de groenten en zet circa 30 minuten in de oven. Verwijder het steeltje van de portobello's. Vet een ovenschaal in met wat olijfolie en leg de portobello’s met de bolle kant naar beneden in een ovenschaal. Giet een scheut olijfolie in een bakje, pers daarin ook de knoflook uit en strooi de Italiaanse kruiden en de boterbonen erin. Prak met een vork totdat je een papje hebt. Breng op smaak met wat (jozo)peper en zout. Doe het mengsel dan in de portobello’s, strooi de pijnboompitten erover en zet voor circa 20-25 minuten in de oven bij de groenten. Serveer de portobello met de gegrilde groenten ernaast.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "ovenTime": 20,
+    "preparationTime": 15
   },
   {
     "id": "bloemkoolpizza",
@@ -5178,7 +5191,8 @@
     "method": "Verwarm de oven voor op 180 graden. Breek de bloemkool in kleine roosjes en gebruik ook de steel. Hak de bloemkool met een keukenmachine tot fijne korrels. Bak de bloemkool even kort in een pan en schep gedurende een paar minuten om. Leg de bloemkool in een schone theedoek en knijp het vocht uit de bloemkool door een bol te vormen van de bloemkool in de theedoek. Ga door totdat er geen vocht meer uit de bloemkool komt. Hak de cashewnoten fijn met een keukenmachine (of stamp deze met een vijzel). Voeg de bloemkool samen met het ei, cashewnoten, geraspte Parmezaanse kaas, oregano, peper en zout en meng alles goed. Leg het bakpapier op een bakplaat en maak 1 grote plaatpizza of twee kleinere ronde pizzabodems van een halve centimeter dikte. Bak de bodems in 25 minuten lichtbruin. Meng de tomatenblokjes met de tomatenpuree, de Italiaanse kruiden en een teentje uitgeperste knoflook. Voeg eventueel wat peper en zout toe. Smeer dit uit over de pizza als de bodem gaar is. Was en snijd de paprika in ringen en leg die op de pizza. Leg eventueel eigen gekozen beleg op de pizza. Bak de pizza nog 10 minuten. Serveer eventueel met wat verse basilicumblaadjes. Tip: Parmezaanse kaas vervangen voor Pecorino of Grana Padano",
     "diet": [
       "vis"
-    ]
+    ],
+    "ovenTime": 35
   },
   {
     "id": "caesarsalade-met-garnalen",
@@ -5700,7 +5714,8 @@
     "method": "Verwarm de oven voor op 200°C. Meng sinaasappelsap en -rasp met de olie en kruiden in een kom. Plaats de kippenvleugels in een plastic zak of (ruime) afsluitbare bak. Giet de kruidenmarinade erbij en schud het geheel goed door elkaar. Laat minimaal 5 minuten marineren; liever langer. Plaats de kippenvleugels in één laag op de bodem van een ingevette ovenschotel. Bak in het midden van de oven gedurende ongeveer 45 minuten, of totdat de vleugels goudbruin en gaar zijn; keer regelmatig om. Verdeel ondertussen de broccoli in kleine roosjes, en blancheer ze een paar minuten in zout water: ze moeten zachter worden, maar niet van kleur of vorm veranderen. Giet de broccoli af en voeg de mais, mayonaise, dille, (jozo)peper en zout toe. Serveer samen met de gebakken kippenvleugels.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "ovenTime": 45
   },
   {
     "id": "gegrilde-groenten-met-pastinaakfrietjes-en-gebakken-zalm",
@@ -5799,7 +5814,8 @@
     "method": "Verwarm de oven voor op 200 graden. Snijd de pastinaak in frietjes van een halve centimeter. Hussel ze door met wat olijfolie en bestrooi ze met peper en (jozo)zout. Zet ze in de oven voor 25-30 minuten. Schep ze halverwege ook even om. Snijd ook de groente in lange repen van ongeveer 2 centimeter breed. Leg de groente en de ongepelde knoflookteen op de bakplaat. Giet er flink olijfolie overheen en strooi er wat peper en (jozo)zout overheen. Schep de groente om. Bak of gril de zalmfilets in olijfolie ca. 6 minuten. Keer halverwege om. Haal de groente en frietjes uit de oven en verdeel over de borden. Serveer met de zalmfilet en mayonaise. Tip: Koop diepvrieszalm in plaats van zalmfilet.",
     "diet": [
       "vis"
-    ]
+    ],
+    "ovenTime": 30
   },
   {
     "id": "gevulde-paprika-met-gehakt-uit-de-oven",
@@ -5954,7 +5970,9 @@
     "method": "Verwarm de oven voor op 180 graden. Was en halveer de paprika en verwijder de zaden en het groene stronkje. Snipper een uitje en smoor dit 5 minuten in de olijfolie. Voeg het gehakt toe samen met peper en (jozo)zout. Rul het gehakt tot dat het bruin is. Voeg de spinazie, andijvie of de boerenkool toe samen met de erwtjes. Roerbak het geheel 10 minuten (totdat de spinazie, andijvie of de boerenkool gaar is). Voeg tot slot de tomatenpuree en de Provengaalse kruiden toe. Roer de eieren goed door het lauwwarme mengsel, net voordat je de paprika's vult. Vul de paprikahelften met het gehaktmengsel. Leg dit 20 minuten in een ingevette schaal in de oven. Bestrooi in de laatste minuut van de baktijd de paprika's met de geraspte kaas. Meng de mosterd, sojasaus, peper en (jozo)zout en eventueel de knoflook, door de kwark en roer goed door. Leg de paprika's op een bord (leg er eventueel extra gehaktmengsel naast als dit over is). Schep de kwarksaus over de paprika's.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "ovenTime": 20,
+    "preparationTime": 15
   },
   {
     "id": "hamburger-met-spinazie-feta-en-pastinaak",
@@ -6051,7 +6069,9 @@
     "method": "Verwarm de oven voor op 200 graden. Schil de pastinaken en snijd deze in de lengte. Leg ze in een ovenschaal of op bakpapier op het ovenrooster en besprenkel met olijfolie. Bak ze gaar in ongeveer 20 minuten (af en toe omkeren in de oven). Bestrooi het tartaartje met peper en een klein beetje (jozo)zout. Als de pastinaken bijna gaar zijn (even met de vork prikken of de binnenkant zacht is en rooster tijdens de laatste minuten de pijnboompitten mee), doe dan een klontje boter in de pan en bak de tartaartjes in 5-7 minuten aan beide kanten gaar. Was ondertussen de spinazie en roerbak deze op hoog vuur in 2-5 minuten gaar in een wok of koekenpan met een scheutje olijfolie. Eventueel kun je er een teentje knoflook doorheen persen en citroensap toevoegen. Als de spinazie bijna gaar is, strooi je de pijnboompitten erdoor en verkruimel je de feta erboven. Schep even goed door in de pan en serveer het dan op een bord, samen met het tartaartje en de pastinaken. Tip: Verwijder pijnboompitten uit het gerecht.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "ovenTime": 20,
+    "preparationTime": 35
   },
   {
     "id": "kalkoenfilet-met-parmezaanse-kaas",
@@ -6574,7 +6594,9 @@
     "method": "Bereid de korstloze quiche volgens het subrecept. Bereid de gewokte groenten volgens het subrecept wanneer de quiche bijna gaar is. Serveer de gewokte groenten samen met de quiche.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "ovenTime": 55,
+    "preparationTime": 20
   },
   {
     "id": "nasi-met-kipsate",
@@ -7260,7 +7282,9 @@
     "method": "Verwarm de oven op 180 graden. Bekleed een bakplaat met bakpapier. Rasp de courgettes fijn (als je een hele courgette hebt) en knijp het meeste vocht eruit. Rasp de Parmezaanse kaas fijn. Pel de knoflook en hak fijn. Doe de courgette met de Parmezaanse kaas, geraspte kaas, de knoflook en de eieren in een grote kom. Kluts en hussel goed door elkaar. Leg 2 grote of meerdere kleine rondjes van het ‘deeg van courgette op de met bakpapier beklede bakplaat. Bak ze ca. 25 minuten in de oven. Haal de pizzabodem uit de oven en besmeer ze met de tomatensaus. Snijd de mozzarella in plakjes en leg op de pizzas. Leg ook de ansjovisfilet op de pizza's en bak ca. 5 minuten verder in de oven tot de mozzarella gesmolten is. Haal de pizza's uit de oven, pluk de blaadjes basilicum van de takjes en leg op de pizza's. Eet de pizzas warm, of neem de volgende dag koud mee als lunch.",
     "diet": [
       "vis"
-    ]
+    ],
+    "ovenTime": 30,
+    "preparationTime": 15
   },
   {
     "id": "pompoenlasagne",
@@ -7427,7 +7451,9 @@
     "method": "Verwarm de oven voor op 180 °C. Bekleed een bakplaat met bakpapier. Snijd de pompoen in plakken van ongeveer 1 centimeter. Leg de pompoenplakken op de bakplaat, bestrooi ze met het paprikapoeder en wat peper en besprenkel met olijfolie. Rooster de pompoenplakken 25 minuten in de oven en keer ze halverwege om. Hak de spinazie grof. Pel de knoflooktenen en hak ze fijn. Verhit een scheut olijfolie in een (grote) pan en bak hierin de spinazie en knoflook in een paar minuten tot de spinazie net niet meer rauw is. Rasp of verbrokkel de kaas. Maak dan de bechamelsaus. Smelt de roomboter in een pan met dikke bodem en voeg als de boter gesmolten is het volkorenmeel toe. Bak het volkorenmeel, maar laat het niet donkerbruin worden. Voeg elke keer een beetje melk toe - en het liefst 50% melk/ 50% slagroom. Blijf roeren zodat het niet gaat aanbakken. Laat wat inkoken tot je een romige saus hebt. Voeg de kaas toe en de nootmuskaat. Haal van het vuur en klop het ei erdoorheen. Breng op smaak met peper en zout. Bak het gehakt en breng op smaak met peper en zout en eventueel een rood pepertje. Vet een ovenschaal in met wat olijfolie. Leg een laag pompoenplakken op de bodem en daaroverheen een laag spinazie. Giet er een laag bechamelsaus overheen en verdeel wat van het gehakt eroverheen en herhaal dit nog een keer. Eindig dan met een laagje bechamelsaus en verdeel hier de rest van de kaas overheen. Zet de lasagne circa 30 minuten in de oven. Tip: Serveer eventueel met een frisse groene salade.",
     "diet": [
       "vlees"
-    ]
+    ],
+    "ovenTime": 55,
+    "preparationTime": 35
   },
   {
     "id": "shoarmaschotel",
@@ -7933,7 +7959,8 @@
       "vlees"
     ],
     "approved": true,
-    "preparationTime": 240
+    "preparationTime": 240,
+    "advanceNotice": "Het stoofvlees moet circa 3 uur stoven."
   },
   {
     "id": "tempeh-met-sesamzaad-en-ei",
