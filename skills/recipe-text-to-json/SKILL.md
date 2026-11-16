@@ -45,7 +45,7 @@ Every ingredient must be an object with:
 {
   "raw": "2 rijpe tomaten",
   "amount": 2,
-  "unit": "stuk",
+  "unit": "",
   "name": "tomaat",
   "optional": false,
   "category": "Groente en fruit"
@@ -55,8 +55,9 @@ Every ingredient must be an object with:
 - Preserve the original ingredient wording in `raw`.
 - Normalize `amount` to a number when the quantity is explicit; use `null` for
   an unquantified ingredient.
-- Use the app's compatible units where possible: `gram`, `ml`, `stuk`, `el`,
-  and `tl`. Use an empty string for a genuinely unitless quantity.
+- Use the app's compatible units where possible: `gram`, `ml`, `el`, and
+  `tl`. Use an empty string for countable items (`2 tomaten`) and for a
+  genuinely unitless quantity; never use `stuk` as an ingredient unit.
 - Normalize `name` to a concise singular shopping-list name without removing
   meaningful qualifiers such as `(diepvries)`.
 - Set `optional: true` only when the source marks the ingredient as optional or

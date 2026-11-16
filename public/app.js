@@ -683,8 +683,7 @@ function normalizeShoppingIngredient(ingredient) {
         }
         return {...ingredient, amount: 0.5, unit, name: rest};
     }
-    const startsWithNumber = raw.length > 0 && raw[0] >= "0" && raw[0] <= "9";
-    if (ingredient.amount != null && !ingredient.unit && startsWithNumber) {
+    if (ingredient.amount != null && !ingredient.unit) {
         return {...ingredient, unit: "stuk"};
     }
     return ingredient;
