@@ -5052,11 +5052,11 @@
       },
       {
         "raw": "2 el pijnboompitten",
-        "amount": 2,
-        "unit": "teen",
-        "name": "knoflook",
+        "amount": 20,
+        "unit": "gram",
+        "name": "pijnboompitten",
         "optional": false,
-        "category": "Groente en fruit"
+        "category": "Houdbare producten"
       },
       {
         "raw": "snufje peper",
