@@ -6305,8 +6305,8 @@
       },
       {
         "raw": "5 zongedroogde tomaten",
-        "amount": 5,
-        "unit": "",
+        "amount": 25,
+        "unit": "gram",
         "name": "zongedroogde tomaten",
         "optional": false,
         "category": "Houdbare producten"
