@@ -8421,11 +8421,13 @@
         "category": "Houdbare producten"
       }
     ],
-    "method": "Verwarm de oven voor op 180 graden Celsius. Snijd de venkel in heel dunne plakken. Snijd 3 el peterselie en het venkelgroen fijn. Schep dit door elkaar. Voeg vervolgens de uitgeperste knoflook en wat peper en (jozo)zout toe. Schenk er vervolgens een flinke scheut olijfolie over en zet in de oven voor 30 minuten. Snijd de ui fijn en bak zachtjes gaar met wat boter of olijfolie en 1 el peterselie. Voeg hier de mosterd, slagroom en bouillon aan toe. Laat het inkoken tot de helft van het vocht verdampt is. Laat de saus inkoken tot deze dikker is. Breng het geheel op smaak met peper en (jozo)zout. Verhit intussen een grillpan op hoog vuur. Bestrijk de zalmfilet aan beide kanten met olijfolie en peper. Leg de zalm in de grillpan en bak deze in circa 6 minuten op middelhoog vuur tot er mooie bruine strepen ontstaan, keer ze halverwege de baktijd. Schep de saus op (warme) borden en leg de zalmfilet erop. Serveer de vis met de venkel en eventueel restjes groenten. Tip: Koop ingevroren zalm i.p.v. de zalmmoot. Tip: Liever zonder oven? Bak de venkel met de uitgeperste knoflook, peterselie, peper en (jozo)zout in de pan met een scheutje olijfolie.",
+    "method": "Verwarm de oven voor op 180 graden Celsius. Snijd de venkel in heel dunne plakken. Snijd 3 el peterselie en het venkelgroen fijn. Schep dit door elkaar. Voeg vervolgens de uitgeperste knoflook en wat peper en (jozo)zout toe. Schenk er vervolgens een flinke scheut olijfolie over en zet in de oven voor 30 minuten. Snijd de ui fijn en bak zachtjes gaar met wat boter of olijfolie en 1 el peterselie. Voeg hier de mosterd, slagroom en bouillon aan toe. Laat de saus inkoken tot de helft van het vocht verdampt is en de saus dikker is. Breng het geheel op smaak met peper en (jozo)zout. Verhit intussen een grillpan op hoog vuur. Bestrijk de zalmfilet aan beide kanten met olijfolie en peper. Leg de zalm in de grillpan en bak deze in circa 6 minuten op middelhoog vuur tot er mooie bruine strepen ontstaan, keer ze halverwege de baktijd. Schep de saus op (warme) borden en leg de zalmfilet erop. Serveer de vis met de venkel en eventueel restjes groenten. Tip: Koop ingevroren zalm i.p.v. de zalmmoot. Tip: Liever zonder oven? Bak de venkel met de uitgeperste knoflook, peterselie, peper en (jozo)zout in de pan met een scheutje olijfolie.",
     "diet": [
       "vis"
     ],
-    "approved": false
+    "approved": true,
+    "preparationTime": 20,
+    "ovenTime": 30
   },
   {
     "id": "zalm-met-zuurkool-en-veldsla",
