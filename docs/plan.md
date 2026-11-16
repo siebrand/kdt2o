@@ -7,6 +7,7 @@ top of this document.
 
 - Add browser-level smoke tests for planning, shopping-list aggregation, PDF
   generation, and the GitHub Pages base path.
+- Link the changelog from the application footer.
 - Add dedicated security and dependency workflows for action, dependency,
   Docker-image, and link scanning.
 - Add a release process with versioned release notes, an SBOM, and a tested
