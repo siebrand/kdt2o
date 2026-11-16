@@ -70,7 +70,10 @@ Every ingredient must be an object with:
   unquantified olive oil is 15 ml; a klontje or unquantified butter is
   10 gram.
 - Normalize `name` to a concise singular shopping-list name without removing
-  meaningful qualifiers such as `(diepvries)`.
+  meaningful qualifiers such as `(diepvries)`. Use natural Dutch product
+  names (`rode paprika`, `gerookte zalm`, `tomatenblokjes`), and keep
+  amounts, packaging, brands, and preparation notes in `raw` only. Reuse an
+  existing name from `public/recipes.json` when the product is the same.
 - Set `optional: true` only when the source marks the ingredient as optional or
   presents it as an optional finishing choice.
 - Assign one Dutch shopping category, normally `Groente en fruit`, `Zuivel en

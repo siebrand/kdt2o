@@ -174,7 +174,7 @@
         "raw": "30 gram kokosrasp/kokosflakes",
         "amount": 30,
         "unit": "gram",
-        "name": "kokosrasp/kokosflakes",
+        "name": "kokosrasp",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -368,7 +368,7 @@
         "raw": "400 ml griekse yoghurt",
         "amount": 400,
         "unit": "gram",
-        "name": "griekse yoghurt",
+        "name": "Griekse yoghurt",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -536,7 +536,7 @@
         "raw": "2 eetlepels pitten/noten/zaden naar keuze",
         "amount": 20,
         "unit": "gram",
-        "name": "pitten/zaden",
+        "name": "pitten en zaden",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -567,9 +567,9 @@
     "ingredients": [
       {
         "raw": "2 speklapjes",
-        "amount": 2,
-        "unit": "",
-        "name": "speklapje",
+        "amount": 200,
+        "unit": "gram",
+        "name": "speklap",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -901,7 +901,7 @@
         "raw": "150 gram bosbessen (vers/diepvries)",
         "amount": 150,
         "unit": "gram",
-        "name": "bosbessen (vers/diepvries)",
+        "name": "bosbessen",
         "optional": false,
         "category": "Diepvries"
       },
@@ -1037,10 +1037,10 @@
         "raw": "4 lijnzaadcrackers",
         "amount": 4,
         "unit": "",
-        "name": "lijnzaadcrackers",
+        "name": "lijnzaadcracker",
         "componentId": "lijnzaadcrackers",
         "optional": false,
-        "category": "Brood en ontbijt"
+        "category": "Houdbare producten"
       },
       {
         "raw": "roomboter",
@@ -1165,14 +1165,14 @@
         "raw": "1 rode paprika",
         "amount": 1,
         "unit": "",
-        "name": "paprika (rood)",
+        "name": "rode paprika",
         "optional": false,
         "alternatives": [
           {
             "raw": "1 groene paprika",
             "amount": 1,
             "unit": "",
-            "name": "paprika (groen)",
+            "name": "groene paprika",
             "optional": false,
             "category": "Groente en fruit"
           }
@@ -1207,7 +1207,7 @@
         "raw": "75 gram geraspte kaas",
         "amount": 75,
         "unit": "gram",
-        "name": "kaas",
+        "name": "geraspte kaas",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -1335,7 +1335,7 @@
             "raw": "1 tl (jozo)zout",
             "amount": 1,
             "unit": "tl",
-            "name": "(jozo)zout",
+            "name": "zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
           },
@@ -1413,7 +1413,7 @@
         "raw": "100 gram gerookte zalm",
         "amount": 100,
         "unit": "gram",
-        "name": "zalm (gerookt)",
+        "name": "gerookte zalm",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -1494,7 +1494,7 @@
             "raw": "1 tl (jozo)zout",
             "amount": 1,
             "unit": "tl",
-            "name": "(jozo)zout",
+            "name": "zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
           },
@@ -1653,7 +1653,7 @@
             "raw": "1 tl (jozo)zout",
             "amount": 1,
             "unit": "tl",
-            "name": "(jozo)zout",
+            "name": "zout",
             "optional": false,
             "category": "Kruiden en smaakmakers"
           },
@@ -1725,7 +1725,7 @@
         "raw": "2 tl geelwortel (kurkuma)",
         "amount": 2,
         "unit": "tl",
-        "name": "geelwortel (kurkuma)",
+        "name": "kurkuma",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -1832,7 +1832,7 @@
         "raw": "60g gerookte zalm",
         "amount": 60,
         "unit": "gram",
-        "name": "zalm (gerookt)",
+        "name": "gerookte zalm",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -1924,7 +1924,7 @@
         "raw": "2 el pitten/zaden naar keuze",
         "amount": 20,
         "unit": "gram",
-        "name": "pitten/zaden",
+        "name": "pitten en zaden",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -2172,7 +2172,7 @@
         "raw": "4 el pitten en zaden (pompoen-/ zonnebloem-/ pijnboompitten/ etc.)",
         "amount": 40,
         "unit": "gram",
-        "name": "pitten/zaden",
+        "name": "pitten en zaden",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -2287,7 +2287,7 @@
         "raw": "300 gram bieten (voorgekookt)",
         "amount": 300,
         "unit": "gram",
-        "name": "bieten (voorgekookt)",
+        "name": "gekookte bieten",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -2408,7 +2408,7 @@
         "raw": "2 grote stronken broccoli",
         "amount": 2,
         "unit": "",
-        "name": "broccoli (grote stronk)",
+        "name": "broccoli",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -2667,7 +2667,7 @@
             "raw": "(gemengde) groene bladsla",
             "amount": 50,
             "unit": "gram",
-            "name": "(gemengde) groene bladsla",
+            "name": "groene bladsla",
             "optional": false,
             "category": "Groente en fruit"
           },
@@ -2945,7 +2945,7 @@
         "raw": "2 el pitten/zaden naar keuze",
         "amount": 20,
         "unit": "gram",
-        "name": "pitten/zaden",
+        "name": "pitten en zaden",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -3044,7 +3044,7 @@
         "raw": "(gemengde) groene bladsla",
         "amount": 50,
         "unit": "gram",
-        "name": "(gemengde) groene bladsla",
+        "name": "groene bladsla",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3060,7 +3060,7 @@
         "raw": "4 el zaden en pitten (bijv. zonnenbloempitten/ pompoenpitten/ etc.)",
         "amount": 40,
         "unit": "gram",
-        "name": "pitten/zaden",
+        "name": "pitten en zaden",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -3109,7 +3109,7 @@
         "raw": "300 gram (diepvries)pompoen",
         "amount": 300,
         "unit": "gram",
-        "name": "(diepvries)pompoen",
+        "name": "pompoen (diepvries)",
         "optional": false,
         "category": "Diepvries"
       },
@@ -3133,7 +3133,7 @@
         "raw": "1 rode paprika",
         "amount": 1,
         "unit": "",
-        "name": "paprika (rood)",
+        "name": "rode paprika",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3242,7 +3242,7 @@
         "raw": "10 kleine tomaatjes",
         "amount": 10,
         "unit": "",
-        "name": "kleine tomaatjes",
+        "name": "cherrytomaten",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3250,7 +3250,7 @@
         "raw": "100 gram (gemengde) groene bladsla",
         "amount": 100,
         "unit": "gram",
-        "name": "(gemengde) groene bladsla",
+        "name": "groene bladsla",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3347,7 +3347,7 @@
         "raw": "2 blikken tomatenblokjes (400 gram)",
         "amount": 2,
         "unit": "blik",
-        "name": "tomaat (blokjes)",
+        "name": "tomatenblokjes",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3385,9 +3385,9 @@
       },
       {
         "raw": "1 pakje kokosmelk (200 ml)",
-        "amount": 1,
-        "unit": "",
-        "name": "pakje kokosmelk (200 ml)",
+        "amount": 200,
+        "unit": "ml",
+        "name": "kokosmelk",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -3544,7 +3544,7 @@
         "raw": "50 gram gerookte zalm (snippers)",
         "amount": 50,
         "unit": "gram",
-        "name": "zalm (gerookt)",
+        "name": "gerookte zalm",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -3616,7 +3616,7 @@
         "raw": "1 el noten/pitten/zaden naar keuze",
         "amount": 10,
         "unit": "gram",
-        "name": "pitten/zaden",
+        "name": "pitten en zaden",
         "optional": false,
         "category": "Houdbare producten"
       }
@@ -3697,7 +3697,7 @@
         "raw": "2 a 3 handjes (gemengde) groene bladsla",
         "amount": 30,
         "unit": "gram",
-        "name": "(gemengde) groene bladsla",
+        "name": "groene bladsla",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -3745,7 +3745,7 @@
         "raw": "1 el noten/pitten/zaden naar keuze",
         "amount": 10,
         "unit": "gram",
-        "name": "pitten/zaden",
+        "name": "pitten en zaden",
         "optional": false,
         "category": "Houdbare producten"
       }
@@ -3792,9 +3792,9 @@
       },
       {
         "raw": "100 gram gekookte quinoa (=40 gram ongekookt)",
-        "amount": 100,
+        "amount": 40,
         "unit": "gram",
-        "name": "gekookte quinoa (=40 gram ongekookt)",
+        "name": "quinoa",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -3893,7 +3893,7 @@
         "raw": "1 blikje tonijn op olijfolie",
         "amount": 150,
         "unit": "gram",
-        "name": "tonijn uit blik op olijfolie",
+        "name": "tonijn in olijfolie uit blik",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -3933,7 +3933,7 @@
         "raw": "2 handjes (zwarte) olijven",
         "amount": 50,
         "unit": "gram",
-        "name": "(zwarte) olijven",
+        "name": "olijven",
         "optional": false,
         "category": "Houdbare producten"
       }
@@ -3958,7 +3958,7 @@
         "raw": "100 gram gerookte zalm",
         "amount": 100,
         "unit": "gram",
-        "name": "zalm (gerookt)",
+        "name": "gerookte zalm",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -4062,7 +4062,7 @@
             "raw": "4 blikken gepelde tomaten",
             "amount": 4,
             "unit": "blik",
-            "name": "tomaten (gepeld)",
+            "name": "gepelde tomaten",
             "optional": false,
             "category": "Groente en fruit"
           }
@@ -4081,7 +4081,7 @@
         "raw": "2 stuks rode paprika",
         "amount": 2,
         "unit": "",
-        "name": "paprika (rood)",
+        "name": "rode paprika",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -4255,7 +4255,7 @@
         "raw": "20 gram groene bladsla",
         "amount": 20,
         "unit": "gram",
-        "name": "(gemengde) groene bladsla",
+        "name": "groene bladsla",
         "optional": true,
         "category": "Groente en fruit"
       },
@@ -4360,7 +4360,7 @@
         "raw": "150 gram gerookte zalm",
         "amount": 150,
         "unit": "gram",
-        "name": "zalm (gerookt)",
+        "name": "gerookte zalm",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       }
@@ -4417,7 +4417,7 @@
         "raw": "250 gram (kastanje)champignons",
         "amount": 250,
         "unit": "gram",
-        "name": "champignons (kastanje)",
+        "name": "kastanjechampignons",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -4540,7 +4540,7 @@
         "raw": "1 blik tomatenblokjes (400 gram)",
         "amount": 1,
         "unit": "blik",
-        "name": "tomaat (blokjes)",
+        "name": "tomatenblokjes",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -4637,7 +4637,7 @@
         "raw": "1 (rode) paprika",
         "amount": 1,
         "unit": "",
-        "name": "paprika (rood)",
+        "name": "rode paprika",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -4768,7 +4768,7 @@
         "raw": "1 (rode) paprika",
         "amount": 1,
         "unit": "",
-        "name": "paprika (rood)",
+        "name": "rode paprika",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -4851,7 +4851,7 @@
         "raw": "2 rode paprika's",
         "amount": 2,
         "unit": "",
-        "name": "paprika (rood)",
+        "name": "rode paprika",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -4964,7 +4964,7 @@
         "raw": "2 rode paprika's",
         "amount": 2,
         "unit": "",
-        "name": "paprika (rood)",
+        "name": "rode paprika",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -5103,7 +5103,7 @@
         "raw": "100 gram ongezouten en ongebrande cashewnoten",
         "amount": 100,
         "unit": "gram",
-        "name": "cashewnoten (ongezouten/ongebrand)",
+        "name": "cashewnoten",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -5143,7 +5143,7 @@
         "raw": "1 blik tomatenblokjes",
         "amount": 1,
         "unit": "blik",
-        "name": "tomaat (blokjes)",
+        "name": "tomatenblokjes",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -5175,7 +5175,7 @@
         "raw": "1 gele paprika",
         "amount": 1,
         "unit": "",
-        "name": "paprika (geel)",
+        "name": "gele paprika",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -5277,7 +5277,7 @@
         "raw": "1 tl geelwortel (kurkuma)",
         "amount": 1,
         "unit": "tl",
-        "name": "geelwortel (kurkuma)",
+        "name": "kurkuma",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -5303,7 +5303,7 @@
         "raw": "1 blikje mais (150 gram)",
         "amount": 1,
         "unit": "blik",
-        "name": "mais (150 gram)",
+        "name": "mais",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -5430,7 +5430,7 @@
         "raw": "1 tl geelwortel (kurkuma)",
         "amount": 1,
         "unit": "tl",
-        "name": "geelwortel (kurkuma)",
+        "name": "kurkuma",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -5456,7 +5456,7 @@
         "raw": "1 blikje mais (150 gram)",
         "amount": 1,
         "unit": "blik",
-        "name": "mais (150 gram)",
+        "name": "mais",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -5595,7 +5595,7 @@
         "raw": "400 gram courgetti (sliertjes courgette)",
         "amount": 400,
         "unit": "gram",
-        "name": "courgetti (sliertjes courgette)",
+        "name": "courgetti",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -5710,7 +5710,7 @@
         "raw": "1 blikje mais (150 gram)",
         "amount": 1,
         "unit": "blik",
-        "name": "mais (150 gram)",
+        "name": "mais",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -5759,7 +5759,7 @@
         "raw": "450 gram pastinaak (of voorgesneden)",
         "amount": 450,
         "unit": "gram",
-        "name": "pastinaak (of voorgesneden)",
+        "name": "pastinaak",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -5858,7 +5858,7 @@
         "raw": "2 rode paprika's",
         "amount": 2,
         "unit": "",
-        "name": "paprika (rood)",
+        "name": "rode paprika",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -6412,7 +6412,7 @@
         "raw": "1 grote bloemkool geraspt",
         "amount": 1,
         "unit": "",
-        "name": "bloemkool, geraspt (of 400 gram kant en klaar)",
+        "name": "bloemkool",
         "optional": false,
         "alternatives": [
           {
@@ -6488,8 +6488,8 @@
           {
             "raw": "1 teen knoflook",
             "amount": 1,
-            "unit": "",
-            "name": "teen knoflook",
+            "unit": "teen",
+            "name": "knoflook",
             "optional": false,
             "category": "Groente en fruit"
           },
@@ -6521,7 +6521,7 @@
             "raw": "50 gram kaas (geraspt)",
             "amount": 50,
             "unit": "gram",
-            "name": "kaas",
+            "name": "geraspte kaas",
             "optional": false,
             "category": "Zuivel en eieren"
           },
@@ -6699,7 +6699,7 @@
         "raw": "2 tl Jonnie de Boer Chinese 5 spices (of meer naar smaak)",
         "amount": 2,
         "unit": "tl",
-        "name": "Jonnie de Boer Chinese 5 spices (of meer naar smaak)",
+        "name": "Chinese vijfkruidenpoeder",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -6707,7 +6707,7 @@
         "raw": "200 gram nasi/bami groenten (prei, paprika, rode ui)",
         "amount": 200,
         "unit": "gram",
-        "name": "nasi/bami groenten",
+        "name": "nasi-bamigroente",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -6736,12 +6736,22 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "1 tl komijn en/of koriander",
+        "raw": "1 tl komijn",
         "amount": 1,
         "unit": "tl",
-        "name": "komijn en/of koriander",
+        "name": "komijn",
         "optional": true,
-        "category": "Kruiden en smaakmakers"
+        "category": "Kruiden en smaakmakers",
+        "alternatives": [
+          {
+            "raw": "1 tl korianderpoeder",
+            "amount": 1,
+            "unit": "tl",
+            "name": "korianderpoeder",
+            "optional": true,
+            "category": "Kruiden en smaakmakers"
+          }
+        ]
       }
     ],
     "components": [
@@ -6829,8 +6839,8 @@
       {
         "raw": "1 teen knoflook",
         "amount": 1,
-        "unit": "",
-        "name": "teen knoflook",
+        "unit": "teen",
+        "name": "knoflook",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -7220,7 +7230,7 @@
         "raw": "1 pak van 400 gram courgette spaghetti (of 2 kleine courgettes)",
         "amount": 400,
         "unit": "gram",
-        "name": "courgetti (sliertjes courgette)",
+        "name": "courgetti",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -7244,7 +7254,7 @@
         "raw": "60 gram (boeren)kaas",
         "amount": 60,
         "unit": "gram",
-        "name": "(boeren)kaas",
+        "name": "boerenkaas",
         "optional": false,
         "category": "Zuivel en eieren"
       },
@@ -7252,7 +7262,7 @@
         "raw": "6 el tomatenpassata (gezeefde tomaten)",
         "amount": 90,
         "unit": "ml",
-        "name": "tomaat (gezeefd)",
+        "name": "tomatenpassata",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -7484,7 +7494,7 @@
         "raw": "2 el shoarmakruiden (zonder toegevoegde suiker)",
         "amount": 6,
         "unit": "tl",
-        "name": "shoarmakruiden (zonder toegevoegde suiker)",
+        "name": "shoarmakruiden",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -7500,7 +7510,7 @@
         "raw": "2 rode paprika's",
         "amount": 2,
         "unit": "",
-        "name": "paprika (rood)",
+        "name": "rode paprika",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -7603,7 +7613,7 @@
         "raw": "200 gram witte bonen (uit blik)",
         "amount": 200,
         "unit": "gram",
-        "name": "witte bonen (uit blik)",
+        "name": "witte bonen",
         "optional": false,
         "category": "Houdbare producten"
       },
@@ -7611,7 +7621,7 @@
         "raw": "2 el shoarmakruiden (zonder toegevoegde suiker)",
         "amount": 6,
         "unit": "tl",
-        "name": "shoarmakruiden (zonder toegevoegde suiker)",
+        "name": "shoarmakruiden",
         "optional": false,
         "category": "Kruiden en smaakmakers"
       },
@@ -7627,7 +7637,7 @@
         "raw": "2 rode paprika's",
         "amount": 2,
         "unit": "",
-        "name": "paprika (rood)",
+        "name": "rode paprika",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -7733,7 +7743,7 @@
     "ingredients": [
       {
         "raw": "80 gram speklap",
-        "amount": 80,
+        "amount": 100,
         "unit": "gram",
         "name": "speklap",
         "optional": false,
@@ -7875,7 +7885,7 @@
             "raw": "1 granny smith appel",
             "amount": 1,
             "unit": "",
-            "name": "appel (granny smith)",
+            "name": "granny smith appel",
             "optional": false,
             "category": "Groente en fruit"
           },
@@ -7989,7 +7999,7 @@
         "raw": "2 rode uien",
         "amount": 2,
         "unit": "",
-        "name": "ui (rood)",
+        "name": "rode ui",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -7997,7 +8007,7 @@
         "raw": "1 rode paprika",
         "amount": 1,
         "unit": "",
-        "name": "paprika (rood)",
+        "name": "rode paprika",
         "optional": false,
         "category": "Groente en fruit"
       },
@@ -8159,7 +8169,7 @@
         "raw": "400 gram witvisfilet naar keuze (zoals koolvis/ kabeljauw)",
         "amount": 400,
         "unit": "gram",
-        "name": "witvisfilet (koolvis/kabeljauw)",
+        "name": "witvisfilet",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
@@ -8265,7 +8275,7 @@
         "raw": "400 gram witte vis (bijvoorbeeld koolvis/ scholfilet of kabeljauw) liever geen pangasius",
         "amount": 400,
         "unit": "gram",
-        "name": "witvis  (koolvis/scholfilet/kabeljauw)",
+        "name": "witvisfilet",
         "optional": false,
         "category": "Vlees, vis en vleesvervangers"
       },
