@@ -1,0 +1,71 @@
+name: Security
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "23 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: security-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  dependency-review:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Review dependency changes
+        uses: actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294 # v5.0.0
+        with:
+          fail-on-severity: moderate
+
+  python-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Audit Python dependencies
+        run: |
+          # Keep in sync with additional_dependencies of the validate-recipes hook
+          # in .pre-commit-config.yaml.
+          printf 'jsonschema>=4.18\n' > "$RUNNER_TEMP/pre-commit-requirements.txt"
+          pipx run pip-audit==2.10.1 --strict \
+            --requirement tests/requirements.txt \
+            --requirement "$RUNNER_TEMP/pre-commit-requirements.txt"
+
+  container-image:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Build container
+        run: docker build --pull --tag kitano-meal-planner:scan .
+      - name: Scan container for fixable vulnerabilities
+        uses: anchore/scan-action@27805bf3b4e84b4a5c980df22ed233c00390a439 # v7.4.2
+        with:
+          image: kitano-meal-planner:scan
+          fail-build: true
+          severity-cutoff: high
+          only-fixed: true
+          output-format: sarif
+          output-file: container-scan.sarif
+      - name: Upload scan results to code scanning
+        if: always() && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository)
+        uses: github/codeql-action/upload-sarif@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
+        with:
+          sarif_file: container-scan.sarif
+          category: container-image

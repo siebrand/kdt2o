@@ -91,4 +91,6 @@ the selected branch commit. Both deployment workflows overwrite the source
 `public/version.txt` local marker with the checked-out commit's CalVer before
 publishing. All public pages display that ID in their footer. Pre-commit and CI
 lint GitHub Actions workflows with actionlint from a pinned Docker image and
-audit them with zizmor. Every action is pinned to a commit SHA.
+audit them with zizmor. Every action is pinned to a commit SHA. The security
+workflow reviews dependency changes in pull requests, audits the Python
+dependencies, and scans the built container image; it also runs weekly.

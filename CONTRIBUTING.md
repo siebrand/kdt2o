@@ -42,6 +42,22 @@ uv run --no-project --with-requirements tests/requirements.txt python -m playwri
 uv run --no-project --with-requirements tests/requirements.txt pytest tests
 ```
 
+## Security checks
+
+`.github/workflows/security.yml` runs on every push to `main`, on pull
+requests, and weekly:
+
+- Dependency review blocks pull requests that add dependencies with known
+  vulnerabilities of moderate severity or higher.
+- `pip-audit` checks the Python test dependencies and the validator's
+  `jsonschema` dependency.
+- Grype scans the built Nginx image and fails on fixable vulnerabilities of
+  high severity or higher. The results appear under code scanning.
+
+The weekly run catches vulnerabilities that are published after a change was
+merged. Dependabot proposes updates for actions, the Docker base image, and the
+Python test dependencies.
+
 ## Workflow
 
 1. Create a focused branch from `main`.
