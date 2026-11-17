@@ -72,6 +72,8 @@ The following features are complete and have been moved below the open work:
 - [x] Version-validated manual rollback of GitHub Pages to a tagged commit.
 - [x] Actionlint validation of GitHub Actions workflows through pre-commit
   and CI.
+- [x] Zizmor security audit of GitHub Actions workflows through pre-commit and
+  CI, with every action pinned to a commit SHA and Dependabot cooldowns.
 - [x] Docker/Nginx container build for local and alternative hosting.
 - [x] Footer links to the deployed changelog page and the publisher homepage at
   https://kitano.nl/.

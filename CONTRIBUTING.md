@@ -27,7 +27,10 @@ The hooks validate `public/recipes.json` against `schemas/schema.json` and
 additional rules in `scripts/validate_recipes.py` whenever recipe data, the
 schema, or the validator changes. They also lint `.github/workflows/` with
 actionlint 1.7.12 in a pinned Docker image, so no separate actionlint install is
-needed. CI runs the same hooks on every push to `main` and on every pull request.
+needed, and audit the workflows for security problems with zizmor. Pin every
+action to a full commit SHA with the version in a comment, for example
+`actions/checkout@<sha> # v7.0.1`; Dependabot keeps the pins up to date. CI
+runs the same hooks on every push to `main` and on every pull request.
 
 Browser smoke tests in `tests/test_browser.py` check loading at the site root
 and under `/kdt2o/`, changelog rendering, planning, the shopping list, and the

@@ -90,4 +90,5 @@ commit's `public/` directory for rollback. Dispatching without a version deploys
 the selected branch commit. Both deployment workflows overwrite the source
 `public/version.txt` local marker with the checked-out commit's CalVer before
 publishing. All public pages display that ID in their footer. Pre-commit and CI
-lint GitHub Actions workflows with actionlint from a pinned Docker image.
+lint GitHub Actions workflows with actionlint from a pinned Docker image and
+audit them with zizmor. Every action is pinned to a commit SHA.

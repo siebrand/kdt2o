@@ -52,8 +52,9 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 Do these steps before you commit:
 
 1. Run `pre-commit install` one time for each clone.
-2. Run `pre-commit run --all-files`. This validates recipe data and lints GitHub Actions workflows with pinned
-   actionlint.
+2. Run `pre-commit run --all-files`. This step checks the recipe data. It
+   also checks the GitHub Actions workflows with actionlint and zizmor. Pin
+   each action in a workflow to a commit SHA, with the version in a comment.
 3. If the change affects the application or the data, run the browser tests:
    `uv run --no-project --with-requirements tests/requirements.txt pytest tests`.
    Before the first run, install the browser with
