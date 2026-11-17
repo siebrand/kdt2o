@@ -40,7 +40,7 @@ history and tags new commits automatically.
 
 To prepare a release, run **Create release draft** from GitHub Actions and enter a version tag. The workflow validates
 the tag, builds the Docker image, generates an SPDX SBOM for that image, and creates a draft GitHub Release. The SBOM
-covers the container contents; the CDN-hosted jsPDF dependency remains external and is pinned in `public/index.html`.
+covers the container contents, including the jsPDF copy in `public/vendor/`.
 Release notes are generated from the matching date section of `public/CHANGELOG.md`, the canonical changelog. Review the
 draft and publish it when ready. The deployed CalVer ID appears in every page footer; local builds show
 `Lokale versie`.

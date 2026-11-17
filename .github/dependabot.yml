@@ -30,6 +30,21 @@ updates:
         patterns:
           - "*"
 
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "07:20"
+      timezone: Europe/Amsterdam
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 5
+    groups:
+      browser-libraries:
+        patterns:
+          - "*"
+
   - package-ecosystem: pip
     directory: /tests
     schedule:

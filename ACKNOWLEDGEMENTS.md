@@ -18,7 +18,8 @@ not record the source of each recipe.
 
 ## Software
 
-- jsPDF, loaded by the browser for PDF generation
+- jsPDF, MIT licensed, used for PDF generation. A copy is in `public/vendor/`,
+  with its license in `public/vendor/jspdf.LICENSE.txt`.
 - Nginx, used to serve the static application
 - Docker Desktop, used for local container development and verification
 - GitHub Actions and GitHub Pages, used for CI and public deployment

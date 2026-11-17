@@ -5,6 +5,8 @@ De belangrijkste verbeteringen voor de planner en recepten.
 ## 17 november 2026
 
 - Onderaan elke pagina staat de versie van de planner.
+- De planner maakt geen verbinding meer met andere servers. De software voor de PDF komt nu van deze website en is
+  bijgewerkt naar een veilige versie.
 
 ## 16 november 2026
 

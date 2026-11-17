@@ -254,3 +254,18 @@ def test_pdf_has_landscape_overview_and_recipe_pages(page: Page, server_url: str
     assert len(pages) >= 2 + len(titles), "overview, shopping list, and one page per recipe"
     first_box = re.search(rb"/MediaBox \[0 0 ([\d.]+) ([\d.]+)\]", pdf)
     assert first_box and float(first_box.group(1)) > float(first_box.group(2)), "overview is landscape"
+
+
+def test_single_recipe_pdf_downloads(page: Page, server_url: str):
+    recipe = BY_TITLE["Stoofvlees met knolselderij en rode kool"]
+    open_planner(page, f"{server_url}/")
+    page.locator("#single-recipe-query").fill(recipe["title"])
+    card = page.locator("#single-recipe-results .recipe-card", has_text=recipe["title"])
+    expect(card).to_have_count(1)
+    with page.expect_download() as download_info:
+        card.get_by_role("button", name="PDF downloaden").click()
+    download = download_info.value
+    assert download.suggested_filename == f"{recipe['id']}.pdf"
+    pdf = Path(download.path()).read_bytes()
+    assert pdf.startswith(b"%PDF")
+    assert re.findall(rb"/Type /Page\b(?!s)", pdf), "the PDF has at least one page"

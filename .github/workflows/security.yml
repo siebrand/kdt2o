@@ -43,6 +43,15 @@ jobs:
             --requirement tests/requirements.txt \
             --requirement "$RUNNER_TEMP/pre-commit-requirements.txt"
 
+  browser-libraries:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Audit the browser libraries in package-lock.json
+        run: npm audit --audit-level=moderate
+
   container-image:
     runs-on: ubuntu-latest
     permissions:

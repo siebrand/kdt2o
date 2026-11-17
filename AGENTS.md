@@ -26,6 +26,9 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
   application.
 - `public/version.txt`: local marker stamped with CalVer by deployment and
   release workflows.
+- `package.json`, `package-lock.json`, `public/vendor/`: the browser
+  libraries. Do not load code from other hosts. After a version change, run
+  `npm ci --ignore-scripts` and `python3 scripts/vendor_dependencies.py`.
 - `Dockerfile`, `nginx.conf`: the container. Nginx serves the static files.
 - `nginx/security-headers.conf`: the security headers. Include this file in
   the server block and in each `location` block that sets headers.

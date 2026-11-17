@@ -10,6 +10,8 @@ or server-side planning state.
 2. The browser fetches that JSON and renders the weekly planner.
 3. The browser stores the plan in versioned `localStorage`.
 4. The browser aggregates compatible ingredients and creates the PDF with jsPDF.
+   The site serves jsPDF from `public/vendor/`, a committed copy of the npm
+   package that `package.json` locks, so no page loads code from another host.
 5. The browser can fill empty meal slots randomly and can encode a compact plan
    using stable codes derived from recipe IDs in a shareable URL without sending
    planning data to a server. Unknown recipe codes remain visible as unresolved
@@ -79,10 +81,10 @@ including untagged history, and tags new commits automatically.
 The **Create release draft** workflow checks out a selected version tag, validates
 it against the commit, builds the Nginx image, generates an SPDX SBOM for that
 image with Syft, and creates a draft GitHub Release. The SBOM covers the
-container contents; the browser-loaded jsPDF dependency remains external and is
-pinned in `public/index.html`. Release notes are generated from the matching date
-section of the single canonical `public/CHANGELOG.md`; there is no second
-checked-in release-notes source. A maintainer reviews and publishes the draft.
+container contents, including the jsPDF copy in `public/vendor/`. Release notes
+are generated from the matching date section of the single canonical
+`public/CHANGELOG.md`; there is no second checked-in release-notes source. A
+maintainer reviews and publishes the draft.
 
 GitHub Pages remains deployed from `main` on pushes. Its manual dispatch accepts
 a version tag, validates it with the same version script, and deploys that

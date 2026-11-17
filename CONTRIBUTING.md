@@ -42,6 +42,23 @@ uv run --no-project --with-requirements tests/requirements.txt python -m playwri
 uv run --no-project --with-requirements tests/requirements.txt pytest tests
 ```
 
+## Browser libraries
+
+The site loads no code from other hosts. `package.json` and
+`package-lock.json` lock the browser libraries, and `public/vendor/` serves
+committed copies of them. To change a library version, or to complete a
+Dependabot update for one:
+
+```bash
+npm ci --ignore-scripts
+python3 scripts/vendor_dependencies.py
+```
+
+Commit the updated files in `public/vendor/` with the lockfile change. The CI
+`vendored-dependencies` job runs `scripts/vendor_dependencies.py --check` and
+fails while a copy does not match the locked version. Then run the browser
+tests, which cover both PDF downloads.
+
 ## Security checks
 
 `.github/workflows/security.yml` runs on every push to `main`, on pull
@@ -51,6 +68,7 @@ requests, and weekly:
   vulnerabilities of moderate severity or higher.
 - `pip-audit` checks the Python test dependencies and the validator's
   `jsonschema` dependency.
+- `npm audit` checks the browser libraries in `package-lock.json`.
 - Grype scans the built Nginx image and fails on fixable vulnerabilities of
   high severity or higher. The results appear under code scanning.
 
@@ -77,7 +95,7 @@ docker run --rm -v "$PWD":/input -w /input lycheeverse/lychee:0.24.2 --no-progre
 
 The weekly runs catch vulnerabilities and broken links that appear after a
 change was merged. Dependabot proposes updates for actions, the Docker base
-image, and the Python test dependencies.
+image, the browser libraries, and the Python test dependencies.
 
 ## Workflow
 

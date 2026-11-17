@@ -1,0 +1,9 @@
+{
+  "name": "kitano-meal-planner",
+  "private": true,
+  "description": "Browser libraries that public/vendor/ serves. Run scripts/vendor_dependencies.py after changing them.",
+  "license": "MIT",
+  "dependencies": {
+    "jspdf": "4.2.1"
+  }
+}
