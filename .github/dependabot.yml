@@ -29,3 +29,18 @@ updates:
       docker-images:
         patterns:
           - "*"
+
+  - package-ecosystem: pip
+    directory: /tests
+    schedule:
+      interval: weekly
+      day: monday
+      time: "07:30"
+      timezone: Europe/Amsterdam
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 5
+    groups:
+      test-dependencies:
+        patterns:
+          - "*"
