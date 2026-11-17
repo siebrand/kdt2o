@@ -295,6 +295,21 @@ def test_move_button_skips_a_blocked_day(page: Page, server_url: str):
     expect(page.get_by_role("button", name=f"{title} op woensdag naar een eerdere dag verplaatsen")).to_be_focused()
 
 
+def test_move_buttons_are_at_the_bottom_of_the_cell(page: Page, server_url: str):
+    open_planner(page, share_url(server_url, BLOCKED_BREAKFAST), "5 maaltijdmomenten gepland.")
+    bottoms = page.evaluate("""() => [...document.querySelectorAll('#planner [data-plan-key$="-ontbijt"] .slot-actions')]
+        .map((actions) => {
+            const card = actions.parentElement;
+            const padding = parseFloat(getComputedStyle(card).paddingBottom) + parseFloat(getComputedStyle(card).borderBottomWidth);
+            return [Math.round(actions.getBoundingClientRect().bottom),
+                    Math.round(card.getBoundingClientRect().bottom - padding)];
+        })""")
+    assert len(bottoms) == 5
+    # Every button row ends at the bottom of its card, and the cards of one row line up.
+    assert all(actions == card for actions, card in bottoms)
+    assert len({actions for actions, _ in bottoms}) == 1
+
+
 def test_remove_needs_a_button_and_can_be_undone(page: Page, server_url: str):
     title = "Linzensoep"
     days = BY_TITLE[title]["days"]
