@@ -8,6 +8,8 @@ top of this document.
 - The buttons that accompany the drag and drop feature sometimes block a move
   (incorrect behavior) which can be executed using drag and drop (correct
   behavior). The buttons should have the same behavior as drag and drop.
+- Buttons to move or remove a recipe from the grid should be at the bottom of the
+  cell.
 - If the site moves from GitHub Pages to a self-hosted Nginx deployment, serve
   it with `nginx/security-headers.conf` and document the final deployment
   policy. GitHub Pages cannot send `frame-ancestors`, `X-Content-Type-Options`,
