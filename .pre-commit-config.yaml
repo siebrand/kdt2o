@@ -8,6 +8,12 @@ repos:
         additional_dependencies: ["jsonschema>=4.18"]
         files: ^(public/recipes\.json|schemas/schema\.json|scripts/validate_recipes\.py)$
         pass_filenames: false
+      - id: check-page-security
+        name: Check page security rules and CSP
+        entry: python scripts/check_page_security.py
+        language: python
+        files: ^(public/.*\.html|nginx\.conf|nginx/security-headers\.conf|scripts/check_page_security\.py)$
+        pass_filenames: false
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.12
     hooks:

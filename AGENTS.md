@@ -42,6 +42,10 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 - Do not add a database, accounts, analytics, tracking, or server storage.
 - Keep the weekly plan only in the browser `localStorage` or in a share link.
 - Do not show recipe text as HTML.
+- Do not use inline scripts, inline styles, `style` attributes, or event
+  handler attributes in the pages. The Content Security Policy blocks them.
+- Keep the CSP `<meta>` element of each page equal to the policy in
+  `nginx/security-headers.conf`. `scripts/check_page_security.py` checks this.
 
 ## Domain rules
 

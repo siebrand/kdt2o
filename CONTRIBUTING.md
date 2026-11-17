@@ -72,6 +72,15 @@ requests, and weekly:
 - Grype scans the built Nginx image and fails on fixable vulnerabilities of
   high severity or higher. The results appear under code scanning.
 
+The Content Security Policy allows scripts and styles from the site only, with
+no `'unsafe-inline'`. Nginx sends it with every response. GitHub Pages cannot
+send custom headers, so each page in `public/` also declares it in a `<meta>`
+element directly after `<meta charset>`, without `frame-ancestors`. The
+`check-page-security` pre-commit hook keeps these elements equal to
+`nginx/security-headers.conf` and rejects external scripts, inline scripts and
+styles, `style` attributes, and event handler attributes. The browser tests
+fail on any CSP violation.
+
 The CI `tests` job builds the container and runs
 `scripts/check_security_headers.py` against it. The check fails when a path is
 served without the security headers from `nginx/security-headers.conf`. Nginx

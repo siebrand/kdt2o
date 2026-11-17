@@ -69,15 +69,34 @@ def browser():
         browser.close()
 
 
+CSP_LISTENER = """
+window.__cspViolations = [];
+document.addEventListener("securitypolicyviolation", (event) => {
+    window.__cspViolations.push(event.violatedDirective + " blocked " + (event.blockedURI || "inline code"));
+});
+"""
+
+
 @pytest.fixture
 def page(browser):
     context = browser.new_context(accept_downloads=True)
+    context.add_init_script(CSP_LISTENER)
     page = context.new_page()
     errors: list[str] = []
+    violations: list[str] = []
     page.on("pageerror", lambda error: errors.append(str(error)))
+    page.on(
+        "console",
+        lambda message: violations.append(message.text)
+        if message.type == "error" and "Content Security Policy" in message.text
+        else None,
+    )
     yield page
+    if not page.is_closed():
+        violations.extend(page.evaluate("window.__cspViolations || []"))
     context.close()
     assert not errors, f"JavaScript errors: {errors}"
+    assert not violations, f"Content Security Policy violations: {violations}"
 
 
 def recipe_token(recipe_id: str) -> str:

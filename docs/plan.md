@@ -5,8 +5,10 @@
 These are the remaining planned improvements. They are intentionally kept at the
 top of this document.
 
-- Add production security headers and document the final deployment policy if
-  the site moves from GitHub Pages to a self-hosted Nginx deployment.
+- If the site moves from GitHub Pages to a self-hosted Nginx deployment, serve
+  it with `nginx/security-headers.conf` and document the final deployment
+  policy. GitHub Pages cannot send `frame-ancestors`, `X-Content-Type-Options`,
+  or `Permissions-Policy`; the pages set only the CSP and the referrer policy.
 
 ## Current product status
 
@@ -75,8 +77,14 @@ The following features are complete and have been moved below the open work:
 - [x] Security workflows: dependency review on pull requests, `pip-audit` for
   the Python dependencies, a Grype scan of the built Nginx image, CodeQL for
   JavaScript, Python, and workflows, and a weekly lychee link check.
-- [x] Dependabot updates for actions, the Docker base image, and the Python
-  test dependencies.
+- [x] Dependabot updates for actions, the Docker base image, the browser
+  libraries, and the Python test dependencies.
+- [x] jsPDF served from `public/vendor/`, locked in `package-lock.json`, and
+  checked against the lockfile in CI; no page loads code from another host.
+- [x] A strict Content Security Policy without `'unsafe-inline'`: sent by Nginx
+  on every response and declared in a `<meta>` element on every page for
+  GitHub Pages. Pre-commit, the container header check, and the browser tests
+  enforce it.
 - [x] Docker/Nginx container build for local and alternative hosting.
 - [x] Footer links to the deployed changelog page and the publisher homepage at
   https://kitano.nl/.

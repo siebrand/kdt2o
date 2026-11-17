@@ -39,8 +39,14 @@ scheduled day.
 
 The Docker build creates a small Nginx image. The container serves static assets
 and does not receive planning data. GitHub Pages is the current public host; an
-alternative self-hosted deployment should provide HTTPS, appropriate security
-headers, access-log retention rules, and a health check for `/`.
+alternative self-hosted deployment should provide HTTPS, the headers from
+`nginx/security-headers.conf`, access-log retention rules, and a health check
+for `/`.
+
+The Content Security Policy allows scripts and styles from the site only. Nginx
+sends it with the other security headers on every response. GitHub Pages
+cannot send custom headers, so every page also declares the CSP, without
+`frame-ancestors`, and the referrer policy in `<meta>` elements.
 
 GitHub Pages and the Docker image serve the static files in `public/` directly.
 The canonical changelog is `public/CHANGELOG.md`; `public/changelog.html` renders
