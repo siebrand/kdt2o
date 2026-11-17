@@ -12,8 +12,9 @@ repository. Pre-commit validates the data against `schemas/schema.json` and chec
 actionlint and zizmor; run `pre-commit install` once per clone. Browser smoke tests in `tests/` run in CI; see
 [CONTRIBUTING.md](CONTRIBUTING.md) to run them locally. Only approved recipes are shown and selected.
 
-Planned recipes can be moved by dragging them to another slot of the same meal type. Dropping onto another recipe swaps
-the two; other recipes in the way are moved aside.
+Planned recipes can be moved by dragging them to another slot of the same meal type, or one day at a time with the
+arrow buttons on each card, which also work with the keyboard. Moving onto another recipe swaps the two; other recipes in
+the way are moved aside. The remove button on a card removes the recipe from all its days and offers an undo.
 
 Build and run with Docker Desktop:
 

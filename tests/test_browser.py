@@ -114,14 +114,21 @@ def recipe_token(recipe_id: str) -> str:
     return token
 
 
+def planned_days(recipe: dict, start: int) -> list[int]:
+    """Mirror selectionDays() in public/app.js."""
+    if not recipe["multiDay"]:
+        return [start]
+    return [day for day in range(start, start + 2 * recipe.get("days", 3), 2) if day < 7]
+
+
 def share_url(base: str, plan: dict[tuple[int, str], str]) -> str:
-    """Build a share link for single-day recipes, keyed by (day, meal)."""
+    """Build a share link, keyed by (start day, meal)."""
     slots = [""] * (7 * len(MEALS))
-    for (day, meal), title in plan.items():
+    for (start, meal), title in plan.items():
         recipe = BY_TITLE[title]
-        assert not recipe["multiDay"], f"{title} is multi-day; use a single-day recipe"
         assert recipe["category"] == meal, f"{title} is not a {meal} recipe"
-        slots[day * len(MEALS) + MEALS.index(meal)] = recipe_token(recipe["id"]) + str(day)
+        for day in planned_days(recipe, start):
+            slots[day * len(MEALS) + MEALS.index(meal)] = recipe_token(recipe["id"]) + str(start)
     encoded = base64.urlsafe_b64encode(".".join(slots).encode()).decode().rstrip("=")
     return f"{base}/#plan=v4.{encoded}"
 
@@ -208,6 +215,65 @@ def test_random_fill_persists_and_clears(page: Page, server_url: str):
     expect(page.locator("#status")).to_have_text(EMPTY_STATUS)
     page.reload()
     expect(page.locator("#status")).to_have_text(EMPTY_STATUS)
+
+
+def planned_titles(page: Page, meal: str) -> list[str]:
+    """Return the recipe title of each day for one meal, or "" for an empty slot."""
+    titles = []
+    for day in range(7):
+        slot = page.locator(f'#planner [data-plan-key="{day}-{meal}"]')
+        titles.append(slot.locator("strong").inner_text() if slot.locator("strong").count() else "")
+    return titles
+
+
+def test_keyboard_moves_planned_recipe(page: Page, server_url: str):
+    first, second = "Zalm in mosterdsaus", "Viscurry met sperziebonen"
+    open_planner(page, share_url(server_url, {(0, "diner"): first, (1, "diner"): second}),
+                 "2 maaltijdmomenten gepland.")
+    expect(page.get_by_role("button", name=f"{first} op maandag een dag eerder zetten")).to_be_disabled()
+    expect(page.get_by_role("button", name=f"{second} op dinsdag een dag eerder zetten")).to_be_enabled()
+
+    page.get_by_role("button", name=f"{first} op maandag een dag later zetten").focus()
+    page.keyboard.press("Enter")
+    assert planned_titles(page, "diner")[:3] == [second, first, ""]
+    expect(page.get_by_role("button", name=f"{first} op dinsdag een dag later zetten")).to_be_focused()
+
+    page.keyboard.press("Enter")
+    assert planned_titles(page, "diner")[:3] == [second, "", first]
+    open_planner(page, f"{server_url}/", "2 maaltijdmomenten gepland.")
+    assert planned_titles(page, "diner")[:3] == [second, "", first]
+
+
+def test_keyboard_moves_multi_day_recipe(page: Page, server_url: str):
+    title = "Linzensoep"
+    days = BY_TITLE[title]["days"]
+    open_planner(page, share_url(server_url, {(0, "lunch"): title}), f"{days} maaltijdmomenten gepland.")
+    page.get_by_role("button", name=f"{title} op maandag een dag later zetten").focus()
+    page.keyboard.press("Enter")
+    expected = ["" for _ in range(7)]
+    for day in planned_days(BY_TITLE[title], 1):
+        expected[day] = title
+    assert planned_titles(page, "lunch") == expected
+
+
+def test_remove_needs_a_button_and_can_be_undone(page: Page, server_url: str):
+    title = "Linzensoep"
+    days = BY_TITLE[title]["days"]
+    open_planner(page, share_url(server_url, {(0, "lunch"): title}), f"{days} maaltijdmomenten gepland.")
+    page.locator('#planner [data-plan-key="0-lunch"] strong').click()
+    expect(page.locator("#status")).to_have_text(f"{days} maaltijdmomenten gepland.")
+
+    page.get_by_role("button", name=f"{title} verwijderen van alle dagen").first.click()
+    expect(page.locator("#status")).to_have_text(f"{title} is verwijderd.")
+    assert planned_titles(page, "lunch") == [""] * 7
+    undo = page.get_by_role("button", name="Ongedaan maken")
+    expect(undo).to_be_focused()
+
+    page.keyboard.press("Enter")
+    expect(page.locator("#status")).to_have_text(f"{days} maaltijdmomenten gepland.")
+    expect(undo).to_have_count(0)
+    assert planned_titles(page, "lunch").count(title) == days
+    open_planner(page, f"{server_url}/", f"{days} maaltijdmomenten gepland.")
 
 
 def test_shopping_list_bakes_one_cracker_batch_set(page: Page, server_url: str):

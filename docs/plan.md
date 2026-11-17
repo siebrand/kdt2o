@@ -29,6 +29,8 @@ The following features are complete and have been moved below the open work:
 - [x] One-click random filling of empty meal slots, including multi-day rules.
 - [x] Drag-and-drop moving and swapping of planned recipes within the same meal
   type; multi-day recipes move as a whole and blocking recipes are moved aside.
+- [x] Keyboard-accessible move buttons on each planned recipe, and a labeled
+  remove button with undo instead of removal on any click.
 - [x] Shareable menu links that restore a plan from the URL without server storage.
 - [x] Single-recipe search by meal with direct PDF generation.
 - [x] Recipe selection at most once per week, with valid empty meal slots.

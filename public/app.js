@@ -5,8 +5,17 @@ const PLAN_STORAGE_VERSION = 4;
 const MESSAGES = {
     versionLabel: "Versie",
     localVersion: "Lokale versie",
-    versionUnavailable: "Versie onbekend"
+    versionUnavailable: "Versie onbekend",
+    dragHint: "Sleep om te wisselen binnen hetzelfde maaltijdtype",
+    moveEarlier: (title, day) => `${title} op ${day} een dag eerder zetten`,
+    moveLater: (title, day) => `${title} op ${day} een dag later zetten`,
+    removeRecipe: (title) => `${title} verwijderen`,
+    removeMultiDayRecipe: (title) => `${title} verwijderen van alle dagen`,
+    recipeRemoved: (title) => `${title} is verwijderd.`,
+    undo: "Ongedaan maken",
+    undoUnavailable: "Het verwijderen kan niet ongedaan worden gemaakt omdat deze momenten weer gevuld zijn."
 };
+const UNDO_TIMEOUT_MS = 10000;
 const VERSION_PATTERN = /^[0-9]{4}-[0-9]{2}-[0-9]{2}\.[0-9]{12,}-[0-9a-f]{40}$/;
 const hasPlanner = document.querySelector("#planner") !== null;
 const state = {
@@ -34,7 +43,7 @@ const shoppingListItems = document.querySelector("#shopping-list-items");
 const notifications = document.querySelector("#notifications");
 const recipePanel = document.querySelector("#recipe-panel");
 const appVersion = document.querySelector("#app-version");
-const dragState = {sourceKey: null, dropped: false};
+const dragState = {sourceKey: null};
 
 function recipeIsAvailable(recipe) {
     return recipe.approved === true;
@@ -204,18 +213,18 @@ function selectionDays(recipe, startDay) {
 }
 
 function swapPlanSelections(sourceKey, targetKey) {
-    if (sourceKey === targetKey) return;
+    if (sourceKey === targetKey) return false;
     const sourceItem = state.plan[sourceKey];
-    if (!sourceItem) return;
+    if (!sourceItem) return false;
     const meal = planKeyMeal(sourceKey);
     if (meal !== planKeyMeal(targetKey)) {
         showSelectionMessage("Kaarten kunnen alleen binnen hetzelfde maaltijdtype worden verplaatst.");
-        return;
+        return false;
     }
     const sourceRecipe = recipeById(sourceItem.recipeId);
     if (!sourceRecipe) {
         showSelectionMessage("Een onbekend recept kan niet worden verplaatst.");
-        return;
+        return false;
     }
     // The dragged selection shifts by the distance between the dragged card and the drop cell. This also allows a
     // multi-day recipe to be dropped on one of its own later days or on an empty cell.
@@ -228,7 +237,7 @@ function swapPlanSelections(sourceKey, targetKey) {
     const sourceDays = newStart >= 0 ? selectionDays(sourceRecipe, newStart) : [];
     if (sourceDays.length !== selectionDayCount(sourceRecipe)) {
         showSelectionMessage("Deze kaart kan hier niet worden geplaatst omdat een meerdaags recept niet in de week past.");
-        return;
+        return false;
     }
     // Every other selection in the way is moved aside. The recipe on the drop cell prefers the dragged position, so a
     // drop on another card behaves like a swap; other recipes prefer to stay as close as possible to where they were.
@@ -266,7 +275,7 @@ function swapPlanSelections(sourceKey, targetKey) {
             .sort((a, b) => Math.abs(a - entry.preferredStart) - Math.abs(b - entry.preferredStart) || a - b);
         if (!starts.length) {
             showSelectionMessage("Deze kaart kan hier niet worden geplaatst omdat er geen ruimte is om de andere recepten te verplaatsen.");
-            return;
+            return false;
         }
         const days = recipe ? selectionDays(recipe, starts[0]) : [starts[0]];
         days.forEach((day) => {
@@ -276,6 +285,46 @@ function swapPlanSelections(sourceKey, targetKey) {
     state.plan = nextPlan;
     savePlan();
     render();
+    return true;
+}
+
+function canMoveSelection(key, step) {
+    const item = state.plan[key];
+    const recipe = item && recipeById(item.recipeId);
+    if (!recipe) return false;
+    const newStart = selectionStartDay(key, item) + step;
+    const targetDay = planKeyDay(key) + step;
+    return newStart >= 0 && targetDay >= 0 && targetDay < DAYS.length
+        && selectionDays(recipe, newStart).length === selectionDayCount(recipe);
+}
+
+function moveSelection(key, step, action) {
+    const targetKey = planKey(planKeyDay(key) + step, planKeyMeal(key));
+    if (!swapPlanSelections(key, targetKey)) return;
+    const card = planner.querySelector(`[data-plan-key="${targetKey}"]`);
+    const button = card?.querySelector(`[data-action="${action}"]:not(:disabled)`) || card?.querySelector("[data-action]:not(:disabled)");
+    button?.focus();
+}
+
+function removeSelection(key) {
+    const item = state.plan[key];
+    if (!item) return;
+    const removed = Object.entries(state.plan).filter(([, plannedItem]) => plannedItem.recipeId === item.recipeId);
+    removed.forEach(([removedKey]) => delete state.plan[removedKey]);
+    savePlan();
+    render();
+    showUndoMessage(MESSAGES.recipeRemoved(recipeById(item.recipeId)?.title || "Onbekend recept"), () => {
+        if (selectedIds().has(item.recipeId) || removed.some(([removedKey]) => state.plan[removedKey])) {
+            showSelectionMessage(MESSAGES.undoUnavailable);
+            return;
+        }
+        removed.forEach(([removedKey, removedItem]) => {
+            state.plan[removedKey] = removedItem;
+        });
+        savePlan();
+        render();
+        planner.querySelector(`[data-plan-key="${key}"] [data-action="remove"]`)?.focus();
+    }, key);
 }
 
 function shuffleRecipes(recipes) {
@@ -378,22 +427,18 @@ function renderPlanner() {
                 event.preventDefault();
                 cell.classList.remove("drag-over");
                 const sourceKey = event.dataTransfer.getData("text/plain") || dragState.sourceKey;
-                dragState.dropped = true;
                 swapPlanSelections(sourceKey, planKey(dayIndex, meal));
-                window.setTimeout(() => {
-                    dragState.dropped = false;
-                }, 0);
             });
-            const slot = document.createElement("button");
-            slot.type = "button";
+            const key = planKey(dayIndex, meal);
+            const item = state.plan[key];
+            const slot = document.createElement(item ? "div" : "button");
             slot.className = "slot";
-            const item = state.plan[planKey(dayIndex, meal)];
+            slot.dataset.planKey = key;
             if (item) {
                 slot.draggable = true;
-                slot.title = "Sleep om te wisselen binnen hetzelfde maaltijdtype";
+                slot.title = MESSAGES.dragHint;
                 slot.addEventListener("dragstart", (event) => {
-                    dragState.sourceKey = planKey(dayIndex, meal);
-                    dragState.dropped = false;
+                    dragState.sourceKey = key;
                     event.dataTransfer.effectAllowed = "move";
                     event.dataTransfer.setData("text/plain", dragState.sourceKey);
                     slot.classList.add("dragging");
@@ -404,10 +449,9 @@ function renderPlanner() {
                     document.querySelectorAll(".drag-over").forEach((element) => element.classList.remove("drag-over"));
                 });
                 const recipe = recipeById(item.recipeId);
-                slot.innerHTML = "";
+                const recipeTitle = recipe?.title || "Onbekend recept";
                 const title = document.createElement("strong");
-                title.textContent = recipe?.title || "Onbekend recept";
-                slot.setAttribute("aria-label", `${recipe?.title || "Onbekend recept"}. Klik om te verwijderen`);
+                title.textContent = recipeTitle;
                 slot.append(title);
                 if (recipe?.multiDay) {
                     const schedule = document.createElement("small");
@@ -425,15 +469,20 @@ function renderPlanner() {
                     notice.textContent = "Let op: " + recipe.advanceNotice;
                     slot.append(notice);
                 }
-                slot.addEventListener("click", () => {
-                    if (dragState.dropped) return;
-                    Object.entries(state.plan).forEach(([key, plannedItem]) => {
-                        if (plannedItem.recipeId === item.recipeId) delete state.plan[key];
-                    });
-                    savePlan();
-                    render();
-                });
+                const actions = document.createElement("div");
+                actions.className = "slot-actions";
+                actions.append(
+                    slotActionButton("move-earlier", "←", MESSAGES.moveEarlier(recipeTitle, dayName(dayIndex)),
+                        !canMoveSelection(key, -1), () => moveSelection(key, -1, "move-earlier")),
+                    slotActionButton("move-later", "→", MESSAGES.moveLater(recipeTitle, dayName(dayIndex)),
+                        !canMoveSelection(key, 1), () => moveSelection(key, 1, "move-later")),
+                    slotActionButton("remove", "×",
+                        recipe?.multiDay ? MESSAGES.removeMultiDayRecipe(recipeTitle) : MESSAGES.removeRecipe(recipeTitle),
+                        false, () => removeSelection(key))
+                );
+                slot.append(actions);
             } else {
+                slot.type = "button";
                 slot.textContent = "+ Recept kiezen";
                 slot.addEventListener("click", () => {
                     state.activeSlot = {day: dayIndex, meal};
@@ -445,6 +494,19 @@ function renderPlanner() {
             planner.append(cell);
         });
     });
+}
+
+function slotActionButton(action, symbol, label, disabled, onClick) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "slot-action";
+    button.dataset.action = action;
+    button.textContent = symbol;
+    button.title = label;
+    button.setAttribute("aria-label", label);
+    button.disabled = disabled;
+    button.addEventListener("click", onClick);
+    return button;
 }
 
 function renderOptions() {
@@ -539,6 +601,43 @@ function showSelectionMessage(message) {
     notice.textContent = message;
     notifications.replaceChildren(notice);
     window.setTimeout(() => notice.remove(), 7000);
+}
+
+function showUndoMessage(message, onUndo, focusKey) {
+    status.textContent = message;
+    const notice = document.createElement("div");
+    notice.className = "notification notification-info";
+    notice.setAttribute("role", "status");
+    const text = document.createElement("span");
+    text.textContent = message;
+    const undoButton = document.createElement("button");
+    undoButton.type = "button";
+    undoButton.className = "button";
+    undoButton.textContent = MESSAGES.undo;
+    notice.append(text, undoButton);
+    notifications.replaceChildren(notice);
+    let timer = null;
+    const dismiss = () => {
+        const hadFocus = notice.contains(document.activeElement);
+        notice.remove();
+        if (hadFocus) planner.querySelector(`[data-plan-key="${focusKey}"]`)?.focus();
+    };
+    const startTimer = () => {
+        window.clearTimeout(timer);
+        timer = window.setTimeout(dismiss, UNDO_TIMEOUT_MS);
+    };
+    // The notice stays while the user is on it, so keyboard and screen reader users have time to undo.
+    notice.addEventListener("focusin", () => window.clearTimeout(timer));
+    notice.addEventListener("focusout", startTimer);
+    notice.addEventListener("mouseenter", () => window.clearTimeout(timer));
+    notice.addEventListener("mouseleave", startTimer);
+    undoButton.addEventListener("click", () => {
+        window.clearTimeout(timer);
+        notice.remove();
+        onUndo();
+    });
+    startTimer();
+    undoButton.focus();
 }
 
 function chooseRecipe(recipe) {
