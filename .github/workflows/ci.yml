@@ -44,3 +44,7 @@ jobs:
           persist-credentials: false
       - name: Build container
         run: docker build --tag kitano-meal-planner:ci .
+      - name: Check security headers of the container
+        run: |
+          docker run --detach --name planner --publish 8080:80 kitano-meal-planner:ci
+          python3 scripts/check_security_headers.py http://127.0.0.1:8080

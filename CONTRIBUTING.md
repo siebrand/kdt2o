@@ -54,6 +54,12 @@ requests, and weekly:
 - Grype scans the built Nginx image and fails on fixable vulnerabilities of
   high severity or higher. The results appear under code scanning.
 
+The CI `tests` job builds the container and runs
+`scripts/check_security_headers.py` against it. The check fails when a path is
+served without the security headers from `nginx/security-headers.conf`. Nginx
+drops server-level `add_header` directives in a `location` block that sets its
+own headers, so include the snippet in every such block.
+
 `.github/workflows/codeql.yml` runs CodeQL with the `security-extended`
 queries for JavaScript, Python, and the GitHub Actions workflows, on the same
 triggers. The results appear under code scanning. The repository uses this

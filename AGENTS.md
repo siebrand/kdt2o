@@ -27,6 +27,8 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 - `public/version.txt`: local marker stamped with CalVer by deployment and
   release workflows.
 - `Dockerfile`, `nginx.conf`: the container. Nginx serves the static files.
+- `nginx/security-headers.conf`: the security headers. Include this file in
+  the server block and in each `location` block that sets headers.
 - `scripts/release.py`: deterministic commit versions, tags, and release notes.
 - `.github/workflows/`: CI, Pages deployment, commit version tags, and releases.
 - `docs/plan.md`: open work and completed features. Read it before you change
