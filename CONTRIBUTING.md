@@ -54,7 +54,11 @@ requests, and weekly:
 - Grype scans the built Nginx image and fails on fixable vulnerabilities of
   high severity or higher. The results appear under code scanning.
 
-The weekly run catches vulnerabilities that are published after a change was
+`.github/workflows/codeql.yml` runs CodeQL with the `security-extended`
+queries for JavaScript, Python, and the GitHub Actions workflows, on the same
+triggers. The results appear under code scanning.
+
+The weekly runs catch vulnerabilities that are published after a change was
 merged. Dependabot proposes updates for actions, the Docker base image, and the
 Python test dependencies.
 
