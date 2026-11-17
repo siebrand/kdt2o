@@ -104,7 +104,10 @@ docker run --rm -v "$PWD":/input -w /input lycheeverse/lychee:0.24.2 --no-progre
 
 The weekly runs catch vulnerabilities and broken links that appear after a
 change was merged. Dependabot proposes updates for actions, the Docker base
-image, the browser libraries, and the Python test dependencies.
+image, the browser libraries, the pre-commit hook revisions, the Python test
+dependencies, and the pinned security tools in
+`.github/security/requirements.txt`. Do not pin a tool version directly in a
+workflow; put it in a file that Dependabot reads.
 
 ## Workflow
 

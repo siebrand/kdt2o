@@ -39,8 +39,11 @@ jobs:
           # Keep in sync with additional_dependencies of the validate-recipes hook
           # in .pre-commit-config.yaml.
           printf 'jsonschema>=4.18\n' > "$RUNNER_TEMP/pre-commit-requirements.txt"
-          pipx run pip-audit==2.10.1 --strict \
+          python3 -m venv "$RUNNER_TEMP/audit"
+          "$RUNNER_TEMP/audit/bin/pip" install --quiet -r .github/security/requirements.txt
+          "$RUNNER_TEMP/audit/bin/pip-audit" --strict \
             --requirement tests/requirements.txt \
+            --requirement .github/security/requirements.txt \
             --requirement "$RUNNER_TEMP/pre-commit-requirements.txt"
 
   browser-libraries:

@@ -45,6 +45,36 @@ updates:
         patterns:
           - "*"
 
+  - package-ecosystem: pre-commit
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "07:40"
+      timezone: Europe/Amsterdam
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 5
+    groups:
+      pre-commit-hooks:
+        patterns:
+          - "*"
+
+  - package-ecosystem: pip
+    directory: /.github/security
+    schedule:
+      interval: weekly
+      day: monday
+      time: "07:45"
+      timezone: Europe/Amsterdam
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 5
+    groups:
+      security-tools:
+        patterns:
+          - "*"
+
   - package-ecosystem: pip
     directory: /tests
     schedule:
