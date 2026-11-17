@@ -5,9 +5,6 @@
 These are the remaining planned improvements. They are intentionally kept at the
 top of this document.
 
-- The buttons that accompany the drag and drop feature sometimes block a move
-  (incorrect behavior) which can be executed using drag and drop (correct
-  behavior). The buttons should have the same behavior as drag and drop.
 - Buttons to move or remove a recipe from the grid should be at the bottom of the
   cell.
 - If the site moves from GitHub Pages to a self-hosted Nginx deployment, serve
@@ -35,7 +32,9 @@ The following features are complete and have been moved below the open work:
 - [x] Drag-and-drop moving and swapping of planned recipes within the same meal
   type; multi-day recipes move as a whole and blocking recipes are moved aside.
 - [x] Keyboard-accessible move buttons on each planned recipe, and a labeled
-  remove button with undo instead of removal on any click.
+  remove button with undo instead of removal on any click. The buttons
+  accept the same moves as drag and drop: a button moves the card to the
+  nearest earlier or later day where a drop succeeds.
 - [x] Shareable menu links that restore a plan from the URL without server storage.
 - [x] Single-recipe search by meal with direct PDF generation.
 - [x] Recipe selection at most once per week, with valid empty meal slots.

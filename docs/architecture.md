@@ -24,10 +24,12 @@ or server-side planning state.
    cells or on their own days. The recipe on the drop cell takes the dragged
    position (a swap); other recipes in the way move to the nearest free slots of
    the same meal. A move is rejected if a recipe does not fit in the week or
-   there is no room. Each planned card also has buttons that move the selection
-   one day earlier or later with the same rules, so moving works without a
-   pointer. Removal needs the card's remove button; it removes all days of the
-   recipe and shows an undo notice that stays while it has focus or the pointer.
+   there is no room. Each planned card also has buttons that move the card to
+   the nearest earlier or later day where a drop of the card succeeds. Both
+   paths use `planSelectionMove()`, so the buttons accept exactly the moves that
+   drag and drop accepts, and moving works without a pointer. Removal needs the
+   card's remove button; it removes all days of the recipe and shows an undo
+   notice that stays while it has focus or the pointer.
 
 Recipe text is treated as data and inserted with text APIs, never as HTML.
 

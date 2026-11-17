@@ -230,13 +230,13 @@ def test_keyboard_moves_planned_recipe(page: Page, server_url: str):
     first, second = "Zalm in mosterdsaus", "Viscurry met sperziebonen"
     open_planner(page, share_url(server_url, {(0, "diner"): first, (1, "diner"): second}),
                  "2 maaltijdmomenten gepland.")
-    expect(page.get_by_role("button", name=f"{first} op maandag een dag eerder zetten")).to_be_disabled()
-    expect(page.get_by_role("button", name=f"{second} op dinsdag een dag eerder zetten")).to_be_enabled()
+    expect(page.get_by_role("button", name=f"{first} op maandag naar een eerdere dag verplaatsen")).to_be_disabled()
+    expect(page.get_by_role("button", name=f"{second} op dinsdag naar een eerdere dag verplaatsen")).to_be_enabled()
 
-    page.get_by_role("button", name=f"{first} op maandag een dag later zetten").focus()
+    page.get_by_role("button", name=f"{first} op maandag naar een latere dag verplaatsen").focus()
     page.keyboard.press("Enter")
     assert planned_titles(page, "diner")[:3] == [second, first, ""]
-    expect(page.get_by_role("button", name=f"{first} op dinsdag een dag later zetten")).to_be_focused()
+    expect(page.get_by_role("button", name=f"{first} op dinsdag naar een latere dag verplaatsen")).to_be_focused()
 
     page.keyboard.press("Enter")
     assert planned_titles(page, "diner")[:3] == [second, "", first]
@@ -248,12 +248,51 @@ def test_keyboard_moves_multi_day_recipe(page: Page, server_url: str):
     title = "Linzensoep"
     days = BY_TITLE[title]["days"]
     open_planner(page, share_url(server_url, {(0, "lunch"): title}), f"{days} maaltijdmomenten gepland.")
-    page.get_by_role("button", name=f"{title} op maandag een dag later zetten").focus()
+    page.get_by_role("button", name=f"{title} op maandag naar een latere dag verplaatsen").focus()
     page.keyboard.press("Enter")
     expected = ["" for _ in range(7)]
     for day in planned_days(BY_TITLE[title], 1):
         expected[day] = title
     assert planned_titles(page, "lunch") == expected
+
+
+# Groentemuffins on Tuesday and Thursday cannot move aside for a recipe from Friday, so a drop on Thursday fails and
+# a drop on Wednesday swaps with the recipe there.
+BLOCKED_BREAKFAST = {
+    (1, "ontbijt"): "Groentemuffins",
+    (2, "ontbijt"): "Volle kwark met granola en diepvries rood fruit",
+    (4, "ontbijt"): "Hüttenkäse met rood-blauw fruit en zelfgemaakte granola",
+    (6, "ontbijt"): "Notenbrood met roomkaas en zalm",
+}
+BLOCKED_BREAKFAST_AFTER_MOVE = [
+    "",
+    "Groentemuffins",
+    "Hüttenkäse met rood-blauw fruit en zelfgemaakte granola",
+    "Groentemuffins",
+    "Volle kwark met granola en diepvries rood fruit",
+    "",
+    "Notenbrood met roomkaas en zalm",
+]
+
+
+def test_drag_and_drop_moves_like_the_move_buttons(page: Page, server_url: str):
+    open_planner(page, share_url(server_url, BLOCKED_BREAKFAST), "5 maaltijdmomenten gepland.")
+    before = planned_titles(page, "ontbijt")
+    source = page.locator('#planner [data-plan-key="4-ontbijt"]')
+    source.drag_to(page.locator('#planner [data-plan-key="3-ontbijt"]'))
+    expect(page.locator(".notification-warning")).to_contain_text("geen ruimte")
+    assert planned_titles(page, "ontbijt") == before
+
+    source.drag_to(page.locator('#planner [data-plan-key="2-ontbijt"]'))
+    assert planned_titles(page, "ontbijt") == BLOCKED_BREAKFAST_AFTER_MOVE
+
+
+def test_move_button_skips_a_blocked_day(page: Page, server_url: str):
+    open_planner(page, share_url(server_url, BLOCKED_BREAKFAST), "5 maaltijdmomenten gepland.")
+    title = BLOCKED_BREAKFAST[(4, "ontbijt")]
+    page.get_by_role("button", name=f"{title} op vrijdag naar een eerdere dag verplaatsen").click()
+    assert planned_titles(page, "ontbijt") == BLOCKED_BREAKFAST_AFTER_MOVE
+    expect(page.get_by_role("button", name=f"{title} op woensdag naar een eerdere dag verplaatsen")).to_be_focused()
 
 
 def test_remove_needs_a_button_and_can_be_undone(page: Page, server_url: str):

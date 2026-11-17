@@ -4,8 +4,9 @@ De belangrijkste verbeteringen voor de planner en recepten.
 
 ## 17 november 2026
 
-- Je verplaatst een gepland recept nu ook met de pijlknoppen op de kaart, ook met het toetsenbord. Een recept
-  verwijder je met de knop × en je kunt het verwijderen ongedaan maken. Een klik op de kaart verwijdert niets meer.
+- Je verplaatst een gepland recept nu ook met de pijlknoppen op de kaart, ook met het toetsenbord. Een pijlknop
+  zet het recept op de dichtstbijzijnde dag waar het past, net als slepen. Een recept verwijder je met de knop × en je
+  kunt het verwijderen ongedaan maken. Een klik op de kaart verwijdert niets meer.
 - Onderaan elke pagina staat de versie van de planner.
 - De planner maakt geen verbinding meer met andere servers. De software voor de PDF komt nu van deze website en is
   bijgewerkt naar een veilige versie.

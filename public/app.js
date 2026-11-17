@@ -7,8 +7,8 @@ const MESSAGES = {
     localVersion: "Lokale versie",
     versionUnavailable: "Versie onbekend",
     dragHint: "Sleep om te wisselen binnen hetzelfde maaltijdtype",
-    moveEarlier: (title, day) => `${title} op ${day} een dag eerder zetten`,
-    moveLater: (title, day) => `${title} op ${day} een dag later zetten`,
+    moveEarlier: (title, day) => `${title} op ${day} naar een eerdere dag verplaatsen`,
+    moveLater: (title, day) => `${title} op ${day} naar een latere dag verplaatsen`,
     removeRecipe: (title) => `${title} verwijderen`,
     removeMultiDayRecipe: (title) => `${title} verwijderen van alle dagen`,
     recipeRemoved: (title) => `${title} is verwijderd.`,
@@ -212,19 +212,18 @@ function selectionDays(recipe, startDay) {
     return isMultiDay(recipe) ? plannedDays(startDay, recipe.days) : [startDay];
 }
 
-function swapPlanSelections(sourceKey, targetKey) {
-    if (sourceKey === targetKey) return false;
+// Returns the plan after a move of the selection on sourceKey to targetKey, or an error message if the move is not
+// possible. Drag and drop and the move buttons both use this function, so they accept the same moves.
+function planSelectionMove(sourceKey, targetKey) {
     const sourceItem = state.plan[sourceKey];
-    if (!sourceItem) return false;
+    if (sourceKey === targetKey || !sourceItem) return {error: null};
     const meal = planKeyMeal(sourceKey);
     if (meal !== planKeyMeal(targetKey)) {
-        showSelectionMessage("Kaarten kunnen alleen binnen hetzelfde maaltijdtype worden verplaatst.");
-        return false;
+        return {error: "Kaarten kunnen alleen binnen hetzelfde maaltijdtype worden verplaatst."};
     }
     const sourceRecipe = recipeById(sourceItem.recipeId);
     if (!sourceRecipe) {
-        showSelectionMessage("Een onbekend recept kan niet worden verplaatst.");
-        return false;
+        return {error: "Een onbekend recept kan niet worden verplaatst."};
     }
     // The dragged selection shifts by the distance between the dragged card and the drop cell. This also allows a
     // multi-day recipe to be dropped on one of its own later days or on an empty cell.
@@ -236,8 +235,7 @@ function swapPlanSelections(sourceKey, targetKey) {
     const sourceKeys = selectionKeys(sourceItem.recipeId, meal, sourceStart);
     const sourceDays = newStart >= 0 ? selectionDays(sourceRecipe, newStart) : [];
     if (sourceDays.length !== selectionDayCount(sourceRecipe)) {
-        showSelectionMessage("Deze kaart kan hier niet worden geplaatst omdat een meerdaags recept niet in de week past.");
-        return false;
+        return {error: "Deze kaart kan hier niet worden geplaatst omdat een meerdaags recept niet in de week past."};
     }
     // Every other selection in the way is moved aside. The recipe on the drop cell prefers the dragged position, so a
     // drop on another card behaves like a swap; other recipes prefer to stay as close as possible to where they were.
@@ -274,33 +272,44 @@ function swapPlanSelections(sourceKey, targetKey) {
             })
             .sort((a, b) => Math.abs(a - entry.preferredStart) - Math.abs(b - entry.preferredStart) || a - b);
         if (!starts.length) {
-            showSelectionMessage("Deze kaart kan hier niet worden geplaatst omdat er geen ruimte is om de andere recepten te verplaatsen.");
-            return false;
+            return {error: "Deze kaart kan hier niet worden geplaatst omdat er geen ruimte is om de andere recepten te verplaatsen."};
         }
         const days = recipe ? selectionDays(recipe, starts[0]) : [starts[0]];
         days.forEach((day) => {
             nextPlan[planKey(day, meal)] = {recipeId: entry.recipeId, sourceDay: starts[0]};
         });
     }
-    state.plan = nextPlan;
-    savePlan();
-    render();
-    return true;
+    return {plan: nextPlan};
 }
 
-function canMoveSelection(key, step) {
-    const item = state.plan[key];
-    const recipe = item && recipeById(item.recipeId);
-    if (!recipe) return false;
-    const newStart = selectionStartDay(key, item) + step;
-    const targetDay = planKeyDay(key) + step;
-    return newStart >= 0 && targetDay >= 0 && targetDay < DAYS.length
-        && selectionDays(recipe, newStart).length === selectionDayCount(recipe);
+function applyPlan(plan) {
+    state.plan = plan;
+    savePlan();
+    render();
+}
+
+function swapPlanSelections(sourceKey, targetKey) {
+    const move = planSelectionMove(sourceKey, targetKey);
+    if (move.plan) applyPlan(move.plan);
+    else if (move.error) showSelectionMessage(move.error);
+}
+
+// A move button moves the card to the nearest day in its direction where a drop of the card would succeed, so the
+// buttons can make every move that drag and drop can make, also past a day where a recipe cannot move aside.
+function nearestMove(key, step) {
+    for (let day = planKeyDay(key) + step; day >= 0 && day < DAYS.length; day += step) {
+        const targetKey = planKey(day, planKeyMeal(key));
+        const move = planSelectionMove(key, targetKey);
+        if (move.plan) return {targetKey, plan: move.plan};
+    }
+    return null;
 }
 
 function moveSelection(key, step, action) {
-    const targetKey = planKey(planKeyDay(key) + step, planKeyMeal(key));
-    if (!swapPlanSelections(key, targetKey)) return;
+    const move = nearestMove(key, step);
+    if (!move) return;
+    applyPlan(move.plan);
+    const targetKey = move.targetKey;
     const card = planner.querySelector(`[data-plan-key="${targetKey}"]`);
     const button = card?.querySelector(`[data-action="${action}"]:not(:disabled)`) || card?.querySelector("[data-action]:not(:disabled)");
     button?.focus();
@@ -473,9 +482,9 @@ function renderPlanner() {
                 actions.className = "slot-actions";
                 actions.append(
                     slotActionButton("move-earlier", "←", MESSAGES.moveEarlier(recipeTitle, dayName(dayIndex)),
-                        !canMoveSelection(key, -1), () => moveSelection(key, -1, "move-earlier")),
+                        !nearestMove(key, -1), () => moveSelection(key, -1, "move-earlier")),
                     slotActionButton("move-later", "→", MESSAGES.moveLater(recipeTitle, dayName(dayIndex)),
-                        !canMoveSelection(key, 1), () => moveSelection(key, 1, "move-later")),
+                        !nearestMove(key, 1), () => moveSelection(key, 1, "move-later")),
                     slotActionButton("remove", "×",
                         recipe?.multiDay ? MESSAGES.removeMultiDayRecipe(recipeTitle) : MESSAGES.removeRecipe(recipeTitle),
                         false, () => removeSelection(key))
