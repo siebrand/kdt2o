@@ -374,6 +374,17 @@ def test_mentioning_granola_does_not_add_a_granola_batch(page: Page, server_url:
             assert ingredient["name"] not in items
 
 
+def test_recipe_subrecipe_ingredients_are_counted_once(page: Page, server_url: str):
+    title = "Pesto kip met snijbonen en tuinerwtjes"
+    open_planner(page, share_url(server_url, {(0, "diner"): title}), "1 maaltijdmomenten gepland.")
+    items = shopping_list(page)
+    # The pesto ingredients come from the subrecipe only; the olive oil adds 30 ml for the chicken and 15 ml pesto.
+    for expected in ("1 teen knoflook", "40 gram pijnboompitten", "30 gram verse basilicum",
+                     "30 gram Parmezaanse kaas", "45 ml extra vierge olijfolie"):
+        name = expected.split(" ", 2)[2]
+        assert [item for item in items if item.endswith(" " + name)] == [expected], (expected, items)
+
+
 def test_pdf_has_landscape_overview_and_recipe_pages(page: Page, server_url: str):
     titles = {
         (0, "diner"): "Zalm in mosterdsaus",

@@ -7,6 +7,7 @@ De belangrijkste verbeteringen voor de planner en recepten.
 - Je verplaatst een gepland recept nu ook met de pijlknoppen onder op de kaart, ook met het toetsenbord. Een pijlknop
   zet het recept op de dichtstbijzijnde dag waar het past, net als slepen. Een recept verwijder je met de knop × en je
   kunt het verwijderen ongedaan maken. Een klik op de kaart verwijdert niets meer.
+- De boodschappenlijst voor pesto kip met snijbonen en tuinerwtjes telt de ingrediënten van de pesto niet meer dubbel.
 - Onderaan elke pagina staat de versie van de planner.
 - De planner maakt geen verbinding meer met andere servers. De software voor de PDF komt nu van deze website en is
   bijgewerkt naar een veilige versie.

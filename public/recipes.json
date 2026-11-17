@@ -7084,46 +7084,6 @@
         "category": "Groente en fruit"
       },
       {
-        "raw": "1 teentje knoflook",
-        "amount": 1,
-        "unit": "teen",
-        "name": "knoflook",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "4 el pijnboompitten",
-        "amount": 40,
-        "unit": "gram",
-        "name": "pijnboompitten",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "2 handen verse basilicum",
-        "amount": 30,
-        "unit": "gram",
-        "name": "verse basilicum",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "4 el Parmezaanse kaas",
-        "amount": 30,
-        "unit": "gram",
-        "name": "Parmezaanse kaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "extra vierge olijfolie",
-        "amount": 15,
-        "unit": "ml",
-        "name": "extra vierge olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
         "raw": "peper en zout",
         "amount": null,
         "unit": "",
@@ -7158,8 +7118,8 @@
             "category": "Houdbare producten"
           },
           {
-            "raw": "50 gram verse basilicum",
-            "amount": 50,
+            "raw": "2 handen verse basilicum",
+            "amount": 30,
             "unit": "gram",
             "name": "verse basilicum",
             "optional": false,
