@@ -23,4 +23,4 @@ Report unacceptable behavior privately to `siebrand@kitano.nl`. Reports will be
 reviewed promptly and confidentially. Project maintainers may remove or reject
 contributions that violate this code.
 
-This code is adapted from the [Contributor Covenant 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html).
+This code is adapted from the [Contributor Covenant 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/).
