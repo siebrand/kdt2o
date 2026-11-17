@@ -94,4 +94,5 @@ lint GitHub Actions workflows with actionlint from a pinned Docker image and
 audit them with zizmor. Every action is pinned to a commit SHA. The security
 workflow reviews dependency changes in pull requests, audits the Python
 dependencies, and scans the built container image; it also runs weekly. CodeQL
-analyzes the JavaScript, the Python scripts, and the workflows.
+analyzes the JavaScript, the Python scripts, and the workflows. A weekly link
+check with lychee covers the documentation and the public HTML pages.

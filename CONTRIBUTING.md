@@ -58,9 +58,18 @@ requests, and weekly:
 queries for JavaScript, Python, and the GitHub Actions workflows, on the same
 triggers. The results appear under code scanning.
 
-The weekly runs catch vulnerabilities that are published after a change was
-merged. Dependabot proposes updates for actions, the Docker base image, and the
-Python test dependencies.
+`.github/workflows/links.yml` checks the links in the Markdown files and the
+HTML pages with lychee, weekly and on pull requests that change them. Broken
+external links do not block other pull requests. The settings, such as the
+excluded local addresses, are in `lychee.toml`. To run the check locally:
+
+```bash
+docker run --rm -v "$PWD":/input -w /input lycheeverse/lychee:0.24.2 --no-progress './**/*.md' 'public/**/*.html'
+```
+
+The weekly runs catch vulnerabilities and broken links that appear after a
+change was merged. Dependabot proposes updates for actions, the Docker base
+image, and the Python test dependencies.
 
 ## Workflow
 

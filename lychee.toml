@@ -1,0 +1,9 @@
+# Link checker configuration for lychee, used by .github/workflows/links.yml.
+
+# Local development addresses in the documentation are examples, not links.
+exclude = ['^https?://(localhost|127\.0\.0\.1)(:\d+)?(/|$)']
+
+# Retry slow or rate-limited hosts before reporting a broken link.
+max_retries = 3
+timeout = 30
+accept = ["200..=299", "429"]

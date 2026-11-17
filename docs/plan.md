@@ -5,8 +5,6 @@
 These are the remaining planned improvements. They are intentionally kept at the
 top of this document.
 
-- Add dedicated security and dependency workflows for action, dependency,
-  Docker-image, and link scanning.
 - Add production security headers and document the final deployment policy if
   the site moves from GitHub Pages to a self-hosted Nginx deployment.
 
@@ -74,6 +72,11 @@ The following features are complete and have been moved below the open work:
   and CI.
 - [x] Zizmor security audit of GitHub Actions workflows through pre-commit and
   CI, with every action pinned to a commit SHA and Dependabot cooldowns.
+- [x] Security workflows: dependency review on pull requests, `pip-audit` for
+  the Python dependencies, a Grype scan of the built Nginx image, CodeQL for
+  JavaScript, Python, and workflows, and a weekly lychee link check.
+- [x] Dependabot updates for actions, the Docker base image, and the Python
+  test dependencies.
 - [x] Docker/Nginx container build for local and alternative hosting.
 - [x] Footer links to the deployed changelog page and the publisher homepage at
   https://kitano.nl/.
