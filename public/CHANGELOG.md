@@ -2,6 +2,11 @@
 
 De belangrijkste verbeteringen voor de planner en recepten.
 
+## 21 november 2026
+
+- Bekijk een recept direct als HTML door erop te klikken. Met de optionele kookmodus blijft het scherm wakker zolang het
+  recept zichtbaar is, als je browser dit ondersteunt.
+
 ## 17 november 2026
 
 - Je verplaatst een gepland recept nu ook met de pijlknoppen onder op de kaart, ook met het toetsenbord. Een pijlknop

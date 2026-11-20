@@ -15,7 +15,9 @@ actionlint and zizmor; run `pre-commit install` once per clone. Browser smoke te
 Planned recipes can be moved by dragging them to another slot of the same meal type, or with the arrow buttons on each
 card, which also work with the keyboard. An arrow button moves the card to the nearest earlier or later day where a drop
 would succeed. Moving onto another recipe swaps the two; other recipes in the way are moved aside. The remove button on
-a card removes the recipe from all its days and offers an undo.
+a card removes the recipe from all its days and offers an undo. Click a planned recipe or a single-recipe result to view
+its HTML recipe. The recipe dialog offers an optional cooking mode that requests a screen wake lock in supported
+browsers while the recipe is visible.
 
 Build and run with Docker Desktop:
 

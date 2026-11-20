@@ -74,6 +74,40 @@ document.addEventListener("securitypolicyviolation", (event) => {
 });
 """
 
+MOCK_WAKE_LOCK = """
+window.__wakeLockRequests = [];
+window.__wakeLockSentinels = [];
+Object.defineProperty(navigator, "wakeLock", {
+    configurable: true,
+    value: {
+        request: async (type) => {
+            window.__wakeLockRequests.push(type);
+            const listeners = [];
+            const sentinel = {
+                released: false,
+                listeners,
+                addEventListener: (name, listener) => {
+                    if (name === "release") listeners.push(listener);
+                },
+                release: () => {
+                    sentinel.released = true;
+                    listeners.forEach((listener) => listener());
+                    return Promise.resolve();
+                }
+            };
+            window.__wakeLockSentinels.push(sentinel);
+            return sentinel;
+        }
+    }
+});
+window.__simulateSystemWakeLockRelease = () => {
+    const sentinel = window.__wakeLockSentinels.at(-1);
+    if (!sentinel) return;
+    sentinel.released = true;
+    sentinel.listeners.forEach((listener) => listener());
+};
+"""
+
 
 @pytest.fixture
 def page(browser):
@@ -420,6 +454,58 @@ def test_single_recipe_pdf_downloads(page: Page, server_url: str):
     pdf = Path(download.path()).read_bytes()
     assert pdf.startswith(b"%PDF")
     assert re.findall(rb"/Type /Page\b(?!s)", pdf), "the PDF has at least one page"
+
+
+def test_cooking_mode_releases_wake_lock_when_disabled_or_recipe_closes(page: Page, server_url: str):
+    page.add_init_script(MOCK_WAKE_LOCK)
+    title = "Zalm in mosterdsaus"
+    open_planner(page, share_url(server_url, {(0, "diner"): title}), "1 maaltijdmomenten gepland.")
+    page.locator('#planner [data-plan-key="0-diner"] strong').click()
+
+    toggle = page.locator("#cooking-mode-toggle")
+    toggle.click()
+    expect(page.locator("#cooking-mode-status")).to_have_text(
+        "Kookmodus staat aan. Het scherm blijft wakker zolang deze pagina zichtbaar is."
+    )
+    assert page.evaluate("window.__wakeLockRequests") == ["screen"]
+
+    toggle.click()
+    expect(page.locator("#cooking-mode-status")).to_have_text("Kookmodus is uitgeschakeld.")
+    assert page.evaluate("window.__wakeLockSentinels[0].released")
+
+    toggle.click()
+    expect(page.locator("#cooking-mode-status")).to_contain_text("Kookmodus staat aan")
+    page.locator("#recipe-dialog-close").click()
+    expect(page.locator("#cooking-mode-status")).to_have_text("Kookmodus is uitgeschakeld.")
+    assert page.evaluate("window.__wakeLockSentinels[1].released")
+
+
+def test_cooking_mode_reacquires_wake_lock_when_page_becomes_visible(page: Page, server_url: str):
+    page.add_init_script(MOCK_WAKE_LOCK)
+    title = "Zalm in mosterdsaus"
+    open_planner(page, share_url(server_url, {(0, "diner"): title}), "1 maaltijdmomenten gepland.")
+    page.locator('#planner [data-plan-key="0-diner"] strong').click()
+    page.locator("#cooking-mode-toggle").click()
+    expect(page.locator("#cooking-mode-status")).to_contain_text("Kookmodus staat aan")
+
+    page.evaluate("window.__simulateSystemWakeLockRelease(); document.dispatchEvent(new Event('visibilitychange'))")
+    expect(page.locator("#cooking-mode-status")).to_have_text(
+        "Kookmodus staat aan. Het scherm blijft wakker zolang deze pagina zichtbaar is."
+    )
+    assert page.evaluate("window.__wakeLockRequests") == ["screen", "screen"]
+
+
+def test_cooking_mode_reports_when_wake_lock_is_unsupported(page: Page, server_url: str):
+    page.add_init_script('Object.defineProperty(navigator, "wakeLock", {configurable: true, value: undefined})')
+    title = "Zalm in mosterdsaus"
+    open_planner(page, share_url(server_url, {(0, "diner"): title}), "1 maaltijdmomenten gepland.")
+    page.locator('#planner [data-plan-key="0-diner"] strong').click()
+    page.locator("#cooking-mode-toggle").click()
+
+    expect(page.locator("#cooking-mode-status")).to_have_text(
+        "Kookmodus wordt niet ondersteund door deze browser."
+    )
+    expect(page.locator("#cooking-mode-toggle")).to_have_attribute("aria-pressed", "false")
 
 
 def test_recipe_opens_as_html_without_hijacking_buttons(page: Page, server_url: str):

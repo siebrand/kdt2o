@@ -16,7 +16,9 @@ or server-side planning state.
    using stable codes derived from recipe IDs in a shareable URL without sending
    planning data to a server. Unknown recipe codes remain visible as unresolved
    recipe slots.
-6. The browser can filter one recipe by meal and generate a single-recipe PDF.
+6. The browser can filter one recipe by meal, show recipe details as HTML, and generate a single-recipe PDF. The recipe
+   dialog can optionally request the Screen Wake Lock API while visible; it releases the lock when cooking mode is
+   turned off or the dialog closes, and reacquires it when the page becomes visible again.
 7. Recipe lists and random selection use only recipes with `approved: true`.
 8. Planned recipes can be moved by drag and drop within the same meal type. The
    dragged selection shifts by the distance between the dragged card and the
