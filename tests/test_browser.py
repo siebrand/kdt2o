@@ -443,6 +443,14 @@ def test_single_recipe_card_opens_html_but_pdf_button_downloads(page: Page, serv
     page.locator("#single-recipe-query").fill(recipe["title"])
     card = page.locator("#single-recipe-results .recipe-card", has_text=recipe["title"])
 
+    bottoms = card.evaluate("""(card) => {
+        const pdfArea = card.querySelector(".single-recipe-pdf-area");
+        const padding = parseFloat(getComputedStyle(card).paddingBottom);
+        return [Math.round(pdfArea.getBoundingClientRect().bottom),
+                Math.round(card.getBoundingClientRect().bottom - padding)];
+    }""")
+    assert abs(bottoms[0] - bottoms[1]) <= 1, "PDF action is at the bottom of the recipe card"
+
     card.locator("h3").click()
     expect(page.locator("#recipe-dialog")).to_be_visible()
     expect(page.locator("#recipe-dialog-title")).to_have_text(recipe["title"])
