@@ -43,6 +43,10 @@ const shoppingListItems = document.querySelector("#shopping-list-items");
 const notifications = document.querySelector("#notifications");
 const recipePanel = document.querySelector("#recipe-panel");
 const appVersion = document.querySelector("#app-version");
+const recipeDialog = document.querySelector("#recipe-dialog");
+const cookingModeButton = document.querySelector("#cooking-mode-toggle");
+const cookingModeStatus = document.querySelector("#cooking-mode-status");
+const cookingMode = {enabled: false, wakeLock: null, requestPending: false};
 const dragState = {sourceKey: null};
 
 function recipeIsAvailable(recipe) {
@@ -1399,6 +1403,66 @@ async function createPdf() {
     doc.save("weekplanning.pdf");
 }
 
+function updateCookingModeControls(message) {
+    if (!cookingModeButton || !cookingModeStatus) return;
+    cookingModeButton.textContent = cookingMode.enabled ? "Kookmodus uitschakelen" : "Kookmodus inschakelen";
+    cookingModeButton.setAttribute("aria-pressed", String(cookingMode.enabled));
+    if (message) cookingModeStatus.textContent = message;
+}
+
+async function acquireCookingWakeLock() {
+    if (!cookingMode.enabled || !recipeDialog?.open || document.visibilityState !== "visible"
+        || cookingMode.wakeLock || cookingMode.requestPending) return;
+    if (!navigator.wakeLock?.request) {
+        cookingMode.enabled = false;
+        updateCookingModeControls("Kookmodus wordt niet ondersteund door deze browser.");
+        return;
+    }
+
+    cookingMode.requestPending = true;
+    try {
+        const wakeLock = await navigator.wakeLock.request("screen");
+        if (!cookingMode.enabled || !recipeDialog.open || document.visibilityState !== "visible") {
+            await wakeLock.release();
+            return;
+        }
+        cookingMode.wakeLock = wakeLock;
+        updateCookingModeControls("Kookmodus staat aan. Het scherm blijft wakker zolang deze pagina zichtbaar is.");
+        wakeLock.addEventListener("release", () => {
+            if (cookingMode.wakeLock !== wakeLock) return;
+            cookingMode.wakeLock = null;
+            if (cookingMode.enabled) {
+                cookingModeStatus.textContent = document.visibilityState === "visible"
+                    ? "Kookmodus is onderbroken. Probeer opnieuw in te schakelen."
+                    : "Kookmodus wordt hervat zodra dit recept weer zichtbaar is.";
+            }
+        }, {once: true});
+    } catch (error) {
+        console.error("Could not acquire the screen wake lock.", error);
+        if (cookingMode.enabled) {
+            cookingMode.enabled = false;
+            updateCookingModeControls(error.name === "NotAllowedError"
+                ? "De browser of het apparaat heeft de schermvergrendeling geweigerd."
+                : "Kookmodus kon niet worden ingeschakeld. Probeer het opnieuw.");
+        }
+    } finally {
+        cookingMode.requestPending = false;
+        if (cookingMode.enabled && recipeDialog?.open && document.visibilityState === "visible" && !cookingMode.wakeLock) {
+            queueMicrotask(() => acquireCookingWakeLock());
+        }
+    }
+}
+
+function disableCookingMode(message = "Kookmodus is uitgeschakeld.") {
+    cookingMode.enabled = false;
+    const wakeLock = cookingMode.wakeLock;
+    cookingMode.wakeLock = null;
+    updateCookingModeControls(message);
+    if (wakeLock) {
+        wakeLock.release().catch((error) => console.error("Could not release the screen wake lock.", error));
+    }
+}
+
 function openRecipeHtml(recipe) {
     const dialog = document.querySelector("#recipe-dialog");
     if (!dialog || !recipe) return;
@@ -1579,7 +1643,27 @@ if (hasPlanner) {
     });
     downloadButton.addEventListener("click", createPdf);
     document.querySelector("#recipe-dialog-close")?.addEventListener("click", () => {
-        document.querySelector("#recipe-dialog")?.close();
+        recipeDialog?.close();
+    });
+    cookingModeButton?.addEventListener("click", () => {
+        if (cookingMode.enabled) {
+            disableCookingMode();
+            return;
+        }
+        cookingMode.enabled = true;
+        updateCookingModeControls("Kookmodus wordt ingeschakeld…");
+        void acquireCookingWakeLock();
+    });
+    recipeDialog?.addEventListener("close", () => disableCookingMode());
+    document.addEventListener("visibilitychange", () => {
+        if (!cookingMode.enabled) return;
+        if (document.visibilityState === "visible") {
+            if (cookingMode.wakeLock?.released) cookingMode.wakeLock = null;
+            cookingModeStatus.textContent = "Kookmodus wordt hervat…";
+            void acquireCookingWakeLock();
+        } else {
+            cookingModeStatus.textContent = "Kookmodus wordt hervat zodra dit recept weer zichtbaar is.";
+        }
     });
 
     fetch("recipes.json")

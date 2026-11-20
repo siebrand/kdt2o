@@ -36,6 +36,8 @@ The following features are complete and have been moved below the open work:
 - [x] Shareable menu links that restore a plan from the URL without server storage.
 - [x] Single-recipe search by meal with a distinct PDF-download area and an HTML recipe view for the rest of the card.
 - [x] Recipe details open as HTML when clicking a planned meal slot outside its buttons or drag-and-drop interaction.
+- [x] Optional cooking mode keeps the screen awake while an HTML recipe is open, when supported by the browser; it
+  releases the wake lock when disabled or the recipe closes.
 - [x] Recipe selection at most once per week, with valid empty meal slots.
 - [x] Multi-day planning with configurable `days` values and conflict checks.
 - [x] Browser-only persistence through versioned `localStorage`.
