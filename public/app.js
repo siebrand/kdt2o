@@ -490,6 +490,10 @@ function renderPlanner() {
                         false, () => removeSelection(key))
                 );
                 slot.append(actions);
+                slot.addEventListener("click", (event) => {
+                    if (event.target.closest("button") || dragState.sourceKey) return;
+                    openRecipeHtml(recipe);
+                });
             } else {
                 slot.type = "button";
                 slot.textContent = "+ Recept kiezen";
@@ -584,20 +588,22 @@ function renderSingleRecipeSearch() {
         preparationTime.className = "recipe-card-meta";
         preparationTime.textContent = recipeTimingLabel(recipe);
         const button = document.createElement("button");
+        card.className = "recipe-card single-recipe-card";
         button.type = "button";
-        button.className = "button";
-        button.style.position = "static";
-        button.style.width = "auto";
-        button.style.height = "auto";
-        button.style.padding = ".55rem .8rem";
-        button.style.fontSize = ".9rem";
-        button.style.display = "inline-block";
+        button.className = "single-recipe-pdf-button";
         button.textContent = "PDF downloaden";
-        button.addEventListener("click", () => createSingleRecipePdf(recipe));
+        button.addEventListener("click", (event) => {
+            event.stopPropagation();
+            createSingleRecipePdf(recipe);
+        });
         card.append(title, preparationTime);
         const note = recipeCardNote(recipe);
         if (note) card.append(note);
-        card.append(button);
+        const pdfArea = document.createElement("div");
+        pdfArea.className = "single-recipe-pdf-area";
+        pdfArea.append(button);
+        card.append(pdfArea);
+        card.addEventListener("click", () => openRecipeHtml(recipe));
         singleRecipeResults.append(card);
     });
 }
@@ -1393,6 +1399,59 @@ async function createPdf() {
     doc.save("weekplanning.pdf");
 }
 
+function openRecipeHtml(recipe) {
+    const dialog = document.querySelector("#recipe-dialog");
+    if (!dialog || !recipe) return;
+    document.querySelector("#recipe-dialog-title").textContent = recipe.title;
+    document.querySelector("#recipe-dialog-meta").textContent = recipeMetadataLabel(recipe);
+    const content = document.querySelector("#recipe-dialog-content");
+    content.replaceChildren();
+
+    const appendSection = (heading, items, ordered = false) => {
+        if (!items?.length) return;
+        const section = document.createElement("section");
+        section.className = "recipe-dialog-section";
+        const title = document.createElement("h3");
+        title.textContent = heading;
+        const list = document.createElement(ordered ? "ol" : "ul");
+        items.forEach((item) => {
+            const row = document.createElement("li");
+            row.textContent = String(item);
+            list.append(row);
+        });
+        section.append(title, list);
+        content.append(section);
+    };
+
+    appendSection("Ingrediënten", sortIngredientsForDisplay(recipe.ingredients || []).map(ingredientLabel));
+    (recipe.components || []).forEach((component) => {
+        const items = [];
+        if (component.availabilityNote) items.push(component.availabilityNote);
+        items.push(...sortIngredientsForDisplay(component.ingredients || []).map(ingredientLabel));
+        appendSection("Subrecept · " + component.title, items);
+    });
+    (recipe.dailyVariants || []).forEach((variant) => {
+        appendSection("Variant · " + variant.title, sortIngredientsForDisplay(variant.ingredients || []).map(ingredientLabel));
+    });
+    appendSection("Benodigdheden", recipeEquipment(recipe));
+
+    let stepNumber = 1;
+    (recipe.components || []).forEach((component) => {
+        appendSection("Bereidingswijze · " + component.title,
+            methodSteps(component.method || "").map((step) => /^Tip:/i.test(step) ? step : `${stepNumber++}. ${step}`), true);
+    });
+    if (recipe.method) appendSection("Bereidingswijze" + (recipe.components?.length ? " · Hoofdrecept" : ""),
+        methodSteps(recipe.method).map((step) => /^Tip:/i.test(step) ? step : `${stepNumber++}. ${step}`), true);
+    (recipe.dailyVariants || []).forEach((variant) => {
+        appendSection("Bereidingswijze · Variant · " + variant.title,
+            methodSteps(variant.method || "").map((step) => /^Tip:/i.test(step) ? step : `${stepNumber++}. ${step}`), true);
+    });
+    appendSection("Opmerking", recipe.notes || []);
+
+    if (typeof dialog.showModal === "function") dialog.showModal();
+    else dialog.setAttribute("open", "");
+}
+
 async function createSingleRecipePdf(recipe) {
     if (!window.jspdf?.jsPDF) {
         status.textContent = "De PDF-module kon niet worden geladen. Controleer je internetverbinding.";
@@ -1519,6 +1578,9 @@ if (hasPlanner) {
         shoppingListView.scrollIntoView({behavior: "smooth", block: "start"});
     });
     downloadButton.addEventListener("click", createPdf);
+    document.querySelector("#recipe-dialog-close")?.addEventListener("click", () => {
+        document.querySelector("#recipe-dialog")?.close();
+    });
 
     fetch("recipes.json")
         .then((response) => response.ok ? response.json() : Promise.reject(new Error("recipes")))

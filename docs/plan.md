@@ -34,7 +34,8 @@ The following features are complete and have been moved below the open work:
   the bottom of the card and accept the same moves as drag and drop: a button
   moves the card to the nearest earlier or later day where a drop succeeds.
 - [x] Shareable menu links that restore a plan from the URL without server storage.
-- [x] Single-recipe search by meal with direct PDF generation.
+- [x] Single-recipe search by meal with a distinct PDF-download area and an HTML recipe view for the rest of the card.
+- [x] Recipe details open as HTML when clicking a planned meal slot outside its buttons or drag-and-drop interaction.
 - [x] Recipe selection at most once per week, with valid empty meal slots.
 - [x] Multi-day planning with configurable `days` values and conflict checks.
 - [x] Browser-only persistence through versioned `localStorage`.

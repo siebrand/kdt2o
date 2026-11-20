@@ -9,17 +9,15 @@ order. Expected values are derived from public/recipes.json.
 from __future__ import annotations
 
 import base64
-from functools import partial
-from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
 import math
-from pathlib import Path
+import pytest
 import re
 import threading
-
-import pytest
+from functools import partial
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
 from playwright.sync_api import Page, expect, sync_playwright
-
 
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
@@ -104,7 +102,7 @@ def recipe_token(recipe_id: str) -> str:
     value = 14695981039346656037
     for byte in recipe_id.encode("utf-8"):
         value ^= byte
-        value = (value * 1099511628211) & (2**64 - 1)
+        value = (value * 1099511628211) & (2 ** 64 - 1)
     value &= (1 << 48) - 1
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
     token = ""
@@ -196,8 +194,8 @@ def test_changelog_page_loads(page: Page, server_url: str, path: str):
     entry = next(item for item in entries if item.startswith("Bij alle recepten"))
     normalized_entry = " ".join(entry.split())
     assert (
-        "Bij sommige ontbijtgerechten staat welke voorbereiding je de dag ervoor kunt doen."
-        in normalized_entry
+            "Bij sommige ontbijtgerechten staat welke voorbereiding je de dag ervoor kunt doen."
+            in normalized_entry
     )
 
 
@@ -315,6 +313,9 @@ def test_remove_needs_a_button_and_can_be_undone(page: Page, server_url: str):
     days = BY_TITLE[title]["days"]
     open_planner(page, share_url(server_url, {(0, "lunch"): title}), f"{days} maaltijdmomenten gepland.")
     page.locator('#planner [data-plan-key="0-lunch"] strong').click()
+    expect(page.locator("#recipe-dialog")).to_be_visible()
+    expect(page.locator("#recipe-dialog-title")).to_have_text(title)
+    page.locator("#recipe-dialog-close").click()
     expect(page.locator("#status")).to_have_text(f"{days} maaltijdmomenten gepland.")
 
     page.get_by_role("button", name=f"{title} verwijderen van alle dagen").first.click()
@@ -419,3 +420,35 @@ def test_single_recipe_pdf_downloads(page: Page, server_url: str):
     pdf = Path(download.path()).read_bytes()
     assert pdf.startswith(b"%PDF")
     assert re.findall(rb"/Type /Page\b(?!s)", pdf), "the PDF has at least one page"
+
+
+def test_recipe_opens_as_html_without_hijacking_buttons(page: Page, server_url: str):
+    title = "Zalm in mosterdsaus"
+    open_planner(page, share_url(server_url, {(0, "diner"): title}), "1 maaltijdmomenten gepland.")
+
+    slot = page.locator('#planner [data-plan-key="0-diner"]')
+    slot.locator("strong").click()
+    expect(page.locator("#recipe-dialog")).to_be_visible()
+    expect(page.locator("#recipe-dialog-title")).to_have_text(title)
+    expect(page.locator("#recipe-dialog-content")).to_contain_text("Ingrediënten")
+    page.locator("#recipe-dialog-close").click()
+
+    page.get_by_role("button", name=f"{title} op maandag naar een latere dag verplaatsen").click()
+    expect(page.locator("#recipe-dialog")).not_to_be_visible()
+
+
+def test_single_recipe_card_opens_html_but_pdf_button_downloads(page: Page, server_url: str):
+    recipe = BY_TITLE["Stoofvlees met knolselderij en rode kool"]
+    open_planner(page, f"{server_url}/")
+    page.locator("#single-recipe-query").fill(recipe["title"])
+    card = page.locator("#single-recipe-results .recipe-card", has_text=recipe["title"])
+
+    card.locator("h3").click()
+    expect(page.locator("#recipe-dialog")).to_be_visible()
+    expect(page.locator("#recipe-dialog-title")).to_have_text(recipe["title"])
+    page.locator("#recipe-dialog-close").click()
+
+    with page.expect_download() as download_info:
+        card.get_by_role("button", name="PDF downloaden").click()
+    assert download_info.value.suggested_filename == f"{recipe['id']}.pdf"
+    expect(page.locator("#recipe-dialog")).not_to_be_visible()
