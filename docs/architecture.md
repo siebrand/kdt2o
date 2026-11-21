@@ -8,7 +8,7 @@ or server-side planning state.
 
 1. The browser loads the reviewed `public/recipes.json` file served as a static asset.
 2. The browser fetches that JSON and renders the weekly planner as a seven-column grid on wide screens and a vertical
-   list of days on narrow screens.
+   list of days on narrow screens, where a button scrolls to the current day.
 3. The browser stores the plan in versioned `localStorage`.
 4. The browser aggregates compatible ingredients and creates the PDF with jsPDF.
    The site serves jsPDF from `public/vendor/`, a committed copy of the npm

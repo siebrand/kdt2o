@@ -18,7 +18,7 @@ would succeed. Moving onto another recipe swaps the two; other recipes in the wa
 a card removes the recipe from all its days and offers an undo. Click a planned recipe or a single-recipe result to view
 its HTML recipe. The recipe dialog offers an optional cooking mode that requests a screen wake lock in supported
 browsers while the recipe is visible. On narrower screens, the week switches to vertically stacked day sections with
-breakfast, lunch, and dinner under each day.
+breakfast, lunch, and dinner under each day, with a **Vandaag** button to jump to the current day.
 
 Build and run with Docker Desktop:
 

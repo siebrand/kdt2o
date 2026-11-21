@@ -7,6 +7,7 @@ const MESSAGES = {
     localVersion: "Lokale versie",
     versionUnavailable: "Versie onbekend",
     dragHint: "Sleep om te wisselen binnen hetzelfde maaltijdtype",
+    today: "Vandaag",
     moveEarlier: (title, day) => `${title} op ${day} naar een eerdere dag verplaatsen`,
     moveLater: (title, day) => `${title} op ${day} naar een latere dag verplaatsen`,
     removeRecipe: (title) => `${title} verwijderen`,
@@ -27,6 +28,8 @@ const state = {
 };
 
 const planner = document.querySelector("#planner");
+const todayButton = document.querySelector("#jump-to-today");
+if (todayButton) todayButton.textContent = MESSAGES.today;
 const options = document.querySelector("#recipe-options");
 const status = document.querySelector("#status");
 const search = document.querySelector("#search");
@@ -1656,6 +1659,10 @@ if (hasPlanner) {
         shoppingListView.scrollIntoView({behavior: "smooth", block: "start"});
     });
     downloadButton.addEventListener("click", createPdf);
+    todayButton?.addEventListener("click", () => {
+        const todayIndex = (new Date().getDay() + 6) % DAYS.length;
+        planner.querySelectorAll(".planner-day")[todayIndex].scrollIntoView({behavior: "smooth", block: "start"});
+    });
     document.querySelector("#recipe-dialog-close")?.addEventListener("click", () => {
         recipeDialog?.close();
     });

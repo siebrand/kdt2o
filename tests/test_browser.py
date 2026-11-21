@@ -212,6 +212,11 @@ def test_planner_stacks_days_on_narrow_screens_and_preserves_week_grid(page: Pag
     assert mobile["scrollWidth"] <= mobile["width"]
     assert len(mobile["days"]) == 7
     assert all(day["meals"] == ["Ontbijt", "Lunch", "Diner"] for day in mobile["days"])
+    today_button = page.get_by_role("button", name="Vandaag")
+    expect(today_button).to_be_visible()
+    today_index = (page.evaluate("new Date().getDay()") + 6) % 7
+    today_button.click()
+    expect(page.locator("#planner .planner-day").nth(today_index)).to_be_in_viewport()
     long_title = page.locator('#planner [data-plan-key="0-ontbijt"] strong').evaluate("""title => {
         title.textContent = "langereceptnaamzonderspatiesdieandersbuitenhetvakloopt";
         return {
@@ -224,6 +229,7 @@ def test_planner_stacks_days_on_narrow_screens_and_preserves_week_grid(page: Pag
     assert long_title["scrollWidth"] <= long_title["width"]
 
     page.set_viewport_size({"width": 1280, "height": 900})
+    expect(today_button).not_to_be_visible()
     columns = page.evaluate("""() => [...document.querySelectorAll(".planner-day")].map((group) => {
         const header = group.querySelector(".day").getBoundingClientRect();
         const breakfast = group.querySelector('[data-meal="ontbijt"]').getBoundingClientRect();
