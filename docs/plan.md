@@ -75,8 +75,9 @@ The following features are complete and have been moved below the open work:
   prefixed with the ISO commit date and disambiguated by commit count and SHA.
 - [x] Display the deployed CalVer ID in every public page footer; deployment and
   release workflows stamp the checked-out commit version into the static site.
-- [x] Draft GitHub releases with Dutch notes sourced from the canonical changelog
-  and an SPDX SBOM for the built Nginx image.
+- [x] Automatically publish a GitHub Release for each newly pushed CalVer tag,
+  with Dutch notes from the canonical changelog and an SPDX SBOM for the built Nginx image; existing tags are not
+  backfilled.
 - [x] Version-validated manual rollback of GitHub Pages to a tagged commit.
 - [x] Actionlint validation of GitHub Actions workflows through pre-commit
   and CI.

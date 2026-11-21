@@ -43,11 +43,10 @@ of commits reachable from it and the full SHA make versions
 unique and lexically sortable by date, count, and SHA. This is CalVer, not SemVer. The version workflow backfills
 history and tags new commits automatically.
 
-To prepare a release, run **Create release draft** from GitHub Actions and enter a version tag. The workflow validates
-the tag, builds the Docker image, generates an SPDX SBOM for that image, and creates a draft GitHub Release. The SBOM
-covers the container contents, including the jsPDF copy in `public/vendor/`.
-Release notes are generated from the matching date section of `public/CHANGELOG.md`, the canonical changelog. Review the
-draft and publish it when ready. The deployed CalVer ID appears in every page footer; local builds show
+Every newly pushed CalVer tag automatically creates a published GitHub Release with notes from the matching date
+section of `public/CHANGELOG.md` and an SPDX SBOM for the built Docker image. The SBOM covers the container contents,
+including the jsPDF copy in `public/vendor/`. Existing tags are not backfilled. The deployed CalVer ID appears in every
+page footer; local builds show
 `Lokale versie`.
 
 To roll back GitHub Pages, run **Deploy GitHub Pages** from Actions and enter a previous version tag. The workflow

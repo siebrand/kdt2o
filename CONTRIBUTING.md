@@ -115,7 +115,8 @@ workflow; put it in a file that Dependabot reads.
 2. Keep changes small and explain the user-visible impact.
 3. Keep all user-visible text, PDF text, and errors in Dutch.
 4. Keep code, commits, branches, issues, pull requests, and developer documentation in English.
-5. Run the relevant validation, such as the pre-commit hooks and the Docker build, and include the results in the pull request.
+5. Run the relevant validation, such as the pre-commit hooks and the Docker build, and include the results in the pull
+   request.
 6. Open a pull request against `main`.
 
 ## Version tags, releases, and rollback
@@ -124,11 +125,12 @@ The **Version commits** workflow creates a deterministic, date-prefixed CalVer t
 `main`. Tags use the commit's ISO committer date, a zero-padded reachable-commit count, and the full commit SHA; do not
 create or move these tags manually.
 
-To prepare a release, run **Create release draft** from GitHub Actions and enter the tag to release. It verifies the
-version, builds the container, generates an SPDX SBOM, and creates a draft with notes sourced from the matching date
-section of `public/CHANGELOG.md`. Review the notes and SBOM, then publish the draft on GitHub. The workflows require
-`GITHUB_TOKEN` to have `contents: write` permission. Pages and release workflows stamp the CalVer into
-`public/version.txt` before publishing it; the deployed identifier appears in every page footer. Local builds show
+Every newly pushed CalVer tag automatically creates and publishes a GitHub Release. The workflow verifies the tag,
+builds the container, generates an SPDX SBOM, and creates notes from the matching date section of
+`public/CHANGELOG.md`. The release workflow requires `contents: write`; the version-tag workflow uses `WORKFLOW_PAT` so
+its tag pushes trigger the release workflow. Existing tags are not backfilled. Pages and release workflows stamp the
+CalVer into `public/version.txt` before publishing it; the deployed identifier appears in every page footer. Local
+builds show
 “Lokale versie”.
 
 To roll back the Pages deployment, run **Deploy GitHub Pages** with a previous version tag. The workflow validates the

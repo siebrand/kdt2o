@@ -1,29 +1,26 @@
-name: Create release draft
+name: Publish release
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: Version tag to prepare as a draft release
-        required: true
-        type: string
+  push:
+    tags:
+      - '2*.*-*'
 
 permissions:
   contents: write
 
 jobs:
-  draft:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: ${{ inputs.version }}
+          ref: ${{ github.ref }}
           fetch-depth: 0
           persist-credentials: false
       - name: Verify version tag
         id: version
         env:
-          VERSION: ${{ inputs.version }}
+          VERSION: ${{ github.ref_name }}
         run: |
           python scripts/release.py verify --version "$VERSION"
           echo "value=$VERSION" >> "$GITHUB_OUTPUT"
@@ -31,11 +28,11 @@ jobs:
         run: python scripts/release.py version > public/version.txt
       - name: Generate release notes from the canonical changelog
         env:
-          VERSION: ${{ inputs.version }}
+          VERSION: ${{ github.ref_name }}
         run: python scripts/release.py notes --version "$VERSION" > release-notes.md
       - name: Build container for the release
         env:
-          VERSION: ${{ inputs.version }}
+          VERSION: ${{ github.ref_name }}
         run: docker build --tag "kitano-meal-planner:$VERSION" .
       - name: Generate SPDX SBOM for the container
         uses: anchore/sbom-action@66cbf4bc1f1c0d2edc94016e65bc221b6bb0ad6c
@@ -46,10 +43,10 @@ jobs:
           syft-version: v1.57.2
           upload-artifact: "false"
           upload-release-assets: "false"
-      - name: Create draft GitHub release
+      - name: Create and publish GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
-          VERSION: ${{ inputs.version }}
+          VERSION: ${{ github.ref_name }}
         run: >-
-          gh release create "$VERSION" --draft --verify-tag
+          gh release create "$VERSION" --verify-tag
           --title "Versie $VERSION" --notes-file release-notes.md sbom.spdx.json

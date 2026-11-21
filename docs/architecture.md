@@ -92,13 +92,13 @@ produces unique, lexically sortable version tags without a mutable version file.
 The **Version commits** workflow tags every commit reachable from `main`,
 including untagged history, and tags new commits automatically.
 
-The **Create release draft** workflow checks out a selected version tag, validates
-it against the commit, builds the Nginx image, generates an SPDX SBOM for that
-image with Syft, and creates a draft GitHub Release. The SBOM covers the
-container contents, including the jsPDF copy in `public/vendor/`. Release notes
-are generated from the matching date section of the single canonical
-`public/CHANGELOG.md`; there is no second checked-in release-notes source. A
-maintainer reviews and publishes the draft.
+The **Publish release** workflow runs for each newly pushed CalVer tag. It
+validates the tag, builds the Nginx image, generates an SPDX SBOM for that image
+with Syft, and publishes a GitHub Release with the SBOM asset. Release notes are
+generated from the matching date section of the single canonical
+`public/CHANGELOG.md`; there is no second checked-in release-notes source.
+Existing tags are not backfilled. The version-tag workflow pushes tags with
+`WORKFLOW_PAT` so these pushes trigger the release workflow.
 
 GitHub Pages remains deployed from `main` on pushes. Its manual dispatch accepts
 a version tag, validates it with the same version script, and deploys that
