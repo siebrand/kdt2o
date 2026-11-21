@@ -212,6 +212,16 @@ def test_planner_stacks_days_on_narrow_screens_and_preserves_week_grid(page: Pag
     assert mobile["scrollWidth"] <= mobile["width"]
     assert len(mobile["days"]) == 7
     assert all(day["meals"] == ["Ontbijt", "Lunch", "Diner"] for day in mobile["days"])
+    long_title = page.locator('#planner [data-plan-key="0-ontbijt"] strong').evaluate("""title => {
+        title.textContent = "langereceptnaamzonderspatiesdieandersbuitenhetvakloopt";
+        return {
+            hyphens: getComputedStyle(title).hyphens,
+            width: title.clientWidth,
+            scrollWidth: title.scrollWidth
+        };
+    }""")
+    assert long_title["hyphens"] == "auto"
+    assert long_title["scrollWidth"] <= long_title["width"]
 
     page.set_viewport_size({"width": 1280, "height": 900})
     columns = page.evaluate("""() => [...document.querySelectorAll(".planner-day")].map((group) => {
