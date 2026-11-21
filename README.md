@@ -17,7 +17,8 @@ card, which also work with the keyboard. An arrow button moves the card to the n
 would succeed. Moving onto another recipe swaps the two; other recipes in the way are moved aside. The remove button on
 a card removes the recipe from all its days and offers an undo. Click a planned recipe or a single-recipe result to view
 its HTML recipe. The recipe dialog offers an optional cooking mode that requests a screen wake lock in supported
-browsers while the recipe is visible.
+browsers while the recipe is visible. On narrower screens, the week switches to vertically stacked day sections with
+breakfast, lunch, and dinner under each day.
 
 Build and run with Docker Desktop:
 

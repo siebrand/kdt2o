@@ -416,18 +416,31 @@ function renderPlanner() {
         className: "planner-cell day",
         textContent: "Maaltijd"
     }));
-    DAYS.forEach((day) => planner.append(Object.assign(document.createElement("div"), {
-        className: "planner-cell day",
-        textContent: day
+    MEALS.forEach((meal) => planner.append(Object.assign(document.createElement("div"), {
+        className: "planner-cell meal-label",
+        textContent: meal[0].toUpperCase() + meal.slice(1)
     })));
-    MEALS.forEach((meal) => {
-        planner.append(Object.assign(document.createElement("div"), {
-            className: "planner-cell meal-label",
-            textContent: meal[0].toUpperCase() + meal.slice(1)
+
+    DAYS.forEach((day, dayIndex) => {
+        const dayGroup = document.createElement("div");
+        dayGroup.className = "planner-day";
+        dayGroup.setAttribute("role", "group");
+        dayGroup.setAttribute("aria-label", day);
+        dayGroup.append(Object.assign(document.createElement("div"), {
+            className: "planner-cell day",
+            textContent: day
         }));
-        DAYS.forEach((_, dayIndex) => {
+
+        MEALS.forEach((meal) => {
             const cell = document.createElement("div");
             cell.className = "planner-cell";
+            cell.dataset.meal = meal;
+            cell.setAttribute("role", "group");
+            cell.setAttribute("aria-label", `${meal[0].toUpperCase() + meal.slice(1)} ${day}`);
+            const mealLabel = document.createElement("span");
+            mealLabel.className = "planner-meal-name";
+            mealLabel.textContent = meal[0].toUpperCase() + meal.slice(1);
+            cell.append(mealLabel);
             cell.addEventListener("dragover", (event) => {
                 if (dragState.sourceKey && planKeyMeal(dragState.sourceKey) === meal) {
                     event.preventDefault();
@@ -508,8 +521,9 @@ function renderPlanner() {
                 });
             }
             cell.append(slot);
-            planner.append(cell);
+            dayGroup.append(cell);
         });
+        planner.append(dayGroup);
     });
 }
 

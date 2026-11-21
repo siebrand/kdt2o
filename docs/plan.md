@@ -25,7 +25,7 @@ original recipes are kept outside the repository.
 
 The following features are complete and have been moved below the open work:
 
-- [x] Seven-day breakfast, lunch, and dinner planner.
+- [x] Seven-day breakfast, lunch, and dinner planner, displayed as stacked day sections on narrow screens.
 - [x] One-click random filling of empty meal slots, including multi-day rules.
 - [x] Drag-and-drop moving and swapping of planned recipes within the same meal
   type; multi-day recipes move as a whole and blocking recipes are moved aside.

@@ -6,6 +6,7 @@ De belangrijkste verbeteringen voor de planner en recepten.
 
 - Bekijk een recept direct als HTML door erop te klikken. Met de optionele kookmodus blijft het scherm wakker zolang het
   recept zichtbaar is, als je browser dit ondersteunt.
+- Op een smal scherm staan de dagen onder elkaar, met ontbijt, lunch en diner bij elke dag.
 
 ## 17 november 2026
 

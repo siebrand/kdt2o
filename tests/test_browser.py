@@ -185,6 +185,45 @@ def test_planner_shows_only_approved_recipes(page: Page, server_url: str, path: 
     expect(page.locator("#single-recipe-results .recipe-card")).to_have_count(approved)
 
 
+def test_planner_stacks_days_on_narrow_screens_and_preserves_week_grid(page: Page, server_url: str):
+    page.set_viewport_size({"width": 390, "height": 844})
+    plan = {
+        (0, "ontbijt"): "Groentemuffins",
+        (0, "lunch"): "Linzensoep",
+        (0, "diner"): "Zalm in mosterdsaus",
+        (1, "diner"): "Viscurry met sperziebonen",
+    }
+    meal_count = sum(len(planned_days(BY_TITLE[title], start_day)) for (start_day, _), title in plan.items())
+    open_planner(page, share_url(server_url, plan), f"{meal_count} maaltijdmomenten gepland.")
+
+    mobile = page.evaluate("""() => {
+        const planner = document.querySelector("#planner");
+        const groups = [...planner.querySelectorAll(".planner-day")];
+        return {
+            width: planner.clientWidth,
+            scrollWidth: planner.scrollWidth,
+            days: groups.map((group) => ({
+                name: group.querySelector(".day").textContent,
+                meals: [...group.querySelectorAll(".planner-cell[data-meal]")]
+                    .map((cell) => cell.querySelector(".planner-meal-name").textContent)
+            }))
+        };
+    }""")
+    assert mobile["scrollWidth"] <= mobile["width"]
+    assert len(mobile["days"]) == 7
+    assert all(day["meals"] == ["Ontbijt", "Lunch", "Diner"] for day in mobile["days"])
+
+    page.set_viewport_size({"width": 1280, "height": 900})
+    columns = page.evaluate("""() => [...document.querySelectorAll(".planner-day")].map((group) => {
+        const header = group.querySelector(".day").getBoundingClientRect();
+        const breakfast = group.querySelector('[data-meal="ontbijt"]').getBoundingClientRect();
+        return [header.left, breakfast.left, breakfast.top];
+    })""")
+    assert all(abs(header_left - meal_left) <= 1 for header_left, meal_left, _ in columns)
+    assert all(columns[index][0] < columns[index + 1][0] for index in range(6))
+    assert len({round(column[2]) for column in columns}) == 1
+
+
 @pytest.mark.parametrize("path", ["", BASE_PATH])
 def test_app_displays_local_version(page: Page, server_url: str, path: str):
     open_planner(page, f"{server_url}{path}/")
@@ -212,6 +251,7 @@ def test_changelog_page_loads(page: Page, server_url: str, path: str):
     expect(page.locator("#changelog-content")).to_contain_text(
         "De belangrijkste verbeteringen voor de planner en recepten.")
     assert page.locator("#changelog-content h2").all_inner_texts() == [
+        "21 november 2026",
         "17 november 2026",
         "16 november 2026",
         "13 november 2026",
