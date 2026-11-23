@@ -1704,7 +1704,8 @@ if (hasPlanner) {
         }
     });
 
-    fetch("recipes.json")
+    // Revalidate, so a cached recipes.json never outlives a deployment of new code.
+    fetch("recipes.json", {cache: "no-cache"})
         .then((response) => response.ok ? response.json() : Promise.reject(new Error("recipes")))
         .then((recipes) => {
             state.recipes = shuffleRecipes(attachSharedRecipeComponents(recipes).map(addPreparationTime));

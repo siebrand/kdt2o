@@ -61,6 +61,9 @@ jobs:
             source_dir=public
             python scripts/release.py version > public/version.txt
           fi
+          # Give every script and stylesheet URL the version, so browsers do
+          # not combine cached files of the previous deployment with new ones.
+          python scripts/stamp_assets.py "$source_dir"
           echo "path=$source_dir" >> "$GITHUB_OUTPUT"
 
       - name: Configure Pages

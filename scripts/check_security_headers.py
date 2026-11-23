@@ -30,10 +30,18 @@ PATHS = [
     "/recipes.json",
     "/CHANGELOG.md",
     "/version.txt",
+    "/favicon.svg",
 ]
-# Paths whose Cache-Control must have this exact value.
+# Paths whose Cache-Control must have this exact value. Pages, code, and data
+# are revalidated on every use, so a new page never runs with an old script.
 CACHE_CONTROL = {
+    "/": "no-cache",
+    "/index.html": "no-cache",
+    "/app.js": "no-cache",
+    "/recipe-parser.js": "no-cache",
+    "/styles.css": "no-cache",
     "/recipes.json": "no-cache",
+    "/favicon.svg": "public, max-age=86400",
 }
 # Text assets that must be compressed for clients that accept gzip.
 COMPRESSED = [

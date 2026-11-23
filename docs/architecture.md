@@ -56,9 +56,15 @@ sends it with the other security headers on every response. GitHub Pages
 cannot send custom headers, so every page also declares the CSP, without
 `frame-ancestors`, and the referrer policy in `<meta>` elements.
 
-Nginx compresses the HTML, JavaScript, CSS, and JSON with gzip. It serves
-`recipes.json` with `Cache-Control: no-cache`, so browsers revalidate it with
-its ETag on every visit and download it again only after a change.
+Nginx compresses the HTML, JavaScript, CSS, and JSON with gzip. It serves the
+pages, scripts, styles, and `recipes.json` with `Cache-Control: no-cache`, so
+browsers revalidate them with their ETag on every visit and download a file
+again only after a change; images may be cached for a day. GitHub Pages lets
+browsers cache every file for some minutes and cannot be configured, so the
+Pages deployment runs `scripts/stamp_assets.py`, which adds `?v=<CalVer>` to
+every local script and stylesheet URL. A new deployment therefore never runs
+with cached scripts of the previous one. The pages in the repository carry no
+version query, and the application fetches `recipes.json` with revalidation.
 
 GitHub Pages and the Docker image serve the static files in `public/` directly.
 The canonical changelog is `public/CHANGELOG.md`; `public/changelog.html` renders
