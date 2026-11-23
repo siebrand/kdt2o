@@ -5,6 +5,8 @@ De belangrijkste verbeteringen voor de planner en recepten.
 ## 23 november 2026
 
 - In een recept heeft elke stap van de bereidingswijze nu één nummer in plaats van twee.
+- De boodschappenlijst toont nu de juiste totale hoeveelheid als recepten een deel van een product gebruiken. Eerder
+  stond er soms 1 komkommer op de lijst terwijl je er 2 nodig had.
 
 ## 21 november 2026
 

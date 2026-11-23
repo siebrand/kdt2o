@@ -1035,13 +1035,14 @@ function sortIngredientsForDisplay(ingredients) {
     return [...ingredients].sort((a, b) => Number(Boolean(a.optional)) - Number(Boolean(b.optional)));
 }
 
+// The item is a shopping-list total from aggregateIngredients(), which is normalized already. Normalizing it again
+// would apply rules for the raw text of the first recipe that added it, such as "halve komkommer", to the total.
 function formatIngredientLabel(item, includeOptionalPrefix = true) {
-    const normalized = normalizeShoppingIngredient(item);
-    const displayUnit = formatIngredientUnit(normalized.unit, normalized.amount);
-    const amount = normalized.amount == null ? "" : formatIngredientAmount(normalized.amount) + (displayUnit ? " " + displayUnit : "");
-    const range = parseAmountRange(normalized.amount);
-    const displayName = normalized.name === "ei" && (!range || range.min !== 1 || range.max !== 1) ? "eieren" : normalized.name;
-    return (includeOptionalPrefix && normalized.optional ? "optioneel: " : "") + amount + (amount ? " " : "") + displayName;
+    const displayUnit = formatIngredientUnit(item.unit, item.amount);
+    const amount = item.amount == null ? "" : formatIngredientAmount(item.amount) + (displayUnit ? " " + displayUnit : "");
+    const range = parseAmountRange(item.amount);
+    const displayName = item.name === "ei" && (!range || range.min !== 1 || range.max !== 1) ? "eieren" : item.name;
+    return (includeOptionalPrefix && item.optional ? "optioneel: " : "") + amount + (amount ? " " : "") + displayName;
 }
 
 function ingredientLabel(item, includeOptionalPrefix = true) {

@@ -466,6 +466,18 @@ def test_mentioning_granola_does_not_add_a_granola_batch(page: Page, server_url:
             assert ingredient["name"] not in items
 
 
+def test_shopping_list_shows_the_total_whatever_the_recipe_order(page: Page, server_url: str):
+    # "halve komkommer" comes first. The list once normalized the total again from that text and showed half a
+    # cucumber, rounded up to 1, instead of the total of 0.5 + 1 + 0.2.
+    titles = {
+        (0, "ontbijt"): "Notenbrood met roomkaas en zalm",
+        (0, "lunch"): "Griekse salade",
+        (1, "ontbijt"): "Omelet met geelwortel",
+    }
+    open_planner(page, share_url(server_url, titles), "3 maaltijdmomenten gepland.")
+    assert [item for item in shopping_list(page) if item.endswith("komkommer")] == ["2 stuk komkommer"]
+
+
 def test_recipe_subrecipe_ingredients_are_counted_once(page: Page, server_url: str):
     title = "Pesto kip met snijbonen en tuinerwtjes"
     open_planner(page, share_url(server_url, {(0, "diner"): title}), "1 maaltijdmomenten gepland.")
