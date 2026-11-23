@@ -5,8 +5,8 @@ De belangrijkste verbeteringen voor de planner en recepten.
 ## 23 november 2026
 
 - In een recept heeft elke stap van de bereidingswijze nu één nummer in plaats van twee.
-- De boodschappenlijst toont nu de juiste totale hoeveelheid als recepten een deel van een product gebruiken. Eerder
-  stond er soms 1 komkommer op de lijst terwijl je er 2 nodig had.
+- De boodschappenlijst geeft nu de juiste totale hoeveelheid weer als recepten een deel van een product gebruiken.
+  Eerder stond er soms 1 komkommer op de lijst terwijl je er 2 nodig had.
 - Heeft het ene recept een ingrediënt nodig en is het in een ander recept optioneel, dan staat de benodigde hoeveelheid
   nu in de gewone lijst en de extra hoeveelheid onder **Optioneel**. Eerder kon een benodigd ingrediënt helemaal onder
   **Optioneel** staan.
