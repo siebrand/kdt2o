@@ -28,8 +28,8 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 - `public/version.txt`: the version marker. The deployment and release
   workflows write the CalVer version into this file.
 - `scripts/stamp_assets.py`: adds the CalVer version to the script and
-  stylesheet URLs of the pages during the Pages deployment. Do not add a
-  version to these URLs manually.
+  stylesheet URLs of the pages and to the module imports of the scripts during
+  the Pages deployment. Do not add a version to these URLs manually.
 - `package.json`, `package-lock.json`, `public/vendor/`: the browser
   libraries. Do not load code from other hosts. After a version change, run
   `npm ci --ignore-scripts` and `python3 scripts/vendor_dependencies.py`.

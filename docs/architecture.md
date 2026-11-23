@@ -66,9 +66,11 @@ browsers revalidate them with their ETag on every visit and download a file
 again only after a change; images may be cached for a day. GitHub Pages lets
 browsers cache every file for some minutes and cannot be configured, so the
 Pages deployment runs `scripts/stamp_assets.py`, which adds `?v=<CalVer>` to
-every local script and stylesheet URL. A new deployment therefore never runs
-with cached scripts of the previous one. The pages in the repository carry no
-version query, and the application fetches `recipes.json` with revalidation.
+every local script and stylesheet URL and to every relative module import. A
+new deployment therefore never runs with cached scripts of the previous one,
+and every import of a module has the same URL, so the browser loads each module
+once. The files in the repository carry no version query, and the application
+fetches `recipes.json` with revalidation.
 
 GitHub Pages and the Docker image serve the static files in `public/` directly.
 The canonical changelog is `public/CHANGELOG.md`; `public/changelog.html` renders

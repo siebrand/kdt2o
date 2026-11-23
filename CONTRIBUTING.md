@@ -134,7 +134,8 @@ builds the container, generates an SPDX SBOM, and creates notes from the matchin
 its tag pushes trigger the release workflow. Existing tags are not backfilled. Pages and release workflows stamp the
 CalVer into `public/version.txt` before publishing it; the deployed identifier appears in every page footer. Local
 builds show “Lokale versie”. The Pages workflow then runs `scripts/stamp_assets.py`, which adds `?v=<CalVer>` to every
-local script and stylesheet URL in the pages. Do not add version queries to the pages yourself; a test rejects them.
+local script and stylesheet URL in the pages and to every relative module import in `public/*.js`. Do not add version
+queries yourself; a test rejects them.
 
 To roll back the Pages deployment, run **Deploy GitHub Pages** with a previous version tag. The workflow validates the
 version and deploys that commit's `public/` directory. Run it without a version on `main`, or push `main`, to return to

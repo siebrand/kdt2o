@@ -10,12 +10,21 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "scripts" / "stamp_assets.py"
 VERSION = "2026-11-23.000000000412-" + "b" * 40
 ASSET_URLS = re.compile(r'<(?:script|link)\b[^>]*\b(?:src|href)="([^"]*)"', re.IGNORECASE)
+MODULE_IMPORTS = re.compile(r"""\b(?:from|import)\s*\(?\s*["'](\.{1,2}/[^"']+)["']""")
+MODULE = """import {a} from "./plan.js";
+import "./side.js";
+export {b} from '../shared/other.js?v=old';
+const lazy = () => import("./lazy.js");
+fetch("./CHANGELOG.md");
+"""
 
 
 def copy_site(target: Path, version: str | None) -> Path:
     target.mkdir()
     for page in (ROOT / "public").glob("*.html"):
         shutil.copy(page, target / page.name)
+    for script in (ROOT / "public").glob("*.js"):
+        shutil.copy(script, target / script.name)
     if version is not None:
         (target / "version.txt").write_text(version + "\n", encoding="utf-8")
     return target
@@ -29,6 +38,26 @@ def test_repository_pages_have_no_manual_asset_versions():
     for page in (ROOT / "public").glob("*.html"):
         for url in ASSET_URLS.findall(page.read_text(encoding="utf-8")):
             assert "?" not in url, f"{page.name}: {url} has a version; the deployment adds it"
+
+
+def test_repository_scripts_have_no_manual_import_versions():
+    for script in (ROOT / "public").glob("*.js"):
+        for specifier in MODULE_IMPORTS.findall(script.read_text(encoding="utf-8")):
+            assert "?" not in specifier, f"{script.name}: {specifier} has a version; the deployment adds it"
+
+
+def test_every_module_import_gets_the_deployed_version(tmp_path: Path):
+    site = copy_site(tmp_path / "site", VERSION)
+    (site / "module.js").write_text(MODULE, encoding="utf-8")
+    assert stamp(site).returncode == 0
+    stamped = (site / "module.js").read_text(encoding="utf-8")
+    assert MODULE_IMPORTS.findall(stamped) == [
+        f"./plan.js?v={VERSION}", f"./side.js?v={VERSION}", f"../shared/other.js?v={VERSION}", f"./lazy.js?v={VERSION}",
+    ]
+    assert 'fetch("./CHANGELOG.md")' in stamped
+    for script in site.glob("*.js"):
+        for specifier in MODULE_IMPORTS.findall(script.read_text(encoding="utf-8")):
+            assert specifier.endswith(f"?v={VERSION}"), f"{script.name}: {specifier}"
 
 
 def test_every_local_asset_gets_the_deployed_version(tmp_path: Path):

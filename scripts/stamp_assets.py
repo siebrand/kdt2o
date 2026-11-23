@@ -6,9 +6,11 @@ Usage: stamp_assets.py SITE_DIR
 GitHub Pages lets browsers cache every file for some minutes and cannot be
 configured. The deployment workflow writes the CalVer version to
 SITE_DIR/version.txt and then runs this script. It sets the query string
-?v=<version> on every local script and stylesheet URL in SITE_DIR/*.html, so a
-new deployment loads a matching set of assets instead of a mix of cached and
-new files. The pages in the repository carry no version query.
+?v=<version> on every local script and stylesheet URL in SITE_DIR/*.html and
+on every relative module import in SITE_DIR/*.js, so a new deployment loads a
+matching set of assets instead of a mix of cached and new files. All imports of
+a module get the same URL, so the browser loads each module once. The files in
+the repository carry no version query.
 """
 
 from __future__ import annotations
@@ -22,6 +24,8 @@ from urllib.parse import quote
 ASSET_TAG = re.compile(r"<(?:script|link)\b[^>]*>", re.IGNORECASE)
 ASSET_URL = re.compile(r'\b(src|href)="([^"]*)"')
 NOT_LOCAL = re.compile(r"^(?:[a-z][a-z0-9+.-]*:|//|#)", re.IGNORECASE)
+# import ... from "./x.js", export ... from "./x.js", import "./x.js", and import("./x.js").
+MODULE_IMPORT = re.compile(r"""(\b(?:from|import)\s*\(?\s*)(["'])(\.{1,2}/[^"'?]+\.js)(?:\?[^"']*)?\2""")
 
 
 def stamp_url(url: str, version: str) -> str:
@@ -38,6 +42,13 @@ def stamp_page(html: str, version: str) -> str:
     return ASSET_TAG.sub(stamp_tag, html)
 
 
+def stamp_script(script: str, version: str) -> str:
+    return MODULE_IMPORT.sub(
+        lambda match: f"{match.group(1)}{match.group(2)}{match.group(3)}?v={quote(version, safe='')}{match.group(2)}",
+        script,
+    )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("site_dir", type=Path, help="the directory that is deployed, for example public")
@@ -51,7 +62,10 @@ def main() -> int:
     pages = sorted(args.site_dir.glob("*.html"))
     for page in pages:
         page.write_text(stamp_page(page.read_text(encoding="utf-8"), version), encoding="utf-8")
-    print(f"Stamped the asset URLs of {len(pages)} pages with version {version}.")
+    scripts = sorted(args.site_dir.glob("*.js"))
+    for script in scripts:
+        script.write_text(stamp_script(script.read_text(encoding="utf-8"), version), encoding="utf-8")
+    print(f"Stamped the asset URLs of {len(pages)} pages and the imports of {len(scripts)} scripts with version {version}.")
     return 0
 
 
