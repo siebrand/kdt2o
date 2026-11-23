@@ -874,122 +874,96 @@ function copyShoppingIngredient(ingredient, normalizedUnit) {
     };
 }
 
+// A recipe's subrecipe is shared when the recipe's own ingredients refer to it with componentId, such as
+// lijnzaadcrackers, granola, and notenbrood. The shopping list prepares a shared subrecipe once per week. If the
+// referring ingredients use the subrecipe's yield unit, it makes enough batches for all of them; else one batch.
+function sharedComponentIds(recipe) {
+    return new Set([
+        ...(recipe?.ingredients || []),
+        ...(recipe?.dailyVariants || []).flatMap((variant) => variant.ingredients || [])
+    ].map((ingredient) => ingredient.componentId).filter(Boolean));
+}
+
+function sharedComponentBatches(component, references) {
+    const yieldUnit = normalizeShoppingUnit(component.yieldUnit || "stuk");
+    let count = 0;
+    for (const ingredient of references) {
+        const parsed = parseAmountRange(ingredient.amount);
+        if (!parsed || normalizeShoppingUnit(ingredient.unit || "stuk") !== yieldUnit) return 1;
+        count += parsed.max;
+    }
+    return Math.max(1, Math.ceil(count / (component.yield || 1)));
+}
+
 function aggregateIngredients() {
     const totals = new Map();
     const includedRecipeIds = new Set();
-    let flaxCrackerCount = 0;
-    let flaxCrackerCountUnknown = false;
-    let flaxCrackerComponent = null;
-    let granolaComponent = null;
-    let nutBreadComponent = null;
+    const sharedComponents = new Map();
     state.shoppingWarnings = [];
-    Object.values(state.plan).forEach((item) => {
-        if (includedRecipeIds.has(item.recipeId)) return;
-        includedRecipeIds.add(item.recipeId);
-        const recipe = recipeById(item.recipeId);
-        const ingredients = [
-            ...(recipe?.ingredients || []),
-            ...(recipe?.dailyVariants || []).flatMap((variant) => variant.ingredients || []),
-            ...(recipe?.components || [])
-                .filter((component) => component.includeInShoppingList !== false &&
-                    !["lijnzaadcrackers", "granola", "notenbrood"].includes(component.id))
-                .flatMap((component) => component.ingredients || [])
-        ];
-        const component = recipe?.components?.find((item) => item.id === "lijnzaadcrackers");
-        if (component) flaxCrackerComponent ||= component;
-        const recipeGranolaComponent = recipe?.components?.find((item) => item.id === "granola");
-        if (recipeGranolaComponent) granolaComponent ||= recipeGranolaComponent;
-        const recipeNutBreadComponent = recipe?.components?.find((item) => item.id === "notenbrood");
-        if (recipeNutBreadComponent) nutBreadComponent ||= recipeNutBreadComponent;
-        ingredients.forEach((ingredient) => {
-            const isFlaxCracker = /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(ingredient.raw || "")) ||
-                /lijnzaad\s*cracker(?:s|\(s\))?/i.test(String(ingredient.name || ""));
-            if (isFlaxCracker) {
-                const amount = ingredient.amount;
-                const parsed = parseAmountRange(amount);
-                if (parsed) flaxCrackerCount += parsed.max;
-                else flaxCrackerCountUnknown = true;
-            }
-            if (ingredient.componentId) return;
-            const shoppingIngredient = normalizeShoppingIngredient(ingredient);
-            if (shoppingIngredient.name === "water" || SHOPPING_LIST_EXCLUDED_NAMES.has(shoppingIngredient.name)) return;
-            const key = normalizeShoppingName(shoppingIngredient.name);
-            const unit = normalizeShoppingUnit(shoppingIngredient.unit);
-            const mapKey = key + "::" + unit;
+    const addIngredient = (ingredient, {warnings = true} = {}) => {
+        const shoppingIngredient = normalizeShoppingIngredient(ingredient);
+        if (shoppingIngredient.name === "water") return;
+        const key = normalizeShoppingName(shoppingIngredient.name);
+        const unit = normalizeShoppingUnit(shoppingIngredient.unit);
+        const mapKey = key + "::" + unit;
+        if (warnings) {
             const otherUnitKey = [...totals.keys()].find((existingKey) => existingKey.startsWith(key + "::") && existingKey !== mapKey);
             if (otherUnitKey) {
                 const warning = "Controleer de eenheid van " + ingredient.name + ".";
                 if (!state.shoppingWarnings.includes(warning)) state.shoppingWarnings.push(warning);
             }
-            const existing = totals.get(mapKey);
-            if (!existing) {
-                totals.set(mapKey, copyShoppingIngredient(shoppingIngredient, unit));
-                return;
-            }
-            if (shoppingIngredient.amount == null) {
-                if (existing.amount == null) return;
-                state.shoppingWarnings.push("Controleer de hoeveelheid van " + shoppingIngredient.name + ".");
-                totals.set(mapKey + "::" + totals.size, copyShoppingIngredient(shoppingIngredient, unit));
-                return;
-            }
-            if (existing.amount == null) {
-                totals.set(mapKey + "::" + totals.size, copyShoppingIngredient(shoppingIngredient, unit));
-                return;
-            }
-            const combinedAmount = addIngredientAmounts(existing.amount, shoppingIngredient.amount);
-            if (combinedAmount !== null) existing.amount = combinedAmount;
+        }
+        const existing = totals.get(mapKey);
+        if (!existing) {
+            totals.set(mapKey, copyShoppingIngredient(shoppingIngredient, unit));
+            return;
+        }
+        if (!warnings) {
+            if (shoppingIngredient.amount == null || existing.amount == null) return;
+        } else if (shoppingIngredient.amount == null) {
+            if (existing.amount == null) return;
+            state.shoppingWarnings.push("Controleer de hoeveelheid van " + shoppingIngredient.name + ".");
+            totals.set(mapKey + "::" + totals.size, copyShoppingIngredient(shoppingIngredient, unit));
+            return;
+        } else if (existing.amount == null) {
+            totals.set(mapKey + "::" + totals.size, copyShoppingIngredient(shoppingIngredient, unit));
+            return;
+        }
+        const combinedAmount = addIngredientAmounts(existing.amount, shoppingIngredient.amount);
+        if (combinedAmount !== null) existing.amount = combinedAmount;
+    };
+    Object.values(state.plan).forEach((item) => {
+        if (includedRecipeIds.has(item.recipeId)) return;
+        includedRecipeIds.add(item.recipeId);
+        const recipe = recipeById(item.recipeId);
+        const sharedIds = sharedComponentIds(recipe);
+        const ingredients = [
+            ...(recipe?.ingredients || []),
+            ...(recipe?.dailyVariants || []).flatMap((variant) => variant.ingredients || [])
+        ];
+        (recipe?.components || []).forEach((component) => {
+            if (!sharedIds.has(component.id)) return;
+            const shared = sharedComponents.get(component.id) || {component, references: []};
+            shared.references.push(...ingredients.filter((ingredient) => ingredient.componentId === component.id));
+            sharedComponents.set(component.id, shared);
+        });
+        [
+            ...ingredients,
+            ...(recipe?.components || [])
+                .filter((component) => component.includeInShoppingList !== false && !sharedIds.has(component.id))
+                .flatMap((component) => component.ingredients || [])
+        ].forEach((ingredient) => {
+            if (!ingredient.componentId) addIngredient(ingredient);
         });
     });
-    if (flaxCrackerComponent && (flaxCrackerCount || flaxCrackerCountUnknown)) {
-        const batches = Math.max(1, Math.ceil((flaxCrackerCount || flaxCrackerComponent.yield) / flaxCrackerComponent.yield));
-        flaxCrackerComponent.ingredients.forEach((ingredient) => {
-            const scaled = {
-                ...ingredient,
-                amount: typeof ingredient.amount === "number" ? ingredient.amount * batches : ingredient.amount
-            };
-            const shoppingIngredient = normalizeShoppingIngredient(scaled);
-            if (shoppingIngredient.name === "water" || SHOPPING_LIST_EXCLUDED_NAMES.has(shoppingIngredient.name)) return;
-            const key = normalizeShoppingName(shoppingIngredient.name);
-            const unit = normalizeShoppingUnit(shoppingIngredient.unit);
-            const mapKey = key + "::" + unit;
-            const existing = totals.get(mapKey);
-            if (!existing) totals.set(mapKey, copyShoppingIngredient(shoppingIngredient, unit));
-            else if (shoppingIngredient.amount != null && existing.amount != null) {
-                const combinedAmount = addIngredientAmounts(existing.amount, shoppingIngredient.amount);
-                if (combinedAmount !== null) existing.amount = combinedAmount;
-            }
-        });
-    }
-    if (granolaComponent) {
-        granolaComponent.ingredients.forEach((ingredient) => {
-            const shoppingIngredient = normalizeShoppingIngredient(ingredient);
-            if (shoppingIngredient.name === "water" || SHOPPING_LIST_EXCLUDED_NAMES.has(shoppingIngredient.name)) return;
-            const key = normalizeShoppingName(shoppingIngredient.name);
-            const unit = normalizeShoppingUnit(shoppingIngredient.unit);
-            const mapKey = key + "::" + unit;
-            const existing = totals.get(mapKey);
-            if (!existing) totals.set(mapKey, copyShoppingIngredient(shoppingIngredient, unit));
-            else if (shoppingIngredient.amount != null && existing.amount != null) {
-                const combinedAmount = addIngredientAmounts(existing.amount, shoppingIngredient.amount);
-                if (combinedAmount !== null) existing.amount = combinedAmount;
-            }
-        });
-    }
-    if (nutBreadComponent) {
-        nutBreadComponent.ingredients.forEach((ingredient) => {
-            const shoppingIngredient = normalizeShoppingIngredient(ingredient);
-            if (shoppingIngredient.name === "water" || SHOPPING_LIST_EXCLUDED_NAMES.has(shoppingIngredient.name)) return;
-            const key = normalizeShoppingName(shoppingIngredient.name);
-            const unit = normalizeShoppingUnit(shoppingIngredient.unit);
-            const mapKey = key + "::" + unit;
-            const existing = totals.get(mapKey);
-            if (!existing) totals.set(mapKey, copyShoppingIngredient(shoppingIngredient, unit));
-            else if (shoppingIngredient.amount != null && existing.amount != null) {
-                const combinedAmount = addIngredientAmounts(existing.amount, shoppingIngredient.amount);
-                if (combinedAmount !== null) existing.amount = combinedAmount;
-            }
-        });
-    }
+    sharedComponents.forEach(({component, references}) => {
+        if (component.includeInShoppingList === false) return;
+        const batches = sharedComponentBatches(component, references);
+        component.ingredients.forEach((ingredient) => addIngredient({
+            ...ingredient,
+            amount: typeof ingredient.amount === "number" ? ingredient.amount * batches : ingredient.amount
+        }, {warnings: false}));
+    });
     return [...totals.values()];
 }
 
@@ -1003,7 +977,6 @@ const SHOPPING_CATEGORIES = [
     "Houdbare producten",
     "Overig"
 ];
-const SHOPPING_LIST_EXCLUDED_NAMES = new Set(["deegroller of fles", "muffinbakplaat voor 12 muffins"]);
 const APPROVED_OTHER_NAMES = new Set(["bakpapier"]);
 
 function shoppingCategory(item) {

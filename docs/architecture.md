@@ -88,6 +88,12 @@ data, it copies a shared subrecipe into every recipe whose main or daily-variant
 ingredients reference it by `componentId`. Mentions in recipe text or in
 alternatives do not attach a subrecipe.
 
+The shopping list adds a shared subrecipe once per week, however many planned
+recipes reference it. When the referencing ingredients use the subrecipe's
+`yieldUnit` (an empty unit counts as "stuk"), it adds enough batches for their
+total, as for `lijnzaadcrackers`; otherwise it adds one batch, as for `granola`
+and `notenbrood`. No subrecipe ID is named in the code.
+
 ## Browser boundaries
 
 The only persistence mechanism is local browser storage. Clearing site data
