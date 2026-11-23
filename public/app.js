@@ -2,7 +2,63 @@ const DAYS = ["Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterda
 const MEALS = ["ontbijt", "lunch", "diner"];
 const PLAN_STORAGE_KEY = "kitano-weekplan";
 const PLAN_STORAGE_VERSION = 4;
+// All Dutch text that the user sees, in the page and in the PDF. Recipe data values, such as the day, meal, and
+// shopping category names, stay in their own constants because the data and the code use them as keys.
 const MESSAGES = {
+    unknownRecipe: "Onbekend recept",
+    recipe: "recept",
+    recipeFallbackTitle: "Recept",
+    mealColumn: "Maaltijd",
+    multipleDays: "meerdere dagen",
+    emptyPlan: "Kies een leeg moment om te beginnen.",
+    plannedCount: (count) => `${count} maaltijdmomenten gepland.`,
+    recipesLoadFailed: "De recepten konden niet worden geladen.",
+    menuLinkCopied: "Koppeling naar menu gekopieerd.",
+    chooseRecipe: "+ Recept kiezen",
+    noRecipesFound: "Geen recepten gevonden.",
+    addRecipe: "Toevoegen",
+    downloadPdf: "PDF downloaden",
+    advanceNotice: (notice) => `Let op: ${notice}`,
+    validStartDays: (title, days) => `${title} kan alleen worden gestart op: ${days}.`,
+    plannedDayTaken: "Een van de geplande dagen is al gevuld. Kies een andere startdag.",
+    moveToOtherMeal: "Kaarten kunnen alleen binnen hetzelfde maaltijdtype worden verplaatst.",
+    moveUnknownRecipe: "Een onbekend recept kan niet worden verplaatst.",
+    moveDoesNotFit: "Deze kaart kan hier niet worden geplaatst omdat een meerdaags recept niet in de week past.",
+    moveNoRoom: "Deze kaart kan hier niet worden geplaatst omdat er geen ruimte is om de andere recepten te verplaatsen.",
+    shoppingList: "Boodschappenlijst",
+    optionalHeading: "Optioneel",
+    optionalPrefix: "optioneel: ",
+    checkUnit: (name) => `Controleer de eenheid van ${name}.`,
+    checkAmount: (name) => `Controleer de hoeveelheid van ${name}.`,
+    portions: (count) => `${count} personen`,
+    preparationTime: (minutes) => `Bereiding: circa ${minutes} minuten`,
+    ovenTime: (minutes) => `Oventijd: circa ${minutes} minuten`,
+    note: "Opmerking",
+    notePrefix: (text) => `Opmerking: ${text}`,
+    ingredients: "Ingrediënten",
+    mainIngredients: "Hoofdrecept · Ingrediënten",
+    equipment: "Benodigdheden",
+    method: "Bereidingswijze",
+    methodOf: (title) => `Bereidingswijze · ${title}`,
+    methodMissing: "Zie het oorspronkelijke receptbestand.",
+    mainRecipe: "Hoofdrecept",
+    subrecipe: (title) => `Subrecept · ${title}`,
+    variant: (title) => `Variant · ${title}`,
+    brand: "Voeding Leeft",
+    weekPlanTitle: "Mijn weekplanning",
+    weekPlanFilename: "weekplanning.pdf",
+    pdfModuleMissing: "De PDF-module kon niet worden geladen. Controleer je internetverbinding.",
+    cookingModeEnable: "Kookmodus inschakelen",
+    cookingModeDisable: "Kookmodus uitschakelen",
+    cookingModeStarting: "Kookmodus wordt ingeschakeld…",
+    cookingModeActive: "Kookmodus staat aan. Het scherm blijft wakker zolang deze pagina zichtbaar is.",
+    cookingModeOff: "Kookmodus is uitgeschakeld.",
+    cookingModeUnsupported: "Kookmodus wordt niet ondersteund door deze browser.",
+    cookingModeInterrupted: "Kookmodus is onderbroken. Probeer opnieuw in te schakelen.",
+    cookingModeResuming: "Kookmodus wordt hervat…",
+    cookingModeResumesWhenVisible: "Kookmodus wordt hervat zodra dit recept weer zichtbaar is.",
+    cookingModeDenied: "De browser of het apparaat heeft de schermvergrendeling geweigerd.",
+    cookingModeFailed: "Kookmodus kon niet worden ingeschakeld. Probeer het opnieuw.",
     versionLabel: "Versie",
     localVersion: "Lokale versie",
     versionUnavailable: "Versie onbekend",
@@ -171,7 +227,7 @@ async function copyMenuLink() {
         document.execCommand("copy");
         input.remove();
     }
-    showSelectionMessage("Koppeling naar menu gekopieerd.");
+    showSelectionMessage(MESSAGES.menuLinkCopied);
 }
 
 function savePlan() {
@@ -226,11 +282,11 @@ function planSelectionMove(sourceKey, targetKey) {
     if (sourceKey === targetKey || !sourceItem) return {error: null};
     const meal = planKeyMeal(sourceKey);
     if (meal !== planKeyMeal(targetKey)) {
-        return {error: "Kaarten kunnen alleen binnen hetzelfde maaltijdtype worden verplaatst."};
+        return {error: MESSAGES.moveToOtherMeal};
     }
     const sourceRecipe = recipeById(sourceItem.recipeId);
     if (!sourceRecipe) {
-        return {error: "Een onbekend recept kan niet worden verplaatst."};
+        return {error: MESSAGES.moveUnknownRecipe};
     }
     // The dragged selection shifts by the distance between the dragged card and the drop cell. This also allows a
     // multi-day recipe to be dropped on one of its own later days or on an empty cell.
@@ -242,7 +298,7 @@ function planSelectionMove(sourceKey, targetKey) {
     const sourceKeys = selectionKeys(sourceItem.recipeId, meal, sourceStart);
     const sourceDays = newStart >= 0 ? selectionDays(sourceRecipe, newStart) : [];
     if (sourceDays.length !== selectionDayCount(sourceRecipe)) {
-        return {error: "Deze kaart kan hier niet worden geplaatst omdat een meerdaags recept niet in de week past."};
+        return {error: MESSAGES.moveDoesNotFit};
     }
     // Every other selection in the way is moved aside. The recipe on the drop cell prefers the dragged position, so a
     // drop on another card behaves like a swap; other recipes prefer to stay as close as possible to where they were.
@@ -279,7 +335,7 @@ function planSelectionMove(sourceKey, targetKey) {
             })
             .sort((a, b) => Math.abs(a - entry.preferredStart) - Math.abs(b - entry.preferredStart) || a - b);
         if (!starts.length) {
-            return {error: "Deze kaart kan hier niet worden geplaatst omdat er geen ruimte is om de andere recepten te verplaatsen."};
+            return {error: MESSAGES.moveNoRoom};
         }
         const days = recipe ? selectionDays(recipe, starts[0]) : [starts[0]];
         days.forEach((day) => {
@@ -329,7 +385,7 @@ function removeSelection(key) {
     removed.forEach(([removedKey]) => delete state.plan[removedKey]);
     savePlan();
     render();
-    showUndoMessage(MESSAGES.recipeRemoved(recipeById(item.recipeId)?.title || "Onbekend recept"), () => {
+    showUndoMessage(MESSAGES.recipeRemoved(recipeById(item.recipeId)?.title || MESSAGES.unknownRecipe), () => {
         if (selectedIds().has(item.recipeId) || removed.some(([removedKey]) => state.plan[removedKey])) {
             showSelectionMessage(MESSAGES.undoUnavailable);
             return;
@@ -417,7 +473,7 @@ function renderPlanner() {
     planner.replaceChildren();
     planner.append(Object.assign(document.createElement("div"), {
         className: "planner-cell day",
-        textContent: "Maaltijd"
+        textContent: MESSAGES.mealColumn
     }));
     MEALS.forEach((meal) => planner.append(Object.assign(document.createElement("div"), {
         className: "planner-cell meal-label",
@@ -478,7 +534,7 @@ function renderPlanner() {
                     document.querySelectorAll(".drag-over").forEach((element) => element.classList.remove("drag-over"));
                 });
                 const recipe = recipeById(item.recipeId);
-                const recipeTitle = recipe?.title || "Onbekend recept";
+                const recipeTitle = recipe?.title || MESSAGES.unknownRecipe;
                 const title = document.createElement("strong");
                 title.textContent = recipeTitle;
                 slot.append(title);
@@ -495,7 +551,7 @@ function renderPlanner() {
                 }
                 if (recipe?.advanceNotice) {
                     const notice = document.createElement("small");
-                    notice.textContent = "Let op: " + recipe.advanceNotice;
+                    notice.textContent = MESSAGES.advanceNotice(recipe.advanceNotice);
                     slot.append(notice);
                 }
                 const actions = document.createElement("div");
@@ -516,7 +572,7 @@ function renderPlanner() {
                 });
             } else {
                 slot.type = "button";
-                slot.textContent = "+ Recept kiezen";
+                slot.textContent = MESSAGES.chooseRecipe;
                 slot.addEventListener("click", () => {
                     state.activeSlot = {day: dayIndex, meal};
                     renderOptions();
@@ -561,7 +617,7 @@ function renderOptions() {
     if (!visible.length) {
         options.append(Object.assign(document.createElement("p"), {
             className: "muted",
-            textContent: "Geen recepten gevonden."
+            textContent: MESSAGES.noRecipesFound
         }));
         return;
     }
@@ -577,8 +633,8 @@ function renderOptions() {
         button.type = "button";
         button.className = "button";
         button.textContent = "+";
-        button.setAttribute("aria-label", "Toevoegen");
-        button.title = "Toevoegen";
+        button.setAttribute("aria-label", MESSAGES.addRecipe);
+        button.title = MESSAGES.addRecipe;
         button.addEventListener("click", () => chooseRecipe(recipe));
         card.append(title, preparationTime);
         const note = recipeCardNote(recipe);
@@ -596,7 +652,7 @@ function renderSingleRecipeSearch() {
     if (!visible.length) {
         singleRecipeResults.append(Object.assign(document.createElement("p"), {
             className: "muted",
-            textContent: "Geen recepten gevonden."
+            textContent: MESSAGES.noRecipesFound
         }));
         return;
     }
@@ -612,7 +668,7 @@ function renderSingleRecipeSearch() {
         card.className = "recipe-card single-recipe-card";
         button.type = "button";
         button.className = "single-recipe-pdf-button";
-        button.textContent = "PDF downloaden";
+        button.textContent = MESSAGES.downloadPdf;
         button.addEventListener("click", (event) => {
             event.stopPropagation();
             createSingleRecipePdf(recipe);
@@ -690,12 +746,12 @@ function chooseRecipe(recipe) {
     const days = plannedDays(startDay, recipe.days);
     if (days.length !== (recipe.days || 3)) {
         const validStartDays = DAYS.slice(0, DAYS.length - ((recipe.days || 3) - 1) * 2).map((_, index) => dayName(index)).join(", ");
-        showSelectionMessage(recipe.title + " kan alleen worden gestart op: " + validStartDays + ".");
+        showSelectionMessage(MESSAGES.validStartDays(recipe.title, validStartDays));
         return;
     }
     const meal = state.activeSlot.meal;
     if (days.some((day) => state.plan[planKey(day, meal)])) {
-        showSelectionMessage("Een van de geplande dagen is al gevuld. Kies een andere startdag.");
+        showSelectionMessage(MESSAGES.plannedDayTaken);
         return;
     }
     days.forEach((day) => {
@@ -742,7 +798,7 @@ function render() {
     renderOptions();
     singleRecipeSearch.hidden = !shoppingListView.hidden;
     const count = Object.keys(state.plan).length;
-    status.textContent = count ? count + " maaltijdmomenten gepland." : "Kies een leeg moment om te beginnen.";
+    status.textContent = count ? MESSAGES.plannedCount(count) : MESSAGES.emptyPlan;
     shoppingListButton.disabled = !count;
     downloadButton.disabled = !count;
     if (!count) {
@@ -914,7 +970,7 @@ function aggregateIngredients() {
                 return existingName === key && existingUnit !== unit;
             });
             if (otherUnitKey) {
-                const warning = "Controleer de eenheid van " + ingredient.name + ".";
+                const warning = MESSAGES.checkUnit(ingredient.name);
                 if (!state.shoppingWarnings.includes(warning)) state.shoppingWarnings.push(warning);
             }
         }
@@ -927,7 +983,7 @@ function aggregateIngredients() {
             if (shoppingIngredient.amount == null || existing.amount == null) return;
         } else if (shoppingIngredient.amount == null) {
             if (existing.amount == null) return;
-            state.shoppingWarnings.push("Controleer de hoeveelheid van " + shoppingIngredient.name + ".");
+            state.shoppingWarnings.push(MESSAGES.checkAmount(shoppingIngredient.name));
             totals.set(mapKey + "::" + totals.size, copyShoppingIngredient(shoppingIngredient, unit));
             return;
         } else if (existing.amount == null) {
@@ -1020,14 +1076,14 @@ function formatIngredientLabel(item, includeOptionalPrefix = true) {
     const amount = item.amount == null ? "" : formatIngredientAmount(item.amount) + (displayUnit ? " " + displayUnit : "");
     const range = parseAmountRange(item.amount);
     const displayName = item.name === "ei" && (!range || range.min !== 1 || range.max !== 1) ? "eieren" : item.name;
-    return (includeOptionalPrefix && item.optional ? "optioneel: " : "") + amount + (amount ? " " : "") + displayName;
+    return (includeOptionalPrefix && item.optional ? MESSAGES.optionalPrefix : "") + amount + (amount ? " " : "") + displayName;
 }
 
 function ingredientLabel(item, includeOptionalPrefix = true) {
-    const prefix = includeOptionalPrefix && item.optional ? "optioneel: " : "";
+    const prefix = includeOptionalPrefix && item.optional ? MESSAGES.optionalPrefix : "";
     const main = prefix + String(item.raw || item.name || "");
     const alternatives = (item.alternatives || []).map((alternative) => {
-        const alternativePrefix = includeOptionalPrefix && alternative.optional ? "optioneel: " : "";
+        const alternativePrefix = includeOptionalPrefix && alternative.optional ? MESSAGES.optionalPrefix : "";
         return alternativePrefix + String(alternative.raw || alternative.name || "");
     });
     return alternatives.length ? main + " of " + alternatives.join(" of ") : main;
@@ -1039,13 +1095,13 @@ function shoppingIngredientLabel(item, includeOptionalPrefix = true) {
 
 function recipeTimingLabel(recipe) {
     const timing = [];
-    if (Number.isFinite(recipe?.preparationTime)) timing.push("Bereiding: circa " + recipe.preparationTime + " minuten");
-    if (Number.isFinite(recipe?.ovenTime)) timing.push("Oventijd: circa " + recipe.ovenTime + " minuten");
+    if (Number.isFinite(recipe?.preparationTime)) timing.push(MESSAGES.preparationTime(recipe.preparationTime));
+    if (Number.isFinite(recipe?.ovenTime)) timing.push(MESSAGES.ovenTime(recipe.ovenTime));
     return timing.join(" | ");
 }
 
 function recipeMetadataLabel(recipe) {
-    const metadata = [recipe?.category || "recept", recipe?.portions ? recipe.portions + " personen" : ""].filter(Boolean);
+    const metadata = [recipe?.category || MESSAGES.recipe, recipe?.portions ? MESSAGES.portions(recipe.portions) : ""].filter(Boolean);
     const timing = recipeTimingLabel(recipe);
     if (timing) metadata.push(timing);
     return metadata.join(" · ");
@@ -1055,7 +1111,7 @@ function recipeCardNote(recipe) {
     if (!recipe?.notes?.length) return null;
     const note = document.createElement("p");
     note.className = "recipe-card-meta";
-    note.textContent = "Opmerking: " + recipe.notes.join(" ");
+    note.textContent = MESSAGES.notePrefix(recipe.notes.join(" "));
     return note;
 }
 
@@ -1082,7 +1138,7 @@ function renderShoppingList() {
         }
         if (item.optional && !optionalList) {
             const optionalHeading = document.createElement("h4");
-            optionalHeading.textContent = "Optioneel";
+            optionalHeading.textContent = MESSAGES.optionalHeading;
             shoppingListItems.append(optionalHeading);
             optionalList = document.createElement("ul");
             optionalList.className = "shopping-list";
@@ -1151,14 +1207,14 @@ function drawWeeklyOverview(doc, margin, width) {
     const rowHeight = 34;
     doc.setTextColor(24, 63, 50);
     doc.setFontSize(24);
-    doc.text("Voeding Leeft", margin, 24);
+    doc.text(MESSAGES.brand, margin, 24);
     doc.setFontSize(18);
-    doc.text("Mijn weekplanning", margin, 40);
+    doc.text(MESSAGES.weekPlanTitle, margin, 40);
     doc.setFontSize(9);
     doc.setDrawColor(190, 202, 188);
     doc.setFillColor(239, 243, 232);
     doc.rect(margin, gridTop, labelWidth, headerHeight, "FD");
-    doc.text("Maaltijd", margin + 2, gridTop + 6);
+    doc.text(MESSAGES.mealColumn, margin + 2, gridTop + 6);
     DAYS.forEach((day, dayIndex) => {
         const x = margin + labelWidth + dayIndex * dayWidth;
         doc.rect(x, gridTop, dayWidth, headerHeight, "FD");
@@ -1177,14 +1233,14 @@ function drawWeeklyOverview(doc, margin, width) {
             const item = state.plan[planKey(dayIndex, meal)];
             if (!item) return;
             const recipe = recipeById(item.recipeId);
-            const lines = doc.splitTextToSize(recipe?.title || "Onbekend recept", dayWidth - 4);
+            const lines = doc.splitTextToSize(recipe?.title || MESSAGES.unknownRecipe, dayWidth - 4);
             doc.setTextColor(24, 63, 50);
             doc.text(lines.slice(0, 3), x + 2, y + 7);
             links.push({recipeId: item.recipeId, x, y, width: dayWidth, height: rowHeight});
             if (recipe?.multiDay) {
                 doc.setFontSize(7);
                 doc.setTextColor(70, 80, 70);
-                const scheduledDays = Number.isInteger(item.sourceDay) ? plannedDays(item.sourceDay, recipe.days).map((day) => shortDayName(day)).join(", ") : "meerdere dagen";
+                const scheduledDays = Number.isInteger(item.sourceDay) ? plannedDays(item.sourceDay, recipe.days).map((day) => shortDayName(day)).join(", ") : MESSAGES.multipleDays;
                 doc.text(scheduledDays, x + 2, y + rowHeight - 4);
                 doc.setFontSize(9);
             }
@@ -1195,7 +1251,7 @@ function drawWeeklyOverview(doc, margin, width) {
 
 async function createPdf() {
     if (!window.jspdf?.jsPDF) {
-        status.textContent = "De PDF-module kon niet worden geladen. Controleer je internetverbinding.";
+        status.textContent = MESSAGES.pdfModuleMissing;
         return;
     }
     const doc = new window.jspdf.jsPDF({orientation: "landscape", unit: "mm", format: "a4"});
@@ -1207,7 +1263,7 @@ async function createPdf() {
     doc.addPage();
     doc.setTextColor(24, 63, 50);
     doc.setFontSize(20);
-    doc.text("Boodschappenlijst", margin, 24);
+    doc.text(MESSAGES.shoppingList, margin, 24);
     doc.setFontSize(10);
     let y = 36;
     const shoppingItems = sortedShoppingItems();
@@ -1244,8 +1300,8 @@ async function createPdf() {
             doc.setFont("times", "bold");
             doc.setCharSpace(0);
             doc.setFontSize(14);
-            const title = String(recipe.title || "Recept").normalize("NFC").replace(/\s+/g, " ").trim();
-            const recipeHeading = dayName(dayIndex) + " · " + meal + " · " + recipe.portions + " personen - " + title;
+            const title = String(recipe.title || MESSAGES.recipeFallbackTitle).normalize("NFC").replace(/\s+/g, " ").trim();
+            const recipeHeading = dayName(dayIndex) + " · " + meal + " · " + MESSAGES.portions(recipe.portions) + " - " + title;
             y = addWrapped(doc, recipeHeading, margin, 24, width - margin * 2, 7) + 2;
             doc.setFont("helvetica", "normal");
             doc.setFontSize(9);
@@ -1255,7 +1311,7 @@ async function createPdf() {
             if (mainIngredients.length) {
                 doc.setFontSize(12);
                 doc.setTextColor(24, 63, 50);
-                doc.text("Hoofdrecept · Ingrediënten", margin, y);
+                doc.text(MESSAGES.mainIngredients, margin, y);
                 y += 7;
                 doc.setFontSize(10);
                 doc.setTextColor(40, 45, 40);
@@ -1267,7 +1323,7 @@ async function createPdf() {
                 y += 4;
                 doc.setFontSize(12);
                 doc.setTextColor(24, 63, 50);
-                doc.text("Subrecept · " + component.title, margin, y);
+                doc.text(MESSAGES.subrecipe(component.title), margin, y);
                 y += 7;
                 doc.setFontSize(10);
                 doc.setTextColor(40, 45, 40);
@@ -1280,7 +1336,7 @@ async function createPdf() {
                 y += 4;
                 doc.setFontSize(12);
                 doc.setTextColor(24, 63, 50);
-                doc.text("Variant · " + variant.title, margin, y);
+                doc.text(MESSAGES.variant(variant.title), margin, y);
                 y += 7;
                 doc.setFontSize(10);
                 doc.setTextColor(40, 45, 40);
@@ -1293,7 +1349,7 @@ async function createPdf() {
                 y += 4;
                 doc.setFontSize(12);
                 doc.setTextColor(24, 63, 50);
-                doc.text("Benodigdheden", margin, y);
+                doc.text(MESSAGES.equipment, margin, y);
                 y += 7;
                 doc.setFontSize(10);
                 doc.setTextColor(40, 45, 40);
@@ -1304,7 +1360,7 @@ async function createPdf() {
             y += 6;
             doc.setFontSize(12);
             doc.setTextColor(24, 63, 50);
-            doc.text("Bereidingswijze", margin, y);
+            doc.text(MESSAGES.method, margin, y);
             y += 7;
             doc.setFontSize(10);
             doc.setTextColor(40, 45, 40);
@@ -1312,7 +1368,7 @@ async function createPdf() {
             (recipe.components || []).forEach((component) => {
                 doc.setFontSize(12);
                 doc.setTextColor(24, 63, 50);
-                doc.text("Subrecept · " + component.title, margin, y);
+                doc.text(MESSAGES.subrecipe(component.title), margin, y);
                 y += 7;
                 doc.setFontSize(10);
                 doc.setTextColor(40, 45, 40);
@@ -1330,7 +1386,7 @@ async function createPdf() {
             if ((recipe.components || []).length) {
                 doc.setFontSize(12);
                 doc.setTextColor(24, 63, 50);
-                doc.text("Hoofdrecept", margin, y);
+                doc.text(MESSAGES.mainRecipe, margin, y);
                 y += 7;
                 doc.setFontSize(10);
                 doc.setTextColor(40, 45, 40);
@@ -1345,11 +1401,11 @@ async function createPdf() {
             } else {
                 doc.setFontSize(12);
                 doc.setTextColor(24, 63, 50);
-                doc.text("Hoofdrecept", margin, y);
+                doc.text(MESSAGES.mainRecipe, margin, y);
                 y += 7;
                 doc.setFontSize(10);
                 doc.setTextColor(40, 45, 40);
-                const mainSteps = methodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
+                const mainSteps = methodSteps(recipe.method || MESSAGES.methodMissing);
                 mainSteps.forEach((step) => {
                     y = addWrapped(doc, /^Tip:/i.test(step) ? step : `${stepNumber}. ${step}`, margin, y, width - margin * 2, 5);
                     if (!/^Tip:/i.test(step)) stepNumber += 1;
@@ -1363,7 +1419,7 @@ async function createPdf() {
                 y += 4;
                 doc.setFontSize(12);
                 doc.setTextColor(24, 63, 50);
-                doc.text("Variant · " + variant.title, margin, y);
+                doc.text(MESSAGES.variant(variant.title), margin, y);
                 y += 7;
                 doc.setFontSize(10);
                 doc.setTextColor(40, 45, 40);
@@ -1380,7 +1436,7 @@ async function createPdf() {
                 y += 5;
                 doc.setFontSize(12);
                 doc.setTextColor(24, 63, 50);
-                doc.text("Opmerking", margin, y);
+                doc.text(MESSAGES.note, margin, y);
                 y += 7;
                 doc.setFontSize(10);
                 doc.setTextColor(40, 45, 40);
@@ -1396,12 +1452,12 @@ async function createPdf() {
         doc.setPage(1);
         doc.link(link.x, link.y, link.width, link.height, {pageNumber});
     });
-    doc.save("weekplanning.pdf");
+    doc.save(MESSAGES.weekPlanFilename);
 }
 
 function updateCookingModeControls(message) {
     if (!cookingModeButton || !cookingModeStatus) return;
-    cookingModeButton.textContent = cookingMode.enabled ? "Kookmodus uitschakelen" : "Kookmodus inschakelen";
+    cookingModeButton.textContent = cookingMode.enabled ? MESSAGES.cookingModeDisable : MESSAGES.cookingModeEnable;
     cookingModeButton.setAttribute("aria-pressed", String(cookingMode.enabled));
     if (message) cookingModeStatus.textContent = message;
 }
@@ -1411,7 +1467,7 @@ async function acquireCookingWakeLock() {
         || cookingMode.wakeLock || cookingMode.requestPending) return;
     if (!navigator.wakeLock?.request) {
         cookingMode.enabled = false;
-        updateCookingModeControls("Kookmodus wordt niet ondersteund door deze browser.");
+        updateCookingModeControls(MESSAGES.cookingModeUnsupported);
         return;
     }
 
@@ -1423,14 +1479,14 @@ async function acquireCookingWakeLock() {
             return;
         }
         cookingMode.wakeLock = wakeLock;
-        updateCookingModeControls("Kookmodus staat aan. Het scherm blijft wakker zolang deze pagina zichtbaar is.");
+        updateCookingModeControls(MESSAGES.cookingModeActive);
         wakeLock.addEventListener("release", () => {
             if (cookingMode.wakeLock !== wakeLock) return;
             cookingMode.wakeLock = null;
             if (cookingMode.enabled) {
                 cookingModeStatus.textContent = document.visibilityState === "visible"
-                    ? "Kookmodus is onderbroken. Probeer opnieuw in te schakelen."
-                    : "Kookmodus wordt hervat zodra dit recept weer zichtbaar is.";
+                    ? MESSAGES.cookingModeInterrupted
+                    : MESSAGES.cookingModeResumesWhenVisible;
             }
         }, {once: true});
     } catch (error) {
@@ -1438,8 +1494,8 @@ async function acquireCookingWakeLock() {
         if (cookingMode.enabled) {
             cookingMode.enabled = false;
             updateCookingModeControls(error.name === "NotAllowedError"
-                ? "De browser of het apparaat heeft de schermvergrendeling geweigerd."
-                : "Kookmodus kon niet worden ingeschakeld. Probeer het opnieuw.");
+                ? MESSAGES.cookingModeDenied
+                : MESSAGES.cookingModeFailed);
         }
     } finally {
         cookingMode.requestPending = false;
@@ -1449,7 +1505,7 @@ async function acquireCookingWakeLock() {
     }
 }
 
-function disableCookingMode(message = "Kookmodus is uitgeschakeld.") {
+function disableCookingMode(message = MESSAGES.cookingModeOff) {
     cookingMode.enabled = false;
     const wakeLock = cookingMode.wakeLock;
     cookingMode.wakeLock = null;
@@ -1483,17 +1539,17 @@ function openRecipeHtml(recipe) {
         content.append(section);
     };
 
-    appendSection("Ingrediënten", sortIngredientsForDisplay(recipe.ingredients || []).map(ingredientLabel));
+    appendSection(MESSAGES.ingredients, sortIngredientsForDisplay(recipe.ingredients || []).map(ingredientLabel));
     (recipe.components || []).forEach((component) => {
         const items = [];
         if (component.availabilityNote) items.push(component.availabilityNote);
         items.push(...sortIngredientsForDisplay(component.ingredients || []).map(ingredientLabel));
-        appendSection("Subrecept · " + component.title, items);
+        appendSection(MESSAGES.subrecipe(component.title), items);
     });
     (recipe.dailyVariants || []).forEach((variant) => {
-        appendSection("Variant · " + variant.title, sortIngredientsForDisplay(variant.ingredients || []).map(ingredientLabel));
+        appendSection(MESSAGES.variant(variant.title), sortIngredientsForDisplay(variant.ingredients || []).map(ingredientLabel));
     });
-    appendSection("Benodigdheden", recipeEquipment(recipe));
+    appendSection(MESSAGES.equipment, recipeEquipment(recipe));
 
     // Steps are numbered across all method sections, as in the PDF. The list draws the number from each item's value,
     // so the step text has no number of its own; tips get no number.
@@ -1517,13 +1573,13 @@ function openRecipeHtml(recipe) {
         content.append(section);
     };
     (recipe.components || []).forEach((component) => {
-        appendMethodSection("Bereidingswijze · " + component.title, component.method);
+        appendMethodSection(MESSAGES.methodOf(component.title), component.method);
     });
-    appendMethodSection("Bereidingswijze" + (recipe.components?.length ? " · Hoofdrecept" : ""), recipe.method);
+    appendMethodSection(recipe.components?.length ? MESSAGES.methodOf(MESSAGES.mainRecipe) : MESSAGES.method, recipe.method);
     (recipe.dailyVariants || []).forEach((variant) => {
-        appendMethodSection("Bereidingswijze · Variant · " + variant.title, variant.method);
+        appendMethodSection(MESSAGES.methodOf(MESSAGES.variant(variant.title)), variant.method);
     });
-    appendSection("Opmerking", recipe.notes || []);
+    appendSection(MESSAGES.note, recipe.notes || []);
 
     if (typeof dialog.showModal === "function") dialog.showModal();
     else dialog.setAttribute("open", "");
@@ -1531,7 +1587,7 @@ function openRecipeHtml(recipe) {
 
 async function createSingleRecipePdf(recipe) {
     if (!window.jspdf?.jsPDF) {
-        status.textContent = "De PDF-module kon niet worden geladen. Controleer je internetverbinding.";
+        status.textContent = MESSAGES.pdfModuleMissing;
         return;
     }
     const doc = new window.jspdf.jsPDF({orientation: "portrait", unit: "mm", format: "a4"});
@@ -1591,35 +1647,35 @@ async function createSingleRecipePdf(recipe) {
     doc.setFontSize(10);
     doc.text(recipeMetadataLabel(recipe), margin, y);
     y += 10;
-    addSection("Ingrediënten", sortIngredientsForDisplay(recipe.ingredients || []).map(ingredientLabel));
+    addSection(MESSAGES.ingredients, sortIngredientsForDisplay(recipe.ingredients || []).map(ingredientLabel));
     (recipe.components || []).forEach((component) => {
         const items = [];
         if (component.availabilityNote) items.push(component.availabilityNote);
         items.push(...sortIngredientsForDisplay(component.ingredients || []).map(ingredientLabel));
-        addSection("Subrecept · " + component.title, items);
+        addSection(MESSAGES.subrecipe(component.title), items);
     });
-    (recipe.dailyVariants || []).forEach((variant) => addSection("Variant · " + variant.title, sortIngredientsForDisplay(variant.ingredients || []).map(ingredientLabel)));
-    addSection("Benodigdheden", recipeEquipment(recipe));
+    (recipe.dailyVariants || []).forEach((variant) => addSection(MESSAGES.variant(variant.title), sortIngredientsForDisplay(variant.ingredients || []).map(ingredientLabel)));
+    addSection(MESSAGES.equipment, recipeEquipment(recipe));
     if ((recipe.components || []).length || recipe.method || (recipe.dailyVariants || []).length) {
-        addMethodHeading("Bereidingswijze");
+        addMethodHeading(MESSAGES.method);
         if (recipe.components?.length) {
             recipe.components.forEach((component) => {
-                addMethodHeading("Subrecept · " + component.title);
+                addMethodHeading(MESSAGES.subrecipe(component.title));
                 addMethodSteps(component.method || "");
             });
-            addMethodHeading("Hoofdrecept");
+            addMethodHeading(MESSAGES.mainRecipe);
             addMethodSteps(recipe.method || "");
         } else {
-            addMethodHeading("Hoofdrecept");
-            addMethodSteps(recipe.method || "Zie het oorspronkelijke receptbestand.");
+            addMethodHeading(MESSAGES.mainRecipe);
+            addMethodSteps(recipe.method || MESSAGES.methodMissing);
         }
         (recipe.dailyVariants || []).forEach((variant) => {
-            addMethodHeading("Variant · " + variant.title);
+            addMethodHeading(MESSAGES.variant(variant.title));
             addMethodSteps(variant.method || "");
         });
     }
-    addSection("Opmerking", recipe.notes || []);
-    doc.save((recipe.id || "recept") + ".pdf");
+    addSection(MESSAGES.note, recipe.notes || []);
+    doc.save((recipe.id || MESSAGES.recipe) + ".pdf");
 }
 
 async function loadAppVersion() {
@@ -1668,7 +1724,7 @@ if (hasPlanner) {
             return;
         }
         cookingMode.enabled = true;
-        updateCookingModeControls("Kookmodus wordt ingeschakeld…");
+        updateCookingModeControls(MESSAGES.cookingModeStarting);
         void acquireCookingWakeLock();
     });
     recipeDialog?.addEventListener("close", () => disableCookingMode());
@@ -1676,10 +1732,10 @@ if (hasPlanner) {
         if (!cookingMode.enabled) return;
         if (document.visibilityState === "visible") {
             if (cookingMode.wakeLock?.released) cookingMode.wakeLock = null;
-            cookingModeStatus.textContent = "Kookmodus wordt hervat…";
+            cookingModeStatus.textContent = MESSAGES.cookingModeResuming;
             void acquireCookingWakeLock();
         } else {
-            cookingModeStatus.textContent = "Kookmodus wordt hervat zodra dit recept weer zichtbaar is.";
+            cookingModeStatus.textContent = MESSAGES.cookingModeResumesWhenVisible;
         }
     });
 
@@ -1693,7 +1749,7 @@ if (hasPlanner) {
             renderSingleRecipeSearch();
         })
         .catch(() => {
-            status.textContent = "De recepten konden niet worden geladen.";
+            status.textContent = MESSAGES.recipesLoadFailed;
             render();
         });
 }
