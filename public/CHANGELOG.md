@@ -2,6 +2,10 @@
 
 De belangrijkste verbeteringen voor de planner en recepten.
 
+## 23 november 2026
+
+- In een recept heeft elke stap van de bereidingswijze nu één nummer in plaats van twee.
+
 ## 21 november 2026
 
 - Bekijk een recept direct als HTML door erop te klikken. Met de optionele kookmodus blijft het scherm wakker zolang het

@@ -267,6 +267,7 @@ def test_changelog_page_loads(page: Page, server_url: str, path: str):
     expect(page.locator("#changelog-content")).to_contain_text(
         "De belangrijkste verbeteringen voor de planner en recepten.")
     assert page.locator("#changelog-content h2").all_inner_texts() == [
+        "23 november 2026",
         "21 november 2026",
         "17 november 2026",
         "16 november 2026",
@@ -577,6 +578,27 @@ def test_recipe_opens_as_html_without_hijacking_buttons(page: Page, server_url: 
 
     page.get_by_role("button", name=f"{title} op maandag naar een latere dag verplaatsen").click()
     expect(page.locator("#recipe-dialog")).not_to_be_visible()
+
+
+def method_steps_in_dialog(page: Page) -> list[tuple[str, str]]:
+    """Return (number, text) of each method step in the recipe dialog; a tip has no number."""
+    return page.locator("#recipe-dialog-content ol li").evaluate_all(
+        "(rows) => rows.map((row) => [row.classList.contains('recipe-tip') ? '' : String(row.value), row.textContent])")
+
+
+@pytest.mark.parametrize("title", ["Stoofvlees met knolselderij en rode kool", "Pesto kip met snijbonen en tuinerwtjes"])
+def test_recipe_dialog_numbers_each_step_once(page: Page, server_url: str, title: str):
+    open_planner(page, f"{server_url}/")
+    page.locator("#single-recipe-query").fill(title)
+    page.locator("#single-recipe-results .recipe-card", has_text=title).locator("h3").click()
+    expect(page.locator("#recipe-dialog")).to_be_visible()
+    steps = method_steps_in_dialog(page)
+    numbers = [number for number, _ in steps if number]
+    # The list draws the numbers; they run on across the subrecipe and main method sections.
+    assert numbers == [str(index) for index in range(1, len(numbers) + 1)]
+    assert len(numbers) > 4
+    assert not [text for _, text in steps if re.match(r"\d+\.", text)], "step text must not repeat the number"
+    assert all(text.startswith("Tip:") for number, text in steps if not number)
 
 
 def test_single_recipe_card_opens_html_but_pdf_button_downloads(page: Page, server_url: str):

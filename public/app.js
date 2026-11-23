@@ -1488,13 +1488,13 @@ function openRecipeHtml(recipe) {
     const content = document.querySelector("#recipe-dialog-content");
     content.replaceChildren();
 
-    const appendSection = (heading, items, ordered = false) => {
+    const appendSection = (heading, items) => {
         if (!items?.length) return;
         const section = document.createElement("section");
         section.className = "recipe-dialog-section";
         const title = document.createElement("h3");
         title.textContent = heading;
-        const list = document.createElement(ordered ? "ol" : "ul");
+        const list = document.createElement("ul");
         items.forEach((item) => {
             const row = document.createElement("li");
             row.textContent = String(item);
@@ -1516,16 +1516,33 @@ function openRecipeHtml(recipe) {
     });
     appendSection("Benodigdheden", recipeEquipment(recipe));
 
+    // Steps are numbered across all method sections, as in the PDF. The list draws the number from each item's value,
+    // so the step text has no number of its own; tips get no number.
     let stepNumber = 1;
+    const appendMethodSection = (heading, method) => {
+        const steps = methodSteps(method || "");
+        if (!steps.length) return;
+        const section = document.createElement("section");
+        section.className = "recipe-dialog-section";
+        const title = document.createElement("h3");
+        title.textContent = heading;
+        const list = document.createElement("ol");
+        steps.forEach((step) => {
+            const row = document.createElement("li");
+            row.textContent = step;
+            if (/^Tip:/i.test(step)) row.className = "recipe-tip";
+            else row.value = stepNumber++;
+            list.append(row);
+        });
+        section.append(title, list);
+        content.append(section);
+    };
     (recipe.components || []).forEach((component) => {
-        appendSection("Bereidingswijze · " + component.title,
-            methodSteps(component.method || "").map((step) => /^Tip:/i.test(step) ? step : `${stepNumber++}. ${step}`), true);
+        appendMethodSection("Bereidingswijze · " + component.title, component.method);
     });
-    if (recipe.method) appendSection("Bereidingswijze" + (recipe.components?.length ? " · Hoofdrecept" : ""),
-        methodSteps(recipe.method).map((step) => /^Tip:/i.test(step) ? step : `${stepNumber++}. ${step}`), true);
+    appendMethodSection("Bereidingswijze" + (recipe.components?.length ? " · Hoofdrecept" : ""), recipe.method);
     (recipe.dailyVariants || []).forEach((variant) => {
-        appendSection("Bereidingswijze · Variant · " + variant.title,
-            methodSteps(variant.method || "").map((step) => /^Tip:/i.test(step) ? step : `${stepNumber++}. ${step}`), true);
+        appendMethodSection("Bereidingswijze · Variant · " + variant.title, variant.method);
     });
     appendSection("Opmerking", recipe.notes || []);
 
