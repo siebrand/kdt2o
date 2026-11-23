@@ -79,7 +79,8 @@ element directly after `<meta charset>`, without `frame-ancestors`. The
 `check-page-security` pre-commit hook keeps these elements equal to
 `nginx/security-headers.conf` and rejects external scripts, inline scripts and
 styles, `style` attributes, and event handler attributes. The browser tests
-fail on any CSP violation.
+serve the pages with the policy from `nginx/security-headers.conf` and fail on
+any CSP violation.
 
 The CI `tests` job builds the container and runs
 `scripts/check_security_headers.py` against it. The check fails when a path is

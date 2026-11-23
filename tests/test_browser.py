@@ -26,6 +26,11 @@ RECIPES = json.loads((PUBLIC / "recipes.json").read_text(encoding="utf-8"))
 BY_TITLE = {recipe["title"]: recipe for recipe in RECIPES}
 MEALS = ["ontbijt", "lunch", "diner"]
 EMPTY_STATUS = "Kies een leeg moment om te beginnen."
+# The tests send the production policy, so a page that only works with a weaker policy fails here too.
+PRODUCTION_CSP = re.search(
+    r'add_header Content-Security-Policy "([^"]+)"',
+    (ROOT / "nginx" / "security-headers.conf").read_text(encoding="utf-8"),
+).group(1)
 
 
 class StaticHandler(SimpleHTTPRequestHandler):
@@ -37,12 +42,7 @@ class StaticHandler(SimpleHTTPRequestHandler):
         return super().translate_path(path)
 
     def end_headers(self) -> None:
-        self.send_header(
-            "Content-Security-Policy",
-            "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; "
-            "img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; "
-            "form-action 'self'",
-        )
+        self.send_header("Content-Security-Policy", PRODUCTION_CSP)
         super().end_headers()
 
     def log_message(self, format: str, *args) -> None:
@@ -288,6 +288,31 @@ def test_changelog_page_loads(page: Page, server_url: str, path: str):
             "Bij sommige ontbijtgerechten staat welke voorbereiding je de dag ervoor kunt doen."
             in normalized_entry
     )
+
+
+HOSTILE_CHANGELOG = """# Wijzigingen
+
+## 1 januari 2026
+
+- <img src=x id="injected-image"> en <script id="injected-script">window.injected = true</script>
+- [Gevaarlijke koppeling](javascript:window.injected=true) en **vet**
+- [Veilige koppeling](https://example.com/" onmouseover="window.injected=true)
+"""
+
+
+def test_changelog_renders_markdown_as_text_not_html(page: Page, server_url: str):
+    page.route("**/CHANGELOG.md", lambda route: route.fulfill(body=HOSTILE_CHANGELOG, content_type="text/markdown"))
+    page.goto(f"{server_url}/changelog.html")
+    content = page.locator("#changelog-content")
+    expect(content.locator("h2")).to_have_text("1 januari 2026")
+    expect(content).to_contain_text('<img src=x id="injected-image">')
+    expect(content.locator("img, script, [onmouseover]")).to_have_count(0)
+    expect(content.locator("strong")).to_have_text("vet")
+    # Only http and https links become links; the quote cannot leave the href attribute.
+    expect(content.locator("a")).to_have_count(1)
+    assert content.locator("a").get_attribute("href").startswith("https://example.com/")
+    expect(content).to_contain_text("[Gevaarlijke koppeling](javascript:window.injected=true)")
+    assert page.evaluate("window.injected") is None
 
 
 def test_random_fill_persists_and_clears(page: Page, server_url: str):
