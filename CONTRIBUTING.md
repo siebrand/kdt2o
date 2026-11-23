@@ -85,7 +85,9 @@ The CI `tests` job builds the container and runs
 `scripts/check_security_headers.py` against it. The check fails when a path is
 served without the security headers from `nginx/security-headers.conf`. Nginx
 drops server-level `add_header` directives in a `location` block that sets its
-own headers, so include the snippet in every such block.
+own headers, so include the snippet in every such block. The check also fails
+when `recipes.json` is not served with `Cache-Control: no-cache` or when the
+HTML, JavaScript, CSS, or JSON is not compressed with gzip.
 
 `.github/workflows/codeql.yml` runs CodeQL with the `security-extended`
 queries for JavaScript, Python, and the GitHub Actions workflows, on the same

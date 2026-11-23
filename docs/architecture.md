@@ -56,6 +56,10 @@ sends it with the other security headers on every response. GitHub Pages
 cannot send custom headers, so every page also declares the CSP, without
 `frame-ancestors`, and the referrer policy in `<meta>` elements.
 
+Nginx compresses the HTML, JavaScript, CSS, and JSON with gzip. It serves
+`recipes.json` with `Cache-Control: no-cache`, so browsers revalidate it with
+its ETag on every visit and download it again only after a change.
+
 GitHub Pages and the Docker image serve the static files in `public/` directly.
 The canonical changelog is `public/CHANGELOG.md`; `public/changelog.html` renders
 that same-origin file. No second changelog source or build-time copy is needed.
