@@ -47,6 +47,21 @@ for shopping, and all variant ingredients are aggregated once for the shopping
 list, while the planner and PDF identify the variant or component for each
 scheduled day.
 
+## Browser modules
+
+The application is a set of ES modules in `public/`, without a build step.
+`app.js` renders the pages and handles the events; the other modules do not
+touch the page, except through `state.js`:
+
+- `state.js`: the page state that the modules share, the recipes and the plan.
+- `plan.js`: days, meals, plan keys, `localStorage`, and the share-link codes.
+- `planning.js`: the move rules that drag and drop and the move buttons share.
+- `recipes.js`: recipe availability, preparation times, shared subrecipes, and
+  recipe labels.
+- `shopping.js`: ingredient normalization, weekly totals, and categories.
+- `pdf.js`: the weekly PDF and the single-recipe PDF.
+- `messages.js`: all Dutch text that the user sees.
+
 ## Build and deployment
 
 The Docker build creates a small Nginx image. The container serves static assets

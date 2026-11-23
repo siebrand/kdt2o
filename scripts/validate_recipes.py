@@ -74,7 +74,7 @@ def rule_errors(recipes: list) -> list[str]:
     errors = []
     seen_ids: set[str] = set()
     seen_titles: set[str] = set()
-    # app.js copies a component defined in one recipe into every recipe that
+    # public/recipes.js copies a component defined in one recipe into every recipe that
     # references it by componentId without defining it.
     defined_shared = {
         component.get("id")

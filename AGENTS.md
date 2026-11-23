@@ -12,7 +12,7 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
   interface, error messages, and the PDF.
 - Write code, commit messages, branch names, issues, pull requests, and
   developer documents in English.
-- Put Dutch user interface text in the message catalog in `public/app.js`.
+- Put Dutch user interface text in the message catalog in `public/messages.js`.
 
 ## Files
 
@@ -23,8 +23,12 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 - `scripts/validate_recipes.py`: the script that checks the recipe data.
 - `tests/`: the tests. `tests/test_browser.py` has the browser tests for the
   application. The other files test the scripts.
-- `public/index.html`, `public/app.js`, `public/styles.css`: the browser
-  application.
+- `public/index.html`, `public/styles.css`, and the ES modules in `public/`:
+  the browser application. `app.js` renders the pages and handles the events.
+  `state.js` has the shared page state. `plan.js` has the plan keys, the
+  storage, and the share links. `planning.js` has the move rules.
+  `recipes.js` has the recipe helpers. `shopping.js` makes the shopping list.
+  `pdf.js` makes the PDF files. `messages.js` has the Dutch text.
 - `public/version.txt`: the version marker. The deployment and release
   workflows write the CalVer version into this file.
 - `scripts/stamp_assets.py`: adds the CalVer version to the script and

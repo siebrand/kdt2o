@@ -132,7 +132,7 @@ def page(browser):
 
 
 def recipe_token(recipe_id: str) -> str:
-    """Mirror recipeToken() in public/app.js."""
+    """Mirror recipeToken() in public/plan.js."""
     value = 14695981039346656037
     for byte in recipe_id.encode("utf-8"):
         value ^= byte
@@ -147,7 +147,7 @@ def recipe_token(recipe_id: str) -> str:
 
 
 def planned_days(recipe: dict, start: int) -> list[int]:
-    """Mirror selectionDays() in public/app.js."""
+    """Mirror selectionDays() in public/planning.js."""
     if not recipe["multiDay"]:
         return [start]
     return [day for day in range(start, start + 2 * recipe.get("days", 3), 2) if day < 7]
