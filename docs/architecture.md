@@ -132,3 +132,12 @@ workflow reviews dependency changes in pull requests, audits the Python
 dependencies, and scans the built container image; it also runs weekly. CodeQL
 analyzes the JavaScript, the Python scripts, and the workflows. A weekly link
 check with lychee covers the documentation and the public HTML pages.
+
+## Decisions
+
+The reasons for the main choices are in the architecture decision records in
+`docs/adr/`: the static client application (0001), PDF generation in the
+browser (0002), the Nginx container (0004), manually edited and validated
+recipe data (0005, which supersedes 0003), and CalVer versions with automatic
+releases (0007, which supersedes 0006). Add a record for a new architecture
+decision, and mark a replaced record as superseded instead of editing it.

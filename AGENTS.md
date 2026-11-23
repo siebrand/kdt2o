@@ -21,7 +21,8 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
   `public/recipes.json` with the original recipe.
 - `schemas/schema.json`: the rules for the recipe data.
 - `scripts/validate_recipes.py`: the script that checks the recipe data.
-- `tests/test_browser.py`: the browser tests for the application.
+- `tests/`: the tests. `tests/test_browser.py` has the browser tests for the
+  application. The other files test the scripts.
 - `public/index.html`, `public/app.js`, `public/styles.css`: the browser
   application.
 - `public/version.txt`: the version marker. The deployment and release
@@ -35,10 +36,14 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 - `Dockerfile`, `nginx.conf`: the container. Nginx serves the static files.
 - `nginx/security-headers.conf`: the security headers. Include this file in
   the server block and in each `location` block that sets headers.
-- `scripts/release.py`: deterministic commit versions, tags, and release notes.
+- `scripts/release.py`: the script that makes the commit versions, the tags,
+  and the release notes. The same commit always gets the same version.
 - `.github/workflows/`: CI, Pages deployment, commit version tags, and releases.
 - `docs/plan.md`: open work and completed features. Read it before you change
   the architecture.
+- `docs/adr/`: the architecture decision records. Read them before you change
+  the architecture. Write a new record for each new architecture decision. Do
+  not change an accepted record. Mark it as superseded.
 
 ## Constraints
 
@@ -68,14 +73,13 @@ Do these steps before you commit:
 2. Run `pre-commit run --all-files`. This step checks the recipe data. It
    also checks the GitHub Actions workflows with actionlint and zizmor. Pin
    each action in a workflow to a commit SHA, with the version in a comment.
-3. If the change affects the application or the data, run the browser tests:
+3. If the change affects the application, the data, the deployment, or the
+   release tooling, run all tests:
    `uv run --no-project --with-requirements tests/requirements.txt pytest tests`.
    Before the first run, install the browser with
    `uv run --no-project --with-requirements tests/requirements.txt python -m playwright install chromium`.
 4. If the change affects data or deployment, run
    `docker build -t kitano-meal-planner .`.
-5. For release tooling, run the full browser and release test suite with
-   `uv run --no-project --with-requirements tests/requirements.txt pytest tests`.
 
 CI runs the same pre-commit checks and browser tests. To see the application,
 run `docker run --rm -p 8080:80 kitano-meal-planner`. Then open
