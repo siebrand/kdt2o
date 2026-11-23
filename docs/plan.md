@@ -44,7 +44,7 @@ The following features are complete and have been moved below the open work:
 - [x] Browser-only persistence through versioned `localStorage`.
 - [x] Dutch UI, PDF labels, messages, and generated recipe content.
 - [x] Structured ingredients, alternatives, unit normalization, and compatible
-  shopping-list aggregation.
+  shopping-list aggregation, with needed and optional quantities kept apart.
 - [x] Shared flax-cracker subrecipes, including batch calculation and equipment.
 - [x] Shared granola subrecipes, with one granola preparation per weekly list.
 - [x] Shared subrecipes defined once in `public/recipes.json` and attached only

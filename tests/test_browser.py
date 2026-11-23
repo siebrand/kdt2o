@@ -478,6 +478,28 @@ def test_shopping_list_shows_the_total_whatever_the_recipe_order(page: Page, ser
     assert [item for item in shopping_list(page) if item.endswith("komkommer")] == ["2 stuk komkommer"]
 
 
+def shopping_list_by_section(page: Page) -> dict[str, list[str]]:
+    """Return the shopping list items, split into needed items and the items under "Optioneel"."""
+    page.locator("#show-shopping-list").click()
+    expect(page.locator("#shopping-list-view")).to_be_visible()
+    rows = page.locator("#shopping-list-items li").evaluate_all(
+        "(rows) => rows.map((row) => [row.parentElement.previousElementSibling?.tagName === 'H4', row.textContent.trim()])")
+    return {
+        "needed": [text for optional, text in rows if not optional],
+        "optional": [text for optional, text in rows if optional],
+    }
+
+
+@pytest.mark.parametrize("pizza_day", [0, 1], ids=["optional-first", "needed-first"])
+def test_needed_and_optional_amounts_stay_apart(page: Page, server_url: str, pizza_day: int):
+    # Bloemkoolpizza has champignons as an optional topping; the frittata needs them.
+    titles = {(pizza_day, "diner"): "Bloemkoolpizza", (1 - pizza_day, "lunch"): "Frittata met champignons en kaas"}
+    open_planner(page, share_url(server_url, titles), "2 maaltijdmomenten gepland.")
+    sections = shopping_list_by_section(page)
+    assert [item for item in sections["needed"] if item.endswith(" champignons")] == ["250 gram champignons"]
+    assert [item for item in sections["optional"] if item.endswith(" champignons")] == ["100 gram champignons"]
+
+
 def test_recipe_subrecipe_ingredients_are_counted_once(page: Page, server_url: str):
     title = "Pesto kip met snijbonen en tuinerwtjes"
     open_planner(page, share_url(server_url, {(0, "diner"): title}), "1 maaltijdmomenten gepland.")

@@ -57,7 +57,8 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 - A multi-day recipe uses its `days` value. The planner puts the recipe on the
   selected day and on each second day after it.
 - The shopping list adds quantities only when the unit and the normalized
-  ingredient name are the same.
+  ingredient name are the same. It does not add a needed quantity to an
+  optional quantity. It shows the optional quantity under "Optioneel".
 
 ## Checks
 

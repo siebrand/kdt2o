@@ -11,6 +11,10 @@ or server-side planning state.
    list of days on narrow screens, where a button scrolls to the current day.
 3. The browser stores the plan in versioned `localStorage`.
 4. The browser aggregates compatible ingredients and creates the PDF with jsPDF.
+   Quantities are added only for the same normalized name and unit, and needed
+   and optional quantities stay apart: when one recipe needs an ingredient and
+   another lists it as optional, the needed total is in the main list and the
+   optional extra is under "Optioneel", whatever the order of the recipes.
    The site serves jsPDF from `public/vendor/`, a committed copy of the npm
    package that `package.json` locks, so no page loads code from another host.
 5. The browser can fill empty meal slots randomly and can encode a compact plan

@@ -905,9 +905,14 @@ function aggregateIngredients() {
         if (shoppingIngredient.name === "water") return;
         const key = normalizeShoppingName(shoppingIngredient.name);
         const unit = normalizeShoppingUnit(shoppingIngredient.unit);
-        const mapKey = key + "::" + unit;
+        // Needed and optional amounts stay apart: the needed total in the main list, the optional extra under
+        // "Optioneel". The order of the recipes then cannot decide whether a needed ingredient looks optional.
+        const mapKey = key + "::" + unit + (shoppingIngredient.optional ? "::optioneel" : "");
         if (warnings) {
-            const otherUnitKey = [...totals.keys()].find((existingKey) => existingKey.startsWith(key + "::") && existingKey !== mapKey);
+            const otherUnitKey = [...totals.keys()].find((existingKey) => {
+                const [existingName, existingUnit] = existingKey.split("::");
+                return existingName === key && existingUnit !== unit;
+            });
             if (otherUnitKey) {
                 const warning = "Controleer de eenheid van " + ingredient.name + ".";
                 if (!state.shoppingWarnings.includes(warning)) state.shoppingWarnings.push(warning);
