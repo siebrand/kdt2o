@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 node_modules/
+
+# Downloaded third-party recipes for later conversion; never commit
+scraped/
