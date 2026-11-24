@@ -123,8 +123,10 @@ have `nutrition` values per portion; the application does not display them yet.
 same format and with `approved: false`. It is outside `public/`, so neither the
 container nor GitHub Pages serves it and the browser never loads it. The
 validator checks it together with the recipe data, rejects an approved
-candidate, and requires new IDs and titles. A reviewed candidate moves to
-`public/recipes.json`.
+candidate, and requires new IDs and titles. `scripts/apply_review.py` applies
+the decisions of the owner from the local file `data/review-decisions.json`: an
+approved candidate moves to `public/recipes.json`, and a rejected one to
+`data/rejected.json`, which the validator checks so that it cannot come back.
 
 Shared subrecipes, such as `lijnzaadcrackers`, `granola`, and `notenbrood`,
 are defined once in one recipe's `components`. When the browser loads the

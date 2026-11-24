@@ -6,7 +6,7 @@ repos:
         entry: python scripts/validate_recipes.py
         language: python
         additional_dependencies: ["jsonschema>=4.18"]
-        files: ^(public/recipes\.json|data/candidates\.json|schemas/schema\.json|scripts/validate_recipes\.py)$
+        files: ^(public/recipes\.json|data/(candidates|rejected)\.json|schemas/schema\.json|scripts/validate_recipes\.py)$
         pass_filenames: false
       - id: check-page-security
         name: Check page security rules and CSP

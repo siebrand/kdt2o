@@ -3,5 +3,9 @@ __pycache__/
 *.pyc
 node_modules/
 
+# Decisions of a recipe review that are not applied yet
+data/review-decisions.json
+data/*.tmp
+
 # Downloaded third-party recipes for later conversion; never commit
 scraped/

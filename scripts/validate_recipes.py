@@ -12,7 +12,8 @@ diabetes.
 data/candidates.json has recipes that nobody reviewed yet. The site does not
 publish it. It follows the same rules together with public/recipes.json: its
 IDs and titles must be new, and it can use the shared components. No candidate
-can be approved, and the candidates are sorted by ID.
+can be approved, and the candidates are sorted by ID. No candidate can be in
+data/rejected.json, the list of the recipes that the owner rejected.
 
 The script exits with status 1 when any check fails.
 """
@@ -32,6 +33,7 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parent.parent
 RECIPES = ROOT / "public" / "recipes.json"
 CANDIDATES = ROOT / "data" / "candidates.json"
+REJECTED = ROOT / "data" / "rejected.json"
 SCHEMA = ROOT / "schemas" / "schema.json"
 
 HTML_TAG = re.compile(r"<\s*/?\s*[a-zA-Z][^>]*>")
@@ -134,7 +136,7 @@ def rule_errors(recipes: list) -> list[str]:
     return errors
 
 
-def candidate_errors(recipes: list, candidates: list, schema: dict) -> list[str]:
+def candidate_errors(recipes: list, candidates: list, schema: dict, rejected: list = ()) -> list[str]:
     known = set(rule_errors(recipes))
     errors = schema_errors(candidates, schema)
     errors += [error for error in rule_errors(recipes + candidates) if error not in known]
@@ -143,6 +145,13 @@ def candidate_errors(recipes: list, candidates: list, schema: dict) -> list[str]
     ids = [candidate.get("id", "") for candidate in candidates]
     if ids != sorted(ids):
         errors.append("the candidates are not sorted by id")
+    rejected_ids = [entry.get("id", "") for entry in rejected]
+    if rejected_ids != sorted(set(rejected_ids)):
+        errors.append("the rejected recipes are not unique and sorted by id")
+    errors += [f"{entry.get('id', '?')}: a rejected recipe needs {key}"
+               for entry in rejected for key in ("id", "title", "reason", "date") if not entry.get(key)]
+    errors += [f"{recipe_id}: the recipe is in {REJECTED.relative_to(ROOT)}"
+               for recipe_id in ids if recipe_id in rejected_ids]
     return errors
 
 
@@ -155,7 +164,9 @@ def main() -> int:
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
     candidates = json.loads(CANDIDATES.read_text(encoding="utf-8"))
     errors = [f"{RECIPES.relative_to(ROOT)}: {error}" for error in schema_errors(recipes, schema) + rule_errors(recipes)]
-    errors += [f"{CANDIDATES.relative_to(ROOT)}: {error}" for error in candidate_errors(recipes, candidates, schema)]
+    rejected = json.loads(REJECTED.read_text(encoding="utf-8"))
+    errors += [f"{CANDIDATES.relative_to(ROOT)}: {error}"
+               for error in candidate_errors(recipes, candidates, schema, rejected)]
     for error in errors:
         print(error, file=sys.stderr)
     if errors:

@@ -21,7 +21,12 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
   `public/recipes.json` with the original recipe.
 - `data/candidates.json`: converted recipes that nobody reviewed yet. The site
   does not publish this file. To accept a candidate, compare it with its
-  `source`, solve its `review` items, and move it to `public/recipes.json`.
+  `source` and solve its `review` items. Then use `scripts/apply_review.py` to
+  approve it, which moves it to `public/recipes.json`.
+- `data/rejected.json`: the candidates that the owner rejected. Do not add them
+  again.
+- `scripts/apply_review.py`: the commands for the review of the candidates
+  (`next`, `decide`, and `apply`). Save a decision only if the owner made it.
 - `schemas/schema.json`: the rules for the recipe data.
 - `scripts/validate_recipes.py`: the script that checks the recipe data and the
   candidates.

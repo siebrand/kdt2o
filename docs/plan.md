@@ -11,8 +11,9 @@ top of this document.
   or `Permissions-Policy`; the pages set only the CSP and the referrer policy.
 
 - Review the recipe candidates in `data/candidates.json` and move the accepted
-  ones to `public/recipes.json`. A review tool for this is designed
-  in `docs/design/recipe-review.md` and not built.
+  ones to `public/recipes.json`. The processing of the decisions
+  is built (`scripts/apply_review.py`); the local review page of
+  `docs/design/recipe-review.md` is not.
 
 ## Current product status
 

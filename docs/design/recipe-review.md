@@ -1,6 +1,7 @@
 # Design: review of the recipe candidates
 
-Status: proposed. Nothing of this design is implemented.
+Status: the decision file and the processing are implemented (ADR 0009). The
+review page is not.
 
 ## Goal
 
@@ -109,25 +110,28 @@ candidate changes afterwards, the old decision does not apply any more and the
 candidate returns to the review. Thus nobody approves a text that they did not
 see.
 
-The file is local and in `.gitignore`. Only the result of part 3 goes into Git.
+The reasons are ingrediënt, koolhydraten, dubbel, past niet, ingewikkeld, and
+anders; "anders" needs a note. The file is local and in `.gitignore`. Only the result of part 3 goes into Git.
 
 ### 3. Applying the decisions
 
-`scripts/apply_review.py` reads the decisions and reports what it will do. It
-changes files only with `--write`:
+`scripts/apply_review.py apply` reads the decisions and reports what it will do.
+It changes files only with `--write`. The commands `next` and `decide` of the
+same script print the next candidates and save one decision:
 
 | Decision | Result |
 | --- | --- |
 | approve | Remove the solved `review` items, set `approved: true`, and move the recipe from the candidates to the end of `public/recipes.json`. |
 | reject | Remove the recipe from the candidates. Add its ID, source URL, reason, and date to `data/rejected.json`. |
 | change | Leave the recipe. Print the note, so that an agent can make the change. |
+| skip | Leave the recipe. It comes last in the review. |
 
 For all decisions it first checks the fingerprint. It then runs the rules of
 `scripts/validate_recipes.py` on the result in memory and writes nothing if
 there is an error. It removes the applied decisions from the decision file.
 
 `data/rejected.json` is committed. The local conversion script skips each
-source URL and title in it, so a new conversion does not bring a rejected
+title in it, so a new conversion does not bring a rejected
 recipe back. The validator refuses a candidate that is in this file. The reason
 also shows patterns: if many recipes fail on one ingredient, a rule in the
 conversion is better than more reviews.

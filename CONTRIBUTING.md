@@ -23,7 +23,8 @@ pre-commit install
 pre-commit run --all-files
 ```
 
-The hooks validate `public/recipes.json` and `data/candidates.json` against
+The hooks validate `public/recipes.json`, `data/candidates.json`, and
+`data/rejected.json` against
 `schemas/schema.json` and additional rules in `scripts/validate_recipes.py`
 whenever recipe data, the schema, or the validator changes. They also lint `.github/workflows/` with
 actionlint 1.7.12 in a pinned Docker image, so no separate actionlint install is
@@ -152,8 +153,22 @@ lost. Never invent unclear recipe content. Every change must pass
 `data/candidates.json` holds converted recipes that nobody reviewed yet, each
 with `approved: false`, a `source`, and its open points in `review`. The site
 does not publish this file. To accept a candidate, compare it with its source,
-solve every review item, and move it to `public/recipes.json`; keep the
-candidates sorted by ID. See `docs/adr/0008-recipe-candidates-outside-the-site.md`.
+solve every review item, and approve it with the review script. See
+`docs/adr/0008-recipe-candidates-outside-the-site.md` and
+`docs/adr/0009-review-decisions-through-a-file.md`.
+
+```bash
+uv run --no-project --with jsonschema python scripts/apply_review.py next 3
+uv run --no-project --with jsonschema python scripts/apply_review.py decide <id> approve --seen <fingerprint>
+uv run --no-project --with jsonschema python scripts/apply_review.py decide <id> reject --seen <fingerprint> --reason dubbel
+uv run --no-project --with jsonschema python scripts/apply_review.py apply --write
+```
+
+`next` prints candidates with their fingerprints. `decide` saves a decision in
+`data/review-decisions.json`, which is not in Git; repeat `--solved "<note>"` for
+each review item of an approved recipe. `apply` without `--write` only reports.
+Rejected recipes are in `data/rejected.json`, and the validator refuses a
+candidate that is in it.
 
 ## Pull requests
 
