@@ -11,8 +11,8 @@ top of this document.
   or `Permissions-Policy`; the pages set only the CSP and the referrer policy.
 
 - Review the recipe candidates in `data/candidates.json` and move the accepted
-  ones to `public/recipes.json`. A review tool for this is wanted; its design is
-  open.
+  ones to `public/recipes.json`. A review tool for this is designed
+  in `docs/design/recipe-review.md` and not built.
 
 ## Current product status
 
