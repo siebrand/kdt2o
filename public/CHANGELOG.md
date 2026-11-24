@@ -2,6 +2,11 @@
 
 De belangrijkste verbeteringen voor de planner en recepten.
 
+## 24 november 2026
+
+- Bij elk recept staat onderaan de bron, met een koppeling naar de website waar het recept vandaan komt. De bron staat
+  ook in de PDF.
+
 ## 23 november 2026
 
 - In een recept heeft elke stap van de bereidingswijze nu één nummer in plaats van twee.

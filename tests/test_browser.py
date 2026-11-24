@@ -267,6 +267,7 @@ def test_changelog_page_loads(page: Page, server_url: str, path: str):
     expect(page.locator("#changelog-content")).to_contain_text(
         "De belangrijkste verbeteringen voor de planner en recepten.")
     assert page.locator("#changelog-content h2").all_inner_texts() == [
+        "24 november 2026",
         "23 november 2026",
         "21 november 2026",
         "17 november 2026",
@@ -711,11 +712,19 @@ def test_recipe_source_is_linked_in_the_dialog_and_the_pdf(page: Page, server_ur
 
 def test_recipe_without_source_has_no_source_line(page: Page, server_url: str):
     title = "Zalm in mosterdsaus"
+    recipes = [{key: value for key, value in recipe.items() if key != "source"} for recipe in RECIPES]
+    page.route("**/recipes.json", lambda route: route.fulfill(
+        body=json.dumps(recipes, ensure_ascii=False), content_type="application/json"))
     open_planner(page, f"{server_url}/")
     page.locator("#single-recipe-query").fill(title)
     page.locator("#single-recipe-results .recipe-card", has_text=title).locator("h3").click()
     expect(page.locator("#recipe-dialog")).to_be_visible()
     expect(page.locator("#recipe-dialog-content .recipe-dialog-source")).to_have_count(0)
+
+
+def test_every_recipe_credits_its_source():
+    missing = [recipe["id"] for recipe in RECIPES if not recipe.get("source")]
+    assert missing == []
 
 
 def test_single_recipe_card_opens_html_but_pdf_button_downloads(page: Page, server_url: str):

@@ -136,7 +136,11 @@
     "diet": [
       "vegetarisch"
     ],
-    "advanceNotice": "Bak de lijnzaadcrackers de dag ervoor, als je ze nog niet hebt."
+    "advanceNotice": "Bak de lijnzaadcrackers de dag ervoor, als je ze nog niet hebt.",
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "aardbeienkwark",
@@ -208,7 +212,11 @@
     "equipment": [
       "staafmixer of keukenmachine",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "amandel-pannenkoeken",
@@ -340,7 +348,11 @@
     "equipment": [
       "koekenpan",
       "rasp"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "chiapudding",
@@ -416,7 +428,11 @@
     "advanceNotice": "Bereid dit recept de avond ervoor.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "chocolademousse-met-frambozen",
@@ -503,7 +519,11 @@
     "preparationTime": 20,
     "equipment": [
       "blender of keukenmachine"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "frisse-ontbijtsalade",
@@ -579,7 +599,11 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 20
+    "preparationTime": 20,
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "gebakken-eieren-met-paprika-en-een-krokant-speklapje",
@@ -662,7 +686,11 @@
     "equipment": [
       "pan"
     ],
-    "advanceNotice": "Bak de lijnzaadcrackers de dag ervoor, als je ze nog niet hebt."
+    "advanceNotice": "Bak de lijnzaadcrackers de dag ervoor, als je ze nog niet hebt.",
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "groentemuffins",
@@ -760,7 +788,11 @@
     ],
     "ovenTime": 35,
     "preparationTime": 15,
-    "advanceNotice": "Bak de muffins de dag ervoor."
+    "advanceNotice": "Bak de muffins de dag ervoor.",
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "huttenkase-met-rood-blauw-fruit-en-zelfgemaakte-granola",
@@ -862,7 +894,11 @@
     "diet": [
       "vegetarisch"
     ],
-    "advanceNotice": "Maak de granola de dag ervoor, als je die nog niet hebt."
+    "advanceNotice": "Maak de granola de dag ervoor, als je die nog niet hebt.",
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "kokospap",
@@ -957,7 +993,11 @@
     ],
     "equipment": [
       "blender of keukenmachine"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "kwark-muffins",
@@ -1063,7 +1103,11 @@
       "vegetarisch"
     ],
     "ovenTime": 25,
-    "advanceNotice": "Bak de muffins de dag ervoor."
+    "advanceNotice": "Bak de muffins de dag ervoor.",
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "lijnzaadcrackers-met-boerenkaas",
@@ -1133,7 +1177,11 @@
     "diet": [
       "vegetarisch"
     ],
-    "advanceNotice": "Bak de lijnzaadcrackers de dag ervoor, als je ze nog niet hebt."
+    "advanceNotice": "Bak de lijnzaadcrackers de dag ervoor, als je ze nog niet hebt.",
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "mandarijnenkwark-met-pistachenoten",
@@ -1188,7 +1236,11 @@
     "method": "Verdeel de ingrediënten over 2 schaaltjes en serveer. Tip: In plaats van pistachenoten kun je zelfgemaakte granola toevoegen.",
     "diet": [
       "vegetarisch"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "mexicaanse-roerei",
@@ -1285,7 +1337,11 @@
     ],
     "equipment": [
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "notenbrood-met-avocado",
@@ -1431,7 +1487,11 @@
     "diet": [
       "vegetarisch"
     ],
-    "advanceNotice": "Bak het notenbrood vooraf; het moet 70 minuten in de oven."
+    "advanceNotice": "Bak het notenbrood vooraf; het moet 70 minuten in de oven.",
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "notenbrood-met-roomkaas-en-zalm",
@@ -1497,7 +1557,11 @@
     "diet": [
       "vis"
     ],
-    "advanceNotice": "Bak het notenbrood vooraf; het moet 70 minuten in de oven."
+    "advanceNotice": "Bak het notenbrood vooraf; het moet 70 minuten in de oven.",
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "notenbrood-met-roomboter-boerenkaas-en-komkommer",
@@ -1563,7 +1627,11 @@
     "diet": [
       "vegetarisch"
     ],
-    "advanceNotice": "Bak het notenbrood vooraf; het moet 70 minuten in de oven."
+    "advanceNotice": "Bak het notenbrood vooraf; het moet 70 minuten in de oven.",
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "omelet-met-geelwortel",
@@ -1668,7 +1736,11 @@
     "equipment": [
       "pan"
     ],
-    "advanceNotice": "Bak de lijnzaadcrackers de dag ervoor, als je ze nog niet hebt."
+    "advanceNotice": "Bak de lijnzaadcrackers de dag ervoor, als je ze nog niet hebt.",
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "ontbijtmuffins",
@@ -1741,7 +1813,11 @@
     ],
     "ovenTime": 25,
     "preparationTime": 15,
-    "advanceNotice": "Bak de muffins de dag ervoor."
+    "advanceNotice": "Bak de muffins de dag ervoor.",
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "roerei-met-ricotta",
@@ -1832,7 +1908,11 @@
     "equipment": [
       "rasp",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "volle-kwark-met-granola-en-diepvries-rood-fruit",
@@ -1878,7 +1958,11 @@
       "vegetarisch"
     ],
     "preparationTime": 10,
-    "advanceNotice": "Maak de granola de dag ervoor, als je die nog niet hebt."
+    "advanceNotice": "Maak de granola de dag ervoor, als je die nog niet hebt.",
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "gegrilde-groenten-met-feta-en-crackers-met-kaas-avocado",
@@ -2009,7 +2093,11 @@
       "bakplaat",
       "bakpapier",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "artisjok-salade-met-bloemkoolrijst",
@@ -2153,7 +2241,11 @@
     "notes": [
       "Kies voor een strikt vegetarisch gerecht een vegetarische harde kaas."
     ],
-    "preparationTime": 30
+    "preparationTime": 30,
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "bietensalade-met-haring",
@@ -2261,7 +2353,11 @@
     "diet": [
       "vis"
     ],
-    "preparationTime": 25
+    "preparationTime": 25,
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "broccolisoep",
@@ -2376,7 +2472,11 @@
     "preparationTime": 35,
     "equipment": [
       "soeppan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "courgettesoep-3-dagen",
@@ -2622,7 +2722,11 @@
     "preparationTime": 25,
     "equipment": [
       "soeppan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "frittata-met-champignons-en-kaas",
@@ -2761,7 +2865,11 @@
     ],
     "equipment": [
       "ovenschaal"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "griekse-salade",
@@ -2870,7 +2978,11 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 25
+    "preparationTime": 25,
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "groente-salade-restje-avondeten-met-geitenkaas-en-mosterddressing",
@@ -2987,7 +3099,11 @@
     "diet": [
       "vegetarisch"
     ],
-    "preparationTime": 25
+    "preparationTime": 25,
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "kleurrijke-frittata",
@@ -3110,7 +3226,11 @@
     "preparationTime": 30,
     "equipment": [
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "koud-kippesto-salade",
@@ -3206,7 +3326,11 @@
     "equipment": [
       "rasp",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "linzensoep",
@@ -3322,7 +3446,11 @@
     "equipment": [
       "staafmixer",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "mozzarellawraps-met-avocado-en-tomaat",
@@ -3434,7 +3562,11 @@
     "equipment": [
       "bakpapier",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "mozzarellawraps-met-zalm-en-roomkaas",
@@ -3554,7 +3686,11 @@
     "equipment": [
       "bakpapier",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "omelet-champignons-en-salade",
@@ -3689,7 +3825,11 @@
     "preparationTime": 25,
     "equipment": [
       "koekenpan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "quinoa-kip-salade",
@@ -3802,7 +3942,11 @@
     "preparationTime": 20,
     "equipment": [
       "koekenpan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "salade-nicoise",
@@ -3886,7 +4030,11 @@
     "diet": [
       "vis"
     ],
-    "preparationTime": 20
+    "preparationTime": 20,
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "salade-zalm-met-bonen",
@@ -3978,7 +4126,11 @@
     "diet": [
       "vis"
     ],
-    "preparationTime": 20
+    "preparationTime": 20,
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "tomatensoep",
@@ -4128,7 +4280,11 @@
     "equipment": [
       "soeppan",
       "staafmixer"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "tonijn-kikkererwten-salade",
@@ -4254,7 +4410,11 @@
     "diet": [
       "vis"
     ],
-    "preparationTime": 20
+    "preparationTime": 20,
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "witlofsalade-met-zalm",
@@ -4330,7 +4490,11 @@
     "diet": [
       "vis"
     ],
-    "preparationTime": 20
+    "preparationTime": 20,
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "andijviestamppot-vegetarische-variant",
@@ -4419,7 +4583,11 @@
       "staafmixer of keukenmachine",
       "vijzel",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "aubergine-uit-de-oven",
@@ -4543,7 +4711,11 @@
       "ovenschaal",
       "bakpapier",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "aziatische-tofu",
@@ -4680,7 +4852,11 @@
     "preparationTime": 25,
     "equipment": [
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "aziatische-runderreepjes",
@@ -4817,7 +4993,11 @@
     "preparationTime": 25,
     "equipment": [
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "biefstuk-met-champignons-en-geroosterde-groenten",
@@ -4939,7 +5119,11 @@
       "bakplaat",
       "bakpapier",
       "koekenpan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "gevulde-portobello-met-geroosterde-groenten",
@@ -5087,7 +5271,11 @@
       "ovenschaal",
       "bakplaat",
       "bakpapier"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "bloemkoolpizza",
@@ -5232,7 +5420,11 @@
       "vis"
     ],
     "ovenTime": 35,
-    "preparationTime": 25
+    "preparationTime": 25,
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "caesarsalade-met-garnalen",
@@ -5392,7 +5584,11 @@
     "equipment": [
       "koekenpan",
       "rasp"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "caesarsalade-met-kipfilet",
@@ -5552,7 +5748,11 @@
     "equipment": [
       "koekenpan",
       "rasp"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "courgetti-pasta",
@@ -5677,7 +5877,11 @@
     "preparationTime": 20,
     "equipment": [
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "gebakken-kippenvleugels",
@@ -5781,7 +5985,11 @@
     "preparationTime": 20,
     "equipment": [
       "rasp"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "gegrilde-groenten-met-pastinaakfrietjes-en-gebakken-zalm",
@@ -5887,7 +6095,11 @@
     "preparationTime": 20,
     "equipment": [
       "bakplaat"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "gevulde-paprika-met-gehakt-uit-de-oven",
@@ -6049,7 +6261,11 @@
     "preparationTime": 15,
     "equipment": [
       "ovenschaal"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "hamburger-met-spinazie-feta-en-pastinaak",
@@ -6156,7 +6372,11 @@
       "bakpapier",
       "wok",
       "koekenpan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "kalkoenfilet-met-parmezaanse-kaas",
@@ -6286,7 +6506,11 @@
     "equipment": [
       "staafmixer of keukenmachine",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "bloemkoolcouscous-met-limabonen-zongedroogde-tahin",
@@ -6408,7 +6632,11 @@
     "equipment": [
       "staafmixer of keukenmachine",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "kipkerrie-met-bloemkoolrijst",
@@ -6530,7 +6758,11 @@
     "equipment": [
       "wok",
       "koekenpan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "korstloze-quiche-met-gewokte-groenten",
@@ -6704,7 +6936,11 @@
       "vegetarisch"
     ],
     "ovenTime": 55,
-    "preparationTime": 20
+    "preparationTime": 20,
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "nasi-met-kipsate",
@@ -6900,7 +7136,11 @@
     ],
     "equipment": [
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "oosterse-groentestoof-ei",
@@ -7035,7 +7275,11 @@
     "preparationTime": 45,
     "equipment": [
       "koekenpan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "oosterse-kipfilet-met-witlofsalade",
@@ -7162,7 +7406,11 @@
     "preparationTime": 35,
     "equipment": [
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "pesto-kip-met-snijbonen-en-tuinerwtjes",
@@ -7284,7 +7532,11 @@
     "preparationTime": 50,
     "equipment": [
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "plaat-courgette",
@@ -7382,7 +7634,11 @@
       "bakplaat",
       "bakpapier",
       "rasp"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "pompoenlasagne",
@@ -7560,7 +7816,11 @@
       "bakpapier",
       "rasp",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "shoarmaschotel",
@@ -7696,7 +7956,11 @@
     "preparationTime": 25,
     "equipment": [
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "shoarmaschotel-vegetarisch",
@@ -7832,7 +8096,11 @@
     "preparationTime": 25,
     "equipment": [
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "stoofvlees-met-knolselderij-met-rode-kool",
@@ -8086,7 +8354,11 @@
       "braadpan",
       "rasp",
       "pureestamper"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "tempeh-met-sesamzaad-en-ei",
@@ -8214,7 +8486,11 @@
     "equipment": [
       "koekenpan",
       "rasp"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "viscurry-met-sperziebonen",
@@ -8327,7 +8603,11 @@
       "koekenpan",
       "staafmixer",
       "rasp"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "witte-vis-met-kokoskerriesaus",
@@ -8458,7 +8738,11 @@
     "equipment": [
       "ovenschaal",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "zalm-in-mosterdsaus",
@@ -8572,7 +8856,11 @@
     "ovenTime": 30,
     "equipment": [
       "grillpan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "zalm-met-zuurkool-en-veldsla",
@@ -8675,7 +8963,11 @@
     "preparationTime": 20,
     "equipment": [
       "rasp"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "zuurkoolpotje-met-gehakt",
@@ -8791,7 +9083,11 @@
       "rasp",
       "pureestamper",
       "pan"
-    ]
+    ],
+    "source": {
+      "name": "Voeding Leeft",
+      "url": "https://voedingleeft.nl/"
+    }
   },
   {
     "id": "groentesoep-met-aardappel-en-balletjes",
@@ -8905,7 +9201,11 @@
     ],
     "programs": [
       "Suikerchallenge"
-    ]
+    ],
+    "source": {
+      "name": "Diabetesfonds",
+      "url": "https://www.diabetesfonds.nl/recepten/groentesoep-met-aardappel-en-balletjes"
+    }
   },
   {
     "id": "groentesoep-met-aardappel-vegetarisch",
@@ -9020,7 +9320,11 @@
     ],
     "programs": [
       "Suikerchallenge"
-    ]
+    ],
+    "source": {
+      "name": "Diabetesfonds",
+      "url": "https://www.diabetesfonds.nl/recepten/groentesoep-met-aardappel-en-balletjes"
+    }
   },
   {
     "id": "snelle-uiensoep-met-kaaskoekje",
@@ -9141,6 +9445,10 @@
     ],
     "programs": [
       "Suikerchallenge"
-    ]
+    ],
+    "source": {
+      "name": "Diabetesfonds",
+      "url": "https://www.diabetesfonds.nl/recepten/snelle-uiensoep-met-kaaskoekje"
+    }
   }
 ]
