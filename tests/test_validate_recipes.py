@@ -60,3 +60,13 @@ def test_unknown_flag_and_source_without_https_are_rejected():
     errors = errors_for(recipe)
     assert any("flags" in error for error in errors)
     assert any("source" in error for error in errors)
+
+
+def test_nutrition_per_portion_is_optional_and_checked():
+    recipe = approved_recipe()
+    recipe["nutrition"] = {"calories": 337.5, "carbohydrates": 4, "protein": 20.1, "fat": 25, "fiber": 3.2,
+                           "note": "Per portie exclusief brood"}
+    assert errors_for(recipe) == []
+    recipe["nutrition"] = {"calories": -1, "salt": 1}
+    errors = errors_for(recipe)
+    assert any("nutrition" in error for error in errors)

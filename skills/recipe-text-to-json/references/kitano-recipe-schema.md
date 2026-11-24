@@ -30,6 +30,10 @@ combined with `vlees` or `vis`.
   recipe is suitable.
 - `components`, `dailyVariants`, `equipment`, `notes`, `advanceNotice`.
 - `source`: `{"name": ..., "url": "https://..."}` for a recipe from a website.
+- `nutrition`: values per portion as the source states them: `calories` (kcal),
+  `carbohydrates`, `protein`, `fat`, `saturatedFat`, and `fiber` (gram), plus
+  an optional `note`, for example "Per portie exclusief worst". Do not
+  calculate values that the source does not give.
 - `review`: open points for a person to check, each `{"type": ..., "note": ...}`.
   Types: `scaling`, `sweetener-removed`, `ingredient-flag`, `nutrition`,
   `category`, `servings`, `conversion`. Write a specific note, for example

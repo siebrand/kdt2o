@@ -316,6 +316,9 @@
           "items": {
             "$ref": "#/$defs/reviewItem"
           }
+        },
+        "nutrition": {
+          "$ref": "#/$defs/nutrition"
         }
       },
       "required": [
@@ -405,6 +408,47 @@
         "name",
         "url"
       ],
+      "additionalProperties": false
+    },
+    "nutrition": {
+      "description": "Nutrition values per portion, as the source states them. Stored for later use; the application does not display them yet.",
+      "type": "object",
+      "properties": {
+        "calories": {
+          "type": "number",
+          "minimum": 0,
+          "description": "kcal"
+        },
+        "carbohydrates": {
+          "type": "number",
+          "minimum": 0,
+          "description": "gram, as the source states it; it can include or exclude fiber"
+        },
+        "protein": {
+          "type": "number",
+          "minimum": 0,
+          "description": "gram"
+        },
+        "fat": {
+          "type": "number",
+          "minimum": 0,
+          "description": "gram"
+        },
+        "saturatedFat": {
+          "type": "number",
+          "minimum": 0,
+          "description": "gram"
+        },
+        "fiber": {
+          "type": "number",
+          "minimum": 0,
+          "description": "gram"
+        },
+        "note": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      },
+      "minProperties": 1,
       "additionalProperties": false
     }
   }

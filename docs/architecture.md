@@ -114,7 +114,8 @@ The recipes are for people with type 2 diabetes. Ingredients can carry `flags`
 points with a type and a note, and a `source` with the name and URL of the site
 it comes from. The validator refuses `approved: true` while a recipe has open
 review items or an ingredient flagged `sweetener`, `honey`, or `sugar`, so a
-recipe with such a problem cannot reach the planner by accident.
+recipe with such a problem cannot reach the planner by accident. A recipe can
+have `nutrition` values per portion; the application does not display them yet.
 
 Shared subrecipes, such as `lijnzaadcrackers`, `granola`, and `notenbrood`,
 are defined once in one recipe's `components`. When the browser loads the
