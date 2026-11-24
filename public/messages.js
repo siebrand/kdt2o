@@ -31,6 +31,7 @@ export const MESSAGES = {
     preparationTime: (minutes) => `Bereiding: circa ${minutes} minuten`,
     ovenTime: (minutes) => `Oventijd: circa ${minutes} minuten`,
     note: "Opmerking",
+    sourcePrefix: "Bron: ",
     notePrefix: (text) => `Opmerking: ${text}`,
     ingredients: "Ingrediënten",
     mainIngredients: "Hoofdrecept · Ingrediënten",

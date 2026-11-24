@@ -677,6 +677,47 @@ def test_recipe_dialog_numbers_each_step_once(page: Page, server_url: str, title
     assert all(text.startswith("Tip:") for number, text in steps if not number)
 
 
+def test_recipe_source_is_linked_in_the_dialog_and_the_pdf(page: Page, server_url: str):
+    recipes = json.loads(json.dumps(RECIPES))
+    recipe = next(r for r in recipes if r["approved"] and not r["multiDay"])
+    url = "https://www.koolhydraatarmrecept.nl/voorbeeld-recept/"
+    recipe["source"] = {"name": "koolhydraatarmrecept.nl", "url": url}
+    page.route("**/recipes.json", lambda route: route.fulfill(
+        body=json.dumps(recipes, ensure_ascii=False), content_type="application/json"))
+    open_planner(page, f"{server_url}/")
+    page.locator("#single-recipe-query").fill(recipe["title"])
+    card = page.locator("#single-recipe-results .recipe-card", has_text=recipe["title"])
+    card.locator("h3").click()
+    source = page.locator("#recipe-dialog-content .recipe-dialog-source")
+    expect(source).to_have_text("Bron: koolhydraatarmrecept.nl")
+    expect(source.locator("a")).to_have_attribute("href", url)
+    expect(source.locator("a")).to_have_attribute("rel", "noopener noreferrer")
+    page.locator("#recipe-dialog-close").click()
+
+    with page.expect_download() as download_info:
+        card.get_by_role("button", name="PDF downloaden").click()
+    pdf = Path(download_info.value.path()).read_bytes()
+    assert f"/URI ({url})".encode() in pdf
+
+    meal = recipe["categories"][0]
+    # A share link that only changes the hash does not reload the page.
+    page.goto("about:blank")
+    open_planner(page, share_url(server_url, {(0, meal): recipe["title"]}), "1 maaltijdmomenten gepland.")
+    page.locator("#show-shopping-list").click()
+    with page.expect_download() as download_info:
+        page.locator("#download-pdf").click()
+    assert f"/URI ({url})".encode() in Path(download_info.value.path()).read_bytes()
+
+
+def test_recipe_without_source_has_no_source_line(page: Page, server_url: str):
+    title = "Zalm in mosterdsaus"
+    open_planner(page, f"{server_url}/")
+    page.locator("#single-recipe-query").fill(title)
+    page.locator("#single-recipe-results .recipe-card", has_text=title).locator("h3").click()
+    expect(page.locator("#recipe-dialog")).to_be_visible()
+    expect(page.locator("#recipe-dialog-content .recipe-dialog-source")).to_have_count(0)
+
+
 def test_single_recipe_card_opens_html_but_pdf_button_downloads(page: Page, server_url: str):
     recipe = BY_TITLE["Stoofvlees met knolselderij en rode kool"]
     open_planner(page, f"{server_url}/")

@@ -42,6 +42,7 @@ The following features are complete and have been moved below the open work:
 - [x] Recipe selection at most once per week, with valid empty meal slots.
 - [x] Recipes that fit several meals, such as lunch and dinner, through a
   `categories` list.
+- [x] A "Bron" link to the website of a recipe in the recipe dialog and the PDFs.
 - [x] Multi-day planning with configurable `days` values and conflict checks.
 - [x] Browser-only persistence through versioned `localStorage`.
 - [x] Dutch UI, PDF labels, messages, and generated recipe content.

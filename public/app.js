@@ -2,7 +2,7 @@ import {MESSAGES} from "./messages.js";
 import {createPdf, createSingleRecipePdf} from "./pdf.js";
 import {DAYS, MEALS, PLAN_STORAGE_KEY, PLAN_STORAGE_VERSION, compactPlan, dayName, encodeBase64Url, isMultiDay, planKey, planKeyMeal, plannedDays, resolvePlanRecipeTokens, shortDayName} from "./plan.js";
 import {nearestMove, planSelectionMove} from "./planning.js";
-import {addPreparationTime, attachSharedRecipeComponents, ingredientLabel, methodSteps, recipeEquipment, recipeIsAvailable, recipeMetadataLabel, recipeTimingLabel, recipeVariantForDay, shuffleRecipes, sortIngredientsForDisplay} from "./recipes.js";
+import {addPreparationTime, attachSharedRecipeComponents, ingredientLabel, methodSteps, recipeEquipment, recipeIsAvailable, recipeMetadataLabel, recipeSourceUrl, recipeTimingLabel, recipeVariantForDay, shuffleRecipes, sortIngredientsForDisplay} from "./recipes.js";
 import {shoppingCategory, shoppingIngredientLabel, sortedShoppingItems} from "./shopping.js";
 import {recipeById, state} from "./state.js";
 
@@ -624,6 +624,18 @@ function openRecipeHtml(recipe) {
         appendMethodSection(MESSAGES.methodOf(MESSAGES.variant(variant.title)), variant.method);
     });
     appendSection(MESSAGES.note, recipe.notes || []);
+    const sourceUrl = recipeSourceUrl(recipe);
+    if (sourceUrl) {
+        const source = document.createElement("p");
+        source.className = "recipe-dialog-source";
+        const link = document.createElement("a");
+        link.href = sourceUrl;
+        link.rel = "noopener noreferrer";
+        link.target = "_blank";
+        link.textContent = recipe.source.name;
+        source.append(MESSAGES.sourcePrefix, link);
+        content.append(source);
+    }
 
     if (typeof dialog.showModal === "function") dialog.showModal();
     else dialog.setAttribute("open", "");

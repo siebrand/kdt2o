@@ -1,7 +1,7 @@
 // The weekly PDF and the single-recipe PDF, made in the browser with jsPDF.
 import {MESSAGES} from "./messages.js";
 import {DAYS, MEALS, dayName, planKey, plannedDays, shortDayName} from "./plan.js";
-import {ingredientLabel, methodSteps, recipeEquipment, recipeMetadataLabel, recipeTimingLabel, sortIngredientsForDisplay} from "./recipes.js";
+import {ingredientLabel, methodSteps, recipeEquipment, recipeMetadataLabel, recipeSourceUrl, recipeTimingLabel, sortIngredientsForDisplay} from "./recipes.js";
 import {formatIngredientAmount, formatIngredientUnit, shoppingCategory, sortedShoppingItems} from "./shopping.js";
 import {recipeById, reportStatus, state} from "./state.js";
 
@@ -262,6 +262,7 @@ export async function createPdf() {
                     y = addWrapped(doc, "• " + note, margin, y, width - margin * 2, 5);
                 });
             }
+            y = addSourceLine(doc, recipe, margin, y + 5);
         }
     }
     overviewLinks.forEach((link) => {
@@ -271,6 +272,16 @@ export async function createPdf() {
         doc.link(link.x, link.y, link.width, link.height, {pageNumber});
     });
     doc.save(MESSAGES.weekPlanFilename);
+}
+
+// Writes "Bron: <site>" as a link to the source of the recipe, when it has one. Returns the next y position.
+function addSourceLine(doc, recipe, x, y) {
+    const url = recipeSourceUrl(recipe);
+    if (!url) return y;
+    doc.setFontSize(9);
+    doc.setTextColor(40, 45, 40);
+    doc.textWithLink(MESSAGES.sourcePrefix + recipe.source.name, x, y, {url});
+    return y + 5;
 }
 
 export async function createSingleRecipePdf(recipe) {
@@ -363,5 +374,6 @@ export async function createSingleRecipePdf(recipe) {
         });
     }
     addSection(MESSAGES.note, recipe.notes || []);
+    addSourceLine(doc, recipe, margin, y);
     doc.save((recipe.id || MESSAGES.recipe) + ".pdf");
 }

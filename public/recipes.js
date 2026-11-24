@@ -119,3 +119,9 @@ export function ingredientLabel(item, includeOptionalPrefix = true) {
     });
     return alternatives.length ? main + " of " + alternatives.join(" of ") : main;
 }
+
+// Returns the source URL of a recipe from a website, or null. Only https links are used.
+export function recipeSourceUrl(recipe) {
+    const url = recipe?.source?.url;
+    return typeof url === "string" && /^https:\/\//.test(url) ? url : null;
+}

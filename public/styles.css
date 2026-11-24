@@ -412,6 +412,12 @@ body {
     margin: .25rem 0;
 }
 
+.recipe-dialog-source {
+    margin: 0;
+    color: #53675a;
+    font-size: .9rem;
+}
+
 .recipe-dialog-section li.recipe-tip {
     list-style: none;
 }

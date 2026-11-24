@@ -21,7 +21,9 @@ or server-side planning state.
    using stable codes derived from recipe IDs in a shareable URL without sending
    planning data to a server. Unknown recipe codes remain visible as unresolved
    recipe slots.
-6. The browser can filter one recipe by meal, show recipe details as HTML, and generate a single-recipe PDF. The recipe
+6. The browser can filter one recipe by meal, show recipe details as HTML, and generate a single-recipe PDF. A recipe
+   with a `source` has a "Bron" link to that https URL in the recipe dialog and in both PDFs; the browser opens it only
+   when the user clicks it. The recipe
    dialog can optionally request the Screen Wake Lock API while visible; it releases the lock when cooking mode is
    turned off or the dialog closes, and reacquires it when the page becomes visible again.
 7. Recipe lists and random selection use only recipes with `approved: true`.
