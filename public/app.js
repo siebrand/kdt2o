@@ -64,6 +64,14 @@ function savePlan() {
         version: PLAN_STORAGE_VERSION,
         plan: compactPlan(state.plan)
     }));
+    removeShareLink();
+}
+
+// Once the plan is saved, a share link in the address bar would undo the changes on reload. Only opening a link saves
+// nothing, so until the first change the link stays and the visitor keeps the own saved plan.
+function removeShareLink() {
+    if (!new URLSearchParams(window.location.hash.slice(1)).has("plan")) return;
+    history.replaceState(history.state, "", window.location.pathname + window.location.search);
 }
 
 function applyPlan(plan) {

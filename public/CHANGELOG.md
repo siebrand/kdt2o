@@ -6,6 +6,8 @@ De belangrijkste verbeteringen voor de planner en recepten.
 
 - Bij elk recept staat onderaan de bron, met een koppeling naar de website waar het recept vandaan komt. De bron staat
   ook in de PDF.
+- Open je een gedeeld weekmenu en pas je het aan, dan blijven je aanpassingen bewaard als je de pagina opnieuw laadt.
+  Eerder verscheen dan weer het gedeelde menu. Zolang je niets aanpast, blijft je eigen weekmenu bewaard.
 
 ## 23 november 2026
 

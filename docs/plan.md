@@ -39,7 +39,8 @@ The following features are complete and have been moved below the open work:
   remove button with undo instead of removal on any click. The buttons sit at
   the bottom of the card and accept the same moves as drag and drop: a button
   moves the card to the nearest earlier or later day where a drop succeeds.
-- [x] Shareable menu links that restore a plan from the URL without server storage.
+- [x] Shareable menu links that restore a plan from the URL without server storage; the first change removes the link
+  from the address bar, so a reload keeps the change.
 - [x] Single-recipe search by meal with a distinct PDF-download area and an HTML recipe view for the rest of the card.
 - [x] Recipe details open as HTML when clicking a planned meal slot outside its buttons or drag-and-drop interaction.
 - [x] Optional cooking mode keeps the screen awake while an HTML recipe is open, when supported by the browser; it

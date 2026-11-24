@@ -349,6 +349,26 @@ def test_random_fill_persists_and_clears(page: Page, server_url: str):
     expect(page.locator("#status")).to_have_text(EMPTY_STATUS)
 
 
+def test_share_link_does_not_undo_edits_on_reload(page: Page, server_url: str):
+    link = share_url(server_url, {(0, "diner"): "Zalm in mosterdsaus", (1, "diner"): "Viscurry met sperziebonen"})
+    open_planner(page, link, "2 maaltijdmomenten gepland.")
+    # Opening a link does not change the saved plan, so the link stays until the first change.
+    assert page.url == link
+    assert page.evaluate("localStorage.getItem('kitano-weekplan')") is None
+
+    page.get_by_role("button", name="Zalm in mosterdsaus verwijderen").first.click()
+    assert page.url == f"{server_url}/"
+    page.reload()
+    expect(page.locator("#status")).to_have_text("1 maaltijdmomenten gepland.")
+    assert planned_titles(page, "diner").count("Viscurry met sperziebonen") == 1
+
+    page.goto("about:blank")
+    open_planner(page, link, "2 maaltijdmomenten gepland.")
+    page.locator("#clear-plan").click()
+    page.reload()
+    expect(page.locator("#status")).to_have_text(EMPTY_STATUS)
+
+
 def planned_titles(page: Page, meal: str) -> list[str]:
     """Return the recipe title of each day for one meal, or "" for an empty slot."""
     titles = []
