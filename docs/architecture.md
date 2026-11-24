@@ -25,6 +25,9 @@ or server-side planning state.
    dialog can optionally request the Screen Wake Lock API while visible; it releases the lock when cooking mode is
    turned off or the dialog closes, and reacquires it when the page becomes visible again.
 7. Recipe lists and random selection use only recipes with `approved: true`.
+   A recipe lists in `categories` the meals it fits, for example `["lunch",
+   "diner"]`; the planner offers it, and random filling uses it, for each of
+   these meals.
 8. Planned recipes can be moved by drag and drop within the same meal type. The
    dragged selection shifts by the distance between the dragged card and the
    drop cell, so multi-day recipes move as a whole and may be dropped on empty

@@ -67,7 +67,7 @@ export function recipeTimingLabel(recipe) {
 }
 
 export function recipeMetadataLabel(recipe) {
-    const metadata = [recipe?.category || MESSAGES.recipe, recipe?.portions ? MESSAGES.portions(recipe.portions) : ""].filter(Boolean);
+    const metadata = [recipe?.categories?.join(" / ") || MESSAGES.recipe, recipe?.portions ? MESSAGES.portions(recipe.portions) : ""].filter(Boolean);
     const timing = recipeTimingLabel(recipe);
     if (timing) metadata.push(timing);
     return metadata.join(" · ");

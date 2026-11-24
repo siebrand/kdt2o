@@ -20,8 +20,9 @@ planner. Read `schemas/schema.json` before producing output.
   existing explicit ID when provided.
 - Set `approved` to `false` unless the user explicitly says the recipe has been
   reviewed and approved.
-- Use `category` as exactly one of `ontbijt`, `lunch`, or `diner`. Ask when it
-  cannot be inferred safely; do not invent a category.
+- Use `categories` as a list of one or more of `ontbijt`, `lunch`, and
+  `diner`: the meals for which the recipe fits. Ask when they cannot be
+  inferred safely; do not invent a category.
 - Set the required `diet` array to one of `["vlees"]`, `["vis"]`,
   `["vlees", "vis"]`, `["vegetarisch"]`, or `["vegan"]`, based on the
   non-optional ingredients. Do not combine `vegetarisch` or `vegan` with
@@ -91,7 +92,7 @@ Every ingredient must be an object with:
 
 Include these fields in this order when applicable:
 
-1. `id`, `title`, `approved`, `category`, `portions`, `multiDay`, `days`
+1. `id`, `title`, `approved`, `categories`, `portions`, `multiDay`, `days`
 2. `preparationTime`, `ovenTime`
 3. `ingredients`, `components`, `dailyVariants`, `equipment`
 4. `method`, `notes`, `advanceNotice`

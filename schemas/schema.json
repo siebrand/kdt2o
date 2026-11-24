@@ -217,12 +217,18 @@
         "approved": {
           "type": "boolean"
         },
-        "category": {
-          "enum": [
-            "ontbijt",
-            "lunch",
-            "diner"
-          ]
+        "categories": {
+          "description": "The meals for which the recipe fits. The planner offers it for each of these meals.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "ontbijt",
+              "lunch",
+              "diner"
+            ]
+          }
         },
         "portions": {
           "type": "integer",
@@ -316,7 +322,7 @@
         "id",
         "title",
         "approved",
-        "category",
+        "categories",
         "portions",
         "multiDay",
         "ingredients",

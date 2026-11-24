@@ -3,7 +3,9 @@
     "id": "lijnzaadcrackers-en-huttenkase-en-avocado",
     "title": "Lijnzaadcrackers en hüttenkäse en avocado",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -141,7 +143,9 @@
     "title": "Aardbeienkwark",
     "preparationTime": 10,
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -211,7 +215,9 @@
     "title": "Amandelpannenkoeken",
     "approved": true,
     "preparationTime": 20,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -341,7 +347,9 @@
     "title": "Chiapudding",
     "approved": true,
     "preparationTime": 10,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -414,7 +422,9 @@
     "id": "chocolademousse-met-frambozen",
     "title": "Chocolademousse met frambozen",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -499,7 +509,9 @@
     "id": "frisse-ontbijtsalade",
     "title": "Frisse ontbijtsalade",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -573,7 +585,9 @@
     "id": "gebakken-eieren-met-paprika-en-een-krokant-speklapje",
     "title": "Gebakken eieren met paprika en een krokant speklapje",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -654,7 +668,9 @@
     "id": "groentemuffins",
     "title": "Groentemuffins",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 4,
     "days": 2,
     "multiDay": true,
@@ -750,7 +766,9 @@
     "id": "huttenkase-met-rood-blauw-fruit-en-zelfgemaakte-granola",
     "title": "Hüttenkäse met rood-blauw fruit en zelfgemaakte granola",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -850,7 +868,9 @@
     "id": "kokospap",
     "title": "Kokospap",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -943,7 +963,9 @@
     "id": "kwark-muffins",
     "title": "Kwarkmuffins",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 4,
     "days": 2,
     "multiDay": true,
@@ -1047,7 +1069,9 @@
     "id": "lijnzaadcrackers-met-boerenkaas",
     "title": "Lijnzaadcrackers met boerenkaas",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -1115,7 +1139,9 @@
     "id": "mandarijnenkwark-met-pistachenoten",
     "title": "Mandarijnenkwark met pistachenoten",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -1168,7 +1194,9 @@
     "id": "mexicaanse-roerei",
     "title": "Mexicaans roerei",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -1263,7 +1291,9 @@
     "id": "notenbrood-met-avocado",
     "title": "Notenbrood met avocado",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -1407,7 +1437,9 @@
     "id": "notenbrood-met-roomkaas-en-zalm",
     "title": "Notenbrood met roomkaas en zalm",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -1471,7 +1503,9 @@
     "id": "notenbrood-met-roomboter-boerenkaas-en-komkommer",
     "title": "Notenbrood met roomboter, boerenkaas en komkommer",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -1535,7 +1569,9 @@
     "id": "omelet-met-geelwortel",
     "title": "Omelet met geelwortel",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -1638,7 +1674,9 @@
     "id": "ontbijtmuffins",
     "title": "Ontbijtmuffins",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -1709,7 +1747,9 @@
     "id": "roerei-met-ricotta",
     "title": "Roerei met ricotta",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -1798,7 +1838,9 @@
     "id": "volle-kwark-met-granola-en-diepvries-rood-fruit",
     "title": "Volle kwark met granola en diepvries rood fruit",
     "approved": true,
-    "category": "ontbijt",
+    "categories": [
+      "ontbijt"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -1842,7 +1884,9 @@
     "id": "gegrilde-groenten-met-feta-en-crackers-met-kaas-avocado",
     "title": "Gegrilde groenten met feta en crackers met kaas & avocado",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -1971,7 +2015,9 @@
     "id": "artisjok-salade-met-bloemkoolrijst",
     "title": "Artisjoksalade met bloemkoolrijst",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -2113,7 +2159,9 @@
     "id": "bietensalade-met-haring",
     "title": "Bietensalade met haring",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -2219,7 +2267,9 @@
     "id": "broccolisoep",
     "title": "Broccolisoep",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 6,
     "multiDay": true,
     "programs": [
@@ -2332,7 +2382,9 @@
     "id": "courgettesoep-3-dagen",
     "title": "Courgettesoep, drie variaties",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 6,
     "days": 3,
     "multiDay": true,
@@ -2576,7 +2628,9 @@
     "id": "frittata-met-champignons-en-kaas",
     "title": "Frittata met champignons en kaas",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 3,
     "multiDay": false,
     "programs": [
@@ -2713,7 +2767,9 @@
     "id": "griekse-salade",
     "title": "Griekse salade",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -2820,7 +2876,9 @@
     "id": "groente-salade-restje-avondeten-met-geitenkaas-en-mosterddressing",
     "title": "Groentesalade van restjes avondeten met geitenkaas en mosterddressing",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -2935,7 +2993,9 @@
     "id": "kleurrijke-frittata",
     "title": "Kleurrijke frittata",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -3056,7 +3116,9 @@
     "id": "koud-kippesto-salade",
     "title": "Koude kippestosalade",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -3150,7 +3212,9 @@
     "id": "linzensoep",
     "title": "Linzensoep",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 4,
     "multiDay": true,
     "programs": [
@@ -3264,7 +3328,9 @@
     "id": "mozzarellawraps-met-avocado-en-tomaat",
     "title": "Mozzarellawraps met avocado en tomaat",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -3374,7 +3440,9 @@
     "id": "mozzarellawraps-met-zalm-en-roomkaas",
     "title": "Mozzarellawraps met zalm en roomkaas",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -3491,7 +3559,9 @@
   {
     "id": "omelet-champignons-en-salade",
     "title": "Omelet champignons en salade",
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -3624,7 +3694,9 @@
   {
     "id": "quinoa-kip-salade",
     "title": "Quinoa kipsalade",
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -3735,7 +3807,9 @@
   {
     "id": "salade-nicoise",
     "title": "Salade niçoise",
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -3817,7 +3891,9 @@
   {
     "id": "salade-zalm-met-bonen",
     "title": "Salade zalm met bonen",
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -3907,7 +3983,9 @@
   {
     "id": "tomatensoep",
     "title": "Tomatensoep",
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "approved": true,
     "portions": 6,
     "multiDay": true,
@@ -4055,7 +4133,9 @@
   {
     "id": "tonijn-kikkererwten-salade",
     "title": "Tonijn-kikkererwtensalade",
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -4179,7 +4259,9 @@
   {
     "id": "witlofsalade-met-zalm",
     "title": "Witlofsalade met zalm",
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -4253,7 +4335,9 @@
   {
     "id": "andijviestamppot-vegetarische-variant",
     "title": "Andijviestamppot (vegetarisch)",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -4340,7 +4424,9 @@
   {
     "id": "aubergine-uit-de-oven",
     "title": "Aubergine uit de oven",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -4462,7 +4548,9 @@
   {
     "id": "aziatische-tofu",
     "title": "Aziatische tofu",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -4597,7 +4685,9 @@
   {
     "id": "aziatische-runderreepjes",
     "title": "Aziatische runderreepjes",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -4732,7 +4822,9 @@
   {
     "id": "biefstuk-met-champignons-en-geroosterde-groenten",
     "title": "Biefstuk met champignons en geroosterde groenten",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -4852,7 +4944,9 @@
   {
     "id": "gevulde-portobello-met-geroosterde-groenten",
     "title": "Gevulde portobello met geroosterde groenten",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -4998,7 +5092,9 @@
   {
     "id": "bloemkoolpizza",
     "title": "Bloemkoolpizza",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -5141,7 +5237,9 @@
   {
     "id": "caesarsalade-met-garnalen",
     "title": "Caesarsalade met garnalen",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -5299,7 +5397,9 @@
   {
     "id": "caesarsalade-met-kipfilet",
     "title": "Caesarsalade met kipfilet",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -5457,7 +5557,9 @@
   {
     "id": "courgetti-pasta",
     "title": "Courgettipasta",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -5580,7 +5682,9 @@
   {
     "id": "gebakken-kippenvleugels",
     "title": "Gebakken kippenvleugels",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -5682,7 +5786,9 @@
   {
     "id": "gegrilde-groenten-met-pastinaakfrietjes-en-gebakken-zalm",
     "title": "Gegrilde groenten met pastinaakfrietjes en gebakken zalm",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -5786,7 +5892,9 @@
   {
     "id": "gevulde-paprika-met-gehakt-uit-de-oven",
     "title": "Gevulde paprika met gehakt uit de oven",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -5946,7 +6054,9 @@
   {
     "id": "hamburger-met-spinazie-feta-en-pastinaak",
     "title": "Hamburger met spinazie, feta en pastinaak",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -6051,7 +6161,9 @@
   {
     "id": "kalkoenfilet-met-parmezaanse-kaas",
     "title": "Kalkoenfilet met parmezaanse kaas",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -6179,7 +6291,9 @@
   {
     "id": "bloemkoolcouscous-met-limabonen-zongedroogde-tahin",
     "title": "Bloemkoolcouscous met limabonen, zongedroogde tomaat en tahin",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -6299,7 +6413,9 @@
   {
     "id": "kipkerrie-met-bloemkoolrijst",
     "title": "Kipkerrie met bloemkoolrijst",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -6419,7 +6535,9 @@
   {
     "id": "korstloze-quiche-met-gewokte-groenten",
     "title": "Korstloze quiche met gewokte groenten",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 3,
     "multiDay": false,
@@ -6591,7 +6709,9 @@
   {
     "id": "nasi-met-kipsate",
     "title": "Nasi met kipsate",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -6785,7 +6905,9 @@
   {
     "id": "oosterse-groentestoof-ei",
     "title": "Oosterse groentestoof met ei",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -6918,7 +7040,9 @@
   {
     "id": "oosterse-kipfilet-met-witlofsalade",
     "title": "Oosterse kipfilet met witlofsalade",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -7043,7 +7167,9 @@
   {
     "id": "pesto-kip-met-snijbonen-en-tuinerwtjes",
     "title": "Pesto kip met snijbonen en tuinerwtjes",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -7163,7 +7289,9 @@
   {
     "id": "plaat-courgette",
     "title": "Plaatcourgette",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -7260,7 +7388,9 @@
     "id": "pompoenlasagne",
     "title": "Pompoenlasagne",
     "approved": true,
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -7435,7 +7565,9 @@
   {
     "id": "shoarmaschotel",
     "title": "Shoarmaschotel",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -7569,7 +7701,9 @@
   {
     "id": "shoarmaschotel-vegetarisch",
     "title": "Shoarmaschotel (vegetarisch)",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "approved": true,
     "portions": 2,
     "multiDay": false,
@@ -7703,7 +7837,9 @@
   {
     "id": "stoofvlees-met-knolselderij-met-rode-kool",
     "title": "Stoofvlees met knolselderij en rode kool",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -7955,7 +8091,9 @@
   {
     "id": "tempeh-met-sesamzaad-en-ei",
     "title": "Tempeh met sesamzaad en ei",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -8081,7 +8219,9 @@
   {
     "id": "viscurry-met-sperziebonen",
     "title": "Viscurry met sperziebonen",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -8192,7 +8332,9 @@
   {
     "id": "witte-vis-met-kokoskerriesaus",
     "title": "Witte vis met kokoskerriesaus",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -8321,7 +8463,9 @@
   {
     "id": "zalm-in-mosterdsaus",
     "title": "Zalm in mosterdsaus",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -8433,7 +8577,9 @@
   {
     "id": "zalm-met-zuurkool-en-veldsla",
     "title": "Zalm met zuurkool en veldsla",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -8534,7 +8680,9 @@
   {
     "id": "zuurkoolpotje-met-gehakt",
     "title": "Zuurkoolpotje met gehakt",
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "portions": 2,
     "multiDay": false,
     "programs": [
@@ -8649,7 +8797,9 @@
     "id": "groentesoep-met-aardappel-en-balletjes",
     "title": "Groentesoep met aardappel en balletjes",
     "approved": true,
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -8761,7 +8911,9 @@
     "id": "groentesoep-met-aardappel-vegetarisch",
     "title": "Groentesoep met aardappel (vegetarisch)",
     "approved": true,
-    "category": "diner",
+    "categories": [
+      "diner"
+    ],
     "portions": 2,
     "multiDay": false,
     "ingredients": [
@@ -8874,7 +9026,9 @@
     "id": "snelle-uiensoep-met-kaaskoekje",
     "title": "Snelle uiensoep met kaaskoekje",
     "approved": true,
-    "category": "lunch",
+    "categories": [
+      "lunch"
+    ],
     "portions": 2,
     "multiDay": false,
     "ingredients": [

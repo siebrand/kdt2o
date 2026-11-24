@@ -254,7 +254,7 @@ function renderOptions() {
     const selected = selectedIds();
     options.replaceChildren();
     const visible = state.recipes.filter((recipe) => {
-        const matchesMeal = state.activeSlot && recipe.category === state.activeSlot.meal;
+        const matchesMeal = state.activeSlot && recipe.categories.includes(state.activeSlot.meal);
         const matchesSearch = !query || recipe.title.toLocaleLowerCase("nl").includes(query);
         return recipeIsAvailable(recipe) && matchesMeal && !selected.has(recipe.id) && matchesSearch;
     });
@@ -291,7 +291,7 @@ function renderOptions() {
 function renderSingleRecipeSearch() {
     singleRecipeResults.replaceChildren();
     const query = singleRecipeQuery.value.trim().toLocaleLowerCase("nl");
-    const visible = state.recipes.filter((recipe) => recipeIsAvailable(recipe) && (!singleRecipeCategory.value || recipe.category === singleRecipeCategory.value) &&
+    const visible = state.recipes.filter((recipe) => recipeIsAvailable(recipe) && (!singleRecipeCategory.value || recipe.categories.includes(singleRecipeCategory.value)) &&
         (!query || recipe.title.toLocaleLowerCase("nl").includes(query)));
     if (!visible.length) {
         singleRecipeResults.append(Object.assign(document.createElement("p"), {
@@ -409,7 +409,7 @@ function fillRandomPlan() {
         DAYS.forEach((_, day) => {
             if (state.plan[planKey(day, meal)]) return;
             const selected = selectedIds();
-            const candidates = shuffleRecipes(state.recipes.filter((recipe) => recipeIsAvailable(recipe) && recipe.category === meal && !selected.has(recipe.id)));
+            const candidates = shuffleRecipes(state.recipes.filter((recipe) => recipeIsAvailable(recipe) && recipe.categories.includes(meal) && !selected.has(recipe.id)));
             const recipe = candidates.find((candidate) => {
                 if (!isMultiDay(candidate)) return true;
                 const days = plannedDays(day, candidate.days);

@@ -40,6 +40,8 @@ The following features are complete and have been moved below the open work:
 - [x] Optional cooking mode keeps the screen awake while an HTML recipe is open, when supported by the browser; it
   releases the wake lock when disabled or the recipe closes.
 - [x] Recipe selection at most once per week, with valid empty meal slots.
+- [x] Recipes that fit several meals, such as lunch and dinner, through a
+  `categories` list.
 - [x] Multi-day planning with configurable `days` values and conflict checks.
 - [x] Browser-only persistence through versioned `localStorage`.
 - [x] Dutch UI, PDF labels, messages, and generated recipe content.

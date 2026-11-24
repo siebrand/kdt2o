@@ -158,7 +158,7 @@ def share_url(base: str, plan: dict[tuple[int, str], str]) -> str:
     slots = [""] * (7 * len(MEALS))
     for (start, meal), title in plan.items():
         recipe = BY_TITLE[title]
-        assert recipe["category"] == meal, f"{title} is not a {meal} recipe"
+        assert meal in recipe["categories"], f"{title} is not a {meal} recipe"
         for day in planned_days(recipe, start):
             slots[day * len(MEALS) + MEALS.index(meal)] = recipe_token(recipe["id"]) + str(start)
     encoded = base64.urlsafe_b64encode(".".join(slots).encode()).decode().rstrip("=")
@@ -313,6 +313,23 @@ def test_changelog_renders_markdown_as_text_not_html(page: Page, server_url: str
     assert content.locator("a").get_attribute("href").startswith("https://example.com/")
     expect(content).to_contain_text("[Gevaarlijke koppeling](javascript:window.injected=true)")
     assert page.evaluate("window.injected") is None
+
+
+def test_recipe_with_several_categories_is_offered_for_each_meal(page: Page, server_url: str):
+    recipes = json.loads(json.dumps(RECIPES))
+    recipe = next(r for r in recipes if r["approved"] and r["categories"] == ["diner"] and not r["multiDay"])
+    recipe["categories"] = ["lunch", "diner"]
+    page.route("**/recipes.json", lambda route: route.fulfill(
+        body=json.dumps(recipes, ensure_ascii=False), content_type="application/json"))
+    open_planner(page, f"{server_url}/")
+    for meal, offered in (("lunch", True), ("diner", True), ("ontbijt", False)):
+        page.locator(f'#planner [data-plan-key="0-{meal}"]').click()
+        options = page.locator("#recipe-options")
+        expect(options).to_be_visible()
+        if offered:
+            expect(options).to_contain_text(recipe["title"])
+        else:
+            expect(options).not_to_contain_text(recipe["title"])
 
 
 def test_random_fill_persists_and_clears(page: Page, server_url: str):

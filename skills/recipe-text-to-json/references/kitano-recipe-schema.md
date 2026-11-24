@@ -10,7 +10,7 @@ which applies the schema plus rules a schema cannot express.
 
 Every recipe object must include:
 
-- `id`, `title`, `approved`, `category`, `portions`, `multiDay`
+- `id`, `title`, `approved`, `categories`, `portions`, `multiDay`
 - `ingredients`, `method`, `diet`
 
 `id` is a lowercase slug (`a-z`, `0-9`, and single hyphens). Saved plans and
@@ -79,8 +79,9 @@ may also use `yield`, `yieldUnit`, `yieldNote`, `equipment`, `optional`,
   planned `days`, plus `title`, `ingredients`, and `method`.
 - `equipment` is an array of Dutch plain-text item names.
 - `notes` is an array of Dutch plain-text notes.
-- Recipe `category` is one of `ontbijt`, `lunch`, or `diner`; ingredient
-  `category` is a shopping category.
+- Recipe `categories` is a list of one or more of `ontbijt`, `lunch`, and
+  `diner`, the meals for which the recipe fits; ingredient `category` is a
+  shopping category.
 - Recipe IDs and titles must be unique.
 
 Shopping categories:
