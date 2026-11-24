@@ -8,7 +8,8 @@ The application has no database and stores a plan only in the browser. A plan ca
 containing the plan data; no plan data is sent to a server.
 
 Recipe data is maintained by hand in the reviewed `public/recipes.json` file. The original recipes are kept outside the
-repository. Pre-commit validates the data against `schemas/schema.json` and checks GitHub Actions workflows with pinned
+repository. Converted recipes that nobody reviewed yet are in `data/candidates.json`, which the site does not publish.
+Pre-commit validates the data against `schemas/schema.json` and checks GitHub Actions workflows with pinned
 actionlint and zizmor; run `pre-commit install` once per clone. Browser smoke tests in `tests/` run in CI; see
 [CONTRIBUTING.md](CONTRIBUTING.md) to run them locally. Only approved recipes are shown and selected.
 

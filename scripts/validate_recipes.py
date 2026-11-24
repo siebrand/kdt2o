@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate public/recipes.json against schemas/schema.json.
+"""Validate public/recipes.json and data/candidates.json against schemas/schema.json.
 
 Besides the JSON Schema, the script checks rules a schema cannot express:
 unique recipe IDs and titles, unique component IDs per recipe, component
@@ -7,7 +7,14 @@ references that resolve, days only on multi-day recipes, daily variants
 within the planned days, NFC-normalized recipe text without HTML, and that an
 approved recipe has no open review items and no ingredient flagged as a
 sweetener, honey, or sugar, which are not suitable for people with type 2
-diabetes. It exits with status 1 when any check fails.
+diabetes.
+
+data/candidates.json has recipes that nobody reviewed yet. The site does not
+publish it. It follows the same rules together with public/recipes.json: its
+IDs and titles must be new, and it can use the shared components. No candidate
+can be approved, and the candidates are sorted by ID.
+
+The script exits with status 1 when any check fails.
 """
 
 from __future__ import annotations
@@ -24,6 +31,7 @@ from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parent.parent
 RECIPES = ROOT / "public" / "recipes.json"
+CANDIDATES = ROOT / "data" / "candidates.json"
 SCHEMA = ROOT / "schemas" / "schema.json"
 
 HTML_TAG = re.compile(r"<\s*/?\s*[a-zA-Z][^>]*>")
@@ -126,6 +134,18 @@ def rule_errors(recipes: list) -> list[str]:
     return errors
 
 
+def candidate_errors(recipes: list, candidates: list, schema: dict) -> list[str]:
+    known = set(rule_errors(recipes))
+    errors = schema_errors(candidates, schema)
+    errors += [error for error in rule_errors(recipes + candidates) if error not in known]
+    errors += [f"{candidate.get('id', '?')}: a candidate cannot be approved"
+               for candidate in candidates if candidate.get("approved") is not False]
+    ids = [candidate.get("id", "") for candidate in candidates]
+    if ids != sorted(ids):
+        errors.append("the candidates are not sorted by id")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("files", nargs="*", help="ignored; pre-commit passes the changed files")
@@ -133,13 +153,16 @@ def main() -> int:
 
     recipes = json.loads(RECIPES.read_text(encoding="utf-8"))
     schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
-    errors = schema_errors(recipes, schema) + rule_errors(recipes)
+    candidates = json.loads(CANDIDATES.read_text(encoding="utf-8"))
+    errors = [f"{RECIPES.relative_to(ROOT)}: {error}" for error in schema_errors(recipes, schema) + rule_errors(recipes)]
+    errors += [f"{CANDIDATES.relative_to(ROOT)}: {error}" for error in candidate_errors(recipes, candidates, schema)]
     for error in errors:
-        print(f"{RECIPES.relative_to(ROOT)}: {error}", file=sys.stderr)
+        print(error, file=sys.stderr)
     if errors:
-        print(f"{len(errors)} problem(s) found in {len(recipes)} recipes.", file=sys.stderr)
+        print(f"{len(errors)} problem(s) found in {len(recipes)} recipes and {len(candidates)} candidates.",
+              file=sys.stderr)
         return 1
-    print(f"{len(recipes)} recipes are valid.")
+    print(f"{len(recipes)} recipes and {len(candidates)} candidates are valid.")
     return 0
 
 

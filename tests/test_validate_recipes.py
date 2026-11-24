@@ -14,6 +14,7 @@ import validate_recipes  # noqa: E402
 
 
 RECIPES = json.loads((ROOT / "public" / "recipes.json").read_text(encoding="utf-8"))
+CANDIDATES = json.loads((ROOT / "data" / "candidates.json").read_text(encoding="utf-8"))
 SCHEMA = json.loads((ROOT / "schemas" / "schema.json").read_text(encoding="utf-8"))
 
 
@@ -26,8 +27,40 @@ def approved_recipe() -> dict:
     return copy.deepcopy(next(recipe for recipe in RECIPES if recipe["approved"]))
 
 
+def candidate(recipe_id: str) -> dict:
+    recipe = next(recipe for recipe in RECIPES if not recipe.get("components"))
+    return {**copy.deepcopy(recipe), "id": recipe_id, "title": f"Kandidaat {recipe_id}", "approved": False}
+
+
 def test_current_data_is_valid():
     assert validate_recipes.schema_errors(RECIPES, SCHEMA) + validate_recipes.rule_errors(RECIPES) == []
+
+
+def test_current_candidates_are_valid_and_not_published():
+    assert validate_recipes.candidate_errors(RECIPES, CANDIDATES, SCHEMA) == []
+    assert not list((ROOT / "public").rglob("candidates*"))
+    copied = [line for line in (ROOT / "Dockerfile").read_text(encoding="utf-8").splitlines() if line.startswith("COPY")]
+    assert not any("data" in line.split() or "." in line.split() for line in copied)
+
+
+def test_candidate_errors():
+    first, second = candidate("a-candidate"), candidate("b-candidate")
+    check = lambda candidates: validate_recipes.candidate_errors(RECIPES, candidates, SCHEMA)  # noqa: E731
+    assert check([first, second]) == []
+    assert any("not sorted" in error for error in check([second, first]))
+    assert any("cannot be approved" in error for error in check([{**first, "approved": True}]))
+    assert any("duplicate recipe id" in error for error in check([{**first, "id": RECIPES[0]["id"]}]))
+    assert any("duplicate title" in error for error in check([{**first, "title": RECIPES[0]["title"]}]))
+    unresolved = copy.deepcopy(first)
+    unresolved["ingredients"][0]["componentId"] = "no-such-component"
+    assert any("does not match a component" in error for error in check([unresolved]))
+    assert any("portions" in error for error in check([{**first, "portions": 0}]))
+
+
+def test_shared_components_of_the_recipes_are_known_to_candidates():
+    shared = candidate("a-candidate")
+    shared["ingredients"][0]["componentId"] = "lijnzaadcrackers"
+    assert validate_recipes.candidate_errors(RECIPES, [shared], SCHEMA) == []
 
 
 @pytest.mark.parametrize("flag", ["sweetener", "honey", "sugar"])

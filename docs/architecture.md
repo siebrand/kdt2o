@@ -117,6 +117,13 @@ review items or an ingredient flagged `sweetener`, `honey`, or `sugar`, so a
 recipe with such a problem cannot reach the planner by accident. A recipe can
 have `nutrition` values per portion; the application does not display them yet.
 
+`data/candidates.json` holds converted recipes that nobody reviewed yet, in the
+same format and with `approved: false`. It is outside `public/`, so neither the
+container nor GitHub Pages serves it and the browser never loads it. The
+validator checks it together with the recipe data, rejects an approved
+candidate, and requires new IDs and titles. A reviewed candidate moves to
+`public/recipes.json`.
+
 Shared subrecipes, such as `lijnzaadcrackers`, `granola`, and `notenbrood`,
 are defined once in one recipe's `components`. When the browser loads the
 data, it copies a shared subrecipe into every recipe whose main or daily-variant

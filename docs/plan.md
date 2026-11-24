@@ -10,6 +10,10 @@ top of this document.
   policy. GitHub Pages cannot send `frame-ancestors`, `X-Content-Type-Options`,
   or `Permissions-Policy`; the pages set only the CSP and the referrer policy.
 
+- Review the recipe candidates in `data/candidates.json` and move the accepted
+  ones to `public/recipes.json`. A review tool for this is wanted; its design is
+  open.
+
 ## Current product status
 
 The application is a static Dutch web application. The reviewed site is
@@ -19,7 +23,8 @@ for local testing and alternative static hosting.
 
 Recipe data is reviewed, maintained by hand, and committed in
 `public/recipes.json`. The repository does not contain a recipe extractor; the
-original recipes are kept outside the repository.
+original recipes are kept outside the repository. Converted recipes that nobody
+reviewed yet are in `data/candidates.json`, which the site does not publish.
 
 ## Implemented features
 

@@ -19,8 +19,12 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 - `public/recipes.json`: the recipe data. Edit this file manually.
 - The original recipes are not in the repository. Compare each change to
   `public/recipes.json` with the original recipe.
+- `data/candidates.json`: converted recipes that nobody reviewed yet. The site
+  does not publish this file. To accept a candidate, compare it with its
+  `source`, solve its `review` items, and move it to `public/recipes.json`.
 - `schemas/schema.json`: the rules for the recipe data.
-- `scripts/validate_recipes.py`: the script that checks the recipe data.
+- `scripts/validate_recipes.py`: the script that checks the recipe data and the
+  candidates.
 - `tests/`: the tests. `tests/test_browser.py` has the browser tests for the
   application. The other files test the scripts.
 - `public/index.html`, `public/styles.css`, and the ES modules in `public/`:

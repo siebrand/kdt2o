@@ -23,9 +23,9 @@ pre-commit install
 pre-commit run --all-files
 ```
 
-The hooks validate `public/recipes.json` against `schemas/schema.json` and
-additional rules in `scripts/validate_recipes.py` whenever recipe data, the
-schema, or the validator changes. They also lint `.github/workflows/` with
+The hooks validate `public/recipes.json` and `data/candidates.json` against
+`schemas/schema.json` and additional rules in `scripts/validate_recipes.py`
+whenever recipe data, the schema, or the validator changes. They also lint `.github/workflows/` with
 actionlint 1.7.12 in a pinned Docker image, so no separate actionlint install is
 needed, and audit the workflows for security problems with zizmor. Pin every
 action to a full commit SHA with the version in a comment, for example
@@ -148,6 +148,12 @@ recipe extractor. Do not edit recipe data casually: check source provenance,
 validate quantities and portions, and ensure ingredients and methods are not
 lost. Never invent unclear recipe content. Every change must pass
 `scripts/validate_recipes.py`.
+
+`data/candidates.json` holds converted recipes that nobody reviewed yet, each
+with `approved: false`, a `source`, and its open points in `review`. The site
+does not publish this file. To accept a candidate, compare it with its source,
+solve every review item, and move it to `public/recipes.json`; keep the
+candidates sorted by ID. See `docs/adr/0008-recipe-candidates-outside-the-site.md`.
 
 ## Pull requests
 
