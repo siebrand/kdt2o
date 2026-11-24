@@ -22,12 +22,12 @@ export function normalizeShoppingUnit(unit) {
 
 export function normalizeShoppingName(name) {
     return String(name || "").toLocaleLowerCase("nl").trim()
-        .replace(/\\bcitroenen\\b/g, "citroen")
-        .replace(/\\bcourgettes\\b/g, "courgette")
-        .replace(/\\buien\\b/g, "ui")
-        .replace(/\\bbouillonblokjes\\b/g, "bouillonblokje")
-        .replace(/\\bwortelen\\b/g, "wortel")
-        .replace(/\\bpaprika's\\b/g, "paprika");
+        .replace(/\bcitroenen\b/g, "citroen")
+        .replace(/\bcourgettes\b/g, "courgette")
+        .replace(/\buien\b/g, "ui")
+        .replace(/\bbouillonblokjes\b/g, "bouillonblokje")
+        .replace(/\bwortelen\b/g, "wortel")
+        .replace(/\bpaprika's\b/g, "paprika");
 }
 
 export function normalizeShoppingIngredient(ingredient) {

@@ -521,6 +521,24 @@ def test_shopping_list_shows_the_total_whatever_the_recipe_order(page: Page, ser
     assert [item for item in shopping_list(page) if item.endswith("komkommer")] == ["2 stuk komkommer"]
 
 
+@pytest.mark.parametrize(("plural", "singular"), [
+    ("citroenen", "citroen"),
+    ("Courgettes", "courgette"),
+    ("rode uien", "rode ui"),
+    ("bouillonblokjes", "bouillonblokje"),
+    ("wortelen", "wortel"),
+    ("paprika's", "paprika"),
+    ("bruien", "bruien"),
+])
+def test_shopping_names_use_the_singular(page: Page, server_url: str, plural: str, singular: str):
+    page.goto(server_url)
+    normalize = """async (name) => {
+        const shopping = await import(new URL("shopping.js", document.baseURI).href);
+        return shopping.normalizeShoppingName(name);
+    }"""
+    assert page.evaluate(normalize, plural) == singular
+
+
 def shopping_list_by_section(page: Page) -> dict[str, list[str]]:
     """Return the shopping list items, split into needed items and the items under "Optioneel"."""
     page.locator("#show-shopping-list").click()
