@@ -29,6 +29,12 @@ combined with `vlees` or `vis`.
 - `programs`: an array of one or more unique program names for which the
   recipe is suitable.
 - `components`, `dailyVariants`, `equipment`, `notes`, `advanceNotice`.
+- `source`: `{"name": ..., "url": "https://..."}` for a recipe from a website.
+- `review`: open points for a person to check, each `{"type": ..., "note": ...}`.
+  Types: `scaling`, `sweetener-removed`, `ingredient-flag`, `nutrition`,
+  `category`, `servings`, `conversion`. Write a specific note, for example
+  "4 eieren voor 4 porties: 2 eieren voor 2 porties; controleer". A recipe with
+  open review items cannot be approved.
 
 Omit an optional field when the source provides no value. Do not use
 placeholders such as `0`, empty strings, or empty arrays, and do not invent
@@ -50,6 +56,11 @@ Ingredients may also have:
 - `alternatives`: an array of alternative ingredient objects with the same
   required fields. Preserve explicit substitutions as alternatives; do not put
   them into the main ingredient name.
+- `flags`: reasons to check the ingredient for people with type 2 diabetes:
+  `sweetener`, `honey`, `sugar`, `alcohol`, `fruit-juice`, `starch`,
+  `dried-fruit`, `brand-product`. A recipe with a `sweetener`, `honey`, or
+  `sugar` flag cannot be approved; leave such an ingredient out where the dish
+  allows it, with a `sweetener-removed` review item.
 - `componentId`: the `id` of a component in the same recipe, or of a shared
   component defined in another recipe, such as `lijnzaadcrackers`, `granola`,
   or `notenbrood`. Only a `componentId` on a main or daily-variant ingredient

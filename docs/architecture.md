@@ -103,6 +103,14 @@ which applies the schema plus rules a schema cannot express, such as unique IDs
 and resolvable component references. The CI workflow runs the same hook, so
 invalid data cannot reach `main` unnoticed.
 
+The recipes are for people with type 2 diabetes. Ingredients can carry `flags`
+(`sweetener`, `honey`, `sugar`, `alcohol`, `fruit-juice`, `starch`,
+`dried-fruit`, `brand-product`), and a recipe can carry `review` items, open
+points with a type and a note, and a `source` with the name and URL of the site
+it comes from. The validator refuses `approved: true` while a recipe has open
+review items or an ingredient flagged `sweetener`, `honey`, or `sugar`, so a
+recipe with such a problem cannot reach the planner by accident.
+
 Shared subrecipes, such as `lijnzaadcrackers`, `granola`, and `notenbrood`,
 are defined once in one recipe's `components`. When the browser loads the
 data, it copies a shared subrecipe into every recipe whose main or daily-variant

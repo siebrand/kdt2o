@@ -4,8 +4,10 @@
 Besides the JSON Schema, the script checks rules a schema cannot express:
 unique recipe IDs and titles, unique component IDs per recipe, component
 references that resolve, days only on multi-day recipes, daily variants
-within the planned days, and NFC-normalized recipe text without HTML. It
-exits with status 1 when any check fails.
+within the planned days, NFC-normalized recipe text without HTML, and that an
+approved recipe has no open review items and no ingredient flagged as a
+sweetener, honey, or sugar, which are not suitable for people with type 2
+diabetes. It exits with status 1 when any check fails.
 """
 
 from __future__ import annotations
@@ -25,6 +27,8 @@ RECIPES = ROOT / "public" / "recipes.json"
 SCHEMA = ROOT / "schemas" / "schema.json"
 
 HTML_TAG = re.compile(r"<\s*/?\s*[a-zA-Z][^>]*>")
+# Ingredient flags that a recipe may never have when it is approved.
+BLOCKING_FLAGS = {"sweetener", "honey", "sugar"}
 
 
 def all_ingredients(recipe: dict):
@@ -105,6 +109,14 @@ def rule_errors(recipes: list) -> list[str]:
         for variant in recipe.get("dailyVariants", []):
             if variant.get("dayIndex", 0) >= days:
                 errors.append(f"{recipe_id}: daily variant {variant.get('title')!r} is outside the {days} planned days")
+
+        if recipe.get("approved"):
+            if recipe.get("review"):
+                errors.append(f"{recipe_id}: approved, but {len(recipe['review'])} review item(s) are open")
+            for ingredient in all_ingredients(recipe):
+                blocking = sorted(BLOCKING_FLAGS & set(ingredient.get("flags", [])))
+                if blocking:
+                    errors.append(f"{recipe_id}: approved, but {ingredient.get('name')!r} is flagged {', '.join(blocking)}")
 
         for text in [recipe_id, *all_texts(recipe)]:
             if HTML_TAG.search(text or ""):

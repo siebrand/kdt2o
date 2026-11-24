@@ -58,6 +58,9 @@
         },
         "componentId": {
           "type": "string"
+        },
+        "flags": {
+          "$ref": "#/$defs/ingredientFlags"
         }
       },
       "required": [
@@ -99,6 +102,9 @@
           "items": {
             "$ref": "#/$defs/alternative"
           }
+        },
+        "flags": {
+          "$ref": "#/$defs/ingredientFlags"
         }
       },
       "required": [
@@ -295,6 +301,15 @@
         },
         "advanceNotice": {
           "$ref": "#/$defs/nonEmptyString"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "review": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reviewItem"
+          }
         }
       },
       "required": [
@@ -321,6 +336,70 @@
           "days"
         ]
       }
+    },
+    "ingredientFlag": {
+      "description": "A reason to check an ingredient for people with type 2 diabetes. sweetener, honey, and sugar block approval; the other flags need a review.",
+      "enum": [
+        "sweetener",
+        "honey",
+        "sugar",
+        "alcohol",
+        "fruit-juice",
+        "starch",
+        "dried-fruit",
+        "brand-product"
+      ]
+    },
+    "ingredientFlags": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/ingredientFlag"
+      }
+    },
+    "reviewItem": {
+      "description": "An open point that a person must check before the recipe can be approved.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "scaling",
+            "sweetener-removed",
+            "ingredient-flag",
+            "nutrition",
+            "category",
+            "servings",
+            "conversion"
+          ]
+        },
+        "note": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      },
+      "required": [
+        "type",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "description": "Where the recipe comes from.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://"
+        }
+      },
+      "required": [
+        "name",
+        "url"
+      ],
+      "additionalProperties": false
     }
   }
 }

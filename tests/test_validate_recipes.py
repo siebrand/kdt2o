@@ -1,0 +1,62 @@
+from __future__ import annotations
+
+import copy
+import json
+from pathlib import Path
+import sys
+
+import pytest
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+import validate_recipes  # noqa: E402
+
+
+RECIPES = json.loads((ROOT / "public" / "recipes.json").read_text(encoding="utf-8"))
+SCHEMA = json.loads((ROOT / "schemas" / "schema.json").read_text(encoding="utf-8"))
+
+
+def errors_for(recipe: dict) -> list[str]:
+    recipes = [recipe]
+    return validate_recipes.schema_errors(recipes, SCHEMA) + validate_recipes.rule_errors(recipes)
+
+
+def approved_recipe() -> dict:
+    return copy.deepcopy(next(recipe for recipe in RECIPES if recipe["approved"]))
+
+
+def test_current_data_is_valid():
+    assert validate_recipes.schema_errors(RECIPES, SCHEMA) + validate_recipes.rule_errors(RECIPES) == []
+
+
+@pytest.mark.parametrize("flag", ["sweetener", "honey", "sugar"])
+def test_blocking_flag_prevents_approval(flag: str):
+    recipe = approved_recipe()
+    recipe["ingredients"][0]["flags"] = [flag]
+    assert any(f"flagged {flag}" in error for error in errors_for(recipe))
+    recipe["approved"] = False
+    assert errors_for(recipe) == []
+
+
+def test_other_flags_allow_approval():
+    recipe = approved_recipe()
+    recipe["ingredients"][0]["flags"] = ["alcohol", "starch"]
+    assert errors_for(recipe) == []
+
+
+def test_open_review_prevents_approval():
+    recipe = approved_recipe()
+    recipe["review"] = [{"type": "scaling", "note": "4 eieren voor 4 porties: 2 eieren voor 2 porties; controleer"}]
+    assert any("review item(s) are open" in error for error in errors_for(recipe))
+    recipe["approved"] = False
+    assert errors_for(recipe) == []
+
+
+def test_unknown_flag_and_source_without_https_are_rejected():
+    recipe = approved_recipe()
+    recipe["ingredients"][0]["flags"] = ["spicy"]
+    recipe["source"] = {"name": "Voorbeeld", "url": "http://example.com/"}
+    errors = errors_for(recipe)
+    assert any("flags" in error for error in errors)
+    assert any("source" in error for error in errors)
