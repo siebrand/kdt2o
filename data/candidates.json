@@ -3619,151 +3619,6 @@
     ]
   },
   {
-    "id": "broccoli-preisoep-met-zalmballetjes",
-    "title": "Broccoli-preisoep met zalmballetjes",
-    "approved": false,
-    "categories": [
-      "lunch"
-    ],
-    "portions": 4,
-    "multiDay": true,
-    "days": 2,
-    "preparationTime": 25,
-    "ingredients": [
-      {
-        "raw": "250 g prei",
-        "amount": 250,
-        "unit": "gram",
-        "name": "prei",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "olijfolie",
-        "amount": null,
-        "unit": "",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "400 g broccoli",
-        "amount": 400,
-        "unit": "gram",
-        "name": "broccoli",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "teentje knoflook",
-        "amount": 1,
-        "unit": "teen",
-        "name": "knoflook",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 l (groente)bouillon",
-        "amount": 1000,
-        "unit": "ml",
-        "name": "groentebouillon",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "130 ml slagroom",
-        "amount": 130,
-        "unit": "ml",
-        "name": "slagroom",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "4 eieren",
-        "amount": 4,
-        "unit": "",
-        "name": "eieren",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      }
-    ],
-    "components": [
-      {
-        "id": "broccoli-preisoep-met-zalmballetjes-zalmballetjes",
-        "title": "Zalmballetjes",
-        "ingredients": [
-          {
-            "raw": "200 g gerookte zalm",
-            "amount": 200,
-            "unit": "gram",
-            "name": "gerookte zalm",
-            "optional": false,
-            "category": "Vlees, vis en vleesvervangers"
-          },
-          {
-            "raw": "1 el kruidenroomkaas",
-            "amount": 15,
-            "unit": "gram",
-            "name": "kruidenroomkaas",
-            "optional": false,
-            "category": "Zuivel en eieren"
-          },
-          {
-            "raw": "50 g geraspte kaas",
-            "amount": 50,
-            "unit": "gram",
-            "name": "geraspte kaas",
-            "optional": false,
-            "category": "Zuivel en eieren"
-          }
-        ],
-        "method": "Pureer de gerookte zalm met de kruidenroomkaas met de staafmixer tot een zalmpasta. Schep de geraspte kaas erdoor en draai er balletjes van. Pocheer de zalmballetjes max. 2 minuten in de gepureerde soep."
-      },
-      {
-        "id": "broccoli-preisoep-met-zalmballetjes-serveren",
-        "title": "Serveren",
-        "ingredients": [
-          {
-            "raw": "sprieten bieslook",
-            "amount": null,
-            "unit": "",
-            "name": "bieslook",
-            "optional": false,
-            "category": "Kruiden en smaakmakers"
-          }
-        ],
-        "method": "Kook elke dag 2 eieren vers in 8 minuten hard, pel ze en halveer ze. Bewaar geen gekookte eieren. Schep de soep in kommen, leg in elke kom een gehalveerd ei en serveer met een dot slagroom en een paar mooie sprieten bieslook. Heerlijk, zo'n bijzonder soepje!"
-      }
-    ],
-    "method": "Snijd de prei in ringen en spoel schoon. Fruit de ringen in een soeppan met olijfolie aan. Maak de broccoli schoon, breek in roosjes en bak 2 minuten mee. Pers de knoflook erboven uit. Schenk de bouillon erbij en breng aan de kook. Laat 15 minuten zachtjes pruttelen met de deksel op de pan. Pureer de soep met de staafmixer, roer er 100 ml slagroom door en houd zo nodig warm. Maak terwijl de soep pruttelt de zalmballetjes en klop de rest van de slagroom half stijf met peper en zout.",
-    "nutrition": {
-      "calories": 263.95,
-      "carbohydrates": 4.3,
-      "protein": 17.95,
-      "fat": 18.2,
-      "fiber": 5.18,
-      "note": "Per portie volgens de bron, zonder de eieren en de extra slagroom"
-    },
-    "diet": [
-      "vis"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/broccoli-preisoep-met-zalm-kaasballetjes/"
-    }
-  },
-  {
     "id": "broccoli-quiche-met-brie",
     "title": "Broccoli quiche met brie",
     "approved": false,
@@ -3832,7 +3687,7 @@
         "category": "Zuivel en eieren"
       },
       {
-        "raw": "50 g geraspte kaas, 0 khd indien zelf geraspt",
+        "raw": "50 g geraspte kaas",
         "amount": 50,
         "unit": "gram",
         "name": "geraspte kaas",
@@ -3856,13 +3711,14 @@
         "category": "Zuivel en eieren"
       }
     ],
-    "method": "Breek allereerst de broccoli in grote roosjes en kook die vervolgens 4 minuten in kokend met een beetje zout beetgaar. Spoel koud af en laat uitlekken. Snijd ondertussen de bosui in ringetjes en de champignons in plakken. Bak de champignons in een droge koekenpan al omscheppend tot ze hun vocht loslaten en beginnen te bruinen. Haal de champignons uit de pan en zet apart. Bak in dezelfde pan de bosui en geperste knoflook aan in wat olie. Verwarm de heteluchtoven voor op 180 °C en vet een springvorm Ø 23 cm in. Rasp de kaas. Klop de eieren los met slagroom en roer de geraspte kaas en de gebakken bosui/knoflook erdoor. Bakken: Leg eerst de broccoli op de bodem van je springvorm. Verdeel daarna het ei-bosuimengsel erover en druk aan met een vork. Verdeel de plakjes champignon erover. Vervolgens de plakken brie, en maal er tot slot wat zout en peper over. Bak de quiche 20-25 minuten of tot de kaas goudbruin kleurt. Serveren: Serveer de quiche met broccoli en brie met rucolasla en gedroogde tomaatjes. Eet smakelijk en geniet ervan!",
+    "method": "Breek allereerst de broccoli in grote roosjes en kook die vervolgens 4 minuten in kokend water met een beetje zout beetgaar. Spoel koud af en laat uitlekken. Snijd ondertussen de bosui in ringetjes en de champignons in plakken. Bak de champignons in een droge koekenpan al omscheppend tot ze hun vocht loslaten en beginnen te bruinen. Haal de champignons uit de pan en zet apart. Bak in dezelfde pan de bosui en geperste knoflook aan in wat olie. Verwarm de heteluchtoven voor op 180 °C en vet een springvorm Ø 23 cm in. Rasp de kaas. Klop de eieren los met slagroom en roer de geraspte kaas en de gebakken bosui/knoflook erdoor. Bakken: Leg eerst de broccoli op de bodem van je springvorm. Verdeel daarna het ei-bosuimengsel erover en druk aan met een vork. Verdeel de plakjes champignon erover. Vervolgens de plakken brie, en maal er tot slot wat zout en peper over. Bak de quiche 20-25 minuten of tot de kaas goudbruin kleurt. Maak terwijl de quiche in de oven staat de rucolasalade. Serveer de quiche met de rucolasalade.",
     "nutrition": {
       "calories": 596.05,
       "carbohydrates": 3.2,
       "protein": 38.2,
       "fat": 46.3,
-      "fiber": 8.1
+      "fiber": 8.1,
+      "note": "Per portie volgens de bron, zonder de salade"
     },
     "diet": [
       "vegetarisch"
@@ -3873,7 +3729,56 @@
     "source": {
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/broccoli-quiche-met-brie/"
-    }
+    },
+    "components": [
+      {
+        "id": "broccoli-quiche-met-brie-rucolasalade",
+        "title": "Rucolasalade",
+        "ingredients": [
+          {
+            "raw": "75 g rucola",
+            "amount": 75,
+            "unit": "gram",
+            "name": "rucola",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "30 g zongedroogde tomaten, in reepjes",
+            "amount": 30,
+            "unit": "gram",
+            "name": "zongedroogde tomaten",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "1 el olijfolie",
+            "amount": 15,
+            "unit": "ml",
+            "name": "olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "1 tl citroensap",
+            "amount": 5,
+            "unit": "ml",
+            "name": "citroensap",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "peper en zout",
+            "amount": null,
+            "unit": "",
+            "name": "peper en zout",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          }
+        ],
+        "method": "Klop de olijfolie met het citroensap, peper en zout tot een dressing. Meng de rucola met de reepjes zongedroogde tomaat en schep de dressing erdoor."
+      }
+    ]
   },
   {
     "id": "broccoli-tomaat-ovenschotel",
@@ -4410,86 +4315,6 @@
         "note": "Winkelcategorie van 'basisdressing' geschat als Houdbare producten; controleer."
       }
     ]
-  },
-  {
-    "id": "caprese-tomaat-uit-de-oven",
-    "title": "Caprese, tomaat uit de oven",
-    "approved": false,
-    "categories": [
-      "lunch"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 5,
-    "ovenTime": 15,
-    "ingredients": [
-      {
-        "raw": "1 bol mozzarella",
-        "amount": 125,
-        "unit": "gram",
-        "name": "mozzarella",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "250 g vleestomaat",
-        "amount": 250,
-        "unit": "gram",
-        "name": "vleestomaat",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "2 handjes basilicum",
-        "amount": 30,
-        "unit": "gram",
-        "name": "verse basilicum",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "olijfolie, om te bakken",
-        "amount": null,
-        "unit": "",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "goede olijfolie, voor het opdienen",
-        "amount": null,
-        "unit": "",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      }
-    ],
-    "method": "Verwarm de heteluchtoven voor op 200 °C en zet een ovenschaal klaar. Snijd de mozzarella in dunne plakken (stevige, grote eiersnijder is handig) en maal er wat peper en zout over. Was de tomaten en snijd ze in, tot ongeveer ¾, je laat dus de onderkant vastzitten! Stop tussen elke snede van de tomaat een plakje mozzarella en vervolgens lekker wat blaadjes basilicum. Zet de tomaten in een ovenvaste schaal en druppel er olie over. Let op dat die geschikt is voor hogere temperaturen (200 °C). Zie ook ons artikel over vet en hun rookpunt. Bak de tomaten in de oven voor 10-15 minuten. De baktijd hangt ook af van hoe gaar je de tomaten wilt hebben en hoe dik je gesneden hebt. Besprenkel tot slot vlak voor het serveren de tomaten met wat goede olijfolie. Superlekker voor- of bijgerecht!",
-    "nutrition": {
-      "calories": 247.05,
-      "carbohydrates": 4.4,
-      "protein": 12.8,
-      "fat": 19.6,
-      "fiber": 1.9
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/caprese-tomaat-uit-de-oven/"
-    }
   },
   {
     "id": "carpaccio-van-zalm",

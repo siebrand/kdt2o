@@ -10645,5 +10645,150 @@
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/broccoli-prei-ovenschotel/"
     }
+  },
+  {
+    "id": "broccoli-preisoep-met-zalmballetjes",
+    "title": "Broccoli-preisoep met zalmballetjes",
+    "approved": true,
+    "categories": [
+      "lunch"
+    ],
+    "portions": 4,
+    "multiDay": true,
+    "days": 2,
+    "preparationTime": 25,
+    "ingredients": [
+      {
+        "raw": "250 g prei",
+        "amount": 250,
+        "unit": "gram",
+        "name": "prei",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "olijfolie",
+        "amount": null,
+        "unit": "",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "400 g broccoli",
+        "amount": 400,
+        "unit": "gram",
+        "name": "broccoli",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "teentje knoflook",
+        "amount": 1,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 l (groente)bouillon",
+        "amount": 1000,
+        "unit": "ml",
+        "name": "groentebouillon",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "130 ml slagroom",
+        "amount": 130,
+        "unit": "ml",
+        "name": "slagroom",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "4 eieren",
+        "amount": 4,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      }
+    ],
+    "components": [
+      {
+        "id": "broccoli-preisoep-met-zalmballetjes-zalmballetjes",
+        "title": "Zalmballetjes",
+        "ingredients": [
+          {
+            "raw": "200 g gerookte zalm",
+            "amount": 200,
+            "unit": "gram",
+            "name": "gerookte zalm",
+            "optional": false,
+            "category": "Vlees, vis en vleesvervangers"
+          },
+          {
+            "raw": "1 el kruidenroomkaas",
+            "amount": 15,
+            "unit": "gram",
+            "name": "kruidenroomkaas",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          },
+          {
+            "raw": "50 g geraspte kaas",
+            "amount": 50,
+            "unit": "gram",
+            "name": "geraspte kaas",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          }
+        ],
+        "method": "Pureer de gerookte zalm met de kruidenroomkaas met de staafmixer tot een zalmpasta. Schep de geraspte kaas erdoor en draai er balletjes van. Vries de helft van de balletjes in voor de tweede keer en laat ze dan vooraf in de koelkast ontdooien. Warm elke keer de helft van de soep op en pocheer de helft van de zalmballetjes daarin max. 2 minuten."
+      },
+      {
+        "id": "broccoli-preisoep-met-zalmballetjes-serveren",
+        "title": "Serveren",
+        "ingredients": [
+          {
+            "raw": "sprieten bieslook",
+            "amount": null,
+            "unit": "",
+            "name": "bieslook",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          }
+        ],
+        "method": "Kook elke dag 2 eieren vers in 8 minuten hard, pel ze en halveer ze. Bewaar geen gekookte eieren. Schep de soep in kommen, leg in elke kom een gehalveerd ei en serveer met een dot slagroom en een paar mooie sprieten bieslook. Heerlijk, zo'n bijzonder soepje!"
+      }
+    ],
+    "method": "Snijd de prei in ringen en spoel schoon. Fruit de ringen in een soeppan met olijfolie aan. Maak de broccoli schoon, breek in roosjes en bak 2 minuten mee. Pers de knoflook erboven uit. Schenk de bouillon erbij en breng aan de kook. Laat 15 minuten zachtjes pruttelen met de deksel op de pan. Pureer de soep met de staafmixer, roer er 100 ml slagroom door en houd zo nodig warm. Maak terwijl de soep pruttelt de zalmballetjes. Klop elke keer 15 ml slagroom half stijf met peper en zout.",
+    "nutrition": {
+      "calories": 263.95,
+      "carbohydrates": 4.3,
+      "protein": 17.95,
+      "fat": 18.2,
+      "fiber": 5.18,
+      "note": "Per portie volgens de bron, zonder de eieren en de extra slagroom"
+    },
+    "diet": [
+      "vis"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/broccoli-preisoep-met-zalm-kaasballetjes/"
+    }
   }
 ]
