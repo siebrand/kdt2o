@@ -322,6 +322,30 @@ def test_changelog_renders_markdown_as_text_not_html(page: Page, server_url: str
     assert page.evaluate("window.injected") is None
 
 
+NESTED_CHANGELOG = """# Wijzigingen
+
+- Eerste punt dat
+  doorloopt
+  - Recept <b>een</b>
+  - **Recept** twee met een
+    lange naam
+- Tweede punt
+"""
+
+
+def test_changelog_renders_nested_lists(page: Page, server_url: str):
+    page.route("**/CHANGELOG.md", lambda route: route.fulfill(body=NESTED_CHANGELOG, content_type="text/markdown"))
+    page.goto(f"{server_url}/changelog.html")
+    top = page.locator("#changelog-content > ul > li")
+    expect(top).to_have_count(2)
+    expect(page.locator("#changelog-content > ul")).to_have_count(1)
+    nested = top.first.locator("> ul > li")
+    expect(nested).to_have_text(["Recept <b>een</b>", "Recept twee met een lange naam"])
+    expect(top.first.locator("b")).to_have_count(0)
+    assert top.first.evaluate("item => item.firstChild.textContent") == "Eerste punt dat doorloopt"
+    expect(top.last).to_have_text("Tweede punt")
+
+
 def test_recipe_with_several_categories_is_offered_for_each_meal(page: Page, server_url: str):
     recipes = json.loads(json.dumps(RECIPES))
     recipe = next(r for r in recipes if r["approved"] and r["categories"] == ["diner"] and not r["multiDay"])

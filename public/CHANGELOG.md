@@ -4,11 +4,22 @@ De belangrijkste verbeteringen voor de planner en recepten.
 
 ## 25 november 2026
 
-- Nieuwe recepten: 4 kazen salade, andijvie stamppot met kerriejus, asperges met hollandaisesaus en zalm, asperges met
-  peterseliedressing en zalm, bleekselderijsalade met puntpaprika, bloemkool broccoli roomsoep, bloemkool
-  pannenkoekjes met zalm, bloemkool rucola stamppotje, broccoli met mosterd-kaassaus en witvis, broccoli prei
-  ovenschotel, broccoli-preisoep met zalmballetjes, broccoli quiche met brie, Chinese kool met grote garnalen,
-  courgette pappardelle met olijven tapenade en kip, en courgette uit de oven met gehakt en paprika.
+- Nieuwe recepten:
+  - 4 kazen salade, lekker knapperig (lunch)
+  - Andijvie stamppot met kerriejus (diner)
+  - Asperges met hollandaisesaus en zalm (diner)
+  - Asperges met peterseliedressing en zalm (lunch en diner)
+  - Bleekselderijsalade met puntpaprika (lunch)
+  - Bloemkool broccoli roomsoep (lunch en diner)
+  - Bloemkool pannenkoekjes met zalm (lunch)
+  - Bloemkool rucola stamppotje (lunch en diner)
+  - Broccoli met mosterd-kaassaus en witvis (lunch en diner)
+  - Broccoli prei ovenschotel (diner)
+  - Broccoli quiche met brie (diner)
+  - Broccoli-preisoep met zalmballetjes (lunch)
+  - Chinese kool met grote garnalen (lunch)
+  - Courgette pappardelle met olijven tapenade en kip (diner)
+  - Courgette uit de oven met gehakt en paprika (diner)
 
 ## 24 november 2026
 

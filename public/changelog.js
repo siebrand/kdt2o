@@ -24,9 +24,14 @@ function renderMarkdown(markdown) {
     let listItems = [];
     let paragraphLines = [];
 
+    function renderList(items) {
+        return "<ul>" + items.map((item) => "<li>" + renderInlineMarkdown(item.text)
+            + (item.children.length ? renderList(item.children) : "") + "</li>").join("") + "</ul>";
+    }
+
     function flushList() {
         if (!listItems.length) return;
-        output.push("<ul>" + listItems.map((item) => "<li>" + renderInlineMarkdown(item) + "</li>").join("") + "</ul>");
+        output.push(renderList(listItems));
         listItems = [];
     }
 
@@ -60,12 +65,16 @@ function renderMarkdown(markdown) {
 
         if (/^- /.test(line)) {
             flushParagraph();
-            listItems.push(line.replace(/^-\s*/, ""));
+            const item = {text: line.replace(/^-\s*/, ""), children: []};
+            // An indented item belongs to the item above it; there is one nested level.
+            if (listItems.length && /^\s+/.test(sourceLine)) listItems[listItems.length - 1].children.push(item);
+            else listItems.push(item);
             continue;
         }
 
         if (listItems.length && /^\s+/.test(sourceLine)) {
-            listItems[listItems.length - 1] += " " + line;
+            const parent = listItems[listItems.length - 1];
+            (parent.children[parent.children.length - 1] || parent).text += " " + line;
             continue;
         }
 
