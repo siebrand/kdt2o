@@ -49,10 +49,15 @@ class StaticHandler(SimpleHTTPRequestHandler):
         pass
 
 
+class StaticServer(ThreadingHTTPServer):
+    # The default of 5 waiting connections is too few for a page that loads many modules at once.
+    request_queue_size = 128
+
+
 @pytest.fixture(scope="session")
 def server_url():
     handler = partial(StaticHandler, directory=str(PUBLIC))
-    server = ThreadingHTTPServer(("127.0.0.1", 0), handler)
+    server = StaticServer(("127.0.0.1", 0), handler)
     thread = threading.Thread(target=server.serve_forever, daemon=True)
     thread.start()
     yield f"http://127.0.0.1:{server.server_address[1]}"
