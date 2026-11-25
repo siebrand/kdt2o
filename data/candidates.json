@@ -3619,168 +3619,6 @@
     ]
   },
   {
-    "id": "broccoli-quiche-met-brie",
-    "title": "Broccoli quiche met brie",
-    "approved": false,
-    "categories": [
-      "diner"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 10,
-    "ovenTime": 25,
-    "ingredients": [
-      {
-        "raw": "450 g broccoli, in roosjes",
-        "amount": 450,
-        "unit": "gram",
-        "name": "broccoli",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "100 g kastanjechampignons, in plakken",
-        "amount": 100,
-        "unit": "gram",
-        "name": "kastanjechampignons",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 stengel bosui, in ringetjes",
-        "amount": 1,
-        "unit": "",
-        "name": "lenteui",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "teentje knoflook",
-        "amount": 1,
-        "unit": "teen",
-        "name": "knoflook",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "olijfolie",
-        "amount": null,
-        "unit": "",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "4 eieren",
-        "amount": 4,
-        "unit": "",
-        "name": "eieren",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "60 ml slagroom",
-        "amount": 60,
-        "unit": "ml",
-        "name": "slagroom",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "50 g geraspte kaas",
-        "amount": 50,
-        "unit": "gram",
-        "name": "geraspte kaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "peper en zout, naar smaak",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "100 g brie, in plakken",
-        "amount": 100,
-        "unit": "gram",
-        "name": "brie",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      }
-    ],
-    "method": "Breek allereerst de broccoli in grote roosjes en kook die vervolgens 4 minuten in kokend water met een beetje zout beetgaar. Spoel koud af en laat uitlekken. Snijd ondertussen de bosui in ringetjes en de champignons in plakken. Bak de champignons in een droge koekenpan al omscheppend tot ze hun vocht loslaten en beginnen te bruinen. Haal de champignons uit de pan en zet apart. Bak in dezelfde pan de bosui en geperste knoflook aan in wat olie. Verwarm de heteluchtoven voor op 180 °C en vet een springvorm Ø 23 cm in. Rasp de kaas. Klop de eieren los met slagroom en roer de geraspte kaas en de gebakken bosui/knoflook erdoor. Bakken: Leg eerst de broccoli op de bodem van je springvorm. Verdeel daarna het ei-bosuimengsel erover en druk aan met een vork. Verdeel de plakjes champignon erover. Vervolgens de plakken brie, en maal er tot slot wat zout en peper over. Bak de quiche 20-25 minuten of tot de kaas goudbruin kleurt. Maak terwijl de quiche in de oven staat de rucolasalade. Serveer de quiche met de rucolasalade.",
-    "nutrition": {
-      "calories": 596.05,
-      "carbohydrates": 3.2,
-      "protein": 38.2,
-      "fat": 46.3,
-      "fiber": 8.1,
-      "note": "Per portie volgens de bron, zonder de salade"
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/broccoli-quiche-met-brie/"
-    },
-    "components": [
-      {
-        "id": "broccoli-quiche-met-brie-rucolasalade",
-        "title": "Rucolasalade",
-        "ingredients": [
-          {
-            "raw": "75 g rucola",
-            "amount": 75,
-            "unit": "gram",
-            "name": "rucola",
-            "optional": false,
-            "category": "Groente en fruit"
-          },
-          {
-            "raw": "30 g zongedroogde tomaten, in reepjes",
-            "amount": 30,
-            "unit": "gram",
-            "name": "zongedroogde tomaten",
-            "optional": false,
-            "category": "Houdbare producten"
-          },
-          {
-            "raw": "1 el olijfolie",
-            "amount": 15,
-            "unit": "ml",
-            "name": "olijfolie",
-            "optional": false,
-            "category": "Houdbare producten"
-          },
-          {
-            "raw": "1 tl citroensap",
-            "amount": 5,
-            "unit": "ml",
-            "name": "citroensap",
-            "optional": false,
-            "category": "Groente en fruit"
-          },
-          {
-            "raw": "peper en zout",
-            "amount": null,
-            "unit": "",
-            "name": "peper en zout",
-            "optional": false,
-            "category": "Kruiden en smaakmakers"
-          }
-        ],
-        "method": "Klop de olijfolie met het citroensap, peper en zout tot een dressing. Meng de rucola met de reepjes zongedroogde tomaat en schep de dressing erdoor."
-      }
-    ]
-  },
-  {
     "id": "broccoli-tomaat-ovenschotel",
     "title": "Broccoli tomaat ovenschotel",
     "approved": false,
@@ -4645,7 +4483,7 @@
     "title": "Chinese kool met grote garnalen",
     "approved": false,
     "categories": [
-      "diner"
+      "lunch"
     ],
     "portions": 2,
     "multiDay": false,
@@ -4748,7 +4586,7 @@
         "category": "Kruiden en smaakmakers"
       }
     ],
-    "method": "Snijd de Chinese kool (paksoi is ook lekker) in stukken, scheid de harde delen van de zachte bladeren. Snijd de paprika in dunne lange repen en wok deze met de harde delen van de Chinese kool 5 minuten in wat olijfolie. Rasp de gember, naar smaak, erover en knijp de knoflook erboven uit. Schep de garnalen erdoor en wok deze 5 minuten mee of tot de garnalen gaar zijn. Je kunt de garnalen ook apart bakken. Wok op het laatst de zachte bladeren van de Chinese kool mee tot ze warm zijn. Proef en breng op smaak met wat sojasaus en een kneepje citroensap. Als je echt van pittig houdt doe je er ringetjes rode peper of een lik sambal door. Dien op in een kom en schik er een handje knapperige taugé, vers gesneden bosui en gehakte peterselie over. Aanrader: eet met stokjes! Nog makkelijker?: Je kunt hiervoor ook een kant-en-klaar wokmix gebruiken, die voldoet prima. Maar… zelf snijden is veel lekkerder, verser en goedkoper. Je kunt dan ook zelf bepalen hoe fijn of grof de verschillende groenten gesneden moeten worden. Bovendien kun je de groenten een eigen gaartijd meegeven. Ik houd heel erg van knapperige taugé, die je op het laatst pas erdoor doet!",
+    "method": "Snijd de Chinese kool (paksoi is ook lekker) in stukken, scheid de harde delen van de zachte bladeren. Snijd de paprika in dunne lange repen en wok deze met de harde delen van de Chinese kool 5 minuten in wat olijfolie. Rasp de gember, naar smaak, erover en knijp de knoflook erboven uit. Schep de garnalen erdoor en wok deze 5 minuten mee of tot de garnalen gaar zijn. Je kunt de garnalen ook apart bakken. Wok op het laatst de zachte bladeren van de Chinese kool mee tot ze warm zijn. Proef en breng op smaak met wat sojasaus en een kneepje citroensap. Als je echt van pittig houdt doe je er ringetjes rode peper of een lik sambal door. Dien op in een kom en schik er een handje knapperige taugé, vers gesneden bosui en gehakte peterselie over. Aanrader: eet met stokjes!",
     "nutrition": {
       "calories": 286.4,
       "carbohydrates": 9.75,
@@ -5483,94 +5321,6 @@
         "note": "De bron telt 2 stuks; aangenomen als 2 porties. Controleer of dit klopt."
       }
     ]
-  },
-  {
-    "id": "courgette-met-reuzengarnalen",
-    "title": "Courgette met reuzengarnalen",
-    "approved": false,
-    "categories": [
-      "lunch",
-      "diner"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 10,
-    "ingredients": [
-      {
-        "raw": "400 g courgette, gespiraliseerd",
-        "amount": 400,
-        "unit": "gram",
-        "name": "courgette",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "2 handjes platte peterselie",
-        "amount": 30,
-        "unit": "gram",
-        "name": "peterselie",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "⅔ citroen, in partjes",
-        "amount": 0.67,
-        "unit": "",
-        "name": "citroen",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "10 stuks reuzengarnalen, diepvries of vers",
-        "amount": 10,
-        "unit": "",
-        "name": "reuzengarnalen",
-        "optional": false,
-        "category": "Vlees, vis en vleesvervangers"
-      },
-      {
-        "raw": "olijfolie, om te bakken",
-        "amount": null,
-        "unit": "",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "2 teentjes knoflook",
-        "amount": 2,
-        "unit": "teen",
-        "name": "knoflook",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "goede olijfolie, erover druppelen",
-        "amount": null,
-        "unit": "",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      }
-    ],
-    "method": "Maak van de courgette met een Spirelli dunne slierten: courgetti. Hak de peterselie. Snijd de citroen in partjes. Verwarm een bord voor. Neem twee aparte koekenpannen. Bak in de ene pan op redelijk hoog vuur de reuzengarnalen met de uitgeperste knoflook gaar in een scheutje olie gedurende 2-5 minuten. Halverwege de garnalen omdraaien. Wok in de andere pan, al omscheppend, de courgetti -zonder zout- in 1-2 minuten op hoog vuur beetgaar. Dat is totdat de courgetti-slierten net hun stijfheid verliezen. Langer doorbakken betekent een natte kledder op je bord! Serveer de courgetti onmiddellijk. Schik de garnalen er bovenop. Bestrooi met fijngehakte peterselie en leg de partjes citroen ertussen. Druppel er tot slot nog wat goede olijfolie over en een draai peper. En dan snel opeten want veel te lekker en het koelt redelijk snel af* (goeie smoes toch, die laatste?) Eet ze! * Serveren in een diepe voorverwarmde kom helpt!",
-    "nutrition": {
-      "calories": 181.25,
-      "carbohydrates": 5.75,
-      "protein": 20,
-      "fat": 8.05,
-      "fiber": 2.55
-    },
-    "diet": [
-      "vis"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/courgette-met-reuzengarnalen/"
-    }
   },
   {
     "id": "courgette-pappardelle-met-olijven-tapenade",

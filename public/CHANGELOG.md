@@ -7,7 +7,7 @@ De belangrijkste verbeteringen voor de planner en recepten.
 - Nieuwe recepten: 4 kazen salade, andijvie stamppot met kerriejus, asperges met hollandaisesaus en zalm, asperges met
   peterseliedressing en zalm, bleekselderijsalade met puntpaprika, bloemkool broccoli roomsoep, bloemkool
   pannenkoekjes met zalm, bloemkool rucola stamppotje, broccoli met mosterd-kaassaus en witvis, broccoli prei
-  ovenschotel, en broccoli-preisoep met zalmballetjes.
+  ovenschotel, broccoli-preisoep met zalmballetjes, en broccoli quiche met brie.
 
 ## 24 november 2026
 
