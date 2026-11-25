@@ -3525,94 +3525,6 @@
     ]
   },
   {
-    "id": "broccoli-met-mosterd-kaassaus",
-    "title": "Broccoli met mosterd-kaassaus en witvis",
-    "approved": false,
-    "categories": [
-      "lunch"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 20,
-    "ingredients": [
-      {
-        "raw": "500 g broccoli",
-        "amount": 500,
-        "unit": "gram",
-        "name": "broccoli",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "100 g roomkaas",
-        "amount": 100,
-        "unit": "gram",
-        "name": "roomkaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "75 g oude kaas, geraspt, 0 khd indien zelf geraspt",
-        "amount": 75,
-        "unit": "gram",
-        "name": "oude kaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "2 el mosterd",
-        "amount": 6,
-        "unit": "tl",
-        "name": "mosterd",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "peper",
-        "amount": null,
-        "unit": "",
-        "name": "peper",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "250 g witvisfilet",
-        "amount": 250,
-        "unit": "gram",
-        "name": "witvisfilet",
-        "optional": false,
-        "category": "Vlees, vis en vleesvervangers"
-      },
-      {
-        "raw": "olijfolie, om te bakken",
-        "amount": null,
-        "unit": "",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      }
-    ],
-    "method": "Verwijder de blaadjes en het onderkantje van de stronk broccoli. Schil de steel schoon en halveer de stronk van boven naar beneden zodat je twee 'bomen' hebt. Kook de bomen beetgaar in ongeveer 8 minuten. Dep ondertussen de vis droog, bestrooi met peper en bak in wat olijfolie in 3-4 minuten per kant gaar. Smelt de geraspte oude kaas in de roomkaas. Breng de kaassaus op smaak met flink wat mosterd. (of knoflook als je dat lekkerder vindt) Maak de saus zo dik of dun als je zelf wilt. Giet de broccoli af, doe over op een schaal en giet de saus erover. Leg de vis erbij. Maal er nog wat peper over en klaar ben je.",
-    "nutrition": {
-      "calories": 341.65,
-      "carbohydrates": 3.55,
-      "protein": 18.65,
-      "fat": 26.1,
-      "fiber": 8.2,
-      "note": "Per portie volgens de bron, zonder de vis"
-    },
-    "diet": [
-      "vis"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/broccoli-met-mosterd-kaassaus/"
-    }
-  },
-  {
     "id": "broccoli-noten-salade",
     "title": "Broccoli noten salade",
     "approved": false,
@@ -3707,102 +3619,6 @@
     ]
   },
   {
-    "id": "broccoli-prei-ovenschotel",
-    "title": "Broccoli prei ovenschotel",
-    "approved": false,
-    "categories": [
-      "diner"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 10,
-    "ovenTime": 15,
-    "ingredients": [
-      {
-        "raw": "300 g broccoli",
-        "amount": 300,
-        "unit": "gram",
-        "name": "broccoli",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "100 g prei",
-        "amount": 100,
-        "unit": "gram",
-        "name": "prei",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "100 g kastanjechampignons",
-        "amount": 100,
-        "unit": "gram",
-        "name": "kastanjechampignons",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "olijfolie, of ander bakvet",
-        "amount": null,
-        "unit": "",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "175 g gehakt, zelf bijtellen indien vega",
-        "amount": 175,
-        "unit": "gram",
-        "name": "gehakt",
-        "optional": false,
-        "category": "Vlees, vis en vleesvervangers"
-      },
-      {
-        "raw": "100 ml crème fraîche",
-        "amount": 100,
-        "unit": "ml",
-        "name": "crème fraîche",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "125 g blauwaderkaas, Danablu of andere kaas",
-        "amount": 125,
-        "unit": "gram",
-        "name": "blauwaderkaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "100 g geraspte kaas, 0 khd (indien zelf geraspt)",
-        "amount": 100,
-        "unit": "gram",
-        "name": "geraspte kaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      }
-    ],
-    "method": "Snijd de broccoli in roosjes. Kook ze in 4 minuten beetgaar en laat uitlekken. Snijd de prei in ringen en de champignons in plakjes. Bak het gehakt rul in olijfolie. Voeg prei en champignons toe en bak 5 minuten mee. Verwarm de heteluchtoven voor op 180 °C en vet een ovenschaal in. Los in een steelpannetje de crème fraîche met de Danablu op. Doe de gekookte broccoli en het prei-champignon-gehaktmengsel in een ovenschaal en verdeel vervolgens de kaassaus erover. Bestrooi tot slot met de geraspte kaas. Bak de broccoli prei ovenschotel 15 minuten of tot de kaas een mooi kleurtje begint te krijgen. Heerlijk!",
-    "nutrition": {
-      "calories": 885.8,
-      "carbohydrates": 4.6,
-      "protein": 48.45,
-      "fat": 74.2,
-      "fiber": 7.3
-    },
-    "diet": [
-      "vlees"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/broccoli-prei-ovenschotel/"
-    }
-  },
-  {
     "id": "broccoli-preisoep-met-zalmballetjes",
     "title": "Broccoli-preisoep met zalmballetjes",
     "approved": false,
@@ -3855,8 +3671,8 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "2 el slagroom",
-        "amount": 30,
+        "raw": "130 ml slagroom",
+        "amount": 130,
         "unit": "ml",
         "name": "slagroom",
         "optional": false,
@@ -3869,6 +3685,14 @@
         "name": "peper en zout",
         "optional": false,
         "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "4 eieren",
+        "amount": 4,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
       }
     ],
     "components": [
@@ -3916,16 +3740,17 @@
             "category": "Kruiden en smaakmakers"
           }
         ],
-        "method": "Schep de soep in kommen, serveer met een dot slagroom en een paar mooie sprieten bieslook. Heerlijk, zo'n bijzonder soepje!"
+        "method": "Schep de soep in kommen, leg in elke kom een gehalveerd ei en serveer met een dot slagroom en een paar mooie sprieten bieslook. Heerlijk, zo'n bijzonder soepje!"
       }
     ],
-    "method": "Snijd de prei in ringen en spoel schoon. Fruit de ringen in een soeppan met olijfolie aan. Maak de broccoli schoon, breek in roosjes en bak 2 minuten mee. Pers de knoflook erboven uit. Schenk de bouillon erbij en breng aan de kook. Laat 15 minuten zachtjes pruttelen met de deksel op de pan. Pureer de soep met de staafmixer, houd zo nodig warm. Maak terwijl de soep pruttelt de zalmballetjes en klop de slagroom half stijf met peper en zout.",
+    "method": "Snijd de prei in ringen en spoel schoon. Fruit de ringen in een soeppan met olijfolie aan. Maak de broccoli schoon, breek in roosjes en bak 2 minuten mee. Pers de knoflook erboven uit. Schenk de bouillon erbij en breng aan de kook. Laat 15 minuten zachtjes pruttelen met de deksel op de pan. Kook ondertussen de eieren in 8 minuten hard, pel ze en halveer ze. Pureer de soep met de staafmixer, roer er 100 ml slagroom door en houd zo nodig warm. Maak terwijl de soep pruttelt de zalmballetjes en klop de rest van de slagroom half stijf met peper en zout.",
     "nutrition": {
       "calories": 263.95,
       "carbohydrates": 4.3,
       "protein": 17.95,
       "fat": 18.2,
-      "fiber": 5.18
+      "fiber": 5.18,
+      "note": "Per portie volgens de bron, zonder de eieren en de extra slagroom"
     },
     "diet": [
       "vis"
