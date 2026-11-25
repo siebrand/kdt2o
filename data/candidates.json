@@ -278,9 +278,65 @@
         "name": "kaas",
         "optional": false,
         "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "2 el yoghurt",
+        "amount": 30,
+        "unit": "ml",
+        "name": "yoghurt",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "1 el olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "drupje citroensap",
+        "amount": null,
+        "unit": "",
+        "name": "citroensap",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "verse dille",
+        "amount": null,
+        "unit": "",
+        "name": "verse dille",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "peterselie",
+        "amount": null,
+        "unit": "",
+        "name": "peterselie",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "bieslook",
+        "amount": null,
+        "unit": "",
+        "name": "bieslook",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
       }
     ],
-    "method": "Maak de ijsbergsla schoon en snijd of scheur in dunne reepjes. Doe over in een saladeschaal. Snijd de kazen in kleine blokjes, je kunt in principe alle soorten kaas gebruiken. Leg de kaas soort bij soort op de salade. DRESSING: Klop 2 el yoghurt, 1 el olijfolie, een drupje citroensap, verse dille, peterselie en bieslook lobbig. Breng op smaak met vers gemalen peper en zout. Giet de helft van de dressing over de salade en geef de rest er los bij. Eet smakelijk!",
+    "method": "Maak de ijsbergsla schoon en snijd of scheur in dunne reepjes. Doe over in een saladeschaal. Snijd de kazen in kleine blokjes, je kunt in principe alle soorten kaas gebruiken. Leg de kaas soort bij soort op de salade. Dressing: Klop 2 el yoghurt, 1 el olijfolie, een drupje citroensap, verse dille, peterselie en bieslook lobbig. Breng op smaak met vers gemalen peper en zout. Giet de helft van de dressing over de salade en geef de rest er los bij. Eet smakelijk!",
     "nutrition": {
       "calories": 239.8,
       "carbohydrates": 2.45,
@@ -630,199 +686,6 @@
     "source": {
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/andijvie-stamppot-met-kerriejus/"
-    }
-  },
-  {
-    "id": "artisjokken-met-drie-sausjes",
-    "title": "Artisjokken met drie sausjes",
-    "approved": false,
-    "categories": [
-      "lunch",
-      "diner"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 45,
-    "ingredients": [
-      {
-        "raw": "240 g artisjokken, 2 stuks, wij aten 120 g pp netto artisjok op, zie de tekst",
-        "amount": 240,
-        "unit": "gram",
-        "name": "artisjokken",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "½ citroen, (of azijn)",
-        "amount": 0.5,
-        "unit": "",
-        "name": "citroen",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "snufje zout",
-        "amount": null,
-        "unit": "",
-        "name": "zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "snufje zout",
-        "amount": null,
-        "unit": "",
-        "name": "zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "1 el azijn",
-        "amount": 15,
-        "unit": "ml",
-        "name": "azijn",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "1 tl Zaanse mosterd",
-        "amount": 1,
-        "unit": "tl",
-        "name": "Zaanse mosterd",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "2 el olijfolie, goede",
-        "amount": 30,
-        "unit": "ml",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "bieslook",
-        "amount": null,
-        "unit": "",
-        "name": "bieslook",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "platte peterselie",
-        "amount": null,
-        "unit": "",
-        "name": "peterselie",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "peper",
-        "amount": null,
-        "unit": "",
-        "name": "peper",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "3 el mayonaise",
-        "amount": 45,
-        "unit": "ml",
-        "name": "mayonaise",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "1 el olijfolie, goede",
-        "amount": 15,
-        "unit": "ml",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "1 tl Zaanse mosterd",
-        "amount": 1,
-        "unit": "tl",
-        "name": "Zaanse mosterd",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "1 teentje knoflook",
-        "amount": 1,
-        "unit": "teen",
-        "name": "knoflook",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "vleugje citroenrasp",
-        "amount": null,
-        "unit": "",
-        "name": "citroenrasp",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "1 avocado",
-        "amount": 1,
-        "unit": "",
-        "name": "avocado",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1½ el Griekse yoghurt",
-        "amount": 20,
-        "unit": "gram",
-        "name": "Griekse yoghurt",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "kneepje citroensap",
-        "amount": null,
-        "unit": "",
-        "name": "citroensap",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      }
-    ],
-    "method": "Snijd de steel van de artisjokken af en knip eventuele bruine puntjes van de bladeren af. Wrijf het snijvlak even in met een partje citroen. Kook de artisjokken ondersteboven in een pan met ruim water met wat citroensap en een beetje zout gaar (20-35 minuten helemaal afhankelijk van de grootte). Als je een blaadje redelijk makkelijk los kunt trekken is de artisjok gaar. Giet af en laat de artisjokken ondersteboven uitlekken. Vinaigrette: Een mooie simpele kruidenvinaigrette laat de artisjok goed uitkomen. Klop het snufje zout met azijn, mosterd en extra vierge olijfolie tot er een lichtgebonden vinaigrette ontstaat. Snijd wat bieslook en peterselie fijn en meng die door de vinaigrette. Proef en breng op smaak met peper. Aïoli: Aïoli is knoflookmayonaise. Ik neem de mayonaise van AH excellent, 0 khd, als basis. Roer de mayonaise met extra vierge olijfolie, mosterd, geperste knoflook door elkaar en breng op smaak met een vleugje citroenrasp, peper en zout. Guacamole: Als we er maar één sausje bij eten dan in elk geval deze, dit is stiekem mijn favoriet om bij de artisjok te eten. Prak de avocado met Griekse yoghurt (of zure room). Voeg een paar drupjes citroensap toe en breng op smaak met peper en zout. Voor een meer aangeklede versie doe je er stukjes ui, tomaat, rode peper en een teentje knoflook door. Serveren: Serveer de artisjokken met de verschillende sausjes centraal opgesteld, zodat iedereen zijn favoriete sausje kan dippen. Verzamel de blaadjes mooi op de buitenrand van je bord of zet een (grote) schaal op tafel waar alle afvalblaadjes in kunnen. Tips voor erbij: een lekkere salade van rucola of veldsla of gestoofde babyleafs. Of maak een tapas tafel met garnalen, tonijntapenade, olijven, kaas met een focaccia broodje erbij.",
-    "nutrition": {
-      "calories": 484.4,
-      "carbohydrates": 4.1,
-      "protein": 4.8,
-      "fat": 48.1,
-      "fiber": 2.85,
-      "note": "Per stuk inclusief alle sausjes"
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/artisjokken/"
     }
   },
   {
