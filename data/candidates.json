@@ -4497,125 +4497,6 @@
     ]
   },
   {
-    "id": "broccoli-bloemkoolsalade-met-noten",
-    "title": "Broccoli bloemkoolsalade met noten",
-    "approved": false,
-    "categories": [
-      "lunch"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 15,
-    "ingredients": [
-      {
-        "raw": "150 g bloemkoolrijst, (gaar)",
-        "amount": 150,
-        "unit": "gram",
-        "name": "bloemkoolrijst",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "150 g broccoli, in roosjes",
-        "amount": 150,
-        "unit": "gram",
-        "name": "broccoli",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 avocado, in blokjes",
-        "amount": 1,
-        "unit": "",
-        "name": "avocado",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "75 g feta, in blokjes",
-        "amount": 75,
-        "unit": "gram",
-        "name": "feta",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "20 g amandelen, bruin, geroosterd",
-        "amount": 20,
-        "unit": "gram",
-        "name": "amandelen",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "5 blaadjes munt, ragfijne reepjes",
-        "amount": 2.5,
-        "unit": "gram",
-        "name": "verse munt",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "15 g granaatappelpitjes",
-        "amount": 15,
-        "unit": "gram",
-        "name": "granaatappelpitjes",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 el citroenolijfolie, (of olijfolie met citroenrasp)",
-        "amount": 15,
-        "unit": "ml",
-        "name": "citroenolijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "½ el citroensap",
-        "amount": 8,
-        "unit": "ml",
-        "name": "citroensap",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 tl komijnpoeder",
-        "amount": 1,
-        "unit": "tl",
-        "name": "komijn",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      }
-    ],
-    "method": "Zorg voor gare -afgekoelde- bloemkoolrijst. Dus roerbak de bloemkoolrijst eerst 1-2 minuten als je geen restje hebt. Kook de broccoliroosjes in 3 minuten beetgaar en spoel koud af. Snijd ondertussen de avocado en feta in blokjes. Rooster de amandelen. Snijd de blaadjes munt ragfijn. Meng voor de dressing de citroenolie met het citroensap, komijnpoeder en peper en zout. Meng de dressing samen met de koude bloemkoolrijst, broccoli, avocado en feta tot de basis van je salade. Doe deze basis over op een schaal en bestrooi met de gehakte amandelen, munt en tot slot de granaatappelpitjes. Porties: Voedingswaarden en porties gaan uit van 2 x een (hoofd)maaltijdsalade. Eet je het als bijgerecht of lunch pas dan de hoeveelheden aan. Voor een bijgerecht is het recept voor 4 porties als lunch reken je op 3.",
-    "nutrition": {
-      "calories": 351.85,
-      "carbohydrates": 5.8,
-      "protein": 12.67,
-      "fat": 29.41,
-      "fiber": 7
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/keto-broccoli-bloemkoolsalade-met-noten/"
-    }
-  },
-  {
     "id": "broccoli-met-citroenboter",
     "title": "Broccoli met citroenboter",
     "approved": false,
@@ -5154,8 +5035,8 @@
         "category": "Houdbare producten"
       },
       {
-        "raw": "30 g geraspte kaas, belegen, of roomkaas voor een nog smeuïger puree",
-        "amount": 30,
+        "raw": "100 g geraspte kaas, belegen",
+        "amount": 100,
         "unit": "gram",
         "name": "geraspte kaas",
         "optional": false,
@@ -5200,9 +5081,9 @@
             "category": "Groente en fruit"
           },
           {
-            "raw": "12 reuzengarnalen, 100 g eetbare delen, klik voor meer uitleg!",
-            "amount": 12,
-            "unit": "",
+            "raw": "250 g reuzengarnalen, gepeld",
+            "amount": 250,
+            "unit": "gram",
             "name": "reuzengarnalen",
             "optional": false,
             "category": "Vlees, vis en vleesvervangers"
@@ -5216,7 +5097,7 @@
             "category": "Groente en fruit"
           }
         ],
-        "method": "Rasp - terwijl de broccoli kookt - de gember en snijd een stukje rode peper in ringetjes. Roerbak de gember en peper samen met 1 teentje geperste knoflook en de bevroren garnalen een minuut of 5 op hoog vuur in een koekenpan met wat olijfolie. Roerbak de garnalen aan weerszijden tot ze mooi roze en gaar zijn. Steek de garnalen in de broccolipuree en bestrooi met vers gesneden ringetjes bosui. Serveer onmiddellijk. NB: ik vind de broccolipuree vers het lekkerst, opgewarmd verliest broccoli de frisse smaak en gaat veel muffer smaken."
+        "method": "Rasp - terwijl de broccoli kookt - de gember en snijd een stukje rode peper in ringetjes. Roerbak de gember en peper samen met 1 teentje geperste knoflook en de bevroren garnalen een minuut of 5 op hoog vuur in een koekenpan met wat olijfolie. Roerbak de garnalen aan weerszijden tot ze mooi roze en gaar zijn. Steek de garnalen in de broccolipuree en bestrooi met vers gesneden ringetjes bosui. Serveer onmiddellijk."
       }
     ],
     "method": "Broccolipuree: Snijd de broccoli in kleine roosjes. Roerbak de roosjes even in een scheutje olijfolie in een soeppan. Pers 1 teentje knoflook erboven uit. Voeg dan de bouillon toe en laat het 8 minuten zachtjes pruttelen met het deksel op de pan, of langer. Tot de broccoli zacht genoeg is. Puree maken: giet de broccoli af (vang de bouillon op) en stoom de roosjes droog in de pan. Pureer de broccoli met een staafmixer, rasp er kaas over en roer door. Proef de puree en breng op smaak met peper en zout. Mocht het te dik zijn kun je er een klein beetje bouillon bij doen.",
@@ -5225,7 +5106,8 @@
       "carbohydrates": 3.2,
       "protein": 19.6,
       "fat": 11.85,
-      "fiber": 8.15
+      "fiber": 8.15,
+      "note": "Per portie volgens de bron, met 30 g kaas en 100 g garnalen in totaal"
     },
     "diet": [
       "vis"
@@ -6639,134 +6521,6 @@
         "note": "10.8 g koolhydraten per portie volgens de bron; controleer of dit past."
       }
     ]
-  },
-  {
-    "id": "clubsandwich",
-    "title": "Clubsandwich",
-    "approved": false,
-    "categories": [
-      "ontbijt",
-      "lunch"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 10,
-    "ingredients": [
-      {
-        "raw": "2 eieren",
-        "amount": 2,
-        "unit": "",
-        "name": "eieren",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "3 el amandelmelk, slagroom of water kan ook",
-        "amount": 45,
-        "unit": "ml",
-        "name": "amandelmelk",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "1 el dille",
-        "amount": 4,
-        "unit": "gram",
-        "name": "verse dille",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "50 g amandelmeel",
-        "amount": 50,
-        "unit": "gram",
-        "name": "amandelmeel",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "1 el kokosmeel",
-        "amount": 8,
-        "unit": "gram",
-        "name": "kokosmeel",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "1 tl bakpoeder, wijnsteen",
-        "amount": 1,
-        "unit": "tl",
-        "name": "bakpoeder",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "olijfolie",
-        "amount": null,
-        "unit": "",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "15 g kruidenroomkaas, om te besmeren",
-        "amount": 15,
-        "unit": "gram",
-        "name": "kruidenroomkaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "100 g gerookte zalm",
-        "amount": 100,
-        "unit": "gram",
-        "name": "gerookte zalm",
-        "optional": false,
-        "category": "Vlees, vis en vleesvervangers"
-      },
-      {
-        "raw": "plukje kiemgroente",
-        "amount": null,
-        "unit": "",
-        "name": "kiemgroente",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "75 g avocado, in plakjes",
-        "amount": 75,
-        "unit": "gram",
-        "name": "avocado",
-        "optional": false,
-        "category": "Groente en fruit"
-      }
-    ],
-    "method": "Klop de eieren los met amandelmelk, dille en peper en zout. Meng met het amandelmeel, kokosmeel en bakpoeder. Meng water of iets kokosmeel erbij tot je een -redelijk dik- vloeibaar pannenkoekenbeslag hebt. Bak vervolgens een pannenkoek in hete olie ongeveer 2-3 minuten op een zacht vuur. Draai om als de pannenkoek stevig genoeg is en de onderkant begint te bruinen. Bak daarna nog een minuutje aan de andere kant of tot de pannenkoek gaar is. Snijd de pannenkoek in vier stukken. Besmeer eerst elk deel met kruidenroomkaas en beleg daarna met zalm en wat rucolakers. Dek vervolgens af met het andere deel van de pannenkoek. Bovenop drie plakjes avocado. Steek de lagen vast met een prikker, garneer tot slot met rucolakers. Eet en geniet!",
-    "nutrition": {
-      "calories": 481.4,
-      "carbohydrates": 2.6,
-      "protein": 24.6,
-      "fat": 39.75,
-      "fiber": 6.05
-    },
-    "diet": [
-      "vis"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-clubsandwich/"
-    }
   },
   {
     "id": "courgette-frittata-met-citroenricotta",

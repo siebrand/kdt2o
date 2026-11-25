@@ -12588,5 +12588,253 @@
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/vega-gevulde-aubergine/"
     }
+  },
+  {
+    "id": "broccoli-bloemkoolsalade-met-noten",
+    "title": "Broccoli bloemkoolsalade met noten",
+    "approved": true,
+    "categories": [
+      "lunch"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 15,
+    "ingredients": [
+      {
+        "raw": "150 g bloemkoolrijst, (gaar)",
+        "amount": 150,
+        "unit": "gram",
+        "name": "bloemkoolrijst",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "150 g broccoli, in roosjes",
+        "amount": 150,
+        "unit": "gram",
+        "name": "broccoli",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 avocado, in blokjes",
+        "amount": 1,
+        "unit": "",
+        "name": "avocado",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "100 g feta, in blokjes",
+        "amount": 100,
+        "unit": "gram",
+        "name": "feta",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "40 g amandelen, bruin, geroosterd",
+        "amount": 40,
+        "unit": "gram",
+        "name": "amandelen",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "7,5 g munt, in ragfijne reepjes (half bakje)",
+        "amount": 7.5,
+        "unit": "gram",
+        "name": "verse munt",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "15 g granaatappelpitjes",
+        "amount": 15,
+        "unit": "gram",
+        "name": "granaatappelpitjes",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 el citroenolijfolie, (of olijfolie met citroenrasp)",
+        "amount": 15,
+        "unit": "ml",
+        "name": "citroenolijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "½ el citroensap",
+        "amount": 8,
+        "unit": "ml",
+        "name": "citroensap",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 tl komijnpoeder",
+        "amount": 1,
+        "unit": "tl",
+        "name": "komijn",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      }
+    ],
+    "method": "Zorg voor gare -afgekoelde- bloemkoolrijst. Dus roerbak de bloemkoolrijst eerst 1-2 minuten als je geen restje hebt. Kook de broccoliroosjes in 3 minuten beetgaar en spoel koud af. Snijd ondertussen de avocado en feta in blokjes. Rooster de amandelen. Snijd de blaadjes munt ragfijn. Meng voor de dressing de citroenolie met het citroensap, komijnpoeder en peper en zout. Meng de dressing samen met de koude bloemkoolrijst, broccoli, avocado en feta tot de basis van je salade. Doe deze basis over op een schaal en bestrooi met de gehakte amandelen, munt en tot slot de granaatappelpitjes.",
+    "nutrition": {
+      "calories": 351.85,
+      "carbohydrates": 5.8,
+      "protein": 12.67,
+      "fat": 29.41,
+      "fiber": 7,
+      "note": "Per portie volgens de bron, met 75 g feta en 20 g amandelen in totaal"
+    },
+    "diet": [
+      "vegetarisch"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/keto-broccoli-bloemkoolsalade-met-noten/"
+    }
+  },
+  {
+    "id": "clubsandwich",
+    "title": "Clubsandwich",
+    "approved": true,
+    "categories": [
+      "ontbijt",
+      "lunch"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 10,
+    "ingredients": [
+      {
+        "raw": "2 eieren",
+        "amount": 2,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "3 el amandelmelk, slagroom of water kan ook",
+        "amount": 45,
+        "unit": "ml",
+        "name": "amandelmelk",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "7,5 g dille (half bakje)",
+        "amount": 7.5,
+        "unit": "gram",
+        "name": "verse dille",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "50 g amandelmeel",
+        "amount": 50,
+        "unit": "gram",
+        "name": "amandelmeel",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 el kokosmeel",
+        "amount": 8,
+        "unit": "gram",
+        "name": "kokosmeel",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 tl bakpoeder, wijnsteen",
+        "amount": 1,
+        "unit": "tl",
+        "name": "bakpoeder",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "olijfolie",
+        "amount": null,
+        "unit": "",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "15 g kruidenroomkaas, om te besmeren",
+        "amount": 15,
+        "unit": "gram",
+        "name": "kruidenroomkaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "100 g gerookte zalm",
+        "amount": 100,
+        "unit": "gram",
+        "name": "gerookte zalm",
+        "optional": false,
+        "category": "Vlees, vis en vleesvervangers"
+      },
+      {
+        "raw": "plukje kiemgroente",
+        "amount": null,
+        "unit": "",
+        "name": "kiemgroente",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "75 g avocado, in plakjes",
+        "amount": 75,
+        "unit": "gram",
+        "name": "avocado",
+        "optional": false,
+        "category": "Groente en fruit"
+      }
+    ],
+    "method": "Klop de eieren los met amandelmelk, dille en peper en zout. Meng met het amandelmeel, kokosmeel en bakpoeder. Meng water of iets kokosmeel erbij tot je een -redelijk dik- vloeibaar pannenkoekenbeslag hebt. Bak vervolgens een pannenkoek in hete olie ongeveer 2-3 minuten op een zacht vuur. Draai om als de pannenkoek stevig genoeg is en de onderkant begint te bruinen. Bak daarna nog een minuutje aan de andere kant of tot de pannenkoek gaar is. Snijd de pannenkoek in vier stukken. Besmeer eerst elk deel met kruidenroomkaas en beleg daarna met zalm en wat kiemgroente. Dek vervolgens af met het andere deel van de pannenkoek. Bovenop drie plakjes avocado. Steek de lagen vast met een prikker, garneer tot slot met kiemgroente. Eet en geniet!",
+    "nutrition": {
+      "calories": 481.4,
+      "carbohydrates": 2.6,
+      "protein": 24.6,
+      "fat": 39.75,
+      "fiber": 6.05
+    },
+    "diet": [
+      "vis"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-clubsandwich/"
+    }
   }
 ]
