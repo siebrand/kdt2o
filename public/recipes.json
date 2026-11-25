@@ -10315,5 +10315,150 @@
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/bloemkool-pannenkoekjes-met-zalm/"
     }
+  },
+  {
+    "id": "bloemkool-rucola-stamppotje",
+    "title": "Bloemkool rucola stamppotje",
+    "approved": true,
+    "categories": [
+      "lunch",
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 25,
+    "ingredients": [
+      {
+        "raw": "350 g bloemkool",
+        "amount": 350,
+        "unit": "gram",
+        "name": "bloemkool",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "7 stuks cherrytomaatje, in vieren",
+        "amount": 7,
+        "unit": "",
+        "name": "cherrytomaten",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "70 g rucola, grof gehakt",
+        "amount": 70,
+        "unit": "gram",
+        "name": "rucola",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "30 g geraspte kaas, indien zelf geraspt",
+        "amount": 30,
+        "unit": "gram",
+        "name": "geraspte kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "35 g mascarpone",
+        "amount": 35,
+        "unit": "gram",
+        "name": "mascarpone",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "nootmuskaat, naar smaak",
+        "amount": null,
+        "unit": "",
+        "name": "nootmuskaat",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "snuf zout",
+        "amount": null,
+        "unit": "",
+        "name": "zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "4 eieren",
+        "amount": 4,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      }
+    ],
+    "components": [
+      {
+        "id": "bloemkool-rucola-stamppotje-courgettestaafjes",
+        "title": "Courgettestaafjes",
+        "ingredients": [
+          {
+            "raw": "175 g courgette, in staafjes",
+            "amount": 175,
+            "unit": "gram",
+            "name": "courgette",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "kerrie, naar smaak",
+            "amount": null,
+            "unit": "",
+            "name": "kerriepoeder",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          },
+          {
+            "raw": "olijfolie, om te bakken",
+            "amount": null,
+            "unit": "",
+            "name": "olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          }
+        ],
+        "method": "Snijd de courgette in 16 reepjes en bak deze kort met een snuf kerrie om en om in wat olie."
+      },
+      {
+        "id": "bloemkool-rucola-stamppotje-serveren",
+        "title": "Serveren",
+        "ingredients": [
+          {
+            "raw": "handje basilicum, vers fijngesneden",
+            "amount": 15,
+            "unit": "gram",
+            "name": "verse basilicum",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          }
+        ],
+        "method": "Schep het bloemkool rucola stamppotje in een eenpersoons pannetje of schaaltje, garneer met de rest van de kaas en een beetje fijngesneden basilicum. Bak ondertussen de eieren in wat olie en leg ze op het stamppotje. Geef de gebakken courgette staafjes er los bij. Puur genieten!"
+      }
+    ],
+    "method": "Breek de bloemkool in roosjes en kook ze gaar in 12-15 minuten. Snijd ondertussen de cherrytomaatjes in kwarten. Was de rucola en hak grof. Giet de bloemkool af en stoom droog op laag vuur. Stamp de bloemkool met de helft (15gram) van de geraspte kaas en mascarpone tot een puree. Gebruik een stamper of een knijper. Schep de gesneden rucola en de kwarten cherrytomaatjes door de puree. Laat de stamppot helemaal warm worden, roer af en toe, om aanbranden te voorkomen. Proef en breng op smaak met nootmuskaat en een snufje zout.",
+    "nutrition": {
+      "calories": 238.65,
+      "carbohydrates": 9.3,
+      "protein": 10.15,
+      "fat": 17.05,
+      "fiber": 5.95,
+      "note": "Per portie volgens de bron, zonder de eieren"
+    },
+    "diet": [
+      "vegetarisch"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/bloemkool-rucola-stamppotje/"
+    }
   }
 ]

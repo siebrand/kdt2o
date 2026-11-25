@@ -5,8 +5,8 @@ De belangrijkste verbeteringen voor de planner en recepten.
 ## 25 november 2026
 
 - Nieuwe recepten: 4 kazen salade, andijvie stamppot met kerriejus, asperges met hollandaisesaus en zalm, asperges met
-  peterseliedressing en zalm, bleekselderijsalade met puntpaprika, bloemkool broccoli roomsoep, en bloemkool
-  pannenkoekjes met zalm.
+  peterseliedressing en zalm, bleekselderijsalade met puntpaprika, bloemkool broccoli roomsoep, bloemkool
+  pannenkoekjes met zalm, en bloemkool rucola stamppotje.
 
 ## 24 november 2026
 

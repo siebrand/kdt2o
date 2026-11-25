@@ -2414,142 +2414,6 @@
     ]
   },
   {
-    "id": "bloemkool-rucola-stamppotje",
-    "title": "Bloemkool rucola stamppotje",
-    "approved": false,
-    "categories": [
-      "lunch",
-      "diner"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 25,
-    "ingredients": [
-      {
-        "raw": "350 g bloemkool",
-        "amount": 350,
-        "unit": "gram",
-        "name": "bloemkool",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "7 stuks cherrytomaatje, in vieren",
-        "amount": 7,
-        "unit": "",
-        "name": "cherrytomaten",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "70 g rucola, grof gehakt",
-        "amount": 70,
-        "unit": "gram",
-        "name": "rucola",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "30 g geraspte kaas, indien zelf geraspt",
-        "amount": 30,
-        "unit": "gram",
-        "name": "geraspte kaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "35 g mascarpone",
-        "amount": 35,
-        "unit": "gram",
-        "name": "mascarpone",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "nootmuskaat, naar smaak",
-        "amount": null,
-        "unit": "",
-        "name": "nootmuskaat",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "snuf zout",
-        "amount": null,
-        "unit": "",
-        "name": "zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      }
-    ],
-    "components": [
-      {
-        "id": "bloemkool-rucola-stamppotje-courgettestaafjes",
-        "title": "Courgettestaafjes",
-        "ingredients": [
-          {
-            "raw": "175 g courgette, in staafjes",
-            "amount": 175,
-            "unit": "gram",
-            "name": "courgette",
-            "optional": false,
-            "category": "Groente en fruit"
-          },
-          {
-            "raw": "kerrie, naar smaak",
-            "amount": null,
-            "unit": "",
-            "name": "kerriepoeder",
-            "optional": false,
-            "category": "Kruiden en smaakmakers"
-          },
-          {
-            "raw": "olijfolie, om te bakken",
-            "amount": null,
-            "unit": "",
-            "name": "olijfolie",
-            "optional": false,
-            "category": "Houdbare producten"
-          }
-        ],
-        "method": "Snijd de courgette in 16 reepjes en bak deze kort met een snuf kerrie om en om in wat olie."
-      },
-      {
-        "id": "bloemkool-rucola-stamppotje-serveren",
-        "title": "Serveren",
-        "ingredients": [
-          {
-            "raw": "handje basilicum, vers fijngesneden",
-            "amount": 15,
-            "unit": "gram",
-            "name": "verse basilicum",
-            "optional": false,
-            "category": "Kruiden en smaakmakers"
-          }
-        ],
-        "method": "Schep het bloemkool rucola stamppotje in een eenpersoons pannetje of schaaltje, garneer met de rest van de kaas en een beetje fijngesneden basilicum. Geef de gebakken courgette staafjes er los bij. Puur genieten!"
-      }
-    ],
-    "method": "Breek de bloemkool in roosjes en kook ze gaar in 12-15 minuten. Snijd ondertussen de cherrytomaatjes in kwarten. Was de rucola en hak grof. Giet de bloemkool af en stoom droog op laag vuur. Stamp de bloemkool met de helft (15gram) van de geraspte kaas en mascarpone tot een puree. Gebruik een stamper of een knijper. Schep de gesneden rucola en de kwarten cherrytomaatjes door de puree. Laat de stamppot helemaal warm worden, roer af en toe, om aanbranden te voorkomen. Proef en breng op smaak met nootmuskaat en een snufje zout.",
-    "nutrition": {
-      "calories": 238.65,
-      "carbohydrates": 9.3,
-      "protein": 10.15,
-      "fat": 17.05,
-      "fiber": 5.95
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/bloemkool-rucola-stamppotje/"
-    }
-  },
-  {
     "id": "bloemkoolcouscous-met-worstjes",
     "title": "Bloemkoolcouscous met worstjes",
     "approved": false,
@@ -3560,136 +3424,6 @@
     ]
   },
   {
-    "id": "broccoli-bloemkoolsoep-met-courgette",
-    "title": "Broccoli bloemkoolsoep met courgette",
-    "approved": false,
-    "categories": [
-      "lunch",
-      "diner"
-    ],
-    "portions": 4,
-    "multiDay": true,
-    "days": 2,
-    "preparationTime": 30,
-    "ingredients": [
-      {
-        "raw": "60 g ui",
-        "amount": 60,
-        "unit": "gram",
-        "name": "uien",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "150 g courgette",
-        "amount": 150,
-        "unit": "gram",
-        "name": "courgette",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "olijfolie",
-        "amount": null,
-        "unit": "",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "1 teentje knoflook",
-        "amount": 1,
-        "unit": "teen",
-        "name": "knoflook",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 tl tijm",
-        "amount": 1,
-        "unit": "tl",
-        "name": "tijm",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "250 g broccoli",
-        "amount": 250,
-        "unit": "gram",
-        "name": "broccoli",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "250 g bloemkool",
-        "amount": 250,
-        "unit": "gram",
-        "name": "bloemkool",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "750 ml (groente)bouillon",
-        "amount": 750,
-        "unit": "ml",
-        "name": "groentebouillon",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "100 ml slagroom",
-        "amount": 100,
-        "unit": "ml",
-        "name": "slagroom",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "100 g kaas, geraspt, 0 khd indien zelf geraspt",
-        "amount": 100,
-        "unit": "gram",
-        "name": "kaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "3 g platte peterselie, vers, een handje",
-        "amount": 3,
-        "unit": "gram",
-        "name": "peterselie",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      }
-    ],
-    "method": "Snipper de ui en snijd de courgette in kleine stukjes. Fruit ze samen 5 minuten op matig vuur in olie of boter. Pers het knoflookteentje erboven uit en voeg de tijm toe. Roer even door. Snijd de broccoli en de bloemkool in kleine roosjes en voeg toe. Bak alles 5 minuten op zacht vuur. Roer regelmatig om. Voeg de bouillon toe, breng aan de kook en laat 10 minuten zachtjes pruttelen. Pureer met een staafmixer niet al te glad. Voeg peper en eventueel zout toe (eerst proeven). Rasp de kaas en hak de peterselie fijn. Serveer aan tafel met room, kaas en peterselie. En geniet!",
-    "nutrition": {
-      "calories": 251.8,
-      "carbohydrates": 5.7,
-      "protein": 10.38,
-      "fat": 19.95,
-      "fiber": 4.23,
-      "note": "Per kom"
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/broccoli-bloemkoolsoep-met-courgette/"
-    }
-  },
-  {
     "id": "broccoli-met-citroenboter",
     "title": "Broccoli met citroenboter",
     "approved": false,
@@ -3792,14 +3526,14 @@
   },
   {
     "id": "broccoli-met-mosterd-kaassaus",
-    "title": "Broccoli met mosterd-kaassaus",
+    "title": "Broccoli met mosterd-kaassaus en witvis",
     "approved": false,
     "categories": [
       "lunch"
     ],
     "portions": 2,
     "multiDay": false,
-    "preparationTime": 10,
+    "preparationTime": 20,
     "ingredients": [
       {
         "raw": "500 g broccoli",
@@ -3840,18 +3574,35 @@
         "name": "peper",
         "optional": false,
         "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "250 g witvisfilet",
+        "amount": 250,
+        "unit": "gram",
+        "name": "witvisfilet",
+        "optional": false,
+        "category": "Vlees, vis en vleesvervangers"
+      },
+      {
+        "raw": "olijfolie, om te bakken",
+        "amount": null,
+        "unit": "",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
       }
     ],
-    "method": "Verwijder de blaadjes en het onderkantje van de stronk broccoli. Schil de steel schoon en halveer de stronk van boven naar beneden zodat je twee 'bomen' hebt. Kook de bomen beetgaar in ongeveer 8 minuten. Smelt ondertussen de geraspte oude kaas in de roomkaas. Breng de kaassaus op smaak met flink wat mosterd. (of knoflook als je dat lekkerder vindt) Maak de saus zo dik of dun als je zelf wilt. Giet de broccoli af, doe over op een schaal en giet de saus erover. Maal er nog wat peper over en klaar ben je. Heerlijk met een stukje vis! TOPTIP van Rita: \"Maak er lekker veel van, het is gewoon erg lekker. Volgende dag de staafmixer erop. Toppie soeppie.\".",
+    "method": "Verwijder de blaadjes en het onderkantje van de stronk broccoli. Schil de steel schoon en halveer de stronk van boven naar beneden zodat je twee 'bomen' hebt. Kook de bomen beetgaar in ongeveer 8 minuten. Dep ondertussen de vis droog, bestrooi met peper en bak in wat olijfolie in 3-4 minuten per kant gaar. Smelt de geraspte oude kaas in de roomkaas. Breng de kaassaus op smaak met flink wat mosterd. (of knoflook als je dat lekkerder vindt) Maak de saus zo dik of dun als je zelf wilt. Giet de broccoli af, doe over op een schaal en giet de saus erover. Leg de vis erbij. Maal er nog wat peper over en klaar ben je.",
     "nutrition": {
       "calories": 341.65,
       "carbohydrates": 3.55,
       "protein": 18.65,
       "fat": 26.1,
-      "fiber": 8.2
+      "fiber": 8.2,
+      "note": "Per portie volgens de bron, zonder de vis"
     },
     "diet": [
-      "vegetarisch"
+      "vis"
     ],
     "programs": [
       "Koolhydraatarm recept"
