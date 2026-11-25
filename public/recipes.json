@@ -11322,5 +11322,278 @@
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/courgette-uit-de-oven-met-gehakt-en-paprika/"
     }
+  },
+  {
+    "id": "courgettepasta-met-champignonroomsaus",
+    "title": "Courgettepasta met champignonroomsaus",
+    "approved": true,
+    "categories": [
+      "lunch",
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 20,
+    "ingredients": [
+      {
+        "raw": "350 g courgette",
+        "amount": 350,
+        "unit": "gram",
+        "name": "courgette",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "250 g kastanjechampignons, in plakjes",
+        "amount": 250,
+        "unit": "gram",
+        "name": "kastanjechampignons",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "200 g crème fraîche, mascarpone of roomkaas kan ook",
+        "amount": 200,
+        "unit": "gram",
+        "name": "crème fraîche",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "100 g kaas, pittig",
+        "amount": 100,
+        "unit": "gram",
+        "name": "kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "ghee of roomboter, of ander bakvet",
+        "amount": null,
+        "unit": "",
+        "name": "roomboter",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "20 g Parmezaanse kaas",
+        "amount": 20,
+        "unit": "gram",
+        "name": "Parmezaanse kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "1 avocado",
+        "amount": 1,
+        "unit": "",
+        "name": "avocado",
+        "optional": false,
+        "category": "Groente en fruit"
+      }
+    ],
+    "method": "Was de courgette, laat de schil eraan. Gebruik een Spirelli groenteslijper of mandoline om er courgetti van te maken. Rasp de kaas, gebruik liefst een beetje pittige kaas, of een combinatie van meerdere soorten. Maak de kastanjechampignons schoon, snijd ze in plakjes, en bak ze op hoog vuur zonder boter, blijf omscheppen tot ze hun vocht gaan verliezen. Zo komt de smaak het best vrij. Laat even uitlekken in een bakje. Verwarm de crème fraîche en de geraspte kaas in een steelpannetje. Proef en breng op smaak met peper en zout. Doe de kastanjechampignons erbij en laat doorwarmen. Wok als laatste de courgetti op hoog vuur gedurende ongeveer 1-2 minuten tot ze net hun 'stijfheid' verliezen. Niet te lang, dan heb je een plas op je bord. Serveer op een voorverwarmd bord, saus erover, bestrooien met Parmezaan. Serveer met een halve avocado per persoon.",
+    "nutrition": {
+      "calories": 568.5,
+      "carbohydrates": 7.1,
+      "protein": 22.6,
+      "fat": 49.25,
+      "fiber": 3.6,
+      "note": "Per portie volgens de bron, zonder de avocado"
+    },
+    "diet": [
+      "vegetarisch"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/courgettepasta-met-champignonroomsaus/"
+    }
+  },
+  {
+    "id": "courgetti-met-groene-asperges",
+    "title": "Courgetti met groene asperges",
+    "approved": true,
+    "categories": [
+      "lunch"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 25,
+    "ingredients": [
+      {
+        "raw": "300 g asperges, groene schoongemaakt",
+        "amount": 300,
+        "unit": "gram",
+        "name": "asperges",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 sjalot",
+        "amount": 1,
+        "unit": "",
+        "name": "sjalot",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "klontje roomboter",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "200 ml (groente)bouillon",
+        "amount": 200,
+        "unit": "ml",
+        "name": "groentebouillon",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "350 g courgette",
+        "amount": 350,
+        "unit": "gram",
+        "name": "courgette",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "50 g Parmezaanse kaas, geraspt",
+        "amount": 50,
+        "unit": "gram",
+        "name": "Parmezaanse kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "150 g spekblokjes",
+        "amount": 150,
+        "unit": "gram",
+        "name": "spekblokjes",
+        "optional": false,
+        "category": "Vlees, vis en vleesvervangers"
+      }
+    ],
+    "method": "Bak de spekblokjes uit in een droge koekenpan en laat ze uitlekken op keukenpapier. Maak de asperges schoon, snijd de asperges in stukken van 3 cm. Snipper de ui. Fruit de ui en de gesneden asperges 2 minuten in een ruime koekenpan met roomboter op matig vuur. Schenk de bouillon erbij en breng aan de kook. Laat 3-5 minuten zachtjes koken tot de asperges beetgaar zijn. Spiraliseer ondertussen de courgette. En rasp de kaas. Pureren: Haal de aspergetoppen uit de pan en houd ze apart. Pureer de rest met ¾ van de geraspte kaas tot een gladde saus met de staafmixer. Proef en breng op smaak met peper en zout. Schep de rauwe courgetti door de saus en warm alles snel door. Niet te lang dan krijg je pap. Verdeel de courgetti met groene aspergesaus over diepe borden en schik vervolgens de aspergetoppen en de spekblokjes erop. Rasp er tot slot Parmezaanse kaas over. Serveer direct, buon appetito!",
+    "nutrition": {
+      "calories": 208,
+      "carbohydrates": 7.9,
+      "protein": 13.85,
+      "fat": 12.4,
+      "fiber": 4.9,
+      "note": "Per portie volgens de bron, zonder de spekblokjes"
+    },
+    "diet": [
+      "vlees"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/courgetti-met-groene-asperges/"
+    }
+  },
+  {
+    "id": "ei-in-paprika",
+    "title": "Ei in paprika",
+    "approved": true,
+    "categories": [
+      "ontbijt"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 11,
+    "ingredients": [
+      {
+        "raw": "130 g paprika, in 4 ringen à 2 cm hoog",
+        "amount": 130,
+        "unit": "gram",
+        "name": "paprika",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "4 eieren",
+        "amount": 4,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "10 g roomboter, of olie om te bakken",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "beetje bieslook, 0,1 khd en/of bosui of een handje verse kruiden naar smaak",
+        "amount": null,
+        "unit": "",
+        "name": "bieslook",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "50 g geraspte kaas",
+        "amount": 50,
+        "unit": "gram",
+        "name": "geraspte kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      }
+    ],
+    "method": "Snijd 4 stevige ringen van ongeveer 2 cm breed van de paprika en haal de zaden eruit. Maak de ringen zeker niet te dun want dan stroomt je ei over. Bak de paprikaringen in wat boter of olie aan beide zijden even aan. Breek vervolgens een ei in elke ring. Bestrooi met kruiden, geraspte kaas, peper en zout. Laat het ei op matig vuur stollen. Eet ze!",
+    "nutrition": {
+      "calories": 231.2,
+      "carbohydrates": 2.5,
+      "protein": 15.8,
+      "fat": 17.15,
+      "fiber": 1.55,
+      "note": "Per portie (à 2 stuks) volgens de bron, met een plukje kaas"
+    },
+    "diet": [
+      "vegetarisch"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/ei-in-paprika/"
+    }
   }
 ]

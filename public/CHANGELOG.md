@@ -20,6 +20,9 @@ De belangrijkste verbeteringen voor de planner en recepten.
   - Chinese kool met grote garnalen (lunch)
   - Courgette pappardelle met olijven tapenade en kip (diner)
   - Courgette uit de oven met gehakt en paprika (diner)
+  - Courgettepasta met champignonroomsaus (lunch en diner)
+  - Courgetti met groene asperges (lunch)
+  - Ei in paprika (ontbijt)
 
 ## 24 november 2026
 
