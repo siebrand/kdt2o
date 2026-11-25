@@ -11595,5 +11595,238 @@
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/ei-in-paprika/"
     }
+  },
+  {
+    "id": "extra-gevulde-boerenomelet",
+    "title": "Extra gevulde boerenomelet",
+    "approved": true,
+    "categories": [
+      "ontbijt",
+      "lunch"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 20,
+    "ingredients": [
+      {
+        "raw": "10 ml olijfolie",
+        "amount": 10,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "100 g kastanjechampignons",
+        "amount": 100,
+        "unit": "gram",
+        "name": "kastanjechampignons",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "150 g boerensoepgroente",
+        "amount": 150,
+        "unit": "gram",
+        "name": "boerensoepgroente",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "6 eieren",
+        "amount": 6,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "1 el Italiaanse kruiden",
+        "amount": 3,
+        "unit": "tl",
+        "name": "Italiaanse kruiden",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "50 g Emmenthaler, geraspt",
+        "amount": 50,
+        "unit": "gram",
+        "name": "Emmenthaler",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "handje selderij, vers gehakt",
+        "amount": 15,
+        "unit": "gram",
+        "name": "selderij",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "50 g gemengde sla",
+        "amount": 50,
+        "unit": "gram",
+        "name": "gemengde sla",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 lijnzaadcrackers",
+        "amount": 2,
+        "unit": "",
+        "name": "lijnzaadcracker",
+        "optional": false,
+        "category": "Houdbare producten",
+        "componentId": "lijnzaadcrackers"
+      }
+    ],
+    "method": "Verwarm een scheut olijfolie in een koekenpan. Borstel de champignons schoon en snijd ze boven de pan in plakjes. Voeg de boerensoepgroente toe en bak samen 3 minuten al omscheppend. Draai het vuur laag. Klop de eieren met de Italiaanse kruiden en verdeel dit gelijkmatig over de groenten. Laat met een deksel op de pan 6 minuten op laag vuur garen. Rasp vervolgens de kaas erover en laat nog eens 6 minuten garen. Serveer de gevulde boerenomelet met wat vers gesneden selderij, sla en een lijnzaadcracker per persoon.",
+    "nutrition": {
+      "calories": 296,
+      "carbohydrates": 3.5,
+      "protein": 20.1,
+      "fat": 21.85,
+      "fiber": 3.15,
+      "note": "Per portie volgens de bron, met 4 eieren en zonder sla en crackers"
+    },
+    "diet": [
+      "vegetarisch"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/extra-gevulde-boerenomelet/"
+    }
+  },
+  {
+    "id": "frisse-bloemkool-rijstsalade",
+    "title": "Frisse bloemkool rijstsalade",
+    "approved": true,
+    "categories": [
+      "lunch"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 20,
+    "ingredients": [
+      {
+        "raw": "300 g bloemkoolrijst",
+        "amount": 300,
+        "unit": "gram",
+        "name": "bloemkoolrijst",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 el olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 el paprikavlokken",
+        "amount": 3,
+        "unit": "tl",
+        "name": "paprikavlokken",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "150 g komkommer, zonder schil en zonder pitjes gewogen",
+        "amount": 150,
+        "unit": "gram",
+        "name": "komkommer",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "75 g cherrytomaatjes, liefst verschillende kleuren",
+        "amount": 75,
+        "unit": "gram",
+        "name": "cherrytomaten",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 sjalot, gesnipperd",
+        "amount": 1,
+        "unit": "",
+        "name": "sjalot",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "50 g pecannoten, of walnoten",
+        "amount": 50,
+        "unit": "gram",
+        "name": "pecannoten",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "100 g feta",
+        "amount": 100,
+        "unit": "gram",
+        "name": "feta",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "7,5 g platte peterselie, fijngesneden (half bakje)",
+        "amount": 7.5,
+        "unit": "gram",
+        "name": "peterselie",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "4 el olijfolie, extra vierge",
+        "amount": 60,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "citroensap, naar smaak",
+        "amount": null,
+        "unit": "",
+        "name": "citroensap",
+        "optional": true,
+        "category": "Groente en fruit"
+      }
+    ],
+    "method": "Bak de bloemkoolrijst met de paprikavlokken in de olijfolie al omscheppend circa drie minuten op hoog vuur, tot deze gaat stomen. Laat afkoelen. Snijd komkommer, sjalot, tomaatjes en peterselie klein. Breek de feta in stukjes. Hak de nootjes klein. Meng alles voorzichtig in een saladeschaal. Voeg olijfolie extra vierge, peper en zout toe. meng en proef. Voeg eventueel wat citroensap toe, Dat maakt je bloemkool rijstsalade nog wat frisser. Dat heeft wel invloed op de andere smaken.",
+    "nutrition": {
+      "calories": 675.4,
+      "carbohydrates": 8.9,
+      "protein": 14.65,
+      "fat": 63.45,
+      "fiber": 7.15
+    },
+    "diet": [
+      "vegetarisch"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/frisse-keto-bloemkool-rijstsalade/"
+    }
   }
 ]

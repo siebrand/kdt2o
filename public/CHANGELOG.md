@@ -23,6 +23,8 @@ De belangrijkste verbeteringen voor de planner en recepten.
   - Courgettepasta met champignonroomsaus (lunch en diner)
   - Courgetti met groene asperges (lunch)
   - Ei in paprika (ontbijt)
+  - Extra gevulde boerenomelet (ontbijt en lunch)
+  - Frisse bloemkool rijstsalade (lunch)
 
 ## 24 november 2026
 
