@@ -8,6 +8,30 @@
     "source": "https://www.koolhydraatarmrecept.nl/artisjokken/"
   },
   {
+    "id": "asperge-mosterdsoep-met-creme-fraiche",
+    "title": "Asperge mosterdsoep met crème fraîche",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "130 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/asperge-mosterdsoep/"
+  },
+  {
+    "id": "asperges-met-salsa-van-tomaat",
+    "title": "Asperges met salsa van tomaat",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "223 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/asperges-met-salsa-van-tomaat/"
+  },
+  {
+    "id": "avocado-met-extra-gevulde-kipkerrie",
+    "title": "Avocado met extra gevulde kipkerrie",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "173 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/avocado-met-extra-gevulde-kipkerrie/"
+  },
+  {
     "id": "avocado-pepermunt-smoothie",
     "title": "Avocado pepermunt smoothie",
     "reason": "ingrediënt",
@@ -16,12 +40,276 @@
     "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarm-ontbijt-in-een-glas/"
   },
   {
+    "id": "avocadocreme-met-paddenstoelen",
+    "title": "Avocadocrème met paddenstoelen",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "119 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/avocadocreme-met-paddenstoelen/"
+  },
+  {
+    "id": "aziatische-koolsalade-met-sesamdressing",
+    "title": "Aziatische koolsalade met sesamdressing",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "247 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/aziatische-koolsalade-met-sesamdressing/"
+  },
+  {
+    "id": "bleekselderij-courgettesoep-met-topping",
+    "title": "Bleekselderij courgettesoep met topping",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "85 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/courgettesoep-met-topping/"
+  },
+  {
+    "id": "bleekselderij-paprika-wokschotel",
+    "title": "Bleekselderij paprika wokschotel",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "131 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/bleekselderij-paprika-wokschotel/"
+  },
+  {
+    "id": "bloemkool-couscous-met-noten",
+    "title": "Bloemkool couscous met noten",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "118 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/bloemkool-couscous-met-noten/"
+  },
+  {
+    "id": "bloemkool-met-tahindressing",
+    "title": "Bloemkool met tahindressing",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "183 kcal en 8 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/bloemkool-met-tahindressing/"
+  },
+  {
+    "id": "bloemkoolcappuccino",
+    "title": "Bloemkoolcappuccino",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "197 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/bloemkoolcappuccino/"
+  },
+  {
+    "id": "boerenkool-met-ei-uit-de-pan",
+    "title": "Boerenkool met ei, uit de pan",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "170 kcal en 10 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/boerenkool-met-ei/"
+  },
+  {
+    "id": "boerenkool-ovenschotel",
+    "title": "Boerenkool ovenschotel",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "131 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/boerenkool-ovenschotel/"
+  },
+  {
+    "id": "citroen-courgette",
+    "title": "Citroen courgette",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "67 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/citroen-courgette/"
+  },
+  {
+    "id": "courgettelinten-met-munt",
+    "title": "Courgettelinten met munt",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "245 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/courgettelinten-met-munt-en-ricotta/"
+  },
+  {
+    "id": "courgettesoep-met-doperwten",
+    "title": "Courgettesoep met doperwten",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "121 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/courgettesoep-met-doperwten/"
+  },
+  {
+    "id": "curry-schotel-met-paksoi-en-room",
+    "title": "Curry schotel met paksoi en room",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "186 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/curry-schotel-met-paksoi/"
+  },
+  {
+    "id": "ei-in-wolk-spectaculair-eten",
+    "title": "Ei in wolk, spectaculair eten",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "158 kcal en 10 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/ei-in-wolk/"
+  },
+  {
+    "id": "gegrilde-asperges-met-kaas",
+    "title": "Gegrilde asperges met kaas",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "111 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/gegrilde-asperges/"
+  },
+  {
+    "id": "gegrilde-paprika-met-citroendressing-en-cranberry",
+    "title": "Gegrilde paprika met citroendressing en cranberry",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "121 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/gegrilde-paprika-met-citroendressing-en-cranberry/"
+  },
+  {
+    "id": "gegrilde-worteltjes-met-tahinsaus",
+    "title": "Gegrilde worteltjes met tahinsaus",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "183 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/gegrilde-worteltjes-met-tahinsaus/"
+  },
+  {
+    "id": "geroosterde-aubergine-met-yoghurt",
+    "title": "Geroosterde aubergine met yoghurt",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "79 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/geroosterde-aubergine-met-yoghurt/"
+  },
+  {
+    "id": "gevulde-avocado-met-geitenkaas-en-paprika",
+    "title": "Gevulde avocado met geitenkaas en paprika",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "201 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/gevulde-avocado-met-geitenkaas-en-paprika/"
+  },
+  {
+    "id": "gevulde-avocado-met-rivierkreeftjes",
+    "title": "Gevulde avocado met rivierkreeftjes",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "171 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/gevulde-avocado-met-rivierkreeftjes/"
+  },
+  {
+    "id": "gevulde-avocado-met-tonijn",
+    "title": "Gevulde avocado met tonijn",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "147 kcal en 8 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/gevulde-avocado-met-tonijn/"
+  },
+  {
+    "id": "gevulde-courgette-met-wortelpeterselie",
+    "title": "Gevulde courgette met wortelpeterselie",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "144 kcal en 8 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/gevulde-courgette-met-wortelpeterselie/"
+  },
+  {
+    "id": "gevulde-komkommer",
+    "title": "Gevulde komkommer",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "185 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/gevulde-komkommer/"
+  },
+  {
+    "id": "gevulde-mini-paprikaatjes",
+    "title": "Gevulde mini paprikaatjes",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "43 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/gevulde-mini-paprikaatjes/"
+  },
+  {
+    "id": "griekse-salade-van-radijs",
+    "title": "Griekse salade van radijs",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "94 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/griekse-salade-van-radijs/"
+  },
+  {
+    "id": "groente-kofte-met-tzatziki",
+    "title": "Groente köfte met tzatziki",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "102 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/groente-kofte-met-tzatziki/"
+  },
+  {
+    "id": "groenteschotel-met-doperwten",
+    "title": "Groenteschotel met doperwten",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "235 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/groenteschotel-met-doperwten/"
+  },
+  {
+    "id": "grove-eiersalade-met-avocado",
+    "title": "Grove eiersalade met avocado",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "99 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/grove-eiersalade-met-avocado/"
+  },
+  {
     "id": "grove-tonijnsalade-in-tomaat",
     "title": "Grove tonijnsalade in tomaat",
     "reason": "ingrediënt",
     "date": "2026-11-24",
     "note": "ketchup",
     "source": "https://www.koolhydraatarmrecept.nl/grove-tonijnsalade-in-tomaat/"
+  },
+  {
+    "id": "italiaanse-maaltijdsoep",
+    "title": "Italiaanse maaltijdsoep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "250 kcal en 9 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/italiaanse-maaltijdsoep/"
+  },
+  {
+    "id": "italiaanse-ovenschotel-van-geroosterde-groente",
+    "title": "Italiaanse ovenschotel van geroosterde groente",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "174 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/italiaanse-ovenschotel-van-gegrilde-groente/"
+  },
+  {
+    "id": "keto-asperge-cappuccino-met-bosui",
+    "title": "Keto asperge cappuccino met bosui",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "173 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/keto-asperge-cappuccino-met-bosui/"
+  },
+  {
+    "id": "keto-aspergelinten-in-oosterse-dressing",
+    "title": "Keto aspergelinten in oosterse dressing",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "199 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/keto-aspergelinten-in-oosterse-dressing/"
+  },
+  {
+    "id": "keto-bleekselderij-wortelsoep-met-gember",
+    "title": "Keto bleekselderij wortelsoep met gember",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "146 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/keto-bleekselderij-wortelsoep-met-gember/"
   },
   {
     "id": "keto-eiwitshake-met-rood-fruit",
@@ -40,12 +328,116 @@
     "source": "https://www.koolhydraatarmrecept.nl/keto-krokante-kibbeling/"
   },
   {
+    "id": "keto-ontbijtpap-met-wortelpeterselie",
+    "title": "Keto ontbijtpap met wortelpeterselie",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "107 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/keto-ontbijtpap-met-wortelpeterselie/"
+  },
+  {
+    "id": "keto-oosterse-paksoisoep",
+    "title": "Keto oosterse paksoisoep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "147 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/keto-oosterse-paksoisoep/"
+  },
+  {
+    "id": "keto-paprikastoof",
+    "title": "Keto paprikastoof",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "199 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/keto-paprikastoof/"
+  },
+  {
+    "id": "keto-portobello-met-spinazie-en-geitenkaas",
+    "title": "Keto portobello met spinazie en geitenkaas",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "219 kcal en 8 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/keto-portobello-met-spinazie-en-geitenkaas/"
+  },
+  {
+    "id": "keto-rode-sla-met-mosterd-dilledressing-mjummie",
+    "title": "Keto rode sla met mosterd-dilledressing, mjummie!",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "236 kcal en 10 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/keto-rode-sla-met-mosterd-dilledressing/"
+  },
+  {
+    "id": "keto-salade-met-sugarsnaps",
+    "title": "Keto salade met sugarsnaps!",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "244 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/peultjes-erwten-salade/"
+  },
+  {
     "id": "keto-salade-wrap-met-tonijn-en-courgettelinten",
     "title": "Keto salade wrap met tonijn en courgettelinten",
     "reason": "ingrediënt",
     "date": "2026-11-24",
     "note": "ketchup",
     "source": "https://www.koolhydraatarmrecept.nl/keto-salade-wrap-met-tonijn/"
+  },
+  {
+    "id": "keto-soep-met-paksoi-en-kerrie",
+    "title": "Keto soep met paksoi en kerrie",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "136 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/keto-soep-met-paksoi-en-kerrie/"
+  },
+  {
+    "id": "keto-thaise-pompoensoep",
+    "title": "Keto Thaise pompoensoep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "183 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/keto-thaise-pompoensoep/"
+  },
+  {
+    "id": "keto-tomatensoep",
+    "title": "Keto tomatensoep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "87 kcal en 1 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/keto-tomatensoep/"
+  },
+  {
+    "id": "keto-wortel-broccolisalade",
+    "title": "Keto wortel broccolisalade",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "184 kcal en 8 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/keto-wortel-broccolisalade/"
+  },
+  {
+    "id": "klassieke-waldorfsalade",
+    "title": "Klassieke waldorfsalade",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "174 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/klassieke-waldorfsalade/"
+  },
+  {
+    "id": "knapperige-courgette-aspergesalade",
+    "title": "Knapperige courgette aspergesalade",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "237 kcal en 8 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/knapperige-courgette-aspergesalade/"
+  },
+  {
+    "id": "knapperige-keto-salade",
+    "title": "Knapperige keto salade",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "160 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/knapperige-keto-salade/"
   },
   {
     "id": "knoflook-garnalen-met-groente",
@@ -56,12 +448,92 @@
     "source": "https://www.koolhydraatarmrecept.nl/gerookte-knoflook-garnalen-met-groente/"
   },
   {
+    "id": "komkommer-avocado-soep",
+    "title": "Komkommer avocado soep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "100 kcal en 1 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/komkommer-avocado-soep/"
+  },
+  {
+    "id": "komkommer-gevuld-met-kipkerriesalade",
+    "title": "Komkommer gevuld met kipkerriesalade",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "66 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/komkommer-gevuld-met-kipkerriesalade/"
+  },
+  {
     "id": "komkommer-smoothie-met-spinazie-en-bleekselderij",
     "title": "Komkommer smoothie met spinazie en bleekselderij",
     "reason": "ingrediënt",
     "date": "2026-11-24",
     "note": "eiwitpoeder",
     "source": "https://www.koolhydraatarmrecept.nl/komkommer-smoothie/"
+  },
+  {
+    "id": "kool-bleekselderij-salade-met-sesamdressing",
+    "title": "Kool bleekselderij salade met sesamdressing",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "210 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/kool-bleekselderij-salade-met-sesamdressing/"
+  },
+  {
+    "id": "koolhydraatarm-stamppotje-met-snijbonen",
+    "title": "Koolhydraatarm stamppotje met snijbonen",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "181 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/stamppotje-met-sperziebonen-en-prei/"
+  },
+  {
+    "id": "koolhydraatarme-broccolisouffle",
+    "title": "Koolhydraatarme broccolisoufflé",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "108 kcal en 8 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-broccolisouffle/"
+  },
+  {
+    "id": "koolhydraatarme-carpaccio-van-rettich-en-paprika",
+    "title": "Koolhydraatarme carpaccio van rettich en paprika",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "60 kcal en 1 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-carpaccio-van-rettich-en-paprika/"
+  },
+  {
+    "id": "koolhydraatarme-frisse-zuurkoolsalade",
+    "title": "Koolhydraatarme, frisse zuurkoolsalade!",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "212 kcal en 10 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-frisse-zuurkoolsalade/"
+  },
+  {
+    "id": "koolhydraatarme-gemarineerde-venkelsalade-met-munt",
+    "title": "Koolhydraatarme gemarineerde venkelsalade met munt",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "132 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/gemarineerde-venkelsalade-met-munt/"
+  },
+  {
+    "id": "koolhydraatarme-gestoofde-komkommerfriet",
+    "title": "Koolhydraatarme gestoofde komkommerfriet",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "197 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-gestoofde-komkommerfriet/"
+  },
+  {
+    "id": "koolhydraatarme-gevulde-tomatensoep",
+    "title": "Koolhydraatarme gevulde tomatensoep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "118 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-gevulde-tomatensoep/"
   },
   {
     "id": "koolhydraatarme-hete-kip-met-champignons",
@@ -80,6 +552,46 @@
     "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-lasagne/"
   },
   {
+    "id": "koolhydraatarme-meiraapsoep-met-munt",
+    "title": "Koolhydraatarme meiraapsoep met munt",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "167 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-meiraapsoep-met-munt/"
+  },
+  {
+    "id": "koolhydraatarme-paprika-roomsoep",
+    "title": "Koolhydraatarme paprika roomsoep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "189 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-paprika-roomsoep/"
+  },
+  {
+    "id": "koolhydraatarme-peultjestaart-spiraaltaart",
+    "title": "Koolhydraatarme peultjestaart, spiraaltaart",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "134 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/peultjestaart-spiraaltaart/"
+  },
+  {
+    "id": "koolhydraatarme-pittige-curry-traybake",
+    "title": "Koolhydraatarme pittige curry traybake",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "239 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-pittige-curry-traybake/"
+  },
+  {
+    "id": "koolhydraatarme-salade-met-broccoli-en-paprika",
+    "title": "Koolhydraatarme salade met broccoli en paprika",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "156 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-salade-met-broccoli-en-paprika/"
+  },
+  {
     "id": "koolhydraatarme-spinazie-smoothie-met-avocado",
     "title": "Koolhydraatarme spinazie smoothie met avocado",
     "reason": "ingrediënt",
@@ -88,12 +600,300 @@
     "source": "https://www.koolhydraatarmrecept.nl/spinazie-smoothie-met-avocado/"
   },
   {
+    "id": "koolhydraatarme-spinaziesoep-met-een-bootje",
+    "title": "Koolhydraatarme spinaziesoep met een bootje",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "122 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-spinaziesoep/"
+  },
+  {
+    "id": "koolhydraatarme-sugarsnaps-salade",
+    "title": "Koolhydraatarme sugarsnaps salade",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "125 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-sugarsnaps-salade/"
+  },
+  {
+    "id": "koolhydraatarme-sushi",
+    "title": "Koolhydraatarme sushi",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "83 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-sushi/"
+  },
+  {
+    "id": "koolhydraatarme-tomatensoep-met-peterseliepesto",
+    "title": "Koolhydraatarme tomatensoep met peterseliepesto",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "136 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-tomatensoep-met-peterseliepesto/"
+  },
+  {
+    "id": "koolhydraatarme-zomersalade-met-komkommer-en-aardbei",
+    "title": "Koolhydraatarme zomersalade met komkommer en aardbei",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "248 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-zomersalade-met-komkommer-en-aardbei/"
+  },
+  {
+    "id": "koolrabi-carpaccio",
+    "title": "Koolrabi carpaccio",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "134 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolrabi-carpaccio/"
+  },
+  {
+    "id": "koolrabi-komkommer-salade",
+    "title": "Koolrabi komkommer salade",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "95 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolrabi-komkommer-salade/"
+  },
+  {
+    "id": "koolrabisoep-met-citroen",
+    "title": "Koolrabisoep met citroen",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "93 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koolrabisoep-met-citroen/"
+  },
+  {
+    "id": "koriandersoep-met-courgette",
+    "title": "Koriandersoep met courgette",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "84 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/koriandersoep-met-courgette/"
+  },
+  {
+    "id": "kruidig-geroosterde-groente-uit-de-oven",
+    "title": "Kruidig geroosterde groente uit de oven",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "196 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/kruidig-geroosterde-groente-uit-de-oven/"
+  },
+  {
+    "id": "lauwwarme-groene-groente",
+    "title": "Lauwwarme groene groente",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "226 kcal en 10 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/lauwwarme-groene-groente/"
+  },
+  {
+    "id": "lente-maaltijdsoep-met-kaaskletskop",
+    "title": "Lente maaltijdsoep met kaaskletskop",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "54 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/lente-maaltijdsoep-met-kaaskletskop/"
+  },
+  {
+    "id": "lentesalade-met-asperges-peultjes-en-venkel",
+    "title": "Lentesalade met asperges, peultjes en venkel",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "239 kcal en 8 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/lentesalade-met-asperges/"
+  },
+  {
+    "id": "lijnzaadcracker-met-ei-en-avocadoroos-en-dukkah",
+    "title": "Lijnzaadcracker met ei en avocadoroos (en dukkah)",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "228 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/lijnzaadcracker-met-ei-en-avocadoroos/"
+  },
+  {
+    "id": "lunchsalade-met-mosterd-dilledressing",
+    "title": "Lunchsalade met mosterd-dilledressing",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "169 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/lunchsalade-met-mosterd-dilledressing/"
+  },
+  {
+    "id": "makkelijke-maaltijd-preisoep",
+    "title": "Makkelijke maaltijd: preisoep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "76 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/makkelijke-maaltijd-preisoep/"
+  },
+  {
+    "id": "mediterrane-groentestoof",
+    "title": "Mediterrane groentestoof",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "123 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/mediterrane-groentestoof/"
+  },
+  {
+    "id": "oosterse-bloemkool-courgettesoep",
+    "title": "Oosterse bloemkool courgettesoep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "117 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/oosterse-bloemkool-courgettesoep/"
+  },
+  {
+    "id": "oosterse-koude-komkommersoep",
+    "title": "Oosterse koude komkommersoep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "96 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/oosterse-koude-komkommersoep/"
+  },
+  {
+    "id": "oosterse-spruitjes-met-gele-bloemkoolrijst",
+    "title": "Oosterse spruitjes met gele bloemkoolrijst",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "194 kcal en 8 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/oosterse-spruitjes/"
+  },
+  {
+    "id": "oosterse-vispakketjes",
+    "title": "Oosterse vispakketjes",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "116 kcal en 8 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/oosterse-vispakketjes/"
+  },
+  {
+    "id": "oosterse-wortelsoep-met-citroen-en-koriander",
+    "title": "Oosterse wortelsoep met citroen en koriander",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "225 kcal en 1 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/oosterse-koude-wortelsoep/"
+  },
+  {
+    "id": "peer-met-gorgonzola-en-zoete-dressing",
+    "title": "Peer met gorgonzola en zoete dressing",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "129 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/peer-met-gorgonzola/"
+  },
+  {
+    "id": "pittige-pompoensoep-met-selderij",
+    "title": "Pittige pompoensoep met selderij",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "122 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/pittige-pompoensoep-met-selderij/"
+  },
+  {
+    "id": "pompoensoep-met-champignons",
+    "title": "Pompoensoep met champignons",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "112 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/pompoensoep-met-champignons/"
+  },
+  {
+    "id": "pompoensoep-met-kokos-en-gember",
+    "title": "Pompoensoep met kokos en gember",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "186 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/pompoensoep-met-kokos-en-gember/"
+  },
+  {
+    "id": "prei-met-geitenkaas-en-tijm",
+    "title": "Prei met geitenkaas en tijm",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "173 kcal en 8 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/pijpjes-prei-met-geitenkaas/"
+  },
+  {
+    "id": "prei-mosterdsoep",
+    "title": "Prei mosterdsoep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "187 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/prei-mosterdsoep/"
+  },
+  {
+    "id": "radijs-salade-met-dille",
+    "title": "Radijs salade met dille",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "113 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/radijs-salade-met-dille/"
+  },
+  {
+    "id": "ratjetoe-met-puree",
+    "title": "Ratjetoe met puree",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "144 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/ratjetoe-met-puree/"
+  },
+  {
+    "id": "rettichsalade-met-komkommer-en-wortel",
+    "title": "Rettichsalade met komkommer en wortel",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "86 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/rettichsalade/"
+  },
+  {
+    "id": "rettichsalade-met-yoghurt-mosterddressing",
+    "title": "Rettichsalade met yoghurt-mosterddressing",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "43 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/rettichsalade/"
+  },
+  {
     "id": "rivierkreeftjes-cocktail",
     "title": "Rivierkreeftjes cocktail",
     "reason": "ingrediënt",
     "date": "2026-11-24",
     "note": "ketchup",
     "source": "https://www.koolhydraatarmrecept.nl/rivierkreeftjes-cocktail/"
+  },
+  {
+    "id": "rode-koolsalade-kleurrijk-en-knapperig",
+    "title": "Rode koolsalade, kleurrijk en knapperig!",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "135 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/kleurrijke-knapperige-rode-koolsalade/"
+  },
+  {
+    "id": "rode-paprikasoep-zijdezacht-en-romig",
+    "title": "Rode paprikasoep: zijdezacht en romig",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "117 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/rode-paprikasoep-zijdezacht-en-romig/"
+  },
+  {
+    "id": "romaine-saladeschuitjes-met-worst",
+    "title": "Romaine saladeschuitjes met worst",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "183 kcal en 9 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/romaine-saladeschuitjes/"
+  },
+  {
+    "id": "romige-bloemkoolsoep-met-kerrie",
+    "title": "Romige bloemkoolsoep met kerrie",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "124 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/romige-bloemkoolsoep-met-kerrie/"
   },
   {
     "id": "romige-vanille-smoothie",
@@ -110,5 +910,237 @@
     "date": "2026-11-24",
     "note": "ketchup",
     "source": "https://www.koolhydraatarmrecept.nl/salade-met-reuzengarnalen-en-pittige-saus/"
+  },
+  {
+    "id": "slarolletjes-met-gehakt",
+    "title": "Slarolletjes met gehakt",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "66 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/slarolletjes-met-fijngehakt/"
+  },
+  {
+    "id": "snelle-bietensalade",
+    "title": "Snelle bietensalade",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "181 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/snelle-bietensalade-lekker-fris/"
+  },
+  {
+    "id": "snert-zonder-erwt-koolhydraatarme-erwtensoep",
+    "title": "Snert zonder erwt – koolhydraatarme erwtensoep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "166 kcal en 9 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/snert-zonder-erwt-koolhydraatarme-erwtensoep/"
+  },
+  {
+    "id": "snijbiet-salade-met-aardbei",
+    "title": "Snijbiet salade met aardbei",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "159 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/snijbiet-salade-met-aardbei/"
+  },
+  {
+    "id": "soep-van-wortelpeterselie-met-peer",
+    "title": "Soep van wortelpeterselie met peer",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "99 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/soep-van-wortelpeterselie-met-peer/"
+  },
+  {
+    "id": "spicy-paksoi-met-gember",
+    "title": "Spicy paksoi met gember",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "205 kcal en 6 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/spicy-paksoi-met-gember/"
+  },
+  {
+    "id": "spinazie-met-knoflookdressing",
+    "title": "Spinazie met knoflookdressing",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "74 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/spinazie-met-knoflookdressing/"
+  },
+  {
+    "id": "spinazie-salade-met-rode-biet",
+    "title": "Spinazie salade met rode biet",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "234 kcal en 9 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/spinazie-salade/"
+  },
+  {
+    "id": "spinaziesoep-met-munt",
+    "title": "Spinaziesoep met munt",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "107 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/spinaziesoep-met-munt/"
+  },
+  {
+    "id": "spruitjes-en-pompoen-in-tomatensaus",
+    "title": "Spruitjes en pompoen in tomatensaus",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "157 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/spruitjes-en-pompoen/"
+  },
+  {
+    "id": "stamppot-bomvol-smaak",
+    "title": "Stamppot bomvol smaak",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "160 kcal en 9 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/feestelijke-stamppot-bomvol-smaak/"
+  },
+  {
+    "id": "tabouleh-koolhydraatarme-mezzes-op-tafel",
+    "title": "Tabouleh – koolhydraatarme mezzes op tafel",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "40 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/tabouleh-koolhydraatarme-mezzes/"
+  },
+  {
+    "id": "tatsoi-zeekraal-ei-en-avocado-bammetje",
+    "title": "Tatsoi, zeekraal, ei en avocado bammetje",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "220 kcal en 10 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/tatsoi-bammetje/"
+  },
+  {
+    "id": "tom-kha-thaise-kokossoep-met-paddenstoelen-en-courgette",
+    "title": "Tom kha, Thaise kokossoep met paddenstoelen en courgette",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "217 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/tom-kha-thaise-kokossoep/"
+  },
+  {
+    "id": "uien-pompoensoep",
+    "title": "Uien pompoensoep",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "80 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/uien-pompoensoep/"
+  },
+  {
+    "id": "veldsla-met-asperges-en-avocadodressing",
+    "title": "Veldsla met asperges en avocadodressing",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "248 kcal en 8 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/veldsla-met-asperges-en-avocadodressing/"
+  },
+  {
+    "id": "venkel-in-paprika",
+    "title": "Venkel in paprika",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "145 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/venkel-in-paprika-uit-de-oven/"
+  },
+  {
+    "id": "venkelcappuccino-met-gerookte-zalm",
+    "title": "Venkelcappuccino met gerookte zalm",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "104 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/venkelcappuccino-met-gerookte-zalm/"
+  },
+  {
+    "id": "venkelsalade-met-passie",
+    "title": "Venkelsalade met passie!",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "193 kcal en 4 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/venkelsalade-met-passie/"
+  },
+  {
+    "id": "venkelsoep-met-zalm",
+    "title": "Venkelsoep met zalm",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "118 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/venkelsoep-met-zalm/"
+  },
+  {
+    "id": "waterkerssoep-goed-voor-je",
+    "title": "Waterkerssoep, goed voor je!",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "87 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/waterkerssoep/"
+  },
+  {
+    "id": "watermeloen-met-kruidenolie-en-huttenkase",
+    "title": "Watermeloen met kruidenolie en hüttenkäse",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "200 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/watermeloen-met-kruidenolie-en-huttenkase/"
+  },
+  {
+    "id": "witlof-appelsalade",
+    "title": "Witlof appelsalade",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "214 kcal en 1 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/witlof-appelsalade/"
+  },
+  {
+    "id": "witlof-met-paddenstoelen-en-romige-puree",
+    "title": "Witlof met paddenstoelen en romige puree",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "165 kcal en 9 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/witlof-met-paddenstoelen/"
+  },
+  {
+    "id": "witlofsoep-met-blauwe-kaas",
+    "title": "Witlofsoep met blauwe kaas",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "210 kcal en 7 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/witlofsoep-met-blauwe-kaas/"
+  },
+  {
+    "id": "witlofsoep-met-een-bootje",
+    "title": "Witlofsoep met een bootje",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "211 kcal en 5 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/witlofsoep-met-een-bootje/"
+  },
+  {
+    "id": "witte-koolsalade-met-munt",
+    "title": "Witte koolsalade met munt",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "84 kcal en 3 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/witte-koolsalade-met-munt/"
+  },
+  {
+    "id": "wortel-koolrabisalade-met-mosterddressing",
+    "title": "Wortel koolrabisalade met mosterddressing",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "71 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/wortel-koolrabisalade/"
+  },
+  {
+    "id": "zomerse-veldsla-met-aardbeien",
+    "title": "Zomerse veldsla met aardbeien",
+    "reason": "te licht",
+    "date": "2026-11-25",
+    "note": "108 kcal en 2 g eiwit per portie",
+    "source": "https://www.koolhydraatarmrecept.nl/zomerse-veldsla-met-aardbeien/"
   }
 ]

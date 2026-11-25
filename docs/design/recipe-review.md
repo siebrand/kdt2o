@@ -110,8 +110,8 @@ candidate changes afterwards, the old decision does not apply any more and the
 candidate returns to the review. Thus nobody approves a text that they did not
 see.
 
-The reasons are ingrediënt, koolhydraten, dubbel, past niet, ingewikkeld, and
-anders; "anders" needs a note. The file is local and in `.gitignore`. Only the result of part 3 goes into Git.
+The reasons are ingrediënt, koolhydraten, dubbel, past niet, ingewikkeld,
+te licht, and anders; "anders" needs a note. The file is local and in `.gitignore`. Only the result of part 3 goes into Git.
 
 ### 3. Applying the decisions
 

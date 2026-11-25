@@ -72,6 +72,8 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 
 - The user can select each recipe only one time in a week.
 - An empty meal slot is correct.
+- There are three meals a day and no snacks. A recipe must be filling until the
+  next meal. Reject a candidate that is too light to be a meal.
 - A multi-day recipe uses its `days` value. The planner puts the recipe on the
   selected day and on each second day after it.
 - The shopping list adds quantities only when the unit and the normalized

@@ -2,6 +2,10 @@
 
 De belangrijkste verbeteringen voor de planner en recepten.
 
+## 25 november 2026
+
+- Nieuw recept voor de lunch: 4 kazen salade, lekker knapperig.
+
 ## 24 november 2026
 
 - Bij elk recept staat onderaan de bron, met een koppeling naar de website waar het recept vandaan komt. De bron staat

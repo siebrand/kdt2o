@@ -9450,5 +9450,132 @@
       "name": "Diabetesfonds",
       "url": "https://www.diabetesfonds.nl/recepten/snelle-uiensoep-met-kaaskoekje"
     }
+  },
+  {
+    "id": "4-kazen-salade-lekker-knapperig",
+    "title": "4 kazen salade, lekker knapperig",
+    "approved": true,
+    "categories": [
+      "lunch"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 10,
+    "ingredients": [
+      {
+        "raw": "250 g ijsbergsla",
+        "amount": 250,
+        "unit": "gram",
+        "name": "ijsbergsla",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "30 g blauwaderkaas, pittige Castello vinden wij lekker",
+        "amount": 30,
+        "unit": "gram",
+        "name": "blauwaderkaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "30 g boerenkaas",
+        "amount": 30,
+        "unit": "gram",
+        "name": "boerenkaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "30 g jong belegen kaas",
+        "amount": 30,
+        "unit": "gram",
+        "name": "jong belegen kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "30 g oude kaas, Old Amsterdam",
+        "amount": 30,
+        "unit": "gram",
+        "name": "oude kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "2 el yoghurt",
+        "amount": 30,
+        "unit": "ml",
+        "name": "yoghurt",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "1 el olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "drupje citroensap",
+        "amount": null,
+        "unit": "",
+        "name": "citroensap",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "verse dille",
+        "amount": null,
+        "unit": "",
+        "name": "verse dille",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "peterselie",
+        "amount": null,
+        "unit": "",
+        "name": "peterselie",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "bieslook",
+        "amount": null,
+        "unit": "",
+        "name": "bieslook",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      }
+    ],
+    "method": "Maak de ijsbergsla schoon en snijd of scheur in dunne reepjes. Doe over in een saladeschaal. Snijd de kazen in kleine blokjes, je kunt in principe alle soorten kaas gebruiken. Leg de kaas soort bij soort op de salade. Dressing: Klop 2 el yoghurt, 1 el olijfolie, een drupje citroensap, verse dille, peterselie en bieslook lobbig. Breng op smaak met vers gemalen peper en zout. Giet de helft van de dressing over de salade en geef de rest er los bij. Eet smakelijk!",
+    "nutrition": {
+      "calories": 239.8,
+      "carbohydrates": 2.45,
+      "protein": 14.45,
+      "fat": 19.15,
+      "fiber": 1.7
+    },
+    "diet": [
+      "vegetarisch"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/4-kazen-salade/"
+    }
   }
 ]

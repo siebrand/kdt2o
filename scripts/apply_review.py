@@ -26,7 +26,7 @@ from pathlib import Path
 import validate_recipes
 
 ROOT = Path(__file__).resolve().parent.parent
-REASONS = ("ingrediënt", "koolhydraten", "dubbel", "past niet", "ingewikkeld", "anders")
+REASONS = ("ingrediënt", "koolhydraten", "dubbel", "past niet", "ingewikkeld", "te licht", "anders")
 DECISIONS = ("approve", "reject", "change", "skip")
 
 
