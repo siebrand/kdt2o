@@ -11828,5 +11828,423 @@
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/frisse-keto-bloemkool-rijstsalade/"
     }
+  },
+  {
+    "id": "garnalen-in-room",
+    "title": "Garnalen in room",
+    "approved": true,
+    "categories": [
+      "lunch",
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 20,
+    "ingredients": [
+      {
+        "raw": "25 g sjalot",
+        "amount": 25,
+        "unit": "gram",
+        "name": "sjalot",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "20 g roomboter",
+        "amount": 20,
+        "unit": "gram",
+        "name": "roomboter",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "½ paprika, oranje",
+        "amount": 0.5,
+        "unit": "",
+        "name": "paprika",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "200 g bleekselderij",
+        "amount": 200,
+        "unit": "gram",
+        "name": "bleekselderij",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "150 ml slagroom",
+        "amount": 150,
+        "unit": "ml",
+        "name": "slagroom",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "2 el roomkaas",
+        "amount": 30,
+        "unit": "gram",
+        "name": "roomkaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "¼ blokje visbouillon",
+        "amount": 0.25,
+        "unit": "",
+        "name": "visbouillonblokje",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "10 reuzengarnalen",
+        "amount": 10,
+        "unit": "",
+        "name": "reuzengarnalen",
+        "optional": false,
+        "category": "Vlees, vis en vleesvervangers"
+      }
+    ],
+    "method": "Snipper de ui en fruit 'm op middelhoog vuur glazig in wat boter. Snijd de paprika in lange smalle repen. Snijd de bleekselderij in elleboogjes. Voeg de paprika en bleekselderij toe aan de pan en bak 10 minuten mee. Voeg de slagroom, roomkaas en het visbouillonblokje (verkruimelen) toe. Breng aan de kook. Voeg de garnalen toe aan de pan en laat ze tegen de kook aan gaar worden. Voeg zo nodig wat room of water toe. Proef of het zout genoeg is. Het is zo al heel lekker, maar voeg gerust verse kruiden toe en een draai peper! Dien op in een diep bord en geef er een lepel bij.",
+    "nutrition": {
+      "calories": 475,
+      "carbohydrates": 6.5,
+      "protein": 22,
+      "fat": 39,
+      "fiber": 2.4,
+      "note": "Per portie, geschat voor de aangepaste hoeveelheden"
+    },
+    "diet": [
+      "vis"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/garnalen-en-kabeljauw-in-room/"
+    }
+  },
+  {
+    "id": "gestoofde-rode-kool-met-kabeljauw",
+    "title": "Gestoofde rode kool met kabeljauw",
+    "approved": true,
+    "categories": [
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 30,
+    "ingredients": [
+      {
+        "raw": "300 g rode kool, fijngesneden",
+        "amount": 300,
+        "unit": "gram",
+        "name": "rode kool",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 stengels bosui, in stukken van 2 cm",
+        "amount": 2,
+        "unit": "",
+        "name": "lenteui",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "olijfolie",
+        "amount": null,
+        "unit": "",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 teentje knoflook",
+        "amount": 1,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 cm gemberwortel, geraspt",
+        "amount": 10,
+        "unit": "gram",
+        "name": "gember",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "100 ml water",
+        "amount": 100,
+        "unit": "ml",
+        "name": "water",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 el kruidenazijn",
+        "amount": 15,
+        "unit": "ml",
+        "name": "kruidenazijn",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "scheutje sojasaus, tamari naar smaak",
+        "amount": 15,
+        "unit": "ml",
+        "name": "sojasaus",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 el sesamolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "sesamolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 tl tijm",
+        "amount": 1,
+        "unit": "tl",
+        "name": "tijm",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "2 tl venkelzaad",
+        "amount": 2,
+        "unit": "tl",
+        "name": "venkelzaad",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      }
+    ],
+    "components": [
+      {
+        "id": "gestoofde-rode-kool-met-kabeljauw-vis",
+        "title": "Vis",
+        "ingredients": [
+          {
+            "raw": "400 g kabeljauw, 2 moten (of andere witvis)",
+            "amount": 400,
+            "unit": "gram",
+            "name": "kabeljauw",
+            "optional": false,
+            "category": "Vlees, vis en vleesvervangers"
+          },
+          {
+            "raw": "kneepje citroensap",
+            "amount": null,
+            "unit": "",
+            "name": "citroensap",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "viskruiden",
+            "amount": null,
+            "unit": "",
+            "name": "viskruiden",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          }
+        ],
+        "method": "Wrijf ondertussen de vis in met een beetje citroensap en viskruiden. Bak de kabeljauw in 5-10 minuten gaar."
+      },
+      {
+        "id": "gestoofde-rode-kool-met-kabeljauw-mosterdsaus",
+        "title": "Mosterdsaus",
+        "ingredients": [
+          {
+            "raw": "100 ml crème fraîche",
+            "amount": 100,
+            "unit": "ml",
+            "name": "crème fraîche",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          },
+          {
+            "raw": "1 el mosterd",
+            "amount": 3,
+            "unit": "tl",
+            "name": "mosterd",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "peper en zout",
+            "amount": null,
+            "unit": "",
+            "name": "peper en zout",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          }
+        ],
+        "method": "Verwarm de crème fraîche met de mosterd op laag vuur en breng op smaak met peper en zout."
+      }
+    ],
+    "method": "Verwijder de harde kern van de rode kool, snijd de rest in dunne repen. Snijd de bosui in stukken van 2 cm en wok ze in olie. Pers knoflook erboven uit en schep om. Zo worden ze heerlijk zacht en wat zoetig. Houd ze apart op een schoteltje. Bak in dezelfde pan de rode kool samen met de geraspte gember. Voeg water, azijn, sojasaus, sesamolie, tijm en venkel toe. Breng snel aan de kook, draai het vuur lager en laat zo 10-15 minuten zachtjes gaar stoven met een deksel op de pan. Roer af en toe even om. Proef tussendoor en voeg zo nodig wat zout toe. Stoof de rode kool beetgaar 10-15 minuten. Heb je het liever helemaal zacht en gaar? Reken dan op 20-30 minuten. Serveren: Schep de stukken bosui door de rode kool en verdeel over de borden met een schuimspaan. Leg de vis erboven op en schep de mosterdsaus erover.",
+    "nutrition": {
+      "calories": 202.65,
+      "carbohydrates": 6,
+      "protein": 14.15,
+      "fat": 12.7,
+      "fiber": 6,
+      "note": "Per portie volgens de bron, met 300 g kabeljauw en zonder de mosterdsaus"
+    },
+    "diet": [
+      "vis"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/gestoofde-rode-kool-met-kabeljauw/"
+    }
+  },
+  {
+    "id": "gevulde-aubergine-met-gehakt",
+    "title": "Gevulde aubergine met gehakt",
+    "approved": true,
+    "categories": [
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 15,
+    "ovenTime": 60,
+    "ingredients": [
+      {
+        "raw": "1 aubergine, (gemiddeld 280 g gewicht - 220 g uitgehold)",
+        "amount": 1,
+        "unit": "",
+        "name": "aubergine",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "10 ml olijfolie",
+        "amount": 10,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "25 g ui, gesnipperd",
+        "amount": 25,
+        "unit": "gram",
+        "name": "uien",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "stukje bosui, in ringetjes",
+        "amount": null,
+        "unit": "",
+        "name": "lenteui",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 teentje knoflook, geperst",
+        "amount": 1,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 stengels bleekselderij, in elleboogjes",
+        "amount": 2,
+        "unit": "stengels",
+        "name": "bleekselderij",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "100 g tomaat, in blokjes",
+        "amount": 100,
+        "unit": "gram",
+        "name": "tomaat",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "150 g courgette, in blokjes",
+        "amount": 150,
+        "unit": "gram",
+        "name": "courgette",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "7,5 g kruiden, vers gehakt (half bakje)",
+        "amount": 7.5,
+        "unit": "gram",
+        "name": "kruiden",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "roomboter, om te bakken",
+        "amount": null,
+        "unit": "",
+        "name": "roomboter",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "100 g kaas",
+        "amount": 100,
+        "unit": "gram",
+        "name": "kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "basilicum, vers",
+        "amount": null,
+        "unit": "",
+        "name": "verse basilicum",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "300 g half-om-half gehakt",
+        "amount": 300,
+        "unit": "gram",
+        "name": "half-om-half gehakt",
+        "optional": false,
+        "category": "Vlees, vis en vleesvervangers"
+      }
+    ],
+    "method": "AUBERGINE POFFEN: Verwarm de heteluchtoven voor op 200 °C en vet een ovenschaal in. Was de aubergine en schil met een dunschiller om de paar centimeter de schil eraf zodat je zebrapatroon krijgt. Prik er hier en daar gaatjes in met een mesje en smeer de aubergine rondom in met olie en leg 'm in de ovenschaal. Pof de aubergine 40 minuten of tot de vrucht gaar is. Halverwege keren. NB: De tijd voor het poffen de aubergine hangt sterk van de grootte af. Steek een mesje in het dikste deel en als dat zacht aanvoelt is de aubergine gaar. VULLING: Snijd ui, bosui, knoflook, bleekselderij, tomaat, courgette en kruiden* zoals aangegeven. Bak het gehakt rul in wat roomboter, voeg de groente en kruiden toe en bak samen 5 minuten. Laat met een deksel 20 minuten op zacht vuur sudderen, voeg zo nodig een scheutje water toe. Proef en breng op smaak met peper en zout. *Verse stoere kruiden zoals peterselie, tijm, oregano zijn allemaal lekker. Afbakken: Halveer de gare aubergine en schep de zaden eruit, vorm met een lepel een holte voor de vulling. Verdeel de groente over de aubergine-helften en rasp er wat kaas over. Bak 20 minuten op 180 °C. Laat even rusten en strooi er vlak voor het serveren wat verse basilicum over.",
+    "nutrition": {
+      "calories": 330.4,
+      "carbohydrates": 8.9,
+      "protein": 15,
+      "fat": 24.6,
+      "fiber": 5.95,
+      "note": "Per portie volgens de bron, zonder het gehakt"
+    },
+    "diet": [
+      "vlees"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/vega-gevulde-aubergine/"
+    }
   }
 ]
