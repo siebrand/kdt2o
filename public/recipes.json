@@ -12836,5 +12836,404 @@
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-clubsandwich/"
     }
+  },
+  {
+    "id": "broccolipuree-met-garnalen",
+    "title": "Broccolipuree met garnalen",
+    "approved": true,
+    "categories": [
+      "lunch",
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 25,
+    "ingredients": [
+      {
+        "raw": "500 g broccoli",
+        "amount": 500,
+        "unit": "gram",
+        "name": "broccoli",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "10 ml olijfolie",
+        "amount": 10,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 teentje knoflook",
+        "amount": 1,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "300 ml (groente)bouillon",
+        "amount": 300,
+        "unit": "ml",
+        "name": "groentebouillon",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "100 g geraspte kaas, belegen",
+        "amount": 100,
+        "unit": "gram",
+        "name": "geraspte kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      }
+    ],
+    "components": [
+      {
+        "id": "broccolipuree-met-garnalen-garnalen",
+        "title": "Garnalen",
+        "ingredients": [
+          {
+            "raw": "2 cm gemberwortel",
+            "amount": 10,
+            "unit": "gram",
+            "name": "gember",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "1 teentje knoflook",
+            "amount": 1,
+            "unit": "teen",
+            "name": "knoflook",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "1 scheutje olijfolie",
+            "amount": 15,
+            "unit": "ml",
+            "name": "olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "stukje rode peper, naar eigen smaak, in ringetjes",
+            "amount": null,
+            "unit": "",
+            "name": "rode peper",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "250 g reuzengarnalen, gepeld",
+            "amount": 250,
+            "unit": "gram",
+            "name": "reuzengarnalen",
+            "optional": false,
+            "category": "Vlees, vis en vleesvervangers"
+          },
+          {
+            "raw": "1 stengel bosui",
+            "amount": 1,
+            "unit": "",
+            "name": "lenteui",
+            "optional": false,
+            "category": "Groente en fruit"
+          }
+        ],
+        "method": "Rasp - terwijl de broccoli kookt - de gember en snijd een stukje rode peper in ringetjes. Roerbak de gember en peper samen met 1 teentje geperste knoflook en de bevroren garnalen een minuut of 5 op hoog vuur in een koekenpan met wat olijfolie. Roerbak de garnalen aan weerszijden tot ze mooi roze en gaar zijn. Steek de garnalen in de broccolipuree en bestrooi met vers gesneden ringetjes bosui. Serveer onmiddellijk."
+      }
+    ],
+    "method": "Broccolipuree: Snijd de broccoli in kleine roosjes. Roerbak de roosjes even in een scheutje olijfolie in een soeppan. Pers 1 teentje knoflook erboven uit. Voeg dan de bouillon toe en laat het 8 minuten zachtjes pruttelen met het deksel op de pan, of langer. Tot de broccoli zacht genoeg is. Puree maken: giet de broccoli af (vang de bouillon op) en stoom de roosjes droog in de pan. Pureer de broccoli met een staafmixer, rasp er kaas over en roer door. Proef de puree en breng op smaak met peper en zout. Mocht het te dik zijn kun je er een klein beetje bouillon bij doen.",
+    "nutrition": {
+      "calories": 213.3,
+      "carbohydrates": 3.2,
+      "protein": 19.6,
+      "fat": 11.85,
+      "fiber": 8.15,
+      "note": "Per portie volgens de bron, met 30 g kaas en 100 g garnalen in totaal"
+    },
+    "diet": [
+      "vis"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/broccolipuree-met-garnalen/"
+    }
+  },
+  {
+    "id": "courgette-frittata-met-citroenricotta",
+    "title": "Courgette frittata met citroenricotta",
+    "approved": true,
+    "categories": [
+      "lunch",
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 15,
+    "ingredients": [
+      {
+        "raw": "5 eieren",
+        "amount": 5,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "20 g ricotta",
+        "amount": 20,
+        "unit": "gram",
+        "name": "ricotta",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "50 g belegen kaas, geraspt",
+        "amount": 50,
+        "unit": "gram",
+        "name": "belegen kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "½ ui, 30 g",
+        "amount": 0.5,
+        "unit": "",
+        "name": "uien",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 teentje knoflook",
+        "amount": 1,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 tl oregano, gedroogd",
+        "amount": 1,
+        "unit": "tl",
+        "name": "oregano",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "30 ml olijfolie, om de pan in te vetten",
+        "amount": 30,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "200 g courgette, gespiraliseerd",
+        "amount": 200,
+        "unit": "gram",
+        "name": "courgette",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "80 g ricotta",
+        "amount": 80,
+        "unit": "gram",
+        "name": "ricotta",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "1 el citroenolijfolie, of olijfolie met citroenrasp",
+        "amount": 15,
+        "unit": "ml",
+        "name": "citroenolijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "peper en zout, naar smaak",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "7,5 g verse basilicum (half bakje)",
+        "amount": 7.5,
+        "unit": "gram",
+        "name": "verse basilicum",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      }
+    ],
+    "equipment": [
+      "Ovenbestendige pan"
+    ],
+    "method": "Klop de eieren los met 20 g ricotta, peper en zout en voeg de geraspte kaas toe, zet even apart. Snipper de ui en hak de knoflook. Bak deze samen met oregano in een kleine (ongeveer Ø 15 cm) ovenbestendige koekenpan met de olijfolie zachtjes op matig vuur. Spiraliseer ondertussen de courgette boven de pan en roer deze door de uien. Giet dan het eimengsel in de pan (beetje verdelen). Laat de frittata ongeveer 8 minuten stollen op laag vuur. Verwarm ondertussen de oven voor op 180 °C. Gaar de frittata nog 10 minuten in de warme oven of tot hij lichtjes kleurt en helemaal gaar is. Citroenricotta maken: Roer de ricotta met citroenolijfolie door elkaar. Proef en breng de citroenricotta op smaak met peper en zout. Serveren: Serveer de courgette frittata met citroenricotta en wat verse basilicumblaadjes. Eet ze!",
+    "nutrition": {
+      "calories": 421.2,
+      "carbohydrates": 5.25,
+      "protein": 18.75,
+      "fat": 35.95,
+      "fiber": 1.32,
+      "note": "Per portie volgens de bron, met 3 eieren en 30 g kaas in totaal"
+    },
+    "diet": [
+      "vegetarisch"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/keto-courgette-frittata-met-citroenricotta/"
+    },
+    "ovenTime": 10
+  },
+  {
+    "id": "courgetti-al-tonno",
+    "title": "Courgetti al tonno",
+    "approved": true,
+    "categories": [
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 20,
+    "ingredients": [
+      {
+        "raw": "2 blikjes tonijn, op water of olie, uitgelekt 200 g",
+        "amount": 2,
+        "unit": "blik",
+        "name": "tonijn",
+        "optional": false,
+        "category": "Vlees, vis en vleesvervangers"
+      },
+      {
+        "raw": "1 teentje knoflook, in plakjes",
+        "amount": 1,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "15 ml olijfolie, om in te bakken",
+        "amount": 15,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "50 g paprika, in reepjes",
+        "amount": 50,
+        "unit": "gram",
+        "name": "paprika",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "50 g zwarte olijven, in kleine stukjes",
+        "amount": 50,
+        "unit": "gram",
+        "name": "zwarte olijven",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 el kappertjes",
+        "amount": 15,
+        "unit": "gram",
+        "name": "kappertjes",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "300 g courgette, Zelf spiraliseren. Dat werkt beter dan de geschaafde uit de winkel.",
+        "amount": 300,
+        "unit": "gram",
+        "name": "courgette",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "50 g Parmezaanse kaas, geraspt",
+        "amount": 50,
+        "unit": "gram",
+        "name": "Parmezaanse kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "15 g platte peterselie, gehakt (1 bakje)",
+        "amount": 15,
+        "unit": "gram",
+        "name": "peterselie",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "kneepje limoensap",
+        "amount": null,
+        "unit": "",
+        "name": "limoensap",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "100 g roomkaas",
+        "amount": 100,
+        "unit": "gram",
+        "name": "roomkaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      }
+    ],
+    "method": "Het is belangrijk om alles goed voor te bereiden, want de kooktijd is steeds maar kort. (wij hebben voor de foto zelfs alles al klaar gezet). Giet de tonijn af en pluk het in stukjes, zet apart. Snijd de knoflook in plakjes. Snijd de paprika in reepjes en snijd de olijven grof. Fruit de plakjes knoflook kort aan in een grote koekenpan met de olijfolie. Voeg de paprika, olijven en kappertjes toe en laat dit 5-7 minuten zachtjes garen. Spiraliseer ondertussen de courgette, rasp de kaas en hak de peterselie. Voeg de courgetti en de ⅔ van de kaas toe, draai het vuur hoog en roerbak 1 minuut, niet langer anders krijg je te gare en snotterige courgetti. Schep steeds om met twee houten spatels. Draai het vuur lager en roer en voeg de tonijn en de roomkaas toe en warm door. Proef en breng naar wens op smaak met peper, zout en een kneepje limoensap. Serveer de courgetti al tonno met de overgebleven kaas en gehakte peterselie, eet smakelijk!",
+    "nutrition": {
+      "calories": 290.5,
+      "carbohydrates": 6,
+      "protein": 23.15,
+      "fat": 18.55,
+      "fiber": 4.45,
+      "note": "Per portie volgens de bron, met 1 blikje tonijn in totaal en zonder roomkaas"
+    },
+    "diet": [
+      "vis"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-courgetti-al-tonno/"
+    }
   }
 ]
