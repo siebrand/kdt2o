@@ -4,7 +4,8 @@ De belangrijkste verbeteringen voor de planner en recepten.
 
 ## 25 november 2026
 
-- Nieuw recept voor de lunch: 4 kazen salade, lekker knapperig.
+- Nieuwe recepten: 4 kazen salade, andijvie stamppot met kerriejus, asperges met hollandaisesaus en zalm, en asperges met
+  peterseliedressing en zalm.
 
 ## 24 november 2026
 

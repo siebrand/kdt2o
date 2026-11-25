@@ -9577,5 +9577,390 @@
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/4-kazen-salade/"
     }
+  },
+  {
+    "id": "andijvie-stamppot-met-kerriejus",
+    "title": "Andijvie stamppot met kerriejus",
+    "approved": true,
+    "categories": [
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 25,
+    "ingredients": [
+      {
+        "raw": "350 g andijvie, gesneden gewogen",
+        "amount": 350,
+        "unit": "gram",
+        "name": "andijvie",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "300 g bloemkool, in roosjes",
+        "amount": 300,
+        "unit": "gram",
+        "name": "bloemkool",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 el roomkaas",
+        "amount": 15,
+        "unit": "gram",
+        "name": "roomkaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "40 g geraspte kaas, indien zelf geraspt",
+        "amount": 40,
+        "unit": "gram",
+        "name": "geraspte kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "klontje roomboter",
+        "amount": 10,
+        "unit": "gram",
+        "name": "roomboter",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "snufje nootmuskaat",
+        "amount": null,
+        "unit": "",
+        "name": "nootmuskaat",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "4 eieren",
+        "amount": 4,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      }
+    ],
+    "components": [
+      {
+        "id": "andijvie-stamppot-met-kerriejus-kerriejus",
+        "title": "Kerriejus",
+        "ingredients": [
+          {
+            "raw": "50 g ui",
+            "amount": 50,
+            "unit": "gram",
+            "name": "uien",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "10 ml olijfolie",
+            "amount": 10,
+            "unit": "ml",
+            "name": "olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "1 tl kerrie, of meer, naar smaak",
+            "amount": 1,
+            "unit": "tl",
+            "name": "kerriepoeder",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          },
+          {
+            "raw": "scheutje sojasaus, type tamari/kikkoman",
+            "amount": 15,
+            "unit": "ml",
+            "name": "sojasaus",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "3 el water, of iets meer",
+            "amount": 45,
+            "unit": "ml",
+            "name": "water",
+            "optional": false,
+            "category": "Houdbare producten"
+          }
+        ],
+        "method": "Snipper -terwijl de bloemkool kookt- de ui en fruit deze met kerriepoeder ongeveer 5 minuten in een steelpannetje met een beetje olie. Voeg een scheutje sojasaus en 3-5 eetlepels water toe. Zet het vuur laag en laat inkoken tot gewenste dikte. Of gebruik een piepklein beetje bindmiddel: arrowroot of johannesbroodpitmeel."
+      }
+    ],
+    "method": "Kook roosjes bloemkool gaar in 10-15 minuten. Kook ondertussen de eieren in 8 minuten hard, pel ze en halveer ze. Was de andijvie, snijd in repen en slinger droog. Giet de bloemkool af over de rauwe andijvie. Wat mij betreft krijgt de andijvie op deze manier precies de juiste bite en de andijvie is ook al een beetje voorverwarmd. Stamppot maken: Stoom de bloemkool droog op laag vuur. Voeg roomkaas, geraspte kaas en boter toe en stamp tot puree. Proef en breng op smaak met nootmuskaat. Schep de (goed!) uitgelekte andijvie erdoor en laat alles doorwarmen. Proef nogmaals en breng op smaak met peper en zout. Schep de andijviestamppot op borden en maak een ouderwets kuiltje voor de kerriejus. Serveer met de gekookte eieren.",
+    "nutrition": {
+      "calories": 247.25,
+      "carbohydrates": 8.25,
+      "protein": 11.15,
+      "fat": 17.5,
+      "fiber": 7.25,
+      "note": "Per portie volgens de bron, zonder de eieren"
+    },
+    "diet": [
+      "vegetarisch"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/andijvie-stamppot-met-kerriejus/"
+    }
+  },
+  {
+    "id": "asperges-met-hollandaisesaus-en-zalm",
+    "title": "Asperges met hollandaisesaus en zalm",
+    "approved": true,
+    "categories": [
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 30,
+    "ingredients": [
+      {
+        "raw": "2 eieren",
+        "amount": 2,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "700 g asperges, schoongemaakt, of buiten het seizoen groene",
+        "amount": 700,
+        "unit": "gram",
+        "name": "asperges",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "200 g zalm, 2 moten",
+        "amount": 200,
+        "unit": "gram",
+        "name": "zalm",
+        "optional": false,
+        "category": "Vlees, vis en vleesvervangers"
+      }
+    ],
+    "components": [
+      {
+        "id": "asperges-met-hollandaisesaus-en-zalm-hollandaisesaus",
+        "title": "HOLLANDAISESAUS",
+        "ingredients": [
+          {
+            "raw": "2 eidooiers",
+            "amount": 2,
+            "unit": "",
+            "name": "eidooier",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          },
+          {
+            "raw": "1 tl mosterd",
+            "amount": 1,
+            "unit": "tl",
+            "name": "mosterd",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "peper en zout",
+            "amount": null,
+            "unit": "",
+            "name": "peper en zout",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          },
+          {
+            "raw": "1 el citroensap",
+            "amount": 15,
+            "unit": "ml",
+            "name": "citroensap",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "15 ml kruidenazijn",
+            "amount": 15,
+            "unit": "ml",
+            "name": "kruidenazijn",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "125 g roomboter",
+            "amount": 125,
+            "unit": "gram",
+            "name": "roomboter",
+            "optional": false,
+            "category": "Zuivel en eieren"
+          }
+        ],
+        "method": "Klop met een garde de eidooiers met mosterd en een snuf peper en zout gedurende 3 minuten. Verhit in een steelpannetje citroensap met azijn, laat inkoken tot ongeveer de helft en voeg dit, druppel voor druppel toe aan de geklopte eidooiers. Klop eerst een druppel helemaal door voor je de volgende toevoegt! Giet over in een schoon pannetje met dikke bodem. Laat op laag vuur de roomboter langzaam smelten, dus niet bakken. Blijf roeren met een houten lepel zodat de roomboter gelijkmatig smelt. Zet de pan met het eimengsel op laag vuur en voeg al roerende de warme boter in een dunne straal toe. Kleine porties tegelijk. De eerste portie eerst heel goed doorroeren voor je de volgende portie toevoegt. Goed van de boden en randen blijven roeren anders krijg je een soort omelet-klonters in je saus. Je blijft de saus roeren tot je een mooie egale licht gebonden saus hebt. Proef en breng zo nodig verder op smaak met peper en zout. Serveer de Hollandaisesaus onmiddellijk."
+      }
+    ],
+    "method": "Kook de eieren hard in ca. 8 minuten. Schil de asperges (zie ook de tips in de tekst). Kook ze 5 minuten, draai het vuur uit. Laat de asperges in het water met de deksel op de pan 10-15 minuten nagaren. Pel ondertussen het ei en prak het fijn. ZALM BAKKEN: Bak de zalm aan beide zijden, houd de zalm mooi roze van binnen. Maal er aan tafel eventueel pas wat zout over. (Als je geen twee dingen tegelijk kunt, houd dan de zalm warm onder alufolie in de oven, terwijl je de saus maakt). Serveren: Schik de asperges op de borden, lepel de saus erover en bestrooi met geprakt ei. Leg tot slot de moot zalm erbovenop. Alle eer en voor de eerste die dit ooit bedacht heeft. Oh my, dat is echt delicaat smullen geblazen! Saus als laatste: Je kunt de saus niet opwarmen, dus je maakt 'm als laatste, vlak voor het serveren.",
+    "nutrition": {
+      "calories": 823.75,
+      "carbohydrates": 7.7,
+      "protein": 33.6,
+      "fat": 72,
+      "fiber": 7
+    },
+    "diet": [
+      "vis"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/asperges-met-hollandaisesaus/"
+    }
+  },
+  {
+    "id": "asperges-met-peterseliedressing-en-zalm",
+    "title": "Asperges met peterseliedressing en zalm",
+    "approved": true,
+    "categories": [
+      "lunch",
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 25,
+    "ingredients": [
+      {
+        "raw": "500 g asperges, schoon gewogen",
+        "amount": 500,
+        "unit": "gram",
+        "name": "asperges",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "zout, in het kookwater",
+        "amount": null,
+        "unit": "",
+        "name": "zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "2 maat M eieren, gekookt",
+        "amount": 2,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      }
+    ],
+    "components": [
+      {
+        "id": "asperges-met-peterseliedressing-en-zalm-dressing-saus",
+        "title": "Dressing/saus",
+        "ingredients": [
+          {
+            "raw": "20 g platte peterselie",
+            "amount": 20,
+            "unit": "gram",
+            "name": "peterselie",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          },
+          {
+            "raw": "1 tl mosterd, Zaanse",
+            "amount": 1,
+            "unit": "tl",
+            "name": "mosterd",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "1 el kappertjes, zonder vocht",
+            "amount": 15,
+            "unit": "gram",
+            "name": "kappertjes",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "4 el olijfolie, of meer indien nodig, extra vierge",
+            "amount": 60,
+            "unit": "ml",
+            "name": "olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "peper en zout, optioneel",
+            "amount": null,
+            "unit": "",
+            "name": "peper en zout",
+            "optional": true,
+            "category": "Kruiden en smaakmakers"
+          }
+        ],
+        "method": "Haal de dikke stengels van de peterselie. Doe de overige peterselie in een hoge mengbeker, samen met de mosterd, kappertjes en olijfolie extra vierge. Pureer met een staafmixer. Voeg eventueel peper en/of zout toe."
+      },
+      {
+        "id": "asperges-met-peterseliedressing-en-zalm-zalm",
+        "title": "Zalm",
+        "ingredients": [
+          {
+            "raw": "250 g zalm, 2 moten",
+            "amount": 250,
+            "unit": "gram",
+            "name": "zalm",
+            "optional": false,
+            "category": "Vlees, vis en vleesvervangers"
+          },
+          {
+            "raw": "2 el olijfolie",
+            "amount": 30,
+            "unit": "ml",
+            "name": "olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          }
+        ],
+        "method": "Smeer de zalm goed in met olijfolie, en ook de (grill)pan. Bak de zalm op hoog vuur, niet te lang, zodat de zalm nog mals is. Schik de asperges op de borden, verdeel de peterseliedressing erover en leg daar de gehalveerde eieren op. Heerlijk met de zalm. Smakelijk eten!"
+      }
+    ],
+    "method": "Schil de asperges rondom met een dunschiller. Snij 1 tot 2 cm van de onderkant af. Halveer ze en kook ze 5 minuten op hoog vuur in ruim water met wat zout. Draai het vuur uit en laat de asperges 15 minuten lang nagaren. Kook de eieren 7 minuten. Spoel ze een halve minuut lang koud af en pel ze daarna.",
+    "nutrition": {
+      "calories": 891.2,
+      "carbohydrates": 5.15,
+      "protein": 36.15,
+      "fat": 79.8,
+      "fiber": 5.7
+    },
+    "diet": [
+      "vis"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/asperges-met-peterseliedressing-en-zalm/"
+    }
   }
 ]

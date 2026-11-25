@@ -425,151 +425,6 @@
     ]
   },
   {
-    "id": "andijvie-stamppot-met-kerriejus",
-    "title": "Andijvie stamppot met kerriejus",
-    "approved": false,
-    "categories": [
-      "diner"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 25,
-    "ingredients": [
-      {
-        "raw": "350 g andijvie, gesneden gewogen",
-        "amount": 350,
-        "unit": "gram",
-        "name": "andijvie",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "300 g bloemkool, in roosjes",
-        "amount": 300,
-        "unit": "gram",
-        "name": "bloemkool",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 el roomkaas",
-        "amount": 15,
-        "unit": "gram",
-        "name": "roomkaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "40 g geraspte kaas, indien zelf geraspt",
-        "amount": 40,
-        "unit": "gram",
-        "name": "geraspte kaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "klontje roomboter",
-        "amount": 10,
-        "unit": "gram",
-        "name": "roomboter",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "snufje nootmuskaat",
-        "amount": null,
-        "unit": "",
-        "name": "nootmuskaat",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "4 eieren",
-        "amount": 4,
-        "unit": "",
-        "name": "eieren",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      }
-    ],
-    "components": [
-      {
-        "id": "andijvie-stamppot-met-kerriejus-kerriejus",
-        "title": "Kerriejus",
-        "ingredients": [
-          {
-            "raw": "50 g ui",
-            "amount": 50,
-            "unit": "gram",
-            "name": "uien",
-            "optional": false,
-            "category": "Groente en fruit"
-          },
-          {
-            "raw": "10 ml olijfolie",
-            "amount": 10,
-            "unit": "ml",
-            "name": "olijfolie",
-            "optional": false,
-            "category": "Houdbare producten"
-          },
-          {
-            "raw": "1 tl kerrie, of meer, naar smaak",
-            "amount": 1,
-            "unit": "tl",
-            "name": "kerriepoeder",
-            "optional": false,
-            "category": "Kruiden en smaakmakers"
-          },
-          {
-            "raw": "scheutje sojasaus, type tamari/kikkoman",
-            "amount": 15,
-            "unit": "ml",
-            "name": "sojasaus",
-            "optional": false,
-            "category": "Houdbare producten"
-          },
-          {
-            "raw": "3 el water, of iets meer",
-            "amount": 45,
-            "unit": "ml",
-            "name": "water",
-            "optional": false,
-            "category": "Houdbare producten"
-          }
-        ],
-        "method": "Snipper -terwijl de bloemkool kookt- de ui en fruit deze met kerriepoeder ongeveer 5 minuten in een steelpannetje met een beetje olie. Voeg een scheutje sojasaus en 3-5 eetlepels water toe. Zet het vuur laag en laat inkoken tot gewenste dikte. Of gebruik een piepklein beetje bindmiddel: arrowroot of johannesbroodpitmeel."
-      }
-    ],
-    "method": "Kook roosjes bloemkool gaar in 10-15 minuten. Kook ondertussen de eieren in 8 minuten hard, pel ze en halveer ze. Was de andijvie, snijd in repen en slinger droog. Giet de bloemkool af over de rauwe andijvie. Wat mij betreft krijgt de andijvie op deze manier precies de juiste bite en de andijvie is ook al een beetje voorverwarmd. Stamppot maken: Stoom de bloemkool droog op laag vuur. Voeg roomkaas, geraspte kaas en boter toe en stamp tot puree. Proef en breng op smaak met nootmuskaat. Schep de (goed!) uitgelekte andijvie erdoor en laat alles doorwarmen. Proef nogmaals en breng op smaak met peper en zout. Schep de andijviestamppot op borden en maak een ouderwets kuiltje voor de kerriejus. Serveer met de gekookte eieren.",
-    "nutrition": {
-      "calories": 247.25,
-      "carbohydrates": 8.25,
-      "protein": 11.15,
-      "fat": 17.5,
-      "fiber": 7.25,
-      "note": "Per portie volgens de bron, zonder de eieren"
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/andijvie-stamppot-met-kerriejus/"
-    }
-  },
-  {
     "id": "asperge-lasagne-met-zalm",
     "title": "Asperge lasagne met zalm",
     "approved": false,
@@ -1324,249 +1179,12 @@
       {
         "type": "sweetener-removed",
         "note": "Stap aangepast: 'Klop slagroom, citroensap, zoetstof, mosterd en olijfolie tot een mooie lobbige dressing.' is nu 'Klop slagroom, citroensap, mosterd en olijfolie tot een mooie lobbige dressing.'."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 7.4 g eiwit per portie (308 kcal). Vul aan met eiwit of wijs af."
       }
     ]
-  },
-  {
-    "id": "asperges-met-hollandaisesaus-en-zalm",
-    "title": "Asperges met hollandaisesaus en zalm",
-    "approved": false,
-    "categories": [
-      "diner"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 10,
-    "ovenTime": 20,
-    "ingredients": [
-      {
-        "raw": "2 eieren",
-        "amount": 2,
-        "unit": "",
-        "name": "eieren",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "700 g asperges, schoongemaakt, of buiten het seizoen groene",
-        "amount": 700,
-        "unit": "gram",
-        "name": "asperges",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "200 g zalm, 2 moten",
-        "amount": 200,
-        "unit": "gram",
-        "name": "zalm",
-        "optional": false,
-        "category": "Vlees, vis en vleesvervangers"
-      }
-    ],
-    "components": [
-      {
-        "id": "asperges-met-hollandaisesaus-en-zalm-hollandaisesaus",
-        "title": "HOLLANDAISESAUS",
-        "ingredients": [
-          {
-            "raw": "2 eidooiers",
-            "amount": 2,
-            "unit": "",
-            "name": "eidooier",
-            "optional": false,
-            "category": "Zuivel en eieren"
-          },
-          {
-            "raw": "1 tl mosterd",
-            "amount": 1,
-            "unit": "tl",
-            "name": "mosterd",
-            "optional": false,
-            "category": "Houdbare producten"
-          },
-          {
-            "raw": "peper en zout",
-            "amount": null,
-            "unit": "",
-            "name": "peper en zout",
-            "optional": false,
-            "category": "Kruiden en smaakmakers"
-          },
-          {
-            "raw": "1 el citroensap",
-            "amount": 15,
-            "unit": "ml",
-            "name": "citroensap",
-            "optional": false,
-            "category": "Groente en fruit"
-          },
-          {
-            "raw": "15 ml kruidenazijn",
-            "amount": 15,
-            "unit": "ml",
-            "name": "kruidenazijn",
-            "optional": false,
-            "category": "Houdbare producten"
-          },
-          {
-            "raw": "125 g roomboter",
-            "amount": 125,
-            "unit": "gram",
-            "name": "roomboter",
-            "optional": false,
-            "category": "Zuivel en eieren"
-          }
-        ],
-        "method": "Klop met een garde de eidooiers met mosterd en een snuf peper en zout gedurende 3 minuten. Verhit in een steelpannetje citroensap met azijn, laat inkoken tot ongeveer de helft en voeg dit, druppel voor druppel toe aan de geklopte eidooiers. Klop eerst een druppel helemaal door voor je de volgende toevoegt! Giet over in een schoon pannetje met dikke bodem. Laat op laag vuur de roomboter langzaam smelten, dus niet bakken. Blijf roeren met een houten lepel zodat de roomboter gelijkmatig smelt. Zet de pan met het eimengsel op laag vuur en voeg al roerende de warme boter in een dunne straal toe. Kleine porties tegelijk. De eerste portie eerst heel goed doorroeren voor je de volgende portie toevoegt. Goed van de boden en randen blijven roeren anders krijg je een soort omelet-klonters in je saus. Je blijft de saus roeren tot je een mooie egale licht gebonden saus hebt. Proef en breng zo nodig verder op smaak met peper en zout. Serveer de Hollandaisesaus onmiddellijk."
-      }
-    ],
-    "method": "Kook de eieren hard in ca. 8 minuten. Schil de asperges (zie ook de tips in de tekst). Kook ze 5 minuten, draai het vuur uit. Laat de asperges in het water met de deksel op de pan 10-15 minuten nagaren. Pel ondertussen het ei en prak het fijn. ZALM BAKKEN: Bak de zalm aan beide zijden, houd de zalm mooi roze van binnen. Maal er aan tafel eventueel pas wat zout over. (Als je geen twee dingen tegelijk kunt, houd dan de zalm warm onder alufolie in de oven, terwijl je de saus maakt). Serveren: Schik de asperges op de borden, lepel de saus erover en bestrooi met geprakt ei. Leg tot slot de moot zalm erbovenop. Alle eer en voor de eerste die dit ooit bedacht heeft. Oh my, dat is echt delicaat smullen geblazen! Saus als laatste: Je kunt de saus niet opwarmen, dus je maakt 'm als laatste, vlak voor het serveren.",
-    "nutrition": {
-      "calories": 823.75,
-      "carbohydrates": 7.7,
-      "protein": 33.6,
-      "fat": 72,
-      "fiber": 7
-    },
-    "diet": [
-      "vis"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/asperges-met-hollandaisesaus/"
-    }
-  },
-  {
-    "id": "asperges-met-peterseliedressing-en-zalm",
-    "title": "Asperges met peterseliedressing en zalm",
-    "approved": false,
-    "categories": [
-      "lunch",
-      "diner"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 25,
-    "ingredients": [
-      {
-        "raw": "500 g asperges, schoon gewogen",
-        "amount": 500,
-        "unit": "gram",
-        "name": "asperges",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "zout, in het kookwater",
-        "amount": null,
-        "unit": "",
-        "name": "zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "2 maat M eieren, gekookt",
-        "amount": 2,
-        "unit": "",
-        "name": "eieren",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      }
-    ],
-    "components": [
-      {
-        "id": "asperges-met-peterseliedressing-en-zalm-dressing-saus",
-        "title": "Dressing/saus",
-        "ingredients": [
-          {
-            "raw": "20 g platte peterselie",
-            "amount": 20,
-            "unit": "gram",
-            "name": "peterselie",
-            "optional": false,
-            "category": "Kruiden en smaakmakers"
-          },
-          {
-            "raw": "1 tl mosterd, Zaanse",
-            "amount": 1,
-            "unit": "tl",
-            "name": "mosterd",
-            "optional": false,
-            "category": "Houdbare producten"
-          },
-          {
-            "raw": "1 el kappertjes, zonder vocht",
-            "amount": 15,
-            "unit": "gram",
-            "name": "kappertjes",
-            "optional": false,
-            "category": "Houdbare producten"
-          },
-          {
-            "raw": "4 el olijfolie, of meer indien nodig, extra vierge",
-            "amount": 60,
-            "unit": "ml",
-            "name": "olijfolie",
-            "optional": false,
-            "category": "Houdbare producten"
-          },
-          {
-            "raw": "peper en zout, optioneel",
-            "amount": null,
-            "unit": "",
-            "name": "peper en zout",
-            "optional": true,
-            "category": "Kruiden en smaakmakers"
-          }
-        ],
-        "method": "Haal de dikke stengels van de peterselie. Doe de overige peterselie in een hoge mengbeker, samen met de mosterd, kappertjes en olijfolie extra vierge. Pureer met een staafmixer. Voeg eventueel peper en/of zout toe."
-      },
-      {
-        "id": "asperges-met-peterseliedressing-en-zalm-zalm",
-        "title": "Zalm",
-        "ingredients": [
-          {
-            "raw": "2 moten zalm",
-            "amount": 2,
-            "unit": "",
-            "name": "zalm",
-            "optional": false,
-            "category": "Vlees, vis en vleesvervangers"
-          },
-          {
-            "raw": "2 el olijfolie",
-            "amount": 30,
-            "unit": "ml",
-            "name": "olijfolie",
-            "optional": false,
-            "category": "Houdbare producten"
-          }
-        ],
-        "method": "Smeer de zalm goed in met olijfolie, en ook de (grill)pan. Bak de zalm op hoog vuur, niet te lang, zodat de zalm nog mals is. Schik de asperges op de borden, verdeel de peterseliedressing erover en leg daar de gehalveerde eieren op. Heerlijk met de zalm. Smakelijk eten!"
-      }
-    ],
-    "method": "Schil de asperges rondom met een dunschiller. Snij 1 tot 2 cm van de onderkant af. Halveer ze en kook ze 5 minuten op hoog vuur in ruim water met wat zout. Draai het vuur uit en laat de asperges 15 minuten lang nagaren. Kook de eieren 7 minuten. Spoel ze een halve minuut lang koud af en pel ze daarna.",
-    "nutrition": {
-      "calories": 891.2,
-      "carbohydrates": 5.15,
-      "protein": 36.15,
-      "fat": 79.8,
-      "fiber": 5.7
-    },
-    "diet": [
-      "vis"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/asperges-met-peterseliedressing-en-zalm/"
-    }
   },
   {
     "id": "aspergetaart-met-koolhydraatarm-korstdeeg",
@@ -2015,6 +1633,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap verwijderd: 'Proef en breng zo nodig op smaak met extra zoetstof.'. Controleer of er niets ontbreekt."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 7.7 g eiwit per portie (289 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -2114,6 +1736,10 @@
       {
         "type": "scaling",
         "note": "Omgerekend van 4 helften naar 2 porties (factor ½); ook gewichten en maten in de bereidingswijze zijn omgerekend, aantallen zoals '3 eieren' niet. Controleer."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 7.65 g eiwit per portie (256 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -2263,6 +1889,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap verwijderd: 'Proef en breng op smaak met een druppeltje zoetstof.'. Controleer of er niets ontbreekt."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 8 g eiwit per portie (319 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -2352,6 +1982,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap aangepast: 'Proef en breng op smaak met zoetstof en limoensap.' is nu 'Proef en breng op smaak met limoensap.'."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 1.8 g eiwit per portie (287 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -2656,7 +2290,13 @@
     "source": {
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/avocado-smoothie/"
-    }
+    },
+    "review": [
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 2.55 g eiwit per portie (259 kcal). Vul aan met eiwit of wijs af."
+      }
+    ]
   },
   {
     "id": "bleekselderij-cashewnotensoep",
@@ -2766,6 +2406,10 @@
       {
         "type": "ingredient-flag",
         "note": "'125 ml droge witte wijn, (of neem bouillon)': de wijn kookt niet mee; in ingrediënten en bereiding vervangen door bouillon, zoals de bron voorstelt. Controleer."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 6.82 g eiwit per portie (342 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -3778,6 +3422,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap aangepast: 'Kerriesaus: Meng 1 el mayonaise met 2 el Griekse yoghurt, kerrie - naar smaak, 1-2 tl sojasaus en 2 druppels zoetstof.' is nu 'Kerriesaus: Meng 1 el mayonaise met 2 el Griekse yoghurt, kerrie - naar smaak en 1-2 tl sojasaus.'."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 3.25 g eiwit per portie (271 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -3879,6 +3527,10 @@
       {
         "type": "conversion",
         "note": "'geitenkaasbolletjes' is een bereiding of product zonder eigen recept in deze data; koppel een subrecept of kies een product."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 4.6 g eiwit per portie (267 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -4473,7 +4125,13 @@
     "source": {
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/broccoli-met-citroenboter/"
-    }
+    },
+    "review": [
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 9.1 g eiwit per portie (330 kcal). Vul aan met eiwit of wijs af."
+      }
+    ]
   },
   {
     "id": "broccoli-met-mosterd-kaassaus",
@@ -4633,6 +4291,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap aangepast: 'Marineer de gesnipperde ui in een kommetje met azijn, olie en voeg peper, zout en zoetstof naar smaak toe.' is nu 'Marineer de gesnipperde ui in een kommetje met azijn, olie en voeg peper en zout toe.'."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 4.8 g eiwit per portie (297 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -5803,6 +5465,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap aangepast: 'Proef of het zoet en sterk genoeg is.' is nu 'Proef of het sterk genoeg is.'."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 5.2 g eiwit per portie (398 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -5909,131 +5575,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap verwijderd: 'Proef en voeg zo nodig zoetstof toe.'. Controleer of er niets ontbreekt."
-      }
-    ]
-  },
-  {
-    "id": "chia-pudding-met-rood-fruit",
-    "title": "Chia pudding met rood fruit",
-    "approved": false,
-    "categories": [
-      "ontbijt"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 127,
-    "ingredients": [
-      {
-        "raw": "100 ml kokosmelk",
-        "amount": 100,
-        "unit": "ml",
-        "name": "kokosmelk",
-        "optional": false,
-        "category": "Houdbare producten"
       },
       {
-        "raw": "25 g chiazaad",
-        "amount": 25,
-        "unit": "gram",
-        "name": "chiazaad",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "75 g rode vruchtenmix, bevroren",
-        "amount": 75,
-        "unit": "gram",
-        "name": "rode vruchtenmix",
-        "optional": false,
-        "category": "Diepvries"
-      },
-      {
-        "raw": "snufje zout",
-        "amount": null,
-        "unit": "",
-        "name": "zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "0,12 tl agar-agar, of gebruik konjacpoeder",
-        "amount": 0.12,
-        "unit": "tl",
-        "name": "agar agar",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "50 ml water",
-        "amount": 50,
-        "unit": "ml",
-        "name": "water",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "blauwe bessen",
-        "amount": null,
-        "unit": "",
-        "name": "blauwe bessen",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "zonnebloempitten",
-        "amount": null,
-        "unit": "",
-        "name": "zonnebloempitten",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "½ tl vanille",
-        "amount": 0.5,
-        "unit": "tl",
-        "name": "vanille",
-        "optional": true,
-        "category": "Kruiden en smaakmakers"
-      }
-    ],
-    "method": "Pudding: Meng kokosmelk, chiazaad, de helft (40 gram) bevroren vruchtenmix en zout (en optioneel vanille) in de keukenmachine of met een staafmixer door elkaar. Zet afgedekt in de koelkast tot gebruik. Fruitgel: Breng de andere helft van de vruchtenmix (40 gr) samen met water en agar-agar aan de kook. Pureer met de staafmixer glad. Schenk direct schuin in glaasjes en laat de vruchten-gel in schuine stand opstijven.. (Agar-agar stolt bij 35 graden). Serveren: Schep de chia pudding bij de gestolde fruitgel en garneer met wat vruchtjes en zonnebloempitten. In een glaasje deed ik in het midden een flinke lepel Griekse yoghurt voor een extra leuk effect.",
-    "nutrition": {
-      "calories": 153.18,
-      "carbohydrates": 3.4,
-      "protein": 3.1,
-      "fat": 12.38,
-      "fiber": 5.08
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/chia-pudding-met-rood-fruit/"
-    },
-    "review": [
-      {
-        "type": "scaling",
-        "note": "Omgerekend van 4 porties naar 2 porties (factor ½); ook gewichten en maten in de bereidingswijze zijn omgerekend, aantallen zoals '3 eieren' niet. Controleer."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "'zoetstof' weggelaten uit de ingrediënten."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Pudding: Meng kokosmelk, chiazaad, de helft (40 gram) bevroren vruchtenmix, zoetstof en zout (en optioneel vanille) in de keukenmachine of met een staafmixer door elkaar.' is nu 'Pudding: Meng kokosmelk, chiazaad, de helft (40 gram) bevroren vruchtenmix en zout (en optioneel vanille) in de keukenmachine of met een staafmixer door elkaar.'."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Fruitgel: Breng de andere helft van de vruchtenmix (40 gr) samen met water, zoetstof en agar-agar aan de kook.' is nu 'Fruitgel: Breng de andere helft van de vruchtenmix (40 gr) samen met water en agar-agar aan de kook.'."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap verwijderd: 'Proef en breng zo nodig verder op smaak met zoetstof.'. Controleer of er niets ontbreekt."
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 4.8 g eiwit per portie (296 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -6375,6 +5920,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap aangepast: 'Proef en voeg zo nodig cacao en zoetstof toe.' is nu 'Proef en voeg zo nodig cacao toe.'."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 4.3 g eiwit per portie (266 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -8315,87 +7864,6 @@
         "note": "'2 tl dukkah' verwijst naar een ander recept of product op de bron ('klik'); koppel een subrecept of vervang het."
       }
     ]
-  },
-  {
-    "id": "ei-in-een-potje-lekker-makkelijk",
-    "title": "Ei in een potje, lekker makkelijk",
-    "approved": false,
-    "categories": [
-      "ontbijt"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 5,
-    "ovenTime": 15,
-    "ingredients": [
-      {
-        "raw": "2 eieren",
-        "amount": 2,
-        "unit": "",
-        "name": "eieren",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "ghee of roomboter, of olie om in te vetten",
-        "amount": null,
-        "unit": "",
-        "name": "roomboter",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "4 sprieten bieslook, of andere kruiden naar smaak",
-        "amount": 4,
-        "unit": "gram",
-        "name": "bieslook",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "scheutje slagroom",
-        "amount": 15,
-        "unit": "ml",
-        "name": "slagroom",
-        "optional": true,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "restjes groenten",
-        "amount": null,
-        "unit": "",
-        "name": "groenten",
-        "optional": true,
-        "category": "Groente en fruit"
-      }
-    ],
-    "method": "Vet 2 ramekins of kleine ovenschaaltjes goed in en breek een ei in elk schaaltje. Een scheutje slagroom is lekker. Bestrooi met bieslook en peper. Kies een van de onderstaande bereidingsmethoden. PAN: Breng in een pan een laagje water aan de kook, hangt af van hoe hoog je schaaltjes zijn, er mag geen water bij het ei komen. Zet het vuur laag en zet de schaaltjes voorzichtig in het water, houd het 10 minuten tegen de kook aan, totdat het ei gestold is. OVEN: Verwarm de oven voor op 175°C en giet heet water in een ovenvaste schaal, zet daar je schaaltjes in. Laat het ei stollen in ongeveer 10-15 minuten. Bestrooi met extra kruiden en peper en zout naar smaak.",
-    "nutrition": {
-      "calories": 91.45,
-      "carbohydrates": 0.35,
-      "protein": 6.4,
-      "fat": 7.3,
-      "fiber": 0.15,
-      "note": "Per portie (exclusief eventuele extra groente)"
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/ei-in-een-potje/"
-    }
   },
   {
     "id": "ei-in-het-pannetje-met-feta-en-tomaat",
@@ -14004,83 +13472,6 @@
     ]
   },
   {
-    "id": "griekse-yoghurt-met-walnoten",
-    "title": "Griekse yoghurt met walnoten",
-    "approved": false,
-    "categories": [
-      "ontbijt"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 2,
-    "ingredients": [
-      {
-        "raw": "200 g Griekse yoghurt",
-        "amount": 200,
-        "unit": "gram",
-        "name": "Griekse yoghurt",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "snufje kaneel",
-        "amount": null,
-        "unit": "",
-        "name": "kaneelpoeder",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "1 tl lijnzaad",
-        "amount": 2.67,
-        "unit": "gram",
-        "name": "lijnzaad",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "4 g gemalen kokos",
-        "amount": 4,
-        "unit": "gram",
-        "name": "gemalen kokos",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "6 stuks walnoot, of pecannoten",
-        "amount": 6,
-        "unit": "",
-        "name": "walnoten",
-        "optional": false,
-        "category": "Houdbare producten"
-      }
-    ],
-    "method": "Doe de yoghurt in je kommetje en strooi er de snufjes op en garneer met de noten. Een heel goedemorgen gewenst!",
-    "nutrition": {
-      "calories": 179.1,
-      "carbohydrates": 3.7,
-      "protein": 5.9,
-      "fat": 15.4,
-      "fiber": 1.1
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/griekse-yoghurt/"
-    },
-    "review": [
-      {
-        "type": "scaling",
-        "note": "Omgerekend van 1 portie naar 2 porties (factor 2); ook gewichten en maten in de bereidingswijze zijn omgerekend, aantallen zoals '3 eieren' niet. Controleer."
-      }
-    ]
-  },
-  {
     "id": "groene-koolrolletjes-gevuld",
     "title": "Groene koolrolletjes, gevuld",
     "approved": false,
@@ -15300,83 +14691,6 @@
     ]
   },
   {
-    "id": "hangop-met-rood-fruit",
-    "title": "Hangop met rood fruit",
-    "approved": false,
-    "categories": [
-      "ontbijt"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 121,
-    "ingredients": [
-      {
-        "raw": "300 g hangop",
-        "amount": 300,
-        "unit": "gram",
-        "name": "hangop",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "8 frambozen, 30 g",
-        "amount": 8,
-        "unit": "",
-        "name": "frambozen",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "1 el granaatappelpitjes, 20 g of ander rood fruit naar keuze",
-        "amount": 10,
-        "unit": "gram",
-        "name": "granaatappelpitjes",
-        "optional": false,
-        "category": "Groente en fruit"
-      }
-    ],
-    "method": "De hangop moet minstens 2 uur uitlekken, maar een hele nacht kan ook prima. Doe de zelfgemaakte hangop in een glas en garneer met het fruit. Pure verwennerij, deze koolhydraatarme hangop met rood fruit!",
-    "nutrition": {
-      "calories": 100.9,
-      "carbohydrates": 3.75,
-      "protein": 6,
-      "fat": 4.7,
-      "fiber": 1.4
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/hangop-met-rood-fruit-en-sweet-pink-saus/"
-    },
-    "review": [
-      {
-        "type": "scaling",
-        "note": "Omgerekend van 1 portie naar 2 porties (factor 2); ook gewichten en maten in de bereidingswijze zijn omgerekend, aantallen zoals '3 eieren' niet. Controleer."
-      },
-      {
-        "type": "conversion",
-        "note": "'300 g hangop' verwijst naar een ander recept of product op de bron ('recept'); koppel een subrecept of vervang het."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "'kneepje Steviala Sweet pink' weggelaten uit de ingrediënten."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Doe de zelfgemaakte hangop in een glas en garneer met het fruit en knijp er wat Steviala sweet pink over.' is nu 'Doe de zelfgemaakte hangop in een glas en garneer met het fruit.'."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Titel aangepast: 'Hangop met rood fruit en Sweet pink' is nu 'Hangop met rood fruit'."
-      }
-    ]
-  },
-  {
     "id": "hangop-met-walnoten",
     "title": "Hangop met walnoten",
     "approved": false,
@@ -15442,6 +14756,10 @@
       {
         "type": "sweetener-removed",
         "note": "Titel aangepast: 'Hangop met walnoten en 'honing'' is nu 'Hangop met walnoten'."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 9.3 g eiwit per portie (287 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -19118,6 +18436,10 @@
       {
         "type": "conversion",
         "note": "Winkelcategorie van 'groene currypasta' geschat als Houdbare producten; controleer."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 7.17 g eiwit per portie (508 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -20025,6 +19347,10 @@
       {
         "type": "ingredient-flag",
         "note": "'1 Mama lupe's tortilla' is gemarkeerd als starch; controleer of het past bij diabetes type 2."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 8.55 g eiwit per portie (278 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -20368,6 +19694,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap aangepast: 'Meng olijfolie, citroensap en gembersiroop in een kommetje.' is nu 'Meng olijfolie en citroensap in een kommetje.'."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 8.2 g eiwit per portie (414 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -20906,7 +20236,13 @@
     "source": {
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/keto-prei-courgettesoep/"
-    }
+    },
+    "review": [
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 4.71 g eiwit per portie (340 kcal). Vul aan met eiwit of wijs af."
+      }
+    ]
   },
   {
     "id": "keto-puntpaprika-met-gehakt-en-groente",
@@ -21144,7 +20480,13 @@
     "source": {
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/keto-roomsoep-met-radijsjes/"
-    }
+    },
+    "review": [
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 3.95 g eiwit per portie (295 kcal). Vul aan met eiwit of wijs af."
+      }
+    ]
   },
   {
     "id": "keto-rucola-avocado-salade",
@@ -21247,7 +20589,13 @@
     "source": {
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/keto-rucola-avocado-salade/"
-    }
+    },
+    "review": [
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 4.35 g eiwit per portie (270 kcal). Vul aan met eiwit of wijs af."
+      }
+    ]
   },
   {
     "id": "keto-salade-met-gerookte-kip-en-kerriedressing",
@@ -21633,6 +20981,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap aangepast: 'Klop citroenolijfolie met yoghurt, mayonaise, mosterd, dille, peper, zout en zoetstof tot een homogene dressing.' is nu 'Klop citroenolijfolie met yoghurt, mayonaise, mosterd, dille, peper en zout tot een homogene dressing.'."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 6.33 g eiwit per portie (416 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -21879,6 +21231,10 @@
       {
         "type": "nutrition",
         "note": "13 g koolhydraten per portie volgens de bron; controleer of dit past."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 9 g eiwit per portie (372 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -22891,6 +22247,10 @@
       {
         "type": "scaling",
         "note": "'dunne plakjes citroen': 2  voor de bron, ⅓ voor 2 porties; kies een hele hoeveelheid of pas het recept aan."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 8.91 g eiwit per portie (305 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -23354,114 +22714,6 @@
       {
         "type": "nutrition",
         "note": "15.95 g koolhydraten per portie, meer dan 15 g; nog te beoordelen door de eigenaar."
-      }
-    ]
-  },
-  {
-    "id": "komkommer-kruiden-smoothie",
-    "title": "Komkommer kruiden smoothie",
-    "approved": false,
-    "categories": [
-      "ontbijt"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 10,
-    "ingredients": [
-      {
-        "raw": "200 g komkommer, zonder zaad",
-        "amount": 200,
-        "unit": "gram",
-        "name": "komkommer",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "6 ijsblokjes, (of ijskoud water)",
-        "amount": 6,
-        "unit": "",
-        "name": "water",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "1 avocado, 100 g",
-        "amount": 1,
-        "unit": "",
-        "name": "avocado",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "handje platte peterselie, vers",
-        "amount": 15,
-        "unit": "gram",
-        "name": "peterselie",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "handje dille, vers",
-        "amount": 15,
-        "unit": "gram",
-        "name": "verse dille",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "gemberwortel, geraspt",
-        "amount": null,
-        "unit": "",
-        "name": "gember",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "peper en zout",
-        "amount": null,
-        "unit": "",
-        "name": "peper en zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "2 tl dukkah",
-        "amount": 2,
-        "unit": "tl",
-        "name": "dukkah",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      }
-    ],
-    "equipment": [
-      "blender"
-    ],
-    "method": "Blender de komkommer met ijs, avocado, kruiden, gember, peper en zout tot een gladde substantie. Proef en breng verder naar wens op smaak. Garneer met dukkah, zie recept hier op de website.",
-    "nutrition": {
-      "calories": 157.6,
-      "carbohydrates": 3.1,
-      "protein": 2.8,
-      "fat": 12.8,
-      "fiber": 3.3
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-smoothies/"
-    },
-    "review": [
-      {
-        "type": "scaling",
-        "note": "Omgerekend van 1 portie naar 2 porties (factor 2); ook gewichten en maten in de bereidingswijze zijn omgerekend, aantallen zoals '3 eieren' niet. Controleer."
-      },
-      {
-        "type": "conversion",
-        "note": "'2 tl dukkah' verwijst naar een ander recept of product op de bron ('recept'); koppel een subrecept of vervang het."
       }
     ]
   },
@@ -25172,6 +24424,10 @@
       {
         "type": "nutrition",
         "note": "10.15 g koolhydraten per portie volgens de bron; controleer of dit past."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 5.76 g eiwit per portie (268 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -25258,6 +24514,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap verwijderd: 'Proef en voeg zo nodig nog zoetstof toe.'. Controleer of er niets ontbreekt."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 3.55 g eiwit per portie (303 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -26005,133 +25265,6 @@
     ]
   },
   {
-    "id": "koolhydraatarme-granola-lowcarb-en-suikervrij",
-    "title": "Koolhydraatarme granola, lowcarb en suikervrij",
-    "approved": false,
-    "categories": [
-      "ontbijt"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 10,
-    "ovenTime": 20,
-    "ingredients": [
-      {
-        "raw": "4 g kokosolie, gesmolten",
-        "amount": 4,
-        "unit": "gram",
-        "name": "kokosolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "11 g kokoschips",
-        "amount": 11,
-        "unit": "gram",
-        "name": "kokoschips",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "6 g walnoot, optioneel hazel-, pecan- etc...",
-        "amount": 6,
-        "unit": "gram",
-        "name": "walnoten",
-        "optional": true,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "6 g lijnzaad, heel",
-        "amount": 6,
-        "unit": "gram",
-        "name": "lijnzaad",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "11 g zonnebloempitten",
-        "amount": 11,
-        "unit": "gram",
-        "name": "zonnebloempitten",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "17 g pompoenpitten",
-        "amount": 17,
-        "unit": "gram",
-        "name": "pompoenpitten",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "0,11 tl kaneel",
-        "amount": 0.11,
-        "unit": "tl",
-        "name": "kaneelpoeder",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "0,11 tl gemberpoeder",
-        "amount": 0.11,
-        "unit": "tl",
-        "name": "gemberpoeder",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "0,06 tl kardemom, gemalen",
-        "amount": 0.06,
-        "unit": "tl",
-        "name": "kardemom",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "0,06 tl sinaasappelschil, gemalen",
-        "amount": 0.06,
-        "unit": "tl",
-        "name": "sinaasappelschil",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "0,11 tl anijszaad",
-        "amount": 0.11,
-        "unit": "tl",
-        "name": "anijszaad",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      }
-    ],
-    "method": "Verwarm de heteluchtoven voor op 155 °C en bekleed de bakplaat met bakpapier. Smelt kokosolie op zeer laag vuur. Meng ondertussen de overige ingrediënten in een kom. Hussel de gesmolten kokosolie erdoor, zodat overal een 'oliefilm' over zit. Spreid de massa uit over het bakblik en bak het 7 x 3 minuten of tot het goudbruin en lekker knapperig geroosterd is. Schep elke 3 minuten even om, zodat het niet kan verbranden. In totaal is de baktijd dus ongeveer 20 minuten. Houd het goed in de gaten, elke oven is tenslotte anders. Haal het bakvel met de granola van de bakplaat en laat het buiten de oven helemaal afkoelen. Granola bewaren: Bewaar de granola in een afgesloten glazen pot. Blijft wekenlang lekker krokant als je het goed droog hebt gebakken. Onze gemiddelde portie voor de yoghurt weegt 2 ¾ gram en bevat dan ¼ gram koolhydraten.",
-    "nutrition": {
-      "calories": 164.31,
-      "carbohydrates": 1.28,
-      "protein": 5.4,
-      "fat": 14.82,
-      "fiber": 2.79,
-      "note": "Per portie van 25 gram"
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/homemade-granola-koolhydraatarm/"
-    },
-    "review": [
-      {
-        "type": "scaling",
-        "note": "Omgerekend van 18 porties naar 2 porties (factor 0,11); ook gewichten en maten in de bereidingswijze zijn omgerekend, aantallen zoals '3 eieren' niet. Controleer."
-      }
-    ]
-  },
-  {
     "id": "koolhydraatarme-groene-curry-met-broccoli-en-asperge",
     "title": "Koolhydraatarme groene curry met broccoli en asperge",
     "approved": false,
@@ -26289,6 +25422,10 @@
       {
         "type": "nutrition",
         "note": "11.95 g koolhydraten per portie volgens de bron; controleer of dit past."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 7.61 g eiwit per portie (378 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -28513,7 +27650,13 @@
     "source": {
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/oesterzwammensoep-delicaat-en-romig/"
-    }
+    },
+    "review": [
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 4.35 g eiwit per portie (265 kcal). Vul aan met eiwit of wijs af."
+      }
+    ]
   },
   {
     "id": "koolhydraatarme-ontbijtpannenkoekjes",
@@ -28989,6 +28132,10 @@
       {
         "type": "conversion",
         "note": "'2 porties Champignon roomsaus' verwijst naar een ander recept of product op de bron ('recept'); koppel een subrecept of vervang het."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 7.85 g eiwit per portie (263 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -29652,107 +28799,6 @@
       {
         "type": "nutrition",
         "note": "11.65 g koolhydraten per portie volgens de bron; controleer of dit past."
-      }
-    ]
-  },
-  {
-    "id": "koolhydraatarme-poffertjes-hartig-of-zoet",
-    "title": "Koolhydraatarme poffertjes, hartig of zoet",
-    "approved": false,
-    "categories": [
-      "ontbijt"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 25,
-    "ingredients": [
-      {
-        "raw": "2 eieren",
-        "amount": 2,
-        "unit": "",
-        "name": "eieren",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "120 ml kokosmelk",
-        "amount": 120,
-        "unit": "ml",
-        "name": "kokosmelk",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "zout",
-        "amount": null,
-        "unit": "",
-        "name": "zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "1 tl bakpoeder, (wijnsteen)",
-        "amount": 1,
-        "unit": "tl",
-        "name": "bakpoeder",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "15 gram kokosmeel",
-        "amount": 15,
-        "unit": "gram",
-        "name": "kokosmeel",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "olijfolie, om in te vetten",
-        "amount": null,
-        "unit": "",
-        "name": "olijfolie",
-        "optional": false,
-        "category": "Houdbare producten"
-      }
-    ],
-    "equipment": [
-      "Poffertjespan"
-    ],
-    "method": "Klop de eieren los met kokosmelk en zout. Meng het bakpoeder eerst door het kokosmeel. Meng dat vervolgens met de eiermassa. Voeg extra smaakmakers toe:. Extra smaken: Voor zoete smaken toevoegen aan het beslag: kaneel, speculaaskruiden, gember. Hartige smaken toevoegen aan het beslag: Provençaalse kruiden, kurkuma, paprikapoeder, chili, bieslook, dille, knoflookpoeder. Verhit een poffertjespan op middelhoog vuur en vet goed (!) in. Vul alle holtes tot net onder de rand. Ik begin altijd met vullen aan de buitenkant, daar is mijn pan wat minder warm dan in het midden. Bak de poffertjes tot de randen droog zijn en keer ze vochtig om. Ja dat is even een handigheidje. Bak ook de andere kant goudgeel. Serveren zoete poffertjes: Zoete poffertjes: Warm serveren met roomboter. Of serveer met slagroom. Of laat afkoelen en steek ze al dan niet met een stukje fruit op een prikker. NB: Alle ingrediënten zelf bij tellen als je koolhydraten telt. Serveren hartige poffertjes: Laat de poffertjes afkoelen. Besmeer ze met zelfgemaakte heksenkaas of kruidenkaas. Of beleg met plakjes zalm, stukje forel, garnaaltjes, rivierkreeftjes, sla, komkommer, tomaat? Liever een reepje paprika, sesamzaad en verse kruiden? Serveer ze enkel, of dubbel, aan een spiesje of op een lepel. NB: Alle ingrediënten zelf bij tellen als je koolhydraten telt.",
-    "nutrition": {
-      "calories": 228.2,
-      "carbohydrates": 1.75,
-      "protein": 7.75,
-      "fat": 20.35,
-      "fiber": 3.95,
-      "note": "Per portie, exclusief beleg."
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-poffertjes-hartig-of-zoet/"
-    },
-    "review": [
-      {
-        "type": "servings",
-        "note": "De bron telt 2 porties (van 19 stuks); gelezen als 2 porties. Controleer of dit klopt."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Extra smaken: Voor zoete smaken toevoegen aan het beslag: kaneel, speculaaskruiden, gember, zoetstof.' is nu 'Extra smaken: Voor zoete smaken toevoegen aan het beslag: kaneel, speculaaskruiden, gember.'."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Serveren zoete poffertjes: Zoete poffertjes: Warm serveren met roomboter en bestrooien met koolhydraatarme poedersuiker.' is nu 'Serveren zoete poffertjes: Zoete poffertjes: Warm serveren met roomboter.'."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Of Walden farms siroop, of ijs en slagroom.' is nu 'Of serveer met slagroom.'."
       }
     ]
   },
@@ -31608,6 +30654,10 @@
       {
         "type": "ingredient-flag",
         "note": "'2 stuks Mama Lupe's tortilla, (wraps)' is gemarkeerd als starch; controleer of het past bij diabetes type 2."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 8.11 g eiwit per portie (252 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -32052,6 +31102,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap aangepast: 'Meng voor de dressing de olijfolie (neem een goede!) met het citroensap, de Sweet Bee, peper en zout.' is nu 'Meng voor de dressing de olijfolie (neem een goede!) met het citroensap, peper en zout.'."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 9.2 g eiwit per portie (276 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -32908,6 +31962,10 @@
       {
         "type": "ingredient-flag",
         "note": "'2 stuks Mama lupe's tortilla' is gemarkeerd als starch; controleer of het past bij diabetes type 2."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 5.45 g eiwit per portie (267 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -33065,128 +32123,6 @@
     ]
   },
   {
-    "id": "makkelijk-koolhydraatarm-ontbijt",
-    "title": "Makkelijk koolhydraatarm ontbijt",
-    "approved": false,
-    "categories": [
-      "ontbijt"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 135,
-    "ingredients": [
-      {
-        "raw": "400 ml amandelmelk, ongezoet en zonder toevoegingen",
-        "amount": 400,
-        "unit": "ml",
-        "name": "amandelmelk",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "40 g chiazaad",
-        "amount": 40,
-        "unit": "gram",
-        "name": "chiazaad",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "mespunt zout, echt belangrijk",
-        "amount": null,
-        "unit": "",
-        "name": "zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      }
-    ],
-    "components": [
-      {
-        "id": "makkelijk-koolhydraatarm-ontbijt-chocoladesmaak",
-        "title": "Chocoladesmaak",
-        "ingredients": [
-          {
-            "raw": "1 el cacaopoeder",
-            "amount": 8,
-            "unit": "gram",
-            "name": "cacaopoeder",
-            "optional": false,
-            "category": "Houdbare producten"
-          }
-        ],
-        "method": "Meng door 100 ml basispudding cacaopoeder. Doe over in een glazen pot met deksel. Zet minstens 2 uur koel weg, een nachtje kan ook."
-      },
-      {
-        "id": "makkelijk-koolhydraatarm-ontbijt-karamel-mokkasmaak",
-        "title": "Karamel-mokkasmaak",
-        "ingredients": [
-          {
-            "raw": "¼ tl espressopoeder, of meer naar smaak",
-            "amount": 0.25,
-            "unit": "tl",
-            "name": "espressopoeder",
-            "optional": false,
-            "category": "Kruiden en smaakmakers"
-          }
-        ],
-        "method": "Meng door 100 ml de espressopoeder. Proef of het strek genoeg is. Doe over in een glazen pot met deksel. Zet minstens 2 uur koel weg, een nachtje kan ook. Je hebt nu 200 ml basispudding over. Zet ook tot gebruik afgesloten in de koelkast."
-      }
-    ],
-    "method": "Schud amandelmelk, chiazaad en een mespunt zout in een afsluitbare pot tot het chiazaad zich goed verspreid heeft. Laat 5 minuten staan en schud nogmaals. De zaadjes moeten nu blijven 'zweven'. Splits de basispudding om drie smaken te kunnen maken. Ongeveer 100 ml +100 ml + 200 ml. Topping en laagjes maken: Schep een laagje pudding in een glaasje. Maak dan de crunchy tussenlaag met smaken die passen bij je laag. Denk aan gehakte noten, cacao nibs, geraspte chocola, pompoenpitten, zonnebloempitten, sesamzaadjes etc. Vervolgens een laagje van je basispudding en garneer weer met lekkere dingen en siroop naar keuze. Als je fruit eet wellicht wat granaatappelpitjes, cranberry, frambozen, bosbessen? Dot slagroom misschien? Afhankelijk van je trek of het moment van de dag neem je een kleine of een grotere portie. Op de foto's: 4 mooie Turkse theeglaasjes, we hebben er 2 x heerlijk van gesmuld! Ik zeg maken en een mooie dag gewenst!",
-    "nutrition": {
-      "calories": 233.7,
-      "carbohydrates": 1,
-      "protein": 6.95,
-      "fat": 19.55,
-      "fiber": 8.9,
-      "note": "Per portie excl. topping"
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/makkelijk-koolhydraatarm-ontbijt-met-chiazaad/"
-    },
-    "review": [
-      {
-        "type": "sweetener-removed",
-        "note": "'zoetstof' weggelaten uit de ingrediënten."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "'2 el homemade karamelsaus' weggelaten uit de ingrediënten."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Dot slagroom of suikervrije lemon curd misschien?' is nu 'Dot slagroom misschien?'."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Meng door 100 ml basispudding cacaopoeder en zoetstof.' is nu 'Meng door 100 ml basispudding cacaopoeder.'."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap verwijderd: 'Proef of het zoet genoeg is.'. Controleer of er niets ontbreekt."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Meng door 100 ml de karamelsaus en de espressopoeder.' is nu 'Meng door 100 ml de espressopoeder.'."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Proef of het zoet en strek genoeg is.' is nu 'Proef of het strek genoeg is.'."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Je hebt nu 200 ml basispudding over, voeg daar ook zoetstof aan toe.' is nu 'Je hebt nu 200 ml basispudding over.'."
-      }
-    ]
-  },
-  {
     "id": "makkelijke-salade-met-veldsla-en-rettich",
     "title": "Makkelijke salade met veldsla en rettich",
     "approved": false,
@@ -33304,6 +32240,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap aangepast: 'Proef en breng op smaak met peper, selderiezout en een druppel zoetstof.' is nu 'Proef en breng op smaak met peper en selderiezout.'."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 6.65 g eiwit per portie (406 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -33545,7 +32485,13 @@
     "source": {
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/mediterrane-groenten-uit-de-oven/"
-    }
+    },
+    "review": [
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 4.9 g eiwit per portie (258 kcal). Vul aan met eiwit of wijs af."
+      }
+    ]
   },
   {
     "id": "mesclun-met-gerookte-kip-en-bleekselderij",
@@ -34347,90 +33293,6 @@
       {
         "type": "sweetener-removed",
         "note": "Stap verwijderd: 'Voor de liefhebbers een kneepje Steviala Sweet Maple.'. Controleer of er niets ontbreekt."
-      }
-    ]
-  },
-  {
-    "id": "ontbijtbowl-met-griekse-yoghurt",
-    "title": "Ontbijtbowl met Griekse yoghurt",
-    "approved": false,
-    "categories": [
-      "ontbijt"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 2,
-    "ingredients": [
-      {
-        "raw": "300 g Griekse yoghurt",
-        "amount": 300,
-        "unit": "gram",
-        "name": "Griekse yoghurt",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "20 g granaatappelpitjes",
-        "amount": 20,
-        "unit": "gram",
-        "name": "granaatappelpitjes",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "2 el hennepzaad, of andere zaden of noten",
-        "amount": 20,
-        "unit": "gram",
-        "name": "hennepzaad",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "20 g blauwe bessen",
-        "amount": 20,
-        "unit": "gram",
-        "name": "blauwe bessen",
-        "optional": false,
-        "category": "Groente en fruit"
-      }
-    ],
-    "method": "Schep de Griekse yoghurt in een kom en schik er granaatappelpitjes, hennepzaad en blauwe bessen op. Ander fruit kan natuurlijk ook. Aardbeien en frambozen bevatten iets minder koolhydraten. Klaar is je gevulde ontbijtbowl! Een heel goede morgen gewenst en een fijne dag verder!",
-    "notes": [
-      "8 gram koolhydraten per portie"
-    ],
-    "nutrition": {
-      "calories": 225.8,
-      "carbohydrates": 7.8,
-      "protein": 8.6,
-      "fat": 17.5,
-      "fiber": 1
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/ontbijtbowl-griekse-yoghurt/"
-    },
-    "review": [
-      {
-        "type": "scaling",
-        "note": "Omgerekend van 1 portie naar 2 porties (factor 2); ook gewichten en maten in de bereidingswijze zijn omgerekend, aantallen zoals '3 eieren' niet. Controleer."
-      },
-      {
-        "type": "conversion",
-        "note": "'2 el hennepzaad, of andere zaden of noten': 2 el geschat als 20 gram; controleer."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "'4 druppels zoetstof' weggelaten uit de ingrediënten."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Druppel er een van je favoriete smaken zoetstof over en klaar is je gevulde ontbijtbowl!' is nu 'Klaar is je gevulde ontbijtbowl!'."
       }
     ]
   },
@@ -36710,6 +35572,10 @@
       {
         "type": "nutrition",
         "note": "11 g koolhydraten per portie volgens de bron; controleer of dit past."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 5.35 g eiwit per portie (278 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -36985,135 +35851,6 @@
       {
         "type": "conversion",
         "note": "'2 bladeren ijsbergsla': een blad geschat als 15 gram; controleer."
-      }
-    ]
-  },
-  {
-    "id": "pompoen-smoothie",
-    "title": "Pompoen smoothie",
-    "approved": false,
-    "categories": [
-      "ontbijt"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 10,
-    "ingredients": [
-      {
-        "raw": "150 g pompoenpuree, (restje)",
-        "amount": 150,
-        "unit": "gram",
-        "name": "pompoenpuree",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "6 ijsblokjes, (of ijskoud water)",
-        "amount": 6,
-        "unit": "",
-        "name": "water",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "40 g roomkaas",
-        "amount": 40,
-        "unit": "gram",
-        "name": "roomkaas",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "100 ml slagroom",
-        "amount": 100,
-        "unit": "ml",
-        "name": "slagroom",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "vanille, naar smaak: essence, poeder of vers uit een peul",
-        "amount": null,
-        "unit": "",
-        "name": "vanille",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "½ tl koek- of speculaaskruiden",
-        "amount": 0.5,
-        "unit": "tl",
-        "name": "koek- of speculaaskruiden",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "snufje zout",
-        "amount": null,
-        "unit": "",
-        "name": "zout",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      },
-      {
-        "raw": "2 tl Griekse yoghurt",
-        "amount": 10,
-        "unit": "gram",
-        "name": "Griekse yoghurt",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "snufje koek- of speculaaskruiden",
-        "amount": null,
-        "unit": "",
-        "name": "koek- of speculaaskruiden",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      }
-    ],
-    "equipment": [
-      "blender"
-    ],
-    "method": "Blender de puree met ijsblokjes, roomkaas, slagroom, vanille, speculaaskruiden en een snuf zout tot een gladde substantie. Garneer met een lepel Griekse yoghurt en een snufje speculaaskruiden. Kauwen: Klok zo'n vloeibaar koolhydraatarm ontbijt nooit in één teug naar binnen, maar ‘kauw’ even op elke slok om het met speeksel te vermengen. Je speeksel zorgt er namelijk voor dat de vertering alvast op gang kan komen. Dat voorkomt dat de massa gaat gisten in je maag en zo een enorm zwaar gevoel geeft.",
-    "nutrition": {
-      "calories": 237.5,
-      "carbohydrates": 4.1,
-      "protein": 3,
-      "fat": 23.2,
-      "fiber": 1.2,
-      "note": "Per glas"
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/koolhydraatarm-ontbijt-in-een-glas/"
-    },
-    "review": [
-      {
-        "type": "scaling",
-        "note": "Omgerekend van 1 portie naar 2 porties (factor 2); ook gewichten en maten in de bereidingswijze zijn omgerekend, aantallen zoals '3 eieren' niet. Controleer."
-      },
-      {
-        "type": "conversion",
-        "note": "'150 g pompoenpuree, (restje)' is een bereiding of product zonder eigen recept in deze data; koppel een subrecept of kies een product."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "'zoetstof' weggelaten uit de ingrediënten."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap aangepast: 'Blender de puree met ijsblokjes, roomkaas, slagroom, zoetstof, vanille, speculaaskruiden en een snuf zout tot een gladde substantie.' is nu 'Blender de puree met ijsblokjes, roomkaas, slagroom, vanille, speculaaskruiden en een snuf zout tot een gladde substantie.'."
-      },
-      {
-        "type": "sweetener-removed",
-        "note": "Stap verwijderd: 'Proef en breng op smaak met extra zoetstof.'. Controleer of er niets ontbreekt."
       }
     ]
   },
@@ -37637,7 +36374,13 @@
     "source": {
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/portobello-met-pompoenpuree/"
-    }
+    },
+    "review": [
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 6.3 g eiwit per portie (287 kcal). Vul aan met eiwit of wijs af."
+      }
+    ]
   },
   {
     "id": "portobello-met-spinazie-en-zalm",
@@ -39606,6 +38349,10 @@
       {
         "type": "conversion",
         "note": "Winkelcategorie van 'basisdressing' geschat als Houdbare producten; controleer."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 4.5 g eiwit per portie (296 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -40197,87 +38944,6 @@
     }
   },
   {
-    "id": "snelle-hangop-met-granola-en-een-vruchtenspies",
-    "title": "Snelle hangop met granola en een vruchtenspies",
-    "approved": false,
-    "categories": [
-      "ontbijt"
-    ],
-    "portions": 2,
-    "multiDay": false,
-    "preparationTime": 15,
-    "ingredients": [
-      {
-        "raw": "300 ml yoghurt, Bio+ milde volle, uitgelekt",
-        "amount": 300,
-        "unit": "ml",
-        "name": "yoghurt",
-        "optional": false,
-        "category": "Zuivel en eieren"
-      },
-      {
-        "raw": "2 el fruitgelei",
-        "amount": 20,
-        "unit": "gram",
-        "name": "fruitgelei",
-        "optional": false,
-        "category": "Houdbare producten"
-      },
-      {
-        "raw": "60 g fruit, vers, zie foto's",
-        "amount": 60,
-        "unit": "gram",
-        "name": "fruit",
-        "optional": false,
-        "category": "Groente en fruit"
-      },
-      {
-        "raw": "25 g granola",
-        "amount": 25,
-        "unit": "gram",
-        "name": "granola",
-        "optional": false,
-        "category": "Brood en ontbijt"
-      },
-      {
-        "raw": "2 topjes munt, vers",
-        "amount": 2,
-        "unit": "gram",
-        "name": "verse munt",
-        "optional": false,
-        "category": "Kruiden en smaakmakers"
-      }
-    ],
-    "method": "In dit recept gebruik ik onze fantastische homemade granola (ook in ons 2e kookboek Gewoon Koolhydraatarm) en de koolhydraatarme fruitgelei. Doe een papieren koffiefilter in een trechter of zeef en giet de yoghurt erin. Laat uitlekken in een glas of kom tot een dikkere versie: hangop. (Dat kan terwijl je het toetje samenstelt of voor de maaltijd). Zoek een paar leuke kleine glaasjes, begin met wat fruitgelei die je een beetje tegen de randen opwerkt. Maak fraaie fruitspiesjes van enkele stukjes fruit. Als je het koolhydraatarm(er) wilt kun je het best bessen, frambozen of aardbeien nemen. Schep een laagje hangop op de fruitgelei, dan een klein handje granola, weer een laagje hangop en nog een beetje granola. Steek de fruitspies erin en garneer met een topje munt. Serveer onmiddellijk en geniet! Uitgelekt= minder koolhydraten: Het aantal koolhydraten die je overhoudt is lastig te bepalen. Maar de meeste koolhydraten lekken met de wei weg uit de yoghurt. De waardevolle eiwitten en vetten blijven wél in de yoghurt zitten. De overgebleven koolhydraten zijn vrijwel verwaarloosbaar, denk ik. Want hoe meer de yoghurt uitlekt, hoe minder koolhydraten. Eigenlijk net als bij kaas, die bevat immers 0 koolhydraten. En kaas is eigenlijk niets anders dan super uitgewrongen yoghurt.",
-    "nutrition": {
-      "calories": 115.4,
-      "carbohydrates": 5,
-      "protein": 3.45,
-      "fat": 8.05,
-      "fiber": 3.55
-    },
-    "diet": [
-      "vegetarisch"
-    ],
-    "programs": [
-      "Koolhydraatarm recept"
-    ],
-    "source": {
-      "name": "koolhydraatarmrecept.nl",
-      "url": "https://www.koolhydraatarmrecept.nl/snelle-hangop-met-granola-en-een-vruchtenspies/"
-    },
-    "review": [
-      {
-        "type": "conversion",
-        "note": "'2 el fruitgelei, < recept': 2 el geschat als 20 gram; controleer."
-      },
-      {
-        "type": "conversion",
-        "note": "'2 el fruitgelei' verwijst naar een ander recept of product op de bron ('recept'); koppel een subrecept of vervang het."
-      }
-    ]
-  },
-  {
     "id": "snelle-spinazie-met-cantharellenroomsaus",
     "title": "Snelle spinazie met cantharellenroomsaus",
     "approved": false,
@@ -40451,6 +39117,10 @@
       {
         "type": "nutrition",
         "note": "10.05 g koolhydraten per portie volgens de bron; controleer of dit past."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 5.95 g eiwit per portie (398 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -40604,7 +39274,13 @@
     "source": {
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/spaghettipompoen-met-paddenstoelensaus/"
-    }
+    },
+    "review": [
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 5.5 g eiwit per portie (489 kcal). Vul aan met eiwit of wijs af."
+      }
+    ]
   },
   {
     "id": "spinazie-courgette-lasagne",
@@ -42929,6 +41605,10 @@
       {
         "type": "conversion",
         "note": "Winkelcategorie van 'groene currypasta' geschat als Houdbare producten; controleer."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 6.4 g eiwit per portie (258 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -43407,6 +42087,10 @@
       {
         "type": "servings",
         "note": "De bron telt 2 halve; elke helft is als een portie geteld. Controleer of dit klopt."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 2.4 g eiwit per portie (287 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -44560,6 +43244,10 @@
       {
         "type": "scaling",
         "note": "'eieren': 2  voor de bron, 1 ⅓ voor 2 porties; kies een hele hoeveelheid of pas het recept aan."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 9.83 g eiwit per portie (417 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
@@ -45010,6 +43698,10 @@
       {
         "type": "sweetener-removed",
         "note": "Stap aangepast: 'Klop beide samen met olijfolie, dragon en zoetstof tot een mooie dressing.' is nu 'Klop beide samen met olijfolie en dragon tot een mooie dressing.'."
+      },
+      {
+        "type": "nutrition",
+        "note": "Te licht als maaltijd? 7.47 g eiwit per portie (390 kcal). Vul aan met eiwit of wijs af."
       }
     ]
   },
