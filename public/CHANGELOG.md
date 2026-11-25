@@ -7,6 +7,8 @@ De belangrijkste verbeteringen voor de planner en recepten.
 - Nieuwe recepten:
   - 4 kazen salade, lekker knapperig (lunch)
   - Andijvie stamppot met kerriejus (diner)
+  - Asperge frittata (lunch)
+  - Asperge roomsoep met peterselie en zalm (lunch)
   - Asperges met hollandaisesaus en zalm (diner)
   - Asperges met peterseliedressing en zalm (lunch en diner)
   - Bleekselderijsalade met puntpaprika (lunch)
@@ -27,6 +29,7 @@ De belangrijkste verbeteringen voor de planner en recepten.
   - Frisse bloemkool rijstsalade (lunch)
   - Garnalen in room (lunch en diner)
   - Gestoofde rode kool met kabeljauw (diner)
+  - Gevulde aubergine met feta (diner)
   - Gevulde aubergine met gehakt (diner)
 
 ## 24 november 2026
