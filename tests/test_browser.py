@@ -272,6 +272,7 @@ def test_changelog_page_loads(page: Page, server_url: str, path: str):
     expect(page.locator("#changelog-content")).to_contain_text(
         "De belangrijkste verbeteringen voor de planner en recepten.")
     assert page.locator("#changelog-content h2").all_inner_texts() == [
+        "27 november 2026",
         "25 november 2026",
         "24 november 2026",
         "23 november 2026",

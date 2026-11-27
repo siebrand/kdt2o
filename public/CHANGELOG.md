@@ -2,6 +2,13 @@
 
 De belangrijkste verbeteringen voor de planner en recepten.
 
+## 27 november 2026
+
+- Nieuwe recepten:
+  - Gegratineerde champignons (lunch)
+  - Gegratineerde palmkool (lunch)
+  - Gevulde courgette (diner)
+
 ## 25 november 2026
 
 - Nieuwe recepten:
