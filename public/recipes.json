@@ -13574,5 +13574,432 @@
       "name": "koolhydraatarmrecept.nl",
       "url": "https://www.koolhydraatarmrecept.nl/gevulde-courgette/"
     }
+  },
+  {
+    "id": "gevulde-flespompoen-met-spinazie-en-kaas",
+    "title": "Gevulde flespompoen met spinazie en kaas",
+    "approved": true,
+    "categories": [
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 10,
+    "ovenTime": 55,
+    "ingredients": [
+      {
+        "raw": "1 kleine pompoen, 450 g (bv. flespompoen)",
+        "amount": 1,
+        "unit": "",
+        "name": "pompoen",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "1 kleine ui",
+        "amount": 1,
+        "unit": "",
+        "name": "uien",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "10 ml olijfolie, om te bakken",
+        "amount": 10,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 teentje knoflook",
+        "amount": 1,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "250 g spinazie (wilde), gewassen",
+        "amount": 250,
+        "unit": "gram",
+        "name": "wilde spinazie",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "100 g kaas, 4 soorten naar smaak",
+        "amount": 100,
+        "unit": "gram",
+        "name": "kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "1 blaadje salie, gehakt",
+        "amount": 0.5,
+        "unit": "gram",
+        "name": "salie",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "½ tl tijm",
+        "amount": 0.5,
+        "unit": "tl",
+        "name": "tijm",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "40 g pecannoten, geroosterd",
+        "amount": 40,
+        "unit": "gram",
+        "name": "pecannoten",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "150 g komkommer, in plakjes",
+        "amount": 150,
+        "unit": "gram",
+        "name": "komkommer",
+        "optional": false,
+        "category": "Groente en fruit"
+      }
+    ],
+    "method": "Maak de pompoen met vulling van tevoren klaar, dan hoef je 'm alleen maar af te bakken. Verwarm de heteluchtoven voor op 175 °C en vet een ovenschaal in. Snijd de flespompoen met een scherp mes in de lengte doormidden. Schraap de pitten eruit met een lepel. Leg de pompoenhelften met de snijkant naar beneden in de ovenschaal, bak de pompoen 40 minuten of tot hij gaar is. Snipper ondertussen het uitje en bak op matig vuur glazig in olie. Pers knoflook erboven uit, voeg spinazie, salie en tijm toe. Roerbak tot de spinazie is geslonken. Snijd de kaas in blokjes en schep de blokjes door de spinazie. Doof het vuur. Vul de pompoen met het spinazie-kaasmengsel, maak eventueel het gat ietsje groter. Laat afkoelen en zet koel weg tot gebruik of bak direct af. Afbakken: Bak de gevulde flespompoen 15 minuten in de voorverwarmde oven, als de schotel koud uit de koelkast komt uiteraard langer. Rooster de pecannoten in een droog pannetje. Serveren: Serveer een halve gevulde flespompoen per persoon, maal er peper en zout over, garneer met de geroosterde pecannoten. Leg er plakjes komkommer met een scheutje olijfolie bij. Aan tafel!",
+    "nutrition": {
+      "calories": 446.6,
+      "carbohydrates": 8.9,
+      "protein": 19.4,
+      "fat": 35.5,
+      "fiber": 7.6,
+      "note": "Per portie volgens de bron, zonder de komkommer"
+    },
+    "diet": [
+      "vegetarisch"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/gevulde-flespompoen-met-spinazie-en-kaas/"
+    }
+  },
+  {
+    "id": "gevulde-tomaten-uit-de-oven",
+    "title": "Gevulde tomaten uit de oven",
+    "approved": true,
+    "categories": [
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 10,
+    "ovenTime": 20,
+    "ingredients": [
+      {
+        "raw": "2 vleestomaat, ongeveer 300 g",
+        "amount": 2,
+        "unit": "",
+        "name": "vleestomaat",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "100 g courgette",
+        "amount": 100,
+        "unit": "gram",
+        "name": "courgette",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "2 blikjes tonijn, uitgelekt",
+        "amount": 2,
+        "unit": "blik",
+        "name": "tonijn",
+        "optional": false,
+        "category": "Vlees, vis en vleesvervangers"
+      },
+      {
+        "raw": "scheutje olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "10 g amandelmeel",
+        "amount": 10,
+        "unit": "gram",
+        "name": "amandelmeel",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "1 teentje knoflook, of knoflookpoeder",
+        "amount": 1,
+        "unit": "teen",
+        "name": "knoflook",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "7,5 g platte peterselie, vers (half bakje)",
+        "amount": 7.5,
+        "unit": "gram",
+        "name": "peterselie",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "1 tl tijm",
+        "amount": 1,
+        "unit": "tl",
+        "name": "tijm",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "75 g kaas, zelf geraspt",
+        "amount": 75,
+        "unit": "gram",
+        "name": "kaas",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      }
+    ],
+    "method": "Verwarm de heteluchtoven voor op 180 °C en vet een ovenschaal in. Snijd grote tomaten overdwars doormidden en hol ze uit met een lepeltje (wat je eruit haalt gebruik je voor de vulling). Zet de uitgeholde helften in de ovenschaal. Snijd de courgette in stukken. Maal de courgette met de tomatenpulp grof met een staafmixer. Meng de uitgelekte tonijn en een scheutje olijfolie erdoor. Proef en breng op smaak met versgemalen peper en zout. Verdeel de vulling over de uitgeholde tomaten. Meng het amandelmeel met de kruiden en knoflook. Strooi dat over de bovenkant. Rasp er tot slot wat kaas over. Bak de gevulde tomaten 15-20 minuten in de oven of tot de kaas lichtbruin kleurt. Maak ondertussen de rucolasalade en serveer die erbij. Al met al een heerlijke maaltijd! Eet smakelijk!",
+    "nutrition": {
+      "calories": 304.65,
+      "carbohydrates": 5.95,
+      "protein": 24.15,
+      "fat": 20.05,
+      "fiber": 3.15,
+      "note": "Per portie volgens de bron, met 1 blikje tonijn in totaal en zonder de salade"
+    },
+    "diet": [
+      "vis"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/gevulde-tomaten-uit-de-oven/"
+    },
+    "components": [
+      {
+        "id": "gevulde-tomaten-uit-de-oven-rucolasalade",
+        "title": "Rucolasalade",
+        "ingredients": [
+          {
+            "raw": "50 g rucola",
+            "amount": 50,
+            "unit": "gram",
+            "name": "rucola",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "200 g wortel, geraspt (liefst paarse)",
+            "amount": 200,
+            "unit": "gram",
+            "name": "wortel",
+            "optional": false,
+            "category": "Groente en fruit"
+          },
+          {
+            "raw": "1 tl sesamzaad",
+            "amount": 3,
+            "unit": "gram",
+            "name": "sesamzaad",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "1 el olijfolie",
+            "amount": 15,
+            "unit": "ml",
+            "name": "olijfolie",
+            "optional": false,
+            "category": "Houdbare producten"
+          },
+          {
+            "raw": "peper en zout",
+            "amount": null,
+            "unit": "",
+            "name": "peper en zout",
+            "optional": false,
+            "category": "Kruiden en smaakmakers"
+          }
+        ],
+        "method": "Meng de rucola met de geraspte wortel. Besprenkel met de olijfolie, bestrooi met het sesamzaad en breng op smaak met peper en zout."
+      }
+    ]
+  },
+  {
+    "id": "groene-shakshuka-met-kruidenyoghurt",
+    "title": "Groene shakshuka met kruidenyoghurt",
+    "approved": true,
+    "categories": [
+      "diner"
+    ],
+    "portions": 2,
+    "multiDay": false,
+    "preparationTime": 45,
+    "ingredients": [
+      {
+        "raw": "1 ui, in ringen",
+        "amount": 1,
+        "unit": "",
+        "name": "uien",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "100 g spruitjes, schoongemaakt, in kwarten",
+        "amount": 100,
+        "unit": "gram",
+        "name": "spruitjes",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "100 g bleekselderij, in elleboogjes",
+        "amount": 100,
+        "unit": "gram",
+        "name": "bleekselderij",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "scheutje olijfolie",
+        "amount": 15,
+        "unit": "ml",
+        "name": "olijfolie",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "75 g paprika, groene",
+        "amount": 75,
+        "unit": "gram",
+        "name": "paprika",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "200 g broccoli",
+        "amount": 200,
+        "unit": "gram",
+        "name": "broccoli",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "50 ml (groente)bouillon",
+        "amount": 50,
+        "unit": "ml",
+        "name": "groentebouillon",
+        "optional": false,
+        "category": "Houdbare producten"
+      },
+      {
+        "raw": "6 eieren",
+        "amount": 6,
+        "unit": "",
+        "name": "eieren",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "60 g feta",
+        "amount": 60,
+        "unit": "gram",
+        "name": "feta",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "100 ml Griekse yoghurt",
+        "amount": 100,
+        "unit": "ml",
+        "name": "Griekse yoghurt",
+        "optional": false,
+        "category": "Zuivel en eieren"
+      },
+      {
+        "raw": "7,5 g platte peterselie, gehakt (half bakje)",
+        "amount": 7.5,
+        "unit": "gram",
+        "name": "peterselie",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "7,5 g bieslook (half bakje)",
+        "amount": 7.5,
+        "unit": "gram",
+        "name": "bieslook",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      },
+      {
+        "raw": "¼ citroen, sap en rasp",
+        "amount": 0.25,
+        "unit": "",
+        "name": "citroen",
+        "optional": false,
+        "category": "Groente en fruit"
+      },
+      {
+        "raw": "peper en zout",
+        "amount": null,
+        "unit": "",
+        "name": "peper en zout",
+        "optional": false,
+        "category": "Kruiden en smaakmakers"
+      }
+    ],
+    "method": "Snijd de ui in ringen. Maak de spruiten schoon en snijd ze in kwarten. Snijd de bleekselderij in elleboogjes. Bak de uienringen even aan in een grote koekenpan met wat olie en roerbak vervolgens de bleekselderij en spruitjes mee. Voeg de bouillon toe en laat met een deksel erop 10 minuten zachtjes garen. Schep af en toe om. Snijd ondertussen de paprika en breek de broccoli in roosjes. Voeg ze beiden toe aan de pan en roerbak nog 5-8 minuten mee. Proef en breng op smaak met peper en zout. Maak kuiltjes in de groente en breek de eieren daarin. Laat met een deksel erop ongeveer 5 minuten garen tot de eieren voldoende gaar zijn. Het wit moet gestold zijn, maar het geel blijft zacht. Tenzij je daar helemaal niet van houdt…, dan gaar je de eieren langer. Meng ondertussen voor de kruidenyoghurt de Griekse yoghurt met peterselie, bieslook en citroensap, -rasp. Proef en breng op smaak met peper en zout. Maal peper en zout over het gerecht en verkruimel de feta erover. Serveer de groene shakshuka met kruidenyoghurt.",
+    "nutrition": {
+      "calories": 243.45,
+      "carbohydrates": 10,
+      "protein": 10.45,
+      "fat": 16.4,
+      "fiber": 7.7,
+      "note": "Per portie volgens de bron, met 2 eieren en 30 g feta in totaal"
+    },
+    "diet": [
+      "vegetarisch"
+    ],
+    "programs": [
+      "Koolhydraatarm recept"
+    ],
+    "source": {
+      "name": "koolhydraatarmrecept.nl",
+      "url": "https://www.koolhydraatarmrecept.nl/koolhydraatarme-groene-shakshuka-met-kruidenyoghurt/"
+    }
   }
 ]

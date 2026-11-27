@@ -8,6 +8,9 @@ De belangrijkste verbeteringen voor de planner en recepten.
   - Gegratineerde champignons (lunch)
   - Gegratineerde palmkool (lunch)
   - Gevulde courgette (diner)
+  - Gevulde flespompoen met spinazie en kaas (diner)
+  - Gevulde tomaten uit de oven (diner)
+  - Groene shakshuka met kruidenyoghurt (diner)
 
 ## 25 november 2026
 
