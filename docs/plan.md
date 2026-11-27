@@ -77,6 +77,10 @@ The following features are complete and have been moved below the open work:
 - [x] Random recipe ordering in the recipe selection.
 - [x] Equipment lists and advance notices, such as "de dag ervoor", on recipe
   pages and in the planner.
+- [x] A JSON download of the shopping list in the versioned
+  `kitano-shopping-list` format (`docs/shopping-list-format.md`,
+  `schemas/shopping-list.schema.json`), validated against the schema by the
+  browser tests, so other programs can prepare the groceries.
 - [x] Privacy page, MIT/CC0 licensing, FOSS governance, contribution, conduct,
   and security documentation.
 - [x] GitHub Pages deployment with relative asset paths for the `/kdt2o/`

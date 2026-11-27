@@ -4,6 +4,8 @@ De belangrijkste verbeteringen voor de planner en recepten.
 
 ## 27 november 2026
 
+- De boodschappenlijst kan nu ook als JSON-bestand worden gedownload, zodat andere programma's de boodschappen
+  kunnen klaarzetten.
 - Nieuwe recepten:
   - Gegratineerde champignons (lunch)
   - Gegratineerde palmkool (lunch)

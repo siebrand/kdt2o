@@ -66,8 +66,18 @@ touch the page, except through `state.js`:
 - `recipes.js`: recipe availability, preparation times, shared subrecipes, and
   recipe labels.
 - `shopping.js`: ingredient normalization, weekly totals, and categories.
+- `shopping-export.js`: the weekly totals as a `kitano-shopping-list` JSON
+  document, version 1, for programs that prepare groceries. The browser makes
+  the file and downloads it; it sends it nowhere. See
+  [shopping-list-format.md](shopping-list-format.md) and ADR 0010.
 - `pdf.js`: the weekly PDF and the single-recipe PDF.
 - `messages.js`: all Dutch text that the user sees.
+
+`plan.js`, `recipes.js`, `shopping.js`, `shopping-export.js`, and
+`messages.js` do not use the page or the page state when they load, and
+`planShoppingListDocument()` takes the plan and the recipes as arguments.
+shop-at-picnic runs copies of these modules in Node.js to make the shopping
+list of a share link, so the browser and shop-at-picnic compute the same list.
 
 ## Build and deployment
 

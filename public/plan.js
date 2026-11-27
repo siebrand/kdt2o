@@ -84,15 +84,17 @@ export function decodeBase64Url(value) {
     return new TextDecoder().decode(bytes);
 }
 
+// The plan in the fragment of a share link, such as "#plan=v4.…", or null. A malformed code throws an error.
+export function planFromShareHash(hash) {
+    const sharedPlan = new URLSearchParams(String(hash || "").replace(/^#/, "")).get("plan");
+    if (!sharedPlan?.startsWith("v4.")) return null;
+    return expandPlan(decodeBase64Url(sharedPlan.slice(3)));
+}
+
 export function loadPlan() {
     try {
-        const sharedPlan = new URLSearchParams(window.location.hash.slice(1)).get("plan");
-        if (sharedPlan) {
-            if (sharedPlan.startsWith("v4.")) {
-                const shared = expandPlan(decodeBase64Url(sharedPlan.slice(3)));
-                if (shared) return shared;
-            }
-        }
+        const shared = planFromShareHash(window.location.hash);
+        if (shared) return shared;
         const saved = JSON.parse(localStorage.getItem(PLAN_STORAGE_KEY) || "null");
         if (saved?.version === PLAN_STORAGE_VERSION) return expandPlan(saved.plan) || {};
         return {};

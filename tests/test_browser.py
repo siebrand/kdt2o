@@ -17,10 +17,12 @@ import threading
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from jsonschema import Draft202012Validator
 from playwright.sync_api import Page, expect, sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC = ROOT / "public"
+SHOPPING_LIST_SCHEMA = json.loads((ROOT / "schemas" / "shopping-list.schema.json").read_text(encoding="utf-8"))
 BASE_PATH = "/kdt2o"
 RECIPES = json.loads((PUBLIC / "recipes.json").read_text(encoding="utf-8"))
 BY_TITLE = {recipe["title"]: recipe for recipe in RECIPES}
@@ -642,6 +644,29 @@ def test_pdf_has_landscape_overview_and_recipe_pages(page: Page, server_url: str
     assert len(pages) >= 2 + len(titles), "overview, shopping list, and one page per recipe"
     first_box = re.search(rb"/MediaBox \[0 0 ([\d.]+) ([\d.]+)\]", pdf)
     assert first_box and float(first_box.group(1)) > float(first_box.group(2)), "overview is landscape"
+
+
+def test_shopping_list_json_matches_the_schema_and_the_list(page: Page, server_url: str):
+    titles = {(0, "diner"): "Bloemkoolpizza", (1, "lunch"): "Frittata met champignons en kaas"}
+    open_planner(page, share_url(server_url, titles), "2 maaltijdmomenten gepland.")
+    labels = shopping_list(page)
+    with page.expect_download() as download_info:
+        page.locator("#download-shopping-list").click()
+    download = download_info.value
+    assert download.suggested_filename == "boodschappenlijst.json"
+    document = json.loads(Path(download.path()).read_text(encoding="utf-8"))
+
+    validator = Draft202012Validator(SHOPPING_LIST_SCHEMA, format_checker=Draft202012Validator.FORMAT_CHECKER)
+    errors = [f"{list(error.path)}: {error.message}" for error in validator.iter_errors(document)]
+    assert not errors, errors
+    assert document["generator"]["version"] == "local"
+    assert sorted(recipe["title"] for recipe in document["recipes"]) == sorted(titles.values())
+    assert [item["label"] for item in document["items"]] == labels
+    champignons = [item for item in document["items"] if item["name"] == "champignons"]
+    assert [(item["optional"], item["quantity"]) for item in champignons] == [
+        (False, {"min": 250, "max": 250, "unit": "gram"}),
+        (True, {"min": 100, "max": 100, "unit": "gram"}),
+    ]
 
 
 def test_single_recipe_pdf_downloads(page: Page, server_url: str):

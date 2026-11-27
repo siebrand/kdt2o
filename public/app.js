@@ -3,8 +3,9 @@ import {createPdf, createSingleRecipePdf} from "./pdf.js";
 import {DAYS, MEALS, PLAN_STORAGE_KEY, PLAN_STORAGE_VERSION, compactPlan, dayName, encodeBase64Url, isMultiDay, planKey, planKeyMeal, plannedDays, resolvePlanRecipeTokens, shortDayName} from "./plan.js";
 import {nearestMove, planSelectionMove} from "./planning.js";
 import {addPreparationTime, attachSharedRecipeComponents, ingredientLabel, methodSteps, recipeEquipment, recipeIsAvailable, recipeMetadataLabel, recipeSourceUrl, recipeTimingLabel, recipeVariantForDay, shuffleRecipes, sortIngredientsForDisplay} from "./recipes.js";
-import {shoppingCategory, shoppingIngredientLabel, sortedShoppingItems} from "./shopping.js";
-import {recipeById, state} from "./state.js";
+import {shoppingCategory, shoppingIngredientLabel} from "./shopping.js";
+import {downloadJson, planShoppingListDocument} from "./shopping-export.js";
+import {currentShoppingItems, recipeById, state} from "./state.js";
 
 const UNDO_TIMEOUT_MS = 10000;
 const VERSION_PATTERN = /^[0-9]{4}-[0-9]{2}-[0-9]{2}\.[0-9]{12,}-[0-9a-f]{40}$/;
@@ -22,6 +23,7 @@ const singleRecipeCategory = document.querySelector("#single-recipe-category");
 const singleRecipeQuery = document.querySelector("#single-recipe-query");
 const singleRecipeResults = document.querySelector("#single-recipe-results");
 const downloadButton = document.querySelector("#download-pdf");
+const downloadShoppingListButton = document.querySelector("#download-shopping-list");
 const shoppingListButton = document.querySelector("#show-shopping-list");
 const shoppingListView = document.querySelector("#shopping-list-view");
 const singleRecipeSearch = document.querySelector("#single-recipe-search");
@@ -34,6 +36,8 @@ const cookingModeButton = document.querySelector("#cooking-mode-toggle");
 const cookingModeStatus = document.querySelector("#cooking-mode-status");
 const cookingMode = {enabled: false, wakeLock: null, requestPending: false};
 const dragState = {sourceKey: null};
+// The version that loadAppVersion() read: a CalVer version, "local", or null while unknown.
+let appVersionId = null;
 
 function shareablePlanUrl() {
     const url = new URL(window.location.href);
@@ -453,6 +457,7 @@ function render() {
     status.textContent = count ? MESSAGES.plannedCount(count) : MESSAGES.emptyPlan;
     shoppingListButton.disabled = !count;
     downloadButton.disabled = !count;
+    downloadShoppingListButton.disabled = !count;
     if (!count) {
         state.shoppingWarnings = [];
         shoppingListItems.replaceChildren();
@@ -473,7 +478,7 @@ function renderShoppingList() {
     let currentCategory = "";
     let requiredList;
     let optionalList;
-    const items = sortedShoppingItems();
+    const items = currentShoppingItems();
     items.forEach((item) => {
         const category = shoppingCategory(item);
         if (category !== currentCategory) {
@@ -505,6 +510,11 @@ function renderShoppingList() {
         row.append(label);
         (item.optional ? optionalList : requiredList).append(row);
     });
+}
+
+function downloadShoppingList() {
+    const document_ = planShoppingListDocument(state.plan, state.recipes, {version: appVersionId});
+    downloadJson(document_, MESSAGES.shoppingListFilename);
 }
 
 function updateCookingModeControls(message) {
@@ -654,6 +664,7 @@ async function loadAppVersion() {
     if (!response.ok) throw new Error(`Version request failed with status ${response.status}`);
     const version = (await response.text()).trim();
     if (version !== "local" && !VERSION_PATTERN.test(version)) throw new Error("Invalid version file");
+    appVersionId = version;
     appVersion.textContent = version === "local"
         ? `${MESSAGES.versionLabel}: ${MESSAGES.localVersion}`
         : `${MESSAGES.versionLabel}: ${version}`;
@@ -682,6 +693,7 @@ if (hasPlanner) {
         shoppingListView.scrollIntoView({behavior: "smooth", block: "start"});
     });
     downloadButton.addEventListener("click", createPdf);
+    downloadShoppingListButton.addEventListener("click", downloadShoppingList);
     todayButton?.addEventListener("click", () => {
         const todayIndex = (new Date().getDay() + 6) % DAYS.length;
         planner.querySelectorAll(".planner-day")[todayIndex].scrollIntoView({behavior: "smooth", block: "start"});

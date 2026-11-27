@@ -28,6 +28,10 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 - `scripts/apply_review.py`: the commands for the review of the candidates
   (`next`, `decide`, and `apply`). Save a decision only if the owner made it.
 - `schemas/schema.json`: the rules for the recipe data.
+- `schemas/shopping-list.schema.json` and `docs/shopping-list-format.md`: the
+  JSON format of the shopping-list download. Other programs read it. Do not
+  make a breaking change in version 1; follow the compatibility rules in the
+  format document.
 - `scripts/validate_recipes.py`: the script that checks the recipe data and the
   candidates.
 - `tests/`: the tests. `tests/test_browser.py` has the browser tests for the
@@ -37,6 +41,7 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
   `state.js` has the shared page state. `plan.js` has the plan keys, the
   storage, and the share links. `planning.js` has the move rules.
   `recipes.js` has the recipe helpers. `shopping.js` makes the shopping list.
+  `shopping-export.js` makes the JSON file of the shopping list.
   `pdf.js` makes the PDF files. `messages.js` has the Dutch text.
 - `public/version.txt`: the version marker. The deployment and release
   workflows write the CalVer version into this file.
@@ -63,6 +68,10 @@ makes a PDF file. The PDF file has a shopping list and one recipe on each page.
 - Do not add a database, accounts, analytics, tracking, or server storage.
 - Keep the weekly plan only in the browser `localStorage` or in a share link.
 - Do not show recipe text as HTML.
+- Keep `plan.js`, `recipes.js`, `shopping.js`, `shopping-export.js`, and
+  `messages.js` free of `document`, `window`, `localStorage`, and `state.js`
+  when they load. shop-at-picnic runs copies of them in Node.js. Use the page
+  only inside functions that only the browser calls.
 - Do not use inline scripts, inline styles, `style` attributes, or event
   handler attributes in the pages. The Content Security Policy blocks them.
 - Keep the CSP `<meta>` element of each page equal to the policy in

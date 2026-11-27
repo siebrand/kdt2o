@@ -57,8 +57,14 @@
     </section>
     <section id="shopping-list-view" class="shopping-list-view" aria-labelledby="shopping-list-title" hidden>
         <h2 id="shopping-list-title">Boodschappenlijst</h2>
-        <p>Controleer de lijst en download daarna de PDF voor je volledige weekplanning.</p>
-        <button id="download-pdf" class="button" type="button" disabled>PDF downloaden</button>
+        <p>Controleer de lijst en download daarna de PDF voor je volledige weekplanning. Het JSON-bestand is voor
+            programma's die boodschappen klaarzetten.</p>
+        <div class="actions">
+            <button id="download-pdf" class="button" type="button" disabled>PDF downloaden</button>
+            <button id="download-shopping-list" class="button button-secondary" type="button" disabled>
+                Boodschappenlijst downloaden (JSON)
+            </button>
+        </div>
         <div id="shopping-list-items"></div>
     </section>
     <section id="recipe-panel" class="recipe-panel" aria-labelledby="recipe-title" hidden>

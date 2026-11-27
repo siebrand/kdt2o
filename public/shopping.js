@@ -1,6 +1,5 @@
 // The shopping list: normalized ingredients, totals per week, categories, and labels.
 import {MESSAGES} from "./messages.js";
-import {recipeById, state} from "./state.js";
 
 export function normalizeShoppingUnit(unit) {
     const value = String(unit || "").toLocaleLowerCase("nl");
@@ -145,11 +144,12 @@ export function sharedComponentBatches(component, references) {
     return Math.max(1, Math.ceil(count / (component.yield || 1)));
 }
 
-export function aggregateIngredients() {
+// The weekly totals of a plan. findRecipe returns the recipe of an id; warnings receives the unit and amount checks.
+// The function does not use the page, so programs outside the browser can use it too.
+export function aggregateIngredients(plan, findRecipe, warnings = []) {
     const totals = new Map();
     const includedRecipeIds = new Set();
     const sharedComponents = new Map();
-    state.shoppingWarnings = [];
     const addIngredient = (ingredient, {warnings = true} = {}) => {
         const shoppingIngredient = normalizeShoppingIngredient(ingredient);
         if (shoppingIngredient.name === "water") return;
@@ -165,7 +165,7 @@ export function aggregateIngredients() {
             });
             if (otherUnitKey) {
                 const warning = MESSAGES.checkUnit(ingredient.name);
-                if (!state.shoppingWarnings.includes(warning)) state.shoppingWarnings.push(warning);
+                if (!warnings.includes(warning)) warnings.push(warning);
             }
         }
         const existing = totals.get(mapKey);
@@ -177,7 +177,7 @@ export function aggregateIngredients() {
             if (shoppingIngredient.amount == null || existing.amount == null) return;
         } else if (shoppingIngredient.amount == null) {
             if (existing.amount == null) return;
-            state.shoppingWarnings.push(MESSAGES.checkAmount(shoppingIngredient.name));
+            warnings.push(MESSAGES.checkAmount(shoppingIngredient.name));
             totals.set(mapKey + "::" + totals.size, copyShoppingIngredient(shoppingIngredient, unit));
             return;
         } else if (existing.amount == null) {
@@ -187,10 +187,10 @@ export function aggregateIngredients() {
         const combinedAmount = addIngredientAmounts(existing.amount, shoppingIngredient.amount);
         if (combinedAmount !== null) existing.amount = combinedAmount;
     };
-    Object.values(state.plan).forEach((item) => {
+    Object.values(plan).forEach((item) => {
         if (includedRecipeIds.has(item.recipeId)) return;
         includedRecipeIds.add(item.recipeId);
-        const recipe = recipeById(item.recipeId);
+        const recipe = findRecipe(item.recipeId);
         const sharedIds = sharedComponentIds(recipe);
         const ingredients = [
             ...(recipe?.ingredients || []),
@@ -252,8 +252,8 @@ export function shoppingCategory(item) {
     return "Overig";
 }
 
-export function sortedShoppingItems() {
-    return aggregateIngredients().sort((a, b) => {
+export function sortedShoppingItems(plan, findRecipe, warnings = []) {
+    return aggregateIngredients(plan, findRecipe, warnings).sort((a, b) => {
         const categoryDifference = SHOPPING_CATEGORIES.indexOf(shoppingCategory(a)) - SHOPPING_CATEGORIES.indexOf(shoppingCategory(b));
         const optionalDifference = Number(Boolean(a.optional)) - Number(Boolean(b.optional));
         return categoryDifference || optionalDifference || a.name.localeCompare(b.name, "nl");

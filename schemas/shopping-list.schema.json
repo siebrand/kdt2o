@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:kitano:kdt2o:shopping-list:1",
+  "title": "Kitano shopping list, format version 1",
+  "description": "A weekly shopping list exported by the Kitano meal planner. See docs/shopping-list-format.md. Consumers must ignore properties they do not know.",
+  "type": "object",
+  "required": ["format", "formatVersion", "createdAt", "generator", "language", "recipes", "items"],
+  "properties": {
+    "format": {
+      "const": "kitano-shopping-list"
+    },
+    "formatVersion": {
+      "description": "The major version of the format. A consumer rejects a version it does not support.",
+      "const": 1
+    },
+    "createdAt": {
+      "description": "When the list was exported, as an RFC 3339 UTC timestamp.",
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?Z$"
+    },
+    "generator": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": {"const": "kdt2o"},
+        "version": {
+          "description": "The CalVer version of the planner, \"local\" for a local build, or null when unknown.",
+          "type": ["string", "null"],
+          "minLength": 1
+        }
+      }
+    },
+    "language": {
+      "description": "The BCP 47 language of the names, labels, and categories.",
+      "const": "nl"
+    },
+    "recipes": {
+      "description": "The planned recipes the list was made from, once each, for reference.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "title": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "items": {
+      "description": "The shopping-list totals, in the order of the planner's shopping list.",
+      "type": "array",
+      "items": {"$ref": "#/$defs/item"}
+    }
+  },
+  "$defs": {
+    "item": {
+      "type": "object",
+      "required": ["name", "quantity", "optional", "category", "label"],
+      "properties": {
+        "name": {
+          "description": "The normalized ingredient name: lowercase and singular where the planner knows the singular. Use it as the key to match products.",
+          "type": "string",
+          "minLength": 1
+        },
+        "quantity": {
+          "description": "The total quantity, or null when the recipes give no amount (for example \"zout\").",
+          "oneOf": [
+            {"type": "null"},
+            {"$ref": "#/$defs/quantity"}
+          ]
+        },
+        "optional": {
+          "description": "True for the extra amount that recipes list as optional. A needed amount of the same ingredient is a separate item.",
+          "type": "boolean"
+        },
+        "category": {
+          "description": "The Dutch shopping category of the planner.",
+          "enum": [
+            "Groente en fruit",
+            "Zuivel en eieren",
+            "Vlees, vis en vleesvervangers",
+            "Brood en ontbijt",
+            "Diepvries",
+            "Kruiden en smaakmakers",
+            "Houdbare producten",
+            "Overig"
+          ]
+        },
+        "label": {
+          "description": "The Dutch text of the item as the planner displays it, for people.",
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "quantity": {
+      "type": "object",
+      "required": ["min", "max", "unit"],
+      "properties": {
+        "min": {"type": "number", "exclusiveMinimum": 0},
+        "max": {"type": "number", "exclusiveMinimum": 0},
+        "unit": {
+          "description": "The normalized unit, for example \"gram\", \"ml\", \"liter\", \"stuk\", \"el\", \"tl\", \"teen\", or \"blik\". A consumer treats a unit it does not know as not convertible.",
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

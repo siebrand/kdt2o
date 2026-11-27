@@ -23,6 +23,7 @@ export const MESSAGES = {
     moveDoesNotFit: "Deze kaart kan hier niet worden geplaatst omdat een meerdaags recept niet in de week past.",
     moveNoRoom: "Deze kaart kan hier niet worden geplaatst omdat er geen ruimte is om de andere recepten te verplaatsen.",
     shoppingList: "Boodschappenlijst",
+    shoppingListFilename: "boodschappenlijst.json",
     optionalHeading: "Optioneel",
     optionalPrefix: "optioneel: ",
     checkUnit: (name) => `Controleer de eenheid van ${name}.`,
