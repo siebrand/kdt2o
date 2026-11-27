@@ -11,6 +11,7 @@ De belangrijkste verbeteringen voor de planner en recepten.
   - Gevulde flespompoen met spinazie en kaas (diner)
   - Gevulde tomaten uit de oven (diner)
   - Groene shakshuka met kruidenyoghurt (diner)
+  - Groentelasagne (diner)
 
 ## 25 november 2026
 
