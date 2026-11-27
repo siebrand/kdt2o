@@ -56,7 +56,8 @@ The key words "must", "must not", "should", and "may" are to be interpreted as d
 | `createdAt`     | string           | The export time, an RFC 3339 timestamp in UTC.                                |
 | `generator`     | object           | `name` is `kdt2o`; `version` is the planner's CalVer version, `local`, or `null`. |
 | `language`      | string           | The language of names, labels, and categories: `nl`.                          |
-| `recipes`       | array of objects | The planned recipes, once each, with their `id` and `title`.                  |
+| `recipes`       | array of objects | The planned recipes that the list counts, once each, with their `id` and `title`. |
+| `excludedRecipes` | array of objects | Optional. The planned recipes that the user left off the list, with `id` and `title`. Their ingredients are not in `items`. |
 | `items`         | array of objects | The shopping-list totals, in the order the planner lists them.                |
 
 ## Item
@@ -91,5 +92,5 @@ The planner adds amounts only for the same normalized name and unit, so the same
 
 ## Privacy
 
-The file holds only the shopping list and the titles of the planned recipes. The planner makes it in the browser and
+The file holds only the shopping list and the titles of the planned recipes, including the ones left off the list. The planner makes it in the browser and
 sends it nowhere; the user decides where it goes.

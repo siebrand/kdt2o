@@ -4,6 +4,8 @@ De belangrijkste verbeteringen voor de planner en recepten.
 
 ## 27 november 2026
 
+- Heb je de boodschappen voor een recept al in huis? Haal bij de boodschappenlijst het vinkje weg bij dat recept. Het
+  recept blijft in je weekmenu, maar de ingrediënten staan niet meer op de lijst.
 - De boodschappenlijst kan nu ook als JSON-bestand worden gedownload, zodat andere programma's de boodschappen
   kunnen klaarzetten.
 - Nieuwe recepten:

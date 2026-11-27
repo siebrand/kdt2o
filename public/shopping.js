@@ -252,6 +252,11 @@ export function shoppingCategory(item) {
     return "Overig";
 }
 
+// The part of a plan that the shopping list counts: every planned recipe except those in excludedRecipeIds.
+export function shoppingPlan(plan, excludedRecipeIds = new Set()) {
+    return Object.fromEntries(Object.entries(plan).filter(([, item]) => !excludedRecipeIds.has(item?.recipeId)));
+}
+
 export function sortedShoppingItems(plan, findRecipe, warnings = []) {
     return aggregateIngredients(plan, findRecipe, warnings).sort((a, b) => {
         const categoryDifference = SHOPPING_CATEGORIES.indexOf(shoppingCategory(a)) - SHOPPING_CATEGORIES.indexOf(shoppingCategory(b));

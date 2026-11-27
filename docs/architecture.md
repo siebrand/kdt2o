@@ -20,7 +20,12 @@ or server-side planning state.
 5. The browser can fill empty meal slots randomly and can encode a compact plan
    using stable codes derived from recipe IDs in a shareable URL without sending
    planning data to a server. Unknown recipe codes remain visible as unresolved
-   recipe slots. Opening a share link saves nothing. The first change saves the
+   recipe slots. The user can leave a planned recipe off the shopping list, for
+   example when the groceries are already at home. The recipe stays in the plan
+   and in the PDF; the shopping list, the shopping-list PDF page, and the JSON
+   download leave its ingredients out, and shared subrecipes are recounted. The
+   choice is saved with the plan in `localStorage` and in the share link as
+   `&skip=` followed by recipe codes. Opening a share link saves nothing. The first change saves the
    plan in `localStorage` and removes the link from the address bar, so a reload
    keeps the change.
 6. The browser can filter one recipe by meal, show recipe details as HTML, and generate a single-recipe PDF. A recipe

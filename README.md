@@ -21,7 +21,8 @@ its HTML recipe. The recipe dialog offers an optional cooking mode that requests
 browsers while the recipe is visible. On narrower screens, the week switches to vertically stacked day sections with
 breakfast, lunch, and dinner under each day, with a **Vandaag** button to jump to the current day.
 
-The shopping list can also be downloaded as `boodschappenlijst.json`, for programs that prepare groceries, such as
+In the shopping list, a planned recipe can be left off the list when its groceries are already at home; the recipe
+stays in the plan. The shopping list can also be downloaded as `boodschappenlijst.json`, for programs that prepare groceries, such as
 shop-at-picnic. The format is versioned; see [docs/shopping-list-format.md](docs/shopping-list-format.md) and
 [schemas/shopping-list.schema.json](schemas/shopping-list.schema.json).
 

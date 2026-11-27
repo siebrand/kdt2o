@@ -47,6 +47,18 @@
         }
       }
     },
+    "excludedRecipes": {
+      "description": "Optional. The planned recipes that the user left off the shopping list, once each. Their ingredients are not in items.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "title": {"type": "string", "minLength": 1}
+        }
+      }
+    },
     "items": {
       "description": "The shopping-list totals, in the order of the planner's shopping list.",
       "type": "array",

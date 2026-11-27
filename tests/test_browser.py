@@ -553,6 +553,100 @@ def test_shopping_list_keeps_an_ingredient_with_two_units_apart(page: Page, serv
     assert [item for item in items if item.endswith(" bloemkool")] == ["1 stuk bloemkool", "300 gram bloemkool"]
 
 
+def recipe_toggle(page: Page, title: str):
+    return page.locator("#shopping-list-recipes").get_by_role("checkbox", name=title)
+
+
+def shopping_items(page: Page) -> list[str]:
+    return [text.strip() for text in page.locator("#shopping-list-items li").all_inner_texts()]
+
+
+def test_recipe_can_be_left_off_the_shopping_list(page: Page, server_url: str):
+    pizza, frittata = "Bloemkoolpizza", "Frittata met champignons en kaas"
+    titles = {(0, "diner"): pizza, (1, "lunch"): frittata}
+    open_planner(page, share_url(server_url, titles), "2 maaltijdmomenten gepland.")
+    shopping_list(page)
+    expect(recipe_toggle(page, pizza)).to_be_checked()
+
+    recipe_toggle(page, pizza).uncheck()
+    expect(recipe_toggle(page, pizza)).not_to_be_checked()
+    expect(recipe_toggle(page, pizza)).to_be_focused()
+    items = shopping_items(page)
+    assert [item for item in items if item.endswith(" champignons")] == ["250 gram champignons"]
+    assert not [item for item in items if item.endswith(" bloemkool")], "only the pizza has cauliflower"
+    expect(page.locator('#planner [data-plan-key="0-diner"]')).to_contain_text("Niet op de boodschappenlijst")
+    # The plan keeps both recipes; only the shopping list leaves one out.
+    expect(page.locator("#status")).to_have_text("2 maaltijdmomenten gepland.")
+
+    page.reload()
+    shopping_list(page)
+    expect(recipe_toggle(page, pizza)).not_to_be_checked()
+    expect(recipe_toggle(page, frittata)).to_be_checked()
+
+    page.context.grant_permissions(["clipboard-read", "clipboard-write"])
+    page.locator("#copy-menu-link").click()
+    expect(page.locator("#notifications")).to_contain_text("Koppeling naar menu gekopieerd.")
+    link = page.evaluate("navigator.clipboard.readText()")
+    assert "&skip=" in link
+    # A visitor without a saved plan opens the link.
+    page.evaluate("localStorage.clear()")
+    page.goto("about:blank")
+    open_planner(page, link, "2 maaltijdmomenten gepland.")
+    shopping_list(page)
+    expect(recipe_toggle(page, pizza)).not_to_be_checked()
+
+    with page.expect_download() as download_info:
+        page.locator("#download-shopping-list").click()
+    document = json.loads(Path(download_info.value.path()).read_text(encoding="utf-8"))
+    validator = Draft202012Validator(SHOPPING_LIST_SCHEMA, format_checker=Draft202012Validator.FORMAT_CHECKER)
+    assert not [error.message for error in validator.iter_errors(document)]
+    assert [recipe["title"] for recipe in document["recipes"]] == [frittata]
+    assert [recipe["title"] for recipe in document["excludedRecipes"]] == [pizza]
+    assert [item["label"] for item in document["items"]] == shopping_items(page)
+    with page.expect_download() as download_info:
+        page.locator("#download-pdf").click()
+    assert f"Niet op de lijst: {pizza}.".encode() in Path(download_info.value.path()).read_bytes()
+
+    recipe_toggle(page, pizza).check()
+    expect(page.locator('#planner [data-plan-key="0-diner"]')).not_to_contain_text("Niet op de boodschappenlijst")
+    assert [item for item in shopping_items(page) if item.endswith(" champignons")] == [
+        "250 gram champignons", "100 gram champignons"]
+
+
+def test_leaving_a_recipe_off_recounts_the_shared_cracker_batches(page: Page, server_url: str):
+    titles = {
+        (0, "ontbijt"): "Lijnzaadcrackers en hüttenkäse en avocado",
+        (1, "ontbijt"): "Lijnzaadcrackers met boerenkaas",
+        (0, "lunch"): "Gegrilde groenten met feta en crackers met kaas & avocado",
+    }
+    open_planner(page, share_url(server_url, titles), f"{len(titles)} maaltijdmomenten gepland.")
+    shopping_list(page)
+    component = next(c for r in RECIPES for c in r.get("components", []) if c["id"] == "lijnzaadcrackers")
+    flaxseed = next(i for i in component["ingredients"] if i["name"] == "gebroken lijnzaad")
+    for left_off in titles.values():
+        recipe_toggle(page, left_off).uncheck()
+        crackers = sum(i["amount"] for title in titles.values() if title != left_off
+                       for i in BY_TITLE[title]["ingredients"] if i.get("componentId") == "lijnzaadcrackers")
+        batches = math.ceil(crackers / component["yield"])
+        assert f"{flaxseed['amount'] * batches} gram gebroken lijnzaad" in shopping_items(page), left_off
+        recipe_toggle(page, left_off).check()
+
+
+def test_shopping_list_says_when_nothing_is_left_and_clearing_resets(page: Page, server_url: str):
+    title = "Bloemkoolpizza"
+    link = share_url(server_url, {(0, "diner"): title})
+    open_planner(page, link, "1 maaltijdmomenten gepland.")
+    shopping_list(page)
+    recipe_toggle(page, title).uncheck()
+    expect(page.locator("#shopping-list-items li")).to_have_count(0)
+    expect(page.locator("#shopping-list-items")).to_have_text("Er staan geen boodschappen op de lijst.")
+    page.locator("#clear-plan").click()
+    page.goto("about:blank")
+    open_planner(page, link, "1 maaltijdmomenten gepland.")
+    shopping_list(page)
+    expect(recipe_toggle(page, title)).to_be_checked()
+
+
 def test_mentioning_granola_does_not_add_a_granola_batch(page: Page, server_url: str):
     title = "Chocolademousse met frambozen"
     open_planner(page, share_url(server_url, {(0, "ontbijt"): title}), "1 maaltijdmomenten gepland.")

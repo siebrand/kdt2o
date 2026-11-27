@@ -1,11 +1,11 @@
 import {MESSAGES} from "./messages.js";
 import {createPdf, createSingleRecipePdf} from "./pdf.js";
-import {DAYS, MEALS, PLAN_STORAGE_KEY, PLAN_STORAGE_VERSION, compactPlan, dayName, encodeBase64Url, isMultiDay, planKey, planKeyMeal, plannedDays, resolvePlanRecipeTokens, shortDayName} from "./plan.js";
+import {DAYS, MEALS, PLAN_STORAGE_KEY, PLAN_STORAGE_VERSION, compactPlan, compactShoppingExclusions, dayName, encodeBase64Url, isMultiDay, planKey, planKeyMeal, plannedDays, resolvePlanRecipeTokens, resolveShoppingExclusionTokens, shortDayName} from "./plan.js";
 import {nearestMove, planSelectionMove} from "./planning.js";
 import {addPreparationTime, attachSharedRecipeComponents, ingredientLabel, methodSteps, recipeEquipment, recipeIsAvailable, recipeMetadataLabel, recipeSourceUrl, recipeTimingLabel, recipeVariantForDay, shuffleRecipes, sortIngredientsForDisplay} from "./recipes.js";
 import {shoppingCategory, shoppingIngredientLabel} from "./shopping.js";
 import {downloadJson, planShoppingListDocument} from "./shopping-export.js";
-import {currentShoppingItems, recipeById, state} from "./state.js";
+import {currentShoppingItems, plannedRecipes, recipeById, state} from "./state.js";
 
 const UNDO_TIMEOUT_MS = 10000;
 const VERSION_PATTERN = /^[0-9]{4}-[0-9]{2}-[0-9]{2}\.[0-9]{12,}-[0-9a-f]{40}$/;
@@ -28,6 +28,7 @@ const shoppingListButton = document.querySelector("#show-shopping-list");
 const shoppingListView = document.querySelector("#shopping-list-view");
 const singleRecipeSearch = document.querySelector("#single-recipe-search");
 const shoppingListItems = document.querySelector("#shopping-list-items");
+const shoppingListRecipeOptions = document.querySelector("#shopping-list-recipe-options");
 const notifications = document.querySelector("#notifications");
 const recipePanel = document.querySelector("#recipe-panel");
 const appVersion = document.querySelector("#app-version");
@@ -42,6 +43,8 @@ let appVersionId = null;
 function shareablePlanUrl() {
     const url = new URL(window.location.href);
     url.hash = "plan=v4." + encodeBase64Url(compactPlan(state.plan));
+    const excluded = compactShoppingExclusions(state.excludedRecipeIds, state.plan);
+    if (excluded) url.hash += "&skip=" + excluded;
     return url.toString();
 }
 
@@ -64,9 +67,11 @@ async function copyMenuLink() {
 }
 
 function savePlan() {
+    const excluded = compactShoppingExclusions(state.excludedRecipeIds, state.plan);
     localStorage.setItem(PLAN_STORAGE_KEY, JSON.stringify({
         version: PLAN_STORAGE_VERSION,
-        plan: compactPlan(state.plan)
+        plan: compactPlan(state.plan),
+        ...(excluded ? {excluded} : {})
     }));
     removeShareLink();
 }
@@ -204,6 +209,12 @@ function renderPlanner() {
                     const variantLabel = document.createElement("small");
                     variantLabel.textContent = variant.title;
                     slot.append(variantLabel);
+                }
+                if (state.excludedRecipeIds.has(item.recipeId)) {
+                    const excluded = document.createElement("small");
+                    excluded.className = "slot-excluded";
+                    excluded.textContent = MESSAGES.notOnShoppingList;
+                    slot.append(excluded);
                 }
                 if (recipe?.advanceNotice) {
                     const notice = document.createElement("small");
@@ -473,7 +484,30 @@ function recipeCardNote(recipe) {
     return note;
 }
 
+function renderShoppingListRecipes() {
+    shoppingListRecipeOptions.replaceChildren(...plannedRecipes().map(({id, recipe, excluded}) => {
+        const row = document.createElement("li");
+        const label = document.createElement("label");
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.checked = !excluded;
+        checkbox.dataset.recipeId = id;
+        checkbox.addEventListener("change", () => {
+            if (checkbox.checked) state.excludedRecipeIds.delete(id);
+            else state.excludedRecipeIds.add(id);
+            savePlan();
+            renderPlanner();
+            renderShoppingList();
+            shoppingListRecipeOptions.querySelector(`input[data-recipe-id="${CSS.escape(id)}"]`)?.focus();
+        });
+        label.append(checkbox, document.createTextNode(recipe?.title || MESSAGES.unknownRecipe));
+        row.append(label);
+        return row;
+    }));
+}
+
 function renderShoppingList() {
+    renderShoppingListRecipes();
     shoppingListItems.replaceChildren();
     let currentCategory = "";
     let requiredList;
@@ -510,10 +544,17 @@ function renderShoppingList() {
         row.append(label);
         (item.optional ? optionalList : requiredList).append(row);
     });
+    if (!items.length) {
+        shoppingListItems.append(Object.assign(document.createElement("p"), {
+            className: "muted",
+            textContent: MESSAGES.shoppingListEmpty
+        }));
+    }
 }
 
 function downloadShoppingList() {
-    const document_ = planShoppingListDocument(state.plan, state.recipes, {version: appVersionId});
+    const document_ = planShoppingListDocument(state.plan, state.recipes,
+        {version: appVersionId, excludedRecipeIds: state.excludedRecipeIds});
     downloadJson(document_, MESSAGES.shoppingListFilename);
 }
 
@@ -678,6 +719,7 @@ loadAppVersion().catch((error) => {
 if (hasPlanner) {
     document.querySelector("#clear-plan").addEventListener("click", () => {
         state.plan = {};
+        state.excludedRecipeIds = new Set();
         savePlan();
         render();
     });
@@ -728,6 +770,7 @@ if (hasPlanner) {
         .then((recipes) => {
             state.recipes = shuffleRecipes(attachSharedRecipeComponents(recipes).map(addPreparationTime));
             state.plan = resolvePlanRecipeTokens(state.plan, state.recipes);
+            state.excludedRecipeIds = resolveShoppingExclusionTokens(state.excludedRecipeIds, state.recipes);
             render();
             renderSingleRecipeSearch();
         })

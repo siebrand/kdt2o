@@ -211,6 +211,22 @@ body {
     height: 1.1rem;
 }
 
+.shopping-list-recipes {
+    margin: 0 0 1rem;
+    padding: .75rem 1rem;
+    border: 1px solid #dfe4d9;
+    border-radius: .7rem;
+}
+
+.shopping-list-recipes legend {
+    font-weight: 700;
+    padding: 0 .3rem;
+}
+
+.shopping-list-recipes p {
+    margin: 0 0 .5rem;
+}
+
 .shopping-list-view>.actions {
     margin-bottom: 1rem;
 }

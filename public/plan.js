@@ -84,6 +84,29 @@ export function decodeBase64Url(value) {
     return new TextDecoder().decode(bytes);
 }
 
+// The recipes that the user leaves off the shopping list are stored and shared as recipe tokens, such as
+// "AbCdEfGh.IjKlMnOp". Only planned recipes are kept. A token that no recipe resolves stays "@token:…".
+export function compactShoppingExclusions(excludedIds, plan) {
+    const planned = new Set(Object.values(plan).map((item) => item?.recipeId));
+    return [...excludedIds].filter((id) => planned.has(id))
+        .map((id) => id.startsWith("@token:") ? id.slice(7) : recipeToken(id)).sort().join(".");
+}
+
+export function expandShoppingExclusions(compact) {
+    return new Set(String(compact || "").split(".")
+        .filter((token) => /^[A-Za-z0-9_-]{8}$/.test(token)).map((token) => "@token:" + token));
+}
+
+export function resolveShoppingExclusionTokens(excludedIds, recipes) {
+    const byToken = new Map(recipes.map((recipe) => [recipeToken(recipe.id), recipe.id]));
+    return new Set([...excludedIds].map((id) => id.startsWith("@token:") ? byToken.get(id.slice(7)) || id : id));
+}
+
+// The exclusions in the fragment of a share link, such as "#plan=v4.…&skip=AbCdEfGh".
+export function shoppingExclusionsFromShareHash(hash) {
+    return expandShoppingExclusions(new URLSearchParams(String(hash || "").replace(/^#/, "")).get("skip"));
+}
+
 // The plan in the fragment of a share link, such as "#plan=v4.…", or null. A malformed code throws an error.
 export function planFromShareHash(hash) {
     const sharedPlan = new URLSearchParams(String(hash || "").replace(/^#/, "")).get("plan");
@@ -100,6 +123,18 @@ export function loadPlan() {
         return {};
     } catch {
         return {};
+    }
+}
+
+// The exclusions that belong to the plan of loadPlan(): those of the share link, or else those that were saved.
+export function loadShoppingExclusions() {
+    try {
+        if (planFromShareHash(window.location.hash)) return shoppingExclusionsFromShareHash(window.location.hash);
+        const saved = JSON.parse(localStorage.getItem(PLAN_STORAGE_KEY) || "null");
+        if (saved?.version === PLAN_STORAGE_VERSION) return expandShoppingExclusions(saved.excluded);
+        return new Set();
+    } catch {
+        return new Set();
     }
 }
 

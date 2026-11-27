@@ -77,6 +77,8 @@ The following features are complete and have been moved below the open work:
 - [x] Random recipe ordering in the recipe selection.
 - [x] Equipment lists and advance notices, such as "de dag ervoor", on recipe
   pages and in the planner.
+- [x] Leaving a planned recipe off the shopping list, saved with the plan and in
+  the share link.
 - [x] A JSON download of the shopping list in the versioned
   `kitano-shopping-list` format (`docs/shopping-list-format.md`,
   `schemas/shopping-list.schema.json`), validated against the schema by the

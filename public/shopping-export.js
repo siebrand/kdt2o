@@ -6,6 +6,7 @@ import {
     parseAmountRange,
     shoppingCategory,
     shoppingIngredientLabel,
+    shoppingPlan,
     sortedShoppingItems
 } from "./shopping.js";
 
@@ -20,8 +21,9 @@ function exportQuantity(item) {
     return {min: range.min, max: range.max, unit};
 }
 
-// items are the sorted totals of sortedShoppingItems(); recipes are the planned recipes, once each.
-export function shoppingListDocument(items, recipes, {version = null, createdAt = new Date()} = {}) {
+// items are the sorted totals of sortedShoppingItems(); recipes are the planned recipes that the list counts, once
+// each; excludedRecipes are the planned recipes that the user left off the list.
+export function shoppingListDocument(items, recipes, {version = null, createdAt = new Date(), excludedRecipes = []} = {}) {
     return {
         format: SHOPPING_LIST_FORMAT,
         formatVersion: SHOPPING_LIST_FORMAT_VERSION,
@@ -29,6 +31,7 @@ export function shoppingListDocument(items, recipes, {version = null, createdAt 
         generator: {name: "kdt2o", version: version || null},
         language: "nl",
         recipes: recipes.map((recipe) => ({id: recipe.id, title: recipe.title})),
+        excludedRecipes: excludedRecipes.map((recipe) => ({id: recipe.id, title: recipe.title})),
         items: items.map((item) => ({
             name: normalizeShoppingName(item.name),
             quantity: exportQuantity(item),
@@ -40,13 +43,16 @@ export function shoppingListDocument(items, recipes, {version = null, createdAt 
 }
 
 // The document of a plan. recipes are all recipes, with the shared subrecipes attached
-// (attachSharedRecipeComponents() in recipes.js). The browser and shop-at-picnic both use this function.
-export function planShoppingListDocument(plan, recipes, options = {}) {
+// (attachSharedRecipeComponents() in recipes.js). excludedRecipeIds are the planned recipes that the user leaves off
+// the list, as in shoppingExclusionsFromShareHash() of plan.js. The browser and shop-at-picnic both use this function.
+export function planShoppingListDocument(plan, recipes, {excludedRecipeIds = new Set(), ...options} = {}) {
     const byId = new Map(recipes.map((recipe) => [recipe.id, recipe]));
     const findRecipe = (id) => byId.get(id);
-    const items = sortedShoppingItems(plan, findRecipe);
+    const items = sortedShoppingItems(shoppingPlan(plan, excludedRecipeIds), findRecipe);
     const plannedIds = [...new Set(Object.values(plan).map((item) => item.recipeId))];
-    return shoppingListDocument(items, plannedIds.map(findRecipe).filter(Boolean), options);
+    const counted = plannedIds.filter((id) => !excludedRecipeIds.has(id)).map(findRecipe).filter(Boolean);
+    const excludedRecipes = plannedIds.filter((id) => excludedRecipeIds.has(id)).map(findRecipe).filter(Boolean);
+    return shoppingListDocument(items, counted, {...options, excludedRecipes});
 }
 
 // Downloads a document as a JSON file. Only the browser application uses this function.

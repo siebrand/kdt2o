@@ -3,7 +3,7 @@ import {MESSAGES} from "./messages.js";
 import {DAYS, MEALS, dayName, planKey, plannedDays, shortDayName} from "./plan.js";
 import {ingredientLabel, methodSteps, recipeEquipment, recipeMetadataLabel, recipeSourceUrl, recipeTimingLabel, sortIngredientsForDisplay} from "./recipes.js";
 import {formatIngredientAmount, formatIngredientUnit, shoppingCategory} from "./shopping.js";
-import {currentShoppingItems, recipeById, reportStatus, state} from "./state.js";
+import {currentShoppingItems, plannedRecipes, recipeById, reportStatus, state} from "./state.js";
 
 export function addWrapped(doc, text, x, y, maxWidth, lineHeight = 6) {
     const lines = doc.splitTextToSize(String(text || ""), maxWidth);
@@ -84,6 +84,12 @@ export async function createPdf() {
     doc.text(MESSAGES.shoppingList, margin, 24);
     doc.setFontSize(10);
     let y = 36;
+    const leftOut = plannedRecipes().filter(({excluded}) => excluded).map(({recipe}) => recipe?.title || MESSAGES.unknownRecipe);
+    if (leftOut.length) {
+        doc.setTextColor(70, 80, 70);
+        y = addWrapped(doc, MESSAGES.shoppingListLeftOut(leftOut), margin, y, width - margin * 2) + 4;
+        doc.setTextColor(40, 45, 40);
+    }
     const shoppingItems = currentShoppingItems();
     let currentCategory = "";
     shoppingItems.forEach((item) => {
