@@ -545,6 +545,14 @@ def test_shopping_list_bakes_one_cracker_batch_set(page: Page, server_url: str):
     assert not [item for item in items if "lijnzaadcracker" in item], "crackers must be baked, not bought"
 
 
+def test_shopping_list_keeps_an_ingredient_with_two_units_apart(page: Page, server_url: str):
+    # Bloemkoolpizza counts cauliflowers, the stamppot weighs them. The list once failed with a JavaScript error.
+    titles = {(0, "diner"): "Bloemkoolpizza", (1, "diner"): "Andijvie stamppot met kerriejus"}
+    open_planner(page, share_url(server_url, titles), "2 maaltijdmomenten gepland.")
+    items = shopping_list(page)
+    assert [item for item in items if item.endswith(" bloemkool")] == ["1 stuk bloemkool", "300 gram bloemkool"]
+
+
 def test_mentioning_granola_does_not_add_a_granola_batch(page: Page, server_url: str):
     title = "Chocolademousse met frambozen"
     open_planner(page, share_url(server_url, {(0, "ontbijt"): title}), "1 maaltijdmomenten gepland.")

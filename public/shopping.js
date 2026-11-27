@@ -150,7 +150,7 @@ export function aggregateIngredients(plan, findRecipe, warnings = []) {
     const totals = new Map();
     const includedRecipeIds = new Set();
     const sharedComponents = new Map();
-    const addIngredient = (ingredient, {warnings = true} = {}) => {
+    const addIngredient = (ingredient, {checks = true} = {}) => {
         const shoppingIngredient = normalizeShoppingIngredient(ingredient);
         if (shoppingIngredient.name === "water") return;
         const key = normalizeShoppingName(shoppingIngredient.name);
@@ -158,7 +158,7 @@ export function aggregateIngredients(plan, findRecipe, warnings = []) {
         // Needed and optional amounts stay apart: the needed total in the main list, the optional extra under
         // "Optioneel". The order of the recipes then cannot decide whether a needed ingredient looks optional.
         const mapKey = key + "::" + unit + (shoppingIngredient.optional ? "::optioneel" : "");
-        if (warnings) {
+        if (checks) {
             const otherUnitKey = [...totals.keys()].find((existingKey) => {
                 const [existingName, existingUnit] = existingKey.split("::");
                 return existingName === key && existingUnit !== unit;
@@ -173,7 +173,7 @@ export function aggregateIngredients(plan, findRecipe, warnings = []) {
             totals.set(mapKey, copyShoppingIngredient(shoppingIngredient, unit));
             return;
         }
-        if (!warnings) {
+        if (!checks) {
             if (shoppingIngredient.amount == null || existing.amount == null) return;
         } else if (shoppingIngredient.amount == null) {
             if (existing.amount == null) return;
@@ -217,7 +217,7 @@ export function aggregateIngredients(plan, findRecipe, warnings = []) {
         component.ingredients.forEach((ingredient) => addIngredient({
             ...ingredient,
             amount: typeof ingredient.amount === "number" ? ingredient.amount * batches : ingredient.amount
-        }, {warnings: false}));
+        }, {checks: false}));
     });
     return [...totals.values()];
 }
